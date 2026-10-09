@@ -8,3 +8,4 @@ results/*.csv
 .idea/
 .vscode/
 .DS_Store
+data/companies/annual_reports/
