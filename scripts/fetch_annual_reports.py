@@ -60,18 +60,23 @@ def find_annual_report(code: str, org_id: str, name: str, year: int) -> tuple[st
         "seDate": f"{year + 1}-01-01~{year + 1}-12-31", "isHLtitle": "true",
     }
     resp = json.loads(http_post(QUERY_URL, data))
-    target = f"{name}{year}年年度报告"
-    bare = f"{year}年年度报告"
-    titles = [(re.sub(r"<[^>]+>", "", a["announcementTitle"]), a["adjunctUrl"])
-              for a in resp.get("announcements") or []]
-    # 精确匹配公司名前缀；部分公司公告标题不带公司名（如万科A），退而匹配裸标题
-    for title, adjunct in titles:
-        if title == target:
-            return title, adjunct
-    for title, adjunct in titles:
-        if title == bare:
-            return title, adjunct
-    return None
+    bad = ("摘要", "英文", "取消", "已更正", "补充")
+    cands = []
+    for a in resp.get("announcements") or []:
+        title = re.sub(r"<[^>]+>", "", a["announcementTitle"])
+        if any(b in title for b in bad):
+            continue
+        # 标题后缀为 "<year>年年度报告" 或 "<year>年度报告" 均可（公司名前缀不统一，如
+        # "招商银行股份有限公司2024年度报告"、部分公司干脆不带公司名）
+        if title.endswith(f"{year}年年度报告") or title.endswith(f"{year}年度报告"):
+            cands.append((title, a["adjunctUrl"]))
+    if not cands:
+        return None
+    # 优先带公司名前缀的精确匹配
+    for t, u in cands:
+        if t.startswith(name):
+            return t, u
+    return cands[0]
 
 
 def main() -> None:
@@ -113,12 +118,16 @@ def main() -> None:
         results.append(row)
         time.sleep(1)
 
+    with open(RESULT_CSV, newline="", encoding="utf-8") as f:
+        prev = {r["stock_code"]: r for r in csv.DictReader(f)} if RESULT_CSV.exists() else {}
+    prev.update({r["stock_code"]: r for r in results})  # 新结果覆盖旧记录（重试语义）
+    merged = list(prev.values())
     with open(RESULT_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(results[0].keys()))
-        w.writeheader(); w.writerows(results)
-    ok = sum(1 for r in results if r["status"] == "ok")
-    print(f"\n完成: {ok}/{len(results)} 成功，结果见 {RESULT_CSV.relative_to(ROOT)}")
-    sys.exit(0 if ok == len(results) else 1)
+        w.writeheader(); w.writerows(merged)
+    ok = sum(1 for r in merged if r["status"] == "ok")
+    print(f"\n累计: {ok}/{len(merged)} 成功，结果见 {RESULT_CSV.relative_to(ROOT)}")
+    sys.exit(0 if all(r["status"] == "ok" for r in merged) else 1)
 
 
 if __name__ == "__main__":
