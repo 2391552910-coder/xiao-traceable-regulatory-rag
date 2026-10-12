@@ -1,0 +1,2 @@
+recall@1,recall@5,recall@10,mrr,ndcg@10,stage,backend,model,n_queries
+0.03166666666666667,0.105,0.16333333333333333,0.06642195767195767,0.08893577622811825,embedding_only,tfidf,Qwen/Qwen3-Embedding-4B,600

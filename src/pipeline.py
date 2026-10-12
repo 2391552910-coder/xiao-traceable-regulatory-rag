@@ -20,11 +20,27 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
                                      window_size=kb_cfg["window_size"],
                                      window_overlap=kb_cfg["window_overlap"]))
     ret_cfg = cfg["retrieval"]
+    reranker = None
+    rr_cfg = ret_cfg.get("reranker") or {}
+    if rr_cfg.get("enabled"):
+        if rr_cfg.get("url"):  # 远端重排服务（Xinference / vLLM / TEI 兼容）
+            from src.retrieval.reranker import APIReranker
+            reranker = APIReranker(base_url=rr_cfg["url"],
+                                   model_name=rr_cfg.get("model", "Qwen3-Reranker-0.6B"),
+                                   api_key=rr_cfg.get("api_key", ""))
+        else:
+            from src.retrieval.reranker import Reranker
+            reranker = Reranker(model_name=rr_cfg.get("model", "Qwen/Qwen3-Reranker-0.6B"),
+                                device=rr_cfg.get("device", "cpu"))
     retriever = HybridRetriever(
         chunks, vector_weight=ret_cfg["vector_weight"],
+        reranker=reranker,
+        rerank_pool_factor=rr_cfg.get("pool_factor", 4),
         backend=ret_cfg["embedding_backend"],
         model_name=ret_cfg["embedding_model"],
-        device=ret_cfg["embedding_device"],
+        device=ret_cfg.get("embedding_device", "cpu"),
+        base_url=ret_cfg.get("embedding_base_url", ""),
+        api_key=ret_cfg.get("embedding_api_key", ""),
     )
     return chunks, retriever
 

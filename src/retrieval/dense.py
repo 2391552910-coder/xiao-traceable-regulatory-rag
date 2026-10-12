@@ -1,20 +1,48 @@
 """
 稠密向量检索
 
-默认 BGE-M3（sentence-transformers 本地加载，1024 维，归一化后点积=余弦）。
-embedding_backend=tfidf 时降级为 TF-IDF 余弦（供无 GPU/无法下载模型时的冒烟测试）。
+默认 Qwen3-Embedding（sentence-transformers 本地加载，归一化后点积=余弦）。
+embedding_backend=bge 时兼容 BGE-M3；embedding_backend=tfidf 时降级为
+TF-IDF 余弦（供无法下载模型时的冒烟测试）；embedding_backend=api 时调用
+远端 OpenAI 兼容嵌入服务（vLLM / Xinference / Ollama 的 /v1/embeddings），
+适合模型部署在另一台机器、本机只做评测的场景。
+
 """
+import json
+import urllib.request
+
 import numpy as np
 
 from src.data.clause_splitter import Chunk
 
 
+def _api_embed(texts: list[str], base_url: str, model: str,
+               api_key: str = "", batch_size: int = 32) -> np.ndarray:
+    """调用 OpenAI 兼容 /embeddings 接口，返回归一化向量矩阵"""
+    url = base_url.rstrip("/") + "/embeddings"
+    headers = {"Content-Type": "application/json"}
+    if api_key:
+        headers["Authorization"] = f"Bearer {api_key}"
+    vecs: list[list[float]] = []
+    for i in range(0, len(texts), batch_size):
+        payload = json.dumps({"model": model, "input": texts[i:i + batch_size]}).encode()
+        req = urllib.request.Request(url, data=payload, headers=headers)
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.loads(resp.read())
+        vecs.extend(d["embedding"] for d in sorted(data["data"], key=lambda x: x["index"]))
+    arr = np.asarray(vecs, dtype=np.float32)
+    return arr / np.linalg.norm(arr, axis=1, keepdims=True).clip(min=1e-12)
+
+
 class DenseRetriever:
     def __init__(self, chunks: list[Chunk], backend: str = "bge",
-                 model_name: str = "BAAI/bge-m3", device: str = "cpu"):
+                 model_name: str = "BAAI/bge-m3", device: str = "cpu",
+                 base_url: str = "", api_key: str = "", batch_size: int = 32):
         self.chunks = chunks
         self.backend = backend
-        if backend == "bge":
+        if backend in ("bge", "qwen"):
+            # sentence-transformers 统一加载：BGE-M3 / Qwen3-Embedding-0.6B/4B/8B
+            # Qwen3-Embedding 检索任务无需指令前缀，直接 encode 即可
             from sentence_transformers import SentenceTransformer
             self._model = SentenceTransformer(model_name, device=device)
             self._encode = lambda texts: self._model.encode(
@@ -33,11 +61,16 @@ class DenseRetriever:
             def _encode(texts):
                 return sp_normalize(self._vectorizer.transform(texts))
             self._encode = _encode
+        elif backend == "api":
+            if not base_url:
+                raise ValueError("api 后端需传 base_url，如 http://192.168.1.10:8000/v1")
+            self._encode = lambda texts: _api_embed(
+                texts, base_url, model_name, api_key, batch_size)
         else:
             raise ValueError(f"未知嵌入后端: {backend}")
         self._sparse = backend == "tfidf"
 
-        if backend == "bge":
+        if backend in ("bge", "qwen", "api"):
             self._matrix = self._encode([c.text for c in chunks])
 
     def search(self, query: str, top_k: int = 5) -> list[tuple[Chunk, float]]:

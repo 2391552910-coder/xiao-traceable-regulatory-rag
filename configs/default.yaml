@@ -12,9 +12,19 @@ knowledge_base:
 retrieval:
   top_k: 5
   vector_weight: 0.7      # 混合检索融合权重：w·向量 + (1-w)·BM25
-  embedding_model: BAAI/bge-m3
-  embedding_device: cpu
-  embedding_backend: bge  # bge（sentence-transformers）| tfidf（离线冒烟测试）
+  embedding_model: Qwen/Qwen3-Embedding-4B   # M4/16GB 建议 Q4 量化加载（约2.8GB），跑不动可换 Qwen/Qwen3-Embedding-0.6B
+  embedding_device: mps                        # Apple Silicon 用 mps（Metal），其余用 cpu/cuda
+  embedding_backend: qwen  # qwen | bge | tfidf（离线冒烟测试）| api（远端服务）
+  # —— 模型部署在另一台电脑时改用 api 后端（本机零显存）——
+  # embedding_backend: api
+  # embedding_base_url: http://192.168.1.10:8000/v1   # vLLM/Xinference/Ollama 的 OpenAI 兼容地址
+  # embedding_api_key: ""                              # 远端服务密钥（如有），建议用环境变量
+  reranker:
+    enabled: true
+    model: Qwen/Qwen3-Reranker-0.6B          # fp16 约1.2GB，16GB 统一内存可与 4B embedding 共存
+    device: mps
+    pool_factor: 4          # 精排候选 = top_k × pool_factor
+    # url: http://192.168.1.10:9997/v1       # 填则走远端重排服务，忽略本地加载
   dimension_routing: true # 维度路由检索（本方法）| false（消融对照）
 
 # 大模型（OpenAI 兼容接口）

@@ -1,5 +1,6 @@
 # 检索与嵌入
-sentence-transformers==3.1.1     # BGE-M3 稠密向量（本地加载）
+sentence-transformers==3.1.1     # Qwen3-Embedding / BGE-M3 稠密向量（本地加载）
+transformers>=4.51               # Qwen3-Reranker 交叉编码重排（需 torch）
 jieba==0.42.1                    # BM25 中文分词
 numpy==1.26.4
 pandas==2.2.3

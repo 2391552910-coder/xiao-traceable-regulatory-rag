@@ -32,6 +32,7 @@ def test_clause_splitting():
 def test_retrieval_pipeline():
     cfg = load_config()
     cfg["retrieval"]["embedding_backend"] = "tfidf"
+    cfg["retrieval"]["reranker"]["enabled"] = False
     chunks, retriever = build_knowledge_index(cfg)
     router = make_router(retriever)
     queries = load_retrieval_queries(ROOT / "data" / "annotation" / "retrieval_queries.csv")
@@ -45,6 +46,7 @@ def test_retrieval_pipeline():
 def test_generation_mock_and_alignment():
     cfg = load_config()
     cfg["retrieval"]["embedding_backend"] = "tfidf"
+    cfg["retrieval"]["reranker"]["enabled"] = False
     chunks, retriever = build_knowledge_index(cfg)
     router = make_router(retriever)
     llm = make_llm(cfg, mock=True)

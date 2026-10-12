@@ -7,9 +7,12 @@ from src.retrieval.dense import DenseRetriever
 
 
 class HybridRetriever:
-    def __init__(self, chunks: list[Chunk], vector_weight: float = 0.7, **dense_kw):
+    def __init__(self, chunks: list[Chunk], vector_weight: float = 0.7,
+                 reranker=None, rerank_pool_factor: int = 4, **dense_kw):
         self.chunks = chunks
         self.vector_weight = vector_weight
+        self.reranker = reranker          # 交叉编码精排器（None=不重排）
+        self.rerank_pool_factor = rerank_pool_factor
         self.bm25 = BM25Retriever(chunks)
         self.dense = DenseRetriever(chunks, **dense_kw)
 
@@ -41,5 +44,13 @@ class HybridRetriever:
         for cid, s in kw_norm.items():
             fused[cid] = fused.get(cid, 0.0) + s * (1 - self.vector_weight)
 
-        ranked = sorted(fused.items(), key=lambda x: x[1], reverse=True)[:top_k]
-        return [(by_id[cid], s) for cid, s in ranked]
+        ranked = sorted(fused.items(), key=lambda x: x[1], reverse=True)
+
+        # 交叉编码精排：取融合分前 top_k * rerank_pool_factor 名，用 reranker 重打分
+        if self.reranker is not None and ranked:
+            pool = ranked[:top_k * self.rerank_pool_factor]
+            rr_scores = self.reranker.score(query, [by_id[cid] for cid, _ in pool])
+            ranked = sorted(zip((cid for cid, _ in pool), rr_scores),
+                            key=lambda x: x[1], reverse=True)
+
+        return [(by_id[cid], s) for cid, s in ranked[:top_k]]
