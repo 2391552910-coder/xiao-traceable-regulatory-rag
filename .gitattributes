@@ -1,0 +1,6 @@
+# Frozen evidence hashes require the original bytes on every checkout.
+data/annotation/** -text
+data/knowledge_base/*.txt -text
+src/data/clause_splitter.py -text
+scripts/compile_independent_review.py -text
+results/runs/** -text

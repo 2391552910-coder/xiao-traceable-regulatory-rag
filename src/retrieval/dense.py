@@ -9,6 +9,7 @@ TF-IDF 余弦（供无法下载模型时的冒烟测试）；embedding_backend=a
 
 """
 import json
+import hashlib
 import urllib.request
 
 import numpy as np
@@ -37,16 +38,35 @@ def _api_embed(texts: list[str], base_url: str, model: str,
 class DenseRetriever:
     def __init__(self, chunks: list[Chunk], backend: str = "bge",
                  model_name: str = "BAAI/bge-m3", device: str = "cpu",
-                 base_url: str = "", api_key: str = "", batch_size: int = 32):
+                 base_url: str = "", api_key: str = "", batch_size: int = 32,
+                 query_prompt: str = "", max_seq_length: int | None = None):
+        if batch_size < 1:
+            raise ValueError("batch_size 必须为正数")
+        if max_seq_length is not None and max_seq_length < 1:
+            raise ValueError("max_seq_length 必须为正数")
         self.chunks = chunks
         self.backend = backend
+        self.query_prompt = query_prompt if backend != "tfidf" else ""
+        self.encoding_metadata = {"backend": backend, "batch_size": batch_size,
+                                  "query_prompt": self.query_prompt,
+                                  "query_prompt_sha256": hashlib.sha256(self.query_prompt.encode()).hexdigest(),
+                                  "document_prompt": "", "normalize_embeddings": True}
         if backend in ("bge", "qwen"):
             # sentence-transformers 统一加载：BGE-M3 / 本项目固定 Qwen3-Embedding-0.6B
-            # 当前查询/文档编码共用路径；Qwen3 查询指令须按官方示例校正和受控评测
+            # 查询指令显式配置；文档不添加指令，也不继承模型的默认 prompt。
             from sentence_transformers import SentenceTransformer
             self._model = SentenceTransformer(model_name, device=device)
+            if max_seq_length is not None:
+                if max_seq_length > self._model.max_seq_length:
+                    raise ValueError("max_seq_length 超过模型支持的长度")
+                self._model.max_seq_length = max_seq_length
+            self.encoding_metadata.update(max_seq_length=self._model.max_seq_length,
+                                          device=str(self._model.device),
+                                          model_dtype=str(next(self._model.parameters()).dtype))
+            encode_documents = lambda texts: self._model.encode(
+                texts, prompt="", normalize_embeddings=True, batch_size=batch_size)
             self._encode = lambda texts: self._model.encode(
-                texts, normalize_embeddings=True)
+                texts, prompt=self.query_prompt, normalize_embeddings=True, batch_size=batch_size)
         elif backend == "tfidf":
             from sklearn.feature_extraction.text import TfidfVectorizer
             from sklearn.preprocessing import normalize as sp_normalize
@@ -64,14 +84,19 @@ class DenseRetriever:
         elif backend == "api":
             if not base_url:
                 raise ValueError("api 后端需传 base_url，如 http://192.168.1.10:8000/v1")
-            self._encode = lambda texts: _api_embed(
+            encode_documents = lambda texts: _api_embed(
                 texts, base_url, model_name, api_key, batch_size)
+            self._encode = lambda texts: encode_documents([self.query_prompt + t for t in texts])
         else:
             raise ValueError(f"未知嵌入后端: {backend}")
         self._sparse = backend == "tfidf"
 
         if backend in ("bge", "qwen", "api"):
-            self._matrix = self._encode([c.text for c in chunks])
+            self._matrix = encode_documents([c.text for c in chunks])
+
+    def encode_queries(self, texts: list[str]) -> np.ndarray:
+        """按当前查询指令与批量设置编码查询；文档向量使用独立的无指令路径。"""
+        return self._encode(texts)
 
     def search(self, query: str, top_k: int = 5) -> list[tuple[Chunk, float]]:
         q_vec = self._encode([query])

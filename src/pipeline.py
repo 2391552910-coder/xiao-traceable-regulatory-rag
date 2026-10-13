@@ -41,6 +41,9 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
         device=ret_cfg.get("embedding_device", "cpu"),
         base_url=ret_cfg.get("embedding_base_url", ""),
         api_key=ret_cfg.get("embedding_api_key", ""),
+        batch_size=ret_cfg.get("embedding_batch_size", 32),
+        query_prompt=ret_cfg.get("embedding_query_prompt", ""),
+        max_seq_length=ret_cfg.get("embedding_max_seq_length"),
     )
     return chunks, retriever
 

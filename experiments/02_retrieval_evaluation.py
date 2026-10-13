@@ -1,79 +1,57 @@
-"""
-实验 02：检索质量评测（对应论文 RQ1）
-
-对比检索配置：
-  A. BM25-only          稀疏检索基线
-  B. Dense-only         稠密向量基线（BGE-M3）
-  C. Hybrid             双路融合
-  D. Hybrid + 维度路由   本方法（维度路由子库检索）
-
-指标：Recall@5 / MRR / nDCG@5，输出 CSV + 终端汇总表。
-"""
+"""实验 02：冻结 gold 开发基准上的检索对比；默认不加载重排模型。"""
 import argparse
-import csv
+import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.config import load_config, ROOT
-from src.data.eval_dataset import load_retrieval_queries
-from src.metrics.retrieval_metrics import aggregate, ndcg_at_k, recall_at_k, reciprocal_rank
+from src.data.benchmark import export_review
+from src.metrics.benchmark_eval import (
+    add_evaluation_arguments, evaluate_queries, prepare_evaluation, save_run, summarize,
+)
 from src.pipeline import build_knowledge_index, make_router
 
 
-def evaluate_config(name: str, queries, search_fn, top_k: int = 5) -> dict:
-    rows = []
-    for q in queries:
-        hits = search_fn(q)
-        ranked_ids = [c.chunk_id for c, _ in hits]
-        rows.append({
-            "query_id": q.query_id,
-            "recall@5": recall_at_k(ranked_ids, q.relevant, top_k),
-            "mrr": reciprocal_rank(ranked_ids, q.relevant),
-            "ndcg@5": ndcg_at_k(ranked_ids, q.relevant, top_k),
-        })
-    summary = aggregate(rows)
-    summary["config"] = name
-    return summary
-
-
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--backend", default=None, help="嵌入后端 bge/tfidf")
-    parser.add_argument("--output", default=str(ROOT / "results" / "retrieval_eval.csv"))
+    parser = argparse.ArgumentParser(description=__doc__)
+    add_evaluation_arguments(parser)
     args = parser.parse_args()
-
-    cfg = load_config()
-    if args.backend:
-        cfg["retrieval"]["embedding_backend"] = args.backend
+    cfg, benchmark, output = prepare_evaluation(args, "retrieval_eval")
     top_k = cfg["retrieval"]["top_k"]
-
-    chunks, retriever = build_knowledge_index(cfg)
+    if cfg["knowledge_base"]["chunking"] != "clause":
+        raise ValueError("主检索对比使用 clause；滑窗对比请运行实验 04")
+    _, retriever = build_knowledge_index(cfg)
     router = make_router(retriever)
-    queries = load_retrieval_queries(ROOT / "data" / "annotation" / "retrieval_queries.csv")
-    print(f"知识库块数={len(chunks)}，评测查询数={len(queries)}")
-
-    results = [
-        evaluate_config("BM25-only", queries,
-                        lambda q: retriever.bm25.search(q.query, top_k)),
-        evaluate_config("Dense-only", queries,
-                        lambda q: retriever.dense.search(q.query, top_k)),
-        evaluate_config("Hybrid", queries,
-                        lambda q: retriever.search(q.query, top_k)),
-        evaluate_config("Hybrid+Routing (Ours)", queries,
-                        lambda q: router.search(q.dimension, q.query, top_k, routed=True)),
+    reranker = retriever.reranker
+    retriever.reranker = None
+    setups = [
+        ("BM25-only", lambda q: retriever.bm25.search(q.query, top_k), False, False),
+        ("Dense-only", lambda q: retriever.dense.search(q.query, top_k), False, False),
+        ("Hybrid", lambda q: retriever.search(q.query, top_k), False, False),
+        ("Hybrid+QueryExpansion", lambda q: router.search(q.dimension, q.query, top_k, routed=False), True, False),
+        ("Hybrid+Routing (Ours)", lambda q: router.search(q.dimension, q.query, top_k, routed=True), True, True),
     ]
-
-    with open(args.output, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["config", "recall@5", "mrr", "ndcg@5"])
-        writer.writeheader()
-        writer.writerows(results)
-
-    print(f"\n{'配置':<28}{'Recall@5':>10}{'MRR':>10}{'nDCG@5':>10}")
-    for r in results:
-        print(f"{r['config']:<28}{r['recall@5']:>10.3f}{r['mrr']:>10.3f}{r['ndcg@5']:>10.3f}")
-    print(f"\n结果已保存：{args.output}")
+    rows = []
+    for name, search, expansion, routing in setups:
+        rows.extend(evaluate_queries(name, benchmark, search, top_k,
+                    cfg["evaluation"]["coverage_threshold"], chunking="clause",
+                    routing=routing, query_expansion=expansion, reranker=False))
+    if reranker is not None:
+        retriever.reranker = reranker
+        for name, search, expansion, routing in setups[2:]:
+            rows.extend(evaluate_queries(name + " +Reranker", benchmark, search, top_k,
+                        cfg["evaluation"]["coverage_threshold"], chunking="clause",
+                        routing=routing, query_expansion=expansion, reranker=True))
+    candidates = {q.query_id: set() for q in benchmark.queries}
+    for row in rows:
+        candidates[row["query_id"]].update(json.loads(row["ranked_ids"]))
+    export_review(benchmark, output.with_name(output.stem + "_human_review.csv"), candidates)
+    save_run(output, rows, benchmark, cfg)
+    for summary in summarize(rows, top_k):
+        print(f"{summary['config']:<32} Recall@{top_k}={summary[f'recall@{top_k}']:.4f} "
+              f"MRR@{top_k}={summary['mrr']:.4f} nDCG@{top_k}={summary[f'ndcg@{top_k}']:.4f}")
+    print(f"输出：{output}（含逐查询明细、分维度指标、成对 bootstrap CI、审计与运行元信息）")
 
 
 if __name__ == "__main__":

@@ -4,6 +4,7 @@ __pycache__/
 .env
 results/*.json
 results/*.csv
+results/runs/
 !results/.gitkeep
 .idea/
 .vscode/

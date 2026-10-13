@@ -1,0 +1,22 @@
+name: Frozen benchmark checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-eval.txt
+      - run: pip install -r requirements-eval.txt
+      - run: python -m pytest -q
+      - run: python scripts/compile_independent_review.py --check
+      - run: python scripts/audit_benchmark.py --output-dir results/runs/ci_audit
+      - uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-audit
+          path: results/runs/ci_audit/

@@ -1,0 +1,409 @@
+{
+  "tested_at_utc": "2026-10-13T07:54:29.971641+00:00",
+  "status": "passed",
+  "model_loaded": true,
+  "inference_executed": true,
+  "model": "/workspace/models/Qwen3-Embedding-0.6B",
+  "device": "cpu",
+  "backend": "qwen",
+  "scope": "integration_only; 12 selected chunks, 4 development queries",
+  "sample_selection": "two frozen direct positives per query plus four distractors",
+  "quality_benchmark": false,
+  "reranker_tested": false,
+  "query_instruction_used": false,
+  "batch_size": 1,
+  "review_source_sha256": "cddda009cc017bc372e6f8b4311a5634eb167fbdd37dd52b4b729eb2ac60b7a1",
+  "baseline_hashes": {
+    "queries_sha256": "fd3fb72066cbbd6b2ee0c00e053cf1da0a990b8109b1c6c4226c218243ccfceb",
+    "corpus_sha256": "0653487765c3d14875e5deebe64248b1b6b886ce1e5f7cb878b016c7ec2911ba",
+    "annotation_sha256": "d0b6eb3de6aee78e8f8611f589771787c185dbefec2063260e508acdef189bf7",
+    "splitter_sha256": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546"
+  },
+  "index_seconds": 9.828,
+  "document_vector_shape": [
+    12,
+    1024
+  ],
+  "document_norm_range": [
+    0.9999998807907104,
+    1.0000001192092896
+  ],
+  "query_vector_shape": [
+    4,
+    1024
+  ],
+  "query_norm_range": [
+    1.0,
+    1.0
+  ],
+  "self_retrieval": [
+    {
+      "chunk_id": "DOC007-C086",
+      "top1": "DOC007-C086",
+      "score": 1.0,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC100-C014",
+      "top1": "DOC100-C014",
+      "score": 0.9999998807907104,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC003-C001",
+      "top1": "DOC003-C001",
+      "score": 1.0,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC120-C044",
+      "top1": "DOC120-C044",
+      "score": 1.0,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC004-C004",
+      "top1": "DOC004-C004",
+      "score": 0.9999999403953552,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC004-C005",
+      "top1": "DOC004-C005",
+      "score": 0.9999999403953552,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC136-C015",
+      "top1": "DOC136-C015",
+      "score": 1.0,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC136-C018",
+      "top1": "DOC136-C018",
+      "score": 1.0000001192092896,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC007-C057",
+      "top1": "DOC007-C057",
+      "score": 1.000000238418579,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC007-C059",
+      "top1": "DOC007-C059",
+      "score": 1.0000001192092896,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC007-C001",
+      "top1": "DOC007-C001",
+      "score": 0.9999999403953552,
+      "passed": true
+    },
+    {
+      "chunk_id": "DOC004-C001",
+      "top1": "DOC004-C001",
+      "score": 1.0000001192092896,
+      "passed": true
+    }
+  ],
+  "retrieval_results": [
+    {
+      "query_id": "Q01",
+      "query": "上市公司年度报告的披露时限",
+      "method": "dense",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC100-C014",
+          "score": 0.7778045535087585,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C086",
+          "score": 0.6964043378829956,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 0.44990968704223633,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q01",
+      "query": "上市公司年度报告的披露时限",
+      "method": "bm25",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC100-C014",
+          "score": 4.4780047880118135,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C086",
+          "score": 2.7459698486308897,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 1.8931708950817703,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q01",
+      "query": "上市公司年度报告的披露时限",
+      "method": "hybrid",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC100-C014",
+          "score": 1.0,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C086",
+          "score": 0.8107061675098305,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 0.531736101409391,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q11",
+      "query": "独立董事的独立性要求",
+      "method": "dense",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 0.678058385848999,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC120-C044",
+          "score": 0.6627464294433594,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C004",
+          "score": 0.4334551990032196,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q11",
+      "query": "独立董事的独立性要求",
+      "method": "bm25",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 6.726182775229154,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC120-C044",
+          "score": 6.699160337972024,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C057",
+          "score": 0.25600682428209254,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q11",
+      "query": "独立董事的独立性要求",
+      "method": "hybrid",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 1.0,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC120-C044",
+          "score": 0.9829873067976552,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C004",
+          "score": 0.45753590557809454,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q21",
+      "query": "内部控制的目标与原则",
+      "method": "dense",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC004-C004",
+          "score": 0.7261701822280884,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C005",
+          "score": 0.5521597862243652,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C001",
+          "score": 0.4792994558811188,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q21",
+      "query": "内部控制的目标与原则",
+      "method": "bm25",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC004-C005",
+          "score": 10.887961729270621,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C004",
+          "score": 7.222072903875175,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC003-C001",
+          "score": 2.9850336046504977,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q21",
+      "query": "内部控制的目标与原则",
+      "method": "hybrid",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC004-C004",
+          "score": 0.8989924216336949,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C005",
+          "score": 0.8322607011639225,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC004-C001",
+          "score": 0.4620261576802121,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q31",
+      "query": "证券市场禁入的适用情形",
+      "method": "dense",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC136-C015",
+          "score": 0.7692848443984985,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC136-C018",
+          "score": 0.764114260673523,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C059",
+          "score": 0.6176735162734985,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q31",
+      "query": "证券市场禁入的适用情形",
+      "method": "bm25",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC136-C018",
+          "score": 5.295428465550507,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC136-C015",
+          "score": 4.6691550298929965,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C057",
+          "score": 2.523615458860391,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    },
+    {
+      "query_id": "Q31",
+      "query": "证券市场禁入的适用情形",
+      "method": "hybrid",
+      "top_k": 3,
+      "hits": [
+        {
+          "chunk_id": "DOC136-C018",
+          "score": 0.9952950995540373,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC136-C015",
+          "score": 0.9645199568043412,
+          "selected_direct_positive": true
+        },
+        {
+          "chunk_id": "DOC007-C059",
+          "score": 0.6937930988677109,
+          "selected_direct_positive": false
+        }
+      ],
+      "top1_selected_direct_positive": true
+    }
+  ],
+  "artifacts_sha256": {
+    "document_vectors.npy": "5f57f112e963f278d44eb745a4cec60e2c2e0c865d8494a6fc8cdf8e72a5b97b",
+    "query_vectors.npy": "c4333a5921493c4b7f78e6af792353eb7327ad3d93c25b97a38ab9ca9f44a985",
+    "sample.json": "3f7c8a03b97f50f0dbf8400fc3663d46f8226b79e6a3c3870fb3e7eaee86bcc9"
+  },
+  "elapsed_seconds": 19.868
+}
