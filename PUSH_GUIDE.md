@@ -7,6 +7,7 @@
 - GitHub：[2391552910-coder/xiao-traceable-regulatory-rag](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag)。
 - 默认分支：main。当前共享工作区：/workspace/xiao-traceable-regulatory-rag。
 - 任务：完成支撑大论文的小论文算法与实验，目标为中科院二区计算机类期刊。
+- 主机限制：本地 Embedding 与 Reranker 均固定 0.6B，不要求 4B/8B；生成与 judge 独立配置，默认使用 API 路径。模型微调先核验训练资源，不能从推理可运行推断训练可运行。
 - 对齐前代码/数据快照：b95aff7。本轮变更为项目说明和研究规范，不代表正式实验完成。
 
 旧文档中的 traceable-regulatory-rag 仓库名、/mnt/agents/work 路径、固定推送批次和“只能 MCP/本地无凭据”的断言均已过时。后续以当前 git remote、工作区和实际可用工具为准，不能据历史会话假设连接能力。

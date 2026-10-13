@@ -3,16 +3,17 @@
 输入 07 生成的 data/annotation/synth_eval_embedding.csv，分两段测评：
   A. Embedding 段：仅用稠密/稀疏检索，计算 Recall@1/5/10、MRR、nDCG@10
   B. Reranker 段：取检索 top-20 作为候选池，用交叉编码器重排后再算同一组指标
-两段差值即 reranker 带来的增益，可直接写进论文实验表。
+两段差值用于诊断重排增益；模板集属于探索数据，不能直接充当正式论文结论。
+主机配置限定 Embedding/Reranker 均为 0.6B；真实模型运行前须完成官方评分校正。
 
 用法（Mac 本地）：
-  # 1) 基线 embedding 测评（Qwen3-Embedding-4B，mps）
+  # 1) 基线 embedding 测评（Qwen3-Embedding-0.6B，mps）
   python3 experiments/08_eval_embedding_rerank.py --backend qwen \
-      --model Qwen/Qwen3-Embedding-4B --device mps --no-rerank
+      --model Qwen/Qwen3-Embedding-0.6B --device mps --no-rerank
 
   # 2) embedding + reranker 完整测评
   python3 experiments/08_eval_embedding_rerank.py --backend qwen \
-      --model Qwen/Qwen3-Embedding-4B --device mps \
+      --model Qwen/Qwen3-Embedding-0.6B --device mps \
       --reranker-model Qwen/Qwen3-Reranker-0.6B
 
   # 3) 离线冒烟（无模型下载）：TF-IDF + 不重排
@@ -20,7 +21,7 @@
 
   # 4) 模型部署在另一台电脑：api 后端直连远端服务（本机零显存占用）
   python3 experiments/08_eval_embedding_rerank.py --backend api \
-      --base-url http://192.168.1.10:8000/v1 --model Qwen3-Embedding-4B \
+      --base-url http://192.168.1.10:8000/v1 --model Qwen3-Embedding-0.6B \
       --reranker-url http://192.168.1.10:9997/v1 --reranker-model Qwen3-Reranker-0.6B
 
 输出：
@@ -103,8 +104,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="合成集测评 embedding 与 reranker")
     ap.add_argument("--queries", default="data/annotation/synth_eval_embedding.csv")
     ap.add_argument("--backend", default="tfidf", choices=["tfidf", "bge", "qwen", "api"])
-    ap.add_argument("--model", default="Qwen/Qwen3-Embedding-4B",
-                    help="api 后端时填远端服务的模型名，如 Qwen3-Embedding-4B")
+    ap.add_argument("--model", default="Qwen/Qwen3-Embedding-0.6B",
+                    help="api 后端时填远端服务的模型名，如 Qwen3-Embedding-0.6B")
     ap.add_argument("--device", default="cpu")
     ap.add_argument("--base-url", default="", help="api 后端：远端嵌入服务根地址，如 http://192.168.1.10:8000/v1")
     ap.add_argument("--api-key", default="", help="远端服务密钥（如有），也可走环境变量 EMB_API_KEY")

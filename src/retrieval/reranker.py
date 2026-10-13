@@ -1,11 +1,12 @@
 """
 交叉编码重排器（reranker）
 
-默认 Qwen3-Reranker-0.6B：query-passage 对经序列分类头输出相关性
-logit，sigmoid 后为 [0,1] 分数。用于混合检索融合后的精排阶段。
+默认候选 Qwen3-Reranker-0.6B，用于混合检索后的重排。
+当前本地实现仍采用序列分类头，尚待按官方受支持的输入和评分路径校正，
+完成一致性实测前不用于正式论文结论。
 
-显存参考（fp16）：0.6B ≈ 1.2GB，可在 16GB Apple Silicon 上与
-4B embedding 共存；device 建议 mps（Metal），cpu 亦可。
+本项目本地 Embedding 与 Reranker 均限定 0.6B；device 可用 mps/cpu/cuda。
+权重精度、batch、截断与峰值内存须实测，不以理论权重大小保证主机可运行。
 
 模型部署在另一台机器时，用 APIReranker 走 HTTP 调用，接口与本地
 Reranker 完全一致（score(query, chunks) -> list[float]），自动适配

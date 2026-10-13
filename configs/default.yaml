@@ -1,7 +1,8 @@
 # 默认研究原型配置（任务对齐：2026-10-13）
 # 总任务：支撑大论文的可追溯监管评价小论文，投稿目标为中科院二区计算机类期刊。
 # 正式实验与待校正项见 docs/项目任务与验收.md、docs/实验设计与流程.md。
-# 本文件指定候选设置，不表示模型已实测；先冻结权重，微调按开发集诊断决定。
+# 主机约束：Qwen3 Embedding 与 Reranker 均使用 0.6B，不要求本地 4B/8B。
+# 本文件指定待实测设置；先冻结权重，微调按开发集诊断和训练资源决定。
 seed: 42
 
 # 知识库
@@ -15,7 +16,7 @@ knowledge_base:
 retrieval:
   top_k: 5
   vector_weight: 0.7      # w·向量 + (1-w)·BM25；只在开发集选权重
-  embedding_model: Qwen/Qwen3-Embedding-4B   # 冻结权重的候选模型；当前加载器未实现 Q4，显存须实测
+  embedding_model: Qwen/Qwen3-Embedding-0.6B   # 主机固定 0.6B；当前加载器未实现 Q4，峰值内存须实测
   embedding_device: mps                        # 按运行设备选择 mps/cpu/cuda，并记录模型 revision 和截断
   embedding_backend: qwen  # qwen | bge | tfidf（仅联调）| api；查询指令须统一
   # —— 模型部署在另一台电脑时改用 api 后端（本机零显存）——

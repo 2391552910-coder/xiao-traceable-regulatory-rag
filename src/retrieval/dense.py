@@ -41,8 +41,8 @@ class DenseRetriever:
         self.chunks = chunks
         self.backend = backend
         if backend in ("bge", "qwen"):
-            # sentence-transformers 统一加载：BGE-M3 / Qwen3-Embedding-0.6B/4B/8B
-            # Qwen3-Embedding 检索任务无需指令前缀，直接 encode 即可
+            # sentence-transformers 统一加载：BGE-M3 / 本项目固定 Qwen3-Embedding-0.6B
+            # 当前查询/文档编码共用路径；Qwen3 查询指令须按官方示例校正和受控评测
             from sentence_transformers import SentenceTransformer
             self._model = SentenceTransformer(model_name, device=device)
             self._encode = lambda texts: self._model.encode(
