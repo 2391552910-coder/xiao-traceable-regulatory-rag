@@ -9,3 +9,4 @@ data/processed/** -text -whitespace
 data/heldout/** -text -whitespace
 data/provenance/** -text -whitespace
 docs/review_20261013/** -text -whitespace
+data/operator_handoff/** -text -whitespace
