@@ -1,0 +1,166 @@
+{
+  "status": "blocked_no_verified_source_pdfs",
+  "documents_processed": 0,
+  "candidate_count": 0,
+  "verified_fact_count": 0,
+  "formal_data_ready": false,
+  "unavailable": [
+    {
+      "stock_code": "600318.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "601377.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "601519.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002008.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600172.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "300054.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002297.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002169.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002221.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002264.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "000802.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600156.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600598.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "300119.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002679.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600519.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600036.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "601318.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "300750.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002594.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "000333.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600276.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600900.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "000002.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600031.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "688981.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "300760.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002415.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600887.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600048.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "601088.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "603259.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "601668.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600690.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "601766.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002475.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002230.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "600570.SH",
+      "source_status": "not_attempted_source_preflight_failed"
+    },
+    {
+      "stock_code": "002352.SZ",
+      "source_status": "not_attempted_source_preflight_failed"
+    }
+  ],
+  "reports": []
+}

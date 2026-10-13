@@ -1,0 +1,108 @@
+{
+  "repository": "anda-ren/a-share-fin-reports",
+  "revision": "508b927c918fd9cb9a8b6d5b2e4479aa59f83941",
+  "original_pdf_count": 0,
+  "usage": "unverified_auxiliary_only; not a replacement for original PDF provenance",
+  "converted_documents": [
+    {
+      "stock_code": "600318.SH",
+      "name": "新力金融",
+      "archive_revision": "508b927c918fd9cb9a8b6d5b2e4479aa59f83941",
+      "source_kind": "third_party_converted_markdown",
+      "original_pdf_recovered": false,
+      "formal_data_ready": false,
+      "files": {
+        "600318/2025/1222924117/1222924117_meta.json": {
+          "sha256": "4e054277f525546cd90a66948fd713134bf30be2dd1798cd83c88990480d5944",
+          "bytes": 541104,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/600318/2025/1222924117/1222924117_meta.json"
+        },
+        "600318/2025/1222924117/1222924117.md": {
+          "sha256": "26d01eefcf3984630742a03bafd9259d6133c6a52e0405c215d68e4a7183cba7",
+          "bytes": 644331,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/600318/2025/1222924117/1222924117.md"
+        }
+      }
+    },
+    {
+      "stock_code": "600519.SH",
+      "name": "贵州茅台",
+      "archive_revision": "508b927c918fd9cb9a8b6d5b2e4479aa59f83941",
+      "source_kind": "third_party_converted_markdown",
+      "original_pdf_recovered": false,
+      "formal_data_ready": false,
+      "files": {
+        "600519/2025/1222993920/1222993920_meta.json": {
+          "sha256": "a9ad4075c4b2525ea61060bdfe131f7718f0463f9b8bde285c77920e9629d03c",
+          "bytes": 409406,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/600519/2025/1222993920/1222993920_meta.json"
+        },
+        "600519/2025/1222993920/1222993920.md": {
+          "sha256": "f1ddb9101ba105da97982f1e157b1838eba715322c3addf5920f9de5ed3dfd9d",
+          "bytes": 581739,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/600519/2025/1222993920/1222993920.md"
+        }
+      }
+    },
+    {
+      "stock_code": "300750.SZ",
+      "name": "宁德时代",
+      "archive_revision": "508b927c918fd9cb9a8b6d5b2e4479aa59f83941",
+      "source_kind": "third_party_converted_markdown",
+      "original_pdf_recovered": false,
+      "formal_data_ready": false,
+      "files": {
+        "300750/2025/1222806982/1222806982_meta.json": {
+          "sha256": "55802a2f2ebd507610140b3171bb747df023605d5befb6a5d9255fe1c51a6b46",
+          "bytes": 504280,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/300750/2025/1222806982/1222806982_meta.json"
+        },
+        "300750/2025/1222806982/1222806982.md": {
+          "sha256": "f786c0c3194426bdc4eece88161bd0d0578c00ee7f13c3b84c5a416759cbafed",
+          "bytes": 741786,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/300750/2025/1222806982/1222806982.md"
+        }
+      }
+    },
+    {
+      "stock_code": "002594.SZ",
+      "name": "比亚迪",
+      "archive_revision": "508b927c918fd9cb9a8b6d5b2e4479aa59f83941",
+      "source_kind": "third_party_converted_markdown",
+      "original_pdf_recovered": false,
+      "formal_data_ready": false,
+      "files": {
+        "002594/2025/1222881496/1222881496_meta.json": {
+          "sha256": "4d1695e3ee72e86edef4e95994e458859b3fa3f2cb546141d86444c895cf8c08",
+          "bytes": 599449,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/002594/2025/1222881496/1222881496_meta.json"
+        },
+        "002594/2025/1222881496/1222881496.md": {
+          "sha256": "2244d2ff34e82f4ce6e1d3891ce73b9ad2a2e19d5c19ee7946dc9990b3f1c49e",
+          "bytes": 890023,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/002594/2025/1222881496/1222881496.md"
+        }
+      }
+    },
+    {
+      "stock_code": "002415.SZ",
+      "name": "海康威视",
+      "archive_revision": "508b927c918fd9cb9a8b6d5b2e4479aa59f83941",
+      "source_kind": "third_party_converted_markdown",
+      "original_pdf_recovered": false,
+      "formal_data_ready": false,
+      "files": {
+        "002415/2025/1223153152/1223153152_meta.json": {
+          "sha256": "ebe42ac2c3a1452b81f69e9486bb6c1712e74815581680a6fcc1d7e026fb5fde",
+          "bytes": 620897,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/002415/2025/1223153152/1223153152_meta.json"
+        },
+        "002415/2025/1223153152/1223153152.md": {
+          "sha256": "459f149a41d5a56258e2b092ddbcb61548a8329461aa0155dbec07aa3e44d55b",
+          "bytes": 764814,
+          "url": "https://github.com/anda-ren/a-share-fin-reports/blob/508b927c918fd9cb9a8b6d5b2e4479aa59f83941/002415/2025/1223153152/1223153152.md"
+        }
+      }
+    }
+  ]
+}
