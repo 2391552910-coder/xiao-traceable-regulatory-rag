@@ -1,0 +1,9 @@
+{
+  "structural_integrity": "passed",
+  "semantic_or_temporal_certification": false,
+  "documents": 309,
+  "chunks": 5410,
+  "blind_review_pairs": 1681,
+  "heldout_candidates": 24,
+  "approved_final_test_queries": 0
+}

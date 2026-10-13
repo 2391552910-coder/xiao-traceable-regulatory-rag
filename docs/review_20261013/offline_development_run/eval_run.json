@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "status": "provisional",
+  "usage": "development_only",
+  "benchmark_hashes": {
+    "queries_sha256": "fd3fb72066cbbd6b2ee0c00e053cf1da0a990b8109b1c6c4226c218243ccfceb",
+    "corpus_sha256": "0653487765c3d14875e5deebe64248b1b6b886ce1e5f7cb878b016c7ec2911ba",
+    "annotation_sha256": "d0b6eb3de6aee78e8f8611f589771787c185dbefec2063260e508acdef189bf7",
+    "splitter_sha256": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546"
+  },
+  "benchmark_id": "regulatory-gold-ai-20261013",
+  "config": {
+    "seed": 42,
+    "knowledge_base": {
+      "path": "/workspace/xiao-integrated/data/knowledge_base",
+      "chunking": "clause",
+      "window_size": 512,
+      "window_overlap": 64
+    },
+    "retrieval": {
+      "top_k": 5,
+      "vector_weight": 0.7,
+      "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+      "embedding_device": "cpu",
+      "embedding_backend": "tfidf",
+      "embedding_batch_size": 1,
+      "embedding_query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+      "reranker": {
+        "enabled": false,
+        "model": "Qwen/Qwen3-Reranker-0.6B",
+        "device": "cpu",
+        "batch_size": 1,
+        "max_length": 8192,
+        "pool_factor": 4
+      },
+      "dimension_routing": true
+    },
+    "llm": {
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key": "[REDACTED]",
+      "model": "deepseek-chat",
+      "temperature": 0.2,
+      "mock": true
+    },
+    "generation": {
+      "modes": [
+        "no_rag",
+        "naive_rag",
+        "ours"
+      ],
+      "judge_model": "deepseek-chat",
+      "judge_rubric": [
+        "faithfulness",
+        "coverage",
+        "professionalism"
+      ]
+    },
+    "experiment": {
+      "retrieval_repeats": 1,
+      "generation_repeats": 3,
+      "results_dir": "results"
+    },
+    "evaluation": {
+      "queries_path": "data/annotation/retrieval_queries_gold.csv",
+      "manifest_path": "data/annotation/benchmark_manifest.json",
+      "coverage_threshold": 0.5,
+      "bootstrap_samples": 2000
+    }
+  },
+  "command": [
+    "experiments/02_retrieval_evaluation.py",
+    "--backend",
+    "tfidf",
+    "--output",
+    "results/runs/model_interface_offline_20261013/eval.csv"
+  ],
+  "model_execution_metadata": {
+    "embedding": {
+      "backend": "tfidf",
+      "batch_size": 1,
+      "query_prompt": "",
+      "query_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "document_prompt": "",
+      "normalize_embeddings": true
+    },
+    "reranker": null,
+    "local_weight_lifecycle": []
+  },
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "jieba": "0.42.1",
+    "sentence-transformers": null,
+    "transformers": null,
+    "torch": null
+  },
+  "git_head": "fba017153d0e2f8e955c29db503880b7c9125e93",
+  "git_dirty": true,
+  "code_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/alignment/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/alignment/citation_alignment.py": "9b36320016cd9a548d56f8e07296acd164a50002dd6c0cde513868fea3b873d2",
+    "src/config.py": "069e4e51e644ef040c45df891f19d0c9655af6dd08e600281607eefe759901e3",
+    "src/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/data/annual_facts.py": "e599956456bf5bc3aa8b01c65c19c896a35cef56828485141de29e071610d740",
+    "src/data/annual_reports.py": "5ea8d1254e0fedfccf7c1459490aba6440f5ad846270e0dc34900f4dec4857fe",
+    "src/data/benchmark.py": "16637ed77cb46d9d34d3398f72dc5170d724e94b51e8217ffdc998c0e935bac6",
+    "src/data/clause_splitter.py": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546",
+    "src/data/corpus_v2.py": "9775c174dccf58032351ea7fe504a282908bf56eea4af4f883e1dfde29d0a837",
+    "src/data/eval_dataset.py": "35620dc3b902538994fc1315c1e8ff15f888d88aea6619d7f0a7f50583908cdb",
+    "src/data/holdout.py": "5ebd535fa858dcba0fcebd77e4b995eed57d4509c15cf072b0dafff814c4ec28",
+    "src/data/holdout_v2.py": "77fab34425928cf6e95eec99490c20d063c7564e4c30755c3bd3f56c5373e8be",
+    "src/data/knowledge_loader.py": "6b0da79ba246c648641aa68a1bacb12c77bf2b2e04ce05bc0cf4a3778c25e7e3",
+    "src/generation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/generation/evaluator.py": "7f1f0b851909496d3589a027d8cf5263a0c18143b4dec27199c015c7b455ec26",
+    "src/generation/llm_client.py": "bd40b58d9ebf9e17a9a21c9a20f853a10e6367caf94121b5834a25836ce05689",
+    "src/generation/prompts.py": "8cd58786b4bec3583264d66b10dc21a0ac14f0a1bff9ad01ad7201d4c8efe618",
+    "src/metrics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/metrics/benchmark_eval.py": "a3af3b5ed8f0e2de790f29bc2bcfa7ef70061aa889b3db5c97c9d6981db2c9d3",
+    "src/metrics/generation_metrics.py": "9bbb6f32b84cd21b9e21d30a47c14c25a24b57c0160e5e0c643a40eff18730a7",
+    "src/metrics/retrieval_metrics.py": "af4d5f070dd7dd13ca87294ad65bf99c7803bb44f1815d12b5513d32cacf5915",
+    "src/metrics/stats.py": "81629fdadb101d305daa15f088b1b81fd6a2f3afe54e573f381db18fb0e0729a",
+    "src/pipeline.py": "d3cc2682f4de43dc30dacb52044a7354a60073597ca922f63932a36e9efe16cf",
+    "src/retrieval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/retrieval/bm25.py": "ec7d2fe78b87082a32c59fcddb987ce4fc1c6c5369e2048877c9e2703527b221",
+    "src/retrieval/dense.py": "765aac7a48ef98b3507c50888d6674b0c42a619d7bc641c348d289a98fcf8b6e",
+    "src/retrieval/hybrid.py": "8d6506ebfcdc64ff616b06131436895a9b16779e6e1938e7ce233db4121cd0cf",
+    "src/retrieval/model_runtime.py": "774003494bdd347ec4a62e0c92afe06677e5ea20ddf5e46ba251da0da31a0a80",
+    "src/retrieval/reranker.py": "6ebec63106c18c20100cdd925c4362b32f9c86e26fcb83027788099de706d2da",
+    "src/retrieval/router.py": "4df96dc6c744cc59e18e3a469a750c52e3e39ef64a89a1e0d6ad3a7907c372db",
+    "experiments/01_build_knowledge_base.py": "c5f0178d4a59cfdb1d3daadb95c05340a4f3f34afaef8d88ff9bdec458e8a407",
+    "experiments/02_retrieval_evaluation.py": "8bfd660d1cf98bd45b1362ab68ab04d06ef0664960b6d8641ebb9f53c7eaa128",
+    "experiments/03_generation_evaluation.py": "57919464a4e806eaed3f9b4385d26d0c39a046858496195d1b8721c5a7996ca0",
+    "experiments/04_ablation_study.py": "ba403619b02158c3c337f744c505e60e317e16af6261ac0385fd9aea4ecfd039",
+    "experiments/05_statistical_tests.py": "42e0350a661b2954cb8e881fb6c6c313a675f5c234e541975ca4bde5720c720a",
+    "experiments/06_make_figures.py": "77209ab5c74d876bb2bd205940bcaf678c6f30fd47ae566db164346fbccd710f",
+    "experiments/07_synth_eval_dataset.py": "119497f0ae25d36cfc963156521aa8c4824d70e7ff1bab09971fcf3ab267e1ba",
+    "experiments/08_eval_embedding_rerank.py": "589bd8196fc5f5943974cc165b84967214297ae1ae0f44a8e6830ebfa4942476"
+  },
+  "tokenizer": "jieba",
+  "effective_embedding_model": "TF-IDF",
+  "metrics": {
+    "cutoff": 5,
+    "mrr": "MRR@5 (检索列表截断)",
+    "aggregation": "query_macro_mean",
+    "bootstrap_unit": "query",
+    "bootstrap_samples": 2000,
+    "coverage_threshold": 0.5,
+    "window_matching": "同文档源跨度累计覆盖 gold 可见文本；重叠去重"
+  },
+  "artifacts_sha256": {
+    "summary": "083bc000b1069359f2e2df6b6f2952e7157a1b8ab25ac78900b7f784a2e938eb",
+    "detail": "6e30d3e62a99f6b6733c266b6aced12f3212385f2971b5aee42b66f0393dfa2d",
+    "by_dimension": "e08fdc0c2ecca8e800ff020e7f12ae7cae694de5623990766517bda69b8bd11e",
+    "bootstrap": "69a16c36992e5faf16d1d35fb39378edabad131ee767a297657273ff400661fe",
+    "audit": "5d49c9b7bff8d9c753ca85129f142aec4a4e18002df3679a2c35cec8a9f91ebe",
+    "human_review": "dcdd3ffab1d45a6903b094b9abafae0a6351ba5f98db7a4c524e091187a19d89"
+  }
+}

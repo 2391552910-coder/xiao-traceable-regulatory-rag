@@ -1,0 +1,1681 @@
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC005-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC007-V2-0080", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC027-V2-0041", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC044-V2-0011", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC045-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC059-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC082-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC083-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC090-V2-0076", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC097-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC097-V2-0061", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC100-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC100-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC100-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC100-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC100-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC110-V2-0072", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC116-V2-0038", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC120-V2-0062", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC121-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC122-V2-0042", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC128-V2-0119", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC128-V2-0154", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC129-V2-0026", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC133-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC163-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC165-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC194-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC215-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC223-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC292-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC296-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC300-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC335-V2-0073", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC335-V2-0090", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC342-V2-0118", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC343-V2-0117", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q01", "chunk_id": "DOC343-V2-0152", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC005-V2-0041", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC005-V2-0141", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0057", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0075", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0078", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0103", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0107", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0132", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC006-V2-0144", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC007-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC007-V2-0030", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC007-V2-0079", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC011-V2-0013", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC090-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC090-V2-0063", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC094-V2-0039", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC094-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC098-V2-0017", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC099-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC100-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC107-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC107-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC110-V2-0004", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC110-V2-0059", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC113-V2-0039", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC113-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC116-V2-0039", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC116-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC120-V2-0023", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC335-V2-0005", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC335-V2-0060", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC342-V2-0057", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC342-V2-0095", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q02", "chunk_id": "DOC343-V2-0141", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC005-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC006-V2-0120", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC007-V2-0081", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC007-V2-0082", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC007-V2-0131", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC015-V2-0064", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC032-V2-0016", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC090-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC090-V2-0076", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC095-V2-0054", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC097-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC097-V2-0041", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC097-V2-0043", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC098-V2-0019", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC098-V2-0021", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0009", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0024", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0026", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0033", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0035", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0039", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0053", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC100-V2-0056", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC110-V2-0004", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC110-V2-0072", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC197-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC200-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC205-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC223-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC264-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC299-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC335-V2-0005", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q03", "chunk_id": "DOC335-V2-0073", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0101", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0103", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC005-V2-0155", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC007-V2-0015", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC011-V2-0012", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0017", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0033", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0054", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC012-V2-0071", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC030-V2-0005", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC046-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC046-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC094-V2-0048", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC094-V2-0049", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC098-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC100-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC100-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC113-V2-0048", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC113-V2-0049", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC116-V2-0048", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC116-V2-0049", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC133-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC136-V2-0016", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC181-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC190-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC210-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC261-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC262-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC262-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q04", "chunk_id": "DOC279-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC005-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC007-V2-0080", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC016-V2-0004", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC028-V2-0053", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC033-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC082-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC082-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC093-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC094-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC098-V2-0020", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC100-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC100-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC100-V2-0060", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC102-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC106-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC108-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC113-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC114-V2-0053", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC114-V2-0073", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC116-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0059", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC133-V2-0060", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC192-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC192-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC209-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC216-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC335-V2-0006", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC336-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q05", "chunk_id": "DOC340-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC006-V2-0065", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC012-V2-0061", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC018-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC020-V2-0038", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC030-V2-0030", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0015", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0020", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0022", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0024", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0025", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0026", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC090-V2-0080", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC100-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0004", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0021", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0022", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0023", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0054", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC110-V2-0076", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC122-V2-0034", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0022", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0023", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0024", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0055", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q06", "chunk_id": "DOC335-V2-0077", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC026-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC043-V2-0030", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC094-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC094-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0017", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0023", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0037", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0042", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0043", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0051", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0052", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC097-V2-0060", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC098-V2-0017", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC100-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC100-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC102-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC113-V2-0031", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC116-V2-0031", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC133-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC258-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q07", "chunk_id": "DOC335-V2-0076", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC005-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC054-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC094-V2-0089", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0003", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0015", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0017", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0019", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0023", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC099-V2-0033", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC100-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC100-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC100-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC107-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC107-V2-0020", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC113-V2-0093", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC116-V2-0093", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC118-V2-0050", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC130-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC141-V2-0004", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC239-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC288-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q08", "chunk_id": "DOC338-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC005-V2-0163", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC007-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC007-V2-0023", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC007-V2-0024", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC007-V2-0170", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC012-V2-0033", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC046-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC093-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0024", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0027", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0030", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC094-V2-0047", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC095-V2-0036", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC095-V2-0040", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC095-V2-0052", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC097-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC098-V2-0006", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC100-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC100-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC100-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC100-V2-0033", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC110-V2-0089", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC113-V2-0027", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC113-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0033", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0034", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0035", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0037", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0056", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC114-V2-0058", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC116-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC116-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC116-V2-0046", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC120-V2-0034", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q09", "chunk_id": "DOC120-V2-0037", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0034", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0163", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0195", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0196", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0199", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC005-V2-0203", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC007-V2-0011", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC007-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC007-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC007-V2-0093", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC019-V2-0040", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC032-V2-0074", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC040-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC095-V2-0052", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC100-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC100-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC100-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC100-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC100-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC107-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC107-V2-0032", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC113-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC114-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC114-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC114-V2-0052", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC116-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC133-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC133-V2-0059", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC133-V2-0060", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC133-V2-0061", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC327-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q10", "chunk_id": "DOC341-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC006-V2-0060", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC012-V2-0038", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC019-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC032-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC092-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC097-V2-0021", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC120-V2-0041", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC120-V2-0042", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC120-V2-0043", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC120-V2-0073", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0011", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0021", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0025", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0037", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0039", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0042", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0044", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC122-V2-0049", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC128-V2-0044", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC128-V2-0053", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC128-V2-0128", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC128-V2-0129", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC128-V2-0133", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC335-V2-0024", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q11", "chunk_id": "DOC343-V2-0067", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC007-V2-0103", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC019-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC090-V2-0056", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC092-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC110-V2-0052", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC114-V2-0041", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC118-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC118-V2-0032", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC120-V2-0008", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC120-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC120-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC120-V2-0044", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0015", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0021", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0022", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC122-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC128-V2-0053", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC128-V2-0084", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC128-V2-0087", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC128-V2-0133", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC128-V2-0135", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC133-V2-0020", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC335-V2-0053", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC342-V2-0048", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC342-V2-0080", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC343-V2-0048", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC343-V2-0065", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q12", "chunk_id": "DOC343-V2-0080", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC005-V2-0122", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC005-V2-0157", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC018-V2-0020", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC110-V2-0049", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC114-V2-0070", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0009", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0011", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0020", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0023", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0024", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC118-V2-0047", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC120-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC122-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC122-V2-0025", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC122-V2-0026", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC128-V2-0133", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC131-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0036", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0047", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0049", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0051", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0052", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0053", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC342-V2-0069", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC343-V2-0036", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC343-V2-0047", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC343-V2-0049", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC343-V2-0051", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC343-V2-0053", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q13", "chunk_id": "DOC343-V2-0069", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC005-V2-0096", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC005-V2-0122", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC005-V2-0159", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC006-V2-0049", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC015-V2-0021", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC015-V2-0023", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC028-V2-0022", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC029-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC094-V2-0061", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC110-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC118-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0028", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0035", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0036", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0040", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0043", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0073", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC120-V2-0089", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC122-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC122-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC122-V2-0026", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC128-V2-0074", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC128-V2-0113", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC128-V2-0115", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC128-V2-0145", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC128-V2-0208", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC342-V2-0070", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC342-V2-0111", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC342-V2-0114", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC342-V2-0199", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC343-V2-0070", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC343-V2-0110", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC343-V2-0113", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC343-V2-0129", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q14", "chunk_id": "DOC343-V2-0199", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC004-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC004-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC004-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC004-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC005-V2-0064", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC005-V2-0070", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC005-V2-0079", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC005-V2-0122", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC006-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC006-V2-0113", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC007-V2-0110", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC009-V2-0026", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC018-V2-0010", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC019-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC028-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC028-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC028-V2-0065", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC029-V2-0092", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC030-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC031-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC031-V2-0037", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC033-V2-0031", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC038-V2-0025", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC039-V2-0003", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC039-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC120-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC120-V2-0046", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC120-V2-0069", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC122-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC122-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC122-V2-0026", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC128-V2-0133", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC342-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC342-V2-0146", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC342-V2-0148", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC343-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC343-V2-0049", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC343-V2-0146", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q15", "chunk_id": "DOC343-V2-0148", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC005-V2-0122", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC006-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC007-V2-0048", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC007-V2-0153", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC015-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC015-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC015-V2-0031", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC019-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC021-V2-0004", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC029-V2-0110", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC038-V2-0009", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC090-V2-0085", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC094-V2-0020", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC095-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC095-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC110-V2-0081", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC113-V2-0020", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC114-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC116-V2-0020", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC120-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC120-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC120-V2-0065", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC120-V2-0075", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC121-V2-0010", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC122-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC122-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC122-V2-0026", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC128-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC128-V2-0077", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC128-V2-0133", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC128-V2-0207", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC128-V2-0210", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC335-V2-0082", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC342-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC342-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC343-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q16", "chunk_id": "DOC343-V2-0201", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC019-V2-0019", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC092-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC099-V2-0010", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC116-V2-0069", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0010", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0019", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0021", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0023", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0024", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0025", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0029", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0030", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0035", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0043", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0044", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0047", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0048", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0050", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0069", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC129-V2-0073", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q17", "chunk_id": "DOC135-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC005-V2-0181", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC005-V2-0239", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC008-V2-0027", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC019-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC028-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC029-V2-0028", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC029-V2-0126", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC090-V2-0012", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC090-V2-0085", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC100-V2-0005", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC110-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC110-V2-0081", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC118-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC120-V2-0024", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC120-V2-0067", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC122-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC122-V2-0047", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC128-V2-0044", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC128-V2-0103", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC128-V2-0130", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC128-V2-0133", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC128-V2-0142", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC128-V2-0197", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC129-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC129-V2-0070", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC132-V2-0075", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC133-V2-0004", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC335-V2-0010", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC335-V2-0082", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC342-V2-0127", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC342-V2-0138", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC343-V2-0066", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC343-V2-0126", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q18", "chunk_id": "DOC343-V2-0138", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC005-V2-0021", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC005-V2-0193", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC025-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC025-V2-0009", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC025-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC025-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC025-V2-0029", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC027-V2-0027", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC090-V2-0011", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC092-V2-0021", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC095-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC099-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC099-V2-0023", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC099-V2-0026", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC110-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC114-V2-0045", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC118-V2-0047", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0042", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0043", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0051", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0066", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0067", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0069", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0070", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0072", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0073", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0076", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC120-V2-0077", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC122-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC122-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC122-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC128-V2-0045", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC128-V2-0128", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC130-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC131-V2-0010", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC335-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC342-V2-0063", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q19", "chunk_id": "DOC343-V2-0050", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC004-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC004-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC005-V2-0070", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC005-V2-0122", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC005-V2-0138", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC005-V2-0177", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC007-V2-0084", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC010-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC015-V2-0021", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC116-V2-0067", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC120-V2-0045", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC120-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC120-V2-0050", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC122-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC122-V2-0027", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC122-V2-0030", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC122-V2-0031", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0039", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0050", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0054", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0055", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0056", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0057", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0134", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0135", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0137", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0138", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0139", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC128-V2-0162", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC132-V2-0051", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC267-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC292-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC342-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC342-V2-0109", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q20", "chunk_id": "DOC343-V2-0108", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0004", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0011", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0015", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0039", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC004-V2-0048", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC013-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC015-V2-0015", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC015-V2-0028", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC016-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC022-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC035-V2-0061", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC035-V2-0093", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC042-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC055-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC080-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC080-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC097-V2-0037", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC114-V2-0039", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC120-V2-0076", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC120-V2-0084", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC128-V2-0161", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC132-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC132-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC132-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC132-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC132-V2-0035", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC264-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC294-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC297-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC297-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q21", "chunk_id": "DOC343-V2-0035", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0011", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0039", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0046", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC004-V2-0047", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC015-V2-0050", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC028-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC028-V2-0022", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC031-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC035-V2-0153", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC037-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC037-V2-0035", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC038-V2-0019", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC039-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC044-V2-0009", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC078-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC080-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC080-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC081-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC120-V2-0046", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC120-V2-0098", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC128-V2-0105", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC128-V2-0163", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC132-V2-0004", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC132-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC132-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC132-V2-0035", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC132-V2-0044", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC132-V2-0070", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC133-V2-0032", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC133-V2-0033", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC133-V2-0035", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC133-V2-0036", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC133-V2-0037", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q22", "chunk_id": "DOC181-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC004-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC005-V2-0217", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC006-V2-0059", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC015-V2-0065", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC016-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC029-V2-0128", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC030-V2-0021", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC030-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC030-V2-0031", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC033-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC034-V2-0003", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC038-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC038-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC038-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC038-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC038-V2-0030", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC038-V2-0031", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC078-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC092-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC094-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC094-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC095-V2-0041", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC113-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC114-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC116-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC118-V2-0007", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC121-V2-0005", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC128-V2-0168", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC132-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC342-V2-0162", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC343-V2-0063", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC343-V2-0141", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q23", "chunk_id": "DOC343-V2-0162", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC004-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC029-V2-0114", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC030-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC030-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC030-V2-0030", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC033-V2-0033", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC033-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC035-V2-0118", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0003", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0010", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0015", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0033", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC036-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC038-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC038-V2-0038", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC055-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC055-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC056-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC075-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC078-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC078-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC092-V2-0022", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC133-V2-0012", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC133-V2-0017", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC133-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC133-V2-0036", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC133-V2-0041", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC133-V2-0042", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC199-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC258-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC259-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC259-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC262-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC269-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC294-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC297-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC299-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC299-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q24", "chunk_id": "DOC305-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC005-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC007-V2-0118", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0011", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0017", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0020", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC013-V2-0030", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC015-V2-0051", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC024-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC024-V2-0031", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC033-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC034-V2-0045", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC035-V2-0090", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC042-V2-0041", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC073-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC073-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC073-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC082-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC082-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC082-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC095-V2-0026", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC099-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC120-V2-0064", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC128-V2-0048", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC132-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC132-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC133-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC133-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC133-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC133-V2-0014", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC250-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC280-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC290-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC295-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC296-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC296-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC300-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC300-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC303-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC324-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q25", "chunk_id": "DOC342-V2-0043", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC005-V2-0164", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC005-V2-0178", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC011-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC014-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC028-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC032-V2-0077", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC033-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC044-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC044-V2-0039", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC044-V2-0060", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC045-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC046-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC046-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC055-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC072-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC072-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC073-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC073-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC073-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC075-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC075-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC076-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC077-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC077-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC079-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC079-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC080-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC080-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC081-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC081-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC090-V2-0090", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC094-V2-0074", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC095-V2-0018", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC110-V2-0066", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC113-V2-0079", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC114-V2-0065", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC120-V2-0064", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC132-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC132-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC133-V2-0003", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC133-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC133-V2-0051", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC133-V2-0054", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC141-V2-0048", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC167-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC274-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC292-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC292-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC304-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC328-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q26", "chunk_id": "DOC343-V2-0022", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC016-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC028-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0010", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0017", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0022", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0026", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0028", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0029", "pool_methods": ["bm25_top20", "random_pool_audit"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0030", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0033", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0034", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0035", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0036", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0042", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0043", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0054", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0055", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC031-V2-0065", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC035-V2-0039", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC132-V2-0042", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC282-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q27", "chunk_id": "DOC335-V2-0047", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC005-V2-0115", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC007-V2-0131", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC015-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC028-V2-0018", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC029-V2-0033", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC031-V2-0017", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0057", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0064", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0066", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0070", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0071", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0072", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0074", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0076", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC035-V2-0121", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0016", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0024", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0031", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0049", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0055", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0056", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0067", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC042-V2-0069", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC043-V2-0027", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC044-V2-0010", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC071-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC132-V2-0019", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC132-V2-0034", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC132-V2-0043", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC201-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q28", "chunk_id": "DOC218-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC004-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC004-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC004-V2-0015", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC005-V2-0178", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC007-V2-0131", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC007-V2-0201", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC015-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC015-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC015-V2-0063", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC016-V2-0059", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC031-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC035-V2-0141", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC044-V2-0011", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC120-V2-0098", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0003", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0004", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0020", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0032", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0033", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0035", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0036", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0044", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0059", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0072", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC132-V2-0094", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q29", "chunk_id": "DOC137-V2-0013", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC004-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC004-V2-0016", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC005-V2-0122", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC005-V2-0138", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0018", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC016-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC028-V2-0066", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC029-V2-0069", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0003", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0020", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0025", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0033", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC033-V2-0053", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC034-V2-0020", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC034-V2-0027", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC073-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC073-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC094-V2-0039", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC097-V2-0024", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC100-V2-0038", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC114-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC114-V2-0066", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC120-V2-0045", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC120-V2-0046", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC122-V2-0027", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC128-V2-0136", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC128-V2-0137", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC128-V2-0162", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC128-V2-0165", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC133-V2-0023", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q30", "chunk_id": "DOC298-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC006-V2-0149", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC007-V2-0222", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC024-V2-0015", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC032-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC044-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC044-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC044-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC044-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC090-V2-0050", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC090-V2-0074", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC094-V2-0077", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC094-V2-0082", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC097-V2-0054", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC098-V2-0053", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC120-V2-0021", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC133-V2-0047", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0010", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0011", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0012", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0015", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC136-V2-0019", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC141-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC247-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC249-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC250-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC251-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC252-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC256-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC295-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q31", "chunk_id": "DOC298-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC005-V2-0070", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC007-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC007-V2-0056", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC007-V2-0193", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC015-V2-0044", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC017-V2-0018", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC042-V2-0075", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC044-V2-0038", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC061-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC069-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC084-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC087-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC088-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC088-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC089-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC089-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC097-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC100-V2-0048", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC113-V2-0079", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC116-V2-0079", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC129-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC129-V2-0071", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC133-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC133-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC136-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC136-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC141-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC141-V2-0040", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC248-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC254-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC306-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC307-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC308-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC309-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC320-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q32", "chunk_id": "DOC321-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC028-V2-0039", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC035-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC044-V2-0052", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC064-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC067-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC068-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC107-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC129-V2-0039", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC242-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC243-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC244-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC246-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC247-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC249-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC252-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC256-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC284-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC285-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC286-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC294-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC311-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC312-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC313-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC314-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC315-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC316-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC318-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC322-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC323-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC335-V2-0052", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q33", "chunk_id": "DOC342-V2-0105", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC005-V2-0151", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC007-V2-0193", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC017-V2-0020", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC094-V2-0003", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC095-V2-0028", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC130-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC136-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0003", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0006", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0007", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0022", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0024", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0025", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0026", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0032", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0033", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0038", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0040", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0041", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0044", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0045", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0047", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q34", "chunk_id": "DOC141-V2-0051", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC007-V2-0085", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC007-V2-0158", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0040", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0045", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0059", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0063", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0064", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0065", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC044-V2-0066", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC084-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC085-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC087-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC100-V2-0065", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC128-V2-0210", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0003", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0008", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0010", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0014", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0017", "pool_methods": ["bm25_top20", "random_pool_audit"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0021", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0026", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC135-V2-0028", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q35", "chunk_id": "DOC136-V2-0013", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC013-V2-0029", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC020-V2-0045", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC029-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC044-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC072-V2-0002", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC094-V2-0038", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC097-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC110-V2-0074", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC113-V2-0038", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC114-V2-0041", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC116-V2-0038", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC132-V2-0057", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0002", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0003", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0014", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0015", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0018", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0028", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC137-V2-0034", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC141-V2-0011", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC141-V2-0035", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q36", "chunk_id": "DOC343-V2-0038", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC005-V2-0099", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC005-V2-0207", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC006-V2-0037", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC006-V2-0107", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC006-V2-0141", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC006-V2-0144", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC011-V2-0004", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC025-V2-0058", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC029-V2-0028", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC029-V2-0131", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC035-V2-0141", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC044-V2-0017", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC059-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC061-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC072-V2-0003", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC094-V2-0075", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC094-V2-0076", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC094-V2-0082", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC095-V2-0012", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC097-V2-0057", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC113-V2-0080", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC114-V2-0066", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC116-V2-0080", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC120-V2-0085", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC129-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC129-V2-0070", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC133-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC133-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC133-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC136-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC137-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC245-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC250-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC253-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC305-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC305-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q37", "chunk_id": "DOC305-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC005-V2-0045", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC005-V2-0089", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC007-V2-0192", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC007-V2-0210", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC012-V2-0009", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC012-V2-0047", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC012-V2-0052", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC012-V2-0072", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC033-V2-0045", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC034-V2-0040", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC036-V2-0033", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC044-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC073-V2-0002", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC090-V2-0090", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC110-V2-0086", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC116-V2-0038", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC132-V2-0041", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC132-V2-0097", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC133-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC133-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC136-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC245-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC246-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC247-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC253-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC302-V2-0005", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC329-V2-0001", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC335-V2-0038", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC335-V2-0087", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC338-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC341-V2-0001", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q38", "chunk_id": "DOC342-V2-0057", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC004-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC004-V2-0046", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC005-V2-0178", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC007-V2-0114", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC013-V2-0035", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0003", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0004", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0005", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0015", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0049", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0050", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0051", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0053", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0055", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0056", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0059", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0060", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC016-V2-0063", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC026-V2-0030", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC030-V2-0033", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC033-V2-0009", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC042-V2-0059", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC095-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC110-V2-0061", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC132-V2-0019", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC132-V2-0034", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC132-V2-0038", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC132-V2-0070", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC132-V2-0076", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q39", "chunk_id": "DOC275-V2-0001", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC012-V2-0044", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC012-V2-0066", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0006", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0007", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0008", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0012", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0013", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0015", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0019", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0022", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0023", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0024", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0025", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0026", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0029", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0030", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0031", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0032", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0034", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0040", "pool_methods": ["bm25_top20", "coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0043", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0044", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0059", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC025-V2-0062", "pool_methods": ["bm25_top20"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0002", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0003", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0005", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0006", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0007", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0008", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0009", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0010", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0011", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0012", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0013", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0014", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0015", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC044-V2-0016", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC100-V2-0032", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC128-V2-0133", "pool_methods": ["random_pool_audit"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC136-V2-0004", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC320-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC321-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC327-V2-0001", "pool_methods": ["coordinate_migration"], "label_inferred": false}
+{"query_id": "Q40", "chunk_id": "DOC342-V2-0004", "pool_methods": ["random_pool_audit"], "label_inferred": false}

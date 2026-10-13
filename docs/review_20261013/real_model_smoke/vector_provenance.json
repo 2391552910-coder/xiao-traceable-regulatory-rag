@@ -1,0 +1,20 @@
+{
+  "origin": "post_run_provenance_note_from_executed_script",
+  "executed_script_sha256": "6c2f562772a7885aa2ebe748a3d186084867c20f451c69aa3945c0734c9994c2",
+  "vectors": {
+    "document_vectors.npy": {
+      "prompt": "",
+      "n": 2
+    },
+    "query_vectors.npy": {
+      "prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+      "n": 2
+    },
+    "plain_query_vector.npy": {
+      "prompt": "",
+      "n": 1
+    }
+  },
+  "model_metadata_in_run_json": "last loaded settings before final runtime release, not a separate per-vector prompt mapping",
+  "quality_benchmark": false
+}

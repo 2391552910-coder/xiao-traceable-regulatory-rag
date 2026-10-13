@@ -200,7 +200,8 @@ def prepare_evaluation(args, experiment_name: str):
     return cfg, benchmark, output
 
 
-def save_run(summary_path: Path, rows: list[dict], benchmark: Benchmark, cfg: dict) -> None:
+def save_run(summary_path: Path, rows: list[dict], benchmark: Benchmark, cfg: dict,
+             model_metadata: dict | None = None) -> None:
     paths = output_paths(summary_path)
     top_k = cfg["retrieval"]["top_k"]
     evaluation = cfg.get("evaluation", {})
@@ -229,6 +230,7 @@ def save_run(summary_path: Path, rows: list[dict], benchmark: Benchmark, cfg: di
         "benchmark_hashes": benchmark.hashes,
         "benchmark_id": benchmark.manifest.get("benchmark_id") if benchmark.manifest else None,
         "config": sanitized(cfg), "command": sys.argv,
+        "model_execution_metadata": sanitized(model_metadata or {}),
         "python": platform.python_version(), "packages": versions,
         "git_head": git_head.stdout.strip() or None, "git_dirty": bool(git_status.stdout.strip()),
         "code_sha256": code, "tokenizer": "jieba" if _HAS_JIEBA else "character_bigram_fallback",

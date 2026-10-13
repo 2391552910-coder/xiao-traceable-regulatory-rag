@@ -24,14 +24,28 @@ def annual_report_availability(root: Path, report_path: Path) -> list[dict]:
         inside = path is not None and path.is_relative_to(root.resolve())
         present = bool(inside and path.is_file())
         valid_header = False
+        parse_valid = False
+        pages = 0
+        validation_error = None
         if present:
             with path.open('rb') as f:
                 valid_header = f.read(5) == b'%PDF-'
+            if valid_header:
+                try:
+                    from pypdf import PdfReader
+                    reader = PdfReader(path, strict=True)
+                    pages = len(reader.pages)
+                    parse_valid = not reader.is_encrypted and pages > 0
+                except Exception as exc:
+                    validation_error = f'{type(exc).__name__}: {exc}'
         rows.append({'stock_code': record['stock_code'], 'name': record['name'],
                      'year': record['year'], 'historical_status': record['status'],
                      'expected_file': name, 'file_present': present,
                      'pdf_header_valid': valid_header,
-                     'availability': ('present_pdf' if valid_header else 'invalid_pdf' if present
+                     'pdf_parse_valid': parse_valid, 'pdf_pages': pages,
+                     'validation_error': validation_error,
+                     'company_year_verified': False,
+                     'availability': ('present_pdf' if parse_valid else 'invalid_pdf' if present
                                       else 'unsafe_or_empty_path' if not inside else 'missing'),
                      'bytes': path.stat().st_size if present else 0})
     return rows
@@ -90,7 +104,8 @@ def audit(out: Path) -> dict:
               'annual_reports': {'sampling_frame_companies': len(frame), 'historical_manifest_rows': len(annual),
                                  'historical_status_counts': dict(Counter(r['historical_status'] for r in annual)),
                                  'current_availability_counts': dict(Counter(r['availability'] for r in annual)),
-                                 'available_pdf_count': sum(r['pdf_header_valid'] for r in annual),
+                                 'available_pdf_count': sum(r['pdf_parse_valid'] for r in annual),
+                                 'company_year_verified_count': 0,
                                  'manifest_sha256': hashlib.sha256((companies / 'download_report.csv').read_bytes()).hexdigest(),
                                  'required_source_hosts_in_startup_allowlist': {h: h in allowed for h in ['www.cninfo.com.cn', 'static.cninfo.com.cn']},
                                  'formal_status': 'not_ready'},

@@ -1,0 +1,22 @@
+{
+  "status": "pending_two_human_reviews",
+  "usage": "development_only",
+  "n_queries": 40,
+  "candidate_pairs": 1681,
+  "human_labels": 0,
+  "candidate_pool_exhaustive": false,
+  "new_pairs_without_migrated_labels": 648,
+  "methods": [
+    "coordinate migration union",
+    "BM25 top20",
+    "seeded random5"
+  ],
+  "random_seed": 20261013,
+  "corpus_manifest_sha256": "7bc70e0dd9847b4c880a79d22735d05671d5922ab7e894b585966690a42a85b5",
+  "script_sha256": "8f00f54c832a49bddb56f2c72fc1771059ee9b85b9c037a99715aa95d184fa26",
+  "artifacts_sha256": {
+    "blind_review_A.csv": "9f622c95c24305d6c832965b2841b57ddfd101e8a4723e5f1f83f27218126b6a",
+    "blind_review_B.csv": "66e903bdf8be7984c2f57aa01385f53c1d0839b7d0f076a7e09044c902ce6379",
+    "pool_provenance.jsonl": "a7c2d904ae3309688893fac194ac108a5b1dae8e2556002643d3503649c69c55"
+  }
+}

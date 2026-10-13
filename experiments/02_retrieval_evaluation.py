@@ -47,7 +47,11 @@ def main():
     for row in rows:
         candidates[row["query_id"]].update(json.loads(row["ranked_ids"]))
     export_review(benchmark, output.with_name(output.stem + "_human_review.csv"), candidates)
-    save_run(output, rows, benchmark, cfg)
+    save_run(output, rows, benchmark, cfg, model_metadata={
+        "embedding": retriever.dense.encoding_metadata,
+        "reranker": getattr(reranker, "encoding_metadata", None),
+        "local_weight_lifecycle": retriever.dense._runtime.events,
+    })
     for summary in summarize(rows, top_k):
         print(f"{summary['config']:<32} Recall@{top_k}={summary[f'recall@{top_k}']:.4f} "
               f"MRR@{top_k}={summary['mrr']:.4f} nDCG@{top_k}={summary[f'ndcg@{top_k}']:.4f}")

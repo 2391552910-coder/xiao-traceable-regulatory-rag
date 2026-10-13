@@ -7,6 +7,7 @@ from src.data.knowledge_loader import load_documents
 from src.generation.llm_client import LLMClient
 from src.retrieval.hybrid import HybridRetriever
 from src.retrieval.router import DimensionRoutedRetriever
+from src.retrieval.model_runtime import SequentialModelRuntime
 
 
 def build_knowledge_index(cfg: dict, chunking: str | None = None):
@@ -20,6 +21,7 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
                                      window_size=kb_cfg["window_size"],
                                      window_overlap=kb_cfg["window_overlap"]))
     ret_cfg = cfg["retrieval"]
+    runtime = SequentialModelRuntime()
     reranker = None
     rr_cfg = ret_cfg.get("reranker") or {}
     if rr_cfg.get("enabled"):
@@ -31,7 +33,10 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
         else:
             from src.retrieval.reranker import Reranker
             reranker = Reranker(model_name=rr_cfg.get("model", "Qwen/Qwen3-Reranker-0.6B"),
-                                device=rr_cfg.get("device", "cpu"))
+                                device=rr_cfg.get("device", "cpu"), model_runtime=runtime,
+                                revision=rr_cfg.get("revision"),
+                                max_length=rr_cfg.get("max_length", 8192),
+                                batch_size=rr_cfg.get("batch_size", 1))
     retriever = HybridRetriever(
         chunks, vector_weight=ret_cfg["vector_weight"],
         reranker=reranker,
@@ -44,6 +49,7 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
         batch_size=ret_cfg.get("embedding_batch_size", 32),
         query_prompt=ret_cfg.get("embedding_query_prompt", ""),
         max_seq_length=ret_cfg.get("embedding_max_seq_length"),
+        model_runtime=runtime, revision=ret_cfg.get("embedding_revision"),
     )
     return chunks, retriever
 

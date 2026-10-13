@@ -11,6 +11,7 @@ TF-IDF 余弦（供无法下载模型时的冒烟测试）；embedding_backend=a
 import json
 import hashlib
 import urllib.request
+from collections import OrderedDict
 
 import numpy as np
 
@@ -39,7 +40,8 @@ class DenseRetriever:
     def __init__(self, chunks: list[Chunk], backend: str = "bge",
                  model_name: str = "BAAI/bge-m3", device: str = "cpu",
                  base_url: str = "", api_key: str = "", batch_size: int = 32,
-                 query_prompt: str = "", max_seq_length: int | None = None):
+                 query_prompt: str = "", max_seq_length: int | None = None,
+                 model_runtime=None, revision: str | None = None):
         if batch_size < 1:
             raise ValueError("batch_size 必须为正数")
         if max_seq_length is not None and max_seq_length < 1:
@@ -47,6 +49,12 @@ class DenseRetriever:
         self.chunks = chunks
         self.backend = backend
         self.query_prompt = query_prompt if backend != "tfidf" else ""
+        self._runtime = model_runtime
+        self._model = None
+        self._model_name, self._device = model_name, device
+        self._revision, self._max_seq_length = revision, max_seq_length
+        self._batch_size = batch_size
+        self._query_cache = OrderedDict()
         self.encoding_metadata = {"backend": backend, "batch_size": batch_size,
                                   "query_prompt": self.query_prompt,
                                   "query_prompt_sha256": hashlib.sha256(self.query_prompt.encode()).hexdigest(),
@@ -54,19 +62,8 @@ class DenseRetriever:
         if backend in ("bge", "qwen"):
             # sentence-transformers 统一加载：BGE-M3 / 本项目固定 Qwen3-Embedding-0.6B
             # 查询指令显式配置；文档不添加指令，也不继承模型的默认 prompt。
-            from sentence_transformers import SentenceTransformer
-            self._model = SentenceTransformer(model_name, device=device)
-            if max_seq_length is not None:
-                if max_seq_length > self._model.max_seq_length:
-                    raise ValueError("max_seq_length 超过模型支持的长度")
-                self._model.max_seq_length = max_seq_length
-            self.encoding_metadata.update(max_seq_length=self._model.max_seq_length,
-                                          device=str(self._model.device),
-                                          model_dtype=str(next(self._model.parameters()).dtype))
-            encode_documents = lambda texts: self._model.encode(
-                texts, prompt="", normalize_embeddings=True, batch_size=batch_size)
-            self._encode = lambda texts: self._model.encode(
-                texts, prompt=self.query_prompt, normalize_embeddings=True, batch_size=batch_size)
+            encode_documents = lambda texts: self._encode_model(texts, "")
+            self._encode = self._encode_local_queries
         elif backend == "tfidf":
             from sklearn.feature_extraction.text import TfidfVectorizer
             from sklearn.preprocessing import normalize as sp_normalize
@@ -97,6 +94,51 @@ class DenseRetriever:
     def encode_queries(self, texts: list[str]) -> np.ndarray:
         """按当前查询指令与批量设置编码查询；文档向量使用独立的无指令路径。"""
         return self._encode(texts)
+
+    def _load_weights(self):
+        from sentence_transformers import SentenceTransformer
+        kwargs = {"revision": self._revision} if self._revision else {}
+        self._model = SentenceTransformer(self._model_name, device=self._device, **kwargs)
+        if self._max_seq_length is not None:
+            if self._max_seq_length > self._model.max_seq_length:
+                self._model = None
+                raise ValueError("max_seq_length 超过模型支持的长度")
+            self._model.max_seq_length = self._max_seq_length
+        self.encoding_metadata.update(max_seq_length=self._model.max_seq_length,
+                                      device=str(self._model.device), requested_revision=self._revision,
+                                      model_dtype=str(next(self._model.parameters()).dtype))
+        first = self._model._first_module() if hasattr(self._model, '_first_module') else None
+        config = getattr(getattr(first, 'auto_model', None), 'config', None)
+        self.encoding_metadata['resolved_revision'] = getattr(config, '_commit_hash', None)
+
+    def _unload_weights(self):
+        self._model = None
+
+    def _encode_model(self, texts, prompt):
+        if self._runtime is not None:
+            self._runtime.acquire(self)
+        elif self._model is None:
+            self._load_weights()
+        return self._model.encode(texts, prompt=prompt, normalize_embeddings=True,
+                                  batch_size=self._batch_size)
+
+    def _encode_local_queries(self, texts):
+        if not texts:
+            return np.empty((0, self._matrix.shape[1]), dtype=np.float32)
+        self.encoding_metadata.update(query_prompt=self.query_prompt,
+            query_prompt_sha256=hashlib.sha256(self.query_prompt.encode()).hexdigest())
+        keys = [(self.query_prompt, text) for text in texts]
+        missing = list(dict.fromkeys(key for key in keys if key not in self._query_cache))
+        fresh = {}
+        if missing:
+            vectors = self._encode_model([key[1] for key in missing], self.query_prompt)
+            fresh = {key: vector for key, vector in zip(missing, vectors)}
+        result = np.stack([self._query_cache[key] if key in self._query_cache else fresh[key] for key in keys])
+        for key, vector in fresh.items():
+            self._query_cache[key] = np.array(vector, copy=True)
+        while len(self._query_cache) > 256:
+            self._query_cache.popitem(last=False)
+        return result
 
     def search(self, query: str, top_k: int = 5) -> list[tuple[Chunk, float]]:
         q_vec = self._encode([query])

@@ -1,0 +1,9 @@
+..........................................                               [100%]
+=============================== warnings summary ===============================
+tests/test_smoke.py::test_retrieval_pipeline
+tests/test_smoke.py::test_generation_mock_and_alignment
+  /workspace/xiao-venv/lib/python3.12/site-packages/sklearn/feature_extraction/text.py:521: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+42 passed, 2 warnings in 16.13s

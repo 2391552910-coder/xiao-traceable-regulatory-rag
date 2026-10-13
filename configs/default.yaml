@@ -17,6 +17,7 @@ retrieval:
   top_k: 5
   vector_weight: 0.7      # w·向量 + (1-w)·BM25；只在开发集选权重
   embedding_model: Qwen/Qwen3-Embedding-0.6B   # 主机固定 0.6B；当前加载器未实现 Q4，峰值内存须实测
+  embedding_revision: 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
   embedding_device: cpu                        # 已实测 CPU；可按运行设备选择 mps/cuda
   embedding_backend: qwen  # qwen | bge | tfidf（仅联调）| api；查询指令须统一
   embedding_batch_size: 1  # CPU 先使用已实测批量，避免全库默认 32 的内存波动
@@ -26,9 +27,12 @@ retrieval:
   # embedding_base_url: http://192.168.1.10:8000/v1   # vLLM/Xinference/Ollama 的 OpenAI 兼容地址
   # embedding_api_key: ""                              # 远端服务密钥（如有），建议用环境变量
   reranker:
-    enabled: true          # tfidf 联调须另行关闭；本地 Qwen3 评分实现需按官方路径校正
+    enabled: true          # 本地 causal-LM yes/no 评分；与 embedding 共享顺序加载器
     model: Qwen/Qwen3-Reranker-0.6B          # 冻结权重的候选重排模型，内存与速度实测后报告
-    device: mps
+    revision: e61197ed45024b0ed8a2d74b80b4d909f1255473
+    device: cpu
+    batch_size: 1
+    max_length: 8192
     pool_factor: 4          # 计划候选深度；当前双路先各截 top_k×2，须校正候选池
     # url: http://192.168.1.10:9997/v1       # 填则走远端重排服务，忽略本地加载
   dimension_routing: true # 路由原型；现有调用处和全库候选后过滤逻辑待统一校正

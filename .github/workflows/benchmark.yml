@@ -15,6 +15,7 @@ jobs:
       - run: pip install -r requirements-eval.txt -r requirements-data.txt
       - run: python -m pytest -q
       - run: python scripts/compile_independent_review.py --check
+      - run: python scripts/validate_preparation_release.py
       - run: python scripts/audit_benchmark.py --output-dir results/runs/ci_audit
       - uses: actions/upload-artifact@v4
         with:

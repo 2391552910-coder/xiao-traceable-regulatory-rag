@@ -1,5 +1,6 @@
 """实验 04：同一 gold 证据单元上的切分、维度路由与融合权重消融。"""
 import argparse
+import gc
 import sys
 from pathlib import Path
 
@@ -19,6 +20,7 @@ def main():
     top_k = cfg["retrieval"]["top_k"]
     threshold = cfg["evaluation"]["coverage_threshold"]
     rows = []
+    model_metadata = {}
     for chunking in ("clause", "window"):
         _, retriever = build_knowledge_index(cfg, chunking=chunking)
         router = make_router(retriever)
@@ -29,6 +31,14 @@ def main():
                         top_k, threshold, ablation="chunking×routing", chunking=chunking,
                         routing=routed, query_expansion=True,
                         vector_weight=cfg["retrieval"]["vector_weight"], reranker=args.rerank))
+        model_metadata[chunking] = {
+            "embedding": getattr(getattr(retriever, 'dense', None), 'encoding_metadata', None),
+            "reranker": getattr(getattr(retriever, 'reranker', None), 'encoding_metadata', None),
+        }
+        # Drop both owners before the next index loads model weights. Dense query
+        # encoder closures can form cycles, so reference deletion alone is insufficient.
+        del router, retriever
+        gc.collect()
     _, retriever = build_knowledge_index(cfg, chunking="clause")
     router = make_router(retriever)
     for weight in (0.3, 0.5, 0.7, 0.9):
@@ -37,7 +47,11 @@ def main():
                     lambda q: router.search(q.dimension, q.query, top_k, routed=True),
                     top_k, threshold, ablation="vector_weight", chunking="clause",
                     routing=True, query_expansion=True, vector_weight=weight, reranker=args.rerank))
-    save_run(output, rows, benchmark, cfg)
+    model_metadata['weight_sweep'] = {
+        "embedding": getattr(getattr(retriever, 'dense', None), 'encoding_metadata', None),
+        "reranker": getattr(getattr(retriever, 'reranker', None), 'encoding_metadata', None),
+    }
+    save_run(output, rows, benchmark, cfg, model_metadata=model_metadata)
     for summary in summarize(rows, top_k):
         print(f"{summary['config']:<24} Recall@{top_k}={summary[f'recall@{top_k}']:.4f} "
               f"MRR@{top_k}={summary['mrr']:.4f}")
