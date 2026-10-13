@@ -1,31 +1,34 @@
-# ============ 默认实验配置 ============
+# 默认研究原型配置（任务对齐：2026-10-13）
+# 总任务：支撑大论文的可追溯监管评价小论文，投稿目标为中科院二区计算机类期刊。
+# 正式实验与待校正项见 docs/项目任务与验收.md、docs/实验设计与流程.md。
+# 本文件指定候选设置，不表示模型已实测；先冻结权重，微调按开发集诊断决定。
 seed: 42
 
 # 知识库
 knowledge_base:
   path: data/knowledge_base
-  chunking: clause        # clause（条款级切分，本方法）| window（512字滑窗，消融对照）
+  chunking: clause        # clause（条款切分原型）| window（滑窗）；正式比较须共用原文证据坐标
   window_size: 512
   window_overlap: 64
 
 # 检索
 retrieval:
   top_k: 5
-  vector_weight: 0.7      # 混合检索融合权重：w·向量 + (1-w)·BM25
-  embedding_model: Qwen/Qwen3-Embedding-4B   # M4/16GB 建议 Q4 量化加载（约2.8GB），跑不动可换 Qwen/Qwen3-Embedding-0.6B
-  embedding_device: mps                        # Apple Silicon 用 mps（Metal），其余用 cpu/cuda
-  embedding_backend: qwen  # qwen | bge | tfidf（离线冒烟测试）| api（远端服务）
+  vector_weight: 0.7      # w·向量 + (1-w)·BM25；只在开发集选权重
+  embedding_model: Qwen/Qwen3-Embedding-4B   # 冻结权重的候选模型；当前加载器未实现 Q4，显存须实测
+  embedding_device: mps                        # 按运行设备选择 mps/cpu/cuda，并记录模型 revision 和截断
+  embedding_backend: qwen  # qwen | bge | tfidf（仅联调）| api；查询指令须统一
   # —— 模型部署在另一台电脑时改用 api 后端（本机零显存）——
   # embedding_backend: api
   # embedding_base_url: http://192.168.1.10:8000/v1   # vLLM/Xinference/Ollama 的 OpenAI 兼容地址
   # embedding_api_key: ""                              # 远端服务密钥（如有），建议用环境变量
   reranker:
-    enabled: true
-    model: Qwen/Qwen3-Reranker-0.6B          # fp16 约1.2GB，16GB 统一内存可与 4B embedding 共存
+    enabled: true          # tfidf 联调须另行关闭；本地 Qwen3 评分实现需按官方路径校正
+    model: Qwen/Qwen3-Reranker-0.6B          # 冻结权重的候选重排模型，内存与速度实测后报告
     device: mps
-    pool_factor: 4          # 精排候选 = top_k × pool_factor
+    pool_factor: 4          # 计划候选深度；当前双路先各截 top_k×2，须校正候选池
     # url: http://192.168.1.10:9997/v1       # 填则走远端重排服务，忽略本地加载
-  dimension_routing: true # 维度路由检索（本方法）| false（消融对照）
+  dimension_routing: true # 路由原型；现有调用处和全库候选后过滤逻辑待统一校正
 
 # 大模型（OpenAI 兼容接口）
 llm:
@@ -33,16 +36,16 @@ llm:
   api_key: ""             # 运行时读取环境变量 LLM_API_KEY
   model: deepseek-chat
   temperature: 0.2
-  mock: true              # true=离线模板响应（冒烟测试），false=真实调用
+  mock: true              # true=离线模板；正式生成必须显式 false 并记录真实模型
 
 # 生成评测
 generation:
-  modes: [no_rag, naive_rag, ours]   # 三组对照
-  judge_model: deepseek-chat         # LLM-as-judge 评分模型
+  modes: [no_rag, naive_rag, ours]   # 当前三组原型；ours 仅引用约束，联合证据核验配置待实现
+  judge_model: deepseek-chat         # 拟独立 judge；当前 03 复用生成客户端，尚未接入此选择
   judge_rubric: [faithfulness, coverage, professionalism]
 
 # 实验
 experiment:
   retrieval_repeats: 1
-  generation_repeats: 3              # 生成重复 3 次取均值（温度 0.2 仍有随机性）
+  generation_repeats: 3              # 每次重复须独立记录；统计先聚合重复再按公司聚类
   results_dir: results
