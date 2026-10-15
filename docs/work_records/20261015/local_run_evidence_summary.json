@@ -1,0 +1,121 @@
+{
+  "record_date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "publication_scope": "Documentation and selected local evidence only; raw PDFs, full answers, source-code changes and credentials are not included.",
+  "remote_base_sha": "d71e45589aa106a635df7787168a6fbb2fa5762b",
+  "local_checkout_head": "fba017153d0e2f8e955c29db503880b7c9125e93",
+  "local_checkout_contains_uncommitted_changes": true,
+  "full_runs": [
+    {
+      "name": "gpu_full_float32_no_reranker",
+      "local_source_record": "results/runs/dual_corpus_full_qwen_cuda_batch1_windows_20261014_01/output/run.json",
+      "source_record_sha256": "e86600a73f4ed23e2d0859304d45f5fda0c0b57a5f63051af1124a42f9243156",
+      "status": "completed_mock",
+      "created_at_utc": "2026-10-14T12:04:45.247131+00:00",
+      "annual_report_count": 39,
+      "annual_physical_pages": 9999,
+      "annual_chunks": 13038,
+      "regulation_documents": 85,
+      "regulation_chunks": 6033,
+      "indexed_chunk_count": 19071,
+      "embedding": {
+        "backend": "qwen",
+        "batch_size": 1,
+        "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+        "query_prompt_sha256": "9fab7feb99edb69f560d85cf1bb849dd556c37f383d0336574f78f1303e90740",
+        "document_prompt": "",
+        "normalize_embeddings": true,
+        "model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+        "max_seq_length": 32768,
+        "device": "cuda:0",
+        "model_dtype": "torch.float32",
+        "resolved_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+      },
+      "reranker_enabled": false,
+      "generation_mock": true,
+      "annual_hit_count": 5,
+      "regulation_hit_count": 5,
+      "output_sha256": "945069b8daa8dc90a2181eec01f4991b63720484d9eb663e8905e4ec2e97c57a",
+      "output_hash_verified": true,
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "name": "cpu_full_history_with_reranker",
+      "local_source_record": "results/runs/dual_corpus_full_qwen_windows_20261014_01/output/run.json",
+      "source_record_sha256": "9aa89ab7077c063a4475a66d9bcac9c8d32b2171e2840e63684b657682477de4",
+      "status": "completed_mock",
+      "created_at_utc": "2026-10-14T15:42:56.587569+00:00",
+      "annual_report_count": 39,
+      "annual_physical_pages": 9999,
+      "annual_chunks": 13038,
+      "regulation_documents": 85,
+      "regulation_chunks": 6033,
+      "indexed_chunk_count": 19071,
+      "embedding": {
+        "backend": "qwen",
+        "batch_size": 1,
+        "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+        "query_prompt_sha256": "9fab7feb99edb69f560d85cf1bb849dd556c37f383d0336574f78f1303e90740",
+        "document_prompt": "",
+        "normalize_embeddings": true,
+        "model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+        "max_seq_length": 32768,
+        "device": "cpu",
+        "model_dtype": "torch.float32",
+        "resolved_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+      },
+      "reranker_enabled": true,
+      "generation_mock": true,
+      "annual_hit_count": 5,
+      "regulation_hit_count": 5,
+      "output_sha256": "6be846bc207bf40518f298b1b7989939b06a8c44e86318328fbb68c5e1ce75bd",
+      "output_hash_verified": true,
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    }
+  ],
+  "gpu_pair": {
+    "status": "passed",
+    "source_record_sha256": "b1f9c23dad9988cedede763b7dd6aa5ce18c59dfbd6aa2ef20c60c33de112bfd",
+    "source_chunks": 10,
+    "vector_shape": [
+      10,
+      1024
+    ],
+    "peak_allocated_mib": 3511.6,
+    "peak_reserved_mib": 3942.0,
+    "elapsed_seconds": 38.896
+  },
+  "targeted_tests": {
+    "passed": 26,
+    "warnings": 1,
+    "elapsed_seconds": 1.1,
+    "scope": [
+      "test_env_config",
+      "test_gpu_runtime",
+      "test_dense_prompt",
+      "test_reranker_prompt",
+      "test_retrieval_scope",
+      "test_document_corpora"
+    ]
+  },
+  "local_api_configuration": {
+    "key_url_model_nonempty": true,
+    "connection_verified": false,
+    "real_generation_executed": false,
+    "default_mock": true
+  },
+  "paper_draft": {
+    "pages": 7,
+    "tables": 4,
+    "figures": 1,
+    "references": 6,
+    "docx_sha256": "77a028090d321eeb53e367c940b99c90e90d51b7674c2266964f6e138a3eda85",
+    "visual_review": "passed",
+    "file_uploaded_in_this_commit": false
+  },
+  "new_half_precision_pair_full_corpus_run_completed": false,
+  "formal_test_set_frozen": false,
+  "formal_generation_review_completed": false
+}

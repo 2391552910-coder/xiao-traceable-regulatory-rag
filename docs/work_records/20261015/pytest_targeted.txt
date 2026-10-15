@@ -1,0 +1,8 @@
+..........................                                               [100%]
+============================== warnings summary ===============================
+.venv-data\Lib\site-packages\jieba\_compat.py:18
+  ${PROJECT_ROOT}\.venv-data\Lib\site-packages\jieba\_compat.py:18: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+26 passed, 1 warning in 1.10s
