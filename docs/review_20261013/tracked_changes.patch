@@ -1,0 +1,500 @@
+diff --git a/.gitattributes b/.gitattributes
+index 579b08c..3faaccf 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -4,3 +4,8 @@ data/knowledge_base/*.txt -text
+ src/data/clause_splitter.py -text
+ scripts/compile_independent_review.py -text
+ results/runs/** -text
++# Generated evidence retains CSV CRLF and quoted source whitespace byte-for-byte.
++data/processed/** -text -whitespace
++data/heldout/** -text -whitespace
++data/provenance/** -text -whitespace
++docs/review_20261013/** -text -whitespace
+diff --git a/.github/workflows/benchmark.yml b/.github/workflows/benchmark.yml
+index a11b98c..7e6eea9 100644
+--- a/.github/workflows/benchmark.yml
++++ b/.github/workflows/benchmark.yml
+@@ -15,6 +15,7 @@ jobs:
+       - run: pip install -r requirements-eval.txt -r requirements-data.txt
+       - run: python -m pytest -q
+       - run: python scripts/compile_independent_review.py --check
++      - run: python scripts/validate_preparation_release.py
+       - run: python scripts/audit_benchmark.py --output-dir results/runs/ci_audit
+       - uses: actions/upload-artifact@v4
+         with:
+diff --git a/README.md b/README.md
+index 39b5296..838a86e 100644
+--- a/README.md
++++ b/README.md
+@@ -8,6 +8,8 @@
+ 
+ ## 项目说明入口
+ 
++- [2026-10-13 PR 审阅、数据准备与模型接口验证报告](docs/review_20261013/FINAL_REPORT.md)：清理版本、标签迁移、日期证据、测试隔离、双 0.6B 有限验证及剩余缺口。
++
+ - [项目任务与验收](docs/项目任务与验收.md)：目标、范围、数据规模、优先级和完成标准。
+ - [实验设计与流程](docs/实验设计与流程.md)：研究问题、对照、指标、统计和复现规范。
+ - [标注规范](docs/标注规范.md)：AI 候选标签、人工复核和事实/引用核验。
+diff --git a/configs/default.yaml b/configs/default.yaml
+index 936eb02..f072c48 100644
+--- a/configs/default.yaml
++++ b/configs/default.yaml
+@@ -17,6 +17,7 @@ retrieval:
+   top_k: 5
+   vector_weight: 0.7      # w·向量 + (1-w)·BM25；只在开发集选权重
+   embedding_model: Qwen/Qwen3-Embedding-0.6B   # 主机固定 0.6B；当前加载器未实现 Q4，峰值内存须实测
++  embedding_revision: 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
+   embedding_device: cpu                        # 已实测 CPU；可按运行设备选择 mps/cuda
+   embedding_backend: qwen  # qwen | bge | tfidf（仅联调）| api；查询指令须统一
+   embedding_batch_size: 1  # CPU 先使用已实测批量，避免全库默认 32 的内存波动
+@@ -26,9 +27,12 @@ retrieval:
+   # embedding_base_url: http://192.168.1.10:8000/v1   # vLLM/Xinference/Ollama 的 OpenAI 兼容地址
+   # embedding_api_key: ""                              # 远端服务密钥（如有），建议用环境变量
+   reranker:
+-    enabled: true          # tfidf 联调须另行关闭；本地 Qwen3 评分实现需按官方路径校正
++    enabled: true          # 本地 causal-LM yes/no 评分；与 embedding 共享顺序加载器
+     model: Qwen/Qwen3-Reranker-0.6B          # 冻结权重的候选重排模型，内存与速度实测后报告
+-    device: mps
++    revision: e61197ed45024b0ed8a2d74b80b4d909f1255473
++    device: cpu
++    batch_size: 1
++    max_length: 8192
+     pool_factor: 4          # 计划候选深度；当前双路先各截 top_k×2，须校正候选池
+     # url: http://192.168.1.10:9997/v1       # 填则走远端重排服务，忽略本地加载
+   dimension_routing: true # 路由原型；现有调用处和全库候选后过滤逻辑待统一校正
+diff --git a/experiments/02_retrieval_evaluation.py b/experiments/02_retrieval_evaluation.py
+index b8a0b67..81e4d05 100644
+--- a/experiments/02_retrieval_evaluation.py
++++ b/experiments/02_retrieval_evaluation.py
+@@ -47,7 +47,11 @@ def main():
+     for row in rows:
+         candidates[row["query_id"]].update(json.loads(row["ranked_ids"]))
+     export_review(benchmark, output.with_name(output.stem + "_human_review.csv"), candidates)
+-    save_run(output, rows, benchmark, cfg)
++    save_run(output, rows, benchmark, cfg, model_metadata={
++        "embedding": retriever.dense.encoding_metadata,
++        "reranker": getattr(reranker, "encoding_metadata", None),
++        "local_weight_lifecycle": retriever.dense._runtime.events,
++    })
+     for summary in summarize(rows, top_k):
+         print(f"{summary['config']:<32} Recall@{top_k}={summary[f'recall@{top_k}']:.4f} "
+               f"MRR@{top_k}={summary['mrr']:.4f} nDCG@{top_k}={summary[f'ndcg@{top_k}']:.4f}")
+diff --git a/experiments/04_ablation_study.py b/experiments/04_ablation_study.py
+index 38475b0..9511e3c 100644
+--- a/experiments/04_ablation_study.py
++++ b/experiments/04_ablation_study.py
+@@ -1,5 +1,6 @@
+ """实验 04：同一 gold 证据单元上的切分、维度路由与融合权重消融。"""
+ import argparse
++import gc
+ import sys
+ from pathlib import Path
+ 
+@@ -19,6 +20,7 @@ def main():
+     top_k = cfg["retrieval"]["top_k"]
+     threshold = cfg["evaluation"]["coverage_threshold"]
+     rows = []
++    model_metadata = {}
+     for chunking in ("clause", "window"):
+         _, retriever = build_knowledge_index(cfg, chunking=chunking)
+         router = make_router(retriever)
+@@ -29,6 +31,14 @@ def main():
+                         top_k, threshold, ablation="chunking×routing", chunking=chunking,
+                         routing=routed, query_expansion=True,
+                         vector_weight=cfg["retrieval"]["vector_weight"], reranker=args.rerank))
++        model_metadata[chunking] = {
++            "embedding": getattr(getattr(retriever, 'dense', None), 'encoding_metadata', None),
++            "reranker": getattr(getattr(retriever, 'reranker', None), 'encoding_metadata', None),
++        }
++        # Drop both owners before the next index loads model weights. Dense query
++        # encoder closures can form cycles, so reference deletion alone is insufficient.
++        del router, retriever
++        gc.collect()
+     _, retriever = build_knowledge_index(cfg, chunking="clause")
+     router = make_router(retriever)
+     for weight in (0.3, 0.5, 0.7, 0.9):
+@@ -37,7 +47,11 @@ def main():
+                     lambda q: router.search(q.dimension, q.query, top_k, routed=True),
+                     top_k, threshold, ablation="vector_weight", chunking="clause",
+                     routing=True, query_expansion=True, vector_weight=weight, reranker=args.rerank))
+-    save_run(output, rows, benchmark, cfg)
++    model_metadata['weight_sweep'] = {
++        "embedding": getattr(getattr(retriever, 'dense', None), 'encoding_metadata', None),
++        "reranker": getattr(getattr(retriever, 'reranker', None), 'encoding_metadata', None),
++    }
++    save_run(output, rows, benchmark, cfg, model_metadata=model_metadata)
+     for summary in summarize(rows, top_k):
+         print(f"{summary['config']:<24} Recall@{top_k}={summary[f'recall@{top_k}']:.4f} "
+               f"MRR@{top_k}={summary['mrr']:.4f}")
+diff --git a/requirements-eval.txt b/requirements-eval.txt
+index 3998d2d..2550b9d 100644
+--- a/requirements-eval.txt
++++ b/requirements-eval.txt
+@@ -5,3 +5,4 @@ scikit-learn==1.5.2
+ jieba==0.42.1
+ pyyaml==6.0.2
+ pytest==8.3.3
++pypdf==6.1.1
+diff --git a/scripts/audit_data_preparation.py b/scripts/audit_data_preparation.py
+index 69a6ab9..e7ac568 100644
+--- a/scripts/audit_data_preparation.py
++++ b/scripts/audit_data_preparation.py
+@@ -24,14 +24,28 @@ def annual_report_availability(root: Path, report_path: Path) -> list[dict]:
+         inside = path is not None and path.is_relative_to(root.resolve())
+         present = bool(inside and path.is_file())
+         valid_header = False
++        parse_valid = False
++        pages = 0
++        validation_error = None
+         if present:
+             with path.open('rb') as f:
+                 valid_header = f.read(5) == b'%PDF-'
++            if valid_header:
++                try:
++                    from pypdf import PdfReader
++                    reader = PdfReader(path, strict=True)
++                    pages = len(reader.pages)
++                    parse_valid = not reader.is_encrypted and pages > 0
++                except Exception as exc:
++                    validation_error = f'{type(exc).__name__}: {exc}'
+         rows.append({'stock_code': record['stock_code'], 'name': record['name'],
+                      'year': record['year'], 'historical_status': record['status'],
+                      'expected_file': name, 'file_present': present,
+                      'pdf_header_valid': valid_header,
+-                     'availability': ('present_pdf' if valid_header else 'invalid_pdf' if present
++                     'pdf_parse_valid': parse_valid, 'pdf_pages': pages,
++                     'validation_error': validation_error,
++                     'company_year_verified': False,
++                     'availability': ('present_pdf' if parse_valid else 'invalid_pdf' if present
+                                       else 'unsafe_or_empty_path' if not inside else 'missing'),
+                      'bytes': path.stat().st_size if present else 0})
+     return rows
+@@ -90,7 +104,8 @@ def audit(out: Path) -> dict:
+               'annual_reports': {'sampling_frame_companies': len(frame), 'historical_manifest_rows': len(annual),
+                                  'historical_status_counts': dict(Counter(r['historical_status'] for r in annual)),
+                                  'current_availability_counts': dict(Counter(r['availability'] for r in annual)),
+-                                 'available_pdf_count': sum(r['pdf_header_valid'] for r in annual),
++                                 'available_pdf_count': sum(r['pdf_parse_valid'] for r in annual),
++                                 'company_year_verified_count': 0,
+                                  'manifest_sha256': hashlib.sha256((companies / 'download_report.csv').read_bytes()).hexdigest(),
+                                  'required_source_hosts_in_startup_allowlist': {h: h in allowed for h in ['www.cninfo.com.cn', 'static.cninfo.com.cn']},
+                                  'formal_status': 'not_ready'},
+diff --git a/src/metrics/benchmark_eval.py b/src/metrics/benchmark_eval.py
+index 6d75439..95cd086 100644
+--- a/src/metrics/benchmark_eval.py
++++ b/src/metrics/benchmark_eval.py
+@@ -200,7 +200,8 @@ def prepare_evaluation(args, experiment_name: str):
+     return cfg, benchmark, output
+ 
+ 
+-def save_run(summary_path: Path, rows: list[dict], benchmark: Benchmark, cfg: dict) -> None:
++def save_run(summary_path: Path, rows: list[dict], benchmark: Benchmark, cfg: dict,
++             model_metadata: dict | None = None) -> None:
+     paths = output_paths(summary_path)
+     top_k = cfg["retrieval"]["top_k"]
+     evaluation = cfg.get("evaluation", {})
+@@ -229,6 +230,7 @@ def save_run(summary_path: Path, rows: list[dict], benchmark: Benchmark, cfg: di
+         "benchmark_hashes": benchmark.hashes,
+         "benchmark_id": benchmark.manifest.get("benchmark_id") if benchmark.manifest else None,
+         "config": sanitized(cfg), "command": sys.argv,
++        "model_execution_metadata": sanitized(model_metadata or {}),
+         "python": platform.python_version(), "packages": versions,
+         "git_head": git_head.stdout.strip() or None, "git_dirty": bool(git_status.stdout.strip()),
+         "code_sha256": code, "tokenizer": "jieba" if _HAS_JIEBA else "character_bigram_fallback",
+diff --git a/src/pipeline.py b/src/pipeline.py
+index 0e8a7e5..3b08399 100644
+--- a/src/pipeline.py
++++ b/src/pipeline.py
+@@ -7,6 +7,7 @@ from src.data.knowledge_loader import load_documents
+ from src.generation.llm_client import LLMClient
+ from src.retrieval.hybrid import HybridRetriever
+ from src.retrieval.router import DimensionRoutedRetriever
++from src.retrieval.model_runtime import SequentialModelRuntime
+ 
+ 
+ def build_knowledge_index(cfg: dict, chunking: str | None = None):
+@@ -20,6 +21,7 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
+                                      window_size=kb_cfg["window_size"],
+                                      window_overlap=kb_cfg["window_overlap"]))
+     ret_cfg = cfg["retrieval"]
++    runtime = SequentialModelRuntime()
+     reranker = None
+     rr_cfg = ret_cfg.get("reranker") or {}
+     if rr_cfg.get("enabled"):
+@@ -31,7 +33,10 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
+         else:
+             from src.retrieval.reranker import Reranker
+             reranker = Reranker(model_name=rr_cfg.get("model", "Qwen/Qwen3-Reranker-0.6B"),
+-                                device=rr_cfg.get("device", "cpu"))
++                                device=rr_cfg.get("device", "cpu"), model_runtime=runtime,
++                                revision=rr_cfg.get("revision"),
++                                max_length=rr_cfg.get("max_length", 8192),
++                                batch_size=rr_cfg.get("batch_size", 1))
+     retriever = HybridRetriever(
+         chunks, vector_weight=ret_cfg["vector_weight"],
+         reranker=reranker,
+@@ -44,6 +49,7 @@ def build_knowledge_index(cfg: dict, chunking: str | None = None):
+         batch_size=ret_cfg.get("embedding_batch_size", 32),
+         query_prompt=ret_cfg.get("embedding_query_prompt", ""),
+         max_seq_length=ret_cfg.get("embedding_max_seq_length"),
++        model_runtime=runtime, revision=ret_cfg.get("embedding_revision"),
+     )
+     return chunks, retriever
+ 
+diff --git a/src/retrieval/dense.py b/src/retrieval/dense.py
+index f6d4523..f660ce3 100644
+--- a/src/retrieval/dense.py
++++ b/src/retrieval/dense.py
+@@ -11,6 +11,7 @@ TF-IDF 余弦（供无法下载模型时的冒烟测试）；embedding_backend=a
+ import json
+ import hashlib
+ import urllib.request
++from collections import OrderedDict
+ 
+ import numpy as np
+ 
+@@ -39,7 +40,8 @@ class DenseRetriever:
+     def __init__(self, chunks: list[Chunk], backend: str = "bge",
+                  model_name: str = "BAAI/bge-m3", device: str = "cpu",
+                  base_url: str = "", api_key: str = "", batch_size: int = 32,
+-                 query_prompt: str = "", max_seq_length: int | None = None):
++                 query_prompt: str = "", max_seq_length: int | None = None,
++                 model_runtime=None, revision: str | None = None):
+         if batch_size < 1:
+             raise ValueError("batch_size 必须为正数")
+         if max_seq_length is not None and max_seq_length < 1:
+@@ -47,6 +49,12 @@ class DenseRetriever:
+         self.chunks = chunks
+         self.backend = backend
+         self.query_prompt = query_prompt if backend != "tfidf" else ""
++        self._runtime = model_runtime
++        self._model = None
++        self._model_name, self._device = model_name, device
++        self._revision, self._max_seq_length = revision, max_seq_length
++        self._batch_size = batch_size
++        self._query_cache = OrderedDict()
+         self.encoding_metadata = {"backend": backend, "batch_size": batch_size,
+                                   "query_prompt": self.query_prompt,
+                                   "query_prompt_sha256": hashlib.sha256(self.query_prompt.encode()).hexdigest(),
+@@ -54,19 +62,8 @@ class DenseRetriever:
+         if backend in ("bge", "qwen"):
+             # sentence-transformers 统一加载：BGE-M3 / 本项目固定 Qwen3-Embedding-0.6B
+             # 查询指令显式配置；文档不添加指令，也不继承模型的默认 prompt。
+-            from sentence_transformers import SentenceTransformer
+-            self._model = SentenceTransformer(model_name, device=device)
+-            if max_seq_length is not None:
+-                if max_seq_length > self._model.max_seq_length:
+-                    raise ValueError("max_seq_length 超过模型支持的长度")
+-                self._model.max_seq_length = max_seq_length
+-            self.encoding_metadata.update(max_seq_length=self._model.max_seq_length,
+-                                          device=str(self._model.device),
+-                                          model_dtype=str(next(self._model.parameters()).dtype))
+-            encode_documents = lambda texts: self._model.encode(
+-                texts, prompt="", normalize_embeddings=True, batch_size=batch_size)
+-            self._encode = lambda texts: self._model.encode(
+-                texts, prompt=self.query_prompt, normalize_embeddings=True, batch_size=batch_size)
++            encode_documents = lambda texts: self._encode_model(texts, "")
++            self._encode = self._encode_local_queries
+         elif backend == "tfidf":
+             from sklearn.feature_extraction.text import TfidfVectorizer
+             from sklearn.preprocessing import normalize as sp_normalize
+@@ -98,6 +95,51 @@ class DenseRetriever:
+         """按当前查询指令与批量设置编码查询；文档向量使用独立的无指令路径。"""
+         return self._encode(texts)
+ 
++    def _load_weights(self):
++        from sentence_transformers import SentenceTransformer
++        kwargs = {"revision": self._revision} if self._revision else {}
++        self._model = SentenceTransformer(self._model_name, device=self._device, **kwargs)
++        if self._max_seq_length is not None:
++            if self._max_seq_length > self._model.max_seq_length:
++                self._model = None
++                raise ValueError("max_seq_length 超过模型支持的长度")
++            self._model.max_seq_length = self._max_seq_length
++        self.encoding_metadata.update(max_seq_length=self._model.max_seq_length,
++                                      device=str(self._model.device), requested_revision=self._revision,
++                                      model_dtype=str(next(self._model.parameters()).dtype))
++        first = self._model._first_module() if hasattr(self._model, '_first_module') else None
++        config = getattr(getattr(first, 'auto_model', None), 'config', None)
++        self.encoding_metadata['resolved_revision'] = getattr(config, '_commit_hash', None)
++
++    def _unload_weights(self):
++        self._model = None
++
++    def _encode_model(self, texts, prompt):
++        if self._runtime is not None:
++            self._runtime.acquire(self)
++        elif self._model is None:
++            self._load_weights()
++        return self._model.encode(texts, prompt=prompt, normalize_embeddings=True,
++                                  batch_size=self._batch_size)
++
++    def _encode_local_queries(self, texts):
++        if not texts:
++            return np.empty((0, self._matrix.shape[1]), dtype=np.float32)
++        self.encoding_metadata.update(query_prompt=self.query_prompt,
++            query_prompt_sha256=hashlib.sha256(self.query_prompt.encode()).hexdigest())
++        keys = [(self.query_prompt, text) for text in texts]
++        missing = list(dict.fromkeys(key for key in keys if key not in self._query_cache))
++        fresh = {}
++        if missing:
++            vectors = self._encode_model([key[1] for key in missing], self.query_prompt)
++            fresh = {key: vector for key, vector in zip(missing, vectors)}
++        result = np.stack([self._query_cache[key] if key in self._query_cache else fresh[key] for key in keys])
++        for key, vector in fresh.items():
++            self._query_cache[key] = np.array(vector, copy=True)
++        while len(self._query_cache) > 256:
++            self._query_cache.popitem(last=False)
++        return result
++
+     def search(self, query: str, top_k: int = 5) -> list[tuple[Chunk, float]]:
+         q_vec = self._encode([query])
+         if self._sparse:
+diff --git a/src/retrieval/reranker.py b/src/retrieval/reranker.py
+index b02a97c..cc83c68 100644
+--- a/src/retrieval/reranker.py
++++ b/src/retrieval/reranker.py
+@@ -2,8 +2,8 @@
+ 交叉编码重排器（reranker）
+ 
+ 默认候选 Qwen3-Reranker-0.6B，用于混合检索后的重排。
+-当前本地实现仍采用序列分类头，尚待按官方受支持的输入和评分路径校正，
+-完成一致性实测前不用于正式论文结论。
++本地按官方 causal-LM 的 yes/no token 概率评分，按需加载；
++离线接口测试不等于真实权重质量实验。
+ 
+ 本项目本地 Embedding 与 Reranker 均限定 0.6B；device 可用 mps/cpu/cuda。
+ 权重精度、batch、截断与峰值内存须实测，不以理论权重大小保证主机可运行。
+@@ -16,34 +16,84 @@ TEI 的 [{index, score}] 两种返回格式。
+ import json
+ import urllib.request
+ 
+-import torch
++import hashlib
++import numpy as np
+ 
+ from src.data.clause_splitter import Chunk
+ 
+ 
+ class Reranker:
+     def __init__(self, model_name: str = "Qwen/Qwen3-Reranker-0.6B",
+-                 device: str = "cpu", max_length: int = 512, batch_size: int = 16):
+-        from transformers import AutoModelForSequenceClassification, AutoTokenizer
+-        self._tok = AutoTokenizer.from_pretrained(model_name)
+-        self._model = AutoModelForSequenceClassification.from_pretrained(
+-            model_name, torch_dtype="auto", device_map=device)
+-        self._model.eval()
++                 device: str = "cpu", max_length: int = 8192, batch_size: int = 1,
++                 model_runtime=None, revision: str | None = None,
++                 instruction: str = 'Given a web search query, retrieve relevant passages that answer the query'):
++        if max_length < 1 or batch_size < 1:
++            raise ValueError('max_length and batch_size must be positive')
++        if 'Qwen3-Reranker-' in model_name and 'Qwen3-Reranker-0.6B' not in model_name:
++            raise ValueError('This project uses Qwen3-Reranker-0.6B')
++        self._model_name, self._device, self._revision = model_name, device, revision
++        self._runtime, self._model, self._tok = model_runtime, None, None
++        self.instruction = instruction
+         self.max_length = max_length
+         self.batch_size = batch_size
++        self.encoding_metadata = {'model':model_name, 'requested_revision':revision,
++                                  'scoring':'P(yes | {no, yes}) at final token',
++                                  'max_length':max_length, 'batch_size':batch_size,
++                                  'instruction_sha256':hashlib.sha256(instruction.encode()).hexdigest(),
++                                  'logits_to_keep':1, 'use_cache':False,
++                                  'weights_loaded':False}
++
++    def _load_weights(self):
++        from transformers import AutoModelForCausalLM, AutoTokenizer
++        kwargs = {'revision':self._revision} if self._revision else {}
++        self._tok = AutoTokenizer.from_pretrained(self._model_name, padding_side='left', **kwargs)
++        self._tok.padding_side = 'left'
++        if self._tok.pad_token_id is None:
++            self._tok.pad_token = self._tok.eos_token
++        prefix = '<|im_start|>system\nJudge whether the Document meets the requirements based on the Query and the Instruct provided. Note that the answer can only be "yes" or "no".<|im_end|>\n<|im_start|>user\n'
++        suffix = '<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
++        self._prefix = self._tok.encode(prefix, add_special_tokens=False)
++        self._suffix = self._tok.encode(suffix, add_special_tokens=False)
++        self._budget = self.max_length - len(self._prefix) - len(self._suffix)
++        if self._budget < 1:
++            raise ValueError('max_length cannot fit the reranker template')
++        self._no, self._yes = (self._tok.convert_tokens_to_ids(x) for x in ['no', 'yes'])
++        if self._no == self._yes or any(i is None or i == self._tok.unk_token_id for i in [self._no,self._yes]):
++            raise ValueError('Tokenizer does not expose distinct yes/no tokens')
++        self._model = AutoModelForCausalLM.from_pretrained(self._model_name, torch_dtype='auto', **kwargs)
++        self._model.to(self._device).eval()
++        self.encoding_metadata.update(weights_loaded=True, device=str(self._model.device),
++            model_dtype=str(next(self._model.parameters()).dtype),
++            resolved_revision=getattr(self._model.config, '_commit_hash', None))
++
++    def _unload_weights(self):
++        self._model, self._tok = None, None
++        self.encoding_metadata['weights_loaded'] = False
+ 
+-    @torch.no_grad()
+     def score(self, query: str, chunks: list[Chunk]) -> list[float]:
+         """返回与 chunks 等长的相关性分数列表"""
++        if not chunks:
++            return []
++        import torch
++        if self._runtime is not None:
++            self._runtime.acquire(self)
++        elif self._model is None:
++            self._load_weights()
+         scores: list[float] = []
+         for i in range(0, len(chunks), self.batch_size):
+             batch = chunks[i:i + self.batch_size]
+-            pairs = [[query, c.text] for c in batch]
+-            enc = self._tok(pairs, padding=True, truncation=True,
+-                            max_length=self.max_length, return_tensors="pt")
+-            logits = self._model(**enc.to(self._model.device)).logits
+-            # Qwen3-Reranker 单输出头；多任务版可用 predict 接口
+-            scores.extend(torch.sigmoid(logits[:, 0]).float().cpu().tolist())
++            texts = [f'<Instruct>: {self.instruction}\n<Query>: {query}\n<Document>: {c.text}' for c in batch]
++            tokens = self._tok(texts, padding=False, truncation='longest_first',
++                               return_attention_mask=False, max_length=self._budget)
++            tokens['input_ids'] = [self._prefix + ids + self._suffix for ids in tokens['input_ids']]
++            enc = self._tok.pad(tokens, padding=True, return_tensors='pt', max_length=self.max_length)
++            enc = {key: value.to(self._model.device) for key,value in enc.items()}
++            with torch.inference_mode():
++                logits = self._model(**enc, logits_to_keep=1, use_cache=False).logits[:, -1, :]
++                pair = logits[:, [self._no, self._yes]].float().cpu().numpy()
++            if not np.isfinite(pair).all():
++                raise ValueError('Reranker returned non-finite yes/no logits')
++            scores.extend(np.exp(pair[:,1]-np.logaddexp(pair[:,0],pair[:,1])).tolist())
+         return scores
+ 
+ 
+diff --git a/tests/test_data_preparation.py b/tests/test_data_preparation.py
+index 0d5ac5c..a71a86c 100644
+--- a/tests/test_data_preparation.py
++++ b/tests/test_data_preparation.py
+@@ -1,4 +1,5 @@
+ import csv
++from pypdf import PdfWriter
+ 
+ from scripts.audit_data_preparation import annual_report_availability
+ 
+@@ -8,13 +9,19 @@ def test_historical_download_success_is_not_file_availability(tmp_path):
+     rows = [{'stock_code': 'A', 'name': 'missing', 'year': '2024', 'status': 'ok', 'file': 'missing.pdf'},
+             {'stock_code': 'B', 'name': 'wrong format', 'year': '2024', 'status': 'ok', 'file': 'bad.pdf'},
+             {'stock_code': 'C', 'name': 'present', 'year': '2024', 'status': 'ok', 'file': 'good.pdf'},
+-            {'stock_code': 'D', 'name': 'unsafe', 'year': '2024', 'status': 'ok', 'file': '../outside.pdf'}]
++            {'stock_code': 'D', 'name': 'unsafe', 'year': '2024', 'status': 'ok', 'file': '../outside.pdf'},
++            {'stock_code': 'E', 'name': 'header only', 'year': '2024', 'status': 'ok', 'file': 'header.pdf'}]
+     with report.open('w', newline='') as f:
+         writer = csv.DictWriter(f, fieldnames=list(rows[0]))
+         writer.writeheader()
+         writer.writerows(rows)
+     (tmp_path / 'bad.pdf').write_bytes(b'not a PDF')
+-    (tmp_path / 'good.pdf').write_bytes(b'%PDF-1.7\n')
++    writer = PdfWriter()
++    writer.add_blank_page(width=72, height=72)
++    writer.write(tmp_path / 'good.pdf')
++    (tmp_path / 'header.pdf').write_bytes(b'%PDF-1.7\n')
+     results = annual_report_availability(tmp_path, report)
+-    assert [r['availability'] for r in results] == ['missing', 'invalid_pdf', 'present_pdf', 'unsafe_or_empty_path']
++    assert [r['availability'] for r in results] == ['missing', 'invalid_pdf', 'present_pdf', 'unsafe_or_empty_path', 'invalid_pdf']
+     assert all(r['historical_status'] == 'ok' for r in results)
++    assert results[-1]['pdf_header_valid'] and not results[-1]['pdf_parse_valid']
++    assert not any(r['company_year_verified'] for r in results)

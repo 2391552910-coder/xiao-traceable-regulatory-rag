@@ -34,14 +34,25 @@ def split_by_clause(doc_id: str, doc_title: str, doc_type: str, source: str,
     按"第X条"边界切分，条款号写入 chunk.clause_no，引用可追溯。
     条款前的总则/附则等非条款文本并入相邻块。
     """
-    parts = CLAUSE_PATTERN.split(text)
     chunks: list[Chunk] = []
-    buffer = ""
+    matches = list(CLAUSE_PATTERN.finditer(text))
+    headings = [m for m in matches
+                if not text[text.rfind("\n", 0, m.start()) + 1:m.start()].strip()]
 
-    def flush(clause_no: str | None, body: str):
+    def flush(clause_no: str | None, start: int, body_start: int, end: int):
+        body = text[body_start:end]
+        leading = len(body) - len(body.lstrip())
         body = body.strip()
         if not body:
             return
+        body_start += leading
+        raw_end = body_start + len(body)
+        prefix = clause_no or ""
+        visible_end = body_start + min(len(body), 2000 - len(prefix))
+        if clause_no is None:
+            start = body_start
+        is_heading = clause_no is not None and any(m.start() == start for m in headings)
+        owner = [m.group() for m in headings if m.start() <= start]
         idx = len(chunks) + 1
         chunks.append(Chunk(
             chunk_id=f"{doc_id}-C{idx:03d}",
@@ -49,21 +60,21 @@ def split_by_clause(doc_id: str, doc_title: str, doc_type: str, source: str,
             clause_no=clause_no,
             text=(f"{clause_no}{body}" if clause_no else body)[:2000],
             dimension=dimension,
+            meta={"source_start": start, "source_end": visible_end,
+                  "raw_end": raw_end, "truncated": visible_end < raw_end,
+                  "is_clause_heading": is_heading,
+                  "owner_clause_no": owner[-1] if owner else None},
         ))
 
-    i = 0
-    while i < len(parts):
-        part = parts[i]
-        if CLAUSE_PATTERN.fullmatch(part):
-            flush(None, buffer)  # 上一条款与之间的自由文本
-            buffer = ""
-            body = parts[i + 1] if i + 1 < len(parts) else ""
-            flush(part, body)
-            i += 2
-        else:
-            buffer += part
-            i += 1
-    flush(None, buffer)
+    # 保留历史 C 编号与文本，避免改变已有 gold/合成集的标注含义。
+    # 旧切分器也在正文引用处切分；审计通过元信息揭示此问题，不将其视为完整法条。
+    if not matches:
+        flush(None, 0, 0, len(text))
+    else:
+        flush(None, 0, 0, matches[0].start())
+        for i, match in enumerate(matches):
+            end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+            flush(match.group(), match.start(), match.end(), end)
     return chunks
 
 
@@ -81,6 +92,8 @@ def split_by_window(doc_id: str, doc_title: str, doc_type: str, source: str,
             chunk_id=f"{doc_id}-W{len(chunks) + 1:03d}",
             doc_id=doc_id, doc_title=doc_title, doc_type=doc_type, source=source,
             clause_no=None, text=piece, dimension=dimension,
+            meta={"source_start": start + len(text[start:start + size]) - len(text[start:start + size].lstrip()),
+                  "source_end": start + len(text[start:start + size].rstrip())},
         ))
     return chunks
 

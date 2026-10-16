@@ -1,0 +1,2 @@
+# PDF parsing for source-linked annual reports.
+pypdf==6.1.1

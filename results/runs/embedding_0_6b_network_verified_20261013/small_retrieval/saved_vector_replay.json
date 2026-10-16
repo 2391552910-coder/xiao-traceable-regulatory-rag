@@ -1,0 +1,159 @@
+{
+  "verified_at_utc": "2026-10-13T07:55:52.741720+00:00",
+  "status": "passed",
+  "artifact_hashes_match": true,
+  "source_chunk_hashes_match": true,
+  "document_vector_shape": [
+    12,
+    1024
+  ],
+  "query_vector_shape": [
+    4,
+    1024
+  ],
+  "document_dtype": "float32",
+  "query_dtype": "float32",
+  "saved_document_self_retrieval_passed": 12,
+  "retrieval_orders_reproduced": 12,
+  "checks": [
+    {
+      "query_id": "Q01",
+      "method": "dense",
+      "top3_ids": [
+        "DOC100-C014",
+        "DOC007-C086",
+        "DOC003-C001"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q01",
+      "method": "bm25",
+      "top3_ids": [
+        "DOC100-C014",
+        "DOC007-C086",
+        "DOC003-C001"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q01",
+      "method": "hybrid",
+      "top3_ids": [
+        "DOC100-C014",
+        "DOC007-C086",
+        "DOC003-C001"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q11",
+      "method": "dense",
+      "top3_ids": [
+        "DOC003-C001",
+        "DOC120-C044",
+        "DOC004-C004"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q11",
+      "method": "bm25",
+      "top3_ids": [
+        "DOC003-C001",
+        "DOC120-C044",
+        "DOC007-C057"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q11",
+      "method": "hybrid",
+      "top3_ids": [
+        "DOC003-C001",
+        "DOC120-C044",
+        "DOC004-C004"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q21",
+      "method": "dense",
+      "top3_ids": [
+        "DOC004-C004",
+        "DOC004-C005",
+        "DOC004-C001"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q21",
+      "method": "bm25",
+      "top3_ids": [
+        "DOC004-C005",
+        "DOC004-C004",
+        "DOC003-C001"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q21",
+      "method": "hybrid",
+      "top3_ids": [
+        "DOC004-C004",
+        "DOC004-C005",
+        "DOC004-C001"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q31",
+      "method": "dense",
+      "top3_ids": [
+        "DOC136-C015",
+        "DOC136-C018",
+        "DOC007-C059"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q31",
+      "method": "bm25",
+      "top3_ids": [
+        "DOC136-C018",
+        "DOC136-C015",
+        "DOC007-C057"
+      ],
+      "order_matches": true
+    },
+    {
+      "query_id": "Q31",
+      "method": "hybrid",
+      "top3_ids": [
+        "DOC136-C018",
+        "DOC136-C015",
+        "DOC007-C059"
+      ],
+      "order_matches": true
+    }
+  ],
+  "selected_sample_summary": {
+    "dense": {
+      "top1_selected_direct_positive": 4,
+      "selected_direct_positives_in_top3": 8,
+      "n_queries": 4
+    },
+    "bm25": {
+      "top1_selected_direct_positive": 4,
+      "selected_direct_positives_in_top3": 8,
+      "n_queries": 4
+    },
+    "hybrid": {
+      "top1_selected_direct_positive": 4,
+      "selected_direct_positives_in_top3": 8,
+      "n_queries": 4
+    }
+  },
+  "quality_benchmark": false,
+  "note": "This replay uses saved neural vectors. It executes no new neural inference. Samples were selected positives; unselected chunks are not asserted irrelevant."
+}

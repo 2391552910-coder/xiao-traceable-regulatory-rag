@@ -1,0 +1,16 @@
+{
+  "missing_DATE_fields_audited": 94,
+  "status_counts": {
+    "external_evidence_required": 1,
+    "supported_by_cached_official_text_footer": 93
+  },
+  "publication_dates_certified": 0,
+  "effective_dates_certified": 0,
+  "frozen_inputs_modified": false,
+  "script_sha256": "709bbdd3649485fdcb04c18f29f5b3b5eb168c439c4c5950780f02fb24ab20c6",
+  "artifacts_sha256": {
+    "date_evidence.jsonl": "fdb46adbe864945461630eacbdcd11ed47b9af34efbe5883e2827d04fd4a6329",
+    "external_evidence_queue.jsonl": "b8f838bb59badda2c8ede88cb3acb73f7093db66109c336b8e37ab5313d61725",
+    "typed_date_overlay.jsonl": "a995465d8a56bdaffc6b8607208281eed1492c90f75f8328228ceb88f6a8f5a5"
+  }
+}

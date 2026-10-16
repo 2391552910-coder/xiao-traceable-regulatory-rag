@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "status": "prepared_pending_semantic_and_temporal_review",
+  "usage": "development_preparation_only",
+  "source_corpus_sha256": "0653487765c3d14875e5deebe64248b1b6b886ce1e5f7cb878b016c7ec2911ba",
+  "coordinate_system": "Unicode offsets in load_documents text (body.strip), not raw file bytes",
+  "source_documents": 319,
+  "document_status_counts": {
+    "quarantined_excerpt": 3,
+    "retained": 309,
+    "duplicate_alias": 7
+  },
+  "exact_duplicate_groups": [
+    [
+      "DOC045",
+      "DOC074"
+    ],
+    [
+      "DOC046",
+      "DOC070"
+    ],
+    [
+      "DOC055",
+      "DOC060"
+    ],
+    [
+      "DOC061",
+      "DOC144"
+    ],
+    [
+      "DOC084",
+      "DOC260"
+    ],
+    [
+      "DOC085",
+      "DOC086"
+    ],
+    [
+      "DOC254",
+      "DOC255"
+    ]
+  ],
+  "retained_documents": 309,
+  "new_chunks": 5410,
+  "old_chunks_mapped": 7899,
+  "label_rows": 1275,
+  "missing_dates": 94,
+  "human_labels_added": 0,
+  "formal_gold_created": false,
+  "tools_sha256": {
+    "src/data/corpus_v2.py": "9775c174dccf58032351ea7fe504a282908bf56eea4af4f883e1dfde29d0a837",
+    "scripts/prepare_corpus_v2.py": "2cc759518356da4b299d5e64959ae19285ac211d90e78bc3278a864f3238070e"
+  },
+  "artifacts_sha256": {
+    "chunk_migration.jsonl": "15e148f23bfb02648b7df011e781fa3d72fb77d506f175049c4ee826888ed7f2",
+    "chunks.jsonl": "70aa06eaf74d5e4b15c1cda6f2828a67f7eb0410d5fcefc4803a6de997f0aa1f",
+    "date_review_queue.jsonl": "f3d7072ae7e778499f66178e358eae6567188e0c67666b1e919ff9c53da901d2",
+    "document_manifest.jsonl": "2610b69d0ebca711206c815a54a23b6862fe6f1a1942d17847618599a7f3f9ce",
+    "documents.jsonl": "0a7ceaff739663c86b6ae73ab3c64cc89d513d386f0dce384f0d6420ad7dc5e4",
+    "label_migration.jsonl": "3e436d41e20da3fa6bafba3f566bb374326e32db318bbc6411daf653e9126225"
+  }
+}

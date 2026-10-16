@@ -1,0 +1,63 @@
+{
+  "status": "auxiliary_candidates_need_original_pdf_and_review",
+  "source_kind": "third_party_converted_markdown",
+  "documents_processed": 5,
+  "candidate_count": 500,
+  "verified_fact_count": 0,
+  "formal_data_ready": false,
+  "original_pdf_count": 0,
+  "coordinate_system": "character offsets in downloaded Markdown; no physical PDF page mapping",
+  "selection": "first 100 keyword-matching sentences per document",
+  "documents": [
+    {
+      "stock_code": "600318.SH",
+      "name": "新力金融",
+      "source_text_sha256": "26d01eefcf3984630742a03bafd9259d6133c6a52e0405c215d68e4a7183cba7",
+      "matched_sentences": 125,
+      "saved_candidates": 100,
+      "candidate_cap_reached": true,
+      "original_pdf_recovered": false,
+      "front_text_contains_2024_full_report_title": true
+    },
+    {
+      "stock_code": "600519.SH",
+      "name": "贵州茅台",
+      "source_text_sha256": "f1ddb9101ba105da97982f1e157b1838eba715322c3addf5920f9de5ed3dfd9d",
+      "matched_sentences": 151,
+      "saved_candidates": 100,
+      "candidate_cap_reached": true,
+      "original_pdf_recovered": false,
+      "front_text_contains_2024_full_report_title": true
+    },
+    {
+      "stock_code": "300750.SZ",
+      "name": "宁德时代",
+      "source_text_sha256": "f786c0c3194426bdc4eece88161bd0d0578c00ee7f13c3b84c5a416759cbafed",
+      "matched_sentences": 206,
+      "saved_candidates": 100,
+      "candidate_cap_reached": true,
+      "original_pdf_recovered": false,
+      "front_text_contains_2024_full_report_title": true
+    },
+    {
+      "stock_code": "002594.SZ",
+      "name": "比亚迪",
+      "source_text_sha256": "2244d2ff34e82f4ce6e1d3891ce73b9ad2a2e19d5c19ee7946dc9990b3f1c49e",
+      "matched_sentences": 200,
+      "saved_candidates": 100,
+      "candidate_cap_reached": true,
+      "original_pdf_recovered": false,
+      "front_text_contains_2024_full_report_title": true
+    },
+    {
+      "stock_code": "002415.SZ",
+      "name": "海康威视",
+      "source_text_sha256": "459f149a41d5a56258e2b092ddbcb61548a8329461aa0155dbec07aa3e44d55b",
+      "matched_sentences": 223,
+      "saved_candidates": 100,
+      "candidate_cap_reached": true,
+      "original_pdf_recovered": false,
+      "front_text_contains_2024_full_report_title": true
+    }
+  ]
+}

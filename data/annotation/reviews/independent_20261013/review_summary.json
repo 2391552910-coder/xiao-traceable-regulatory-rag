@@ -1,0 +1,37 @@
+{
+  "review_name": "独立复核",
+  "n_queries": 40,
+  "n_candidates": 1049,
+  "grade_counts": {
+    "0": 517,
+    "2": 336,
+    "1": 196
+  },
+  "confidence_counts": {
+    "high": 1048,
+    "medium": 1
+  },
+  "n_broad_positive": 532,
+  "n_direct_positive": 336,
+  "comparison_counts": {
+    "new_irrelevant_candidate": 177,
+    "retained_negative": 334,
+    "retained_positive": 220,
+    "new_relevant_candidate": 205,
+    "prior_negative_promoted": 107,
+    "prior_positive_rejected": 6
+  },
+  "n_previous_judged": 667,
+  "n_previous_positive": 226,
+  "n_initial_to_final_revisions": 1,
+  "quality_flag_counts": {
+    "inline_reference_split": 145,
+    "truncated_at_length_limit": 19,
+    "confidence_medium": 1
+  },
+  "n_pairs_with_quality_flags": 158,
+  "n_supplemental_candidates_not_in_main_review": 15,
+  "status": "provisional",
+  "usage": "development_only",
+  "scope": "1049 supplied query-candidate pairs; supplements are separate and not exhaustive"
+}

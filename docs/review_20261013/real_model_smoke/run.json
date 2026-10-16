@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "quality_benchmark": false,
+  "real_weights_loaded": true,
+  "scope": "2 synthetic interface documents / 2 queries",
+  "device": "cpu",
+  "reference_scores": [
+    0.9995121955871582,
+    1.9373941540834494e-05
+  ],
+  "wrapper_scores": [
+    0.9995118975639343,
+    1.9373941540834494e-05
+  ],
+  "second_query_scores": [
+    3.822911094175652e-05,
+    0.9740424156188965
+  ],
+  "documents": [
+    "The capital of China is Beijing.",
+    "Gravity attracts objects with mass toward one another."
+  ],
+  "queries": [
+    "What is the capital of China?",
+    "What does gravity do?"
+  ],
+  "model_metadata": {
+    "embedding": {
+      "backend": "qwen",
+      "batch_size": 1,
+      "query_prompt": "",
+      "query_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "document_prompt": "",
+      "normalize_embeddings": true,
+      "max_seq_length": 256,
+      "device": "cpu",
+      "requested_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "model_dtype": "torch.float32",
+      "resolved_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+    },
+    "reranker": {
+      "model": "Qwen/Qwen3-Reranker-0.6B",
+      "requested_revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "scoring": "P(yes | {no, yes}) at final token",
+      "max_length": 256,
+      "batch_size": 1,
+      "instruction_sha256": "004c64eb0d64f4fc1ee4c01849d7c0715dd8f062b16fa80425aa52abd2c3ae72",
+      "logits_to_keep": 1,
+      "use_cache": false,
+      "weights_loaded": true,
+      "device": "cpu",
+      "model_dtype": "torch.bfloat16",
+      "resolved_revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473"
+    }
+  },
+  "lifecycle": [
+    {
+      "event": "loaded",
+      "owner": "DenseRetriever"
+    },
+    {
+      "event": "released",
+      "owner": "DenseRetriever"
+    },
+    {
+      "event": "loaded",
+      "owner": "Reranker"
+    },
+    {
+      "event": "released",
+      "owner": "Reranker"
+    },
+    {
+      "event": "loaded",
+      "owner": "DenseRetriever"
+    },
+    {
+      "event": "released",
+      "owner": "DenseRetriever"
+    },
+    {
+      "event": "loaded",
+      "owner": "Reranker"
+    },
+    {
+      "event": "released",
+      "owner": "Reranker"
+    }
+  ],
+  "both_weight_owners_released": true,
+  "reference_probability_agreement": true,
+  "elapsed_seconds": 65.11859195000034,
+  "process_peak_rss_kib": 4542884,
+  "packages": {
+    "torch": "2.6.0+cpu",
+    "transformers": "4.51.3",
+    "sentence-transformers": "3.1.1",
+    "numpy": "1.26.4"
+  },
+  "script_sha256": "6c2f562772a7885aa2ebe748a3d186084867c20f451c69aa3945c0734c9994c2",
+  "artifacts_sha256": {
+    "document_vectors.npy": "aa1c80e519e808a28a1d4f428f1bbbb26f21ff5a5e7deb1b8b4ffc005dae21c0",
+    "plain_query_vector.npy": "5d2baff0f5efb9fa48355817f7e1eaedab7add757d7f3b60100a1bddf7afdcd8",
+    "query_vectors.npy": "16b8d89606e4622a976f29221a5bb47e32ea50a627b216d107c83cd4393367e4"
+  }
+}

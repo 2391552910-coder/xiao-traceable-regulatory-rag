@@ -1,0 +1,10 @@
+{
+  "recording": "post-run snapshot; these implementation files were not modified after the real run",
+  "files_sha256": {
+    "src/retrieval/dense.py": "765aac7a48ef98b3507c50888d6674b0c42a619d7bc641c348d289a98fcf8b6e",
+    "src/retrieval/reranker.py": "6ebec63106c18c20100cdd925c4362b32f9c86e26fcb83027788099de706d2da",
+    "src/retrieval/model_runtime.py": "774003494bdd347ec4a62e0c92afe06677e5ea20ddf5e46ba251da0da31a0a80",
+    "src/pipeline.py": "d3cc2682f4de43dc30dacb52044a7354a60073597ca922f63932a36e9efe16cf",
+    "scripts/smoke_sequential_models.py": "6c2f562772a7885aa2ebe748a3d186084867c20f451c69aa3945c0734c9994c2"
+  }
+}

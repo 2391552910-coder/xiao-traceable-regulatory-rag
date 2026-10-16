@@ -1,0 +1,14 @@
+{
+  "date_evidence_records_validated": 94,
+  "signing_dates_with_exact_quotes": 93,
+  "external_date_evidence_required": [
+    "DOC144"
+  ],
+  "family_review_status_counts": {
+    "rejected_development_family_overlap": 17,
+    "pending_source_and_human_family_review": 2,
+    "separate_research_probe": 5
+  },
+  "formal_test_gate_passed": false,
+  "source_and_artifact_hash_checks": "passed"
+}

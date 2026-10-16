@@ -35,7 +35,7 @@ def test_retrieval_pipeline():
     cfg["retrieval"]["reranker"]["enabled"] = False
     chunks, retriever = build_knowledge_index(cfg)
     router = make_router(retriever)
-    queries = load_retrieval_queries(ROOT / "data" / "annotation" / "retrieval_queries.csv")
+    queries = load_retrieval_queries(ROOT / cfg["evaluation"]["queries_path"])
     assert queries
     hits = router.search(queries[0].dimension, queries[0].query, 5, routed=True)
     ranked = [c.chunk_id for c, _ in hits]

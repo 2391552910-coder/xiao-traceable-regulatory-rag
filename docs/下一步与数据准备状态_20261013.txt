@@ -1,0 +1,77 @@
+下一步与数据准备实际状态（2026-10-13，北京时间）
+
+结论
+数据准备尚未完成。当前可进行小规模真实模型联调和旧冻结开发集诊断，不能启动正式质量验收。
+下一步应先恢复年报原文，再提取带来源定位的事实，并修复、重新冻结正式证据和评测集。
+
+本轮已经执行
+1. 从当前 GitHub main（f14a89c）创建隔离开发副本，导入上传快照的冻结开发基准和独立复核。
+   保留 main 的项目目标、实验设计、采集说明、标注规范及已有模型说明；没有改写原 gold 和复核。
+2. 将查询与文档编码分离：查询可显式添加 prompt，文档显式使用空 prompt。
+   默认 prompt 与模型固定版本的 config_sentence_transformers.json 中 query 字符串逐字相同。
+   CPU 批量固定为 1；记录 prompt SHA256、真实设备、模型 dtype 和最大序列长度。
+3. 使用 Qwen3-Embedding-0.6B 固定版本 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3 做真实对照。
+   12 个选定片段、4 个开发查询；文档向量与上一轮无指令向量一致。
+   无指令查询向量与旧记录一致，添加仓库内置 query prompt 后，全部 4 个查询向量发生变化。
+   两组均运行 Dense/BM25/Hybrid top-3，24 组结果有效；8 组 Dense 排序可由落盘向量复算。
+   两种指令设置下，各方法的 top-1 均为 4/4 选定 direct 正例；该挑选样本不能证明质量提升。
+   样本没有发生模型长度截断；模型实际为 torch.float32、CPU、最大序列长度 32768。
+   本次脚本耗时 20.052 秒，峰值 RSS 3,987,236 KiB；未测试 reranker、全库或常驻 HTTP 服务。
+4. 28 项回归测试通过，3 条已有依赖/分词提示；回归与真实推理分别记录。
+   独立复核冻结产物、原候选、原 gold、原标注、语料与切分器校验通过。
+5. 新增可复跑的数据准备审计；读取原文件并保存新报告，没有更新旧下载清单或标注。
+
+数据准备验收
+
+法规、处罚与案件语料：未完成
+- 已加载 319 篇：88 篇 regulation、212 篇 penalty、19 篇 announcement，历史切分为 7899 个片段。
+- 主登记清单为 315 篇，DOC001–DOC004 未纳入该清单，须明确演示和正式文档身份。
+- 94 篇文档缺少 DATE 元数据；有 7 组全文重复文档。
+- 旧 gold 的 62 个正例片段有至少一项结构问题：56 个法规引用误切、7 个截断。
+- 法规版本、现行有效性、事件及报告年度适用性尚未逐项认证。
+- 以上是结构审计；并非所有原文、来源和语义都已经可靠核验。
+
+年报原文与事实：未完成
+- 抽样框 39 家；旧 download_report.csv 有 39 条 ok 状态。
+- 当前工作区实际存在并具有 PDF 文件头的对应年报为 0，39 份均缺失。
+- 公司事实只有 sample_000001.json，一个演示样本；无正式且带来源定位的事实记录。
+- www.cninfo.com.cn、static.cninfo.com.cn 未在启动网络白名单中，实际 HTTPS HEAD 均被代理隧道 403 拒绝。
+- 不能将旧 ok 清单当作本实例已持有 PDF，也不能据此宣称事实抽取完成。
+
+检索评测集：只有开发版，未达到正式验收
+- 原冻结开发 gold 有 40 个问题，继续保留；没有用复核导出集替换其标签或绕过哈希检查。
+- 独立复核已覆盖 1049 个问题—候选对；direct 正例 336 对、broad 正例 532 对，另有候选池外补充。
+- 候选池仍非穷尽；新复核标签未接入新的默认冻结清单，尚无登记的独立最终测试集。
+- 后续修复切分或接入标签时，需要单独的新证据坐标、迁移记录及版本清单。
+
+生成评测集：未完成
+- generation_annotation_template.csv 只有一行空模板，实际完成判断为 0。
+- 尚无登记的真实生成质量核验集；演示或 mock 输出不作为质量验收证据。
+
+后续执行顺序
+1. 通过受支持的环境配置放行巨潮查询和下载域名，恢复 39 家年报。
+   下载到新目录，保存来源 URL、公告日期、报告年度、版本和 PDF SHA256，保留历史清单。
+2. 抽取公司事实，每条保留源文件哈希、PDF 页码和原文引句；缺失指标显式标记。
+3. 固定法规文档身份、版本与时间适用性，修复误切和截断，创建新证据坐标及标签迁移记录。
+4. 补齐候选池、冻结新复核版本，按问题族隔离开发和最终测试集。
+5. 建立真实生成输出及引用、事实错误、支持关系核验集，再运行正式对比与消融。
+
+本轮记录位置
+results/runs/qwen_prompt_development_20261013/
+prompt_comparison/prompt_comparison.json：真实推理与完整原始检索结果。
+prompt_comparison/*.npy、sample.json：文档、两组查询向量及行顺序/来源。
+data_audit/data_readiness.json：数据验收状态；status=data_preparation_incomplete。
+data_audit/annual_report_availability.csv：39 家年报逐项缺口清单。
+source_network_probe.json：巨潮网络请求的实际失败记录。
+pytest_final.txt、independent_review_check.txt：回归与冻结产物校验。
+
+可复跑入口（安装 requirements-eval.txt 后审计，无须模型）
+python scripts/audit_data_preparation.py --out-dir results/runs/data_audit_NEW
+
+模型对照（使用完整本地模型目录与上一轮原样本）
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python scripts/compare_embedding_prompts.py \
+  --model /absolute/path/to/Qwen3-Embedding-0.6B \
+  --reference-dir /absolute/path/to/previous/small_retrieval \
+  --out-dir results/runs/prompt_comparison_NEW
+
+所有入口拒绝复用已有输出目录；本轮没有运行完整开发基准或宣称数据准备已通过。

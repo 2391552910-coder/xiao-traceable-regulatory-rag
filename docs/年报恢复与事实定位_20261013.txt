@@ -1,0 +1,84 @@
+年报恢复与事实定位（2026-10-13，北京时间）
+
+下一步目标
+恢复 39 家 2024 年报原文，保存来源、年度、版本及文件哈希，提取带 PDF 页码和原文坐标的事实候选。
+可靠事实仍需要逐条复核公司、事件时间和证据支持关系；关键词候选不直接成为正式事实。
+
+本轮实际执行结果
+1. 当前云实例观测有效、网络策略 enforced。巨潮域名仍未列入当前有效白名单。
+   实际请求 https://www.cninfo.com.cn/new/data/szse_stock.json 被代理隧道以 403 拒绝。
+   保存了 39 家逐项记录，状态为未因前置来源失败而尝试；没有虚构 39 次独立下载。
+2. 检查当前可见工作区、共享下载目录、上传附件及 Git 历史，未找到目标年报原 PDF。
+   现有历史下载清单仍为 39 条 ok；本轮没有修改它，也没有将该状态作为文件存在证明。
+3. 应用户要求检查其他公开档案。
+   从 anda-ren/a-share-fin-reports 的固定版本
+   508b927c918fd9cb9a8b6d5b2e4479aa59f83941
+   实际保存了新力金融、贵州茅台、宁德时代、比亚迪、海康威视的 5 份转换 Markdown 和转换元数据。
+   保存了源仓库 URL、文件路径、固定 commit 和文件 SHA256。
+   这 5 份是第三方转换文本，不含原 PDF，未核验转换准确性，也没有可靠的 PDF 页码映射。
+   仅作为隔离的辅助材料，未加入正式公司事实或默认生成评测输入。
+4. 在上述真实下载的转换文本上生成了 500 条关键词匹配的辅助候选，最多每份 100 条。
+   其定位是转换 Markdown 的字符区间，pdf_page 和 original_pdf_sha256 均为空；全部待取得原 PDF 并复核。
+   候选截断、来源类型和未认证状态均已记录；候选数不代表事实数或语料覆盖率。
+5. 发现已配置的 Windows 本地项目 xiaolun，但当前聊天没有本地终端或文件执行入口，
+   现有工具无法自动切换执行机器。本轮没有在该 Windows 机器上执行恢复。
+   当前可读的云端共享下载目录实际为空；无网络本地导入尝试为 0/39。
+6. 原 PDF 提取入口已实际运行，因没有经过身份检查的原 PDF，结果为
+   blocked_no_verified_source_pdfs；处理 PDF 为 0、正式事实为 0。
+   本轮完成的是恢复与定位流程和辅助资料准备，未完成 39 家原文恢复或正式事实数据验收。
+
+已实现并验证的流程
+- scripts/fetch_annual_reports.py：支持 --source-dir 从已有文件夹导入，完全不发网络请求。
+  没有 --source-dir 时从巨潮获取；每次写入新目录，不覆盖 data/companies/download_report.csv。
+- 从完整年报候选中排除摘要、英文、季度/半年报、错误公司及错误年度；保留公告候选和版本选择。
+  在记录的公告时间窗口内选择最新完整修订版。窗口固定为报告年度次年的 1 月 1 日至 12 月 31 日，
+  不是宣称此后的修订不存在，也不自动将最新版本追溯到历史事件。
+- 下载或导入后检查 PDF 结构、公司名、股票代码、首页正文的主要报告年度及摘要身份。
+  同代码/年度有多份本地文件时标记版本歧义，不随意选取；身份不确定的文件不进入事实提取。
+- 保存来源 URL（本地导入为源文件 URI）、报告年度、已知公告日期、PDF SHA256、大小和页数。
+  本地源文件没有公告日期时保留为空，不用文件修改时间冒充公告日期。
+- scripts/extract_annual_facts.py：重新检查 PDF 身份及哈希，逐页保存提取文本。
+  候选保存 1-based 物理 PDF 页码、页文本字符区间、引句 SHA256、源 PDF SHA256。
+  页文本以 UTF-8 原样保存，避免 Windows 换行转换改变哈希和定位。
+  扫描空页标记 needs_ocr；未命中某维度不作为该事实不存在或公司表现良好的证据。
+  生成 fact_review.csv，复核人、正式事实、事件日期和复核理由保持待填，不虚构专家判断。
+- scripts/recover_and_extract_annual_reports.py：先导入本地现有 PDF，可选择仅下载缺失公司的报告，
+  合并到新的来源清单后提取候选；原下载清单保持不变，所有新目录拒绝覆盖。
+- scripts/recover_annual_reports_local.ps1：Windows 本地入口，创建单独 .venv-data，
+  安装 requirements-data.txt 并调用上述流程。本轮未进行 Windows 实机验证。
+
+本地项目使用
+在 xiaolun 项目的本地根目录（取得本次代码后）运行 PowerShell：
+
+  .\scripts\recover_annual_reports_local.ps1 -SourceDir "原来保存年报的文件夹"
+
+如只恢复已有文件，上述命令不发起年报网络请求。
+如还需下载缺失原文，显式加 -AllowDownload：
+
+  .\scripts\recover_annual_reports_local.ps1 -SourceDir "原来保存年报的文件夹" -AllowDownload
+
+Python 通用入口：
+
+  python -m pip install -r requirements-data.txt
+  python scripts/recover_and_extract_annual_reports.py \
+    --source-dir "/path/to/original/pdf/folder" \
+    --out-dir results/runs/annual_local_NEW
+
+本地小工具包
+年报本地恢复工具包_20261013.zip 只包含采样框、恢复/提取代码、PDF 依赖清单和说明；
+可解压至独立新文件夹，将 --source-dir 或 -SourceDir 指向原 PDF 文件夹，不必覆盖已有项目。
+工具包不含原 PDF、模型权重、虚拟环境或正式事实数据。
+
+验证与证据
+36 项回归测试通过，3 条已有提示；pip check 通过。
+新增测试验证版本选择、错误公司/年度/摘要拒绝、网络前置失败、旧清单保留、无网络本地导入、
+引句及坐标篡改拒绝、源哈希漂移拒绝、空 PDF 页需 OCR；测试不作为真实年报恢复通过证据。
+独立复核 57 个冻结产物及原 gold、原标注、语料与切分器校验仍通过。
+
+本轮新结果目录：results/runs/annual_report_recovery_20261013/
+official_attempt/recovery_run.json：真实巨潮前置失败及逐公司未尝试状态。
+local_pipeline_attempt/pipeline_run.json：云端可见空目录的实际无网络导入结果。
+pdf_fact_attempt/extraction_run.json：真实原 PDF 提取入口的阻塞状态。
+alternative_archive/archive_manifest.json：5 份隔离转换文本的来源和哈希。
+auxiliary_candidates/auxiliary_extraction.json：500 条待原 PDF 核验的辅助候选汇总。
+历史清单及原冻结数据未替换；完整检索评测与正式生成质量评测仍未启动。

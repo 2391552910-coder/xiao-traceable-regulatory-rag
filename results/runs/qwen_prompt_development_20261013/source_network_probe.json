@@ -1,0 +1,18 @@
+{
+  "tested_at_utc": "2026-10-13T08:10:53.917140+00:00",
+  "probes": [
+    {
+      "host": "www.cninfo.com.cn",
+      "error_type": "URLError",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "host": "static.cninfo.com.cn",
+      "error_type": "URLError",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "proxy_preserved": true,
+  "tls_verification_enabled": true,
+  "annual_reports_downloaded": 0
+}

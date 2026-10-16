@@ -1,0 +1,27 @@
+{
+  "scope": "operator_handoff_not_new_gold",
+  "companies": 39,
+  "missing_original_pdfs": 39,
+  "official_report_urls_available": 0,
+  "reserved_test_candidates": 2,
+  "formal_test_queries": 0,
+  "human_labels": 0,
+  "reuse_development_forms": "data/processed/label_review_v2_20261013/blind_review_{A,B}.csv",
+  "reuse_development_registry": "data/heldout/family_review_final_20261013/development_registry.json",
+  "inputs_sha256": {
+    "data/provenance/recovery_20261013/sources_required.json": "dc1f50f76e0ce74d8541ef04e18734e5744e715e5b9c328b71f6cc92a025392f",
+    "data/companies/download_report.csv": "50ab2a1044e545845ab92d05a34e9bd1737933f3c1ce02d6457b758c3fa8aa43",
+    "data/companies/sampling_frame.csv": "61446337f40492c592acaadaf7d288af7db96dc0a9b97c117474bc3f0b033aba",
+    "data/heldout/family_review_final_20261013/reserved_retrieval_candidates.jsonl": "cb6b9379bf4e0b42c384d7e0826b12ee6e01745f66a57a153768ad9cc96ec2a0",
+    "data/processed/label_review_v2_20261013/manifest.json": "760bdfba3de6e9ed26a245c5d666a6ceea8b74a66984f056631aa06f1c4cdb8f",
+    "results/runs/annual_report_recovery_20261013/alternative_sources.json": "0bd0c7d487f86a067e4a0550f5a70df1eb3bdf0d865dd09c6908f5aff3ef6fa6",
+    "docs/review_20261013/heldout_source_followup.json": "da547b75ffc9bd29e9d37814fb0d1cea73bdda7db45ff05791c6df3b8d69164f"
+  },
+  "artifacts_sha256": {
+    "test_screening_B.csv": "c7fd48e99f96e2b15747cfe6c2b7b296b762b8eb69707f5e66af46ed8194c9c8",
+    "development_attestation_template.json": "9a93732d4b0da2b1d408be77c9d15ebfdcbe2e26b4ff0c44274a0204c9e67e25",
+    "company_missing_materials.csv": "9faaf0f74adaab6eae4283401a9f3b952345f040dc7e64e3d72148dde1a367d4",
+    "test_source_context.json": "da547b75ffc9bd29e9d37814fb0d1cea73bdda7db45ff05791c6df3b8d69164f",
+    "test_screening_A.csv": "c13dacd9bb87a27ee3ed73e6c79a5730395a464f4c01a64fe4a724c87e580ef8"
+  }
+}

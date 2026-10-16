@@ -1,0 +1,33 @@
+{
+  "completed_at_utc": "2026-10-13T09:14:46.268346+00:00",
+  "status": "original_pdf_recovery_incomplete",
+  "original_pdf_count": 0,
+  "verified_fact_count": 0,
+  "formal_data_ready": false,
+  "historical_manifest_unchanged": true,
+  "original_snapshot_files_preserved": 628,
+  "converted_archive_documents": 5,
+  "auxiliary_candidates": 500,
+  "auxiliary_source_kind": "third_party_converted_markdown",
+  "auxiliary_pdf_page_mapping_available": false,
+  "current_cloud_official_source_probe": "proxy_tunnel_403",
+  "cloud_visible_local_import": {
+    "directory": "/workspace/shared/downloads",
+    "verified_reports": 0,
+    "requested_reports": 39
+  },
+  "windows_local_project_detected": true,
+  "windows_local_execution_performed": false,
+  "windows_local_execution_tool_available": false,
+  "code_entries": [
+    "scripts/fetch_annual_reports.py",
+    "scripts/extract_annual_facts.py",
+    "scripts/recover_and_extract_annual_reports.py",
+    "scripts/recover_annual_reports_local.ps1"
+  ],
+  "limitations": [
+    "Five converted archive texts do not replace original PDF provenance.",
+    "All auxiliary candidates need original-source and semantic review.",
+    "This chat cannot execute commands on the configured Windows project with the currently available tools."
+  ]
+}

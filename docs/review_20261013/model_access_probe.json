@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/resolve/main/config.json",
+    "bytes_read": 727,
+    "status": "reachable"
+  },
+  {
+    "url": "https://download.pytorch.org/whl/cpu/torch/",
+    "bytes_read": 414325,
+    "status": "reachable"
+  }
+]

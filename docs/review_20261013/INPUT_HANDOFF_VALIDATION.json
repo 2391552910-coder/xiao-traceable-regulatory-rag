@@ -1,0 +1,25 @@
+{
+  "development": {
+    "status": "pending_reviews_adjudication_or_attestation",
+    "assigned_pairs": 1681,
+    "numeric_resolved_pairs": 0,
+    "qrels_written": false,
+    "formal_test_labels_created": 0
+  },
+  "test": {
+    "statuses": [
+      "pending_two_screeners",
+      "pending_two_screeners"
+    ],
+    "qrels_written": false,
+    "formal_test_labels_created": 0
+  },
+  "pytest": {
+    "passed": 64,
+    "warnings": 2,
+    "seconds": 14.13
+  },
+  "frozen_inputs_check": "passed_57_artifacts",
+  "release_integrity": "passed_with_formal_test_gate_correctly_rejected",
+  "test_data": "synthetic_fixtures_only_no_new_human_or_company_facts"
+}

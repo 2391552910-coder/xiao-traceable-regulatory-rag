@@ -1,0 +1,8 @@
+# 离线基准审计、TF-IDF 检索和测试；不安装/下载神经模型。
+numpy==1.26.4
+scipy==1.14.1
+scikit-learn==1.5.2
+jieba==0.42.1
+pyyaml==6.0.2
+pytest==8.3.3
+pypdf==6.1.1
