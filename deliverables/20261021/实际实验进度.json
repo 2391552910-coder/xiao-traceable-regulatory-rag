@@ -1,0 +1,83 @@
+{
+  "updated_at_utc": "2026-10-21T02:03:22.679178+00:00",
+  "freeze_file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_execution_freeze_windows_20261020_01\\execution_freeze.json",
+  "freeze_sha256": "f0eecd3e4f7f129364311b2daa86d0e2ca6aad6af57ac269a14c210be3ffc2c7",
+  "test_questions": 60,
+  "company_clusters": 20,
+  "reference_annotations_repeated": false,
+  "primary_first_attempt": {
+    "successful": 147,
+    "failed": 33
+  },
+  "main_recovery": {
+    "status": "stopped_with_unresolved_units",
+    "calls": 33,
+    "successful": 31,
+    "failed": 2,
+    "available_after_recovery": 178,
+    "remaining_unavailable": 2
+  },
+  "stages": {
+    "ablation": {
+      "status": "stopped_by_control",
+      "planned": 120,
+      "attempted": 120,
+      "returned": 120,
+      "successful": 109,
+      "failed": 11,
+      "unattempted": 0,
+      "rate_limit_events": 0,
+      "directory": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_ablation_generation_windows_20261020_01"
+    },
+    "robustness": {
+      "status": "completed",
+      "planned": 40,
+      "attempted": 40,
+      "returned": 40,
+      "successful": 40,
+      "failed": 0,
+      "unattempted": 0,
+      "rate_limit_events": 0,
+      "directory": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_robustness_generation_windows_20261020_01"
+    },
+    "secondary_model": {
+      "status": "completed_with_failures",
+      "planned": 60,
+      "attempted": 60,
+      "returned": 60,
+      "successful": 59,
+      "failed": 1,
+      "unattempted": 0,
+      "model_alias": "kimi-for-coding",
+      "documented_version": "K2.8 Preview",
+      "previous_preserved_quota_failure_attempts": 1,
+      "directory": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_secondary_k28_windows_20261021_02",
+      "quota_or_rate_limit_blocked": false
+    }
+  },
+  "new_generation_calls_attempted": 254,
+  "maximum_registered_new_generation_calls": 373,
+  "monetary_cap": null,
+  "monetary_policy": "Explicitly authorized unlimited; no currency bill/rate inferred",
+  "actual_currency_cost": null,
+  "model_comparison_status": "completed_with_failures",
+  "available_catalog": [
+    "kimi-for-coding",
+    "kimi-for-coding-highspeed",
+    "k3",
+    "k3-256k"
+  ],
+  "secondary_model_alias": "kimi-for-coding",
+  "secondary_vendor_documented_version": "K2.8 Preview",
+  "secondary_subset_questions": 20,
+  "model_identity_source": "https://www.kimi.com/help/kimi-code/models",
+  "model_comparison_scope": "Kimi same-series served-version comparison, not different-vendor family generalization; default reasoning effort is not equalized.",
+  "provider_generation_seed_sent": false,
+  "schedule_and_bootstrap_seed": 42,
+  "output_quality_independent_reviews_received": 0,
+  "quality_statistics": null,
+  "formal_H1": null,
+  "formal_H2": null,
+  "actual_execution_figure": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_execution_statistics_windows_20261020_02\\execution_availability.png",
+  "manuscript_status": "final empirical conclusions pending actual independent output review; secondary status recorded separately; existing drafts retained"
+}
