@@ -1,0 +1,21 @@
+{
+  "source_path": "results/runs/gold_tfidf_20261013/retrieval_eval_human_review.csv",
+  "source_sha256": "dcdd3ffab1d45a6903b094b9abafae0a6351ba5f98db7a4c524e091187a19d89",
+  "n_candidates": 1049,
+  "protocol": {
+    "grades": {
+      "2": "directly relevant",
+      "1": "partially relevant (binary positive under repository annotation standard)",
+      "0": "irrelevant",
+      "-1": "undetermined; excluded pending resolution"
+    },
+    "scope": "semantic relevance of the supplied evidence to each question; original source context consulted when needed",
+    "current_legal_validity": "not independently certified",
+    "independence": "Original row labels are not loaded during the initial pass. Prior conversation included aggregate statistics and a few examples; this is not a fully isolated blind study.",
+    "label_origin": "single_reviewer_semantic_review"
+  },
+  "review_name": "独立复核",
+  "initial_decisions_sha256": "725c46564fb55c0bc401eff703cf495d8c63c43a41b40766e2a6c2cc47398e50",
+  "initial_pass_rows": 1049,
+  "initial_pass_completed_before_gold_comparison": true
+}

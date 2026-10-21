@@ -1,0 +1,18 @@
+{
+  "status": "incomplete_sources",
+  "requested_companies": 39,
+  "pdf_documents_processed": 0,
+  "candidate_count": 0,
+  "verified_fact_count": 0,
+  "formal_data_ready": false,
+  "historical_manifest_unchanged": true,
+  "historical_manifest_sha256": "50ab2a1044e545845ab92d05a34e9bd1737933f3c1ce02d6457b758c3fa8aa43",
+  "source_runs": [
+    {
+      "mode": "local_import",
+      "status": "incomplete",
+      "identity_verified_reports": 0
+    }
+  ],
+  "network_download_allowed": false
+}

@@ -1,0 +1,11 @@
+{
+  "upstream_head": "fba017153d0e2f8e955c29db503880b7c9125e93",
+  "upstream_files_unchanged": [
+    "src/data/annual_reports.py",
+    "src/data/annual_facts.py",
+    "scripts/recover_and_extract_annual_reports.py",
+    "scripts/extract_annual_facts.py",
+    "requirements-data.txt"
+  ],
+  "original_workspace_clean": true
+}

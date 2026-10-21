@@ -1,0 +1,2953 @@
+{
+  "schema_version": "paper-execution-continuation-freeze-v1",
+  "frozen_at_utc": "2026-10-20T09:33:28.315007+00:00",
+  "freeze_scope": "Existing reference, grouping and main settings pinned; prospective recovery/extension decisions sealed now. Not retroactive preregistration.",
+  "reference_manifest_sha256": "9f9c0f73fb0ae308394399dfd57f25d2deaca6ae5ad141b6acb5d425a9d91fc3",
+  "questions": 60,
+  "company_clusters": 20,
+  "report_year": 2024,
+  "grouping": [
+    {
+      "question_id": "HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "000333.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-000333SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "000333.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-000333SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "000333.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "000802.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-000802SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "000802.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-000802SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "000802.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-002230SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "002230.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-002230SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "002230.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-002230SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "002230.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-002415SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "002415.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-002415SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "002415.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "002415.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "002475.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-002475SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "002475.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-002475SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "002475.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-300119SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "300119.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-300119SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "300119.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "300119.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-300750SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "300750.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-300750SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "300750.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-300750SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "300750.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-300760SZ-2024-AUDIT_COMMITTEE",
+      "company_cluster": "300760.SZ",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-300760SZ-2024-INTERNAL_CONTROL",
+      "company_cluster": "300760.SZ",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "300760.SZ",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600031SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600031.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600031SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600031.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600031SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600031.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600048SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600048.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600048SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600048.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600048.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600156SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600156.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600156SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600156.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600156SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600156.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600276SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600276.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600276SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600276.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600276.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600519SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600519.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600519SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600519.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600519SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600519.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600598SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600598.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600598SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600598.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600598SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600598.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600690SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600690.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600690SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600690.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600690SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600690.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600887SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600887.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600887SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600887.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600887SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600887.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-600900SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "600900.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-600900SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "600900.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-600900SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "600900.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-601088SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "601088.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-601088SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "601088.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "601088.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-603259SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "603259.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-603259SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "603259.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "603259.SH",
+      "topic": "D1"
+    },
+    {
+      "question_id": "HOLDOUT-688981SH-2024-AUDIT_COMMITTEE",
+      "company_cluster": "688981.SH",
+      "topic": "D2"
+    },
+    {
+      "question_id": "HOLDOUT-688981SH-2024-INTERNAL_CONTROL",
+      "company_cluster": "688981.SH",
+      "topic": "D3"
+    },
+    {
+      "question_id": "HOLDOUT-688981SH-2024-DIVIDEND_DISCLOSURE",
+      "company_cluster": "688981.SH",
+      "topic": "D1"
+    }
+  ],
+  "grouping_policy": "Keep all preselected 20 companies × 3 questions. No result-based exclusions or additions. Company-cluster inference; shared laws do not create independent samples.",
+  "reference_semantics": "Human-adjudicated pages and answer points; page overlap and citation ID existence are not semantic labels. Alternative verified evidence allowed.",
+  "historical_exposure": "Original test outputs and some reference material have already been seen. Newly selected extension contrasts and compact rubric are exploratory.",
+  "main": {
+    "model_alias": "k3",
+    "model_revision_verified": false,
+    "endpoint_sha256": "f5acde8ba5d28ed325557d2d0afc837363987e8e599c77d9e38c1d0d2548050d",
+    "temperature": 1,
+    "max_output_tokens": 16384,
+    "timeout_seconds": 600.0,
+    "sdk_retries": 0,
+    "repeats": 1,
+    "seed": 42,
+    "methods": [
+      "merged_corpus_generic_cited_rag",
+      "dual_source_generic_cited_rag",
+      "dual_source_role_grounded_rag"
+    ],
+    "original_unit_count": 180,
+    "primary_completed": 147,
+    "primary_failed": 33,
+    "generation_settings_sha256": "370537169a109f486eb5e0a8034c4660a3e88cd0f31cc4858f8f7fba75970a21",
+    "recovery_manifest_file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\failure_recovery_v1\\recovery_manifest.json",
+    "recovery_manifest_sha256": "77d3911d08808b1ba493e5722c08447ae5e1e74046f952dd4d68c4ba2f2dd721",
+    "new_calls_max": 33,
+    "first_dispatch": 1,
+    "concurrency_after_success": 20,
+    "attempt_policy": "One separately recorded exact-input retry for each primary failed unit. Keep primary outcomes. First valid output by attempt order forms a separately labeled recovered analysis view.",
+    "stop_policy": "Stop new dispatch immediately on quota exhaustion; drain in-flight calls. Other rate limits also stop this recovery rather than loop. Three non-quota consecutive failures or integrity violation stop dispatch."
+  },
+  "monetary_budget": {
+    "cap": null,
+    "cap_kind": "unlimited_explicit_user_authorization",
+    "authority": "User explicitly authorized no upper limit and direct generation on 2026-10-20; retained across turns.",
+    "actual_currency_cost": null,
+    "cost_policy": "Retain observed tokens and actual bills if available; do not infer price/currency cost from alias or reference tokenizer."
+  },
+  "retrieval": {
+    "top_k": 5,
+    "vector_weight": 0.7,
+    "fusion": "weighted",
+    "rrf_k": 60,
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "embedding_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "embedding_local_files_only": true,
+    "embedding_device": "cuda",
+    "embedding_dtype": "float16",
+    "embedding_backend": "qwen",
+    "embedding_batch_size": 1,
+    "embedding_query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "reranker": {
+      "enabled": true,
+      "model": "Qwen/Qwen3-Reranker-0.6B",
+      "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "device": "cuda",
+      "dtype": "float16",
+      "instruction": "Given a web search query, retrieve relevant passages that answer the query",
+      "max_length": 3072,
+      "batch_size": 1,
+      "local_files_only": true,
+      "pool_factor": 4
+    },
+    "dimension_routing": true
+  },
+  "index_manifest_sha256": "16a44b225b4fdca30fe03f424599587a7e7067305ac2558660dca59d371d12ac",
+  "context": {
+    "annual_top_k": 5,
+    "regulation_top_k": 5,
+    "max_reference_tokens": 6000,
+    "reference_tokenizer_is_provider_tokenizer": false
+  },
+  "ablations": {
+    "status": "planned_before_extension_calls",
+    "questions": 60,
+    "new_calls_max": 120,
+    "variants": [
+      "dual_source_role_grounded_without_reranker",
+      "dual_source_role_grounded_bm25_only"
+    ],
+    "invariants": "Same question inventory, source index and exclusion policy, role quota, reference token ceiling and generation settings. Existing G2/G3 is the role-constraint contrast.",
+    "devices": "CUDA for any neural embedding/reranking, no CPU neural fallback; saved vectors reused."
+  },
+  "robustness": {
+    "status": "planned_before_extension_calls",
+    "selection": [
+      {
+        "question_id": "HOLDOUT-688981SH-2024-AUDIT_COMMITTEE",
+        "stock_code": "688981.SH",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "300119.SZ",
+        "dimension": "D1"
+      },
+      {
+        "question_id": "HOLDOUT-600690SH-2024-INTERNAL_CONTROL",
+        "stock_code": "600690.SH",
+        "dimension": "D3"
+      },
+      {
+        "question_id": "HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE",
+        "stock_code": "002475.SZ",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "600048.SH",
+        "dimension": "D1"
+      },
+      {
+        "question_id": "HOLDOUT-600598SH-2024-INTERNAL_CONTROL",
+        "stock_code": "600598.SH",
+        "dimension": "D3"
+      },
+      {
+        "question_id": "HOLDOUT-600887SH-2024-AUDIT_COMMITTEE",
+        "stock_code": "600887.SH",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "603259.SH",
+        "dimension": "D1"
+      },
+      {
+        "question_id": "HOLDOUT-300750SZ-2024-INTERNAL_CONTROL",
+        "stock_code": "300750.SZ",
+        "dimension": "D3"
+      },
+      {
+        "question_id": "HOLDOUT-600519SH-2024-AUDIT_COMMITTEE",
+        "stock_code": "600519.SH",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "601088.SH",
+        "dimension": "D1"
+      },
+      {
+        "question_id": "HOLDOUT-600156SH-2024-INTERNAL_CONTROL",
+        "stock_code": "600156.SH",
+        "dimension": "D3"
+      },
+      {
+        "question_id": "HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE",
+        "stock_code": "000802.SZ",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "600276.SH",
+        "dimension": "D1"
+      },
+      {
+        "question_id": "HOLDOUT-002230SZ-2024-INTERNAL_CONTROL",
+        "stock_code": "002230.SZ",
+        "dimension": "D3"
+      },
+      {
+        "question_id": "HOLDOUT-600900SH-2024-AUDIT_COMMITTEE",
+        "stock_code": "600900.SH",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "300760.SZ",
+        "dimension": "D1"
+      },
+      {
+        "question_id": "HOLDOUT-600031SH-2024-INTERNAL_CONTROL",
+        "stock_code": "600031.SH",
+        "dimension": "D3"
+      },
+      {
+        "question_id": "HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE",
+        "stock_code": "000333.SZ",
+        "dimension": "D2"
+      },
+      {
+        "question_id": "HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE",
+        "stock_code": "002415.SZ",
+        "dimension": "D1"
+      }
+    ],
+    "new_calls_max": 40,
+    "variants": [
+      "remove_all_annual_records",
+      "remove_all_regulation_records"
+    ],
+    "transformation": "Remove the indicated role from saved G3 dual context, preserve remaining original source texts/IDs, no replacement retrieval or gold-guided selection.",
+    "clean_control": "Reuse exact-input main G3 answer with full attempt provenance. Perturbed cases are paired variants, not additional independent questions."
+  },
+  "model_comparison": {
+    "status": "pending_secondary_model_identifier_and_compatibility",
+    "new_calls_max": 180,
+    "candidate_owner_names": [
+      "Kimi k3",
+      "Kimi k2.8 preview"
+    ],
+    "same_family_caveat": "Two Kimi versions are not different model families. A different family requires an available endpoint/model and a separately sealed compatible settings record before calls."
+  },
+  "maximum_new_generation_calls_if_all_gates_ready": 373,
+  "stage_gates": [
+    "Validate freeze and source bindings, then recover main failed units only.",
+    "Complete main availability audit before ablation and robustness execution.",
+    "Do not launch secondary model until exact callable identifier and parameter record are sealed.",
+    "No quality statistics, effect charts or empirical paper conclusions until actual output review judgments exist."
+  ],
+  "output_review": {
+    "reference_reviews_repeated": false,
+    "score_keys": [
+      "company_facts",
+      "regulation",
+      "citations",
+      "uncertainty"
+    ],
+    "score_values": [
+      0,
+      1,
+      2,
+      "U"
+    ],
+    "rubric_file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_eval60_minimal_windows_20261020_02\\评测集60题\\scoring_rubric.json",
+    "rubric_sha256": "02733eea59db7c3bf0b4b39a2910dd2650623d265255cce5e4ba693f92043b69",
+    "timing": "post-generation exploratory",
+    "reviewers": 2,
+    "workflow": "One row per actual answer, four scores; reconcile only disagreements; never use self-reported model labels as human review.",
+    "output_independent_reviews_received": 0
+  },
+  "analysis": {
+    "primary_H1": null,
+    "primary_H2": null,
+    "bootstrap_replicates": 2000,
+    "seed": 42,
+    "unit": "company cluster, paired question contrasts",
+    "unknown_policy": "U remains unknown; report judged coverage and bounds; never impute zero.",
+    "failures": "Report first-attempt 147/180 separately from recovered availability and all extra calls. No silent removal of incomplete questions.",
+    "contrasts": [
+      "G2-G1",
+      "G3-G2"
+    ],
+    "multiple_testing": "Holm across explicitly reported confirmatory tests if later feasible; new extensions remain exploratory.",
+    "score": "Compact total 0–8 only with four known scores; label answer quality, not company governance."
+  },
+  "guarded_inputs": [
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\answers_primary_concurrent_v2.jsonl",
+      "sha256": "41855a274dc28095773130db3c0d0f6be38656fbf6de65cf0e2839b94fbbdbea"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\failure_recovery_v1\\recovery_manifest.json",
+      "sha256": "77d3911d08808b1ba493e5722c08447ae5e1e74046f952dd4d68c4ba2f2dd721"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generation_settings_v3.json",
+      "sha256": "370537169a109f486eb5e0a8034c4660a3e88cd0f31cc4858f8f7fba75970a21"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\execution_plan.json",
+      "sha256": "af128982ee34716115b7826b1c8588a548cc130f9b229fead8b6095b1a43338d"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generation_protocol_v5.json",
+      "sha256": "3fb08a2ba5915a3381f7b4986958308b9065f937b9412dbc533eb0ded4b4f34b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\prepared\\comparison_manifest.json",
+      "sha256": "08c79036ef6cfe0af946c3a787f22212dacf116b9cfb6a3853ac28c11473d30d"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_gold_release_windows_20261020_01\\release\\release_manifest.json",
+      "sha256": "9f9c0f73fb0ae308394399dfd57f25d2deaca6ae5ad141b6acb5d425a9d91fc3"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_eval60_minimal_windows_20261020_02\\评测集60题\\scoring_rubric.json",
+      "sha256": "02733eea59db7c3bf0b4b39a2910dd2650623d265255cce5e4ba693f92043b69"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_eval60_minimal_windows_20261020_02\\评测集60题\\reference.jsonl",
+      "sha256": "0ae072910b6026912b9c3809e5af8aeaa5705453cda634808c28d25d0be959e0"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\paper_eval60_minimal_windows_20261020_02\\评测集60题\\questions.jsonl",
+      "sha256": "968cd746d0034f56d9c64b4cca24cbd802984f18a01a5110953ca628f14daf34"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b4aa8972e0c0543fb60e74534aaf9e1b26d8af502ee43139b7a6a33693d217e1"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "b182cb09a6b2f0a459a7dd859f145eccd6d1b1aaae220a101263dce0963aba31"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-000802SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "71b801176e9b98cb18423b707085508d5a4a9da267c8252fee2b2a6e0fc732d1"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-002475SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "275d2ec5f98f1580ad862542e84221d6d7be8560ad33b73d2c77a8fab4250ff6"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-000802SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b3e6bc42566a9323d0f55ec19f0ba47db35891fb509daaaa1061aceeb1d7d6c5"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "5910bc7bfadb02a79a94101b9a1251a2509d4e033cf41ff164677d7c5e618762"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-300750SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "3a291afd56a0fb634a7ec56cf28df5e52869ae09946b799d1b3352d13176d44e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600598SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "9722a458c990e5038995223a55a078e0ece3adfe13aa58677a8780c990a4d70a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-300750SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "7a982d876383cd43d5f4bd43c90821c02153acda3c87c907febe72b83541fbd5"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-002230SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "5ae8fed492443f5e0aaeb94bcc7f5642a898a2fe85021e008228d1d2bf27797a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-300760SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ec748a05e13e243616e8773d0d4e0b1d59725dba3e6bfef72b651710e532ec76"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-002415SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "9a01b1a72ee99d3decb6e595e7094295ed3d5614d1ef6487ee7e010bb815ae1f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600900SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "253c6dd80a5f77768b488f3f5d895777a2bde5667ab68e3fc24c61d2ac5590a2"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "fdf56c5a51529ed3427caa8138207b3d76dd8b2e08ce617c47ee244f54e69b7f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600598SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "3b0d071c6f20afb4a8a6dc9e37fcbd96ee726fdf254b1edace9d8baeb27cdcc8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600690SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "88ec2fcbd03b7f05a9ffdca3200faa7ff56c7e1f8d3a59baa84bba5d2fa28460"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600598SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "bbddd4c73839862e2495434d969eaf0c6998a6d7b0d18d575a829debc23f525e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "374c16e3791dc54e99a062961af83a31eee90099a53d383e70ae88d0a43dc2ea"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "00bf7652694a1014d1b6b58b3977d52cb304532cb365066dbc068a3b1091224a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-300760SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "271ce4b08a29c97eea5b95f8e9c620213a3c046b846e50fe0db1c61955bd4eaf"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600156SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "6491f6b7c87b8c471d71fe4b8653f9e225f64d4d6f29a43e7cb62260677c0129"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-688981SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "4d294ae77b5901746a6ea00398fdbe2941857e7b491ab789f38d8ef59a6e0c5f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-002230SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "d44a4fa96d768c12144c5a6fb833b098daeca1637edffcbcc585ea00b3033262"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600156SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "24a474f076e823c4a7dec1bb13258c08f833ec13f133aa724a69a66cba220e63"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600598SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "6b0989cb1ef78eee369841d3375962031684fd413260eb9bb6a7842af4e00490"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600900SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "dbd8fb17a9ffc3dd0c18fd5e7cf52b6a1343c9a71d4aef6f20f0e1f3a7de9a45"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-688981SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "afc02193dd44029d3c57a91604b36bc7743e097d5b5c9c7ebd15eee2c5c24786"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600031SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "98791c313d5f011f6ebd6eb36b877f7e4378738fda3fcb44b8ea98f8b7cc3862"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600887SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "977eaec89962b0dc11012db08db78c778a672002c31c2934e88993cecacb9432"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600900SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "a210f01460e3efafb8327d49a1d879ce7ed50a4701c0325ac1b7bc51607b8b0e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-000802SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "820732f520375635b864ae301c7c12f2cdbd111918941c73ce303803e3d057f9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "4f8da2ec332f71d1af5459cedb25740d1ac7ac24113fe98dd56208b7f6f94590"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-603259SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "2c08dffa9783872a3f07208f9915d088a6f31cd5a9b8ec83467a41d556678b62"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "f5bf93764a4470733c12d281434bb953fbbb316c77d72fada6f33b2f88321602"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\generated_v5\\HOLDOUT-002475SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "06b66b596aa16af61da14e70d16c7d6da8632af27e16bc4e2c3432103dc2040a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600276SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "41edf4605e102c01e24c2d23e90956e5ac126d1396dba2e71d0748df19278ed8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "6ec71921972d34235d44cefe71f890f1012251d8fb7118ad1fb9df209cb3ede4"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-601088SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "994dcb49a481b0c68682f525acae152b06ee82a4d0679c7a8980c5ad5b1d7495"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "cba67af128f0991eaa65a03a8314c0001330d9bacffeafd91ed3fdb3bbefa4a5"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-000802SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "2538a4a97c051a971ab742016b462739db675caa91549e8863b60d964fd6666a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600031SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "98de0070ce7dced793c7fd7d93661d4cc654de04e5414ed3039ce3700da179e0"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600519SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "d435b076e48d2a8f72257d5345a0852b3bc912c318180dae0498b64c54f17851"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600690SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "1d9bcfb59e66d4424287b6c328ad8810903321706f29665355dbfa97c67b2d59"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600276SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "b006188884f05cb2c84b7d39772f029fb5e3af3d58a3d878f51f62dfed42cedd"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600887SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "19245aed583231ca69e99f4c692018b3e9bed25c8f497bc03a7d49338e32a1cd"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "e09ed3e54b34a5197c24e262c74a5b8528c0d93dfa7a2ace385da22a6b517edb"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600887SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "79f24714c416af9d328257986511e772057b7a85669d62689d17ebf12a5ae2b7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-300760SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "e2ab1b4aa1cb5c22626f66e6dec40b2c32cae713c356106b703159a86e4dda06"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600048SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "d2f9bd4d800559b7bdf692acf5b852757c9cff61fa4f73af2d1e8a5e59e8add9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600690SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ec224248277849296f26ba16c32b8f4c1ea1761f00eaaf9916a1c08bbf2afee7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-002475SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "10ae936cfddd57e97add6aba2c19b04f4b22c6c11a97e9d2cc67eb105805d36b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v1\\generated\\HOLDOUT-600031SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "de85412989b1d62c9d90c0ded025897fb073f83b1c7012fad07e480b1200fe27"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "bb95233cb47a76081651dae02cf56fb72dd05a650cf4fbb00b903ef05245780f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "68ada74efc2507733a92a959a7374deca415c10a62542b0086a4533fcec29108"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "8dc22a7e4c981466af360fcbe7280f4272ea31b97d3854d0a0ddbcd5803f43a7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600887SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "aeda63de1b39dda39f930cc1c542c374a3e19f609a6a03dafc1c09f16037f27c"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "fdc8d83b81b2bf4183160cee5e2055c66546cc761823bf11407e039f35f7aa1e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600276SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "350305ca9e6bdb8be5ea76aee1b25b3a27f302e9507e7ebeb24144517a7532e7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "f46c293163308988d8e9134ba89aa460a5770d3de9cf466eaf32c0078d7fb7af"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600031SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "9103ef00762dfea60d8e93b2970c94ef8e8a28174e54bfc63242c0ce2b8d3b78"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600031SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "2c309f60d9ec64ef9e9cddc0a4f0494cb998711f765e7fcc135f740c00276c40"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "27207e60c6b97fbade3032556d6a30177b767df9f56aa6518a66ab7277821e53"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "3075e8cde361d46a4f9980f8c731e420b47e1c05a33d3ef3131de988fe34e96b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "0049a521c05f290a785535e0a9f88e53780895455c6203dc3f5c26234c9bfe3f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "ec2b0c05951d8712a1368359ed72b50fa52291fddb962587e14d2f6c7cee656b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "cafe7125c5f9177dc705d05eee6d95bcda058a0d8b365030160ce1532c2219de"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600900SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "1a2a2100b282a0d562a60062d350b77b8590dcc0a3b5e34e0a3b7a3b332d3d44"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300760SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "b7401d50474745d846561bb433c09256bc819ddf4770838c14f48eadef9d92b7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600690SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "70fab38e4bd9b6da31da0bfb7bb2f87fef87b8fd6c331eaf3c2b87e6dac80964"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600598SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ab1a2472ff7866d394bb4f9fb6fac3a6ffc4c7d297f2bf8426c23a256b5908f4"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b351ee12514bcb2b7a3e7472576ae0b323f768a8ca20b5c98936d8314235a2d2"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600031SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "de57d38d90bb2e930cc4b3219db8263f25e190f9cc244d064545c5f03b670cfe"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600276SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "e8be0cd2a429c9d02ec52a65dd0575deee3daba815fd298f234a840c66291475"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600690SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "140a34fe232fac2a9a786c8aa420b13ed8612f8eeeff32d927b7a6fc3a99f842"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "7b603fb1c8225dd79349794af97e4ae66b0ecff59cb5b121101e46dbaf46b84f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "8c10786c6ce3695b32905d7445f300efe3920442c52f963302dfa80ba20f4aa7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600598SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "fac3416aa0422f0fa5903b71d8eaeab2ecd028c85fee8ee31e87d777b8181bd7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "4b6f16393d849e6fe9682d3a37007eb6e3798e5c23b99e93b3e5e79252caa7a8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "d1a05cdffccc968ad6696d81708cb7fab1141ed64d9b8e28338de841e37097ae"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600598SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "35cb8734d1449dc0fca106934655b057c0b12ac08e78ae8a436721abac8dd261"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "9dee70f3a8292c18d4a5071b8ff9495465f1f0d9fbf60b47f48213cf19ae2a0f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-603259SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ea4841212b2eab612b391b7e3ed848962d6336d5df6f59b5b1e246ee614d3bf9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "88e058f5f4914f2a1f95703722dfc60ea4e43945edcff2bf2f034050385524cd"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600031SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "f7a5c205cdc55478ee16330e4405211a1120bc95e9483035bc6e8c22c20e86ad"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600690SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "9181bda2d9343ed47d84cf42137696d7a26d039a87b0ac3af2521a0b096872f3"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "8bdbcc181669f824f532adc7cf2de2b24e10be533e65f7bc3b706a7c2ab3d709"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600887SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "d2c7c334c812883ecff2a40be75f04f3e7d21d83eed16788ee214e1ef8b93252"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600900SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "dea0894d1fce13856d7ae55d6c4b48389d09df7c2f032de799fe8e80530bb3a2"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600276SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "d3c0c5f891ec9a4ffe5beb31f8807d0985f74826446100a258f965806aff0c33"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-603259SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "51f31ccb27664f0422e042e0f99730a1cd3abe003e776ceac03692cf3cd442ca"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002475SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ec67e977c52231dc2dd539fd0a66f31259cb8c04c68ac8632f1c1e0fc304ea7c"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "edd8e653b6e25a0beb9d9af6be9c82394516f460d4ddaf899545186994be397f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600887SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "bcc07ed70adeb145a24916db0788f2c7a1adda5e2018b0db0b5e5e1b23fcaf03"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "2bfe8659da6b123b2547754af4e50e47648ad046f328425cc7a5979404b45618"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "96de96ec2ff51b86f1d879ada368d086fdeae91563480f6ac9526587ca6b6723"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600900SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b2daf6477c1ead88852803b8c676cb6c3eb45daf5f8b71562c6c2f157c34440a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300760SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ae705716156e7b99285392c3f99db3f9b5c7639ff11a55edb81182fd3a0b9af2"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "5a3e795a42a6c2b84b85b198780bfcf90fd875fc973ea8f7b32a9ab4ffa2950f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "53f37cb5155f5bfaba16cd4f1c1f98b7a38adc703b31b3985d0d1b93bbf05d13"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "cdc00963f886fc68564e7e96fa692f44dc93539deff83bfeff9de8399eecc65b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "2e93e614e60018f9e290fc3977b2d58ea8fdfcae2c965807d77e074f3fe57e66"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "05c098519c50f862f8c61254b7a056144f149df0c58606c8e313f6e98cc4fb44"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600276SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "a6c2320f052e20d374e4d3656fc53ca57618f39878097c8f992cd3b7cdecb539"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600690SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "07c36f52d10f8992dbcdc1619066f554fcfca3e42def76b92c006c51d87688d0"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600690SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "7a06b01c25785270f5b5a49aa5fa1577917b72fa603c55d53e0812c36c01a6d7"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "fa20d62224eb6dec6e2f5a12b655458df7d1ccc085305af92613ea8e7455c62e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "30b9993d7d67ee9fc06ef70a169fb4e3e5d5480a7410037fcd5bbc517c47efb9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "ec5abddf8ce4c62bd7bbe6b69fe20832c9886d1c44e5e184e1d117a9c8c3b028"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "90c7a936b9456c7edd3263c86fb5bdcbd52b024b0759fdb76d7035e813dd7527"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "6b561a147f4be81e2fd617c25c48ebee94e216acc751338bda53774a47f28318"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "d05b3c09c8a589c0744c51c755d8a8124b1e4d89bdfd3e55bfab3e975d225a62"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "f1a0070b0f89a4971542c6d9e1e6245f2e7362820b8b3e3a4adc00ff6b96a154"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "21f3a46849b7cfe7a58212b5dd927d545a2d22123f91cc7c7933831b3b7c451c"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b1ed611471e4a012cf8660ad5ce178e584ae1b9471cc3fc09601e7f542cea51e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "2e38bd20be1789dc7a183293b56d0e017b01e1e9929e7a28eff880ecfecdaa49"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600031SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "73588b16ce85ba2f9271d0718365ffae0204a394e062a3ac1a5b304a59c51d1f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "bcd7e3bec13ae429ac617fb3a333a675baa9e9dae23b82ec590c5e3b66d52455"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000802SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "a6c85ab7202e699a67594e4392ec2cca545a2612ee1e881e5c1b6f0f855447f6"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600598SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "f244fc8c3001505101b7e489c81fa0f1e312c48a94fc03f7c93d28ab87c54830"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "361a3be4d702d76242177e80d87e6c67672d0f95aedc276f8a8da6f8490013d5"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "db2e29e81bf53654669efaaaf364aceb9312ec1db558f37fc17026b441bbfc11"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "2e2714e30ea0ffa75b57074ebd68d71358535bbe0d093093a4f2bfd664f0cbf4"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "a637094ba4f9227a7acb3f0b41483ac351157f9b515d932b8fa765313b8b2818"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "6b4dbbecdf2125f8f04a8515857a6b4e5061cc29f722c48c18a5a8bb64b831d4"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600031SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "1244cceef846ba65976eb6ec4c109d1de5e5c858a095b928aa68678f009813e3"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "cd9c70373e6ecd23934692a829abf3f7e22940fa4e15f9df69436825691a63e4"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "6e97d6d8875f2219efd047e5321127187027a6d09fb7a617a5db46e58a05bea4"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "5893b9a483fb089acccee72dd4640130ba0cb61791a77565e59d2464fc03f0bd"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "d5f1387d1ae5b9b54d2c176afa16483ea346b4819a8a81e295e764af3075360d"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600887SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "423a1b7bf00c015cee628a6eb7e00d38e9e21384ee8460d2cc2226c3b1584cd1"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000802SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "4e5d5630f167ad4a41f6253a8520c306c8e65db00948fbba5f3f53ffa57e4e4b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "091f1b2d2a3f641f9c6ceba6cfe7720b2029ba247d22d5d839eb2aa53d21de34"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b6e68c6ff4b4836b1659ea7c3529a0e5f0c839edde1487bb5878be60844ac914"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "122f821a21954ff5266ae070281ae10664279ec8a5944f028bdfef85a945fca8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b57534bcb214d1391a85cf9708ba265cee0ccbfd619dd858624064f87591c72d"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600900SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "6ff17798810c2d184cb334a2eb4e0963b267f102cbd21cb0e8076d430058c9ff"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-603259SH-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "7cbabf88980a9450140a80653926851327eecfea8313e10f9effc08ec4e856e2"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "925233fb5ef9b76f8080090406f83e6416a6ec047d618f076218606b57638314"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "168f4561c6ab877c8f599d2347b33287583da4e42dd9585fb47dd018d2b9c4fd"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "8002c74da00f0d2ee5ddbb0679805b7a92abe3e55e5f71e9edea66f0b3a08f3d"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-603259SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "dfc680ad25f3f25870cd6e0adbd0ee4ce51b20fb0ec31440be9fbdb29a64a364"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600598SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "84e886806f5cdbcaf447a3b1b8de59023e37e5534b86007ec10d279a372ae450"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "451f798f9cc033fb2545636f920a0222245597c643cb8d1b15cb0e0ce5bd1362"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "10f86b65fed1c1655c950f415f97dd2cd340c1e79b5f261b0b9ae3e892fce25e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "83f34fe4da1b300e9850acc9e336f2a2c3e89f9e2d2c1e1a3ef445fd2789adb8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "c69540edcc46eccab3f9b5add61cba5aa2ab8574d3ebeeb3df40545641798a58"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600156SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "af72834fde92b0db4d4c227299dcbc86919874658886fa7dff83342d187568cf"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600900SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "d9100fa6caa2ab0652a2eac9edb85b8711ede5ffd2c13a9c4c8b0babfc399d9e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300760SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "b4f1ee2d3b5c39b4916aeba315d5ecf610a770ea09cb65ae47c8c8629ffdbd9b"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "b0a2a80eef051eca8af0e57a790f13f36dffaa435d6cba0cfc77862ae3581840"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "3fee886830d4fbca714c0de32905cf29fc22753ef9001b972eaef916def9f193"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002475SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "fec141813a53fdd9b3ab1f1c01a1a16c248bf5333056793a0dde1e59fe2735d9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "b14aec438ab9bb7317a7f2da4ff43ce7dda8e37c03b73cbc1fbec9c56b5ed631"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "81da0899af05d68730d2630012fa003e6246520c592427adc0a04f0dc57402f8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002475SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "6e860e4f996bdb6fd3fc63b617a097126fb35ef01ca49f6e6928e4cd0bf99fa9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ad22990a399ee5b9c31938dde9ba887a7e7bd42380c6a094d085d97b5c2d4dd0"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "6d70946ba8c7121a82e65a20e85d3024fb2e9bee3146755a70d077a653f4e7c8"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "31a0d9e8c3e742465c3fa081e222a5b8a1d59cc7bc32c578886a5884f16c37a9"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300119SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "e6d343142e303a6bd440c4c96a018ad49e06e94eca529b8318f57fb0d823f480"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600887SH-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "179f4423ed8be18a5fd954ba462c0f812597220fba601b529494154b567eff1a"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-688981SH-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "d00d92fc656ebf29eaf4a30ec9f0bd5bb33de24fcd68ce311f2a0f4dd40c11ab"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-601088SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "8928d41dae4d9fb8fa4e02895e21a6389e68bdb804284f0c3346df8ef3539ce1"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600690SH-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "b5b96e5134a3d9911c28ab566134c1e277c671e93dba746d2c1c14fda18879d2"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "08b1f4bbff9e31a386d6a6d0dbaafb4372559b4b640f4010b451bdcf37eefde5"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "fd670721ff8686f6d9bfc3a90941e1bd80a131d919a52183e6e9fca1335c2a1f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-INTERNAL_CONTROL__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "ec46b301d62552ef62b40b3a017c525ceb51b7eb5c4ae47c9066465e01ee631c"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "6957e96feeb734d95b331eefb3152fab510b461e508ba1766d0b92ec710fce58"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "990e59374b8d6c66543f628971ee9663886b0a405752e5d8e1e3b7d502b80603"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600519SH-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "781491c7e72398ee277ea2a7b9b26647b352d1092ffc42a0b71fe5be41c59210"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600900SH-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "78e60526f7ecfbdabf15cbb47578b0dd07033bb91d40c573c233a1955240cd4f"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "2df1e1157740c88f07ccb2d91685ef6dd67a4ff196b612b363e9067b079ba36e"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-600887SH-2024-INTERNAL_CONTROL__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "f62aea5545864bb12e1ff73309ba85bafed9f9a80b2989b564fced3327d8b094"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002230SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "1e6adb6c67aa751c16cbe8b13f07d3e0ba0ceec21a491960c0ff0f4388ecefd0"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "eb8be9c1826fc8513c945ddbc579c27c3dde91bfffe5cfea3b68ce0f66f8ed66"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-INTERNAL_CONTROL__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "abce4db9cd9367d3d24d3890df5338f26faf4aebf47279c9beb7a0a7cd954a51"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300750SZ-2024-DIVIDEND_DISCLOSURE__dual_source_role_grounded_rag__repeat_001.json",
+      "sha256": "a4f40f72bb63c08344c7fffec864709a11b7ae03a2e118f1926ff5fb827dd677"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "73e33d2a2e5b247bee72af579fa23b01da320ea7e06fd0f7b76bf4cd5c6e9f36"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-000333SZ-2024-DIVIDEND_DISCLOSURE__merged_corpus_generic_cited_rag__repeat_001.json",
+      "sha256": "b4ed1b6e2f76a49dc77bb045e008f5276f3d641a0c81dce71250e3c719c4df46"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-002415SZ-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "69f89ca29d1ea303b385175011a458a8c443794891eaf0a2d39f55b259cf7ea0"
+    },
+    {
+      "file": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\runs\\compact_final_execution_windows_20261020_01\\concurrent_resume_v2\\generated\\HOLDOUT-603259SH-2024-AUDIT_COMMITTEE__dual_source_generic_cited_rag__repeat_001.json",
+      "sha256": "cb14d58d05c189fd8a931f40e8736a8537ee91b8223c80db6173ea42ee8e6c29"
+    }
+  ],
+  "code_snapshot": [
+    {
+      "original": "src/__init__.py",
+      "snapshot": "code_snapshot/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "src/alignment/__init__.py",
+      "snapshot": "code_snapshot/src/alignment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "src/alignment/citation_alignment.py",
+      "snapshot": "code_snapshot/src/alignment/citation_alignment.py",
+      "sha256": "9b36320016cd9a548d56f8e07296acd164a50002dd6c0cde513868fea3b873d2"
+    },
+    {
+      "original": "src/config.py",
+      "snapshot": "code_snapshot/src/config.py",
+      "sha256": "deb4970d4688a51f421acda2bbdc6ce21995deb02bdaf81a20325eb717b6bd8e"
+    },
+    {
+      "original": "src/data/__init__.py",
+      "snapshot": "code_snapshot/src/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "src/data/annual_facts.py",
+      "snapshot": "code_snapshot/src/data/annual_facts.py",
+      "sha256": "5e49ccc021d92dd1d203cd2e1b19d7743abf56fb27692b1d356a5a9ad14c5f10"
+    },
+    {
+      "original": "src/data/annual_reports.py",
+      "snapshot": "code_snapshot/src/data/annual_reports.py",
+      "sha256": "21299b656c186a08e0140b21b8c6c73a0452907e5ad6f2aa8fa3ebeb62cdecdd"
+    },
+    {
+      "original": "src/data/benchmark.py",
+      "snapshot": "code_snapshot/src/data/benchmark.py",
+      "sha256": "d1c716e0db15c4048afb2562da952fcb9129e6555cff99bb1e0ed600d0397dd8"
+    },
+    {
+      "original": "src/data/clause_splitter.py",
+      "snapshot": "code_snapshot/src/data/clause_splitter.py",
+      "sha256": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546"
+    },
+    {
+      "original": "src/data/declared_time.py",
+      "snapshot": "code_snapshot/src/data/declared_time.py",
+      "sha256": "918b970584a0714dcb61a55ad48fb294a0a74b7d909809397ad046f7a8dc200e"
+    },
+    {
+      "original": "src/data/document_corpora.py",
+      "snapshot": "code_snapshot/src/data/document_corpora.py",
+      "sha256": "59886ef55724a4bcf2067d802d6d235a67ef3d492d0654267b71ab344fc17f8e"
+    },
+    {
+      "original": "src/data/docx_text.py",
+      "snapshot": "code_snapshot/src/data/docx_text.py",
+      "sha256": "83b0c034cf254719041d7ca7d31df473f4728f90641cd963f0c517e955f2983b"
+    },
+    {
+      "original": "src/data/eval_dataset.py",
+      "snapshot": "code_snapshot/src/data/eval_dataset.py",
+      "sha256": "c41e45513830c5e44b58643602eb5c00f246743109ed69af41b7d70cedaa8ef4"
+    },
+    {
+      "original": "src/data/evaluation_groups.py",
+      "snapshot": "code_snapshot/src/data/evaluation_groups.py",
+      "sha256": "b245ba38cd7b8019274586b55378982350e43e1a6c3311d8799e3b4f4700a7ec"
+    },
+    {
+      "original": "src/data/evidence_sources.py",
+      "snapshot": "code_snapshot/src/data/evidence_sources.py",
+      "sha256": "1d3d49bfe8aab1e79b1372a8b05d9c7057760ca1d6b9056ad43ebe9eb6280e02"
+    },
+    {
+      "original": "src/data/independent_stage1_csv_intake.py",
+      "snapshot": "code_snapshot/src/data/independent_stage1_csv_intake.py",
+      "sha256": "e9c81e17100478fbfa4778a548707699feecd56fd4cce61d67688de6f020f936"
+    },
+    {
+      "original": "src/data/knowledge_loader.py",
+      "snapshot": "code_snapshot/src/data/knowledge_loader.py",
+      "sha256": "8744245deb9eeeb0a85b8d10ca400896dc930b1b35aede7776e72f1d71e939a0"
+    },
+    {
+      "original": "src/data/ocr_visual_review_intake.py",
+      "snapshot": "code_snapshot/src/data/ocr_visual_review_intake.py",
+      "sha256": "32b921632b5347660f25d43f75ae70eb2566bb316fede43b514db514130470a7"
+    },
+    {
+      "original": "src/data/page_mapped_chunks.py",
+      "snapshot": "code_snapshot/src/data/page_mapped_chunks.py",
+      "sha256": "6ec1b5a4e4443772bc9c613bcf63b047322becc213573c707536d7012daff8bd"
+    },
+    {
+      "original": "src/data/page_reference_release.py",
+      "snapshot": "code_snapshot/src/data/page_reference_release.py",
+      "sha256": "c0f98df72e39af359f7dde58854de69047f79a9e3c1434ccab81e472117d5ae2"
+    },
+    {
+      "original": "src/data/pdf_text_frames.py",
+      "snapshot": "code_snapshot/src/data/pdf_text_frames.py",
+      "sha256": "0a8c420dc9097b0c9f2b7a61f7a46c04019c39e198c53a892d38ad24e1b4b0ff"
+    },
+    {
+      "original": "src/data/real_output_review_intake.py",
+      "snapshot": "code_snapshot/src/data/real_output_review_intake.py",
+      "sha256": "ba21a102dd270343de080b9fc0c244a83285da5e9a99eb2c8b1c5397c3d8b0c4"
+    },
+    {
+      "original": "src/data/regulation_ocr.py",
+      "snapshot": "code_snapshot/src/data/regulation_ocr.py",
+      "sha256": "d77d7940c5745238065ce23a54b78f4ef0605d2e4d43cfe7e860636d6203c7fd"
+    },
+    {
+      "original": "src/data/regulation_source_version_intake.py",
+      "snapshot": "code_snapshot/src/data/regulation_source_version_intake.py",
+      "sha256": "8f5af386eb924cce22519bf8b4ea506d9d46a803a3afc6a070ef8a4614a65771"
+    },
+    {
+      "original": "src/data/retrieval_target_release.py",
+      "snapshot": "code_snapshot/src/data/retrieval_target_release.py",
+      "sha256": "e8613ae1b1d98d7f07b61565e91345181d768af0118d3bdc24819fe2fd8d060a"
+    },
+    {
+      "original": "src/data/retrieved_source_spans.py",
+      "snapshot": "code_snapshot/src/data/retrieved_source_spans.py",
+      "sha256": "66fb4213241595650675cac0775572e933c21e44f10bd426c75b7b8bbd0ea43d"
+    },
+    {
+      "original": "src/data/review_intake.py",
+      "snapshot": "code_snapshot/src/data/review_intake.py",
+      "sha256": "76256ff08c37aa391a76d80836b8fd701e877ca369e9331e5ac99f3020f4ddff"
+    },
+    {
+      "original": "src/data/review_workbook.py",
+      "snapshot": "code_snapshot/src/data/review_workbook.py",
+      "sha256": "f8c2f11ea4db6fed7bf1f8d8f4692c0e5f7ceaa4b5d7be646b879efb5d71edf0"
+    },
+    {
+      "original": "src/data/source_review_intake.py",
+      "snapshot": "code_snapshot/src/data/source_review_intake.py",
+      "sha256": "de11bc7f4948c0671e4980fa10643feff5375af996d98e540d8db77d50681972"
+    },
+    {
+      "original": "src/data/structural_splitter.py",
+      "snapshot": "code_snapshot/src/data/structural_splitter.py",
+      "sha256": "e44cb6c1f6c6e03eac0782290145cae46044c0c6d09f15e70c5173945756184b"
+    },
+    {
+      "original": "src/generation/__init__.py",
+      "snapshot": "code_snapshot/src/generation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "src/generation/comparison.py",
+      "snapshot": "code_snapshot/src/generation/comparison.py",
+      "sha256": "3765f7cdafbc2f6267274bfd652a487281a1032f97a8d4f9eac06923b1988720"
+    },
+    {
+      "original": "src/generation/concurrent_execution.py",
+      "snapshot": "code_snapshot/src/generation/concurrent_execution.py",
+      "sha256": "01acd4b58c8742084b6e53a1f3a72fda74877c0441adb468a75c22ba82e8ec2d"
+    },
+    {
+      "original": "src/generation/concurrent_execution_v2.py",
+      "snapshot": "code_snapshot/src/generation/concurrent_execution_v2.py",
+      "sha256": "a77a1e321b375c5059993b2859fd40509ca2250ccb9557f2b63ee59c179dfa4a"
+    },
+    {
+      "original": "src/generation/evaluator.py",
+      "snapshot": "code_snapshot/src/generation/evaluator.py",
+      "sha256": "df2ba0edc6cd228a2b29d019a04064445a6f17c16254247475895927cb1284f6"
+    },
+    {
+      "original": "src/generation/experiment_protocol.py",
+      "snapshot": "code_snapshot/src/generation/experiment_protocol.py",
+      "sha256": "1d6116e667b9238c5949a2cb0e1d95f48a232924bbaa09d9a715a03505f849f7"
+    },
+    {
+      "original": "src/generation/joint_verification.py",
+      "snapshot": "code_snapshot/src/generation/joint_verification.py",
+      "sha256": "ad15d3a79316ebe3775ac611ce28c48cba1827ee8d9be1790f9963fcc4bad6e1"
+    },
+    {
+      "original": "src/generation/llm_client.py",
+      "snapshot": "code_snapshot/src/generation/llm_client.py",
+      "sha256": "00ef8f513761e4b9a10540402d920364695c44526c97b16b577f6260fd74fca1"
+    },
+    {
+      "original": "src/generation/page_reference_protocol.py",
+      "snapshot": "code_snapshot/src/generation/page_reference_protocol.py",
+      "sha256": "445ad3177e1e555606d0c96b1e97934682d007285474a3f76be04c9dfdca4f49"
+    },
+    {
+      "original": "src/generation/prompts.py",
+      "snapshot": "code_snapshot/src/generation/prompts.py",
+      "sha256": "8d41f051e658e1452bb22c21a44d1b8ee2a920ff7756e38edf4e7732531f4d14"
+    },
+    {
+      "original": "src/generation/robustness.py",
+      "snapshot": "code_snapshot/src/generation/robustness.py",
+      "sha256": "4b1968240de8293a863c3439b55f9fecf32c9f97a9db5b51c5cf594a66fedb17"
+    },
+    {
+      "original": "src/generation/robustness_execution.py",
+      "snapshot": "code_snapshot/src/generation/robustness_execution.py",
+      "sha256": "c5c9fbf558fcb7dbabae588537e3b664c2c9019edee3243ebbefe7afb21c7a7e"
+    },
+    {
+      "original": "src/generation/shared_drafts.py",
+      "snapshot": "code_snapshot/src/generation/shared_drafts.py",
+      "sha256": "9c1bd3e9d96599d26e93e82e31e9a141ba59da06becc480be1d0d08061d80460"
+    },
+    {
+      "original": "src/generation/strong_baselines.py",
+      "snapshot": "code_snapshot/src/generation/strong_baselines.py",
+      "sha256": "d9efb3517e56c9d44c0947a02a27a2c9e5282ca77dab896583e9a18081901e08"
+    },
+    {
+      "original": "src/generation/supplementary_retrieval.py",
+      "snapshot": "code_snapshot/src/generation/supplementary_retrieval.py",
+      "sha256": "f28a9fc4b4f3cdaf77a8dabaf8257b854fef496b12c4bac7f490a386a134e128"
+    },
+    {
+      "original": "src/metrics/__init__.py",
+      "snapshot": "code_snapshot/src/metrics/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "src/metrics/api_attempt_ledger.py",
+      "snapshot": "code_snapshot/src/metrics/api_attempt_ledger.py",
+      "sha256": "ba5cbe2ec9648e00dd7291f098eab1c9a5d12e7de55a0b4fa76572b3dbd22571"
+    },
+    {
+      "original": "src/metrics/benchmark_eval.py",
+      "snapshot": "code_snapshot/src/metrics/benchmark_eval.py",
+      "sha256": "db3065916ad32aaf0fc411ae138ea19afea2e1cea09542a3bf72038a60c09c02"
+    },
+    {
+      "original": "src/metrics/generation_metrics.py",
+      "snapshot": "code_snapshot/src/metrics/generation_metrics.py",
+      "sha256": "9bbb6f32b84cd21b9e21d30a47c14c25a24b57c0160e5e0c643a40eff18730a7"
+    },
+    {
+      "original": "src/metrics/page_reference.py",
+      "snapshot": "code_snapshot/src/metrics/page_reference.py",
+      "sha256": "c78ddbb5e151a0f715243d3b23572785f3a94bd30d8958e87cd4a732ce3a6141"
+    },
+    {
+      "original": "src/metrics/retrieval_metrics.py",
+      "snapshot": "code_snapshot/src/metrics/retrieval_metrics.py",
+      "sha256": "af4d5f070dd7dd13ca87294ad65bf99c7803bb44f1815d12b5513d32cacf5915"
+    },
+    {
+      "original": "src/metrics/reviewed_comparison.py",
+      "snapshot": "code_snapshot/src/metrics/reviewed_comparison.py",
+      "sha256": "228f5a014bd105ab405297934b932531af858144a431c54858a3ac7997c1bcb6"
+    },
+    {
+      "original": "src/metrics/reviewed_generation.py",
+      "snapshot": "code_snapshot/src/metrics/reviewed_generation.py",
+      "sha256": "9d43599384777740a20192998a479955b40aafd2d9ecaddaa041a5e685249f32"
+    },
+    {
+      "original": "src/metrics/saved_rankings.py",
+      "snapshot": "code_snapshot/src/metrics/saved_rankings.py",
+      "sha256": "2f40809d3bfd75b4eb0df51bdedf6fe2b3764225c7e75a1aa65bba61dbb17095"
+    },
+    {
+      "original": "src/metrics/span_retrieval.py",
+      "snapshot": "code_snapshot/src/metrics/span_retrieval.py",
+      "sha256": "369a992765b7b34cd08ee749a3f9ca9144499b5b95d424c02758cef604401219"
+    },
+    {
+      "original": "src/metrics/stats.py",
+      "snapshot": "code_snapshot/src/metrics/stats.py",
+      "sha256": "81629fdadb101d305daa15f088b1b81fd6a2f3afe54e573f381db18fb0e0729a"
+    },
+    {
+      "original": "src/pipeline.py",
+      "snapshot": "code_snapshot/src/pipeline.py",
+      "sha256": "bf24a51fd753e7be5da394b552a4f5706803a56d1f8f9045aa92e5312d95c20e"
+    },
+    {
+      "original": "src/retrieval/__init__.py",
+      "snapshot": "code_snapshot/src/retrieval/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "src/retrieval/bm25.py",
+      "snapshot": "code_snapshot/src/retrieval/bm25.py",
+      "sha256": "8e37f390c544fb0143ce3d9fcd2e5fad674e50a699852c269db347b9c38eb5f4"
+    },
+    {
+      "original": "src/retrieval/dense.py",
+      "snapshot": "code_snapshot/src/retrieval/dense.py",
+      "sha256": "f200a5b3c864ed81bb7aed0ac13ce54ef5b4d5719a7b055a62ea6501ff1284b3"
+    },
+    {
+      "original": "src/retrieval/experiment_protocol.py",
+      "snapshot": "code_snapshot/src/retrieval/experiment_protocol.py",
+      "sha256": "a1a57fb9d8b699f4f96c80518c753638ed1bcf23a1e0b4c9e131623b86e36b7a"
+    },
+    {
+      "original": "src/retrieval/factorial.py",
+      "snapshot": "code_snapshot/src/retrieval/factorial.py",
+      "sha256": "db86ac0af130d8118894f1ccc365d4cbc60d1ed986c8d304a91ed9b7e0809f38"
+    },
+    {
+      "original": "src/retrieval/hybrid.py",
+      "snapshot": "code_snapshot/src/retrieval/hybrid.py",
+      "sha256": "4da84ebe14a8d9920fa421cea25b3189fb4620036c8d27d6ba8c967727023574"
+    },
+    {
+      "original": "src/retrieval/index_artifact.py",
+      "snapshot": "code_snapshot/src/retrieval/index_artifact.py",
+      "sha256": "2ffd6d28c9d1bdb1dd0c1ad724d6374f40d33c850f65403b08e8c10b644884c0"
+    },
+    {
+      "original": "src/retrieval/method_comparison.py",
+      "snapshot": "code_snapshot/src/retrieval/method_comparison.py",
+      "sha256": "23b81d745425ecce15079b01c19546d31b797484043d22926ae98fa24fd585c6"
+    },
+    {
+      "original": "src/retrieval/reranker.py",
+      "snapshot": "code_snapshot/src/retrieval/reranker.py",
+      "sha256": "3cd1d08f79b0db2a1a0e26337cc9ad6247349a4770eb8032d699dd18f62e0048"
+    },
+    {
+      "original": "src/retrieval/router.py",
+      "snapshot": "code_snapshot/src/retrieval/router.py",
+      "sha256": "698127eee4d3791a73f295946015dbf4321a49eaa6fe448ff696251e63bff391"
+    },
+    {
+      "original": "src/retrieval/runtime.py",
+      "snapshot": "code_snapshot/src/retrieval/runtime.py",
+      "sha256": "a3dfd24bc2edbd2e5199fb5d3ef98df986aecd6f13b4eeac799167f0fcb25f49"
+    },
+    {
+      "original": "src/retrieval/search_trace.py",
+      "snapshot": "code_snapshot/src/retrieval/search_trace.py",
+      "sha256": "545f9317a08419f451cfbc5ecf7f0357b97b2bb586ccb7de6961ddb3a4fc9d1e"
+    },
+    {
+      "original": "src/retrieval/temporal.py",
+      "snapshot": "code_snapshot/src/retrieval/temporal.py",
+      "sha256": "86c027dd11db19946e2f54212c6b9cdb712db340eb1c89b1d8d564f182843176"
+    },
+    {
+      "original": "src/review_ui/compact_output_reader.html",
+      "snapshot": "code_snapshot/src/review_ui/compact_output_reader.html",
+      "sha256": "bc588cafbaf69638c81a8874e6d215d2e59fe93f8c27094a0b00d341efd9822d"
+    },
+    {
+      "original": "src/review_ui/index.html",
+      "snapshot": "code_snapshot/src/review_ui/index.html",
+      "sha256": "5956d93ef6f0122353038f0c6a900058b60730f59622b4181cd986d78d6a7436"
+    },
+    {
+      "original": "src/review_ui/minimal_paper_review.html",
+      "snapshot": "code_snapshot/src/review_ui/minimal_paper_review.html",
+      "sha256": "22a3dc17c6acf6d4f2011eea9d416a7c48cc0498ce56ce001df7f4ff340ab069"
+    },
+    {
+      "original": "src/review_ui/review_app.js",
+      "snapshot": "code_snapshot/src/review_ui/review_app.js",
+      "sha256": "74765f87aa8999e1f6a96d6df005cbd9446aca62b3c67f5543228da55aa55ae4"
+    },
+    {
+      "original": "src/review_ui/review_core.js",
+      "snapshot": "code_snapshot/src/review_ui/review_core.js",
+      "sha256": "90d4385c08305d8282ed615842016acb30d2412fce1bb8af6d787ec038e98efa"
+    },
+    {
+      "original": "scripts/align_auxiliary_candidates_to_original_pdfs_20261014.py",
+      "snapshot": "code_snapshot/scripts/align_auxiliary_candidates_to_original_pdfs_20261014.py",
+      "sha256": "79490117093294ef17fe17d6179cec6851c24d6052a44f942017943e282be549"
+    },
+    {
+      "original": "scripts/analyze_reviewed_generation.py",
+      "snapshot": "code_snapshot/scripts/analyze_reviewed_generation.py",
+      "sha256": "51553039bf152749ce62051fbd18a739c7f19886a30fdb7b272a20a6ee29b659"
+    },
+    {
+      "original": "scripts/audit_annual_002169_rule_time_chain_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_annual_002169_rule_time_chain_20261016.py",
+      "sha256": "36158c7038fd7991f4eceed52489af83858f64572472b1ec4d5946d2338fbee6"
+    },
+    {
+      "original": "scripts/audit_annual_candidate_quote_integrity_20261014.py",
+      "snapshot": "code_snapshot/scripts/audit_annual_candidate_quote_integrity_20261014.py",
+      "sha256": "4197406cecaea0673218e6b1f6bb6cd080e6d93e0bee51c1ae27498e1848beed"
+    },
+    {
+      "original": "scripts/audit_annual_d2_attendance_candidate_integrity_20261014.py",
+      "snapshot": "code_snapshot/scripts/audit_annual_d2_attendance_candidate_integrity_20261014.py",
+      "sha256": "24ad3abc5eeaf0881a81e6b16d8017d188947b4934b7cad36f169dc6db761642"
+    },
+    {
+      "original": "scripts/audit_benchmark.py",
+      "snapshot": "code_snapshot/scripts/audit_benchmark.py",
+      "sha256": "262b4ecfd24aad7f3cd9c205f1c86170a97eeb9c95764dc58e8045d9b7424e84"
+    },
+    {
+      "original": "scripts/audit_compact_generated_outputs.py",
+      "snapshot": "code_snapshot/scripts/audit_compact_generated_outputs.py",
+      "sha256": "31576a1a100758ef981729692bcc2817f79b558bf82420d6c46e1d7782aed7a9"
+    },
+    {
+      "original": "scripts/audit_data_preparation.py",
+      "snapshot": "code_snapshot/scripts/audit_data_preparation.py",
+      "sha256": "eec924e0c6c108acb7ca013706c2f6de63fd8e52f5136a35f91fff8719d714d5"
+    },
+    {
+      "original": "scripts/audit_evaluation_groups.py",
+      "snapshot": "code_snapshot/scripts/audit_evaluation_groups.py",
+      "sha256": "554d2a0932cc6439ca01e15ffa48130972a1f3ef7110938c51395b52103b3994"
+    },
+    {
+      "original": "scripts/audit_generation_quota_budget_preflight_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_generation_quota_budget_preflight_20261016.py",
+      "sha256": "3755ce4074f82cd2bbe632cde42c47a7e72e674faa946645573de1d1a70cceb9"
+    },
+    {
+      "original": "scripts/audit_page_reference_index.py",
+      "snapshot": "code_snapshot/scripts/audit_page_reference_index.py",
+      "sha256": "b3111458007436ff8196a8f0898f627dfb448a31f33c4b97e5a432075584f196"
+    },
+    {
+      "original": "scripts/audit_pilot_regulation_source_text_equivalence_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_pilot_regulation_source_text_equivalence_20261016.py",
+      "sha256": "bca0d2f8128b8eba438d7e631129f7762ae777f0d06038fe171c739e2c65419e"
+    },
+    {
+      "original": "scripts/audit_real_pilot_model_response_identity_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_real_pilot_model_response_identity_20261016.py",
+      "sha256": "55406d967b48fb91f8220c9f4f80aa0437a2dd2257f429f91aa3e0c79e114b80"
+    },
+    {
+      "original": "scripts/audit_ten_pilot_regulation_pdf_locators_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_ten_pilot_regulation_pdf_locators_20261016.py",
+      "sha256": "63ec8e96d950c96fc89f3b6b96e99fbcf162e3d855972e5633eb396eddd24b7c"
+    },
+    {
+      "original": "scripts/audit_ten_pilot_regulation_pdf_provenance_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_ten_pilot_regulation_pdf_provenance_20261016.py",
+      "sha256": "6bc41d5567ee254e1a1d6107d9d99d523f677f167e242719dd28427199cca3d6"
+    },
+    {
+      "original": "scripts/audit_ten_pilot_regulation_pdf_span_pages_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_ten_pilot_regulation_pdf_span_pages_20261016.py",
+      "sha256": "3cf03e7456fba04fcee35731be66a4b7c75977c9692ed3cb9d8ee5ca745fc131"
+    },
+    {
+      "original": "scripts/audit_ten_pilot_retrieval_source_bindings_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_ten_pilot_retrieval_source_bindings_20261016.py",
+      "sha256": "1139dfd95c2cc18dd9e08e9a626e6f492e333585355c6d31f52159f15fc009d6"
+    },
+    {
+      "original": "scripts/audit_unlocated_regulation_hits_official_text_20261016.py",
+      "snapshot": "code_snapshot/scripts/audit_unlocated_regulation_hits_official_text_20261016.py",
+      "sha256": "3720a8a198ab5bb11442de7c4c5af7f08e439857e874389725c9b9d07661800a"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014.py",
+      "sha256": "973241a0a20d7e14ec1d0a61e3e62a7c16eebb055b86af222d7bbb4a84699043"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014_07.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014_07.py",
+      "sha256": "74452c2448fc6282a8343723e689ed8542d335ee048c0f3dbb2ba1a268cc3c38"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014_08.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014_08.py",
+      "sha256": "e46c2dae8c04f2bc01016b7e687a0595d203bbca68400c508da4311308a7c711"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014_09.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014_09.py",
+      "sha256": "49ff7ca5bb0107be38ae073416299109798cdf20c9239a522c77ac521d4b9f58"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014_11.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014_11.py",
+      "sha256": "7722d8638a9a3a6d1e4fb52d35e15df3095b05ee5b72994844346304fca993c5"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014_12.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014_12.py",
+      "sha256": "451d9a271ddd6049cc647c85288b579ff2f1801c261aaae96aaedb349a34386c"
+    },
+    {
+      "original": "scripts/build_annual_company_fact_pilot_coverage_20261014_13.py",
+      "snapshot": "code_snapshot/scripts/build_annual_company_fact_pilot_coverage_20261014_13.py",
+      "sha256": "f8b85bed22cd7c89b74ed70cd17685f0563f2d07e96157ce27f716ec0f24b229"
+    },
+    {
+      "original": "scripts/build_annual_d2_600519_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d2_600519_candidates_20261014.py",
+      "sha256": "ec9004fd2435c0ba30ed67297726ac33e9cc5d9ac34f8ece1601822e810a0f8d"
+    },
+    {
+      "original": "scripts/build_annual_d2_attendance_candidate_index_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d2_attendance_candidate_index_20261014.py",
+      "sha256": "7778153800c1b303012ee4827e07a07d8ae7a955257f47a6eac364504f81db98"
+    },
+    {
+      "original": "scripts/build_annual_d2_coverage_rollup_20261014_23.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d2_coverage_rollup_20261014_23.py",
+      "sha256": "c57a82b1e5dbd0a91912be18b6624e0b3f6b8ae51b05256c4e2520284ad1a809"
+    },
+    {
+      "original": "scripts/build_annual_d2_coverage_rollup_20261014_24.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d2_coverage_rollup_20261014_24.py",
+      "sha256": "fe3df8f4aebde2cfe032c13bfce8e3b7dc67726ea372603b3706905ab19f892c"
+    },
+    {
+      "original": "scripts/build_annual_d2_remaining_raw_only_visual_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d2_remaining_raw_only_visual_candidates_20261014.py",
+      "sha256": "7c51d71524c3867c0e255c915412f700fd265a5d5c3242a53a7e8894de028862"
+    },
+    {
+      "original": "scripts/build_annual_d2_review_backlog_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d2_review_backlog_20261014.py",
+      "sha256": "ccebbc6dbcd64f90254dca3d6201e91ff3089d5cfe5845f87a0f5e65da8ac91e"
+    },
+    {
+      "original": "scripts/build_annual_d3_control_status_disclosure_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d3_control_status_disclosure_candidates_20261014.py",
+      "sha256": "50d34f8d5b4ee7ef62b9efb4838556d41e86127b1889d5a2822879687bacb2a7"
+    },
+    {
+      "original": "scripts/build_annual_d4_auditor_opinion_coverage_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_d4_auditor_opinion_coverage_20261014.py",
+      "sha256": "96a1a7480e235c9d8f6afe2fad32c67ce25e57022825a775246131782c2eec41"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014.py",
+      "sha256": "451185a0b008c503d8484b4cf1a0851bd90a3b732cf1cc24b8f34823c9d72e53"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_03.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_03.py",
+      "sha256": "944e789915ef59a3d142c56f2d241a864831e41373c97231e649db338888c930"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_04.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_04.py",
+      "sha256": "c489c199205db4aa15518242fa0dbdeac3d69dee4ab58b675e0850b4fe27d436"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_05.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_05.py",
+      "sha256": "2956ff1cdeef5f6379bb0d7b236605c7e4a0d4b0edb4c45b32a7d0859b8f34d8"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_06.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_06.py",
+      "sha256": "7e816e282929e8262c2f655da7dd44976356064a3d32d49245f6acd537b1192c"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_07.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_07.py",
+      "sha256": "aa98847b596f121a12ae222e0511cbf0de8ad20b683366fa968906d5908806d1"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_08.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_08.py",
+      "sha256": "13a8cb5c0570cc74c1923dfeeed47c59ff3af6416f2444c20ae8733fe0fd6a85"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_09.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_09.py",
+      "sha256": "9e01f8e12c01a37af3bf626d3c8c1e6916960fe55ffed69d68c787efdea02336"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_10.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_10.py",
+      "sha256": "9aa84140cb20713ed59da29a45222bd44dcbc90c141506966479cc04eeb86082"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_11.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_11.py",
+      "sha256": "b0d66f0b5c1e74bf8d117bc682955f1a9ccd8983bbad4b9bb5f4c2e822bac419"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_14.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_14.py",
+      "sha256": "6abf76d01cb2c57fc0c8f4e9be953beb9c458f349106f352dc1bb284810ba9c8"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_15.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_15.py",
+      "sha256": "a102b3dcbf21034d2554175163e5e6b9c442b2f8f30fa6cf60a6662888d95ec9"
+    },
+    {
+      "original": "scripts/build_annual_fact_independent_review_overlay_20261014_16.py",
+      "snapshot": "code_snapshot/scripts/build_annual_fact_independent_review_overlay_20261014_16.py",
+      "sha256": "bd4705f31f625d087ea807a217801d22dd43e45064f2eca31c77c31ed0e473bd"
+    },
+    {
+      "original": "scripts/build_api_attempt_ledger.py",
+      "snapshot": "code_snapshot/scripts/build_api_attempt_ledger.py",
+      "sha256": "bd515af276def2f7989212fcd8c3612aa388e1bfaec834306f212c79400cc49c"
+    },
+    {
+      "original": "scripts/build_csrc_undated_corpus_date_proposal_overlay_20261014.py",
+      "snapshot": "code_snapshot/scripts/build_csrc_undated_corpus_date_proposal_overlay_20261014.py",
+      "sha256": "cb29d402c73fc904892eb5c18f51563733e1cd8c179bd5c9604a5a46e6967957"
+    },
+    {
+      "original": "scripts/build_dual_source_candidate_screen_20261016.py",
+      "snapshot": "code_snapshot/scripts/build_dual_source_candidate_screen_20261016.py",
+      "sha256": "57c5f3fb65c3fa825b53d6bb6d853e34cbd7315c998377cae7fa079ee4e8c033"
+    },
+    {
+      "original": "scripts/build_independent_review_web.py",
+      "snapshot": "code_snapshot/scripts/build_independent_review_web.py",
+      "sha256": "b7ce32798bc5b3bd8c004f92c1a498000ac16dec8b04dffc40912e6b570039b9"
+    },
+    {
+      "original": "scripts/build_minimal_paper_eval60.py",
+      "snapshot": "code_snapshot/scripts/build_minimal_paper_eval60.py",
+      "sha256": "9a38de691b75b63cceb024e553a51ed87613358e8875cdf13f467f7a0028bc80"
+    },
+    {
+      "original": "scripts/build_pilot_regulation_provenance_overlay_20261016.py",
+      "snapshot": "code_snapshot/scripts/build_pilot_regulation_provenance_overlay_20261016.py",
+      "sha256": "17d4eae81c5d33b45d1a9dc3d8b0bad8ccee7630cf63793ac82b18f9956b779e"
+    },
+    {
+      "original": "scripts/build_query_set.py",
+      "snapshot": "code_snapshot/scripts/build_query_set.py",
+      "sha256": "10fba2893310bf206467971f48e0577a382e54c00e201c4c68b24000ed618690"
+    },
+    {
+      "original": "scripts/build_real_generation_pilot_exposure_extension_20261016.py",
+      "snapshot": "code_snapshot/scripts/build_real_generation_pilot_exposure_extension_20261016.py",
+      "sha256": "ab4826ce705118496a64001d8c7da0bc13134924603383f828413ebb01665678"
+    },
+    {
+      "original": "scripts/capture_annual_d3_002679_regulator_source_crosscheck_20261014.py",
+      "snapshot": "code_snapshot/scripts/capture_annual_d3_002679_regulator_source_crosscheck_20261014.py",
+      "sha256": "86b2be931cf8132bb2f79ea4293694428c04dfb464c2251c10880eafe4aa214c"
+    },
+    {
+      "original": "scripts/capture_annual_d3_600570_regulator_source_20261014.py",
+      "snapshot": "code_snapshot/scripts/capture_annual_d3_600570_regulator_source_20261014.py",
+      "sha256": "91346268c65119bf9ffe24bffa9aa94b371c2cc6fb4f7a7e0252f7e06f07d2bc"
+    },
+    {
+      "original": "scripts/capture_annual_d3_601377_p106_regulator_sources_20261014.py",
+      "snapshot": "code_snapshot/scripts/capture_annual_d3_601377_p106_regulator_sources_20261014.py",
+      "sha256": "65f0b1f6a9cf1257d4f849e230dc5346a4b15e54056d435b4e516d88e332e342"
+    },
+    {
+      "original": "scripts/capture_annual_d3_601377_regulator_originals_20261014.py",
+      "snapshot": "code_snapshot/scripts/capture_annual_d3_601377_regulator_originals_20261014.py",
+      "sha256": "27b670f8c7657be333a6553fb4a56d200515913ffcac8b0d2e327a568e593997"
+    },
+    {
+      "original": "scripts/capture_official_csrc_metadata_for_undated_corpus_20261014.py",
+      "snapshot": "code_snapshot/scripts/capture_official_csrc_metadata_for_undated_corpus_20261014.py",
+      "sha256": "ad6cac39c967360e33f3d6ba3c561f7c42bda8d1a1e39e45faae4b1d5152ccd3"
+    },
+    {
+      "original": "scripts/collect_csrc.py",
+      "snapshot": "code_snapshot/scripts/collect_csrc.py",
+      "sha256": "3c0d7357dc7dd9ab454d41176055933772dfa599f5c45b08ad1ec39c5fb6635b"
+    },
+    {
+      "original": "scripts/collect_penalties.py",
+      "snapshot": "code_snapshot/scripts/collect_penalties.py",
+      "sha256": "ca36e4b2fb13f038f858658a07129a1fe9cde15cc756fdd754ccf2155ce31a28"
+    },
+    {
+      "original": "scripts/collect_regulations.py",
+      "snapshot": "code_snapshot/scripts/collect_regulations.py",
+      "sha256": "306961596b373f11513a953929ef3e576c3745bea72026b78c9a047825ffeb99"
+    },
+    {
+      "original": "scripts/combine_real_output_review_and_sources_20261016.py",
+      "snapshot": "code_snapshot/scripts/combine_real_output_review_and_sources_20261016.py",
+      "sha256": "a864bd3ebb6eb6ac1d97ee4c20ef675627987d84b486b4885b2e3ebc5a76b5e5"
+    },
+    {
+      "original": "scripts/compare_embedding_prompts.py",
+      "snapshot": "code_snapshot/scripts/compare_embedding_prompts.py",
+      "sha256": "2bd2a99a7b4097c882415c364f616b0debfcbd92ae0b668a326450a8fe22c4ed"
+    },
+    {
+      "original": "scripts/compile_independent_review.py",
+      "snapshot": "code_snapshot/scripts/compile_independent_review.py",
+      "sha256": "76f094422f2ea988b715cb962fa3cfc46b2b06aba679dcaf0a0c706e6d1428fa"
+    },
+    {
+      "original": "scripts/compile_source_span_targets.py",
+      "snapshot": "code_snapshot/scripts/compile_source_span_targets.py",
+      "sha256": "81bdc0c95bbeacfd758967a19e689440e4b51723de549afb9ab45c56fc320f2f"
+    },
+    {
+      "original": "scripts/correct_annual_d3_002475_opinion_scope_20261014.py",
+      "snapshot": "code_snapshot/scripts/correct_annual_d3_002475_opinion_scope_20261014.py",
+      "sha256": "2ba7d03457d2ab24fe859481df2152d3bc11295c19d7e7048e2f7a1ae9872e7f"
+    },
+    {
+      "original": "scripts/correct_official_source_index_title_20261020.py",
+      "snapshot": "code_snapshot/scripts/correct_official_source_index_title_20261020.py",
+      "sha256": "f6a5a4e8d6e0b10e2026c589efc723279151f0436f2907d692aada581ac6d979"
+    },
+    {
+      "original": "scripts/dedupe_and_manifest.py",
+      "snapshot": "code_snapshot/scripts/dedupe_and_manifest.py",
+      "sha256": "a16c130803e61599c4a4e5da105a0e244158c654cd86e105241975e0aa29882f"
+    },
+    {
+      "original": "scripts/diagnose_source_span_retrieval.py",
+      "snapshot": "code_snapshot/scripts/diagnose_source_span_retrieval.py",
+      "sha256": "05d2c217e020cc3edf8a9890ffe92f56819400ed7d542b3d61f7fcaffa31da27"
+    },
+    {
+      "original": "scripts/dual_corpus_rag.py",
+      "snapshot": "code_snapshot/scripts/dual_corpus_rag.py",
+      "sha256": "d1488648e3d3dd7e340f1fce008f8f78bc3b64b206977531632fa3dcc0e67fbc"
+    },
+    {
+      "original": "scripts/enrich_annual_manifest_from_reconciliation.py",
+      "snapshot": "code_snapshot/scripts/enrich_annual_manifest_from_reconciliation.py",
+      "sha256": "9a0ca8e87ecfb451546f746ae4eccdb10f8a50761ed3bb1dbd437d5186dc2719"
+    },
+    {
+      "original": "scripts/evaluate_reviewed_generation.py",
+      "snapshot": "code_snapshot/scripts/evaluate_reviewed_generation.py",
+      "sha256": "f6fa5236e1652b99889e7f68f209721a1fc0348a1e2aff29c073094a7cf0cb1c"
+    },
+    {
+      "original": "scripts/export_chunks.py",
+      "snapshot": "code_snapshot/scripts/export_chunks.py",
+      "sha256": "f27ecdec2718cd96aff78551d6d2c244dd32324205bf39f00f10e83d358d4864"
+    },
+    {
+      "original": "scripts/export_saved_span_rankings.py",
+      "snapshot": "code_snapshot/scripts/export_saved_span_rankings.py",
+      "sha256": "c4e6a3fcfa05b12aec537fd9a87cd2906f2d7aaace6f8563ee60ad27ceb11711"
+    },
+    {
+      "original": "scripts/extend_historical_instance_graph_002008_20261016.py",
+      "snapshot": "code_snapshot/scripts/extend_historical_instance_graph_002008_20261016.py",
+      "sha256": "9e97b963e9eb14800956bf37c5c9dda1bda3414bca47e83241b739dea16eae09"
+    },
+    {
+      "original": "scripts/extend_index_with_official_reference_sources.py",
+      "snapshot": "code_snapshot/scripts/extend_index_with_official_reference_sources.py",
+      "sha256": "d1c2bb6054b2152ef97e84fb535c47a8a6e57d209f9583c34fe19de8d77f718a"
+    },
+    {
+      "original": "scripts/extend_saved_gpu_index_with_historical_laws_20261016.py",
+      "snapshot": "code_snapshot/scripts/extend_saved_gpu_index_with_historical_laws_20261016.py",
+      "sha256": "fe6a37a24e7e85a831aaeb6c72d11c0fee2e44865fb18ff1744aa22605eca48f"
+    },
+    {
+      "original": "scripts/extract_annual_facts.py",
+      "snapshot": "code_snapshot/scripts/extract_annual_facts.py",
+      "sha256": "5bc4bc1c7726f83d69e45a8178ba6cf3bd21aeab23f93dcc47a6400f53515c70"
+    },
+    {
+      "original": "scripts/extract_annual_ocr_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/extract_annual_ocr_candidates_20261014.py",
+      "sha256": "32d0bb9d1249ea08e6d32f71e79c897028048f22960d87fb624ceda6d9a65f03"
+    },
+    {
+      "original": "scripts/extract_auxiliary_annual_texts.py",
+      "snapshot": "code_snapshot/scripts/extract_auxiliary_annual_texts.py",
+      "sha256": "e9cd3cf736467933cbe06b516af6b2c6cf6706c0bff0109f4c62048a776c32fa"
+    },
+    {
+      "original": "scripts/fetch_annual_reports.py",
+      "snapshot": "code_snapshot/scripts/fetch_annual_reports.py",
+      "sha256": "61774d11f0d0de3551fcd6d515587ae4e8ee792cad68c7c4ea5e659dfa952615"
+    },
+    {
+      "original": "scripts/freeze_paper_execution.py",
+      "snapshot": "code_snapshot/scripts/freeze_paper_execution.py",
+      "sha256": "36625061a159f22423d0ba2a4a29b5a70d88d8baab0e5f21c14d943bf0e1be11"
+    },
+    {
+      "original": "scripts/generate_compact_final_run.py",
+      "snapshot": "code_snapshot/scripts/generate_compact_final_run.py",
+      "sha256": "02758c9e7030902dc4ed8fba94103279bcb6bce9173b9be7e581bc5c5ee1f5c9"
+    },
+    {
+      "original": "scripts/inspect_retrieval_protocol.py",
+      "snapshot": "code_snapshot/scripts/inspect_retrieval_protocol.py",
+      "sha256": "4ee9b014c818235f5e690bb52f37367361394efc6d172ee02c4d12c9c8730d30"
+    },
+    {
+      "original": "scripts/intake_002264_stage1_review.py",
+      "snapshot": "code_snapshot/scripts/intake_002264_stage1_review.py",
+      "sha256": "8e0f68cf938cbacbd82fbb1ae9b312eeedbe6a1456bbfde1c671f54c1dbdc9ff"
+    },
+    {
+      "original": "scripts/intake_independent_reviews.py",
+      "snapshot": "code_snapshot/scripts/intake_independent_reviews.py",
+      "sha256": "8dff347d79b73b48daa3494e55533e72b6350d26e163b23fad3ae82dd6d5df04"
+    },
+    {
+      "original": "scripts/intake_independent_stage1_csv_review.py",
+      "snapshot": "code_snapshot/scripts/intake_independent_stage1_csv_review.py",
+      "sha256": "71d74751263395ebcddca56c5c941fce0aea0bd50e9eca96d02548ca487bcda0"
+    },
+    {
+      "original": "scripts/intake_ocr_visual_review.py",
+      "snapshot": "code_snapshot/scripts/intake_ocr_visual_review.py",
+      "sha256": "7dcf7edd56be2bc9f5f38d921234a7998a5b31b02d76ef93b096eb8e4694e0cd"
+    },
+    {
+      "original": "scripts/intake_real_output_review.py",
+      "snapshot": "code_snapshot/scripts/intake_real_output_review.py",
+      "sha256": "32a24e4c50f24c363cb11bdb8ace3a36558ef2abbec31ae12a33423c9c12ad6d"
+    },
+    {
+      "original": "scripts/intake_regulation_source_version_reviews.py",
+      "snapshot": "code_snapshot/scripts/intake_regulation_source_version_reviews.py",
+      "sha256": "eb8cd9bce8fb9463f8fa383408e9a4ee367c286a331ad020e0a08c132ca4660c"
+    },
+    {
+      "original": "scripts/intake_source_reviews.py",
+      "snapshot": "code_snapshot/scripts/intake_source_reviews.py",
+      "sha256": "b1f75eff06834846e6c50ad4993a09c5d8cd8e15acb55f636c404d52b29ec51a"
+    },
+    {
+      "original": "scripts/materialize_windows_compatible_knowledge_base.py",
+      "snapshot": "code_snapshot/scripts/materialize_windows_compatible_knowledge_base.py",
+      "sha256": "5f387b775b6f18d14df96fc115692699330592b247843b88007890aa0b10cd44"
+    },
+    {
+      "original": "scripts/migrate_index_artifact.py",
+      "snapshot": "code_snapshot/scripts/migrate_index_artifact.py",
+      "sha256": "7be64aacc5c47061fb8d11874a434d9b53360f41188b0809e671d9ad21977401"
+    },
+    {
+      "original": "scripts/package_stage1_source_supplement_20261016.py",
+      "snapshot": "code_snapshot/scripts/package_stage1_source_supplement_20261016.py",
+      "sha256": "4307a0daee64c9cd567baebceea528baa2d953f511b6dad97d3377eb5a1de221"
+    },
+    {
+      "original": "scripts/prepare_002008_dual_source_stage1_review_20261016.py",
+      "snapshot": "code_snapshot/scripts/prepare_002008_dual_source_stage1_review_20261016.py",
+      "sha256": "af638ad8f1fea87f63228c88bc54809c3db71a06c6677df2d772343fc4a66ce1"
+    },
+    {
+      "original": "scripts/prepare_002169_independent_stage1_packets_20261016.py",
+      "snapshot": "code_snapshot/scripts/prepare_002169_independent_stage1_packets_20261016.py",
+      "sha256": "4dd266eb378b8fd3198db33784df8d45f7eea7bbbe66cc28fe6e575867572bc0"
+    },
+    {
+      "original": "scripts/prepare_002264_independent_stage1_packets_20261016.py",
+      "snapshot": "code_snapshot/scripts/prepare_002264_independent_stage1_packets_20261016.py",
+      "sha256": "d47a360f7a83001d2996498e814a7254c990b11db630c728004b2bbf38920679"
+    },
+    {
+      "original": "scripts/prepare_annual_auditor_opinion_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_auditor_opinion_visual_review_20261014.py",
+      "sha256": "bb0d4022c5267dfe2f9af9916ab9158c2e64517f04c63a5962c21d494274fc96"
+    },
+    {
+      "original": "scripts/prepare_annual_aux_d3_original_pdf_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_aux_d3_original_pdf_review_20261014.py",
+      "sha256": "0a79992cb63e49b77df1933191a839bd5eb72d224ff13e4ddc0f31169983d8b9"
+    },
+    {
+      "original": "scripts/prepare_annual_d2_31_company_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d2_31_company_visual_review_20261014.py",
+      "sha256": "af15133970e15a85bb2e575f85124c0b19f17b98bb10d448a22b5337cf33a659"
+    },
+    {
+      "original": "scripts/prepare_annual_d2_600519_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d2_600519_visual_review_20261014.py",
+      "sha256": "363c2e11d791c387ddf83777acbc2cc190578d8b8e61cde1a67f33d83479d6c4"
+    },
+    {
+      "original": "scripts/prepare_annual_d2_pending_candidates_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d2_pending_candidates_visual_review_20261014.py",
+      "sha256": "23700703236cde3f2ed406ebacbf03b70fb50449d033030dddb0623e75387b73"
+    },
+    {
+      "original": "scripts/prepare_annual_d2_remaining_raw_only_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d2_remaining_raw_only_visual_review_20261014.py",
+      "sha256": "083b01439175993ca14d3adee4cb415c80a59d9a7db7aa22f8ea81f6930c0114"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_002594_internal_control_opinion_candidate_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_002594_internal_control_opinion_candidate_20261014.py",
+      "sha256": "61ff3cc5e76845a8f159fc9b7b81a3325cba3f2e77280c781811813b1c227807"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_002679_control_opinion_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_002679_control_opinion_visual_review_20261014.py",
+      "sha256": "57a953d9caf9f19099421a312753f91a35602bcf93a2c81836c79ebf50533efe"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_002679_regulatory_measure_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_002679_regulatory_measure_visual_review_20261014.py",
+      "sha256": "342fda37598160bb6e3ef41a090965ba9182aeffb2c49d04a6641dd0a141ed01"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_601088_environmental_penalties_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_601088_environmental_penalties_visual_review_20261014.py",
+      "sha256": "e6c0b35008b0c3b6c18c16716028c2ab1d303ca11b581d5a0a2d0e40039ad18a"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_601318_control_evaluation_report_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_601318_control_evaluation_report_20261014.py",
+      "sha256": "82a826b08f1aa587acb76c3240f8657ff3dc63a1515532a04077ffa31b02b88a"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_601318_internal_control_audit_report_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_601318_internal_control_audit_report_20261014.py",
+      "sha256": "3f9b808567ebea568863587786b615b65f79687ae9db737ae3960b9fccb99478"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_601318_source_page_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_601318_source_page_review_20261014.py",
+      "sha256": "af7333ae4698bbf7cf34fbcf2b7934dd7b28760854cd8ab9903e88dc939c0098"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_control_status_39_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_control_status_39_visual_review_20261014.py",
+      "sha256": "b4e9eee7b3917a1ef4e98ace0de9cb03df03d64e974bf9cc48992be082b5bbec"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_environmental_penalty_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_environmental_penalty_visual_review_20261014.py",
+      "sha256": "efc5eb620cc35b1762f7dd74151dd064081c89b0f0d8007ed862bfe06ab4122c"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_guarantee_assertion_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_guarantee_assertion_review_20261014.py",
+      "sha256": "b8807262ff8402987a391bb1d002f3098febd50824e20fa4943c7d4508ccdcec"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_legal_event_status_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_legal_event_status_review_20261014.py",
+      "sha256": "096afc0cdb5f9fb55cf647fa96a17d73952beb0b3599a78030aaf0eb3a7cc429"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_positive_enforcement_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_positive_enforcement_visual_review_20261014.py",
+      "sha256": "b4712cdc87437165fb74198da5c1faa2ca68318efa21debb92005b4fd99eecbe"
+    },
+    {
+      "original": "scripts/prepare_annual_d3_vanke_candidate_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_d3_vanke_candidate_review_20261014.py",
+      "sha256": "030b08721eda011ca0ed9ec1b9d2d3c6a6a2ab9d81242e74c67a445ed7795d9c"
+    },
+    {
+      "original": "scripts/prepare_annual_ocr_page391_crop_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_ocr_page391_crop_20261014.py",
+      "sha256": "6b55e8c22d42cd2446709ad53b2cd3b50a7bf41fe0cdd6d540bbae4067524969"
+    },
+    {
+      "original": "scripts/prepare_annual_ocr_page391_rotation_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_ocr_page391_rotation_20261014.py",
+      "sha256": "1f7101a3293448076362e8d65c2dcf5f2900956a3d783f69cb4405899f2937d0"
+    },
+    {
+      "original": "scripts/prepare_annual_ocr_page_set_20261014.py",
+      "snapshot": "code_snapshot/scripts/prepare_annual_ocr_page_set_20261014.py",
+      "sha256": "46f64fa77ec5d9b3170c421bb9a50500cfa837359180fa7369b268aec4cc8fa7"
+    },
+    {
+      "original": "scripts/prepare_compact_final_run.py",
+      "snapshot": "code_snapshot/scripts/prepare_compact_final_run.py",
+      "sha256": "2faca3085e44240f8e077e48d06cb5a51a9db74d50e54b558cc5f27e8f7512ac"
+    },
+    {
+      "original": "scripts/prepare_failed_generation_recovery.py",
+      "snapshot": "code_snapshot/scripts/prepare_failed_generation_recovery.py",
+      "sha256": "6499fba5cbb3a93821c5ada80da5284a279ff531dea1249f9886b2149e6f616c"
+    },
+    {
+      "original": "scripts/prepare_ocr_visual_review_packets_20261016.py",
+      "snapshot": "code_snapshot/scripts/prepare_ocr_visual_review_packets_20261016.py",
+      "sha256": "704613d1a5876efdd82e8e16b4ee7d15c45896854df18109e96223f117e7cd65"
+    },
+    {
+      "original": "scripts/prepare_page_reference_evaluation.py",
+      "snapshot": "code_snapshot/scripts/prepare_page_reference_evaluation.py",
+      "sha256": "ca299a7e1da7e4e1d5f68abaa3428e342e97d8d46cb728794443fbd9573114a0"
+    },
+    {
+      "original": "scripts/prepare_regulation_source_version_review_packets_20261016.py",
+      "snapshot": "code_snapshot/scripts/prepare_regulation_source_version_review_packets_20261016.py",
+      "sha256": "6cf0dd2a1305fce7cd0761f93af7b848d8041fb80f591b2676721d367dcf592e"
+    },
+    {
+      "original": "scripts/prepare_regulation_timeline_review_addendum_20261016.py",
+      "snapshot": "code_snapshot/scripts/prepare_regulation_timeline_review_addendum_20261016.py",
+      "sha256": "46ecd4d7be93a167aaebc77c5eb5052f15d491bffdd7470288dcca7ef30b1328"
+    },
+    {
+      "original": "scripts/prepare_robustness_pairs.py",
+      "snapshot": "code_snapshot/scripts/prepare_robustness_pairs.py",
+      "sha256": "252f1823148164710836ed184488a70890501ce05007d6b8b20f4268cc7cf3c8"
+    },
+    {
+      "original": "scripts/prepare_session_supplement.py",
+      "snapshot": "code_snapshot/scripts/prepare_session_supplement.py",
+      "sha256": "9eeba97fea68aeed7ca7c0822491cbe36579aecdb9661612c5f07110e789d478"
+    },
+    {
+      "original": "scripts/prepare_shared_drafts.py",
+      "snapshot": "code_snapshot/scripts/prepare_shared_drafts.py",
+      "sha256": "500f047e16416fac80a721b7abeca72da054ce5f428f7adc30dfe5fbe73cb001"
+    },
+    {
+      "original": "scripts/preview_regulation_files.py",
+      "snapshot": "code_snapshot/scripts/preview_regulation_files.py",
+      "sha256": "6b221fc2231ee122763ab533d67e380aa0727a1e9a6773f5be2b97978c458dd0"
+    },
+    {
+      "original": "scripts/rebase_pdf_manifest_paths.py",
+      "snapshot": "code_snapshot/scripts/rebase_pdf_manifest_paths.py",
+      "sha256": "6645ebe5d8f4e82c1c76e17bbbec76eede561f29a2ed2fc25a8dba7360ca76b0"
+    },
+    {
+      "original": "scripts/recheck_annual_d2_601668_statement_approval_20261014.py",
+      "snapshot": "code_snapshot/scripts/recheck_annual_d2_601668_statement_approval_20261014.py",
+      "sha256": "dcf98af13577922c66a91d26a869f5d7f3e90a55ab2c252da96c6ebb1e6fa706"
+    },
+    {
+      "original": "scripts/recheck_annual_sources.py",
+      "snapshot": "code_snapshot/scripts/recheck_annual_sources.py",
+      "sha256": "a1202a3c54ce6c7a49bad9562de09778c4c899b4017afa53070d9d4a92d97be1"
+    },
+    {
+      "original": "scripts/reconcile_and_extract_annual_reports_20261014_03.py",
+      "snapshot": "code_snapshot/scripts/reconcile_and_extract_annual_reports_20261014_03.py",
+      "sha256": "c966d955e4f16dfb4e8c9d9e86c27317ff050b8939e7354768de8c75d43f49c5"
+    },
+    {
+      "original": "scripts/reconcile_annual_local_ocr_20261014.py",
+      "snapshot": "code_snapshot/scripts/reconcile_annual_local_ocr_20261014.py",
+      "sha256": "163a9e9dbf69358fa4d57324a0a2c97f5ed227a17964bbfcebc1f18c36782594"
+    },
+    {
+      "original": "scripts/reconcile_annual_local_ocr_page391_20261014.py",
+      "snapshot": "code_snapshot/scripts/reconcile_annual_local_ocr_page391_20261014.py",
+      "sha256": "2d3d5cd59c82e62c886b65e811713be40074a6e91967d10c4c6b66ae293cf7db"
+    },
+    {
+      "original": "scripts/record_compact_output_audit.py",
+      "snapshot": "code_snapshot/scripts/record_compact_output_audit.py",
+      "sha256": "b3e988cb382f3aebc42d2aa50002107891d49e14bcd8bd03f3cbff8f8478f20e"
+    },
+    {
+      "original": "scripts/record_minimal_paper_eval60.py",
+      "snapshot": "code_snapshot/scripts/record_minimal_paper_eval60.py",
+      "sha256": "54f1acd5674b775a3d794ca55010038b86db5103d387a390daef5f0fba52210b"
+    },
+    {
+      "original": "scripts/record_pilot_regulation_official_date_checks_20261016.py",
+      "snapshot": "code_snapshot/scripts/record_pilot_regulation_official_date_checks_20261016.py",
+      "sha256": "b052205aa3267b8991cdb8340174fa51cf9a79c6ee0c99150b2b232e290142ef"
+    },
+    {
+      "original": "scripts/record_session_supplement_completion.py",
+      "snapshot": "code_snapshot/scripts/record_session_supplement_completion.py",
+      "sha256": "32145de79feef42203ae7ff1bfb9ac3ce145bba9d5b94fbf9c95b6458e1029b5"
+    },
+    {
+      "original": "scripts/recover_and_extract_annual_reports.py",
+      "snapshot": "code_snapshot/scripts/recover_and_extract_annual_reports.py",
+      "sha256": "83b39e37c6a7dc4f6c50765ca29575e0bd26a2690d920c158f9a7c71d26c4819"
+    },
+    {
+      "original": "scripts/recover_compact_failed_units.py",
+      "snapshot": "code_snapshot/scripts/recover_compact_failed_units.py",
+      "sha256": "916afc66334844febf425a28478a2567dde5c3bd2dae045d84f95eefbb08c461"
+    },
+    {
+      "original": "scripts/refresh_development_benchmark_manifest_20261014.py",
+      "snapshot": "code_snapshot/scripts/refresh_development_benchmark_manifest_20261014.py",
+      "sha256": "11a2152063ec98c789618f8bc16a94d55c57769d91331ed912c19d042237f3e0"
+    },
+    {
+      "original": "scripts/render_annual_auditor_opinion_excerpt_crops_20261014.py",
+      "snapshot": "code_snapshot/scripts/render_annual_auditor_opinion_excerpt_crops_20261014.py",
+      "sha256": "183ba8abf9ba655b7257935f44ad77125de97cc960d926e381c47a4a2035c9c4"
+    },
+    {
+      "original": "scripts/repair_development_benchmark_manifest_path_normalization_20261014.py",
+      "snapshot": "code_snapshot/scripts/repair_development_benchmark_manifest_path_normalization_20261014.py",
+      "sha256": "9761b3a450bc58199a8d6e1e68056e7ec5b8ed1c068d02ad9c27681a58c032a1"
+    },
+    {
+      "original": "scripts/replay_pilot_regulation_date_version_evidence_20261016.py",
+      "snapshot": "code_snapshot/scripts/replay_pilot_regulation_date_version_evidence_20261016.py",
+      "sha256": "4d782e2ba6238477201605a3e0e508fbed9360eacc82f49e9cfbd14a81b40b1b"
+    },
+    {
+      "original": "scripts/resume_compact_generation_concurrent.py",
+      "snapshot": "code_snapshot/scripts/resume_compact_generation_concurrent.py",
+      "sha256": "00e6e9f1977a9449ea3e8b8aee1cabbaafa132fcf5439cc4b037555ceea9b214"
+    },
+    {
+      "original": "scripts/resume_compact_generation_twenty.py",
+      "snapshot": "code_snapshot/scripts/resume_compact_generation_twenty.py",
+      "sha256": "3e494a739f246a0f5b2dd01d5c05001fc35cb2fede4ab87a8d3699ed2253f2d1"
+    },
+    {
+      "original": "scripts/retry_rotated_annual_ocr_page_20261014.py",
+      "snapshot": "code_snapshot/scripts/retry_rotated_annual_ocr_page_20261014.py",
+      "sha256": "7010e42b975ca9a49bcc028eb39436fe3db3347487dd7436d281eb9cff2f373f"
+    },
+    {
+      "original": "scripts/review_and_append_annual_600031_insider_period_statement_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_600031_insider_period_statement_20261014.py",
+      "sha256": "b570a11bb1688526cb90b123e290f015c239cbe4d8c2b0db30a41fdfbec35dc8"
+    },
+    {
+      "original": "scripts/review_and_append_annual_601318_period_disclosures_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_601318_period_disclosures_20261014.py",
+      "sha256": "7a37a9dc670078421fe9002f677996f40d5ba767c5a7a0e5dee62a98b0334f2c"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d3_000802_director_exchange_criticism_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d3_000802_director_exchange_criticism_20261014.py",
+      "sha256": "0a870b53106244cfe02c15c1fbaef55952e81cd6c63b9606c9a1a4e1ac52a9ec"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d3_002594_internal_control_opinion_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d3_002594_internal_control_opinion_20261014.py",
+      "sha256": "d5877f7f4ab6f63f537dfbeda5b39248ed9bb13043cc0a6237df152bc0abbf71"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d3_600036_report_period_disclosure_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d3_600036_report_period_disclosure_20261014.py",
+      "sha256": "cdf1198fdd41f52e9c898a21d6c3c46f8d96e91f9a20dda06cc1fbf55eb99e2f"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d3_internal_control_opinion_batch_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d3_internal_control_opinion_batch_20261014.py",
+      "sha256": "59c39f23b0cb7fcf94712cb529c7f41a45a86e4daab4211b7a047096dca11190"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d3_internal_control_opinion_batch_20261014_02.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d3_internal_control_opinion_batch_20261014_02.py",
+      "sha256": "d813079be73591dde5844e20369a294ccc97f2cfabf0f706cff5dde01dbdbb45"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d3_internal_control_opinion_batch_20261014_03.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d3_internal_control_opinion_batch_20261014_03.py",
+      "sha256": "cc0f382d4427a94b77666421fcf2ada880bc6630fe96f571a9f5191f03166b54"
+    },
+    {
+      "original": "scripts/review_and_append_annual_d4_601668_environmental_penalty_aggregate_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_and_append_annual_d4_601668_environmental_penalty_aggregate_20261014.py",
+      "sha256": "6ca8836b10384dfb1b99b34987dc69d2717b5c5c4f87dc24bcd1b081850a1a08"
+    },
+    {
+      "original": "scripts/review_annual_600036_attendance_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_600036_attendance_20261014.py",
+      "sha256": "cf0b6314f529e408060e9230fad4f35aac58dcea1695e4d2c15531b351e46b4a"
+    },
+    {
+      "original": "scripts/review_annual_600318_report_period_large_litigation_rows_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_600318_report_period_large_litigation_rows_independent_20261014.py",
+      "sha256": "9cd04ffc75d028d6fb4888b181f6c696d6761b5d647e32b9ef04a995251e231a"
+    },
+    {
+      "original": "scripts/review_annual_aux_600318_litigation_disclosure_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_aux_600318_litigation_disclosure_independent_20261014.py",
+      "sha256": "351583932aa46b237090e11cd2fae488c170c32bf56668a2cd1a7b1b9fd79939"
+    },
+    {
+      "original": "scripts/review_annual_d1_000802_beijing_penalty_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_000802_beijing_penalty_independent_20261014.py",
+      "sha256": "6c971157bde064a50da2bbf03d13da019a1910f627ad0bc969b28a0457ca79d4"
+    },
+    {
+      "original": "scripts/review_annual_d1_000802_szse_disclosure_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_000802_szse_disclosure_independent_20261014.py",
+      "sha256": "fddca36d4072d250c7c87d2feb572876f4b5f0cff6ba4759a1eca2a701ab5887"
+    },
+    {
+      "original": "scripts/review_annual_d1_002008_wanglei_warning_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_002008_wanglei_warning_independent_20261014.py",
+      "sha256": "5f155534220f71242e8e3a074a06e4471aae24d95ce2598345c0dee1f59d1e8e"
+    },
+    {
+      "original": "scripts/review_annual_d1_002169_late_forecast_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_002169_late_forecast_20261014.py",
+      "sha256": "a9c8a5a2d9c34ce6246e7da3fc82d6db747ba401bcaf19b0629e7473cd4a4dca"
+    },
+    {
+      "original": "scripts/review_annual_d1_002264_warning_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_002264_warning_20261014.py",
+      "sha256": "b012ec8cee323055a4ddc432bf8af41fe400d7a72af1ec9ecafaa7d1e3b011cc"
+    },
+    {
+      "original": "scripts/review_annual_d1_002679_reporting_accuracy_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_002679_reporting_accuracy_20261014.py",
+      "sha256": "e7e842a7f8e8afc05dfec014ffd1d5c6af5e455f449178661947cc3149bf84aa"
+    },
+    {
+      "original": "scripts/review_annual_d1_601377_subsidiary_measure_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_601377_subsidiary_measure_independent_20261014.py",
+      "sha256": "bb2a2134d804ac120942e5e5d0580bea746317bcda76151750062913d1d3e2c6"
+    },
+    {
+      "original": "scripts/review_annual_d1_601519_measures_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d1_601519_measures_independent_20261014.py",
+      "sha256": "fa6f19f4c833cf8e322412a0a273e1e1e3d0c37938fc79f4077bb17154a3a003"
+    },
+    {
+      "original": "scripts/review_annual_d2_31_company_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d2_31_company_independent_20261014.py",
+      "sha256": "591acb34656e0d7bca62c37bdd952540a8147d9255ab4d37e0153e758f46161f"
+    },
+    {
+      "original": "scripts/review_annual_d2_pending_candidates_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d2_pending_candidates_independent_20261014.py",
+      "sha256": "591c9774cf5f8cedd838bcd1d965e06553d27c1957d7cf6ff957a8485baae2e6"
+    },
+    {
+      "original": "scripts/review_annual_d3_002352_issuer_disclosure_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d3_002352_issuer_disclosure_independent_20261014.py",
+      "sha256": "92498018756a36f6fe32e8cfe5286dd3dc94791dc91c06b415aaa12ed5022fe0"
+    },
+    {
+      "original": "scripts/review_annual_d3_600172_fact_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d3_600172_fact_candidates_20261014.py",
+      "sha256": "32125095ef276e8caf0118bfdb7e1edef5759f0c92c05a86ccbad37606e7e68b"
+    },
+    {
+      "original": "scripts/review_annual_d3_600570_warning_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d3_600570_warning_20261014.py",
+      "sha256": "ed01a3342e525d21c1dc8726c19996b782e09fd3bfd372bd73c493f97766a117"
+    },
+    {
+      "original": "scripts/review_annual_d3_601377_regulator_facts_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d3_601377_regulator_facts_20261014.py",
+      "sha256": "acc9be4282959400caa46d1f6eb8cd1870e0885d3cab34a36bd6ca0aaa5ca0a0"
+    },
+    {
+      "original": "scripts/review_annual_d3_control_status_disclosure_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d3_control_status_disclosure_independent_20261014.py",
+      "sha256": "d74d21d18471719dfbfaf972c95ff7cf1c263ac515babaa2c7af4e4d567bb1b4"
+    },
+    {
+      "original": "scripts/review_annual_d3_cross_company_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d3_cross_company_candidates_20261014.py",
+      "sha256": "977e62fbe92e80e054b27380b8d6ae796a6c2769a2b6ffa9b821cde524dfb846"
+    },
+    {
+      "original": "scripts/review_annual_d4_auditor_opinion_independent_20261014.py",
+      "snapshot": "code_snapshot/scripts/review_annual_d4_auditor_opinion_independent_20261014.py",
+      "sha256": "a635ce0bcbadedc311483f678a55bb8725cb74b5a3ff66a0a9757ddacd4931cd"
+    },
+    {
+      "original": "scripts/review_annual_ocr_candidates_20261014_01.py",
+      "snapshot": "code_snapshot/scripts/review_annual_ocr_candidates_20261014_01.py",
+      "sha256": "cab5274befb0599b26a1365b0d0ce549360e85ef0ca97eb4f9ef8d724e4e3e82"
+    },
+    {
+      "original": "scripts/review_candidate_batch.py",
+      "snapshot": "code_snapshot/scripts/review_candidate_batch.py",
+      "sha256": "ae49152f309ea5e68acad54e57b6fae13538dabd2071340bdb8d64d17d52374e"
+    },
+    {
+      "original": "scripts/run_10_exposed_pilot_dual_source_retrieval_gpu_20261016.py",
+      "snapshot": "code_snapshot/scripts/run_10_exposed_pilot_dual_source_retrieval_gpu_20261016.py",
+      "sha256": "0fdcc943c2629b5988a5add620e68f1be9a6186aa2819c90b8c53079d1778041"
+    },
+    {
+      "original": "scripts/run_bounded_joint_rag.py",
+      "snapshot": "code_snapshot/scripts/run_bounded_joint_rag.py",
+      "sha256": "f064e42b1f9c4813fde394fa7f50858662a3bd437b516ef48256f39e6aec5173"
+    },
+    {
+      "original": "scripts/run_fixed_context_baselines.py",
+      "snapshot": "code_snapshot/scripts/run_fixed_context_baselines.py",
+      "sha256": "d2e5cc8fd591bd51c62c15e68a011500a11437a05e12cf452f008cfae6cf5ef0"
+    },
+    {
+      "original": "scripts/run_generation_comparison.py",
+      "snapshot": "code_snapshot/scripts/run_generation_comparison.py",
+      "sha256": "dcd2d4fd09259937a05e6013eb5f55820a446844733d20cfba9d820b08f994a8"
+    },
+    {
+      "original": "scripts/run_real_generation_pilot.py",
+      "snapshot": "code_snapshot/scripts/run_real_generation_pilot.py",
+      "sha256": "c8feb3c14f6dcaae0716488202a4808e002c55b7e3cf9d9bfaea9807aa5a1536"
+    },
+    {
+      "original": "scripts/run_retrieval_method_comparison.py",
+      "snapshot": "code_snapshot/scripts/run_retrieval_method_comparison.py",
+      "sha256": "2c95c063a25462e2c3aa9c42be6e29929a5de5d9ce62158d6dfe67c89b9dce56"
+    },
+    {
+      "original": "scripts/run_robustness_generation.py",
+      "snapshot": "code_snapshot/scripts/run_robustness_generation.py",
+      "sha256": "2ac656adb3bdc1bba85877ecc955b5c94c816a4cc6f18c801a11d899b8a16763"
+    },
+    {
+      "original": "scripts/scan_annual_regulatory_signal_pages_windows_20261014.py",
+      "snapshot": "code_snapshot/scripts/scan_annual_regulatory_signal_pages_windows_20261014.py",
+      "sha256": "558f413ee998b618dbd29f6a7f1b27e925d0496f323a26c25c7d0162f1c4c2c5"
+    },
+    {
+      "original": "scripts/score_minimal_paper_reviews.py",
+      "snapshot": "code_snapshot/scripts/score_minimal_paper_reviews.py",
+      "sha256": "9b2b5a5e1716718ec04b0804551aed620158c5f3bba9b97867701cc6d9671334"
+    },
+    {
+      "original": "scripts/score_source_span_run.py",
+      "snapshot": "code_snapshot/scripts/score_source_span_run.py",
+      "sha256": "fa8ca64b85a74d17c8bc6a00558f699669d8d23afe53f94e269464b159aa2e71"
+    },
+    {
+      "original": "scripts/screen_real_pilot_regulation_dates_20261016.py",
+      "snapshot": "code_snapshot/scripts/screen_real_pilot_regulation_dates_20261016.py",
+      "sha256": "8878eb7df2f6116fa0d29640bfd4dc1bbdbfce931eb90612cf37029ea2b4f0a7"
+    },
+    {
+      "original": "scripts/seal_annual_auditor_opinion_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_auditor_opinion_visual_review_20261014.py",
+      "sha256": "7b8109c3b054cc7c06f3c34cade758e38021f46ccf4b01070e5ec2bc59e7c912"
+    },
+    {
+      "original": "scripts/seal_annual_aux_d3_original_pdf_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_aux_d3_original_pdf_review_20261014.py",
+      "sha256": "0d73ae9182fd243e524f02be73fe8039a94f42de5af7d3370f64395bd6adf28f"
+    },
+    {
+      "original": "scripts/seal_annual_company_fact_pilot_coverage_20261014_10.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_company_fact_pilot_coverage_20261014_10.py",
+      "sha256": "9595c749d6361082d3c67c3033506736fe532435d95cd7cf22b05ccb76b88dcf"
+    },
+    {
+      "original": "scripts/seal_annual_d1_000802_beijing_penalty_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_000802_beijing_penalty_20261014.py",
+      "sha256": "5fda195b130638e3de36be3414b4d0b76921c2367a25720aad2d232f3990cedc"
+    },
+    {
+      "original": "scripts/seal_annual_d1_000802_szse_discipline_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_000802_szse_discipline_visual_review_20261014.py",
+      "sha256": "b4d143cd5d9387dcadfba2dd2966722d57b085736cacb1a59182304499923068"
+    },
+    {
+      "original": "scripts/seal_annual_d1_002008_sz_warning_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_002008_sz_warning_20261014.py",
+      "sha256": "3264fd01d9ace13da44195d0ac4c215e418b4a4b515940bc7cb56ab49a91fe0b"
+    },
+    {
+      "original": "scripts/seal_annual_d1_002169_late_forecast_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_002169_late_forecast_visual_review_20261014.py",
+      "sha256": "8b2e70bbad1e954456ad6f3689ac01947e06bde39a385b898e2888116c86717d"
+    },
+    {
+      "original": "scripts/seal_annual_d1_002264_xiamen_warning_review_outcomes_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_002264_xiamen_warning_review_outcomes_20261014.py",
+      "sha256": "74f02b7a458034b13f678e7f8b37b480ac4c33c10aab3449330180ef77661fd9"
+    },
+    {
+      "original": "scripts/seal_annual_d1_002264_xiamen_warning_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_002264_xiamen_warning_visual_review_20261014.py",
+      "sha256": "8b1a509053695a2f23636ac55e7c9348fdb1c170d4f5ceeb94795535923b5c19"
+    },
+    {
+      "original": "scripts/seal_annual_d1_002679_reporting_accuracy_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_002679_reporting_accuracy_20261014.py",
+      "sha256": "c08ec7aa79170cbbc451238b4def6bd56aacbe58f5dc8b07eb1458c2996898af"
+    },
+    {
+      "original": "scripts/seal_annual_d1_002679_szse_source_capture_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_002679_szse_source_capture_20261014.py",
+      "sha256": "61d693b48269956859869f3e19c712e713a68d03906fa6dd340c8d39fe80e2ee"
+    },
+    {
+      "original": "scripts/seal_annual_d1_601377_subsidiary_disclosure_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_601377_subsidiary_disclosure_20261014.py",
+      "sha256": "4a54cca1e7c0777e2251fbd6b098695a699e19c3fa48181c163376b7ff38c621"
+    },
+    {
+      "original": "scripts/seal_annual_d1_601519_2023_measures_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_601519_2023_measures_20261014.py",
+      "sha256": "45adaa560e25a2128f093f5dcb4bb8aa8a0c37ed14bc47ceafbeb98a45576d72"
+    },
+    {
+      "original": "scripts/seal_annual_d1_601519_incentive_clause_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d1_601519_incentive_clause_visual_review_20261014.py",
+      "sha256": "830f99425df6de343cadc7a4786773b722089ee4528ea8f02401f24e480f1311"
+    },
+    {
+      "original": "scripts/seal_annual_d2_remaining_raw_only_independent_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d2_remaining_raw_only_independent_review_20261014.py",
+      "sha256": "9ba5bba7373ba7a17487b7fd43c16bada9df3b59ddf5b8483056e92ea6377937"
+    },
+    {
+      "original": "scripts/seal_annual_d3_000802_cninfo_issuer_filing_crosscheck_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_000802_cninfo_issuer_filing_crosscheck_20261014.py",
+      "sha256": "f2d855ff4d5b5a2801f4ac061aee88976b3ee7f6b1e3ea68c3f717972e5ab6b0"
+    },
+    {
+      "original": "scripts/seal_annual_d3_000802_director_exchange_criticism_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_000802_director_exchange_criticism_20261014.py",
+      "sha256": "047a77cc4359f7e5f5c5de0c15d5ebd355bb31b2966b737afd4b9539b7dcae2d"
+    },
+    {
+      "original": "scripts/seal_annual_d3_002352_subsidiary_environmental_penalty_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_002352_subsidiary_environmental_penalty_20261014.py",
+      "sha256": "1e6028b30931d671d90316c285041c0441153357bf4ef852bcd550a3996d9470"
+    },
+    {
+      "original": "scripts/seal_annual_d3_002679_control_opinion_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_002679_control_opinion_visual_review_20261014.py",
+      "sha256": "13e820c97f56716cd0dffc201d5f074bab41cde3d8db982b0b3716495cf77c22"
+    },
+    {
+      "original": "scripts/seal_annual_d3_002679_regulatory_measure_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_002679_regulatory_measure_visual_review_20261014.py",
+      "sha256": "5f22c659b63562ecf9c5bce4a22c364a3958c0174316439a13e1bf8178e727bf"
+    },
+    {
+      "original": "scripts/seal_annual_d3_600570_warning_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_600570_warning_visual_review_20261014.py",
+      "sha256": "5e6aafb74c1cfa7b7008dc18572465734ea02f2e375282454c98e4e195bf986e"
+    },
+    {
+      "original": "scripts/seal_annual_d3_601088_environmental_penalties_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_601088_environmental_penalties_visual_review_20261014.py",
+      "sha256": "664950df5a7e7e7889bb372dcbd9554a27b4e4caad48a6652dd573438ea84933"
+    },
+    {
+      "original": "scripts/seal_annual_d3_601318_control_evaluation_report_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_601318_control_evaluation_report_review_20261014.py",
+      "sha256": "7cdcc937fa6e7bdace284ed884d3e4cc03c66d1e023b88ca89934e1226573566"
+    },
+    {
+      "original": "scripts/seal_annual_d3_601318_internal_control_audit_report_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_601318_internal_control_audit_report_review_20261014.py",
+      "sha256": "b93b8ae75fd4f13bac2bf45b60822cd3954335c6d9a66ad69b6e93f1453c6983"
+    },
+    {
+      "original": "scripts/seal_annual_d3_601318_source_page_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_601318_source_page_review_20261014.py",
+      "sha256": "7d7626ca04239b4f74907efd5122da146805d02c4fd284c1b54fe565c7ce652e"
+    },
+    {
+      "original": "scripts/seal_annual_d3_601377_p106_regulator_facts_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_601377_p106_regulator_facts_20261014.py",
+      "sha256": "9d47420d4dd69dc14e760d500c607df379f7ade41a6993e010ab6227053c9490"
+    },
+    {
+      "original": "scripts/seal_annual_d3_control_status_visual_review_outcomes_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_control_status_visual_review_outcomes_20261014.py",
+      "sha256": "3a2574d85fc80efa129a3013387e08740fb08ed885740165dd43d5b238534aa2"
+    },
+    {
+      "original": "scripts/seal_annual_d3_environmental_penalty_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_environmental_penalty_visual_review_20261014.py",
+      "sha256": "16d033b8b9abbd334d93c7db4b1bf5237b54b9dc7f051be3817f252b653a62d0"
+    },
+    {
+      "original": "scripts/seal_annual_d3_guarantee_assertion_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_guarantee_assertion_review_20261014.py",
+      "sha256": "23f7872b026537dc69022c45a1e7fcfec027c93fbe5dffe0504db22a618c8e01"
+    },
+    {
+      "original": "scripts/seal_annual_d3_legal_event_status_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_legal_event_status_review_20261014.py",
+      "sha256": "00e17ef80190302102f253e6159860763aa79d9a6596316fa75f3ee65b442443"
+    },
+    {
+      "original": "scripts/seal_annual_d3_positive_enforcement_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_positive_enforcement_visual_review_20261014.py",
+      "sha256": "03bef2508185cbd62b03e4ae7f36a09a4986bd8c9e2f573d70b6df462340afb0"
+    },
+    {
+      "original": "scripts/seal_annual_d3_vanke_fact_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d3_vanke_fact_review_20261014.py",
+      "sha256": "7e6013470b950cb2ac6fa863947be3ba7ac406a2ec7523fb40abe573f442da79"
+    },
+    {
+      "original": "scripts/seal_annual_d4_msci_public_source_availability_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_d4_msci_public_source_availability_20261014.py",
+      "sha256": "c77eac51d84faba103bda5ce3bad3e4bb3aa230a2486a0fff72cdcc26b91a0ef"
+    },
+    {
+      "original": "scripts/seal_annual_local_new_reconciliation_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_local_new_reconciliation_20261014.py",
+      "sha256": "d01063a47fa6897690bab38fd9ee6ed528da95609d98b050712eb9d28b923995"
+    },
+    {
+      "original": "scripts/seal_annual_ocr_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_ocr_candidates_20261014.py",
+      "sha256": "c04e751a17f0f5a51c7aeea932d3d8b94e340cf39b7c120fbb9c4446122f896c"
+    },
+    {
+      "original": "scripts/seal_annual_ocr_page391_crop_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_ocr_page391_crop_20261014.py",
+      "sha256": "88b33d6c9a5322876043a576d21310cc5d4317d5b28e3c6b54d58dd672407f68"
+    },
+    {
+      "original": "scripts/seal_annual_ocr_visual_page_triage_20261014.py",
+      "snapshot": "code_snapshot/scripts/seal_annual_ocr_visual_page_triage_20261014.py",
+      "sha256": "7a15248a17d70397c51a55d800e70091fdf4a588e2a6ff9ef03e5e3e12294f63"
+    },
+    {
+      "original": "scripts/search_annual_601318_control_status_full_text_20261014.py",
+      "snapshot": "code_snapshot/scripts/search_annual_601318_control_status_full_text_20261014.py",
+      "sha256": "839cfa35cad73a8e633cd56205fa58fb599c8073b751b8d4b8bea8108d61d784"
+    },
+    {
+      "original": "scripts/smoke_embedding_model.py",
+      "snapshot": "code_snapshot/scripts/smoke_embedding_model.py",
+      "sha256": "503b0c07511dff687a227da7bbcab2abbfe92920f0f239375e597fae4bbf6ec8"
+    },
+    {
+      "original": "scripts/smoke_embedding_retrieval.py",
+      "snapshot": "code_snapshot/scripts/smoke_embedding_retrieval.py",
+      "sha256": "3d8b153e9266c0272e49ccf548be41e6457c3b1dda808ceffaa4d0a873a623e2"
+    },
+    {
+      "original": "scripts/smoke_local_development_retrieval.py",
+      "snapshot": "code_snapshot/scripts/smoke_local_development_retrieval.py",
+      "sha256": "cb548de53d0c589f43874578d5bd9d0b86b526bbeb2ddcd2db3a7638b0ee57fa"
+    },
+    {
+      "original": "scripts/smoke_real_generation_api.py",
+      "snapshot": "code_snapshot/scripts/smoke_real_generation_api.py",
+      "sha256": "b255c13185eb37056e86b5e1d487d7dcaebef6685d94c2c94c1beef9a0e394b2"
+    },
+    {
+      "original": "scripts/track_compact_final_run.py",
+      "snapshot": "code_snapshot/scripts/track_compact_final_run.py",
+      "sha256": "0eb6edfbda8ab1945016752c1bb997b3d160fce042de0f32f697f853270e8ad7"
+    },
+    {
+      "original": "scripts/track_concurrent_generation.py",
+      "snapshot": "code_snapshot/scripts/track_concurrent_generation.py",
+      "sha256": "630e367f063c7b202562b582337bb5ff6d4919af68ac4a82f97d45bdcf6e2eab"
+    },
+    {
+      "original": "scripts/track_twenty_way_generation.py",
+      "snapshot": "code_snapshot/scripts/track_twenty_way_generation.py",
+      "sha256": "bd362ac188627963d923b066c46300506bf3b0874fff364f01878a6dc54e6b27"
+    },
+    {
+      "original": "scripts/triage_annual_candidate_quote_overlaps_20261014.py",
+      "snapshot": "code_snapshot/scripts/triage_annual_candidate_quote_overlaps_20261014.py",
+      "sha256": "3c55962c920a526e1e05d9d7d1b9f84f76521e522636e1d377e6f5cd6d182e65"
+    },
+    {
+      "original": "scripts/triage_annual_pages.py",
+      "snapshot": "code_snapshot/scripts/triage_annual_pages.py",
+      "sha256": "f47ae89da50e68d814ee3317f7a997d3f52431f937800a12f37b1b94602a61d3"
+    },
+    {
+      "original": "scripts/validate_dual_source_annotations.py",
+      "snapshot": "code_snapshot/scripts/validate_dual_source_annotations.py",
+      "sha256": "64a33144667f64dc7ac23bcd72c8061a72ae78f937bee583c2cccc5e1a61b2fc"
+    },
+    {
+      "original": "scripts/verify_and_seal_annual_d2_600519_visual_review_20261014.py",
+      "snapshot": "code_snapshot/scripts/verify_and_seal_annual_d2_600519_visual_review_20261014.py",
+      "sha256": "da64289597b5c2f7e37435125201195ea6d2976f65f4c1da30e1cf83606efabb"
+    },
+    {
+      "original": "scripts/verify_and_seal_annual_d2_coverage_rollup_20261014_23.py",
+      "snapshot": "code_snapshot/scripts/verify_and_seal_annual_d2_coverage_rollup_20261014_23.py",
+      "sha256": "a5b163db02cf0d647cc1aebbc0f3f89e52fb203c2964d4b4595a2a09b17cd153"
+    },
+    {
+      "original": "scripts/verify_and_seal_annual_d2_coverage_rollup_20261014_24.py",
+      "snapshot": "code_snapshot/scripts/verify_and_seal_annual_d2_coverage_rollup_20261014_24.py",
+      "sha256": "7afdb52a4a6950c33faad77039d0faa6f7e370afc1b487b50ce5722cb77add35"
+    },
+    {
+      "original": "scripts/verify_and_seal_annual_d2_remaining_raw_only_visual_candidates_20261014.py",
+      "snapshot": "code_snapshot/scripts/verify_and_seal_annual_d2_remaining_raw_only_visual_candidates_20261014.py",
+      "sha256": "e4063124687a3d6a4d1ef84a102a78065724cf631b2e2eec675a7b4c5e73970d"
+    },
+    {
+      "original": "scripts/verify_annual_d3_control_status_39_visual_review_integrity_20261014.py",
+      "snapshot": "code_snapshot/scripts/verify_annual_d3_control_status_39_visual_review_integrity_20261014.py",
+      "sha256": "eb2787a58db0d52ee7339cbb7e177a12c9f826b7f480d72f6e3cd0306ac8d60e"
+    },
+    {
+      "original": "scripts/verify_annual_report_fact_candidates_20261014_03.py",
+      "snapshot": "code_snapshot/scripts/verify_annual_report_fact_candidates_20261014_03.py",
+      "sha256": "2cf11551b91a708daca2f767a2b0382e5fcd86e4f74f47953b5b9f855a73b878"
+    },
+    {
+      "original": "scripts/verify_dual_source_sources.py",
+      "snapshot": "code_snapshot/scripts/verify_dual_source_sources.py",
+      "sha256": "c55bdc9221822a3b617d6c80c4919220d8e72ecb7aeb981b9b64ba34b9a5053c"
+    },
+    {
+      "original": "scripts/verify_gpu_model_pair.py",
+      "snapshot": "code_snapshot/scripts/verify_gpu_model_pair.py",
+      "sha256": "966a600b891bf7afcecadf28389192f89b7755ab9740a8da8941ca78562b2f3a"
+    },
+    {
+      "original": "scripts/verify_historical_law_extension_gpu_retrieval_20261016.py",
+      "snapshot": "code_snapshot/scripts/verify_historical_law_extension_gpu_retrieval_20261016.py",
+      "sha256": "26f0b28965957d611bfb4a3a097331f41ed0fcd83506bdbc2f9a7ab1a4ca5fd3"
+    },
+    {
+      "original": "scripts/verify_kimi_model_switch_without_env_edit_20261016.py",
+      "snapshot": "code_snapshot/scripts/verify_kimi_model_switch_without_env_edit_20261016.py",
+      "sha256": "b7ce5ad75ca85cafc18d3f060b652c7ef8fe149f8dc45cf66130db3198349afa"
+    },
+    {
+      "original": "scripts/verify_qwen_reranker_runtime.py",
+      "snapshot": "code_snapshot/scripts/verify_qwen_reranker_runtime.py",
+      "sha256": "d3ffeb68833919371d227e50e4094f4eecc97c111a69c1a674fcd6fbb1e9cb76"
+    },
+    {
+      "original": "configs/default.yaml",
+      "snapshot": "code_snapshot/configs/default.yaml",
+      "sha256": "95c128062cc24b19a7c6f5fe56cea3afbc8d458029132297478dd675073467c0"
+    }
+  ],
+  "API_calls_by_freeze": 0,
+  "GPU_calls_by_freeze": 0
+}

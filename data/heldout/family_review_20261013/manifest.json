@@ -1,0 +1,24 @@
+{
+  "status": "family_triaged_not_formal_test",
+  "status_counts": {
+    "rejected_development_family_overlap": 17,
+    "pending_source_and_human_family_review": 2,
+    "separate_research_probe": 5
+  },
+  "formal_test_queries": 0,
+  "human_labels": 0,
+  "query_texts_rewritten": false,
+  "queries_used_for_tuning": 0,
+  "source_candidates_sha256": "deddd0bfaf61a1678f5ab36be108ae16035604b15791fab2f85a22d6636d2354",
+  "code_sha256": {
+    "scripts/review_holdout_families.py": "6001e8112907d25380aa8841e28624c3a7e37c1d54fe878c2fa75b86118be71b",
+    "src/data/holdout_v2.py": "da2bab66f66f5fd0c0986dccb5c9bdccb4bbf92e7be5641e38d55443e4557ca2"
+  },
+  "artifacts_sha256": {
+    "all_candidate_decisions.jsonl": "6f4c8a06807ffa8d54cf386850028271adbe01d527baccf8ca9f0ed6abb73c71",
+    "development_registry.json": "314e719bc9ae51c75a1870b7c632644bb83db6cec3ffaf8617daf530b470fc4c",
+    "release_gate.json": "9ae22c2ade7cccdfa1f36c986eead7e12f2d08217436aa6809ea21ac95051233",
+    "research_probes.jsonl": "254905581c21716989e37185c2cf27f473e2ca5468613383e9865b277fc00f65",
+    "reserved_retrieval_candidates.jsonl": "cb6b9379bf4e0b42c384d7e0826b12ee6e01745f66a57a153768ad9cc96ec2a0"
+  }
+}

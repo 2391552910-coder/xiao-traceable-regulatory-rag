@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.cninfo.com.cn/new/data/szse_stock.json",
+    "attempted_at_utc": "2026-10-13T09:18:28.340224+00:00",
+    "error_type": "URLError",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://static.cninfo.com.cn/",
+    "attempted_at_utc": "2026-10-13T09:18:28.374571+00:00",
+    "error_type": "URLError",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://www.sse.com.cn/",
+    "attempted_at_utc": "2026-10-13T09:18:28.380760+00:00",
+    "error_type": "URLError",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://www.moutaichina.com/",
+    "attempted_at_utc": "2026-10-13T09:18:28.384717+00:00",
+    "error_type": "URLError",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

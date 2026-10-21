@@ -1,0 +1,13 @@
+....................................                                     [100%]
+=============================== warnings summary ===============================
+../restored-20261013/xiao-traceable-regulatory-rag/.venv/lib/python3.12/site-packages/jieba/_compat.py:18
+  /workspace/restored-20261013/xiao-traceable-regulatory-rag/.venv/lib/python3.12/site-packages/jieba/_compat.py:18: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+tests/test_smoke.py::test_retrieval_pipeline
+tests/test_smoke.py::test_generation_mock_and_alignment
+  /workspace/restored-20261013/xiao-traceable-regulatory-rag/.venv/lib/python3.12/site-packages/sklearn/feature_extraction/text.py:521: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+36 passed, 3 warnings in 9.46s

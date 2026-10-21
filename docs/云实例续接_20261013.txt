@@ -1,0 +1,57 @@
+云实例续接记录（2026-10-13，北京时间）
+
+结果
+从上传 ZIP 恢复 /workspace/xiao-traceable-regulatory-rag，602 个文件的 SHA256 全部符合原 CHECKPOINT_MANIFEST.json。
+CPU 依赖已在 .venv 安装，pip check 通过；24 项项目回归测试通过（3 条依赖/分词提示）。
+独立复核 --check 通过：57 个冻结产物、原候选表、原 gold、原标注、语料和切分器均未改变。
+模型仅下载了 9 个元数据/tokenizer 辅助文件；缺少 model.safetensors 和 tokenizer.json。
+未加载模型，未生成真实向量，未运行真实检索或完整 gold 评测；未测试 reranker。
+
+新发现的网络阻塞
+新实例原有 Hugging Face/Xet 6 个域名确实已在白名单中，config.json 实际 HTTP 200。
+当前运行策略 state=enforced、spec_revision=6、observed_spec_revision=6。
+模型仓库固定版本：97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3。
+model.safetensors 长度 1,191,586,416 字节；HTTP 302 的实际目标为 us.aws.cdn.hf.co。
+该目标不在当前 effective_allowed_hosts 中，实际代理隧道返回 403。
+原生 Xet 下载 tokenizer.json 时也访问同一域名并失败。
+已保留继承的 HTTP/HTTPS 代理和 TLS 校验，没有修改网络策略文件或绕过白名单。
+
+用户已回复配置“已发布”，之后授权由助手修改。但当前聊天仅有云实例状态读取接口，
+没有配置编辑、发布、切换或重启工具；检索可用工具和插件后也没有发现本平台的配置写入能力。
+实际实例仍绑定以下源配置版本，而不是含新增 CDN 域名的已发布版本：
+d9baecb8-bc7b-43c4-aa9a-975e07e50394~cecfgver_6acdd1fcc83481919eddec6bfd53e73f
+用户授权仍有效，后续若获得受支持的配置写入能力，应直接补充域名并应用，不需重复询问授权。
+需要在平台云环境编辑器将 us.aws.cdn.hf.co 加入白名单并使包含此域名的配置版本实际应用到本聊天实例。
+编辑器已保存或发布不能证明当前实例已切换；应同时核对当前状态接口和实际权重请求。
+
+本轮记录目录
+results/runs/embedding_0_6b_resumed_20261013/
+主要记录：deployment_test.json、restore_check.json、environment_status_latest.json、
+network_probe_after_publish.json、weight_redirect.json、model_metadata_download.json、
+pip_check.txt、pytest.txt、independent_review_check.txt、small_retrieval_input_check.json。
+本轮没有 .git，不冒充已创建 work 分支或完成提交、推送；原快照基于 b95aff7。
+
+网络修复后的执行步骤
+1. 检查运行实例当前白名单含 huggingface.co、us.aws.cdn.hf.co 以及现有 HF/Xet 域名，
+   observations_current=true、network_policy.state=enforced，并验证实际下载不再返回代理 403。
+2. 当前工作区保有依赖和部分模型文件。若实例更换导致这些文件丢失，按原交接安装依赖。
+   通过 exec_command 运行网络命令时需启用命令的 network 权限；此权限不替代平台白名单。
+3. 从项目根目录下载固定模型版本（使用继承的代理和 CA 信任）：
+   HF_HOME=/workspace/huggingface-cache .venv/bin/python -c "from huggingface_hub import snapshot_download; snapshot_download('Qwen/Qwen3-Embedding-0.6B', revision='97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3', local_dir='/workspace/models/Qwen3-Embedding-0.6B', allow_patterns=['*.json','*.txt','*.model','README.md','model.safetensors'], max_workers=2)"
+   重新检查 modules.json、1_Pooling/config.json、tokenizer 和权重完整性。
+4. 使用新目录运行原真实加载测试，避免覆盖已有记录：
+   HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/python scripts/smoke_embedding_model.py --model /workspace/models/Qwen3-Embedding-0.6B --out results/runs/embedding_0_6b_network_fixed/deployment_test.json
+5. 本轮新增 scripts/smoke_embedding_retrieval.py 已通过语法、帮助入口和冻结输入检查，尚未运行真实推理：
+   HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/python scripts/smoke_embedding_retrieval.py --model /workspace/models/Qwen3-Embedding-0.6B --out-dir results/runs/embedding_0_6b_network_fixed/small_retrieval
+   该脚本从独立复核 direct 集取 Q01/Q11/Q21/Q31 的各两个片段，加四个干扰片段，共 12 个片段；
+   保存 12×1024 文档向量和 4×1024 查询向量、来源和哈希；检查归一化、自检索和向量复现排序，
+   并记录 Dense/BM25/Hybrid 的 top-3。维持当前管线不添加查询指令；不加载 reranker。
+   这是经挑选样本的管线联调，不能推断全库质量；未入选的正例不能当作不相关证据。
+6. 确认上述真实推理通过后，才决定完整评测。全库有 7,899 个历史条款片段，当前 CPU 配额 4 核、内存 16 GiB。
+   旧实验 02 仍使用原冻结开发 gold；新独立复核集未替换或接入默认清单。
+   保留原基准，后续切分修复和新标签应另建版本与重新冻结，不能绕过哈希验证。
+
+交付
+本轮新交接包在 /workspace/xiao-traceable-regulatory-rag-resumed-20261013.zip。
+包内保留原始清单为 ORIGINAL_CHECKPOINT_MANIFEST.json，并生成本轮完整 CHECKPOINT_MANIFEST.json。
+模型目录、.venv、缓存不打包；独立复核与历史运行记录完整保留。

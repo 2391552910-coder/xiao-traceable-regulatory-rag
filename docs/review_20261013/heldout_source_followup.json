@@ -1,0 +1,30 @@
+{
+  "H005": {
+    "local_literal_search": "可持续发展报告",
+    "matching_documents": 0,
+    "source_status": "external_source_required_no_negative_claim"
+  },
+  "H009": {
+    "source_status": "cached_corpus_candidate_not_human_gold",
+    "chunk": {
+      "chunk_id": "DOC005-V2-0194",
+      "doc_id": "DOC005",
+      "clause_no": "第一百九十三条",
+      "part": 1,
+      "source_start": 23909,
+      "source_end": 24014,
+      "text": "第一百九十三条　公司可以在董事任职期间为董事因执行公司职务承担的赔偿责任投保责任保险。\n公司为董事投保责任保险或者续保后，董事会应当向股东会报告责任保险的投保金额、承保范围及保险费率等内容。\n第九章　公司债券\n",
+      "text_sha256": "1df3b90789896e5ff3679c565ddab69e4cb8c8cb8c4c3b944f02d29e9fc4be08",
+      "source_text_sha256": "21ba8890b06a2901bd95f8db1a5a5f4fb0ba083c23a34d4450509ccc8a25fe29",
+      "truncated": false
+    },
+    "old_chunk_ids": [
+      "DOC005-C226"
+    ],
+    "exact_chunk_exposure": [],
+    "same_document_seen_in_development": true,
+    "source_verified": false,
+    "human_label": null,
+    "issue": "Same-document exposure must be considered in human family separation; this lookup is not a test performance evaluation."
+  }
+}

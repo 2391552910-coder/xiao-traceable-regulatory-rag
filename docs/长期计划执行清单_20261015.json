@@ -1,0 +1,34 @@
+{
+  "plan_date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "plan_file": "docs/长期执行计划与论文定稿验收_20261015.txt",
+  "planned_experiment_analysis_completion": "2026-11-13",
+  "planned_paper_completion": "2026-11-20",
+  "contingency_window": ["2026-11-23", "2026-11-27"],
+  "dates_are_estimates": true,
+  "baseline": {
+    "env_readable_with_nonempty_key_url_and_model": true,
+    "real_api_connection_verified": false,
+    "annual_reports": 39,
+    "annual_pages": 9999,
+    "indexed_chunks_previous_mock_run": 19071,
+    "cuda_pair_small_check_passed": true,
+    "new_precision_full_corpus_verified": false,
+    "paper_draft_pages": 7,
+    "formal_test_set_frozen": false,
+    "formal_generation_review_completed": false
+  },
+  "stages": [
+    {"id": "P1", "name": "真实生成先导与索引复用", "start": "2026-10-15", "end": "2026-10-16", "status": "pending", "gate": "G1", "actual_artifacts": []},
+    {"id": "P2", "name": "数据协议与研究问题定稿", "start": "2026-10-19", "end": "2026-10-23", "status": "pending", "gate": "G2", "actual_artifacts": []},
+    {"id": "P3", "name": "独立复核与开发集诊断", "start": "2026-10-26", "end": "2026-10-30", "status": "pending", "gate": "G3", "actual_artifacts": []},
+    {"id": "P4", "name": "正式检索与生成实验", "start": "2026-11-02", "end": "2026-11-06", "status": "pending", "gate": "G4", "actual_artifacts": []},
+    {"id": "P5", "name": "输出复核与实验分析", "start": "2026-11-09", "end": "2026-11-13", "status": "pending", "gate": "G5", "actual_artifacts": []},
+    {"id": "P6", "name": "论文定稿与复现交付", "start": "2026-11-16", "end": "2026-11-20", "status": "pending", "gate": "G6", "actual_artifacts": []}
+  ],
+  "planned_data": {"new_dual_source_questions_target": 200, "development_target": 40, "final_test_target": 160, "independently_reviewed_generation_outputs_minimum": 120, "actual_reviewers_required_for_double_review_claim": 2},
+  "provisional_generation_budget": {"main_questions": 160, "main_modes": 4, "repeats": 3, "main_outputs": 1920, "second_model_subset_questions": 40, "second_model_outputs": 480, "planned_outputs_excluding_extra_checks_and_retries": 2400, "freeze_after_pilot": true},
+  "human_review_dependency_confirmed": false,
+  "second_model_family_available": "not_yet_verified",
+  "scheduled_automation_created": false
+}

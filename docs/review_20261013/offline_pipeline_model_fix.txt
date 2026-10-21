@@ -1,0 +1,13 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.537 seconds.
+Prefix dict has been built successfully.
+/workspace/xiao-venv/lib/python3.12/site-packages/sklearn/feature_extraction/text.py:521: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+基准 regulatory-gold-ai-20261013：40 查询；状态 provisional / development_only
+BM25-only                        Recall@5=0.2410 MRR@5=0.3954 nDCG@5=0.2851
+Dense-only                       Recall@5=0.1836 MRR@5=0.3550 nDCG@5=0.2277
+Hybrid                           Recall@5=0.2207 MRR@5=0.3767 nDCG@5=0.2657
+Hybrid+QueryExpansion            Recall@5=0.1168 MRR@5=0.2396 nDCG@5=0.1285
+Hybrid+Routing (Ours)            Recall@5=0.1431 MRR@5=0.2808 nDCG@5=0.1627
+输出：/workspace/xiao-integrated/results/runs/model_interface_offline_20261013/eval.csv（含逐查询明细、分维度指标、成对 bootstrap CI、审计与运行元信息）

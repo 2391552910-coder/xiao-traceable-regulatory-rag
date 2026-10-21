@@ -25,7 +25,7 @@ class RetrievalQuery:
 
 def load_retrieval_queries(path: str | Path) -> list[RetrievalQuery]:
     queries: list[RetrievalQuery] = []
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
             if not row.get("query_id"):
                 continue

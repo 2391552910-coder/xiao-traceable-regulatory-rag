@@ -1,0 +1,1162 @@
+{
+  "status": "provisional",
+  "usage": "development_only",
+  "frozen": true,
+  "benchmark_id": "regulatory-gold-ai-20261013",
+  "n_documents": 319,
+  "n_chunks": 7899,
+  "document_types": {
+    "regulation": 88,
+    "penalty": 212,
+    "announcement": 19
+  },
+  "n_queries": 40,
+  "queries_by_dimension": {
+    "D1": 10,
+    "D2": 10,
+    "D3": 11,
+    "D4": 9
+  },
+  "n_positive_pairs": 226,
+  "n_unique_positive_chunks": 219,
+  "label_sources": {
+    "ai_dual_pass_adjudicated": 40
+  },
+  "hashes": {
+    "queries_sha256": "fd3fb72066cbbd6b2ee0c00e053cf1da0a990b8109b1c6c4226c218243ccfceb",
+    "corpus_sha256": "0653487765c3d14875e5deebe64248b1b6b886ce1e5f7cb878b016c7ec2911ba",
+    "annotation_sha256": "d0b6eb3de6aee78e8f8611f589771787c185dbefec2063260e508acdef189bf7",
+    "splitter_sha256": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546"
+  },
+  "structural_issues": [
+    {
+      "chunk_id": "DOC046-C005",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十七条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q04"
+      ]
+    },
+    {
+      "chunk_id": "DOC060-C017",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第十八条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q24"
+      ]
+    },
+    {
+      "chunk_id": "DOC070-C005",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十七条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC072-C001",
+      "flags": [
+        "truncated_evidence"
+      ],
+      "stored_clause_no": null,
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC073-C001",
+      "flags": [
+        "truncated_evidence"
+      ],
+      "stored_clause_no": null,
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC073-C009",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十七条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q25"
+      ]
+    },
+    {
+      "chunk_id": "DOC073-C010",
+      "flags": [
+        "inline_reference_used_as_heading",
+        "truncated_evidence"
+      ],
+      "stored_clause_no": "第一百九十七条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q25",
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC075-C001",
+      "flags": [
+        "truncated_evidence"
+      ],
+      "stored_clause_no": null,
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC075-C010",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第二十八条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q24"
+      ]
+    },
+    {
+      "chunk_id": "DOC075-C016",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第四十条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q24"
+      ]
+    },
+    {
+      "chunk_id": "DOC075-C018",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第二百一十三条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q24"
+      ]
+    },
+    {
+      "chunk_id": "DOC077-C001",
+      "flags": [
+        "truncated_evidence"
+      ],
+      "stored_clause_no": null,
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC078-C014",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第二十八条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q24"
+      ]
+    },
+    {
+      "chunk_id": "DOC079-C001",
+      "flags": [
+        "truncated_evidence"
+      ],
+      "stored_clause_no": null,
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC080-C001",
+      "flags": [
+        "truncated_evidence"
+      ],
+      "stored_clause_no": null,
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q26"
+      ]
+    },
+    {
+      "chunk_id": "DOC082-C013",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第三十九条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q25"
+      ]
+    },
+    {
+      "chunk_id": "DOC082-C030",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十七条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q25"
+      ]
+    },
+    {
+      "chunk_id": "DOC084-C003",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q32"
+      ]
+    },
+    {
+      "chunk_id": "DOC087-C003",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q32"
+      ]
+    },
+    {
+      "chunk_id": "DOC088-C003",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q32"
+      ]
+    },
+    {
+      "chunk_id": "DOC088-C005",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q32"
+      ]
+    },
+    {
+      "chunk_id": "DOC089-C003",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第二百零三条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q32"
+      ]
+    },
+    {
+      "chunk_id": "DOC090-C029",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第六十一条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q06"
+      ]
+    },
+    {
+      "chunk_id": "DOC090-C033",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第八十五条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q06"
+      ]
+    },
+    {
+      "chunk_id": "DOC090-C057",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第五十条",
+      "owner_clause_no": "第十七条",
+      "query_ids": [
+        "Q06"
+      ]
+    },
+    {
+      "chunk_id": "DOC098-C027",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第二十二条",
+      "owner_clause_no": "第二十条",
+      "query_ids": [
+        "Q03"
+      ]
+    },
+    {
+      "chunk_id": "DOC099-C026",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第十一条",
+      "owner_clause_no": "第九条",
+      "query_ids": [
+        "Q08"
+      ]
+    },
+    {
+      "chunk_id": "DOC099-C030",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第九条",
+      "owner_clause_no": "第十一条",
+      "query_ids": [
+        "Q08"
+      ]
+    },
+    {
+      "chunk_id": "DOC099-C063",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第九条",
+      "owner_clause_no": "第三十条",
+      "query_ids": [
+        "Q08"
+      ]
+    },
+    {
+      "chunk_id": "DOC122-C018",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第七条",
+      "owner_clause_no": "第十四条",
+      "query_ids": [
+        "Q12"
+      ]
+    },
+    {
+      "chunk_id": "DOC136-C010",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第四条",
+      "owner_clause_no": "第六条",
+      "query_ids": [
+        "Q31"
+      ]
+    },
+    {
+      "chunk_id": "DOC136-C014",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第四条",
+      "owner_clause_no": "第七条",
+      "query_ids": [
+        "Q31"
+      ]
+    },
+    {
+      "chunk_id": "DOC136-C015",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第四条",
+      "owner_clause_no": "第七条",
+      "query_ids": [
+        "Q31"
+      ]
+    },
+    {
+      "chunk_id": "DOC141-C013",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第八条",
+      "owner_clause_no": "第十条",
+      "query_ids": [
+        "Q34"
+      ]
+    },
+    {
+      "chunk_id": "DOC141-C015",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第八条",
+      "owner_clause_no": "第十一条",
+      "query_ids": [
+        "Q34"
+      ]
+    },
+    {
+      "chunk_id": "DOC141-C018",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第八条",
+      "owner_clause_no": "第十三条",
+      "query_ids": [
+        "Q34"
+      ]
+    },
+    {
+      "chunk_id": "DOC163-C002",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第61条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q01"
+      ]
+    },
+    {
+      "chunk_id": "DOC165-C002",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第六十一条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q01"
+      ]
+    },
+    {
+      "chunk_id": "DOC201-C004",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第三十六条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q28"
+      ]
+    },
+    {
+      "chunk_id": "DOC205-C002",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第六十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q03"
+      ]
+    },
+    {
+      "chunk_id": "DOC209-C002",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第61条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q05"
+      ]
+    },
+    {
+      "chunk_id": "DOC216-C002",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第62条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q05"
+      ]
+    },
+    {
+      "chunk_id": "DOC218-C004",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第二十九条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q28"
+      ]
+    },
+    {
+      "chunk_id": "DOC218-C006",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第九条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q28"
+      ]
+    },
+    {
+      "chunk_id": "DOC223-C005",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第六十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q03"
+      ]
+    },
+    {
+      "chunk_id": "DOC242-C004",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第六十八条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q33"
+      ]
+    },
+    {
+      "chunk_id": "DOC242-C005",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第七十条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q33"
+      ]
+    },
+    {
+      "chunk_id": "DOC242-C006",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百八十三条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q33"
+      ]
+    },
+    {
+      "chunk_id": "DOC242-C008",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第五条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q33"
+      ]
+    },
+    {
+      "chunk_id": "DOC246-C002",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第193条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC247-C010",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第5条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC247-C012",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第195条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC253-C006",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第5条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC253-C009",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第193条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC253-C011",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第202条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q37"
+      ]
+    },
+    {
+      "chunk_id": "DOC300-C008",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第八十二条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q25"
+      ]
+    },
+    {
+      "chunk_id": "DOC303-C007",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百九十七条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q25"
+      ]
+    },
+    {
+      "chunk_id": "DOC305-C030",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百六十三条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q37"
+      ]
+    },
+    {
+      "chunk_id": "DOC329-C012",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第195条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC329-C015",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第204条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q38"
+      ]
+    },
+    {
+      "chunk_id": "DOC342-C013",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百二十六条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q16"
+      ]
+    },
+    {
+      "chunk_id": "DOC343-C004",
+      "flags": [
+        "inline_reference_used_as_heading"
+      ],
+      "stored_clause_no": "第一百五十六条",
+      "owner_clause_no": null,
+      "query_ids": [
+        "Q16"
+      ]
+    }
+  ],
+  "duplicate_document_groups": [
+    [
+      "DOC045",
+      "DOC074"
+    ],
+    [
+      "DOC046",
+      "DOC070"
+    ],
+    [
+      "DOC055",
+      "DOC060"
+    ],
+    [
+      "DOC061",
+      "DOC144"
+    ],
+    [
+      "DOC084",
+      "DOC260"
+    ],
+    [
+      "DOC085",
+      "DOC086"
+    ],
+    [
+      "DOC254",
+      "DOC255"
+    ]
+  ],
+  "annotation_consistency": {
+    "per_query": [
+      {
+        "query_id": "Q01",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q02",
+        "n_candidates": 12,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q03",
+        "n_candidates": 20,
+        "agreement": 0.8,
+        "kappa": 0.6153846153846155,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q04",
+        "n_candidates": 20,
+        "agreement": 0.9,
+        "kappa": 0.6923076923076924,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q05",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q06",
+        "n_candidates": 12,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q07",
+        "n_candidates": 12,
+        "agreement": 0.9166666666666666,
+        "kappa": 0.8333333333333333,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q08",
+        "n_candidates": 20,
+        "agreement": 0.9,
+        "kappa": 0.7368421052631581,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q09",
+        "n_candidates": 12,
+        "agreement": 0.75,
+        "kappa": 0.5,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q10",
+        "n_candidates": 20,
+        "agreement": 0.95,
+        "kappa": 0.6428571428571426,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q11",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q12",
+        "n_candidates": 20,
+        "agreement": 0.9,
+        "kappa": 0.45945945945945976,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q13",
+        "n_candidates": 12,
+        "agreement": 0.75,
+        "kappa": 0.39999999999999997,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q14",
+        "n_candidates": 12,
+        "agreement": 0.9166666666666666,
+        "kappa": 0.8235294117647058,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q15",
+        "n_candidates": 20,
+        "agreement": 0.95,
+        "kappa": 0.7727272727272725,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q16",
+        "n_candidates": 20,
+        "agreement": 0.9,
+        "kappa": 0.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q17",
+        "n_candidates": 12,
+        "agreement": 0.8333333333333334,
+        "kappa": 0.4285714285714286,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q18",
+        "n_candidates": 20,
+        "agreement": 0.9,
+        "kappa": 0.6153846153846153,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q19",
+        "n_candidates": 12,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q20",
+        "n_candidates": 12,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q21",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q22",
+        "n_candidates": 16,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q23",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q24",
+        "n_candidates": 12,
+        "agreement": 0.75,
+        "kappa": 0.5,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q25",
+        "n_candidates": 20,
+        "agreement": 0.9,
+        "kappa": 0.801980198019802,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q26",
+        "n_candidates": 12,
+        "agreement": 1.0,
+        "kappa": null,
+        "kappa_undefined_reason": "single_class_identical_labels",
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q27",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q28",
+        "n_candidates": 20,
+        "agreement": 0.95,
+        "kappa": 0.8999999999999999,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q29",
+        "n_candidates": 12,
+        "agreement": 0.9166666666666666,
+        "kappa": 0.7499999999999999,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q30",
+        "n_candidates": 23,
+        "agreement": 0.9565217391304348,
+        "kappa": 0.646153846153846,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q31",
+        "n_candidates": 16,
+        "agreement": 0.625,
+        "kappa": 0.3333333333333333,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q32",
+        "n_candidates": 12,
+        "agreement": 0.9166666666666666,
+        "kappa": 0.8235294117647058,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q33",
+        "n_candidates": 12,
+        "agreement": 0.25,
+        "kappa": 0.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q34",
+        "n_candidates": 12,
+        "agreement": 1.0,
+        "kappa": null,
+        "kappa_undefined_reason": "single_class_identical_labels",
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q35",
+        "n_candidates": 12,
+        "agreement": 0.6666666666666666,
+        "kappa": 0.3846153846153845,
+        "kappa_undefined_reason": null,
+        "below_0_6": true,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q36",
+        "n_candidates": 20,
+        "agreement": 0.95,
+        "kappa": 0.8275862068965515,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q37",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q38",
+        "n_candidates": 20,
+        "agreement": 0.95,
+        "kappa": 0.8936170212765956,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q39",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      },
+      {
+        "query_id": "Q40",
+        "n_candidates": 20,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "kappa_undefined_reason": null,
+        "below_0_6": false,
+        "unresolved_disputes": [],
+        "gold_matches_rounds": true
+      }
+    ],
+    "n_queries_with_rounds": 40,
+    "n_undefined_kappa": 2,
+    "mean_defined_kappa": 0.7468740126082537,
+    "note": "单一类别完全一致时 Kappa 未定义，不记作 1.0；逐查询平均仅描述候选池内一致性。"
+  },
+  "limitations": [
+    "AI 双通道标注与仲裁；未记录独立人工语义复核，Kappa 不是正确率。",
+    "候选池由弱标注构造，尚未证明全库相关条款已完整覆盖。",
+    "历史切分在正文法规引用处也分块，并将长块截到 2000 字。",
+    "40 条查询已用于开发，不应作为未见过的独立最终测试集。",
+    "重复文档与不同法规版本可能影响相关证据计数；需人工明确保留/去重规则。"
+  ]
+}

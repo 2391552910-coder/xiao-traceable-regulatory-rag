@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-10-21T02:02:19.742962+00:00",
+  "questions": 60,
+  "companies": 20,
+  "planned_slots": 400,
+  "available_rows": 386,
+  "unavailable_slots": 14,
+  "reference_spans_replayed": 256,
+  "unique_reference_ids": 123,
+  "source_files": 42,
+  "zip_crc_and_member_hashes_passed": true,
+  "gold_unchanged": true,
+  "primary_unchanged": true,
+  "all_327_prior_answers_byte_equivalent_as_json": true,
+  "prior_labels_retained": true,
+  "actual_output_reviews_received": 0
+}

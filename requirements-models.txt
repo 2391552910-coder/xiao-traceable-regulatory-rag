@@ -1,0 +1,5 @@
+# 真实模型加载与检索的固定依赖；CPU 工作区先从 PyTorch CPU 索引安装 torch。
+-r requirements-eval.txt
+torch==2.7.1
+sentence-transformers==3.1.1
+transformers==4.51.3

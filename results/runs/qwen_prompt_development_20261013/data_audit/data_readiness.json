@@ -1,0 +1,226 @@
+{
+  "audited_at_utc": "2026-10-13T08:09:26.715182+00:00",
+  "audit_completed": true,
+  "status": "data_preparation_incomplete",
+  "formal_data_ready": false,
+  "root": "/workspace/qwen-prompt-dev-20261013",
+  "original_inputs_modified": false,
+  "frozen_development_hashes_verified": true,
+  "benchmark_hashes": {
+    "queries_sha256": "fd3fb72066cbbd6b2ee0c00e053cf1da0a990b8109b1c6c4226c218243ccfceb",
+    "corpus_sha256": "0653487765c3d14875e5deebe64248b1b6b886ce1e5f7cb878b016c7ec2911ba",
+    "annotation_sha256": "d0b6eb3de6aee78e8f8611f589771787c185dbefec2063260e508acdef189bf7",
+    "splitter_sha256": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546"
+  },
+  "corpus": {
+    "loaded_documents": 319,
+    "document_types": {
+      "regulation": 88,
+      "penalty": 212,
+      "announcement": 19
+    },
+    "registered_manifest_documents": 315,
+    "unregistered_loaded_document_ids": [
+      "DOC001",
+      "DOC002",
+      "DOC003",
+      "DOC004"
+    ],
+    "missing_metadata_date_ids": [
+      "DOC144",
+      "DOC145",
+      "DOC146",
+      "DOC147",
+      "DOC148",
+      "DOC149",
+      "DOC150",
+      "DOC151",
+      "DOC152",
+      "DOC153",
+      "DOC154",
+      "DOC155",
+      "DOC156",
+      "DOC157",
+      "DOC158",
+      "DOC159",
+      "DOC160",
+      "DOC161",
+      "DOC162",
+      "DOC163",
+      "DOC164",
+      "DOC165",
+      "DOC166",
+      "DOC167",
+      "DOC168",
+      "DOC169",
+      "DOC170",
+      "DOC171",
+      "DOC172",
+      "DOC173",
+      "DOC174",
+      "DOC175",
+      "DOC176",
+      "DOC177",
+      "DOC178",
+      "DOC179",
+      "DOC180",
+      "DOC181",
+      "DOC182",
+      "DOC183",
+      "DOC184",
+      "DOC185",
+      "DOC186",
+      "DOC187",
+      "DOC188",
+      "DOC189",
+      "DOC190",
+      "DOC191",
+      "DOC192",
+      "DOC193",
+      "DOC194",
+      "DOC195",
+      "DOC196",
+      "DOC197",
+      "DOC198",
+      "DOC199",
+      "DOC200",
+      "DOC201",
+      "DOC202",
+      "DOC203",
+      "DOC204",
+      "DOC205",
+      "DOC206",
+      "DOC207",
+      "DOC208",
+      "DOC209",
+      "DOC210",
+      "DOC211",
+      "DOC212",
+      "DOC213",
+      "DOC214",
+      "DOC215",
+      "DOC216",
+      "DOC217",
+      "DOC218",
+      "DOC219",
+      "DOC220",
+      "DOC221",
+      "DOC222",
+      "DOC223",
+      "DOC224",
+      "DOC225",
+      "DOC226",
+      "DOC227",
+      "DOC228",
+      "DOC229",
+      "DOC230",
+      "DOC231",
+      "DOC232",
+      "DOC233",
+      "DOC234",
+      "DOC235",
+      "DOC236",
+      "DOC237"
+    ],
+    "historical_chunks": 7899,
+    "duplicate_document_groups": [
+      [
+        "DOC045",
+        "DOC074"
+      ],
+      [
+        "DOC046",
+        "DOC070"
+      ],
+      [
+        "DOC055",
+        "DOC060"
+      ],
+      [
+        "DOC061",
+        "DOC144"
+      ],
+      [
+        "DOC084",
+        "DOC260"
+      ],
+      [
+        "DOC085",
+        "DOC086"
+      ],
+      [
+        "DOC254",
+        "DOC255"
+      ]
+    ],
+    "positive_chunks_with_structural_issues": 62,
+    "positive_chunk_issue_counts": {
+      "inline_reference_used_as_heading": 56,
+      "truncated_evidence": 7
+    },
+    "legal_version_and_temporal_applicability_verified": false,
+    "formal_status": "not_ready"
+  },
+  "annual_reports": {
+    "sampling_frame_companies": 39,
+    "historical_manifest_rows": 39,
+    "historical_status_counts": {
+      "ok": 39
+    },
+    "current_availability_counts": {
+      "missing": 39
+    },
+    "available_pdf_count": 0,
+    "manifest_sha256": "50ab2a1044e545845ab92d05a34e9bd1737933f3c1ce02d6457b758c3fa8aa43",
+    "required_source_hosts_in_startup_allowlist": {
+      "www.cninfo.com.cn": false,
+      "static.cninfo.com.cn": false
+    },
+    "formal_status": "not_ready"
+  },
+  "company_facts": {
+    "files": [
+      {
+        "file": "data/companies/sample_000001.json",
+        "demonstration": true,
+        "fact_records": 0,
+        "source_linked_fact_records": 0,
+        "note": "Presence of source fields alone does not verify a fact."
+      }
+    ],
+    "non_demonstration_fact_files": 0,
+    "source_linked_fact_records": 0,
+    "formal_status": "not_ready"
+  },
+  "retrieval_evaluation": {
+    "development_queries": 40,
+    "independent_review": {
+      "n_queries": 40,
+      "n_candidates": 1049,
+      "n_direct_positive": 336,
+      "n_broad_positive": 532,
+      "scope": "1049 supplied query-candidate pairs; supplements are separate and not exhaustive"
+    },
+    "default_benchmark_uses_independent_review": false,
+    "candidate_pool_exhaustiveness_verified": false,
+    "registered_heldout_final_test_set": false,
+    "formal_status": "not_ready"
+  },
+  "generation_evaluation": {
+    "template_rows": 1,
+    "completed_template_judgments": 0,
+    "registered_real_generation_validation_set": false,
+    "formal_status": "not_ready"
+  },
+  "next_actions": [
+    "恢复 39 家年报原文，记录来源 URL、公告日期、报告年度和文件 SHA256；保留旧下载清单。",
+    "提取带 PDF 页码、原文引句及文档哈希的公司事实；缺失指标显式标记，演示样本隔离。",
+    "审计法规版本、时间适用性、重复和切分，建立新证据坐标及标签迁移记录，保留旧冻结版本。",
+    "补齐检索候选池，重新冻结独立复核版本，并按问题族建立未用于开发的最终测试集。",
+    "建立真实生成输出与引用、事实错误、支持关系的核验集，保留抽样和复核记录。"
+  ],
+  "limitations": [
+    "本审计检查本工作区文件和已登记产物，不认证法规现行有效性或事实语义正确性。",
+    "网络清单检查不替代实际下载探测。"
+  ]
+}

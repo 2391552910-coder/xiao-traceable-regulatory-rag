@@ -1,0 +1,11 @@
+{
+  "byte_identical": {
+    "chunk_migration.jsonl": true,
+    "manifest.json": true,
+    "chunks.jsonl": true,
+    "documents.jsonl": true,
+    "date_review_queue.jsonl": true,
+    "label_migration.jsonl": true,
+    "document_manifest.jsonl": true
+  }
+}

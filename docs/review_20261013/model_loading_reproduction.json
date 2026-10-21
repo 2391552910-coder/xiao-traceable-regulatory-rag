@@ -1,0 +1,31 @@
+{
+  "kind": "stub_lifecycle_and_static_loader_reproduction",
+  "real_weights_loaded": false,
+  "data_tools_affected": false,
+  "events": [
+    {
+      "event": "reranker_constructed",
+      "model_name": "Qwen/Qwen3-Reranker-0.6B"
+    },
+    {
+      "event": "embedding_constructor_entered",
+      "reranker_still_owned": true,
+      "model_name": "Qwen/Qwen3-Embedding-0.6B"
+    }
+  ],
+  "loader_calls": [
+    {
+      "line": 28,
+      "expression": "AutoTokenizer.from_pretrained"
+    },
+    {
+      "line": 29,
+      "expression": "AutoModelForSequenceClassification.from_pretrained"
+    }
+  ],
+  "files_sha256": {
+    "src/retrieval/reranker.py": "c5d4c440a63a8eaf1a15e83ab7c5593164e9ffa081b7c768c3069c266f6a8382",
+    "src/pipeline.py": "59c3dadb6c64bf9e40fa3e69261382736c27ae00c23d6fbf2bd312f566c2bf27"
+  },
+  "scope": "Model pipeline remains an unresolved formal-experiment blocker; data preparation tools do not call it."
+}
