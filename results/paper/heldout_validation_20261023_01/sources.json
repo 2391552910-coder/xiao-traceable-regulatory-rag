@@ -1,0 +1,74 @@
+[
+  {
+    "stock": "603288",
+    "company": "海天味业",
+    "year": 2023,
+    "file": "haday_2023.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-04-27/1219879610.PDF",
+    "sha256": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04",
+    "pages": 206
+  },
+  {
+    "stock": "603288",
+    "company": "海天味业",
+    "year": 2024,
+    "file": "haday_2024.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-04-03/1222994233.PDF",
+    "sha256": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee",
+    "pages": 208
+  },
+  {
+    "stock": "000999",
+    "company": "华润三九",
+    "year": 2023,
+    "file": "hrsj_2023.pdf",
+    "url": "https://www.999.com.cn/annualReport/2024-03-24/c5c384a0-a904-4cbb-8b35-26f0330d9b83.pdf",
+    "sha256": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb",
+    "pages": 255
+  },
+  {
+    "stock": "000999",
+    "company": "华润三九",
+    "year": 2024,
+    "file": "hrsj_2024.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-03-13/1222778310.PDF",
+    "sha256": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6",
+    "pages": 273
+  },
+  {
+    "stock": "000651",
+    "company": "格力电器",
+    "year": 2023,
+    "file": "gree_2023.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-04-30/1219928418.PDF",
+    "sha256": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa",
+    "pages": 249
+  },
+  {
+    "stock": "000651",
+    "company": "格力电器",
+    "year": 2024,
+    "file": "gree_2024.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-04-28/1223330631.PDF",
+    "sha256": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006",
+    "pages": 248
+  },
+  {
+    "stock": "600036",
+    "company": "招商银行",
+    "year": 2023,
+    "file": "cmb_2023.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219403503.PDF",
+    "sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+    "pages": 362
+  },
+  {
+    "stock": "600036",
+    "company": "招商银行",
+    "year": 2024,
+    "file": "cmb_2024.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-03-26/1222895154.PDF",
+    "sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+    "pages": 362
+  }
+]

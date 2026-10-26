@@ -1,0 +1,61 @@
+{
+  "status": "selection_and_metrics_fixed_before_generation",
+  "created_utc": "2026-10-23T08:36:25.375569+00:00",
+  "companies": [
+    [
+      "603288",
+      "海天味业"
+    ],
+    [
+      "000999",
+      "华润三九"
+    ],
+    [
+      "000651",
+      "格力电器"
+    ],
+    [
+      "600036",
+      "招商银行"
+    ]
+  ],
+  "years": [
+    2023,
+    2024
+  ],
+  "selection": "purposive four companies outside all original 20; not random representative sampling; search snippets for first two companies already exposed to investigator",
+  "task": "Extract union of audit committee members serving during report year, total meetings during report year, unique meeting dates; retain citations and abstain for missing evidence",
+  "fields": [
+    "members",
+    "meeting_count",
+    "meeting_dates"
+  ],
+  "methods": [
+    "k3_single",
+    "k28_single",
+    "k3_refine3",
+    "k3_agent3_v2",
+    "k3_fixed_expand"
+  ],
+  "chunk_chars": 1200,
+  "chunk_stride": 1000,
+  "reference_token_cap": 6000,
+  "max_output_tokens_per_call": 8192,
+  "temperature": 1,
+  "reasoning_effort": "provider default; unequal/unverified compute",
+  "max_calls": 72,
+  "no_automatic_retry": true,
+  "stop_on_429": true,
+  "metrics": [
+    "set precision recall F1 for members",
+    "exact count accuracy",
+    "set precision recall F1 for normalized ISO dates",
+    "exact three-field match",
+    "strict schema validity",
+    "nonempty response rate",
+    "evidence substring availability only, not entailment"
+  ],
+  "ground_truth": "investigator extraction from official PDF pages, frozen before generation outputs read; NOT independent human annotations",
+  "legal_scope": "regulation pool retained as distractor/context but legal applicability is not scored",
+  "confirmatory_scope": "new-company holdout of already selected controller; not independent laboratory replication and not preregistered before original research"
+}

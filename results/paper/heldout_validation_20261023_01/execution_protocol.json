@@ -1,0 +1,231 @@
+{
+  "created_utc": "2026-10-23T08:56:20.340706+00:00",
+  "status": "fixed_before_generation",
+  "selection_sha256": "fd011532f8274b3957413513cb38b6c02bf3b7d5e9636b64d96a7dbd0e9dccae",
+  "sources_sha256": "0484619380907cac31276f7d4aa3468ca799c4ef8591eaed24161f8c816273ca",
+  "script_sha256": "8793a975f9f63a3415c728519fca6acd107f1e8ed1752542774c15e7c13d7f0c",
+  "counts": [
+    [
+      "000651-2023",
+      378
+    ],
+    [
+      "000651-2024",
+      390
+    ],
+    [
+      "000999-2023",
+      455
+    ],
+    [
+      "000999-2024",
+      493
+    ],
+    [
+      "600036-2023",
+      561
+    ],
+    [
+      "600036-2024",
+      564
+    ],
+    [
+      "603288-2023",
+      272
+    ],
+    [
+      "603288-2024",
+      286
+    ],
+    [
+      "law",
+      5994
+    ]
+  ],
+  "reference_tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+  "source_filter": "exact company and report year; regulation corpus fixed without time filter",
+  "retrieval": "FTS5 BM25 global IDF; jieba; first60 alnum query terms OR; top5 each role; interleave roles; whole chunk reference cap6000",
+  "fixed_queries": [
+    [
+      "审计委员会 委员会名称 成员情况 召开会议次数",
+      "审计委员会 会议 日期 议案 审议"
+    ],
+    [
+      "审计委员会 委员 主任 离任 变更",
+      "审计委员会 第一次 第二次 第三次 第四次"
+    ]
+  ],
+  "mode_schedule": [
+    {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "mode": "k28_single"
+    },
+    {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "mode": "k3_agent3_v2"
+    },
+    {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "mode": "k3_single"
+    },
+    {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "mode": "k3_refine3"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "mode": "k3_fixed_expand"
+    },
+    {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "mode": "k28_single"
+    }
+  ],
+  "max_calls": 72,
+  "maximum_concurrency": 2,
+  "automatic_retries": 0,
+  "model_parameters": {
+    "temperature": 1,
+    "max_tokens": 8192,
+    "reasoning_effort": "provider default"
+  },
+  "labels_visible_to_generator": false,
+  "task_scope": "structured annual disclosure extraction; no legal quality score",
+  "text_extractor": "pypdfium2 all eight reports; see parser_final_receipt.json"
+}

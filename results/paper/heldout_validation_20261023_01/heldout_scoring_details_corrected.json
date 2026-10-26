@@ -1,0 +1,3589 @@
+[
+  {
+    "question_id": "NEW-000651-2023-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2023,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 5258,
+    "seconds": 23.344000000040978,
+    "tool_queries": 0,
+    "final_reference_tokens": 4800,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        51
+      ],
+      "qualification": "Two meetings on April 28; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1"
+        ]
+      },
+      "limitations": [
+        "仅依据A1第51页审计委员会栏列示信息提取，未纳入薪酬与考核委员会等其他专门委员会信息。",
+        "A1中2023-04-28同日出现两行审计委员会会议记录，未按日期去重，meeting_dates按报告明确列示行项保留；会议次数4直接取自A1“召开会 议次数”栏，未由日期去重数倒推。",
+        "A1未披露审计委员会成员报告期内换届或变更，members按该栏列示并集给出；材料未证据支持的事项不作推断。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "final_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "result_sha256": "64083fad53d76dabee9270824dd3bdc00542992477bd329a832b320b074f3418"
+  },
+  {
+    "question_id": "NEW-000651-2023-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2023,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 8,
+    "calls": 3,
+    "tokens": 15776,
+    "seconds": 37.54700000002049,
+    "tool_queries": 4,
+    "final_reference_tokens": 5850,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        51
+      ],
+      "qualification": "Two meetings on April 28; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1"
+        ]
+      },
+      "limitations": [
+        "2023-04-28在报告中出现两次（对应两次不同审议内容的会议），日期列表按报告列示保留，未去重"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "final_context_sha256": "13cbce34772e9d3a808166c0ebe651769b9b022971382f2673ebaf782a40e565",
+    "result_sha256": "3f3e234fafe823127409e7e3cc69fa44159a3019799b2f3bf4646605e7d84f84"
+  },
+  {
+    "question_id": "NEW-000651-2023-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2023,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 11,
+    "calls": 1,
+    "tokens": 5628,
+    "seconds": 24.79700000002049,
+    "tool_queries": 4,
+    "final_reference_tokens": 5900,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        51
+      ],
+      "qualification": "Two meetings on April 28; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A5"
+        ],
+        "meeting_count": [
+          "A5"
+        ],
+        "meeting_dates": [
+          "A5"
+        ]
+      },
+      "limitations": [
+        "2023-04-28在报告中出现两次，对应两次不同的审计委员会会议（分别审议2022年度报告相关议案和2023年第一季度报告），故日期列表中保留两次；会议次数4来自报告明确披露的'召开会议次数'栏目，非由日期推算。",
+        "报告未披露报告期内审计委员会成员换届或变更情况，成员名单仅取报告明确披露的刘姝威、王晓华、张伟三人。",
+        "所提供材料未包含年报其他页码中可能存在的审计委员会相关信息，结论仅基于已提供的证据片段。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "final_context_sha256": "e18a2ff3345fe51078a1c6bf7889ebbc405497cc4785049fc7699e2ec15dc2c0",
+    "result_sha256": "9611755d1170ff6b84397abf1bf7f6405fe6074e6c2ee4c806dd3f0dd2bae8dc"
+  },
+  {
+    "question_id": "NEW-000651-2023-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2023,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 15951,
+    "seconds": 78.26500000001397,
+    "tool_queries": 0,
+    "final_reference_tokens": 4800,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        51
+      ],
+      "qualification": "Two meetings on April 28; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1"
+        ]
+      },
+      "limitations": [
+        "A1明确披露审计委员会报告期内召开会议次数为4次；其中2023-04-28对应两条审计委员会会议记录，meeting_dates按明确列示日期去重后列示3个日期，不以日期数量倒推会议次数。",
+        "A1四条审计委员会记录成员均为刘姝威、王晓华、张伟；材料未明确披露报告期内审计委员会换届或成员变更，成员取报告明确披露的并集。",
+        "仅依据格力电器2023年年度报告材料提取；R1-R5为法规材料，未用于推断或补充企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "final_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "result_sha256": "c82fed4e19f0853a35a5eee5ab57dccb95b184e20c6a30ef2d5ff893f3cada26"
+  },
+  {
+    "question_id": "NEW-000651-2023-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2023,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 5285,
+    "seconds": 33.23400000005495,
+    "tool_queries": 0,
+    "final_reference_tokens": 4800,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        51
+      ],
+      "qualification": "Two meetings on April 28; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2023-04-28",
+        "2023-04-28",
+        "2023-08-30",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1"
+        ]
+      },
+      "limitations": [
+        "仅依据年报A1中“董事会下设专门委员会在报告期内的情况”表提取；未用R1-R5法规推断企业事实。",
+        "A1未披露报告期内审计委员会换届或成员变更，成员取该表明确披露名单。",
+        "2023-04-28在审计委员会下列示两次且议案不同；meeting_dates按报告列示保留重复日期，meeting_count取自报告明确披露的“召开会议次数”4，不由日期去重倒推。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "final_context_sha256": "6b45324936396ed981db144b45addd8989b02794c428ad18f4aa0b8bffdc8534",
+    "result_sha256": "e35cae12f2d6250cdcd98c6d6154053257fcd5e4afb1ea13b3de65e9e0f81b04"
+  },
+  {
+    "question_id": "NEW-000651-2024-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2024,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4838,
+    "seconds": 14.59299999999348,
+    "tool_queries": 0,
+    "final_reference_tokens": 4713,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "physical_pages": [
+        57
+      ],
+      "qualification": "Two meetings on April 29; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A4"
+        ],
+        "meeting_count": [
+          "A4"
+        ],
+        "meeting_dates": [
+          "A4"
+        ]
+      },
+      "limitations": [
+        "报告在审计委员会项下将2024-04-29列示两次，分别对应审议年度报告相关议案和审议2024年第一季度报告；会议次数采用报告直接列示的4次，未按日期去重倒推。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "final_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "result_sha256": "7d0d950789871063e036f7c31ab03a94c3b2f7e76f070f74d487d5ba9edae6d3"
+  },
+  {
+    "question_id": "NEW-000651-2024-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2024,
+    "mode": "k3_agent3_v2",
+    "status": "failed",
+    "nonempty": false,
+    "schema_valid": false,
+    "members_f1": 0,
+    "members_precision": 0,
+    "members_recall": 0.0,
+    "count_exact": false,
+    "dates_f1": 0,
+    "dates_precision": 0,
+    "dates_recall": 0.0,
+    "three_field_exact": false,
+    "cited_ids": 0,
+    "unknown_cited_ids": 0,
+    "new_chunks": 7,
+    "calls": 3,
+    "tokens": 10342,
+    "seconds": 34.047000000136904,
+    "tool_queries": 4,
+    "final_reference_tokens": 5992,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "physical_pages": [
+        57
+      ],
+      "qualification": "Two meetings on April 29; four meetings but three unique dates."
+    },
+    "predicted": {},
+    "missing_names": [
+      "刘姝威",
+      "张伟",
+      "王晓华"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-04-29",
+      "2024-08-30",
+      "2024-10-30"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "final_context_sha256": "070e918434977d7f92eb9dacd829dddea3e4fd0e6e5cf0d3ab4db21789c8c962",
+    "result_sha256": "05a3dc1ced620fd87c0f1859b506cef40519ff300bf3114dd9fc06502af9dafc"
+  },
+  {
+    "question_id": "NEW-000651-2024-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2024,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 11,
+    "calls": 1,
+    "tokens": 6339,
+    "seconds": 28.57799999997951,
+    "tool_queries": 4,
+    "final_reference_tokens": 5910,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "physical_pages": [
+        57
+      ],
+      "qualification": "Two meetings on April 29; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A7"
+        ],
+        "meeting_count": [
+          "A7"
+        ],
+        "meeting_dates": [
+          "A7"
+        ]
+      },
+      "limitations": [
+        "材料仅在审计委员会行明确列示刘姝威、王晓华、张伟；未取得其他成员披露，不作推断。",
+        "2024-04-29在材料中对应两次审计委员会会议，日期列表按报告列示保留重复项；会议次数采用报告明确披露的4次，未按不同日期数量倒推。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "final_context_sha256": "9d8c21afb0089b3f2f57551d4c6f46f972b469db6dd5447c461545f03176e775",
+    "result_sha256": "5d2908f40b6cffda25a82c3d2a603f3f3bbe0726ccdb404173b08aa75bdb35fb"
+  },
+  {
+    "question_id": "NEW-000651-2024-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2024,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 16445,
+    "seconds": 92.14099999994505,
+    "tool_queries": 0,
+    "final_reference_tokens": 4713,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "physical_pages": [
+        57
+      ],
+      "qualification": "Two meetings on April 29; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A4"
+        ],
+        "meeting_count": [
+          "A4"
+        ],
+        "meeting_dates": [
+          "A4"
+        ]
+      },
+      "limitations": [
+        "仅依据所给材料；A4“董事会下设专门委员会在报告期内的情况”表中，审计委员会行明确列示成员为刘姝威、王晓华、张伟，召开会议次数为4。",
+        "A4同一审计委员会行下列示四个召开日期条目，其中2024-04-29出现两次；按原文保留重复日期，不按不同日期数量倒推会议次数。",
+        "所给材料未明确披露审计委员会报告期内换届或变更后的新增成员；A3中刘姝威、王晓华等董事任职状态信息不能单独证明审计委员会成员发生变更，故未扩展成员并集。",
+        "未使用R1-R5法规内容推断企业事实，也未把未取得证据解释为不存在。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "final_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "result_sha256": "97807d2d6541e415c294aaa4c95008058613696c72fa9c020543f3e7a8bf753e"
+  },
+  {
+    "question_id": "NEW-000651-2024-AUDIT",
+    "company": "格力电器",
+    "stock": "000651",
+    "year": 2024,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 5499,
+    "seconds": 52.59399999992456,
+    "tool_queries": 0,
+    "final_reference_tokens": 4713,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "physical_pages": [
+        57
+      ],
+      "qualification": "Two meetings on April 29; four meetings but three unique dates."
+    },
+    "predicted": {
+      "members": [
+        "刘姝威",
+        "王晓华",
+        "张伟"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "2024-04-29",
+        "2024-04-29",
+        "2024-08-30",
+        "2024-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A4"
+        ],
+        "meeting_count": [
+          "A4"
+        ],
+        "meeting_dates": [
+          "A4"
+        ]
+      },
+      "limitations": [
+        "仅依据所提供的格力电器2024年报节选，未核验完整年报全文。",
+        "材料未明确披露审计委员会在报告期内发生换届或成员变更，因此members仅取A4明确列示的成员。",
+        "A4中2024-04-29列示两次；meeting_count采用报告明确列示的4，未按不同日期数量去重倒推。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "final_context_sha256": "0283a9a6f2016fb0ffc79531b3330a08e7011557f4e836189160825fa3495163",
+    "result_sha256": "2effaa23fa034f7256c45f8fb2b29230143386018e22fba94571d067ec82b0e4"
+  },
+  {
+    "question_id": "NEW-000999-2023-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2023,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4562,
+    "seconds": 11.312000000034459,
+    "tool_queries": 0,
+    "final_reference_tokens": 4452,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "physical_pages": [
+        55
+      ]
+    },
+    "predicted": {
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "citations": {
+        "members": [
+          "A1",
+          "A2"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A2"
+        ]
+      },
+      "limitations": [
+        "资料A1第55页中第五次会议行因文本截断未完整显示会议内容，但其日期（2023年12月13日）及成员（刘俊勇、姚兴田、于舒天）由A2延续内容补全确认。",
+        "仅根据资料A1、A2披露内容提取，未涉及报告其他章节可能披露的审计委员会成员变更信息。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "final_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "result_sha256": "6ee3d6d3411a7f541baf7f1439b2bca1a95b8dee3e67d0286a52a8a63e2fe93c"
+  },
+  {
+    "question_id": "NEW-000999-2023-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2023,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 10,
+    "calls": 3,
+    "tokens": 17110,
+    "seconds": 85.93800000008196,
+    "tool_queries": 4,
+    "final_reference_tokens": 5809,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "physical_pages": [
+        55
+      ]
+    },
+    "predicted": {
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "citations": {
+        "members": [
+          "A1",
+          "A4"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A4"
+        ]
+      },
+      "limitations": [
+        "A1中董事会审计委员会2023年第五次会议条目在页缘处被截断，其完整会议内容由A4补足；成员与召开日期在A1、A4中一致。",
+        "所提供的年报材料未披露报告期内审计委员会成员发生换届或变更；A2披露的屠鹏飞辞职涉及董事会薪酬与考核委员会，并非审计委员会，故未计入。",
+        "会议次数5取自年报“召开会议次数”栏的明确列示，未由不同日期数量去重倒推；审计委员会5次会议对应5个不同日期。",
+        "仅依据年报材料提取，未使用R1-R8等法规推断企业事实；未取得证据的事项不作存在或不存在的推断。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "final_context_sha256": "fa2e54651ee786d0c0b515b89da8f7fe4f2f9b451cb8a7c2995536acf9bbeb24",
+    "result_sha256": "4abc439430bf3ee12d51e2d5a2e3c913447a0f3c2cc80e7b892d21f451df65df"
+  },
+  {
+    "question_id": "NEW-000999-2023-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2023,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 12,
+    "calls": 1,
+    "tokens": 6502,
+    "seconds": 23.25,
+    "tool_queries": 4,
+    "final_reference_tokens": 5985,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "physical_pages": [
+        55
+      ]
+    },
+    "predicted": {
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "citations": {
+        "members": [
+          "A4",
+          "A6"
+        ],
+        "meeting_count": [
+          "A4"
+        ],
+        "meeting_dates": [
+          "A4",
+          "A6"
+        ]
+      },
+      "limitations": [
+        "会议总次数5取自年报表格“召开会议次数”列明确披露的数值，未用日期去重倒推。",
+        "A4在第五次会议处截断，第五次会议成员与日期由A6补足；第四次会议日期在A4尾部与A6开头重复出现，仅计一次。",
+        "五次审计委员会会议披露的成员均为刘俊勇、姚兴田、于舒天，材料未显示审计委员会报告期内换届或变更；A2披露的屠鹏飞/张强变动属于薪酬与考核委员会，未计入审计委员会。",
+        "未使用R1-R9等法规推断企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "final_context_sha256": "4dee7396468f73e833c50fc7b4d2aec86fd3cf949484064b22a692e9bc9b7948",
+    "result_sha256": "17dcf71b2bb1bd589e27eabb8dcd87edd2083cfccd38630f197674d7dceeba49"
+  },
+  {
+    "question_id": "NEW-000999-2023-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2023,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 15768,
+    "seconds": 99.9539999999106,
+    "tool_queries": 0,
+    "final_reference_tokens": 4452,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "physical_pages": [
+        55
+      ]
+    },
+    "predicted": {
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "citations": {
+        "members": [
+          "A1",
+          "A2"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A2"
+        ]
+      },
+      "limitations": [
+        "仅采用年报中“董事会审计委员会”相关披露，未计入战略投资委员会、薪酬与考核委员会等其他专门委员会。",
+        "会议次数取年报表格中审计委员会对应“召开会议次数”列明确披露的5次，未由日期数量倒推；报告列示的5个会议日期与该次数一致。",
+        "A1在第55页表格末行（审计委员会第五次会议）处截断，第五次会议的成员、日期与议题由A2同表延续部分确认。",
+        "年报五次列示的审计委员会成员相同，材料未明确披露报告期内审计委员会换届或成员变更；据此取明确披露成员并集为三人，且不将未取得证据解释为不存在变更。",
+        "未依据R1-R5等法规材料推断华润三九的具体企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "final_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "result_sha256": "296231613ffdd2f81ec7456f9773a6748aed7c46437d51298518ff3aa06a4199"
+  },
+  {
+    "question_id": "NEW-000999-2023-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2023,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4690,
+    "seconds": 21.656000000075437,
+    "tool_queries": 0,
+    "final_reference_tokens": 4452,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "physical_pages": [
+        55
+      ]
+    },
+    "predicted": {
+      "members": [
+        "刘俊勇",
+        "姚兴田",
+        "于舒天"
+      ],
+      "meeting_count": 5,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27",
+        "2023-12-13"
+      ],
+      "citations": {
+        "members": [
+          "A1",
+          "A2"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A2"
+        ]
+      },
+      "limitations": [
+        "仅依据所给年报材料回答，未使用法规材料推断企业事实。",
+        "会议次数取自表格“召开会议次数”列，未按日期去重倒推。",
+        "仅计入董事会审计委员会，未计入战略投资委员会、薪酬与考核委员会等其他专门委员会。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "final_context_sha256": "fc35a55335601ff59b40746ec78c09ac7cd4aecd3f396ddac0b0021f2d1ac055",
+    "result_sha256": "84d6b149ad9e6fe77b8836073cac67d4a83a00217cc551c62631301b417789ba"
+  },
+  {
+    "question_id": "NEW-000999-2024-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2024,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": false,
+    "schema_valid": false,
+    "members_f1": 0,
+    "members_precision": 0,
+    "members_recall": 0.0,
+    "count_exact": false,
+    "dates_f1": 0,
+    "dates_precision": 0,
+    "dates_recall": 0.0,
+    "three_field_exact": false,
+    "cited_ids": 0,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 13092,
+    "seconds": 153.28100000007544,
+    "tool_queries": 0,
+    "final_reference_tokens": 5417,
+    "initial_reference_page_coverage": 0.6666666666666666,
+    "final_reference_page_coverage": 0.6666666666666666,
+    "reference": {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "members": [
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶",
+        "刘俊勇"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-03-21",
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "physical_pages": [
+        44,
+        53,
+        54
+      ],
+      "note": "Corrected after output inspection; secondary page 94 corroborates page 44. Original locked label retained for comparison."
+    },
+    "predicted": {},
+    "missing_names": [
+      "于舒天",
+      "刘俊勇",
+      "姚兴田",
+      "孙健",
+      "王轶"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-03-21",
+      "2024-04-19",
+      "2024-05-16",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-11-28"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "final_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "result_sha256": "786bcc826a1ba503a64206f9bfbf8f695c9e99aa13f8b345787881e4173b2f66"
+  },
+  {
+    "question_id": "NEW-000999-2024-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2024,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0.888888888888889,
+    "members_precision": 1.0,
+    "members_recall": 0.8,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": false,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 11,
+    "calls": 3,
+    "tokens": 17729,
+    "seconds": 70.40599999995902,
+    "tool_queries": 4,
+    "final_reference_tokens": 5966,
+    "initial_reference_page_coverage": 0.6666666666666666,
+    "final_reference_page_coverage": 0.6666666666666666,
+    "reference": {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "members": [
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶",
+        "刘俊勇"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-03-21",
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "physical_pages": [
+        44,
+        53,
+        54
+      ],
+      "note": "Corrected after output inspection; secondary page 94 corroborates page 44. Original locked label retained for comparison."
+    },
+    "predicted": {
+      "members": [
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-03-21",
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "citations": {
+        "members": [
+          "A6",
+          "A2"
+        ],
+        "meeting_count": [
+          "A6"
+        ],
+        "meeting_dates": [
+          "A6",
+          "A2"
+        ]
+      },
+      "limitations": [
+        "A6与A2为审计委员会表格的跨页片段，第二次会议的成员及日期按相邻单元格拼接读取。"
+      ]
+    },
+    "missing_names": [
+      "刘俊勇"
+    ],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "final_context_sha256": "10e6bf5adfffa0f62854b2be66bcb4bc8d7756702486eee824d91c7695039d57",
+    "result_sha256": "92faa83504d2258dd6bbd2d03da5709c5b9498bcbe9329ebce2d7af9258c8b21"
+  },
+  {
+    "question_id": "NEW-000999-2024-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2024,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 0.9090909090909091,
+    "dates_precision": 1.0,
+    "dates_recall": 0.8333333333333334,
+    "three_field_exact": false,
+    "cited_ids": 3,
+    "unknown_cited_ids": 0,
+    "new_chunks": 12,
+    "calls": 1,
+    "tokens": 8129,
+    "seconds": 70.79699999990407,
+    "tool_queries": 4,
+    "final_reference_tokens": 5896,
+    "initial_reference_page_coverage": 0.6666666666666666,
+    "final_reference_page_coverage": 0.6666666666666666,
+    "reference": {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "members": [
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶",
+        "刘俊勇"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-03-21",
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "physical_pages": [
+        44,
+        53,
+        54
+      ],
+      "note": "Corrected after output inspection; secondary page 94 corroborates page 44. Original locked label retained for comparison."
+    },
+    "predicted": {
+      "members": [
+        "刘俊勇",
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "citations": {
+        "members": [
+          "A1",
+          "A3",
+          "A6"
+        ],
+        "meeting_count": [
+          "A6"
+        ],
+        "meeting_dates": [
+          "A6"
+        ]
+      },
+      "limitations": [
+        "所提供年报片段中审计委员会会议表自“2024年第二次会议”起列示（A6），“2024年第一次会议”的召开日期未在证据中给出，故meeting_dates仅含明确列示的5个日期，不含第一次会议日期。",
+        "meeting_count依据报告对审计委员会会议的连续编号（2024年第二次至第六次会议，中间无缺号）确定为6次，并非由日期去重倒推。",
+        "A6中第二次会议参加人文字存在截断（如“兴田”前疑缺“孙健、姚”等字），成员并集主要依据A1变动披露与A6会议参加人综合确定。",
+        "于舒天未出现在A1董事监事高管变动表中，其审计委员会成员身份系依据A6在多次审计委员会会议中被列为参加人而纳入并集。",
+        "未采用任何法规（R1—R8）推断企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-03-21"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "final_context_sha256": "7408aafaf5e35ddcc27e1c5b30cddd399444c81d12c2d3f9ddabf076adb97212",
+    "result_sha256": "3d933993c945aeb8240ead3bc780913adedf6e43a574cd955b2ab7b8de6762a8"
+  },
+  {
+    "question_id": "NEW-000999-2024-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2024,
+    "mode": "k3_refine3",
+    "status": "failed",
+    "nonempty": false,
+    "schema_valid": false,
+    "members_f1": 0,
+    "members_precision": 0,
+    "members_recall": 0.0,
+    "count_exact": false,
+    "dates_f1": 0,
+    "dates_precision": 0,
+    "dates_recall": 0.0,
+    "three_field_exact": false,
+    "cited_ids": 0,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 2,
+    "tokens": 18403,
+    "seconds": 239.73499999998603,
+    "tool_queries": 0,
+    "final_reference_tokens": 5417,
+    "initial_reference_page_coverage": 0.6666666666666666,
+    "final_reference_page_coverage": 0.6666666666666666,
+    "reference": {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "members": [
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶",
+        "刘俊勇"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-03-21",
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "physical_pages": [
+        44,
+        53,
+        54
+      ],
+      "note": "Corrected after output inspection; secondary page 94 corroborates page 44. Original locked label retained for comparison."
+    },
+    "predicted": {},
+    "missing_names": [
+      "于舒天",
+      "刘俊勇",
+      "姚兴田",
+      "孙健",
+      "王轶"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-03-21",
+      "2024-04-19",
+      "2024-05-16",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-11-28"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "final_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "result_sha256": "adaa89edc9c0df1b4e6d75a141823938735d14df10fb1447ea8f9c8535753038"
+  },
+  {
+    "question_id": "NEW-000999-2024-AUDIT",
+    "company": "华润三九",
+    "stock": "000999",
+    "year": 2024,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0.888888888888889,
+    "members_precision": 1.0,
+    "members_recall": 0.8,
+    "count_exact": true,
+    "dates_f1": 0.9090909090909091,
+    "dates_precision": 1.0,
+    "dates_recall": 0.8333333333333334,
+    "three_field_exact": false,
+    "cited_ids": 3,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 7797,
+    "seconds": 89.68700000003446,
+    "tool_queries": 0,
+    "final_reference_tokens": 5417,
+    "initial_reference_page_coverage": 0.6666666666666666,
+    "final_reference_page_coverage": 0.6666666666666666,
+    "reference": {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "members": [
+        "孙健",
+        "姚兴田",
+        "于舒天",
+        "王轶",
+        "刘俊勇"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-03-21",
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "physical_pages": [
+        44,
+        53,
+        54
+      ],
+      "note": "Corrected after output inspection; secondary page 94 corroborates page 44. Original locked label retained for comparison."
+    },
+    "predicted": {
+      "members": [
+        "姚兴田",
+        "于舒天",
+        "孙健",
+        "王轶"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-04-19",
+        "2024-05-16",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-11-28"
+      ],
+      "citations": {
+        "members": [
+          "A2",
+          "A5"
+        ],
+        "meeting_count": [
+          "A2",
+          "A4"
+        ],
+        "meeting_dates": [
+          "A2"
+        ]
+      },
+      "limitations": [
+        "所给年报摘录在审计委员会表格跨页处缺少第一次会议整行及“召开会议次数”单元格原文；会议次数依据摘录中审计委员会第二次至第六次会议的明确序号及A4在第六次后转入其他委员会确定，未按日期去重倒推。",
+        "第二次会议成员栏在摘录中仅完整显示“兴田、于舒天”片段，其中“兴田”按同报告A5姓名表还原为姚兴田；若严格只按可见字符，姚兴田为被截断披露。",
+        "第一次审计委员会会议日期及成员未在证据中出现，因此meeting_dates少于meeting_count；未用R1-R5法规推断企业事实。"
+      ]
+    },
+    "missing_names": [
+      "刘俊勇"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-03-21"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "final_context_sha256": "e13cc1e9b0cb3c844d4ce4e2612ae595b87480067b5df191332633bd2fc80c96",
+    "result_sha256": "bc580f0ff7b6a758f322a6b84a8a7aa8ede7c469b09635bfddabbb94e6eb5f0d"
+  },
+  {
+    "question_id": "NEW-600036-2023-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2023,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4871,
+    "seconds": 12.547000000020489,
+    "tool_queries": 0,
+    "final_reference_tokens": 4669,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ]
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "citations": {
+        "members": [
+          "A3"
+        ],
+        "meeting_count": [
+          "A3"
+        ],
+        "meeting_dates": [
+          "A3"
+        ]
+      },
+      "limitations": [
+        "成员按年报披露的截至报告期末审计委员会组成列示；所给材料未明确披露报告期内审计委员会成员变更。",
+        "年报所列会议日期仅给出月、日，日期年份依据2023年度报告语境补全为2023年。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "final_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "result_sha256": "dfcd783da8158843e47ef7655ae1b8f0a983750be0c4560c1672df91e261df74"
+  },
+  {
+    "question_id": "NEW-600036-2023-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2023,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0,
+    "members_precision": 0,
+    "members_recall": 0.0,
+    "count_exact": false,
+    "dates_f1": 0,
+    "dates_precision": 0,
+    "dates_recall": 0.0,
+    "three_field_exact": false,
+    "cited_ids": 3,
+    "unknown_cited_ids": 0,
+    "new_chunks": 9,
+    "calls": 3,
+    "tokens": 18319,
+    "seconds": 102.26500000001397,
+    "tool_queries": 4,
+    "final_reference_tokens": 5849,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 0.0,
+    "reference": {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ]
+    },
+    "predicted": {
+      "members": [],
+      "meeting_count": null,
+      "meeting_dates": [],
+      "citations": {
+        "members": [
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "meeting_count": [
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "meeting_dates": [
+          "A3",
+          "A4"
+        ]
+      },
+      "limitations": [
+        "所提供材料仅证明董事会审计委员会存在（A2架构图）、其年报编制审议职责（A3）及已审阅2023年度报告（A4），但未明确披露审计委员会成员名单。",
+        "A2仅披露董事会专门委员会会议合计41次，未单列审计委员会次数，不能据此拆分或推断；A3、A4亦未给出审计委员会全年会议总次数。",
+        "材料未明确列示审计委员会任何会议日期；A3仅描述年报工作职责流程，未对应具体会议日期。",
+        "可能载有审计委员会专节的年报页面（如PDF物理第97页/年报第96页附近）未在证据中提供；A6在风险与资本管理委员会处截断，无法据此确认审计委员会信息。",
+        "未将监事会监督委员会（A1）或其他专门委员会计入审计委员会；未使用法规材料（R1-R7）推断企业事实。"
+      ]
+    },
+    "missing_names": [
+      "史永东",
+      "周松",
+      "李孟刚",
+      "王仕雄",
+      "田宏启"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2023-03-09",
+      "2023-03-20",
+      "2023-04-24",
+      "2023-05-18",
+      "2023-07-11",
+      "2023-08-21",
+      "2023-09-18",
+      "2023-10-24"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "final_context_sha256": "031b3f28c2e6adcd5801494f1d7874510a48f00d5fb4f6b6f9b1c9da5e9b91bb",
+    "result_sha256": "f72b08496e69697a4a290912bb0763e6ef0ed7bb23d4d37942ee682a4dadb667"
+  },
+  {
+    "question_id": "NEW-600036-2023-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2023,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0,
+    "members_precision": 0,
+    "members_recall": 0.0,
+    "count_exact": false,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": false,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 13,
+    "calls": 1,
+    "tokens": 6941,
+    "seconds": 50.375,
+    "tool_queries": 4,
+    "final_reference_tokens": 5901,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 0.5,
+    "reference": {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ]
+    },
+    "predicted": {
+      "members": [],
+      "meeting_count": null,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "citations": {
+        "members": [],
+        "meeting_count": [],
+        "meeting_dates": [
+          "A7"
+        ]
+      },
+      "limitations": [
+        "所提供材料未包含董事会审计委员会成员名单的明确披露；A1/A2/A4仅为董事、监事个人简历，A5仅提及监事会监督委员会成员列席审计委员会会议（非审计委员会成员），故members为空列表。",
+        "A7中审计委员会会议列举起始句被截断（从“第四次会议”开始），“2023年审计委员会共召开N次会议”的总次数及第一、二、三次会议日期不在所提供材料中，故meeting_count为null，且会议日期列表可能不完整（仅含第四次至第十一次会议）。",
+        "所列日期原文仅含月日（如“3月9日”），年份2023系根据该段处于2023年度报告报告期内专门委员会运作披露语境推定；材料未提供该句完整开头以直接确认年份。",
+        "法规类材料（R1–R8）未用于推断企业事实，仅作背景，不作为任何字段的来源。"
+      ]
+    },
+    "missing_names": [
+      "史永东",
+      "周松",
+      "李孟刚",
+      "王仕雄",
+      "田宏启"
+    ],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "final_context_sha256": "555afeeb0f2e81bb1be60f4cb038a27844a9ce76f13407c3be6323bf85cf7e56",
+    "result_sha256": "05ca20ccfc9e71c16eea53b471acaf2ffb7010e6ecfd5cb0e931c917c896b08b"
+  },
+  {
+    "question_id": "NEW-600036-2023-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2023,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 18357,
+    "seconds": 106.7809999998426,
+    "tool_queries": 0,
+    "final_reference_tokens": 4669,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ]
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "citations": {
+        "members": [
+          "A3"
+        ],
+        "meeting_count": [
+          "A3"
+        ],
+        "meeting_dates": [
+          "A3"
+        ]
+      },
+      "limitations": [
+        "成员名单仅以A3明确披露的“截至报告期末，审计委员会……成员包括……”为准；材料未明确披露报告期内审计委员会发生换届或成员变更，因此不推断存在或不存在变更，也不扩展到明确披露之外的人员。A1出席表仅作为印证：田宏启、王仕雄、李孟刚、史永东、周松在审计委员会列均为8/8，但不作为独立成员名单来源。会议次数直接采用A3“召开了8次会议”的明确表述，未用日期数量倒推；8个会议日期均来自A3同一段落，并按2023年标准化为YYYY-MM-DD。3月9日“第四次会议暨独立董事年报工作会议”被A3明确列入董事会审计委员会8次会议之内，故计入；未计入风险与资本管理委员会、监事会专门委员会、董事会或股东大会等其他会议。未使用R1-R5法规条款推断企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "final_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "result_sha256": "c1514634d9100f2beb312d6e15e6ab452bc5b4744ce2c35468d25cad6103d18b"
+  },
+  {
+    "question_id": "NEW-600036-2023-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2023,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 5742,
+    "seconds": 35.5,
+    "tool_queries": 0,
+    "final_reference_tokens": 4669,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ]
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松"
+      ],
+      "meeting_count": 8,
+      "meeting_dates": [
+        "2023-03-09",
+        "2023-03-20",
+        "2023-04-24",
+        "2023-05-18",
+        "2023-07-11",
+        "2023-08-21",
+        "2023-09-18",
+        "2023-10-24"
+      ],
+      "citations": {
+        "members": [
+          "A3"
+        ],
+        "meeting_count": [
+          "A3"
+        ],
+        "meeting_dates": [
+          "A3"
+        ]
+      },
+      "limitations": [
+        "成员口径采用年报A3明确披露的“截至报告期末”审计委员会成员；A3未逐项披露报告期内是否发生换届或变更及变更前成员名单。",
+        "A1出席表仅显示上述5名董事在审计委员会列为8/8，未显示其他董事出席审计委员会；本结果不据此推断报告期内绝无成员变更，仅取报告明确披露信息。",
+        "会议次数采用A3明确披露的“召开了8次会议”，未用日期数量倒推；A3列示的8个会议日期与披露次数一致。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "final_context_sha256": "249a655faab554d6214ae9fad48af7ff37ee4694d759cdbb82a8a70812c4a17d",
+    "result_sha256": "b2b663e1e6736ecccf52c2ea94da97ec64ac49bac5c0b8d72d53f5f5c1e653ae"
+  },
+  {
+    "question_id": "NEW-600036-2024-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2024,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0.9090909090909091,
+    "members_precision": 1.0,
+    "members_recall": 0.8333333333333334,
+    "count_exact": true,
+    "dates_f1": 0.7142857142857143,
+    "dates_precision": 1.0,
+    "dates_recall": 0.5555555555555556,
+    "three_field_exact": false,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 5870,
+    "seconds": 33.421999999904074,
+    "tool_queries": 0,
+    "final_reference_tokens": 4780,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松",
+        "李健"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14",
+        "2024-05-23",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-12-18"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ],
+      "qualification": "Year-end roster has four names. Period-union reference also includes 王仕雄 and 周松 based on audit committee attendance column on physical page 93."
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "李孟刚",
+        "史永东",
+        "李健",
+        "王仕雄"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14"
+      ],
+      "citations": {
+        "members": [
+          "A3",
+          "A1"
+        ],
+        "meeting_count": [
+          "A3"
+        ],
+        "meeting_dates": [
+          "A3"
+        ]
+      },
+      "limitations": [
+        "成员按报告明确披露的并集提取：A3披露截至报告期末审计委员会成员为田宏启、李孟刚、史永东、李健；A1出席表显示王仕雄（已离任）报告期内审计委员会出席8/8、李健出席1/1，提示报告期内发生变更，故将王仕雄并入并集。",
+        "A3明确列示2024年审计委员会召开9次会议；但所给材料中该次会议日期清单在“第十六次会议（5月14日”处截断，仅能确认前5个日期，未据9次倒推补齐其余日期。",
+        "仅依据提供材料回答，未使用法规推断企业事实。"
+      ]
+    },
+    "missing_names": [
+      "周松"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-05-23",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-12-18"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "final_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "result_sha256": "815b26a35016bd6fe0324240201b784e07143f2110122920e0360d20df30db71"
+  },
+  {
+    "question_id": "NEW-600036-2024-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2024,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 0.7142857142857143,
+    "dates_precision": 1.0,
+    "dates_recall": 0.5555555555555556,
+    "three_field_exact": false,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 9,
+    "calls": 3,
+    "tokens": 18307,
+    "seconds": 84.81199999980163,
+    "tool_queries": 4,
+    "final_reference_tokens": 5960,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松",
+        "李健"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14",
+        "2024-05-23",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-12-18"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ],
+      "qualification": "Year-end roster has four names. Period-union reference also includes 王仕雄 and 周松 based on audit committee attendance column on physical page 93."
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "李孟刚",
+        "史永东",
+        "李健",
+        "周松",
+        "王仕雄"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14"
+      ],
+      "citations": {
+        "members": [
+          "A6",
+          "A2"
+        ],
+        "meeting_count": [
+          "A6"
+        ],
+        "meeting_dates": [
+          "A6"
+        ]
+      },
+      "limitations": [
+        "A6仅明确列示期末在任成员（田宏启、李孟刚、史永东、李健）；周松、王仕雄系依据A2董事出席表中审计委员会出席记录（3/6、8/8）并标注“已离任”并入并集，报告未单列其任期起止。",
+        "A6文本在列举审计委员会会议日期时于“第十六次会议（5月14日”处截断，9次会议仅前5个日期可见，其余4次会议日期未在所提供材料中披露，故meeting_dates少于meeting_count，未据次数或法规补全。",
+        "未采用R1-R8等法规推断成员人数、会议频次或日期；法规仅作背景，不作为企业事实来源。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-05-23",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-12-18"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "final_context_sha256": "7b46babc43f5e216e16901bbd4d760678a917366368533d0e8b8e7b8fb0da596",
+    "result_sha256": "71e7b3b883b7ed8a2bbc82a52b09a3ca607df622a921a21f599ee45d2fc257d7"
+  },
+  {
+    "question_id": "NEW-600036-2024-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2024,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0.8,
+    "members_precision": 1.0,
+    "members_recall": 0.6666666666666666,
+    "count_exact": true,
+    "dates_f1": 0.7142857142857143,
+    "dates_precision": 1.0,
+    "dates_recall": 0.5555555555555556,
+    "three_field_exact": false,
+    "cited_ids": 1,
+    "unknown_cited_ids": 0,
+    "new_chunks": 12,
+    "calls": 1,
+    "tokens": 6477,
+    "seconds": 33.125,
+    "tool_queries": 4,
+    "final_reference_tokens": 5840,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 0.5,
+    "reference": {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松",
+        "李健"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14",
+        "2024-05-23",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-12-18"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ],
+      "qualification": "Year-end roster has four names. Period-union reference also includes 王仕雄 and 周松 based on audit committee attendance column on physical page 93."
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "李孟刚",
+        "史永东",
+        "李健"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14"
+      ],
+      "citations": {
+        "members": [
+          "A7"
+        ],
+        "meeting_count": [
+          "A7"
+        ],
+        "meeting_dates": [
+          "A7"
+        ]
+      },
+      "limitations": [
+        "证据A7在列举审计委员会会议日期时于“第十六次会议（5月14日”处截断，后4次会议日期未在所提供材料中显示",
+        "成员仅见“截至报告期末”披露，未见期间换届或变更的明确披露",
+        "会议次数按报告明确披露的9次列示，未依据日期数量倒推"
+      ]
+    },
+    "missing_names": [
+      "周松",
+      "王仕雄"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-05-23",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-12-18"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "final_context_sha256": "32198ed03c5066d89345eda07b03082da11c25a33f8ffe6af056438ee78e557b",
+    "result_sha256": "64cd4754b621c85cb8fe925375dac84fbe64f4709084a0ddbc563deddb4569b4"
+  },
+  {
+    "question_id": "NEW-600036-2024-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2024,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0.9090909090909091,
+    "members_precision": 1.0,
+    "members_recall": 0.8333333333333334,
+    "count_exact": true,
+    "dates_f1": 0.7142857142857143,
+    "dates_precision": 1.0,
+    "dates_recall": 0.5555555555555556,
+    "three_field_exact": false,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 18084,
+    "seconds": 93.71999999997206,
+    "tool_queries": 0,
+    "final_reference_tokens": 4780,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松",
+        "李健"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14",
+        "2024-05-23",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-12-18"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ],
+      "qualification": "Year-end roster has four names. Period-union reference also includes 王仕雄 and 周松 based on audit committee attendance column on physical page 93."
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "李孟刚",
+        "史永东",
+        "李健",
+        "王仕雄"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14"
+      ],
+      "citations": {
+        "members": [
+          "A3",
+          "A1"
+        ],
+        "meeting_count": [
+          "A3"
+        ],
+        "meeting_dates": [
+          "A3"
+        ]
+      },
+      "limitations": [
+        "A3明确披露截至报告期末审计委员会成员为田宏启（主任委员）、李孟刚、史永东、李健；A1董事出席表在“审计委员会”列另列示已离任王仕雄出席8/8，故按报告期内明确披露并集纳入。",
+        "A1中朱江涛的5/5位于关联交易管理与消费者权益保护委员会列，周松的3/6位于风险与资本管理委员会列，均未计入审计委员会成员。",
+        "A3明确披露2024年董事会审计委员会召开9次会议；所给A3文本对会议日期的列示在第十六次会议（5月14日）处截断，仅能提供5个明确日期，其余4次会议日期未在证据中出现。",
+        "未据会议总次数9或已列日期数量反推、补齐或去重推导会议次数；仅统计董事会审计委员会，未计入风险与资本管理委员会、关联交易管理与消费者权益保护委员会等其他专门委员会。"
+      ]
+    },
+    "missing_names": [
+      "周松"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-05-23",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-12-18"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "final_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "result_sha256": "0f26611ab1226993d1f440f0b533baf7ea57f51df1ae15545d47663e4feb5c16"
+  },
+  {
+    "question_id": "NEW-600036-2024-AUDIT",
+    "company": "招商银行",
+    "stock": "600036",
+    "year": 2024,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 0.9090909090909091,
+    "members_precision": 1.0,
+    "members_recall": 0.8333333333333334,
+    "count_exact": true,
+    "dates_f1": 0.7142857142857143,
+    "dates_precision": 1.0,
+    "dates_recall": 0.5555555555555556,
+    "three_field_exact": false,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 6740,
+    "seconds": 61.79700000002049,
+    "tool_queries": 0,
+    "final_reference_tokens": 4780,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "members": [
+        "田宏启",
+        "王仕雄",
+        "李孟刚",
+        "史永东",
+        "周松",
+        "李健"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14",
+        "2024-05-23",
+        "2024-08-22",
+        "2024-10-25",
+        "2024-12-18"
+      ],
+      "physical_pages": [
+        93,
+        97
+      ],
+      "qualification": "Year-end roster has four names. Period-union reference also includes 王仕雄 and 周松 based on audit committee attendance column on physical page 93."
+    },
+    "predicted": {
+      "members": [
+        "田宏启",
+        "李孟刚",
+        "史永东",
+        "李健",
+        "王仕雄"
+      ],
+      "meeting_count": 9,
+      "meeting_dates": [
+        "2024-03-12",
+        "2024-03-19",
+        "2024-04-03",
+        "2024-04-25",
+        "2024-05-14"
+      ],
+      "citations": {
+        "members": [
+          "A1",
+          "A3"
+        ],
+        "meeting_count": [
+          "A3"
+        ],
+        "meeting_dates": [
+          "A3"
+        ]
+      },
+      "limitations": [
+        "A3明确截至报告期末审计委员会成员为田宏启（主任委员）、李孟刚、史永东、李健；A1出席表显示王仕雄（已离任）报告期内审计委员会出席8/8，故按报告明确披露的并集纳入王仕雄。",
+        "A3明确记载2024年审计委员会召开9次会议，但所给文本在“第十六次会议（5月14日”处截断，第6至第9次会议日期未在证据中列示，因此meeting_dates仅列报告明确披露的5个日期，未据9次倒推或编造其余日期。",
+        "会议日期年份按2024年年度报告报告期确定为2024年；未使用R1—R5法规推断企业事实。"
+      ]
+    },
+    "missing_names": [
+      "周松"
+    ],
+    "extra_names": [],
+    "missing_dates": [
+      "2024-05-23",
+      "2024-08-22",
+      "2024-10-25",
+      "2024-12-18"
+    ],
+    "extra_dates": [],
+    "initial_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "final_context_sha256": "f0c055517b639b09695673fc2043b3b035b9122e57f19e8133eac43dc836affe",
+    "result_sha256": "a1c9a225b531b21666c1ef00cd11fd04041e27348ac97697f7696500d9fc6dab"
+  },
+  {
+    "question_id": "NEW-603288-2023-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2023,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4719,
+    "seconds": 15.60999999998603,
+    "tool_queries": 0,
+    "final_reference_tokens": 4116,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        38,
+        39
+      ]
+    },
+    "predicted": {
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "成员仅取A1明确列示的审计委员会名单；A2只显示董事会审议过《关于调整第五届董事会审计委员会成员的议案》，未在所给材料中披露调整后的审计委员会成员具体姓名，故未据此增删成员。",
+        "会议次数直接采用A1披露的“报告期内审计委员会召开3次会议”，未按会议日期去重倒推。",
+        "仅依据所提供的年报摘录页回答，未核验原始PDF全文与其他专门委员会信息。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "final_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "result_sha256": "7766858a8a4fc4595ea7ebdd1df862344b343bc2e82f2a2a539b9354f44e0bb0"
+  },
+  {
+    "question_id": "NEW-603288-2023-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2023,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 6,
+    "calls": 3,
+    "tokens": 15859,
+    "seconds": 85.7029999998631,
+    "tool_queries": 4,
+    "final_reference_tokens": 5061,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        38,
+        39
+      ]
+    },
+    "predicted": {
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A2"
+        ],
+        "meeting_count": [
+          "A2"
+        ],
+        "meeting_dates": [
+          "A2",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "members取自A2“董事会下设专门委员会成员情况”表对审计委员会成员的明确列示；A1仅显示董事会曾审议“关于调整董事会专门委员会委员的议案”“关于调整第五届董事会审计委员会成员的议案”，但所给材料未披露调整前后具体成员名单，故无法形成并集外的其他姓名，也不能据此推断是否实际发生变更。",
+        "meeting_count按A2明确披露“报告期内审计委员会召开3次会议”填列，未由meeting_dates去重倒推。",
+        "仅统计审计委员会，已排除A3中薪酬与考核委员会、战略委员会的会议；法规类材料（R1-R11）未用于推断企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "final_context_sha256": "0832f24f05d9e1bad660718c3a27977eb810842ac87c14b009c7fb17c05808d4",
+    "result_sha256": "24cef87dcc7882442cce8e4ac97de9e2a4101513f4d474cd80a1b133ab3be7b3"
+  },
+  {
+    "question_id": "NEW-603288-2023-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2023,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 10,
+    "calls": 1,
+    "tokens": 5882,
+    "seconds": 19.68799999996554,
+    "tool_queries": 4,
+    "final_reference_tokens": 5844,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        38,
+        39
+      ]
+    },
+    "predicted": {
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A2"
+        ],
+        "meeting_count": [
+          "A2"
+        ],
+        "meeting_dates": [
+          "A2",
+          "A5"
+        ]
+      },
+      "limitations": [
+        "仅依据所提供的年报片段回答，未核验完整年报及其他公告。",
+        "成员名单取自A2对审计委员会成员的明确列示；所供片段未显示报告期内审计委员会换届或成员变更的明确披露，因此未另行扩充并集。",
+        "会议次数采用A2明确披露的“召开3次会议”，未由日期去重倒推。",
+        "会议日期中第一次来自A2，第二、三次来自A5；原始中文日期已转换为YYYY-MM-DD。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "final_context_sha256": "6af9ccbc67bc2b07e532f66282bf7b23d9bd379f1af063d68fe87d2c7623f41d",
+    "result_sha256": "bd36f6aa7d4a575371080810ae7967d80d2ce40eadbbdbf69b71dec5d67d3143"
+  },
+  {
+    "question_id": "NEW-603288-2023-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2023,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 14400,
+    "seconds": 67.35899999993853,
+    "tool_queries": 0,
+    "final_reference_tokens": 4116,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        38,
+        39
+      ]
+    },
+    "predicted": {
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "A2、A5仅显示董事会曾审议“调整董事会专门委员会委员/第五届董事会审计委员会成员”的议案，但证据未披露调整前后审计委员会具体进出人员、生效时点或新名单；因此不能据议案推断变更，也不能把未披露解释为未变更，members仅取A1明确披露名单。",
+        "A1未明确说明该成员表是期初、期末还是调整后口径；在缺少变更明细的情况下，无法构建报告明确披露的期间并集，只能采用A1该表列示成员。",
+        "R1-R5为法规材料，未用于推断海天味业审计委员会成员、会议次数或日期等企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "final_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "result_sha256": "0614d6c7463ae2f6d1fda03c78d0190ab969d42588cc90e15ac8f6b29fa53b62"
+  },
+  {
+    "question_id": "NEW-603288-2023-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2023,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 5633,
+    "seconds": 50.64100000006147,
+    "tool_queries": 0,
+    "final_reference_tokens": 4116,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "physical_pages": [
+        38,
+        39
+      ]
+    },
+    "predicted": {
+      "members": [
+        "沈洪涛",
+        "徐家力",
+        "孙远明",
+        "陈军阳",
+        "文志州"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "2023-04-14",
+        "2023-08-18",
+        "2023-10-30"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "A2显示第五届董事会第三次会议（2023-04-25）审议过《关于调整董事会专门委员会委员的议案》、第五次会议（2023-10-30）审议过《关于调整第五届董事会审计委员会成员的议案》，但所给材料未披露上述调整涉及的具体进出人员及调整后名单；故members仅采用A1明确列示的审计委员会成员，无法据此构造报告期内完整的变更并集。",
+        "所给材料未列示各次审计委员会会议的出席委员名单，无法核验每次会议的实际参会成员；未将法规材料（R1-R5）用于推断企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "final_context_sha256": "75d47b3bc2511e83407f0f8fb912162de3bdc9c1549a182824cb399f66038c11",
+    "result_sha256": "2c9b39cc663acdf917c51f0f03f583c52fee94b4939da62e49e88afd6a8dfaca"
+  },
+  {
+    "question_id": "NEW-603288-2024-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2024,
+    "mode": "k28_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4649,
+    "seconds": 15.421999999904074,
+    "tool_queries": 0,
+    "final_reference_tokens": 4405,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "physical_pages": [
+        42,
+        43
+      ],
+      "qualification": "Only explicitly tabulated current committee roster is a definitive reference. Earlier directors are listed elsewhere without a committee-specific roster; no membership inferred from prior-year report. Member metric is extraction of disclosed linkage, not certification of exhaustive real tenure."
+    },
+    "predicted": {
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "A1列示的是年报“董事会下设专门委员会成员情况”中的审计委员会成员表；所给材料未另行披露报告期内各任审计委员会成员的任期起止，因此仅取该表明确列出的成员并集。",
+        "会议次数按A1明确陈述的“报告期内审计委员会召开6次会议”记录，不按日期数量倒推。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "final_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "result_sha256": "c4b10c50a3542439600a573b383609b7ec7b0d3f9b5155715777c88ba9988119"
+  },
+  {
+    "question_id": "NEW-603288-2024-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2024,
+    "mode": "k3_agent3_v2",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 10,
+    "calls": 3,
+    "tokens": 17229,
+    "seconds": 100.78100000007544,
+    "tool_queries": 4,
+    "final_reference_tokens": 5967,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "physical_pages": [
+        42,
+        43
+      ],
+      "qualification": "Only explicitly tabulated current committee roster is a definitive reference. Earlier directors are listed elsewhere without a committee-specific roster; no membership inferred from prior-year report. Member metric is extraction of disclosed linkage, not certification of exhaustive real tenure."
+    },
+    "predicted": {
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "报告仅明确列示一组审计委员会成员名单（屈文洲（召集人）、张科春、丁邦清、文志州、廖长辉）；报告期内公司发生董事会换届（第五届、第六届董事会审计委员会均曾召开会议），但所给材料未单独披露换届前第五届审计委员会的成员构成，无法取得更大范围的并集，亦不能据此推断换届前后成员是否一致。",
+        "2024-09-19会议日期由跨页拼接确认：A1页末载有'2024年9'及'第六届董事会'，A3页首续载'月19日 审计委员会第一次会议'。",
+        "会议次数6次取自报告明确披露，未根据日期数量倒推；本材料中6个日期与6次会议恰好一一对应。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "final_context_sha256": "9c26caa8e37a0868b89f32f96b2f1063572343ec86ea9c6d6b59996ece6195fc",
+    "result_sha256": "b9af8b7bbf2ad593836fd4dd35663062f67f07ce705beb2a9f3883687b2cf5c9"
+  },
+  {
+    "question_id": "NEW-603288-2024-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2024,
+    "mode": "k3_fixed_expand",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 8,
+    "calls": 1,
+    "tokens": 6453,
+    "seconds": 57.35999999998603,
+    "tool_queries": 4,
+    "final_reference_tokens": 5949,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "physical_pages": [
+        42,
+        43
+      ],
+      "qualification": "Only explicitly tabulated current committee roster is a definitive reference. Earlier directors are listed elsewhere without a committee-specific roster; no membership inferred from prior-year report. Member metric is extraction of disclosed linkage, not certification of exhaustive real tenure."
+    },
+    "predicted": {
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "citations": {
+        "members": [
+          "A5"
+        ],
+        "meeting_count": [
+          "A5"
+        ],
+        "meeting_dates": [
+          "A5",
+          "A4"
+        ]
+      },
+      "limitations": [
+        "所给材料仅明确披露一组审计委员会成员名单（屈文洲召集人、张科春、丁邦清、文志州、廖长辉），未明确列示换届前第五届审计委员会成员，故未作并集推断。",
+        "2024-09-19 第六届董事会审计委员会第一次会议的日期在材料中跨PDF物理第42页末至第43页初（A5末段与A4首段拼接）确认。",
+        "会议次数6次取自报告明确披露的“报告期内审计委员会召开6次会议”，未依据日期去重倒推；未使用法规推断企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "final_context_sha256": "c63cadf2c7e1b66f24de7ee80d05bc588f49a6fd9c6d0769f314aa2f599a3f67",
+    "result_sha256": "0e129b64feba9f0b44cd1f809942b408fa9edd04bed40478afd1a92812172a6e"
+  },
+  {
+    "question_id": "NEW-603288-2024-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2024,
+    "mode": "k3_refine3",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 3,
+    "tokens": 14881,
+    "seconds": 56.70299999997951,
+    "tool_queries": 0,
+    "final_reference_tokens": 4405,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "physical_pages": [
+        42,
+        43
+      ],
+      "qualification": "Only explicitly tabulated current committee roster is a definitive reference. Earlier directors are listed elsewhere without a committee-specific roster; no membership inferred from prior-year report. Member metric is extraction of disclosed linkage, not certification of exhaustive real tenure."
+    },
+    "predicted": {
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "成员名单仅取自年报“董事会下设专门委员会成员情况”表（A1）明确列示的审计委员会成员；该表未在材料中标注其适用时点，材料虽显示报告期内发生董事会换届（A2、A3、A4），但未单独明确披露换届前第五届审计委员会完整成员名单，因此不能据现有材料确认报告期并集是否还包含其他离任成员，未用法规或董事名单推断。",
+        "2024-09-19该次审计委员会会议日期在证据中跨页拆分：A1末行仅见“2024年9”，A3续见“月19日 第六届董事会审计委员会第一次会议”，按两页连续内容拼合确认。",
+        "meeting_count为6直接取自A1“报告期内审计委员会召开6次会议”的明确披露，未按日期数量去重或倒推；所列6个不同日期与披露次数一致。",
+        "R1-R5为法规类材料，未用于推断海天味业审计委员会成员、会议次数或会议日期等企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "final_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "result_sha256": "9fed648f68768abdffdc01a5544d002a05d29bca35c8a266148410703b82b979"
+  },
+  {
+    "question_id": "NEW-603288-2024-AUDIT",
+    "company": "海天味业",
+    "stock": "603288",
+    "year": 2024,
+    "mode": "k3_single",
+    "status": "completed",
+    "nonempty": true,
+    "schema_valid": true,
+    "members_f1": 1.0,
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "count_exact": true,
+    "dates_f1": 1.0,
+    "dates_precision": 1.0,
+    "dates_recall": 1.0,
+    "three_field_exact": true,
+    "cited_ids": 2,
+    "unknown_cited_ids": 0,
+    "new_chunks": 0,
+    "calls": 1,
+    "tokens": 4544,
+    "seconds": 18.094000000040978,
+    "tool_queries": 0,
+    "final_reference_tokens": 4405,
+    "initial_reference_page_coverage": 1.0,
+    "final_reference_page_coverage": 1.0,
+    "reference": {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "physical_pages": [
+        42,
+        43
+      ],
+      "qualification": "Only explicitly tabulated current committee roster is a definitive reference. Earlier directors are listed elsewhere without a committee-specific roster; no membership inferred from prior-year report. Member metric is extraction of disclosed linkage, not certification of exhaustive real tenure."
+    },
+    "predicted": {
+      "members": [
+        "屈文洲",
+        "张科春",
+        "丁邦清",
+        "文志州",
+        "廖长辉"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "2024-01-05",
+        "2024-04-15",
+        "2024-08-19",
+        "2024-09-19",
+        "2024-10-18",
+        "2024-12-06"
+      ],
+      "citations": {
+        "members": [
+          "A1"
+        ],
+        "meeting_count": [
+          "A1"
+        ],
+        "meeting_dates": [
+          "A1",
+          "A3"
+        ]
+      },
+      "limitations": [
+        "A1披露的成员名单为报告披露时点的审计委员会成员（对应第六届董事会），报告期间存在董事会换届（2024年9月），且2024年12月6日提名委员会审议了《关于调整公司董事会专门委员会组成人员的议案》（A3），但换届前第五届审计委员会的具体成员名单未在材料中明确披露，故无法取得报告明确披露的换届前后成员并集，members仅为A1明确列示的名单。",
+        "A1明确披露审计委员会全年召开6次会议，所列6个日期与6次会议一一对应，未据日期去重倒推会议次数。",
+        "法规材料（R1-R5）仅作背景，未用于推断审计委员会成员、会议次数或日期等企业事实。"
+      ]
+    },
+    "missing_names": [],
+    "extra_names": [],
+    "missing_dates": [],
+    "extra_dates": [],
+    "initial_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "final_context_sha256": "e8886365f6afcff17d7f3ec11b569c80c9a87d772d635a02badc136ebaa527a1",
+    "result_sha256": "b46d6509802ef0085bcd6bc9ac05d193f16a41660ac8ddbb146ca24f282609c9"
+  }
+]

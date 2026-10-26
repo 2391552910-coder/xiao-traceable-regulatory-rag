@@ -1,0 +1,8 @@
+{
+  "local_completed_answers": 0,
+  "original_float32": "Load failed with Windows OSError 1455 before generation",
+  "llama_b11669": "Startup access violation 3221225477 before model load",
+  "llama_b6000": "Startup access violation 3221225477; generic backend isolation also failed",
+  "bfloat16": "Process exited with code 1 before QWEN_LOADED and before any saved output; no Python exception receipt, cause not established",
+  "interpretation": "Cross-family inference not completed; no model quality score assigned; downloaded checkpoints are not experimental answers"
+}
