@@ -1,0 +1,347 @@
+{
+  "created_utc": "2026-10-27T03:21:23.565603+00:00",
+  "implementation_files": [
+    {
+      "path": "src/generation/evidence_budget.py",
+      "sha256": "0522ffbb8335aa91803be959eb5a2451a3a692e84e651d1ac6bd059365782d47",
+      "bytes": 9818
+    },
+    {
+      "path": "scripts/run_evidence_budget_development_20261027.py",
+      "sha256": "f978867297fcc4498640967871b230d390e2fbdeb1b3f92bfb517ece66d02c5e",
+      "bytes": 12006
+    },
+    {
+      "path": "scripts/audit_evidence_budget_development_20261027.py",
+      "sha256": "18badebd27d03befc9cd6ac57197dbe96771c7de257b80b8f4edfff820f6bbe4",
+      "bytes": 6009
+    },
+    {
+      "path": "scripts/supplement_evidence_budget.py",
+      "sha256": "9de60104f34bc8f6c231b1854ab3667e3b589057d96f4fde68aef296aec156e7",
+      "bytes": 2848
+    },
+    {
+      "path": "scripts/plot_evidence_budget_development_20261027.py",
+      "sha256": "978630976f94e29bfaef6a9c5361d84e439b772108177e7e6496571a1e267996",
+      "bytes": 2625
+    },
+    {
+      "path": "tests/test_evidence_budget.py",
+      "sha256": "007f70ddd7bec82208b089d9c7a328a3f4cea8122488f3cbd145612728a2e2ec",
+      "bytes": 6162
+    },
+    {
+      "path": "docs/预算分配优化实施规划_20261027.txt",
+      "sha256": "41269bec930e8cf90237a445f7e3265a464bad3a2aaf024e0fb48a8062e10133",
+      "bytes": 1685
+    },
+    {
+      "path": "docs/预算分配优化_结果与验收_20261027.txt",
+      "sha256": "1e9be2c94d09283c060318a85f24ef2c846b8af5461c356876d0dfae3dbbf7da",
+      "bytes": 8491
+    },
+    {
+      "path": "README.md",
+      "sha256": "f5520241035bd2693385548b5e1dfaeab7e1ecbe2cd6aae3b2289e6f12141cd3",
+      "bytes": 22194
+    },
+    {
+      "path": "results/README.md",
+      "sha256": "b3730a9df05ad5bce4bff0f6196875d94041b3862746ca5b10a7a97d34a5795f",
+      "bytes": 19326
+    },
+    {
+      "path": ".github/workflows/offline-evidence.yml",
+      "sha256": "a62adeea3b7bb85969783fa62dfe06defb2e0be4993fe68891466fc311962f01",
+      "bytes": 1187
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-000651-2023-AUDIT.json",
+      "sha256": "e3644fd08c86c662ae737f0b1066064f20935d082768d6423d7b881c618e36c5",
+      "bytes": 26461
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-000651-2024-AUDIT.json",
+      "sha256": "3714df0ef0c70a4f69ffd879963eafffc9f13950b6e5e472ee4dd72428ee4d55",
+      "bytes": 26461
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-000999-2023-AUDIT.json",
+      "sha256": "44eb26117b39e7043a072a7638d3ec86910712c00873dda3ddc8de7263c1db63",
+      "bytes": 25763
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-000999-2024-AUDIT.json",
+      "sha256": "df46c809430a7f7025fcf6dbcc46ac5db2aff1e91d5d8886390a19ed65c4bfa4",
+      "bytes": 27593
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-600036-2023-AUDIT.json",
+      "sha256": "71941ad32f122d34fc9b74291a6450030f0121e91d7329392cee25c8860b5292",
+      "bytes": 28066
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-600036-2024-AUDIT.json",
+      "sha256": "3850a58767ed89aa8800c7e6b802079351b18799559c6491f3ae85dd1ee959eb",
+      "bytes": 27368
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-603288-2023-AUDIT.json",
+      "sha256": "37e27570cb820dc99930bf6749b21f144014191cfa24d2dcfb8d497ca915ef3e",
+      "bytes": 24120
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/candidate_pools/NEW-603288-2024-AUDIT.json",
+      "sha256": "47708a0b501352a5761ae89c4e65549941b8eb9fca88c29ff02153f717d98528",
+      "bytes": 25155
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2023-AUDIT/adjacent_first.json",
+      "sha256": "1dc337e7359431244f4068ea73ce19bb601289eb3ef9991da0fe5e64e30e15df",
+      "bytes": 83432
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2023-AUDIT/boundary_first.json",
+      "sha256": "ed3e07e17812ca34c12e0b2085076d68c7939141a80484b67eaa7533794275f4",
+      "bytes": 135075
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2023-AUDIT/boundary_round_robin.json",
+      "sha256": "809a611790be2188dee97edf31c204db2dc665b669fbbd379cca983297bb2755",
+      "bytes": 135087
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2023-AUDIT/initial.json",
+      "sha256": "e0374df0aeb561c1e3f347476072f2349282bbbdeb692a7cb048e4fac296d734",
+      "bytes": 47755
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2023-AUDIT/table_first.json",
+      "sha256": "7a3905c1cec939ac28856d7b0334305893246ea39471e97412c35efb020285c9",
+      "bytes": 135069
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2024-AUDIT/adjacent_first.json",
+      "sha256": "792c71321ca23a702a9c84a50e9abea6727bd17325a2be4adecc251c7da08da9",
+      "bytes": 86179
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2024-AUDIT/boundary_first.json",
+      "sha256": "91d4f7126d6f9d47f046ba93f6b358d8e7085d65450b611b81070d5fa8b0df4a",
+      "bytes": 160060
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2024-AUDIT/boundary_round_robin.json",
+      "sha256": "ebc2d2baff8050c66bcbe4820040e61dde68a41860adf0175d6ab186fa4d57aa",
+      "bytes": 160072
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2024-AUDIT/initial.json",
+      "sha256": "279812e8de8acc7e63947c339a38e87e097962b644edfcb3141437085a477c15",
+      "bytes": 47920
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000651-2024-AUDIT/table_first.json",
+      "sha256": "d3834406193c2c86578e9d0e8ab7ce9126c351fd1e34c40591e01db6578d98a4",
+      "bytes": 160054
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2023-AUDIT/adjacent_first.json",
+      "sha256": "f94b916fd6b87764283e47ee1477a960dc431eda2886353072fa9e30d11e1862",
+      "bytes": 81774
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2023-AUDIT/boundary_first.json",
+      "sha256": "1ce44af824c4ab9a6496193aad10cb264759e58d277adc27202f68534f44e34e",
+      "bytes": 154637
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2023-AUDIT/boundary_round_robin.json",
+      "sha256": "56fa21035744587151c90a0e729a830df90979fdca37a1c5e48b752845ad38e2",
+      "bytes": 140012
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2023-AUDIT/initial.json",
+      "sha256": "4d7a8295e5fa84ceab6b6724aa84cf2a78faae55892c48bc1078e20963f4cce3",
+      "bytes": 44778
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2023-AUDIT/table_first.json",
+      "sha256": "5402c84510e5736530084f1a207b5248164294b44a1bff57088ffc102ca42459",
+      "bytes": 154631
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2024-AUDIT/adjacent_first.json",
+      "sha256": "dc9068edf575293f162cc9ab81a008393cc358a55e415fc9f76d5036a1ca1f13",
+      "bytes": 93297
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2024-AUDIT/boundary_first.json",
+      "sha256": "90fb15d2b4f6f590c3a587224ff8e24c0c74eb4fd04863f1482864931bf64549",
+      "bytes": 138329
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2024-AUDIT/boundary_round_robin.json",
+      "sha256": "098672d05e9250e4c80b6a17115cbb60e6330dbf1412d72f49a8096a711d47cc",
+      "bytes": 138341
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2024-AUDIT/initial.json",
+      "sha256": "cf7ad3f17e8febc82770022960da54ccc64aeebd06dd89c55ebfd36833b89203",
+      "bytes": 49965
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-000999-2024-AUDIT/table_first.json",
+      "sha256": "23d26c276337cddf1ddf65940f0ec2cb8f14e20fc760df575c0b9a783cf1aeea",
+      "bytes": 138323
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2023-AUDIT/adjacent_first.json",
+      "sha256": "af385d9d279840733ee85a9051e20ca7452a564459403fc1f678f869225f6551",
+      "bytes": 100442
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2023-AUDIT/boundary_first.json",
+      "sha256": "006f974037faad369614db2a07ec2e001f25322aeffdb4e704541aef00fad291",
+      "bytes": 167894
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2023-AUDIT/boundary_round_robin.json",
+      "sha256": "c47779b160295757a578e66dadad49233f718e28efce32a02e5b0e506ab8280c",
+      "bytes": 167906
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2023-AUDIT/initial.json",
+      "sha256": "aed1d9e7b9cea00f62325fdcdd1d71de1a8c2b5640788e362c11ab2259bab16c",
+      "bytes": 53489
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2023-AUDIT/table_first.json",
+      "sha256": "a0bbec4fa88e2b4f301455b05b5420acafd01dce521b0062f70a30c6e5032509",
+      "bytes": 167888
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2024-AUDIT/adjacent_first.json",
+      "sha256": "80d3153f98d8b07dacf12fe11f2237dac091ef46870802edf50d7391e2f4b221",
+      "bytes": 128279
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2024-AUDIT/boundary_first.json",
+      "sha256": "fee1f83e12b49b9c4a6cc1981b1508270838af6d2f691e968520f2b4822181bb",
+      "bytes": 189107
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2024-AUDIT/boundary_round_robin.json",
+      "sha256": "52bcda21512814a7bace91ddfaf9ee49aa3e75f0595ea4418df95a7ff70be391",
+      "bytes": 142587
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2024-AUDIT/initial.json",
+      "sha256": "ff08fa5f2f1cdc9bdf49df6936f6b36e0369ab64f94e9d4649314ff544cc44e5",
+      "bytes": 54322
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-600036-2024-AUDIT/table_first.json",
+      "sha256": "ca39d940e9540701a37d0f67657803c661842fa4f1085c6ba31a7128cac6c9d0",
+      "bytes": 190730
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2023-AUDIT/adjacent_first.json",
+      "sha256": "7866570b787fad061b10a939fc83430b7bc2691f1a4d68253eb10f04d2e56dad",
+      "bytes": 108582
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2023-AUDIT/boundary_first.json",
+      "sha256": "3f5fc419817dd0bcc5ea0a6da14636a648c8912630f72d2415a2a7c152852112",
+      "bytes": 108582
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2023-AUDIT/boundary_round_robin.json",
+      "sha256": "890067315598b195e115af22df16b161ca1f5a0aacba2fac046ee442314ed2dd",
+      "bytes": 108594
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2023-AUDIT/initial.json",
+      "sha256": "8aa0bb4b4ce84700c7a4cbf47f10f7d50f828cb96b58e905c5f436411fe85ee7",
+      "bytes": 46197
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2023-AUDIT/table_first.json",
+      "sha256": "95c967b6029e8d9a66dc46a50e58e2fe5ed6e6d20fa364fc84c2140bcf55981e",
+      "bytes": 108576
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2024-AUDIT/adjacent_first.json",
+      "sha256": "f1e0ffa0763532c1b8d14ecae207220f8d66c8c121f579fff936efbf7e0d5c3a",
+      "bytes": 92187
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2024-AUDIT/boundary_first.json",
+      "sha256": "889540a84c431c585eaef1df3ff633b6e8e321b576a56bbb5aa4ffce8b04d2f1",
+      "bytes": 137908
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2024-AUDIT/boundary_round_robin.json",
+      "sha256": "68bfaa3f325d14ce397b504820d1a7eda531234557140f04678afe103c69645f",
+      "bytes": 129269
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2024-AUDIT/initial.json",
+      "sha256": "2dca8b2d8a654c289702daa16d8057ced317481647c06cbc5b67318e76a2ef9d",
+      "bytes": 45418
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts/NEW-603288-2024-AUDIT/table_first.json",
+      "sha256": "497cb8630c45d776dc97dcdd616ace622d9de23ddc6561ce7e34e231a0bd6321",
+      "bytes": 137902
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/contexts_saved_before_reference_analysis.json",
+      "sha256": "f7d2d506df9f7c2b8d674905f59584475942519d3913feb1e012c846a979c401",
+      "bytes": 5201
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/figures/joint_source_supply.png",
+      "sha256": "6460239d889079c0a1afc8d276bcc118ef7319f320a6005cb3a95a2e59895d92",
+      "bytes": 179822
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/figures/joint_source_supply.svg",
+      "sha256": "2f7dc67c77b53d0f59e73b078cfdd8b384d09d3a577b022f17d7251faac63c55",
+      "bytes": 76767
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/implementation_audit.json",
+      "sha256": "8b189df34a3f59281524eab83ed345831ef81d9fdac49a4c6242c53c475e359b",
+      "bytes": 4298
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/offline_analysis.json",
+      "sha256": "885845ffc665c076a691aee18a62f0a7bbd1a38c0f1705ecb0b44ed107beed2d",
+      "bytes": 31394
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/offline_metrics.csv",
+      "sha256": "d42d25e6a8ad58328b67d08057529b1d4ba933f65cc408967dacaecb3a95e252",
+      "bytes": 3565
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/offline_protocol.json",
+      "sha256": "b49d1aa60c39bcce922a8f7176fcb7f28aa2a6b8c0f7b21fa3f9bcac6051fbb1",
+      "bytes": 6508
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/source_verification.json",
+      "sha256": "d5f242ecbb02a097f9a88ccfd012fc3d5a5a54dac1b08902aeb69ce5cef5f663",
+      "bytes": 17206
+    },
+    {
+      "path": "results/runs/evidence_budget_development_20261027_01/tests_passed.xml",
+      "sha256": "069393633b76215a99e8217d3b29f14e171030a1bc3ec64b63dcb2adf9d51120",
+      "bytes": 34567
+    }
+  ]
+}

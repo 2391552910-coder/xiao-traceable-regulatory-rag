@@ -28,4 +28,4 @@ jobs:
           tests/test_evidence_retention_development.py tests/test_evidence_retention_scoring.py
           tests/test_adjacent_chunks.py tests/test_source_span_audit.py
           tests/test_adjacent_evidence_replay.py tests/test_annual_tables.py
-          tests/test_annual_table_evidence.py
+          tests/test_annual_table_evidence.py tests/test_evidence_budget.py

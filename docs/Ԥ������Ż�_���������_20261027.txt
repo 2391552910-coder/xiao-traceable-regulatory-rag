@@ -1,0 +1,113 @@
+预算分配优化：实施结果与验收
+日期：2026-10-27，Asia/Shanghai
+
+实施顺序与发布
+==============
+先保存 docs/预算分配优化实施规划_20261027.txt，再发布已有成果，之后才实现和运行本轮预算分配。
+已有解析/邻接/证据保留成果发布到main：
+  c416a6166066bb3990c3f18e7ed2912ab1036055
+同步322个新增/更新文件，700个未涉及的远端文件保持不变；发布目录中的212项测试通过，GitHub对应自动测试也已成功。
+首批CI：https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40442726192
+没有把本地整个工作区、密钥、原始年报PDF、模型权重或缓存推送到仓库。
+
+本轮实现
+========
+src/generation/evidence_budget.py：将表格和直接邻接候选放入同一预算分配流程。
+1. 输入来自同一个冻结候选池；表格为固定top24类型均衡检索，邻接由原始种子的单跳选择器产生。
+2. 只查看种子文本末尾的字面线索：未闭合的日期括号、未完成的中文日期、可能未完成的数字日期。
+3. 只有直接同页后继可因上述线索优先；完整年月日和已闭合的日期括号不会仅因日期存在而被优先。
+4. 不读取参考答案，不按公司、年份、页码或某个正确姓名硬编码，不生成检索查询。
+5. 初始文本、来源记录和引用ID完整保留，新增材料只追加完整块，不截断、不重编号原证据。
+6. 统一6000参考tokens、最多16个新增来源；逐条尝试，每次最多追加1条，满足既有每次最多8条限制。
+7. 所有候选先验证公司/年度/PDF、有限分数、表格字段绑定和邻接选择器记录；即使候选因预算放不下，也不允许错误来源混入池中。
+8. 截断线索是排序启发，不等于相关性或语义支持的证明。跨页、其他委员会、其他年度的材料不能因启发而越过来源范围。
+
+预定的5种策略
+=============
+initial：不扩展，保留原始材料。
+table_first：先所有表格候选，再邻接候选。
+adjacent_first：先所有邻接候选，再表格候选。
+boundary_first：先有截断线索的同页后继，再表格候选，最后其他邻接候选。
+boundary_round_robin：先有截断线索的同页后继，再交替安排表格和其他邻接候选。
+五种策略共用相同问题、候选池、预算和来源总上限，均完整报告，不选择性删去负例。
+
+实际运行范围
+============
+4家新公司、2023/2024两年度，共8个已曝光开发问题×5策略=40份材料。
+主批次：results/runs/evidence_budget_development_20261027_01/
+重复批次：results/runs/evidence_budget_development_20261027_02/
+重复批次仅验证确定性，不当作另40个独立样本。
+所有40份上下文保存并形成收据后，才读取参考标签和事后来源区间诊断内容。
+
+开发集整体材料供给
+==================
+策略                    平均参考tokens   表格候选姓名供给宏比例   勘误参考页覆盖
+initial                    4669.000               0.0000              95.8333%
+table_first                5887.250               1.0000             100.0000%
+adjacent_first             5906.625               0.2917              95.8333%
+boundary_first             5878.500               1.0000             100.0000%
+boundary_round_robin       5869.125               0.9375             100.0000%
+
+“表格候选姓名供给”定义为：新增结构化字段视图中保留的姓名候选，与输入表格候选池提供的姓名集合相比。
+它不是独立金标准，不表示原始正文缺少这些姓名；initial的0只表示没有新增表格字段视图。
+参考页覆盖只是位置覆盖，不能替代语义Recall@k、引用正确率或回答召回率。
+候选中的截断线索只在8题中的2题触发，算法并未为某个目标公司特判。
+
+招商银行2024：此前预算冲突的具体案例
+===================================
+策略                    新增表格姓名候选   日期精确来源区间   参考tokens   两种材料均完整
+initial                         0/6                5/9             4780             否
+table_first                     6/6                5/9             5991             否
+adjacent_first                  2/6                9/9             5979             否
+boundary_first                  6/6                9/9             5921             是
+boundary_round_robin            3/6                9/9             5955             否
+
+boundary_first优先补回种子末尾未闭合日期后的同页续片，再装入6条出席表字段视图，使两种材料在5921 tokens内同时到位。
+交替安排虽然补回日期，却只保留3个表格姓名候选；邻接优先只保留2个。负例保留在逐题结果、图和验收记录中。
+这只证明当前开发案例的材料供给得到协调，不能证明大模型会正确抽取，也不能保证未知版式或新公司有效。
+该案例的日期来源区间来自既有AI助手事后核查，不是独立人类金标准。
+
+验收证据
+========
+240项本地测试通过：已有212项，加28项预算策略测试。
+40份上下文重新执行分配器后完全一致；两批40份上下文JSON逐字节相同。
+所有策略的初始文本、记录和ID保留率100%，全部≤6000参考tokens，新增来源≤16。
+8份原始PDF文件指纹重新核对；74个窗口片段逐字匹配冻结页文本，57个相关页重新执行PDFium解析。
+表格单元格沿用冻结表格索引及此前4326个单元格的核验收据，收据及索引SHA256均记录；本轮校验字段和正文绑定，未伪称重新执行所有单元格解析。
+134份已发布旧结果/输入/调用文件保持原哈希；之前准备的生成批次源码/协议未改，仍无调用记录。
+新联合导出CLI已实际运行，导出5921-token packet、8条新增来源，没有发送给模型。
+
+新增的API与命令
+===============
+Python接口：
+  from src.generation.evidence_budget import allocate_evidence_budget
+  final_context, audit = allocate_evidence_budget(question, initial_context, table_hits, adjacent_hits, adjacent_audit, counter, policy='boundary_first')
+
+在xiaolun项目根目录导出联合材料（输出目录必须全新）：
+  .venv-data/Scripts/python.exe scripts/supplement_evidence_budget.py --packet results/paper/heldout_validation_20261023_01/packets/NEW-600036-2024-AUDIT.json --table-index results/runs/annual_table_development_20261027_03/table_index.sqlite --window-index results/paper/heldout_validation_20261023_01/index_pdfium.sqlite --out-dir results/runs/my_joint_packet
+默认boundary_first；可用 --policy 指定其余4策略。
+默认分词器来自本机冻结计划；其他机器可用 --tokenizer 和 --tokenizer-sha256 指向同一个参考分词器。初始材料也必须使用同一计数口径。
+
+重新构造40份材料（选新目录，不覆盖01/02）：
+  .venv-data/Scripts/python.exe scripts/run_evidence_budget_development_20261027.py --out-dir results/runs/evidence_budget_development_20261027_03
+核对当前01与02批次：
+  .venv-data/Scripts/python.exe scripts/audit_evidence_budget_development_20261027.py
+重绘当前主批次：
+  .venv-data/Scripts/python.exe scripts/plot_evidence_budget_development_20261027.py
+
+主要输出
+========
+offline_protocol.json：策略、预算、事先规划、代码和输入哈希。
+candidate_pools/：每题相同候选池及哈希、邻接选择器证明记录。
+contexts/：40份最终材料、所有候选的接受/省略原因、来源和引用记录。
+contexts_saved_before_reference_analysis.json：分析参考内容前的40文件收据。
+offline_analysis.json / offline_metrics.csv：全部策略与逐题材料供给指标。
+source_verification.json：原PDF、原窗口、PDFium重解析及表格来源沿用说明。
+tests_passed.xml / implementation_audit.json：240项测试、逐字节重复性和历史不变性。
+figures/joint_source_supply.png / .svg：含所有策略的双源供给/预算对照图。
+
+未完成与不作主张的部分
+====================
+无大模型调用、无新生成回答；新回答Precision/Recall/F1/Accuracy均为null。
+独立人工标注、未曝光测试集以及跨模型族生成验证仍未完成。
+本轮不根据材料供给比例认定期刊录用水平，不将该启发直接描述成已证明最优或泛化有效的算法。
