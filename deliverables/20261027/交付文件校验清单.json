@@ -532,13 +532,13 @@
     },
     {
       "path": "xiaolun/results/paper/substantial_revision_20261023_01/交付与实验复现说明.txt",
-      "bytes": 7108,
-      "sha256": "1c519062c95c0bb2d97256b90381d3981802d313bf2174346ff7fa5155752852"
+      "bytes": 7717,
+      "sha256": "c4cb2d6072716060982babe309327687fe3aa46fe567ee551f24af8777228d7d"
     },
     {
       "path": "xiaolun/results/paper/substantial_revision_20261023_01/年报与法规双源RAG_大幅修订研究长稿.docx",
-      "bytes": 1255027,
-      "sha256": "0b1b0adac601546f0bf408374d427ccec608fd6cf33cdf633af83b7449207810"
+      "bytes": 1255212,
+      "sha256": "b74513366418670440e7e9fbcb570f9e72c7ef28803b78d7603d39bd085ecb27"
     },
     {
       "path": "xiaolun/scripts/analyze_quality_extensions_20261023.py",
@@ -552,8 +552,8 @@
     },
     {
       "path": "xiaolun/scripts/build_substantial_paper_20261023.py",
-      "bytes": 76481,
-      "sha256": "3c923440de0bba774e658cffebe66fdf24b41d204739d97d0d5885efa5701bba"
+      "bytes": 76883,
+      "sha256": "29a3ba4dc80e4be1017fb8d3d6c66c9e4f366730741d3922829a629badca4b66"
     },
     {
       "path": "xiaolun/scripts/plot_cached_retrieval_diagnostics_20261023.py",

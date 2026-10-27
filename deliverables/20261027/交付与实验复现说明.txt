@@ -1,4 +1,4 @@
-交付与实验复现说明（2026-10-23；2026-10-27修订）
+交付与实验复现说明（2026-10-23；2026-10-28修订）
 
 1. 交付状态
 本目录中的《年报与法规双源RAG_大幅修订研究长稿.docx》为中文研究长稿，正文段落约1.3万汉字，13幅图、19张表、29条参考文献。长稿经WPS只读导出核验为25页；本次补入年报问答基准ARQA与CFQA的相关工作及两条参考文献后，页面核验记录保存在qa_references_20261027；此前qa_version_audit_final2_20261027记录对应旧版本。PDF和页面图片仅用于质检。汉字数不等同于英文词数。
@@ -12,7 +12,7 @@
 3. 关键结果及解释边界
 双源通用方案G2相对合库G1的已观测公司宏均配对总分提高0.250，主要来自法规维度与审计委员会主题；角色约束G3相对G2为-0.008，未显示稳定额外收益。BM25和无重排的已观测生成质量高于G3，不能写成复杂检索全面更优；相关比较的全计划缺失敏感性界限跨零。
 引用与不确定性评分明显接近满分，法规评分存在评分者分歧。来源角色齐备、参考页定位命中、A/R引用ID同现、词面重叠均不等同于语义支持或法规时点适用。2026-10-27补充核查发现，DOC100、DOC128、DOC120当前索引版本均晚于2024年报告期；冻结top-10中，G1有64/73条后发法规候选（87.7%，涉及42/60题），G2有156/300条（52.0%，涉及60/60题）。日期只提示时间风险，不能单独判定不适用；相关结果不能视为历史法规版本命中率或时点合规性验证。新增BM25的混合法规定位优势主要由TXT整来源标签贡献，PDF页级和TXT来源级必须拆分。实际实现为来源分区、固定配额与交替打包；不能将未执行的维度路由或迭代多智能体机制写成已验证贡献。
-仍需独立的跨模型与跨年度验证、逐论断语义支持及法规适用性核验、更强且匹配预算的迭代agent对照；这些工作尚未完成。当前新增分析均为探索性后验分析，不能据此保证期刊接收。
+跨模型族与跨年度验证、逐论断语义支持及法规适用性核验、匹配预算的迭代Agent对照均未完成，且对应不同研究问题；当前主稿不据此提出泛化、逐论断语义正确或Agent有效性主张，因此这些支线不阻塞主稿冻结。若后续研究要提出相应主张，应另行设计独立数据、真实人工判断及预算可比的实验。当前新增分析均为探索性后验分析，不能据此保证期刊接收。
 
 2026-10-27 文献修订：相关工作新增ARQA与CFQA，分别说明年报表格—文本问答基准、人工证据标注及RAG/无检索对照；正文新增与本文任务范围的区别，参考文献更新为29条。使用WPS只读导出并渲染25页PNG完成页面检查。本次未运行模型、未新增人工标签、未改变实验结果。
 
@@ -21,6 +21,7 @@
 交付目录：results/paper/substantial_revision_20261023_01
 原始生成冻结：results/runs/compact_final_execution_windows_20261020_01/execution_plan.json与prepared/
 参考证据：results/runs/compact_gold_release_windows_20261020_01/release/
+另有分析续接冻结记录：results/runs/paper_execution_freeze_windows_20261020_01/execution_freeze.json；该文件固定参考、公司分组与主设置并封存后续恢复/扩展决策，不是原始执行计划，也不是追溯性预注册。两份冻结记录的reference_manifest_sha256均为9f9c0f73fb0ae308394399dfd57f25d2deaca6ae5ad141b6acb5d425a9d91fc3。
 原有双人评分汇总：results/runs/two_reviewer_statistics_windows_20261023_01/
 本次检索：retrieval/replay_per_question.csv、replay_verification.json、retrieval_replay_receipt.json、bm25_fresh/baseline_per_question.csv与baseline_receipt.json
 本次统计：quality/quality_extensions.json、paired_dimension_effects.csv、qualitative_cases.json及source_unit_manifest.json
