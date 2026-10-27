@@ -23,7 +23,7 @@
 - **212项测试通过**；4326个单元格在重新打开的PDF上核验，46页原文预览已生成。[离线验收](results/runs/annual_table_development_20261027_03/implementation_audit.json)确认134份历史发布文件不变，全程0模型调用。
 - 表格FTS5检索与按表格类型均衡检索已接入保留原证据的RAG接口；完成8题×5方案的40份上下文对照，均≤6000参考tokens。均衡表格补充的勘误参考页覆盖为100%，原始材料为95.83%；页面覆盖不等于语义召回。
 - **同时保留负例**：招商银行2024中，邻接续片独立补充可供给9/9个审计日期来源区间，而先表格后邻接仅5/9，存在预算竞争。[完整对照图](results/runs/annual_table_development_20261027_03/figures/table_retrieval_comparison.png)。
-- [本地表格/续表复核页面](results/runs/annual_table_development_20261027_03/review.html)提供原页链接、委员会归属及跨页标记；329行复核模板均未填写，独立人工验证尚未完成。规则解析器的开发集字段指标另存，不能替代LLM生成质量；本轮未推送GitHub或替换Word论文。
+- [本地表格/续表复核页面](results/runs/annual_table_development_20261027_03/review.html)提供原页链接、委员会归属及跨页标记；329行复核模板均未填写，独立人工验证尚未完成。规则解析器的开发集字段指标另存，不能替代LLM生成质量；代码与离线材料已由提交 [c416a61](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055) 发布；本轮未替换Word论文。
 
 ## 2026-10-27 同文档邻接扩展：已完成本地离线比较
 
