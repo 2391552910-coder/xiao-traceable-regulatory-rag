@@ -4,7 +4,7 @@
   "figure_count": 13,
   "table_count": 19,
   "references": 29,
-  "paragraph_cjk_chars": 13498,
+  "paragraph_cjk_chars": 13590,
   "cached_context_replays": 1800,
   "new_BM25_contexts": 600,
   "new_LLM_calls": 0,
@@ -173,7 +173,7 @@
     {
       "path": "xiaolun/results/paper/substantial_revision_20261023_01/manuscript_inventory.json",
       "bytes": 444,
-      "sha256": "55660d2f92a13fe3508131fc1177839877a755f86c00b81eeb2ac020759b130e"
+      "sha256": "94c0a0723c158231761106254cb1cf933a927cd62c719f0209619dbc6850f21c"
     },
     {
       "path": "xiaolun/results/paper/substantial_revision_20261023_01/qa_delivery/native_render_receipt.json",
@@ -537,8 +537,8 @@
     },
     {
       "path": "xiaolun/results/paper/substantial_revision_20261023_01/年报与法规双源RAG_大幅修订研究长稿.docx",
-      "bytes": 1254854,
-      "sha256": "b3c2794d60bda6c42e8ab906d262662157c39d1a0d6cabe5a434b5527557ede5"
+      "bytes": 1255024,
+      "sha256": "ec60764456370efaec49c279f7f98deccbfe45d49f581472282d7c9c5ffbbd9d"
     },
     {
       "path": "xiaolun/scripts/analyze_quality_extensions_20261023.py",
@@ -552,8 +552,8 @@
     },
     {
       "path": "xiaolun/scripts/build_substantial_paper_20261023.py",
-      "bytes": 75824,
-      "sha256": "4270a125ba9a38846e6deed5b84c2190d4b2d36d856316a28fb1a7326d0bb3f9"
+      "bytes": 76140,
+      "sha256": "94a6de9f6e5976b4101877d313eb81287ff01464797a0244af476a03099ebec4"
     },
     {
       "path": "xiaolun/scripts/plot_cached_retrieval_diagnostics_20261023.py",
