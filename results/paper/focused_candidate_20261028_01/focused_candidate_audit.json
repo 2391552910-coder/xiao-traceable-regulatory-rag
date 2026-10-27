@@ -4,7 +4,7 @@
   "source_full_extension_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\integrated_candidate_20261028_01\\年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx",
   "source_full_extension_sha256": "44ead9e98d7c41e5dfc3b88d3bc7f4a08a0b2902a6b56df6eea24fe3527ff26f",
   "output_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\focused_candidate_20261028_01\\年报与法规双源RAG_聚焦主问题候选稿_待终审.docx",
-  "output_docx_sha256": "e1f0d4ad1007067a0fda3113253792cd4fd362970ae645ec5f6f63e34537f972",
+  "output_docx_sha256": "cf20e7ce186eb5317f583ec9ca4dacf196c3225fc8bd500fc92c3bbd4c406e80",
   "removed_body_sections": [
     "6.7 cross-year generation and tool-agent comparison",
     "6.8 cross-year automatic evaluation",
@@ -25,17 +25,17 @@
   "stale_citation_31_present": false,
   "stale_extension_section_heading_present": false,
   "wps_export": {
-    "application_quit_called": false,
-    "source_unchanged": true,
-    "only_this_readonly_document_closed": true,
     "success": true,
+    "pdf_sha256": "f14ef8f6316fe5a74e1f3e2be27980e2aead149d59b7c683adb644ffd672f461",
+    "application_quit_called": false,
+    "source_sha256": "cf20e7ce186eb5317f583ec9ca4dacf196c3225fc8bd500fc92c3bbd4c406e80",
+    "elapsed_seconds": 3.1019376,
+    "source_unchanged": true,
     "method": "WPS native read-only ExportAsFixedFormat",
-    "source_sha256": "e1f0d4ad1007067a0fda3113253792cd4fd362970ae645ec5f6f63e34537f972",
-    "elapsed_seconds": 3.1566585,
-    "pdf_sha256": "3acb4595e33a083281b859ed6ac36cda1b84a4b05689c19ae7756b85b552f87c"
+    "only_this_readonly_document_closed": true
   },
   "pdf_page_count": 26,
-  "visual_qa": "After adding the retrieval-metric data-scope clarification, WPS read-only rendering produced 26 pages. Pages 10–26 were inspected at original resolution; pages 1–9 were pixel-identical to the preceding inspected render at matched scale. No clipping, overlap, broken table, or unreadable reference was found. The table continuation at pages 10–11 repeats its header.",
+  "visual_qa": "After the conclusion wording audit, WPS read-only rendering remained 26 pages. Only page 23 changed relative to the prior inspected render; it was visually inspected at original resolution. The other 25 pages were pixel-identical at matched scale. No clipping, overlap, broken table, or unreadable reference was found.",
   "limitations": "No new model answers or human labels; not a submission-ready or accepted paper; author metadata and target journal template remain outstanding.",
   "regulation_date_semantics_review": {
     "knowledge_base_dates": {
@@ -50,7 +50,8 @@
     "date": "2026-10-28",
     "changes": [
       "Replaced an unmeasured claim that traceability lowers the cost of locating materials with a bounded statement that replayable records help locate materials and distinguish pipeline error stages.",
-      "Replaced the assertion that the study supports the necessity of auditable design with a recommendation tied to observed source-supply and regulation-version limits; stated that effects on decision risk, review cost, and staff time were not directly tested."
+      "Replaced the assertion that the study supports the necessity of auditable design with a recommendation tied to observed source-supply and regulation-version limits; stated that effects on decision risk, review cost, and staff time were not directly tested.",
+      "Conclusion now states that the source-removal comparison also changes evidence content and context length, so its lower scores do not isolate a pure source-role effect; the inferred benefit is limited to the observed task and rating protocol."
     ],
     "new_model_calls": 0,
     "new_human_labels": 0,
