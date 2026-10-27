@@ -1,0 +1,82 @@
+[
+  {
+    "path": "src\\generation\\evidence_retention.py",
+    "bytes": 7769,
+    "sha256": "5587ee84404f7e69fcff15fc37c9386e6b6a60bdbdd92b09f950dc3c5f2b2029"
+  },
+  {
+    "path": "src\\generation\\request_journal.py",
+    "bytes": 20659,
+    "sha256": "298e8f230dcbaad6776038ca62282f35fd7ffb3bb1059f4507e1382eec48ae2e"
+  },
+  {
+    "path": "src\\generation\\annual_audit_development.py",
+    "bytes": 5389,
+    "sha256": "bf49eed2dc69c94d32f0e8b4ada5bdf8bd1b2b8011f9f82641dd9788e61ff807"
+  },
+  {
+    "path": "scripts\\replay_evidence_retention_20261026.py",
+    "bytes": 7284,
+    "sha256": "f445dd296883e6ee45d0780b5d7b9d328da2bff8f3efc24154f44c91348a574c"
+  },
+  {
+    "path": "scripts\\run_evidence_retention_development_20261026.py",
+    "bytes": 18053,
+    "sha256": "2fea8c66820afb3484f87a13ab0d1eb447c74d0e5c55deebb5f020be86243ca3"
+  },
+  {
+    "path": "scripts\\audit_evidence_retention_development_20261026.py",
+    "bytes": 6804,
+    "sha256": "0f28931fbcbaa49b9840ba80f922680fcad048a9caa1476c56f21efc7ac20907"
+  },
+  {
+    "path": "scripts\\score_evidence_retention_development_20261026.py",
+    "bytes": 9198,
+    "sha256": "0d21ee09a7137d8be7f1f5cd59eceff4f685d5e1f1c176e0bc739df24ccf42a8"
+  },
+  {
+    "path": "scripts\\invoke_verified_model_request.ps1",
+    "bytes": 2595,
+    "sha256": "bbf156402b406661b39d7176b398e0a8cc299fd8c4ceec91b71b7fad7abdb108"
+  },
+  {
+    "path": "tests\\test_evidence_retention.py",
+    "bytes": 8661,
+    "sha256": "9742eeb034228ad3ac66761abb79dba26f93f474d3212cb275f570641347d378"
+  },
+  {
+    "path": "tests\\test_request_journal.py",
+    "bytes": 12387,
+    "sha256": "0c7373736be9b46d0a3fc7db07727b1d19d7462a773a71721fd3bbb08b83026d"
+  },
+  {
+    "path": "tests\\test_annual_audit_development.py",
+    "bytes": 908,
+    "sha256": "ca088199c534b9dde7d048cbadfd71a850f9f0f646b2e906fa1fab739a97bc7a"
+  },
+  {
+    "path": "tests\\test_evidence_retention_development.py",
+    "bytes": 5557,
+    "sha256": "687592506372d6e60641645609e74bd9aa0e6600f7e62b2facda7107327dfd67"
+  },
+  {
+    "path": "tests\\test_evidence_retention_scoring.py",
+    "bytes": 5492,
+    "sha256": "34b533434e319182f6cf7bc4a575647a9257a93d92c496ffceec53b03441c34b"
+  },
+  {
+    "path": "README.md",
+    "bytes": 16024,
+    "sha256": "d88d514ad1d8fc94260807846ccf463eb9099d2512d4122590f681de7bc8a9dc"
+  },
+  {
+    "path": "results\\README.md",
+    "bytes": 14911,
+    "sha256": "a6e76eb75cbb9db915a4495f1c9298b206998077d97b9176d46163023bdc93bc"
+  },
+  {
+    "path": "docs\\证据保留修复与离线验收_20261026.txt",
+    "bytes": 6012,
+    "sha256": "d62f65e0cb97e2c58cbb170b6659dcfa7226a24abe9f1f9aa1dd67e613367478"
+  }
+]

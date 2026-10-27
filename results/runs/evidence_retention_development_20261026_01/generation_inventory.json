@@ -1,0 +1,18 @@
+{
+  "automatic_retries": 0,
+  "completed_units": 0,
+  "failed_units": 32,
+  "finished_utc": "2026-10-26T09:21:41.014763+00:00",
+  "maximum_calls": 64,
+  "planned_units": 32,
+  "quota_stop": false,
+  "recorded_units": 32,
+  "request_journals": 32,
+  "request_outcomes": {
+    "remote_unknown": 32
+  },
+  "status": "finished",
+  "terminal_requests": 32,
+  "transport_entered": 32,
+  "uncaught_future_errors": []
+}

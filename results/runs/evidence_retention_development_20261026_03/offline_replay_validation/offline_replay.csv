@@ -1,0 +1,17 @@
+﻿question_id,historical_mode,initial_retention_legacy,initial_retention_repaired,new_chunks_repaired,legacy_tokens,repaired_tokens,initial_reference_page_coverage,legacy_reference_page_coverage,repaired_reference_page_coverage
+NEW-000651-2023-AUDIT,k3_agent3_v2,0.5,1.0,2,5850,5953,1.0,1.0,1.0
+NEW-000651-2023-AUDIT,k3_fixed_expand,0.3,1.0,6,5900,5899,1.0,1.0,1.0
+NEW-000651-2024-AUDIT,k3_agent3_v2,0.6,1.0,2,5992,5935,1.0,1.0,1.0
+NEW-000651-2024-AUDIT,k3_fixed_expand,0.2,1.0,5,5910,5962,1.0,1.0,1.0
+NEW-000999-2023-AUDIT,k3_agent3_v2,0.4,1.0,4,5809,5992,1.0,1.0,1.0
+NEW-000999-2023-AUDIT,k3_fixed_expand,0.3,1.0,6,5985,5905,1.0,1.0,1.0
+NEW-000999-2024-AUDIT,k3_agent3_v2,0.6,1.0,3,5966,5951,0.6666666666666666,0.6666666666666666,0.6666666666666666
+NEW-000999-2024-AUDIT,k3_fixed_expand,0.2,1.0,2,5896,5945,0.6666666666666666,0.6666666666666666,0.6666666666666666
+NEW-600036-2023-AUDIT,k3_agent3_v2,0.5,1.0,5,5849,5993,1.0,0.0,1.0
+NEW-600036-2023-AUDIT,k3_fixed_expand,0.2,1.0,5,5901,5927,1.0,0.5,1.0
+NEW-600036-2024-AUDIT,k3_agent3_v2,0.6,1.0,6,5960,5966,1.0,1.0,1.0
+NEW-600036-2024-AUDIT,k3_fixed_expand,0.3,1.0,4,5840,5997,1.0,0.5,1.0
+NEW-603288-2023-AUDIT,k3_agent3_v2,1.0,1.0,6,5061,5062,1.0,1.0,1.0
+NEW-603288-2023-AUDIT,k3_fixed_expand,0.5,1.0,9,5844,5843,1.0,1.0,1.0
+NEW-603288-2024-AUDIT,k3_agent3_v2,0.5,1.0,5,5967,5911,1.0,1.0,1.0
+NEW-603288-2024-AUDIT,k3_fixed_expand,0.6,1.0,8,5949,5942,1.0,1.0,1.0

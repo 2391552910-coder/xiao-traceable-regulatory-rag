@@ -6,46 +6,56 @@
 - ours：注入检索结果 + 强制引用标注 + 禁引用未提供条文（本方法）。
 """
 
-NO_RAG_PROMPT = """你是证券监管领域资深评价专家。请对上市公司{stock_name}（{stock_code}）{year}年度报告的
-「{dimension_name}」维度出具自律评价意见。
+NO_RAG_PROMPT = """你是证券监管领域的审慎评价助手。用户要求评价上市公司{stock_name}（{stock_code}）在
+{year}年度报告涉及的「{dimension_name}」表现。
 
-【抽取到的事实材料】
-{facts}
+【用户问题】
+{user_question}
 
-【要求】指出该维度自律表现的优势与不足（各至少 1 条），给出 0-100 的维度得分。
-输出 JSON：{{"evaluation": "评价正文", "strengths": [], "weaknesses": [], "score": 0}}
+当前对照条件不提供任何年报或法规检索证据。
+
+【约束】
+不得凭模型记忆断言该公司的具体事实或法规要求；说明当前证据不足，并指出需要查阅年报原文和适用法规。
+输出 JSON：{{"evaluation": "评价正文", "claims": [], "citations": [], "evidence_status": "insufficient"}}
 """
 
 NAIVE_RAG_PROMPT = """你是证券监管领域资深评价专家。请基于事实材料与检索到的法规内容，对上市公司
 {stock_name}（{stock_code}）{year}年度报告的「{dimension_name}」维度出具自律评价意见。
 
-【抽取到的事实材料】
-{facts}
+【用户问题】
+{user_question}
+
+【年报检索证据】
+{annual_evidence}
 
 【检索到的法规内容】
 {regulations}
 
-【要求】指出该维度自律表现的优势与不足（各至少 1 条），给出 0-100 的维度得分。
-输出 JSON：{{"evaluation": "评价正文", "strengths": [], "weaknesses": [], "score": 0}}
+【要求】只陈述检索材料支持的内容；材料未支持的方面写明证据不足。此对照不强制逐论断引用。
+输出 JSON：{{"evaluation": "评价正文", "claims": [], "citations": [], "evidence_status": "supported|insufficient"}}
 """
 
 OURS_PROMPT = """你是证券监管领域资深评价专家。请基于给定的事实材料与监管法规依据，对上市公司
-{stock_name}（{stock_code}）{year}年度报告的「{dimension_name}」维度出具自律评价意见。
+{stock_name}（{stock_code}）{year}年度报告的「{dimension_name}」维度出具审慎评价意见。
 
-【抽取到的事实材料】
-{facts}
+【用户问题】
+{user_question}
 
-【监管法规依据（编号检索结果）】
+【年报检索原文证据】
+{annual_evidence}
+
+【法规检索依据】
 {regulations}
 
 【硬性约束】
-1. 引用法规时必须标注来源，格式：【依据：《法规名》第X条】；
-2. 严禁引用上述编号结果之外的法规条文；
-3. 指出该维度自律表现的优势与不足（各至少 1 条）；
-4. 给出 0-100 的维度得分并说明评分理由。
+1. 公司事实类论断必须由年报证据支持，并在句末标注【年报依据：[A1]】；
+2. 规范性论断必须由法规证据支持，并在句末标注【法规依据：[R1]】；可同时引用多个实际提供的 ID；
+3. 只能引用上方实际提供的 A/R 证据 ID，不得编造页码、条款、来源或事件日期；
+4. 年报未提及不能推断事项不存在。证据不足、冲突或法规适用时间未知时，明确说明限制，不强行给出肯定评价；
+5. 不要求为了形式完整而编造优点、不足或 0–100 分数。每个实质论断均需列入 claims 并标明 evidence_status。
 
-输出 JSON：{{"evaluation": "评价正文", "strengths": [], "weaknesses": [],
-"score": 0, "citations": [{{"title": "法规名", "clause": "第X条", "used_for": "支持的论点"}}]}}
+输出 JSON：{{"evaluation": "评价正文", "claims": [{{"claim": "单条实质论断", "evidence_status": "supported|insufficient|conflicted", "evidence_ids": ["A1", "R1"]}}],
+"citations": [{{"evidence_id": "A1", "used_for": "支持的论点"}}], "overall_evidence_status": "supported|partial|insufficient|conflicted"}}
 """
 
 PROMPT_BY_MODE = {

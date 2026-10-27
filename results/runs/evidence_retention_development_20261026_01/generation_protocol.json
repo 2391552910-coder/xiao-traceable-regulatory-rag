@@ -1,0 +1,195 @@
+{
+  "automatic_retries": 0,
+  "classification": "exposed development regression, not independent test",
+  "code_and_replay_sha256": {
+    "results\\runs\\evidence_retention_development_20261026_01\\offline_replay.json": "620ffffaded25f9ba18c3186519e205922ee574c243d17fee7d5cbc31a98f18e",
+    "scripts\\run_evidence_retention_development_20261026.py": "29b3858406d3495903624ca9d5c7b7ed564af9f95cdb756ee05f0d0f1e9b3cc5",
+    "src\\generation\\annual_audit_development.py": "bf49eed2dc69c94d32f0e8b4ada5bdf8bd1b2b8011f9f82641dd9788e61ff807",
+    "src\\generation\\comparison.py": "3765f7cdafbc2f6267274bfd652a487281a1032f97a8d4f9eac06923b1988720",
+    "src\\generation\\evidence_retention.py": "5587ee84404f7e69fcff15fc37c9386e6b6a60bdbdd92b09f950dc3c5f2b2029",
+    "src\\generation\\request_journal.py": "298e8f230dcbaad6776038ca62282f35fd7ffb3bb1059f4507e1382eec48ae2e",
+    "src\\generation\\supplementary_retrieval.py": "f28a9fc4b4f3cdaf77a8dabaf8257b854fef496b12c4bac7f490a386a134e128"
+  },
+  "controller": "Exactly two query planning rounds then answer; at most two queries per round. No adaptive stop or initial budget reduction introduced.",
+  "corrected_reference_labels_sha256": "7e5145494bc8243697aad409a910bd98fb9d2c522efe849ac43743f75e35ded2",
+  "failure_scoring": "All eight planned questions per condition; failed final units score zero for extraction, successful-only quality reported separately",
+  "fixed_queries": [
+    [
+      "审计委员会 委员会名称 成员情况 召开会议次数",
+      "审计委员会 会议 日期 议案 审议"
+    ],
+    [
+      "审计委员会 委员 主任 离任 变更",
+      "审计委员会 第一次 第二次 第三次 第四次"
+    ]
+  ],
+  "initial_evidence": "Byte-identical saved context and answer prompt, all four conditions",
+  "max_output_tokens": 8192,
+  "maximum_concurrency": 2,
+  "maximum_model_calls": 64,
+  "maximum_new_sources_per_round": 8,
+  "model": "k3",
+  "modes": [
+    "k3_single_dev",
+    "k3_fixed_preserve",
+    "k3_refine3_dev",
+    "k3_agent_preserve"
+  ],
+  "output_exhausted_policy": "Record separately and do not count as completed answer even if partial text exists",
+  "reasoning_effort": "provider default; no claim of matched realized reasoning compute",
+  "reference_labels_loaded_by_generation": false,
+  "reference_labels_sha256": "4340de19b1e6bfaa3064208804db9b3261a8e3dbb13b2e1efbde5a9a936ad295",
+  "reference_token_cap": 6000,
+  "reference_tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+  "retention_policy": "Existing supplementary_retrieval.extend_context through evidence_retention adapter; original text and IDs remain prefix; only whole new chunks that fit",
+  "retrieval": "Same read-only FTS5 BM25 index, jieba first 60 alphanumeric terms OR, top five per role; no new retrieval exclusions",
+  "schedule": [
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-603288-2024-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-000999-2023-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-000999-2024-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-000651-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-600036-2024-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-600036-2023-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-600036-2024-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-000651-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-603288-2024-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-000999-2024-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-000651-2024-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-603288-2024-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-603288-2023-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-000999-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-600036-2023-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-000651-2024-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-600036-2024-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-000999-2023-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-000999-2023-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-600036-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-603288-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-000651-2023-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-000651-2023-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-600036-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-000999-2024-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-000999-2024-AUDIT"
+    },
+    {
+      "mode": "k3_refine3_dev",
+      "question_id": "NEW-603288-2023-AUDIT"
+    },
+    {
+      "mode": "k3_single_dev",
+      "question_id": "NEW-000651-2024-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-600036-2024-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-603288-2024-AUDIT"
+    },
+    {
+      "mode": "k3_fixed_preserve",
+      "question_id": "NEW-603288-2023-AUDIT"
+    },
+    {
+      "mode": "k3_agent_preserve",
+      "question_id": "NEW-000651-2024-AUDIT"
+    }
+  ],
+  "schema_version": "evidence-retention-development-v1",
+  "scope": "One packing change plus durable common execution; no adjacent chunk expansion, gold-driven queries or legal applicability score",
+  "source_database_sha256": "9dcef5bb0707d35a117dd4ad0df928d623f63628572ce240174b1a08ac6ec8dd",
+  "source_filter": "exact company and report year; regulation pool unchanged and date applicability unverified",
+  "source_packets": {
+    "NEW-000651-2023-AUDIT.json": "dbe03bc068014a15edaa5fbaedf647fbed9f2549b50da85e20293ec307b90df7",
+    "NEW-000651-2024-AUDIT.json": "19ec0a877a0bf970e27482bc107254c6eab01d743f7c08b620e613721e6e6de9",
+    "NEW-000999-2023-AUDIT.json": "bb54821da07634ae64379425d7ea7e4efd68203ce599a2e1979c9093096b5779",
+    "NEW-000999-2024-AUDIT.json": "fa8d5add40d65b0bdda49c5b1a939a7b579a7abd50e94816b84daa2f63013f3c",
+    "NEW-600036-2023-AUDIT.json": "67d4383114d1316a37e200e10e5e1a8072619ee3cf740fcf54d0e8d089bc132e",
+    "NEW-600036-2024-AUDIT.json": "f1a0255d921fe4f739387fc157828a9474833b574bb88a10188810449afb3643",
+    "NEW-603288-2023-AUDIT.json": "cdb19790eb733c2400a3347fe51e3b4468579f0c1405e36eb0e145ad7bcb4394",
+    "NEW-603288-2024-AUDIT.json": "07927d6c75056dc76a71f05269c33a8e7c90e2ef82b3f9661b1390df8d95b1a7"
+  },
+  "source_protocol_sha256": "e1dcaccf8fb4039173ac29237a1a8e33e7772a829990141172409f2459975bfb",
+  "stop_on_http_429": true,
+  "strict_final_schema": true,
+  "temperature": 1,
+  "units": 32
+}

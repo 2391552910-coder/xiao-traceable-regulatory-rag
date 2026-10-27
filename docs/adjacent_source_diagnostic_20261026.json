@@ -1,0 +1,3867 @@
+{
+  "schema_version": "adjacent-source-ai-diagnostic-v1",
+  "created_at_utc": "2026-10-26T16:04:30.365675+00:00",
+  "task_label_date": "2026-10-26",
+  "execution_scope": "Read-only local source inspection plus this single new diagnostic file; no network or model call",
+  "human_independent_validation": false,
+  "annotation_method": "Current AI assistant inspected exact existing PDFium page strings, indexed source chunk and saved initial packets; deterministic occurrence scan is ancillary and not human adjudication.",
+  "coordinate_convention": {
+    "unit": "Python Unicode code-point index into the decoded page record text",
+    "start": "0-based inclusive",
+    "end": "exclusive",
+    "page": "1-based physical PDF page; printed label reported separately where inspected",
+    "not_equivalent_to": [
+      "UTF-8 byte offset",
+      "offset into serialized JSON",
+      "PDF glyph bounding box"
+    ],
+    "whitespace": "Offsets refer to the original decoded text, including original newlines. Matching may collapse whitespace but occurrences map back to original coordinates."
+  },
+  "input_references": {
+    "corrected_labels_sha256": "7e5145494bc8243697aad409a910bd98fb9d2c522efe849ac43743f75e35ded2",
+    "frozen_labels_sha256": "4340de19b1e6bfaa3064208804db9b3261a8e3dbb13b2e1efbde5a9a936ad295",
+    "reference_erratum_after_output": true,
+    "reference_labels_changed": false,
+    "labels_used_for_offline_diagnostic_only": true,
+    "labels_must_not_enter_runtime_candidate_generation": true
+  },
+  "checked_initial_annual_source_chunks": 40,
+  "cmb_2024_boundary_case": {
+    "question_id": "NEW-600036-2024-AUDIT",
+    "physical_pdf_page": 97,
+    "printed_page_label": 96,
+    "page_text_characters": 1706,
+    "page_text_file_sha256": "74fcde262ac0a55e95fe9a8ae7804b233f83e79fe0386d311ab05aa5980457cc",
+    "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+    "initial_chunk": {
+      "evidence_id": "A3",
+      "chunk_id": "HELD-600036-2024-P97-S0",
+      "start_0based": 0,
+      "end_exclusive": 1200,
+      "substring_sha256": "37b820e7d28d4f3963ff47b1ca99c1d6352c2037dcf7fb589625a0d4065a5aaf",
+      "tail_excerpt": {
+        "start_0based": 1160,
+        "end_exclusive": 1200,
+        "substring": "第十四次会议（4月3日）、第十五次会议（4月25日）、\n第十六次会议（5月14日"
+      },
+      "initial_reference_tokens": 4780
+    },
+    "indexed_adjacent_candidate": {
+      "chunk_id": "HELD-600036-2024-P97-S1000",
+      "start_0based": 1000,
+      "end_exclusive": 1706,
+      "text_characters": 706,
+      "source_text_exact_match": true,
+      "index_record_read_only": true,
+      "substring_sha256": "a685f92a736ae21f6fbd996520a8688362bc554adcec351f687f316f73245d80",
+      "contains_all_four_audit_date_strings": true,
+      "contains_explicit_2024_audit_nine_meetings_prefix": true,
+      "token_budget_fit_verified": false,
+      "entire_text": " ；\n7. 审查监督员工举报财务报告、内部控制或其他不正当行为的机制，确保本公司公平且独立地处理举报事\n宜，并采取适当行动 ；\n8. 董事会授权的其他事宜。\n2024年，本公司董事会审计委员会召开了9次会议，即第十二届董事会审计委员会召开了第十二次会议暨独立董\n事年报工作会议（3月12日）、第十三次会议（3月19日）、第十四次会议（4月3日）、第十五次会议（4月25日）、\n第十六次会议（5月14日）、第十七次会议（5月23日）、第十八次会议（8月22日）、第十九次会议（10月25日）\n和第二十次会议（12月18日）。审计委员会坚持以季度例会制度为基础，以定期报告和内外部审计工作报告为抓\n手，审议通过了年度报告、半年度报告、季度报告，监督并核查财务报告信息的真实性、准确性、完整性和及时\n性 ；审议通过了年度、半年度和季度内部审计计划及工作情况汇报、年度内部控制评价报告等议案，就内审工作\n重点及数字化能力建设提出指导意见，为进一步提升公司内部审计水平、提升审计工作质效发挥积极作用 ；审议\n通过了聘请2024年度会计师事务所的议案，听取了外部审计师审计方案、审计结果、管理建议等多项汇报，与\n年审注册会计师就审计中的重要事项进行沟通，充分发挥外部审计监督作用 ；及时掌握内外部审计发现的问题，\n加强行内自查与监管关注问题的整改和问责，通过持续加强与内外部审计之间的沟通联系，促进内审和外审之间\n形成有效的沟通机制，继续保持与董事会风险与资本管理委员会的沟通机制，及时通报审计发现的重点问题，合\n力清除风险管理盲区死角，充分发挥了监督经营管理、揭示风险和问题、提升管理水平的重要作用，有效履行了\n相关职责。"
+    },
+    "audit_section_heading": {
+      "start_0based": 615,
+      "end_exclusive": 620,
+      "substring": "审计委员会"
+    },
+    "audit_meeting_list": {
+      "start_0based": 1079,
+      "end_exclusive": 1261,
+      "substring": "2024年，本公司董事会审计委员会召开了9次会议，即第十二届董事会审计委员会召开了第十二次会议暨独立董\n事年报工作会议（3月12日）、第十三次会议（3月19日）、第十四次会议（4月3日）、第十五次会议（4月25日）、\n第十六次会议（5月14日）、第十七次会议（5月23日）、第十八次会议（8月22日）、第十九次会议（10月25日）\n和第二十次会议（12月18日）。"
+    },
+    "four_audit_dates": [
+      {
+        "reference_iso_date": "2024-05-23",
+        "physical_pdf_page": 97,
+        "page_span": {
+          "start_0based": 1209,
+          "end_exclusive": 1214,
+          "substring": "5月23日"
+        },
+        "neighbor_relative_span": {
+          "start_0based": 209,
+          "end_exclusive": 214,
+          "substring": "5月23日"
+        },
+        "in_initial_selected_chunk": false,
+        "within_explicit_audit_meeting_list": true,
+        "year_supported_by_explicit_paragraph_prefix": true,
+        "supporting_excerpt": {
+          "start_0based": 1191,
+          "end_exclusive": 1232,
+          "substring": "次会议（5月14日）、第十七次会议（5月23日）、第十八次会议（8月22日）、第十"
+        }
+      },
+      {
+        "reference_iso_date": "2024-08-22",
+        "physical_pdf_page": 97,
+        "page_span": {
+          "start_0based": 1223,
+          "end_exclusive": 1228,
+          "substring": "8月22日"
+        },
+        "neighbor_relative_span": {
+          "start_0based": 223,
+          "end_exclusive": 228,
+          "substring": "8月22日"
+        },
+        "in_initial_selected_chunk": false,
+        "within_explicit_audit_meeting_list": true,
+        "year_supported_by_explicit_paragraph_prefix": true,
+        "supporting_excerpt": {
+          "start_0based": 1205,
+          "end_exclusive": 1246,
+          "substring": "次会议（5月23日）、第十八次会议（8月22日）、第十九次会议（10月25日）\n和"
+        }
+      },
+      {
+        "reference_iso_date": "2024-10-25",
+        "physical_pdf_page": 97,
+        "page_span": {
+          "start_0based": 1237,
+          "end_exclusive": 1243,
+          "substring": "10月25日"
+        },
+        "neighbor_relative_span": {
+          "start_0based": 237,
+          "end_exclusive": 243,
+          "substring": "10月25日"
+        },
+        "in_initial_selected_chunk": false,
+        "within_explicit_audit_meeting_list": true,
+        "year_supported_by_explicit_paragraph_prefix": true,
+        "supporting_excerpt": {
+          "start_0based": 1219,
+          "end_exclusive": 1261,
+          "substring": "次会议（8月22日）、第十九次会议（10月25日）\n和第二十次会议（12月18日）。"
+        }
+      },
+      {
+        "reference_iso_date": "2024-12-18",
+        "physical_pdf_page": 97,
+        "page_span": {
+          "start_0based": 1253,
+          "end_exclusive": 1259,
+          "substring": "12月18日"
+        },
+        "neighbor_relative_span": {
+          "start_0based": 253,
+          "end_exclusive": 259,
+          "substring": "12月18日"
+        },
+        "in_initial_selected_chunk": false,
+        "within_explicit_audit_meeting_list": true,
+        "year_supported_by_explicit_paragraph_prefix": true,
+        "supporting_excerpt": {
+          "start_0based": 1235,
+          "end_exclusive": 1261,
+          "substring": "议（10月25日）\n和第二十次会议（12月18日）。"
+        }
+      }
+    ],
+    "confounding_other_committee_date": {
+      "reference_iso_date": "2024-10-25",
+      "page_span": {
+        "start_0based": 242,
+        "end_exclusive": 248,
+        "substring": "10月25日"
+      },
+      "in_initial_selected_chunk": true,
+      "committee": "董事会风险与资本管理委员会",
+      "risk_section_year_and_identity": {
+        "start_0based": 36,
+        "end_exclusive": 111,
+        "substring": "2024年，本公司董事会风险与资本管理委员会召开了14次会议，即第十二届董事会风险与资本管理委员会召开\n了第十四次会议（3月13日）、第十五次会议（3"
+      },
+      "supporting_excerpt": {
+        "start_0based": 220,
+        "end_exclusive": 276,
+        "substring": "二十三次会议（9月26日）、第二十四次会议（10月25日）、第二十五次会议（11\n月26日）、第二十六次会议（1"
+      },
+      "interpretation": "Unscoped month/day or year-normalized string matching produces a false impression that the audit committee October date was already available. This initial occurrence belongs to the risk committee."
+    },
+    "conclusion": "The existing same-page S1000 neighbor contains all four audit-specific date occurrences after S0 ends, plus an explicit audit committee/year/meeting-count prefix. This establishes source-text reachability of those coordinates, not packing success, generated completeness, semantic recall or quality improvement."
+  },
+  "question_diagnostics": [
+    {
+      "question_id": "NEW-603288-2023-AUDIT",
+      "report_file": "haday_2023.pdf",
+      "report_sha256": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\haday_2023.json",
+      "page_text_file_sha256": "c3eb456014912c0e3bae8d9e9551414a6b075bc95263da5c762aad809ac10d10",
+      "packet_sha256": "cdb19790eb733c2400a3347fe51e3b4468579f0c1405e36eb0e145ad7bcb4394",
+      "initial_reference_tokens": 4116,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-603288-2023-P38-S0",
+          "physical_pdf_page": 38,
+          "start_0based": 0,
+          "end_exclusive": 801
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-603288-2023-P37-S0",
+          "physical_pdf_page": 37,
+          "start_0based": 0,
+          "end_exclusive": 832
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-603288-2023-P39-S0",
+          "physical_pdf_page": 39,
+          "start_0based": 0,
+          "end_exclusive": 782
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-603288-2023-P30-S0",
+          "physical_pdf_page": 30,
+          "start_0based": 0,
+          "end_exclusive": 1007
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-603288-2023-P36-S0",
+          "physical_pdf_page": 36,
+          "start_0based": 0,
+          "end_exclusive": 838
+        }
+      ],
+      "reference_membership_scope": null,
+      "name_lexical_items": [
+        {
+          "reference_name": "沈洪涛",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 225,
+              "end_exclusive": 228,
+              "substring": "沈洪涛",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 270,
+              "end_exclusive": 273,
+              "substring": "沈洪涛",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 291,
+              "end_exclusive": 294,
+              "substring": "沈洪涛",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 37,
+              "start_0based": 773,
+              "end_exclusive": 776,
+              "substring": "沈洪涛",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "徐家力",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 234,
+              "end_exclusive": 237,
+              "substring": "徐家力",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 257,
+              "end_exclusive": 260,
+              "substring": "徐家力",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 304,
+              "end_exclusive": 307,
+              "substring": "徐家力",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 37,
+              "start_0based": 813,
+              "end_exclusive": 816,
+              "substring": "徐家力",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "孙远明",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 238,
+              "end_exclusive": 241,
+              "substring": "孙远明",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 266,
+              "end_exclusive": 269,
+              "substring": "孙远明",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 300,
+              "end_exclusive": 303,
+              "substring": "孙远明",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 37,
+              "start_0based": 793,
+              "end_exclusive": 796,
+              "substring": "孙远明",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "陈军阳",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 242,
+              "end_exclusive": 245,
+              "substring": "陈军阳",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 336,
+              "end_exclusive": 339,
+              "substring": "陈军阳",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 37,
+              "start_0based": 715,
+              "end_exclusive": 718,
+              "substring": "陈军阳",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "文志州",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 246,
+              "end_exclusive": 249,
+              "substring": "文志州",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 340,
+              "end_exclusive": 343,
+              "substring": "文志州",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 37,
+              "start_0based": 733,
+              "end_exclusive": 736,
+              "substring": "文志州",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2023-04-14",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 38,
+              "start_0based": 395,
+              "end_exclusive": 410,
+              "substring": "2023 年 4\n月 14 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 39,
+              "start_0based": 220,
+              "end_exclusive": 235,
+              "substring": "2023 年 4\n月 14 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 39,
+              "start_0based": 466,
+              "end_exclusive": 481,
+              "substring": "2023 年 4\n月 14 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-08-18",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 39,
+              "start_0based": 44,
+              "end_exclusive": 52,
+              "substring": "8\n月 18 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-10-30",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 37,
+              "start_0based": 429,
+              "end_exclusive": 445,
+              "substring": "2023 年 10\n月 30 日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 39,
+              "start_0based": 106,
+              "end_exclusive": 122,
+              "substring": "2023 年\n10 月 30\n日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-603288-2024-AUDIT",
+      "report_file": "haday_2024.pdf",
+      "report_sha256": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\haday_2024.json",
+      "page_text_file_sha256": "c6afb47609285db8853297118f82c82733bd8fbd010ee26e8606ef27e85d747e",
+      "packet_sha256": "07927d6c75056dc76a71f05269c33a8e7c90e2ef82b3f9661b1390df8d95b1a7",
+      "initial_reference_tokens": 4405,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-603288-2024-P42-S0",
+          "physical_pdf_page": 42,
+          "start_0based": 0,
+          "end_exclusive": 1058
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-603288-2024-P39-S0",
+          "physical_pdf_page": 39,
+          "start_0based": 0,
+          "end_exclusive": 949
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-603288-2024-P43-S0",
+          "physical_pdf_page": 43,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-603288-2024-P41-S0",
+          "physical_pdf_page": 41,
+          "start_0based": 0,
+          "end_exclusive": 892
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-603288-2024-P43-S1000",
+          "physical_pdf_page": 43,
+          "start_0based": 1000,
+          "end_exclusive": 1202
+        }
+      ],
+      "reference_membership_scope": "Only explicitly tabulated current committee roster is a definitive reference. Earlier directors are listed elsewhere without a committee-specific roster; no membership inferred from prior-year report. Member metric is extraction of disclosed linkage, not certification of exhaustive real tenure.",
+      "name_lexical_items": [
+        {
+          "reference_name": "屈文洲",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 115,
+              "end_exclusive": 118,
+              "substring": "屈文洲",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 155,
+              "end_exclusive": 158,
+              "substring": "屈文洲",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 178,
+              "end_exclusive": 181,
+              "substring": "屈文洲",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 41,
+              "start_0based": 613,
+              "end_exclusive": 616,
+              "substring": "屈文洲",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "张科春",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 124,
+              "end_exclusive": 127,
+              "substring": "张科春",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 146,
+              "end_exclusive": 149,
+              "substring": "张科春",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 187,
+              "end_exclusive": 190,
+              "substring": "张科春",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 41,
+              "start_0based": 593,
+              "end_exclusive": 596,
+              "substring": "张科春",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "丁邦清",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 128,
+              "end_exclusive": 131,
+              "substring": "丁邦清",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 159,
+              "end_exclusive": 162,
+              "substring": "丁邦清",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 191,
+              "end_exclusive": 194,
+              "substring": "丁邦清",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 41,
+              "start_0based": 633,
+              "end_exclusive": 636,
+              "substring": "丁邦清",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "文志州",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 132,
+              "end_exclusive": 135,
+              "substring": "文志州",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 234,
+              "end_exclusive": 237,
+              "substring": "文志州",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 41,
+              "start_0based": 534,
+              "end_exclusive": 537,
+              "substring": "文志州",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "廖长辉",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 136,
+              "end_exclusive": 139,
+              "substring": "廖长辉",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 230,
+              "end_exclusive": 233,
+              "substring": "廖长辉",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 41,
+              "start_0based": 554,
+              "end_exclusive": 557,
+              "substring": "廖长辉",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2024-01-05",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 288,
+              "end_exclusive": 302,
+              "substring": "2024 年 1\n月 5 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-04-15",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 437,
+              "end_exclusive": 452,
+              "substring": "2024 年 4\n月 15 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 702,
+              "end_exclusive": 717,
+              "substring": "2024 年 4\n月 15 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-08-19",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 42,
+              "start_0based": 943,
+              "end_exclusive": 958,
+              "substring": "2024 年 8\n月 19 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 302,
+              "end_exclusive": 315,
+              "substring": "2024 年 8\n月 19",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 842,
+              "end_exclusive": 857,
+              "substring": "2024 年 8\n月 19 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-09-19",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 432,
+              "end_exclusive": 447,
+              "substring": "2024 年 9\n月 19 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 1016,
+              "end_exclusive": 1031,
+              "substring": "2024 年 9\n月 19 日",
+              "evidence_ids": [
+                "A3",
+                "A5"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-10-18",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 68,
+              "end_exclusive": 84,
+              "substring": "2024 年\n10 月 18\n日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-12-06",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 141,
+              "end_exclusive": 156,
+              "substring": "2024 年\n12 月 6 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 43,
+              "start_0based": 545,
+              "end_exclusive": 560,
+              "substring": "2024 年\n12 月 6 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-000999-2023-AUDIT",
+      "report_file": "hrsj_2023.pdf",
+      "report_sha256": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\hrsj_2023.json",
+      "page_text_file_sha256": "e3207568a560d598d0607d5801cedf185af9233a96a70bb57b5a1b82d9d2747e",
+      "packet_sha256": "bb54821da07634ae64379425d7ea7e4efd68203ce599a2e1979c9093096b5779",
+      "initial_reference_tokens": 4452,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-000999-2023-P55-S0",
+          "physical_pdf_page": 55,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-000999-2023-P55-S1000",
+          "physical_pdf_page": 55,
+          "start_0based": 1000,
+          "end_exclusive": 1541
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-000999-2023-P56-S0",
+          "physical_pdf_page": 56,
+          "start_0based": 0,
+          "end_exclusive": 936
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-000999-2023-P43-S1000",
+          "physical_pdf_page": 43,
+          "start_0based": 1000,
+          "end_exclusive": 1506
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-000999-2023-P53-S0",
+          "physical_pdf_page": 53,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        }
+      ],
+      "reference_membership_scope": null,
+      "name_lexical_items": [
+        {
+          "reference_name": "刘俊勇",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 465,
+              "end_exclusive": 468,
+              "substring": "刘俊勇",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 689,
+              "end_exclusive": 692,
+              "substring": "刘俊勇",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 845,
+              "end_exclusive": 848,
+              "substring": "刘俊勇",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 984,
+              "end_exclusive": 987,
+              "substring": "刘俊勇",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1162,
+              "end_exclusive": 1165,
+              "substring": "刘俊勇",
+              "evidence_ids": [
+                "A1",
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "姚兴田",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 363,
+              "end_exclusive": 366,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 470,
+              "end_exclusive": 473,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 694,
+              "end_exclusive": 697,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 850,
+              "end_exclusive": 853,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 989,
+              "end_exclusive": 992,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1167,
+              "end_exclusive": 1170,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A1",
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "于舒天",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 358,
+              "end_exclusive": 361,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 475,
+              "end_exclusive": 478,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 699,
+              "end_exclusive": 702,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 855,
+              "end_exclusive": 858,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 994,
+              "end_exclusive": 997,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1172,
+              "end_exclusive": 1175,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1",
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2023-03-27",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 376,
+              "end_exclusive": 385,
+              "substring": "03\n月 27\n日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 488,
+              "end_exclusive": 497,
+              "substring": "03\n月 27\n日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1421,
+              "end_exclusive": 1437,
+              "substring": "2023\n年 03\n月 27\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 689,
+              "end_exclusive": 705,
+              "substring": "2023 年 03\n月 27 日",
+              "evidence_ids": [
+                "A5"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-04-28",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 703,
+              "end_exclusive": 719,
+              "substring": "2023\n年 04\n月 28\n日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 56,
+              "start_0based": 61,
+              "end_exclusive": 70,
+              "substring": "04\n月 28\n日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 813,
+              "end_exclusive": 829,
+              "substring": "2023 年 04\n月 28 日",
+              "evidence_ids": [
+                "A5"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-08-28",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 859,
+              "end_exclusive": 875,
+              "substring": "2023\n年 08\n月 28\n日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-10-27",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 998,
+              "end_exclusive": 1014,
+              "substring": "2023\n年 10\n月 27\n日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1005,
+              "end_exclusive": 1014,
+              "substring": "10\n月 27\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-12-13",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1176,
+              "end_exclusive": 1192,
+              "substring": "2023\n年 12\n月 13\n日",
+              "evidence_ids": [
+                "A1",
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 56,
+              "start_0based": 493,
+              "end_exclusive": 509,
+              "substring": "2023\n年 12\n月 13\n日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-000999-2024-AUDIT",
+      "report_file": "hrsj_2024.pdf",
+      "report_sha256": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\hrsj_2024.json",
+      "page_text_file_sha256": "83baa80f744765328b0404b19dcd736746711b95df7b4ed6e2557037eed08cc0",
+      "packet_sha256": "fa8d5add40d65b0bdda49c5b1a939a7b579a7abd50e94816b84daa2f63013f3c",
+      "initial_reference_tokens": 5417,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-000999-2024-P51-S2000",
+          "physical_pdf_page": 51,
+          "start_0based": 2000,
+          "end_exclusive": 2740
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-000999-2024-P54-S0",
+          "physical_pdf_page": 54,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-000999-2024-P53-S0",
+          "physical_pdf_page": 53,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-000999-2024-P55-S0",
+          "physical_pdf_page": 55,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-000999-2024-P50-S0",
+          "physical_pdf_page": 50,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        }
+      ],
+      "reference_membership_scope": "Corrected after output inspection; secondary page 94 corroborates page 44. Original locked label retained for comparison.",
+      "name_lexical_items": [
+        {
+          "reference_name": "孙健",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 2722,
+              "end_exclusive": 2724,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 138,
+              "end_exclusive": 140,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 238,
+              "end_exclusive": 240,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 400,
+              "end_exclusive": 402,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 555,
+              "end_exclusive": 557,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 990,
+              "end_exclusive": 992,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1094,
+              "end_exclusive": 1096,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 74,
+              "end_exclusive": 76,
+              "substring": "孙健",
+              "evidence_ids": [
+                "A5"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "姚兴田",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 245,
+              "end_exclusive": 248,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 377,
+              "end_exclusive": 380,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 504,
+              "end_exclusive": 507,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 714,
+              "end_exclusive": 717,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 856,
+              "end_exclusive": 859,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 978,
+              "end_exclusive": 981,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1082,
+              "end_exclusive": 1085,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 341,
+              "end_exclusive": 344,
+              "substring": "姚兴田",
+              "evidence_ids": [
+                "A5"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "于舒天",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 2609,
+              "end_exclusive": 2612,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 50,
+              "end_exclusive": 54,
+              "substring": "于\n舒天",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 141,
+              "end_exclusive": 145,
+              "substring": "于\n舒天",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 241,
+              "end_exclusive": 245,
+              "substring": "于\n舒天",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 403,
+              "end_exclusive": 407,
+              "substring": "于\n舒天",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 558,
+              "end_exclusive": 562,
+              "substring": "于\n舒天",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 240,
+              "end_exclusive": 243,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 372,
+              "end_exclusive": 375,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 499,
+              "end_exclusive": 502,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 617,
+              "end_exclusive": 620,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 745,
+              "end_exclusive": 748,
+              "substring": "于舒天",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "王轶",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 146,
+              "end_exclusive": 149,
+              "substring": "王\n轶",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 246,
+              "end_exclusive": 249,
+              "substring": "王\n轶",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 408,
+              "end_exclusive": 411,
+              "substring": "王\n轶",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 563,
+              "end_exclusive": 566,
+              "substring": "王\n轶",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 98,
+              "end_exclusive": 100,
+              "substring": "王轶",
+              "evidence_ids": [
+                "A5"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "刘俊勇",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 726,
+              "end_exclusive": 730,
+              "substring": "刘俊\n勇",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 868,
+              "end_exclusive": 872,
+              "substring": "刘俊\n勇",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 411,
+              "end_exclusive": 414,
+              "substring": "刘俊勇",
+              "evidence_ids": [
+                "A5"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2024-03-21",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 782,
+              "end_exclusive": 798,
+              "substring": "2024\n年 03\n月 21\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "薪酬与考核委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 53,
+              "start_0based": 508,
+              "end_exclusive": 524,
+              "substring": "2024\n年 03\n月 21\n日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "战略投资委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-04-19",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 57,
+              "end_exclusive": 66,
+              "substring": "04\n月 19\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-05-16",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 150,
+              "end_exclusive": 166,
+              "substring": "2024\n年 05\n月 16\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 58,
+              "end_exclusive": 67,
+              "substring": "05\n月 16\n日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-08-22",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 250,
+              "end_exclusive": 266,
+              "substring": "2024\n年 08\n月 22\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-10-25",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 412,
+              "end_exclusive": 428,
+              "substring": "2024\n年 10\n月 25\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 382,
+              "end_exclusive": 398,
+              "substring": "2024\n年 10\n月 25\n日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-11-28",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 2124,
+              "end_exclusive": 2140,
+              "substring": "2024 年 11\n月 28 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 54,
+              "start_0based": 567,
+              "end_exclusive": 583,
+              "substring": "2024\n年 11\n月 28\n日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 605,
+              "end_exclusive": 621,
+              "substring": "2024\n年 11\n月 28\n日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "提名委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-000651-2023-AUDIT",
+      "report_file": "gree_2023.pdf",
+      "report_sha256": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\gree_2023.json",
+      "page_text_file_sha256": "63e2c2c96e6627e833504ee522822fb6410151743def4b1a0598830aa6ca7626",
+      "packet_sha256": "dbe03bc068014a15edaa5fbaedf647fbed9f2549b50da85e20293ec307b90df7",
+      "initial_reference_tokens": 4800,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-000651-2023-P51-S0",
+          "physical_pdf_page": 51,
+          "start_0based": 0,
+          "end_exclusive": 822
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-000651-2023-P50-S0",
+          "physical_pdf_page": 50,
+          "start_0based": 0,
+          "end_exclusive": 975
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-000651-2023-P55-S0",
+          "physical_pdf_page": 55,
+          "start_0based": 0,
+          "end_exclusive": 1175
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-000651-2023-P49-S0",
+          "physical_pdf_page": 49,
+          "start_0based": 0,
+          "end_exclusive": 1165
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-000651-2023-P42-S0",
+          "physical_pdf_page": 42,
+          "start_0based": 0,
+          "end_exclusive": 749
+        }
+      ],
+      "reference_membership_scope": "Two meetings on April 28; four meetings but three unique dates.",
+      "name_lexical_items": [
+        {
+          "reference_name": "刘姝威",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 140,
+              "end_exclusive": 143,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 251,
+              "end_exclusive": 254,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 304,
+              "end_exclusive": 307,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 360,
+              "end_exclusive": 363,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 421,
+              "end_exclusive": 425,
+              "substring": "刘\n姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 494,
+              "end_exclusive": 498,
+              "substring": "刘\n姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 651,
+              "end_exclusive": 654,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 49,
+              "start_0based": 634,
+              "end_exclusive": 637,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "王晓华",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 144,
+              "end_exclusive": 148,
+              "substring": "王\n晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 255,
+              "end_exclusive": 259,
+              "substring": "王\n晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 308,
+              "end_exclusive": 312,
+              "substring": "王\n晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 364,
+              "end_exclusive": 368,
+              "substring": "王\n晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 417,
+              "end_exclusive": 420,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 490,
+              "end_exclusive": 493,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 669,
+              "end_exclusive": 672,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 49,
+              "start_0based": 656,
+              "end_exclusive": 659,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "张伟",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 149,
+              "end_exclusive": 151,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 260,
+              "end_exclusive": 262,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 313,
+              "end_exclusive": 315,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 369,
+              "end_exclusive": 371,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 426,
+              "end_exclusive": 428,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 499,
+              "end_exclusive": 501,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 580,
+              "end_exclusive": 582,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A2"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 251,
+              "end_exclusive": 253,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 49,
+              "start_0based": 540,
+              "end_exclusive": 542,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2023-04-28",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 161,
+              "end_exclusive": 170,
+              "substring": "04 月 28 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 263,
+              "end_exclusive": 279,
+              "substring": "2023 年 04 月 28 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 438,
+              "end_exclusive": 447,
+              "substring": "04 月 28 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 73,
+              "end_exclusive": 89,
+              "substring": "2023 年 04 月 28 日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 49,
+              "start_0based": 1105,
+              "end_exclusive": 1121,
+              "substring": "2023 年 04 月 28 日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-08-30",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 316,
+              "end_exclusive": 332,
+              "substring": "2023 年 08 月 30 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 166,
+              "end_exclusive": 182,
+              "substring": "2023 年 08 月 30 日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-10-30",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 51,
+              "start_0based": 372,
+              "end_exclusive": 388,
+              "substring": "2023 年 10 月 30 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 50,
+              "start_0based": 259,
+              "end_exclusive": 275,
+              "substring": "2023 年 10 月 30 日",
+              "evidence_ids": [
+                "A2"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-000651-2024-AUDIT",
+      "report_file": "gree_2024.pdf",
+      "report_sha256": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\gree_2024.json",
+      "page_text_file_sha256": "d34eef2f8ae6c67960dff6c5295cd0e4cf77b5038ac6bbd7737cbfca66e32b17",
+      "packet_sha256": "19ec0a877a0bf970e27482bc107254c6eab01d743f7c08b620e613721e6e6de9",
+      "initial_reference_tokens": 4713,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-000651-2024-P56-S0",
+          "physical_pdf_page": 56,
+          "start_0based": 0,
+          "end_exclusive": 938
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-000651-2024-P61-S0",
+          "physical_pdf_page": 61,
+          "start_0based": 0,
+          "end_exclusive": 1189
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-000651-2024-P55-S0",
+          "physical_pdf_page": 55,
+          "start_0based": 0,
+          "end_exclusive": 1188
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-000651-2024-P57-S0",
+          "physical_pdf_page": 57,
+          "start_0based": 0,
+          "end_exclusive": 717
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-000651-2024-P47-S0",
+          "physical_pdf_page": 47,
+          "start_0based": 0,
+          "end_exclusive": 891
+        }
+      ],
+      "reference_membership_scope": "Two meetings on April 29; four meetings but three unique dates.",
+      "name_lexical_items": [
+        {
+          "reference_name": "刘姝威",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 56,
+              "start_0based": 535,
+              "end_exclusive": 538,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 342,
+              "end_exclusive": 345,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 47,
+              "end_exclusive": 50,
+              "substring": "刘姝威",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 297,
+              "end_exclusive": 301,
+              "substring": "刘\n姝威",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "王晓华",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 56,
+              "start_0based": 553,
+              "end_exclusive": 556,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 367,
+              "end_exclusive": 370,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 51,
+              "end_exclusive": 55,
+              "substring": "王\n晓华",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 293,
+              "end_exclusive": 296,
+              "substring": "王晓华",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "张伟",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 56,
+              "start_0based": 464,
+              "end_exclusive": 466,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 243,
+              "end_exclusive": 245,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 56,
+              "end_exclusive": 58,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 302,
+              "end_exclusive": 304,
+              "substring": "张伟",
+              "evidence_ids": [
+                "A4"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2024-04-29",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 843,
+              "end_exclusive": 859,
+              "substring": "2024 年 04 月 29 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 68,
+              "end_exclusive": 77,
+              "substring": "04 月 29 日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 175,
+              "end_exclusive": 191,
+              "substring": "2024 年 04 月 29 日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 314,
+              "end_exclusive": 323,
+              "substring": "04 月 29 日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-08-30",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 55,
+              "start_0based": 1033,
+              "end_exclusive": 1049,
+              "substring": "2024 年 08 月 30 日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 210,
+              "end_exclusive": 226,
+              "substring": "2024 年 08 月 30 日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-10-30",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 56,
+              "start_0based": 163,
+              "end_exclusive": 179,
+              "substring": "2024 年 10 月 30 日",
+              "evidence_ids": [
+                "A1"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 57,
+              "start_0based": 248,
+              "end_exclusive": 264,
+              "substring": "2024 年 10 月 30 日",
+              "evidence_ids": [
+                "A4"
+              ],
+              "style": "explicit_year_chinese",
+              "year_inferred_from_report": false,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-600036-2023-AUDIT",
+      "report_file": "cmb_2023.pdf",
+      "report_sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\cmb_2023.json",
+      "page_text_file_sha256": "72b663710fba6e6c3452de0ecc5d45975e91cc56c24d1d12fd5ecf3ff482e6b0",
+      "packet_sha256": "67d4383114d1316a37e200e10e5e1a8072619ee3cf740fcf54d0e8d089bc132e",
+      "initial_reference_tokens": 4669,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-600036-2023-P93-S0",
+          "physical_pdf_page": 93,
+          "start_0based": 0,
+          "end_exclusive": 956
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-600036-2023-P81-S0",
+          "physical_pdf_page": 81,
+          "start_0based": 0,
+          "end_exclusive": 907
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-600036-2023-P97-S0",
+          "physical_pdf_page": 97,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-600036-2023-P99-S0",
+          "physical_pdf_page": 99,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-600036-2023-P100-S0",
+          "physical_pdf_page": 100,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        }
+      ],
+      "reference_membership_scope": null,
+      "name_lexical_items": [
+        {
+          "reference_name": "田宏启",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 783,
+              "end_exclusive": 786,
+              "substring": "田宏启",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 539,
+              "end_exclusive": 542,
+              "substring": "田宏启",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "王仕雄",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 687,
+              "end_exclusive": 690,
+              "substring": "王仕雄",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 550,
+              "end_exclusive": 553,
+              "substring": "王仕雄",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "李孟刚",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 719,
+              "end_exclusive": 722,
+              "substring": "李孟刚",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 554,
+              "end_exclusive": 557,
+              "substring": "李孟刚",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "史永东",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 845,
+              "end_exclusive": 848,
+              "substring": "史永东",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 558,
+              "end_exclusive": 561,
+              "substring": "史永东",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "周松",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 431,
+              "end_exclusive": 434,
+              "substring": "周 松",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 567,
+              "end_exclusive": 569,
+              "substring": "周松",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2023-03-09",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1022,
+              "end_exclusive": 1026,
+              "substring": "3月9日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-03-20",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1034,
+              "end_exclusive": 1039,
+              "substring": "3月20日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-04-24",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1047,
+              "end_exclusive": 1052,
+              "substring": "4月24日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-05-18",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1060,
+              "end_exclusive": 1065,
+              "substring": "5月18日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-07-11",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1074,
+              "end_exclusive": 1079,
+              "substring": "7月11日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-08-21",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1087,
+              "end_exclusive": 1092,
+              "substring": "8月21日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-09-18",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1100,
+              "end_exclusive": 1105,
+              "substring": "9月18日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2023-10-24",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1114,
+              "end_exclusive": 1120,
+              "substring": "10月24日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 1.0,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "report_file": "cmb_2024.pdf",
+      "report_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page_text_file": "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\cmb_2024.json",
+      "page_text_file_sha256": "74fcde262ac0a55e95fe9a8ae7804b233f83e79fe0386d311ab05aa5980457cc",
+      "packet_sha256": "f1a0255d921fe4f739387fc157828a9474833b574bb88a10188810449afb3643",
+      "initial_reference_tokens": 4780,
+      "initial_annual_chunks": [
+        {
+          "evidence_id": "A1",
+          "chunk_id": "HELD-600036-2024-P93-S0",
+          "physical_pdf_page": 93,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A2",
+          "chunk_id": "HELD-600036-2024-P83-S0",
+          "physical_pdf_page": 83,
+          "start_0based": 0,
+          "end_exclusive": 879
+        },
+        {
+          "evidence_id": "A3",
+          "chunk_id": "HELD-600036-2024-P97-S0",
+          "physical_pdf_page": 97,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A4",
+          "chunk_id": "HELD-600036-2024-P99-S0",
+          "physical_pdf_page": 99,
+          "start_0based": 0,
+          "end_exclusive": 1200
+        },
+        {
+          "evidence_id": "A5",
+          "chunk_id": "HELD-600036-2024-P98-S0",
+          "physical_pdf_page": 98,
+          "start_0based": 0,
+          "end_exclusive": 1190
+        }
+      ],
+      "reference_membership_scope": "Year-end roster has four names. Period-union reference also includes 王仕雄 and 周松 based on audit committee attendance column on physical page 93.",
+      "name_lexical_items": [
+        {
+          "reference_name": "田宏启",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 993,
+              "end_exclusive": 996,
+              "substring": "田宏启",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 663,
+              "end_exclusive": 666,
+              "substring": "田宏启",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 98,
+              "start_0based": 434,
+              "end_exclusive": 437,
+              "substring": "田宏启",
+              "evidence_ids": [
+                "A5"
+              ],
+              "committee_hint": "关联交易管理与消费者权益保护委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "王仕雄",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 1129,
+              "end_exclusive": 1132,
+              "substring": "王仕雄",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "李孟刚",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 919,
+              "end_exclusive": 922,
+              "substring": "李孟刚",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 674,
+              "end_exclusive": 677,
+              "substring": "李孟刚",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "史永东",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 1063,
+              "end_exclusive": 1066,
+              "substring": "史永东",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 678,
+              "end_exclusive": 681,
+              "substring": "史永东",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "周松",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 703,
+              "end_exclusive": 706,
+              "substring": "周 松",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_name": "李健",
+          "present_as_whitespace_normalized_string": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 93,
+              "start_0based": 1099,
+              "end_exclusive": 1102,
+              "substring": "李 健",
+              "evidence_ids": [
+                "A1"
+              ],
+              "committee_hint": null,
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 682,
+              "end_exclusive": 684,
+              "substring": "李健",
+              "evidence_ids": [
+                "A3"
+              ],
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 98,
+              "start_0based": 438,
+              "end_exclusive": 440,
+              "substring": "李健",
+              "evidence_ids": [
+                "A5"
+              ],
+              "committee_hint": "关联交易管理与消费者权益保护委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        }
+      ],
+      "date_lexical_items": [
+        {
+          "reference_iso_date": "2024-03-12",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1139,
+              "end_exclusive": 1144,
+              "substring": "3月12日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 98,
+              "start_0based": 858,
+              "end_exclusive": 863,
+              "substring": "3月12日",
+              "evidence_ids": [
+                "A5"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "关联交易管理与消费者权益保护委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-03-19",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 110,
+              "end_exclusive": 115,
+              "substring": "3月19日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "风险与资本管理委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1153,
+              "end_exclusive": 1158,
+              "substring": "3月19日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-04-03",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1167,
+              "end_exclusive": 1171,
+              "substring": "4月3日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-04-25",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 138,
+              "end_exclusive": 143,
+              "substring": "4月25日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "风险与资本管理委员会",
+              "committee_hint_is_heuristic": true
+            },
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1180,
+              "end_exclusive": 1185,
+              "substring": "4月25日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-05-14",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 1195,
+              "end_exclusive": 1200,
+              "substring": "5月14日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "审计委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-05-23",
+          "present_as_natural_date_string_without_scope_validation": false,
+          "initial_occurrences": []
+        },
+        {
+          "reference_iso_date": "2024-08-22",
+          "present_as_natural_date_string_without_scope_validation": false,
+          "initial_occurrences": []
+        },
+        {
+          "reference_iso_date": "2024-10-25",
+          "present_as_natural_date_string_without_scope_validation": true,
+          "initial_occurrences": [
+            {
+              "physical_pdf_page": 97,
+              "start_0based": 242,
+              "end_exclusive": 248,
+              "substring": "10月25日",
+              "evidence_ids": [
+                "A3"
+              ],
+              "style": "month_day_only",
+              "year_inferred_from_report": true,
+              "committee_hint": "风险与资本管理委员会",
+              "committee_hint_is_heuristic": true
+            }
+          ]
+        },
+        {
+          "reference_iso_date": "2024-12-18",
+          "present_as_natural_date_string_without_scope_validation": false,
+          "initial_occurrences": []
+        }
+      ],
+      "initial_name_lexical_presence_ratio": 1.0,
+      "initial_date_lexical_presence_ratio_unscoped": 0.6666666666666666,
+      "interpretation": "Descriptive string availability only; not semantic recall, supported membership, applicable year, complete evidence or answer accuracy.",
+      "source_pdf_bytes_sha256_rechecked": true
+    }
+  ],
+  "recommended_metrics": [
+    {
+      "name": "original_context_and_source_id_retention",
+      "definition": "Exact prefix/text and source record identity before versus after expansion; separate token-budget assertion",
+      "does_not_measure": "Truth or relevance of original material"
+    },
+    {
+      "name": "coordinate_verified_adjacent_availability",
+      "definition": "Whether a predetermined existing same-report neighbor contains the explicitly inspected target substring plus committee/year anchors at supplied offsets",
+      "does_not_measure": "General semantic recall or answer accuracy"
+    },
+    {
+      "name": "reference_item_lexical_presence",
+      "definition": "Item-wise membership/date string availability with formatting normalization, reported with explicit-year/inferred-year and committee-scope flags",
+      "does_not_measure": "That a name served on the requested committee or a date describes the requested committee"
+    },
+    {
+      "name": "packed_coordinate_coverage",
+      "definition": "After actual offline packing, check target coordinates/text survive in supplied records; separately verify unchanged 6000-token ceiling",
+      "does_not_measure": "That a model uses those coordinates correctly"
+    }
+  ],
+  "risks": [
+    {
+      "type": "other_committee_date_collision",
+      "example": "CMB2024 p97 10月25日 occurs both in risk committee and audit committee lists; only risk occurrence is in initial S0."
+    },
+    {
+      "type": "month_day_year_scope",
+      "example": "Bank meeting lists use 月日 without repeating year; a strict ISO-only substring detector misses them, while blindly assigning report year can misattribute dates."
+    },
+    {
+      "type": "table_whitespace_and_column_scope",
+      "example": "Names and dates can wrap across PDF text lines; whitespace collapse recovers strings but does not reconstruct committee column ownership."
+    },
+    {
+      "type": "same_day_multiple_meetings",
+      "example": "Both Gree references have four meetings and three unique dates; lexical date counts must not replace meeting count."
+    },
+    {
+      "type": "tenure_scope_vs_current_roster",
+      "example": "CMB2024 former members occur in attendance/personnel evidence; CR Sanjiu2024 requires departed chair evidence outside the meeting table. Name presence elsewhere is insufficient."
+    },
+    {
+      "type": "ambiguous_annual_union",
+      "example": "Haitian2024 reference itself limits scope to explicitly linked current roster; this diagnostic does not establish full real-world annual membership."
+    },
+    {
+      "type": "ocr_name_confusion",
+      "example": "Do not silently merge 王轶 with 王铁 or other edit-distance variants. Source uncertainty needs a separate reviewed correction."
+    },
+    {
+      "type": "overlap_duplicate",
+      "example": "S0 and S1000 overlap by 200 page characters; one occurrence in their overlap must not count as two meetings or two independent supporting passages."
+    },
+    {
+      "type": "boundary_and_budget",
+      "example": "An indexed neighbor can contain the target but still be excluded by the actual context ceiling; candidate availability and packed availability must be separate."
+    },
+    {
+      "type": "exposed_case_gold_leakage",
+      "example": "The eight references are exposed, AI-assisted and partly corrected post-output. These coordinates are offline diagnostic labels and must not select runtime neighbors by target date/name."
+    }
+  ],
+  "quality_metrics": {
+    "answer_precision": null,
+    "answer_recall": null,
+    "answer_f1": null,
+    "answer_accuracy": null,
+    "new_model_answers": 0,
+    "independent_test": false
+  },
+  "targets": [
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1139,
+      "end": 1144,
+      "text": "3月12日",
+      "label": "2024-03-12",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1153,
+      "end": 1158,
+      "text": "3月19日",
+      "label": "2024-03-19",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1167,
+      "end": 1171,
+      "text": "4月3日",
+      "label": "2024-04-03",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1180,
+      "end": 1185,
+      "text": "4月25日",
+      "label": "2024-04-25",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1195,
+      "end": 1200,
+      "text": "5月14日",
+      "label": "2024-05-14",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1209,
+      "end": 1214,
+      "text": "5月23日",
+      "label": "2024-05-23",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1223,
+      "end": 1228,
+      "text": "8月22日",
+      "label": "2024-08-22",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1237,
+      "end": 1243,
+      "text": "10月25日",
+      "label": "2024-10-25",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1253,
+      "end": 1259,
+      "text": "12月18日",
+      "label": "2024-12-18",
+      "kind": "audit_meeting_date"
+    },
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 1079,
+      "end": 1261,
+      "text": "2024年，本公司董事会审计委员会召开了9次会议，即第十二届董事会审计委员会召开了第十二次会议暨独立董\n事年报工作会议（3月12日）、第十三次会议（3月19日）、第十四次会议（4月3日）、第十五次会议（4月25日）、\n第十六次会议（5月14日）、第十七次会议（5月23日）、第十八次会议（8月22日）、第十九次会议（10月25日）\n和第二十次会议（12月18日）。",
+      "label": "audit_meeting_sentence",
+      "kind": "committee_context"
+    }
+  ],
+  "non_audit_same_date": [
+    {
+      "question_id": "NEW-600036-2024-AUDIT",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "page": 97,
+      "start": 242,
+      "end": 248,
+      "text": "10月25日",
+      "label": "2024-10-25",
+      "kind": "non_audit_same_date",
+      "committee": "董事会风险与资本管理委员会",
+      "explanation": "This occurrence lies in the initial S0 chunk and belongs to the risk/capital committee. It must not satisfy the audit-specific target at [1237,1243)."
+    }
+  ],
+  "target_matching_rule": "Use exact source PDF identity, physical page and source character interval, then verify supplied source text covers the labelled substring. These targets are source reachability coordinates, not strings to add to runtime queries and not answer quality labels.",
+  "targets_last_checked_at_utc": "2026-10-26T16:05:15.264792+00:00",
+  "source_pdf_files_rehashed": 8
+}

@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-10-26T16:09:22.926885+00:00",
+  "classification": "exposed development regression; not an independent holdout",
+  "new_model_calls": 0,
+  "model_transport_available": false,
+  "modes": [
+    "initial",
+    "fixed_preserve",
+    "adjacent_rank",
+    "adjacent_continuation",
+    "fixed_then_adjacent",
+    "adjacent_then_fixed"
+  ],
+  "questions": 8,
+  "planned_contexts": 48,
+  "reference_token_cap": 6000,
+  "maximum_new_sources_per_stage": 8,
+  "fixed_queries": [
+    [
+      "审计委员会 委员会名称 成员情况 召开会议次数",
+      "审计委员会 会议 日期 议案 审议"
+    ],
+    [
+      "审计委员会 委员 主任 离任 变更",
+      "审计委员会 第一次 第二次 第三次 第四次"
+    ]
+  ],
+  "adjacent_policy": "Direct successor/predecessor of original annual seeds only; same document/company/year/PDF; no recursive expansion; whole existing chunks.",
+  "ordering_comparison": "direction_round_robin versus continuation_first, plus fixed-query stage ordering; all six policies reported",
+  "labels_read_during_candidate_selection": false,
+  "design_note": "Developed after the historical failure was inspected; no preregistration or blind validation claim.",
+  "source_inputs_sha256": {
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000651-2023-AUDIT.json": "dbe03bc068014a15edaa5fbaedf647fbed9f2549b50da85e20293ec307b90df7",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000651-2024-AUDIT.json": "19ec0a877a0bf970e27482bc107254c6eab01d743f7c08b620e613721e6e6de9",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000999-2023-AUDIT.json": "bb54821da07634ae64379425d7ea7e4efd68203ce599a2e1979c9093096b5779",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000999-2024-AUDIT.json": "fa8d5add40d65b0bdda49c5b1a939a7b579a7abd50e94816b84daa2f63013f3c",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-600036-2023-AUDIT.json": "67d4383114d1316a37e200e10e5e1a8072619ee3cf740fcf54d0e8d089bc132e",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-600036-2024-AUDIT.json": "f1a0255d921fe4f739387fc157828a9474833b574bb88a10188810449afb3643",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-603288-2023-AUDIT.json": "cdb19790eb733c2400a3347fe51e3b4468579f0c1405e36eb0e145ad7bcb4394",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-603288-2024-AUDIT.json": "07927d6c75056dc76a71f05269c33a8e7c90e2ef82b3f9661b1390df8d95b1a7",
+    "results\\paper\\heldout_validation_20261023_01\\sources.json": "0484619380907cac31276f7d4aa3468ca799c4ef8591eaed24161f8c816273ca",
+    "results\\paper\\heldout_validation_20261023_01\\execution_protocol.json": "e1dcaccf8fb4039173ac29237a1a8e33e7772a829990141172409f2459975bfb",
+    "results\\paper\\heldout_validation_20261023_01\\reference_labels.json": "4340de19b1e6bfaa3064208804db9b3261a8e3dbb13b2e1efbde5a9a936ad295",
+    "results\\paper\\heldout_validation_20261023_01\\reference_labels_corrected.json": "7e5145494bc8243697aad409a910bd98fb9d2c522efe849ac43743f75e35ded2",
+    "results\\paper\\heldout_validation_20261023_01\\index_pdfium.sqlite": "9dcef5bb0707d35a117dd4ad0df928d623f63628572ce240174b1a08ac6ec8dd",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\cmb_2023.json": "72b663710fba6e6c3452de0ecc5d45975e91cc56c24d1d12fd5ecf3ff482e6b0",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\cmb_2024.json": "74fcde262ac0a55e95fe9a8ae7804b233f83e79fe0386d311ab05aa5980457cc",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\gree_2023.json": "63e2c2c96e6627e833504ee522822fb6410151743def4b1a0598830aa6ca7626",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\gree_2024.json": "d34eef2f8ae6c67960dff6c5295cd0e4cf77b5038ac6bbd7737cbfca66e32b17",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\haday_2023.json": "c3eb456014912c0e3bae8d9e9551414a6b075bc95263da5c762aad809ac10d10",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\haday_2024.json": "c6afb47609285db8853297118f82c82733bd8fbd010ee26e8606ef27e85d747e",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\hrsj_2023.json": "e3207568a560d598d0607d5801cedf185af9233a96a70bb57b5a1b82d9d2747e",
+    "results\\paper\\heldout_validation_20261023_01\\source_pages_pdfium\\hrsj_2024.json": "83baa80f744765328b0404b19dcd736746711b95df7b4ed6e2557037eed08cc0"
+  },
+  "code_sha256": {
+    "scripts\\replay_adjacent_evidence_20261027.py": "add7d26b990af32aee29e4266e347eb80058f1ce0d058da24d3efbf1d9d35e54",
+    "src\\retrieval\\adjacent_chunks.py": "b01ed2bf76b1870467e66f999765846b709bbe225fb68a3d15719c27c6df8265",
+    "src\\retrieval\\source_span_audit.py": "ff816311268f249d25ca07fc33c37f3fc3eb747f5a8ec6e7180428f12b0a662a",
+    "src\\generation\\annual_audit_development.py": "bf49eed2dc69c94d32f0e8b4ada5bdf8bd1b2b8011f9f82641dd9788e61ff807",
+    "src\\generation\\evidence_retention.py": "5587ee84404f7e69fcff15fc37c9386e6b6a60bdbdd92b09f950dc3c5f2b2029",
+    "src\\generation\\supplementary_retrieval.py": "f28a9fc4b4f3cdaf77a8dabaf8257b854fef496b12c4bac7f490a386a134e128",
+    "src\\generation\\comparison.py": "3765f7cdafbc2f6267274bfd652a487281a1032f97a8d4f9eac06923b1988720"
+  }
+}

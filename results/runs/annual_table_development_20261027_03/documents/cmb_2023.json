@@ -1,0 +1,5616 @@
+{
+  "schema_version": 1,
+  "parser_version": "annual_governance_tables_v1_2",
+  "source": {
+    "stock": "600036",
+    "company": "招商银行",
+    "year": 2023,
+    "file": "cmb_2023.pdf",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219403503.PDF",
+    "sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+    "pages": 362
+  },
+  "selection": {
+    "seed_pages": [
+      69,
+      79,
+      81,
+      82,
+      85,
+      91,
+      92,
+      93,
+      94,
+      96,
+      97,
+      98,
+      99,
+      100,
+      111,
+      117,
+      279,
+      285,
+      289
+    ],
+    "selected_pages": [
+      68,
+      69,
+      70,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      110,
+      111,
+      112,
+      116,
+      117,
+      118,
+      278,
+      279,
+      280,
+      284,
+      285,
+      286,
+      288,
+      289,
+      290
+    ],
+    "seed_reasons": {
+      "69": [
+        "special_committee"
+      ],
+      "79": [
+        "special_committee"
+      ],
+      "81": [
+        "audit_committee",
+        "special_committee"
+      ],
+      "82": [
+        "special_committee"
+      ],
+      "85": [
+        "personnel_changes"
+      ],
+      "91": [
+        "special_committee"
+      ],
+      "92": [
+        "special_committee"
+      ],
+      "93": [
+        "audit_committee",
+        "special_committee"
+      ],
+      "94": [
+        "audit_committee",
+        "special_committee"
+      ],
+      "96": [
+        "special_committee"
+      ],
+      "97": [
+        "audit_committee"
+      ],
+      "98": [
+        "audit_committee"
+      ],
+      "99": [
+        "special_committee"
+      ],
+      "100": [
+        "audit_committee",
+        "special_committee"
+      ],
+      "111": [
+        "audit_committee"
+      ],
+      "117": [
+        "audit_committee"
+      ],
+      "279": [
+        "special_committee"
+      ],
+      "285": [
+        "special_committee"
+      ],
+      "289": [
+        "special_committee"
+      ]
+    },
+    "neighbor_radius": 1,
+    "reference_labels_used": false,
+    "scope": "governance keyword pages and fixed physical neighbors; not every table in the PDF"
+  },
+  "parsed_pages": [
+    {
+      "page": 68,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1379,
+      "tables": 0,
+      "page_character_fingerprint": "e0abf31c571614fe7c4695be8de506d8ad80bdd97c480350118dc17460aa02ad",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 69,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1291,
+      "tables": 0,
+      "page_character_fingerprint": "9ca16f7fc2d13ce930a7680d4e3706e5947f71d1efe384d9184e23041c9e096e",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 70,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 931,
+      "tables": 0,
+      "page_character_fingerprint": "a29d0dfaea73bedd07adb13b6c5ab26d62ca074fb6dbd3bee1e384a58cd57921",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 78,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1223,
+      "tables": 0,
+      "page_character_fingerprint": "1ca28ab3d0ddf61b198de9a95c5da0ec305d7d7e2720f0851c33576bc7449821",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 79,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1497,
+      "tables": 0,
+      "page_character_fingerprint": "9d07c1828fabdf62c517b394f653809a30cf950bdddf6e9949045ab1dda6ee71",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 80,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 51,
+      "tables": 0,
+      "page_character_fingerprint": "82b9f238f3aac388e26ec7a94ff4c6e5748461a861abf07349317c995b5d37e7",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 81,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 859,
+      "tables": 0,
+      "page_character_fingerprint": "58d58cd838b7ed0945182d422f111b92df4551db069f9eb649826a4286882882",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 82,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1251,
+      "tables": 0,
+      "page_character_fingerprint": "066c5d97303eeaff3a75a546682295ecc843cf971e2cc5949a9a817311be7f2d",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 83,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1886,
+      "tables": 0,
+      "page_character_fingerprint": "405f1544ca5e52ba3378c55fabd4e8aa845e1cea91f62839460d9aad1468e4d4",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 84,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 980,
+      "tables": 0,
+      "page_character_fingerprint": "9004b5a6302ce243002824ad0b3843e2cbe8c563d637614734fc1708ba1215d6",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 85,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 612,
+      "tables": 0,
+      "page_character_fingerprint": "f5feee451fe17ec513b4f6ac0ec5565ced1cb72df7ad20d1f027d09dfbfd0d4c",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 86,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1084,
+      "tables": 0,
+      "page_character_fingerprint": "d9842a20a3ff493ea9b24795aa5567d7b58a4fe74f6217481f851b9ac4929760",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 90,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1780,
+      "tables": 0,
+      "page_character_fingerprint": "0b35dcf0b9a7cf6dc2d8c2339cd0e98e7a12bd3b16f0625e2f830b2d7a4d0f3a",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 91,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1915,
+      "tables": 0,
+      "page_character_fingerprint": "b37945c78deb091358368c92161638d86c159b9fda356275c63d8932c87e803f",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 92,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1536,
+      "tables": 0,
+      "page_character_fingerprint": "23448efdedc756e28942d6421c26935edf01534d7f33d4483981832c76dc623d",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 93,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 786,
+      "tables": 1,
+      "page_character_fingerprint": "5615918035a571570c97f24936f0b25a0fdb2e307828063cb092ec1fee21ce37",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 94,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1558,
+      "tables": 0,
+      "page_character_fingerprint": "2786db0857b0bb87f130285fa09254efd5eb717af3d3202ab7ebe6014106124e",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 95,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1332,
+      "tables": 0,
+      "page_character_fingerprint": "63b4650c89b5fad9ea608d1f76ee19b82cb3c23217c61de61799331714b45e22",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 96,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1542,
+      "tables": 0,
+      "page_character_fingerprint": "69561275d5aaf094e329fd2f142ee4f476957977f8bbb70c86b478fb83727710",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 97,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1465,
+      "tables": 0,
+      "page_character_fingerprint": "6288a0af3c96140d087cd6b195b44919afac1eee0df8feb700fcea3b981d731e",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 98,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1095,
+      "tables": 0,
+      "page_character_fingerprint": "83460785e53ad0ef8c1f2f62fdeb6bc2fb0a930d0d453ba280b6900b68b96388",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 99,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1202,
+      "tables": 0,
+      "page_character_fingerprint": "8015bcfba2fcd98fccec166f26073a22e23be97c716837a3c78341e63467d3b0",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 100,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1326,
+      "tables": 0,
+      "page_character_fingerprint": "c7b5f19519120a4f198958bba243a4f92df6957bfcf7a3d858e096388ea1a375",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 101,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1139,
+      "tables": 0,
+      "page_character_fingerprint": "dbf3597857172115cde2a434989c18804f911d6cf34e27f80ec732346fd07c32",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 110,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1267,
+      "tables": 0,
+      "page_character_fingerprint": "49e1c6ac138da0bdae46dc041f28295dcdea5d60ea882894a30cfb0d713000a1",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 111,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 465,
+      "tables": 0,
+      "page_character_fingerprint": "071a1f1d7a89328d652117b9076f1456bbacf8c0b4df6bd290bac5168445a002",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 112,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 55,
+      "tables": 0,
+      "page_character_fingerprint": "9b075aa4a972cb1ce590f4588dacaa6691324c3cf719471373d4e2e0a3c9e392",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 116,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 988,
+      "tables": 0,
+      "page_character_fingerprint": "14ce45e8afaceebfb85208187d807f56dc19d9d379a6ebb2db68bec8d48c0c89",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 117,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 950,
+      "tables": 0,
+      "page_character_fingerprint": "1736d2b28b17d82d103ba1bb68a665d194af11df16321e09ad7f8a755dbe3f15",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 118,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 301,
+      "tables": 0,
+      "page_character_fingerprint": "81da7e8fbda0c2b1aae5180065e29648eac73ea25540fa7d9ddf0b1ecde32636",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 278,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 984,
+      "tables": 0,
+      "page_character_fingerprint": "e7ede5e484db995b83d182d275a566ee50cd90023d63401accb06714f4b75f53",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 279,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1106,
+      "tables": 0,
+      "page_character_fingerprint": "6469f63d72eba5842d7e07fc536da6ab8d211607fbb00bdae6cdc84f024cdd13",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 280,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1223,
+      "tables": 0,
+      "page_character_fingerprint": "172baf38841efe6b16d2395eb34269c5d0c5fa4f430dc60938b8844e37084b7d",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 284,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1069,
+      "tables": 0,
+      "page_character_fingerprint": "9f13c9f78bac176fb35d280dd0fd1d7b594b8557911495fc9a35fd2575a83cd9",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 285,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1607,
+      "tables": 0,
+      "page_character_fingerprint": "eb044d5a10aa396c4e1584769d3ffb225792a2ea83ab4c2da9cf846a569c00b4",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 286,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 864,
+      "tables": 0,
+      "page_character_fingerprint": "21882296150f0d54c9e012d7dbf818e3f227558861e122db12f566a436924286",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 288,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 978,
+      "tables": 0,
+      "page_character_fingerprint": "a933db741039943ea0783537c51e730f504dc0f6a3bed8ecfe81cd701bb73949",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 289,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1244,
+      "tables": 0,
+      "page_character_fingerprint": "bd12d93a352d481efa1afe0156bec28518110b07609794c633be0eb8e7523a0b",
+      "status": "text_layer_parsed"
+    },
+    {
+      "page": 290,
+      "width": 595.276,
+      "height": 807.874,
+      "chars": 1347,
+      "tables": 0,
+      "page_character_fingerprint": "b919ec5d694f324c56b9aad804227c06208bf3a0ef8b8185ba4a7412cf32df70",
+      "status": "text_layer_parsed"
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "TAB-948a390b579a8d46-P0093-B01",
+      "page": 93,
+      "bbox": [
+        85.00160000000011,
+        196.49219999999997,
+        556.9948437499999,
+        583.9002000000002
+      ],
+      "page_width": 595.276,
+      "page_height": 807.874,
+      "method": "borderless_attendance_alignment",
+      "column_bounds": [
+        85.00160000000011,
+        171.48996875,
+        219.67551874999998,
+        267.86264374999996,
+        316.05134375,
+        364.24004375,
+        412.42874374999997,
+        460.61744375,
+        508.80614374999993,
+        556.9948437499999
+      ],
+      "headers": [
+        "董事\n\n非执行董事",
+        "可\n董事会",
+        "战略与\n持续发展\n委员会",
+        "提名\n委员会\n实际",
+        "薪酬与\n考核\n委员会\n出席次数／应出",
+        "风险与\n资本管理\n委员会\n席次数",
+        "审计\n委员会",
+        "关联交易\n管理与\n消费者\n权益保护\n委员会",
+        "股东大会"
+      ],
+      "header_cell_ids": [
+        "TAB-948a390b579a8d46-P0093-B01-Ce65bbf3df464",
+        "TAB-948a390b579a8d46-P0093-B01-Cd172a92a5bde",
+        "TAB-948a390b579a8d46-P0093-B01-Cd8e6c028a3ad",
+        "TAB-948a390b579a8d46-P0093-B01-Cc51ad02e453d",
+        "TAB-948a390b579a8d46-P0093-B01-C568d2d8f8f21",
+        "TAB-948a390b579a8d46-P0093-B01-Cc9f5103d099e",
+        "TAB-948a390b579a8d46-P0093-B01-C127b3d409c1b",
+        "TAB-948a390b579a8d46-P0093-B01-Ca460b60de937",
+        "TAB-948a390b579a8d46-P0093-B01-C037b2da77fce"
+      ],
+      "caption": "出席次数/应出席次数（按版面列对齐）",
+      "cells": [
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ce65bbf3df464",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            196.4922,
+            171.49,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "董事\n\n非执行董事",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              258,
+              260
+            ],
+            [
+              335,
+              342
+            ]
+          ],
+          "char_count": 9,
+          "raw_char_text_sha256": "1dd87b38a5b7b58652849224b35161792895e7cd4b721dbeb5f9e1ccab0844a8"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cd172a92a5bde",
+          "page": 93,
+          "bbox": [
+            171.49,
+            196.4922,
+            219.6755,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "可\n董事会",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              257,
+              258
+            ],
+            [
+              260,
+              263
+            ],
+            [
+              266,
+              267
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "cb0abfc8e3ccd3ae70e8e1e027918df94be8dc8661275aa57986c111fd76f939"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cd8e6c028a3ad",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            196.4922,
+            267.8626,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "战略与\n持续发展\n委员会",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              263,
+              266
+            ],
+            [
+              267,
+              274
+            ]
+          ],
+          "char_count": 10,
+          "raw_char_text_sha256": "af67b3752dd676990cf99e430b6cf21e953263a282f5d6f1b7ac99aac21a16cc"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc51ad02e453d",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            196.4922,
+            316.0513,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "提名\n委员会\n实际",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              274,
+              279
+            ],
+            [
+              323,
+              325
+            ]
+          ],
+          "char_count": 7,
+          "raw_char_text_sha256": "a2a907df59b6b322eaedfcc50252fbaa2b2d37b984e13626dd3e1a6e09626582"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C568d2d8f8f21",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            196.4922,
+            364.24,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "薪酬与\n考核\n委员会\n出席次数／应出",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              279,
+              287
+            ],
+            [
+              325,
+              332
+            ]
+          ],
+          "char_count": 15,
+          "raw_char_text_sha256": "118dfdd0f78ad0cf6ee5ec23b5997036f39434e48eb95841c964afc79c881101"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc9f5103d099e",
+          "page": 93,
+          "bbox": [
+            364.24,
+            196.4922,
+            412.4287,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "风险与\n资本管理\n委员会\n席次数",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              287,
+              297
+            ],
+            [
+              332,
+              335
+            ]
+          ],
+          "char_count": 13,
+          "raw_char_text_sha256": "244b1ebbb8e6a3291304a856473dbccb920b1a597360d429a5cd3a7df6f55e76"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C127b3d409c1b",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            196.4922,
+            460.6174,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "审计\n委员会",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              297,
+              302
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "76b4d055c58caa9109f1eb71e5d7aa32927927cb6ff97798cd9de39a3e7941c7"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca460b60de937",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            196.4922,
+            508.8061,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "关联交易\n管理与\n消费者\n权益保护\n委员会",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              302,
+              319
+            ]
+          ],
+          "char_count": 17,
+          "raw_char_text_sha256": "d72f35cc85331aabc79dc18c812c16109254b45b691f03015180ee4e0b683921"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C037b2da77fce",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            196.4922,
+            556.9948,
+            304.4922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "header",
+          "text": "股东大会",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              319,
+              323
+            ]
+          ],
+          "char_count": 4,
+          "raw_char_text_sha256": "8d00b871478fda5f914fbcf24e62ad79cb8299727d228f6466119079b1990bdc"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C24e51febae6f",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            305.9922,
+            171.49,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "缪建民",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              342,
+              345
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "69c3755e0bf6d7d2174e26870f0f40faa8fc2c81d1cac4566b0d0ffb4663b9fe"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C24ee2e348062",
+          "page": 93,
+          "bbox": [
+            171.49,
+            305.9922,
+            219.6755,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "18/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              345,
+              350
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "374b00f61c662501b0d5460da4d843894bfc92fd306b9d37746f58f37a7c5d6a"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C30359bfe00f7",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            305.9922,
+            267.8626,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "6/6",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              350,
+              353
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "b9a6062358fc778da198bca45a9c57da23f83d68d1d9d8da3c9d5a9bba3e1e7e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cea8199af2f37",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            305.9922,
+            316.0513,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              353,
+              356
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cb6c17462952d",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            305.9922,
+            364.24,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              356,
+              357
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C3031bfdea348",
+          "page": 93,
+          "bbox": [
+            364.24,
+            305.9922,
+            412.4287,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              357,
+              358
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cccbe91bd9685",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            305.9922,
+            460.6174,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              358,
+              359
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ccd6c28399997",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            305.9922,
+            508.8061,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              359,
+              360
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ced0c4ddb71fc",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            305.9922,
+            556.9948,
+            317.8422
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "0/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              360,
+              363
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "a93875fe509ac2fae0e0939d3ec71c4d978244c7398dd7185ca68c393426a5a6"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C51a873624bb5",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            319.9962,
+            171.49,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "孙云飞",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              363,
+              366
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "64981ea91694b3a131f67f116845519f7d190c449d385193b715d745ddac831b"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cae6042aaa433",
+          "page": 93,
+          "bbox": [
+            171.49,
+            319.9962,
+            219.6755,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              366,
+              371
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cbe5496469e85",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            319.9962,
+            267.8626,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "6/6",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              371,
+              374
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "b9a6062358fc778da198bca45a9c57da23f83d68d1d9d8da3c9d5a9bba3e1e7e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc3bef133fdc5",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            319.9962,
+            316.0513,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              374,
+              375
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cb8adf523731d",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            319.9962,
+            364.24,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              375,
+              376
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C57bfcebacd68",
+          "page": 93,
+          "bbox": [
+            364.24,
+            319.9962,
+            412.4287,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              376,
+              377
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C1f5ec0e362ae",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            319.9962,
+            460.6174,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              377,
+              378
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C80360ce93731",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            319.9962,
+            508.8061,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              378,
+              379
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C7ef27a6abae6",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            319.9962,
+            556.9948,
+            331.8462
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              379,
+              382
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ccf28a424d993",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            334.0002,
+            171.49,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "周 松",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              382,
+              385
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "07c43dabd77b7616c68ca131ea227e99b77fa46bd5e337d5cbda860aa399644f"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C92d2d94108bf",
+          "page": 93,
+          "bbox": [
+            171.49,
+            334.0002,
+            219.6755,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              385,
+              390
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cd4896dd2daeb",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            334.0002,
+            267.8626,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "6/6",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              390,
+              393
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "b9a6062358fc778da198bca45a9c57da23f83d68d1d9d8da3c9d5a9bba3e1e7e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C5f6ea4a5286a",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            334.0002,
+            316.0513,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              393,
+              394
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cbdf66a10ae9b",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            334.0002,
+            364.24,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              394,
+              395
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C56fa8684d362",
+          "page": 93,
+          "bbox": [
+            364.24,
+            334.0002,
+            412.4287,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              395,
+              396
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C2ca6c89e4f48",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            334.0002,
+            460.6174,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "8/8",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              396,
+              399
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e57831a7be3684b761ce91b2d8b596a2b2ef872c75488dbd36c32a90e69340ae"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C686ac3977851",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            334.0002,
+            508.8061,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              399,
+              400
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C62e2d0d4f1a4",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            334.0002,
+            556.9948,
+            345.8502
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              400,
+              403
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C82b19907f206",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            348.0042,
+            171.49,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "张 健",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              403,
+              406
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "49cea3a34d137a49fb66d783827b6bbee523515a560c150c9f82793049a41525"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cd6c6d049af75",
+          "page": 93,
+          "bbox": [
+            171.49,
+            348.0042,
+            219.6755,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              406,
+              411
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C02ece870d6bb",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            348.0042,
+            267.8626,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              411,
+              412
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc3433c580514",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            348.0042,
+            316.0513,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              412,
+              413
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca67524e67ef1",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            348.0042,
+            364.24,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              413,
+              414
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C9592e13a80de",
+          "page": 93,
+          "bbox": [
+            364.24,
+            348.0042,
+            412.4287,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "9/9",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              414,
+              417
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "7ec3d7b0d7f20085c6a51336fe5915cf3c786c4b643529130289ce220577ce7c"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C951c970f1861",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            348.0042,
+            460.6174,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              417,
+              418
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C163ffa4e5359",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            348.0042,
+            508.8061,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              418,
+              419
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C7f28d12ba107",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            348.0042,
+            556.9948,
+            359.8542
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              419,
+              422
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C516899514183",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            362.0082,
+            171.49,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "陈 冬",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              422,
+              425
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "4bd7102c964ffc339e802b56d66e61aca5670b68573176f034cfffc7e3f6f24a"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C55fd7c86a7cd",
+          "page": 93,
+          "bbox": [
+            171.49,
+            362.0082,
+            219.6755,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              425,
+              430
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca631f10d68e0",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            362.0082,
+            267.8626,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              430,
+              431
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C436afcb98604",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            362.0082,
+            316.0513,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              431,
+              432
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C70d2a3039fd0",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            362.0082,
+            364.24,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              432,
+              435
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C89d16ee13fc5",
+          "page": 93,
+          "bbox": [
+            364.24,
+            362.0082,
+            412.4287,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "6/9",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              435,
+              438
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e61a4dbddf44fa056118cc5aea0d5b56f86d60cf0a4891f51184e0ac991616d5"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca7b02cf98453",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            362.0082,
+            460.6174,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              438,
+              439
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C531e6e4d3e8a",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            362.0082,
+            508.8061,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              439,
+              440
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C003b0a4e55b0",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            362.0082,
+            556.9948,
+            373.8582
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              440,
+              443
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C47d89ab6e6a3",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            376.0122,
+            171.49,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "胡建华（已离任）",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              443,
+              451
+            ]
+          ],
+          "char_count": 8,
+          "raw_char_text_sha256": "1da6858f372211922c3480aed7a841445662180eda7dc6ad6ea9ef8755225d07"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C65ae63bc50f9",
+          "page": 93,
+          "bbox": [
+            171.49,
+            376.0122,
+            219.6755,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "16/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              451,
+              456
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "598fb3d58424f95a9e87fc91b13c15334e2e19f66203ea426b03a4059ed5b9e7"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C47594eaea611",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            376.0122,
+            267.8626,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "5/6",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              456,
+              459
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "6527243b137e313aee168954360944e5a3bdd5e700e74a5b1ac6a44bd24dd652"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C45ed797f3f81",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            376.0122,
+            316.0513,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              459,
+              460
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca370cb2432d6",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            376.0122,
+            364.24,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              460,
+              461
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C80ce97e94490",
+          "page": 93,
+          "bbox": [
+            364.24,
+            376.0122,
+            412.4287,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              461,
+              462
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C848e4dd292b6",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            376.0122,
+            460.6174,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              462,
+              463
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C6edaf4cba920",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            376.0122,
+            508.8061,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              463,
+              464
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C3278e6ff6784",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            376.0122,
+            556.9948,
+            387.8622
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              464,
+              467
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ccbe22ff53886",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            390.0162,
+            171.49,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "洪小源（已离任）",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              467,
+              475
+            ]
+          ],
+          "char_count": 8,
+          "raw_char_text_sha256": "b07ae640be4d41ff149faf7c39a18be1989c220f50b4e9f26cd9ff85459077f4"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C5c8ae60ff620",
+          "page": 93,
+          "bbox": [
+            171.49,
+            390.0162,
+            219.6755,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "16/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              475,
+              480
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "598fb3d58424f95a9e87fc91b13c15334e2e19f66203ea426b03a4059ed5b9e7"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C02535b2b2edd",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            390.0162,
+            267.8626,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              480,
+              481
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C453d2f3326bf",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            390.0162,
+            316.0513,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              481,
+              482
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C01446fd9436f",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            390.0162,
+            364.24,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              482,
+              485
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf056d955a839",
+          "page": 93,
+          "bbox": [
+            364.24,
+            390.0162,
+            412.4287,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "3/9",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              485,
+              488
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "b81416295c41df470b3da2f494e646b695ca3d99b5ac59df9541934d1092159d"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cd98449636b28",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            390.0162,
+            460.6174,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              488,
+              489
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ccb1715dcee1a",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            390.0162,
+            508.8061,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              489,
+              490
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C1ac1c86d9235",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            390.0162,
+            556.9948,
+            401.8662
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              490,
+              493
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca2782715a0dd",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            404.0202,
+            171.49,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "苏 敏（已离任）",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              493,
+              501
+            ]
+          ],
+          "char_count": 8,
+          "raw_char_text_sha256": "366c3ede8eac5ba2745b4ba665c1ccec9c7a5e52919d6c489aeb3b9d06544f29"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf35d99f61611",
+          "page": 93,
+          "bbox": [
+            171.49,
+            404.0202,
+            219.6755,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "4/5",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              501,
+              504
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "1265c5694e904ac7a10d0eebd43894950b49cfda19a3dbacdc4db7c0a49f6f12"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C08ca603552a7",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            404.0202,
+            267.8626,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              504,
+              505
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ce00535ae651f",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            404.0202,
+            316.0513,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              505,
+              506
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ce1be4f8212e4",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            404.0202,
+            364.24,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              506,
+              507
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C14a5a15eacaf",
+          "page": 93,
+          "bbox": [
+            364.24,
+            404.0202,
+            412.4287,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              507,
+              508
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C42ae778a2901",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            404.0202,
+            460.6174,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              508,
+              509
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc61f71927b5b",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            404.0202,
+            508.8061,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              509,
+              512
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C846489d59190",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            404.0202,
+            556.9948,
+            415.8702
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              512,
+              513
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C2d2106b448f9",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            446.0232,
+            171.49,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "王 良",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              517,
+              520
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "f75c9490b6be132c424ac11e398c5d4e8192475d12d25a71f633bce7414acee7"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C01157d0b4dc1",
+          "page": 93,
+          "bbox": [
+            171.49,
+            446.0232,
+            219.6755,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              520,
+              525
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cec695f37a7a1",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            446.0232,
+            267.8626,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "5/6",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              525,
+              528
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "6527243b137e313aee168954360944e5a3bdd5e700e74a5b1ac6a44bd24dd652"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ce1f34d7bed8f",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            446.0232,
+            316.0513,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              528,
+              531
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc16944360e87",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            446.0232,
+            364.24,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              531,
+              532
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C3e3646bbb39f",
+          "page": 93,
+          "bbox": [
+            364.24,
+            446.0232,
+            412.4287,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              532,
+              535
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C8c1f5f69a66a",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            446.0232,
+            460.6174,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              535,
+              536
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cd9308facd56b",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            446.0232,
+            508.8061,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              536,
+              537
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C9eb429730b37",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            446.0232,
+            556.9948,
+            457.8732
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              537,
+              540
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc0779b3c29d1",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            460.0272,
+            171.49,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "朱江涛",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              540,
+              543
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "da3ee8b5918ae5e9a7738cf276ea53b618d465494c8ee7cf4c282d1e7f06f76f"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf27568994680",
+          "page": 93,
+          "bbox": [
+            171.49,
+            460.0272,
+            219.6755,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "8/8",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              543,
+              546
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e57831a7be3684b761ce91b2d8b596a2b2ef872c75488dbd36c32a90e69340ae"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C74f68e3024e8",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            460.0272,
+            267.8626,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              546,
+              547
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cbd9c05120de9",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            460.0272,
+            316.0513,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              547,
+              548
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cea8ee642df17",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            460.0272,
+            364.24,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              548,
+              549
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cff96a8a3cbcd",
+          "page": 93,
+          "bbox": [
+            364.24,
+            460.0272,
+            412.4287,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "2/2",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              549,
+              552
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "58c0e7476a0d98d74ec64f7d9241c9d5e7c0e0991739eb1cde0b4d173a988e14"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C37960cf1d1a2",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            460.0272,
+            460.6174,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              552,
+              553
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cb98641c1e113",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            460.0272,
+            508.8061,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "2/2",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              553,
+              556
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "58c0e7476a0d98d74ec64f7d9241c9d5e7c0e0991739eb1cde0b4d173a988e14"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Caaccf31797b9",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            460.0272,
+            556.9948,
+            471.8772
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              556,
+              557
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C58047b553df2",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            502.0302,
+            171.49,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "王仕雄",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              564,
+              567
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "0e921620648319568344145b377accb246200991287809b028ca10471aeb34f6"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cb5a73b50b629",
+          "page": 93,
+          "bbox": [
+            171.49,
+            502.0302,
+            219.6755,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              567,
+              572
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C0d1ddcad66ca",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            502.0302,
+            267.8626,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              572,
+              573
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf471ecbbfb15",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            502.0302,
+            316.0513,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              573,
+              576
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C061d3ef83ff0",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            502.0302,
+            364.24,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              576,
+              577
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca65571a487d1",
+          "page": 93,
+          "bbox": [
+            364.24,
+            502.0302,
+            412.4287,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              577,
+              578
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cce5ae32a71a4",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            502.0302,
+            460.6174,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "8/8",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              578,
+              581
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e57831a7be3684b761ce91b2d8b596a2b2ef872c75488dbd36c32a90e69340ae"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C8308d109741b",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            502.0302,
+            508.8061,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "4/4",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              581,
+              584
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "0859ef921574f0da2032745166c05a1d0b246f97c5e8988f2db96dd7cc2c362e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cbf1ad08d65d3",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            502.0302,
+            556.9948,
+            513.8802
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              584,
+              587
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf90564c0e589",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            516.0342,
+            171.49,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "李孟刚",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              587,
+              590
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d0952aac19a58e2370fa99adcfa6990b837e1560d342c4e11e75ca80d236917"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C277803559af1",
+          "page": 93,
+          "bbox": [
+            171.49,
+            516.0342,
+            219.6755,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              590,
+              595
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C05c2ce33de9b",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            516.0342,
+            267.8626,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              595,
+              596
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C44c3ebd40c91",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            516.0342,
+            316.0513,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              596,
+              599
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cb7e2f800f0aa",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            516.0342,
+            364.24,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              599,
+              602
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cb42414bab8dc",
+          "page": 93,
+          "bbox": [
+            364.24,
+            516.0342,
+            412.4287,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              602,
+              603
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C4c1aa539e538",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            516.0342,
+            460.6174,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "8/8",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              603,
+              606
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e57831a7be3684b761ce91b2d8b596a2b2ef872c75488dbd36c32a90e69340ae"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C09465a516d56",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            516.0342,
+            508.8061,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              606,
+              607
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca251eaea3fa2",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            516.0342,
+            556.9948,
+            527.8842
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              607,
+              610
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cc9c9c87ec820",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            530.0382,
+            171.49,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "刘 俏",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              610,
+              613
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "d6ced55c244f1fd4309d84b427eb8789c010311a8b3583470c9b7ffda0a99a41"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cde4c855bdb16",
+          "page": 93,
+          "bbox": [
+            171.49,
+            530.0382,
+            219.6755,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              613,
+              618
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C081c2d92681c",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            530.0382,
+            267.8626,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              618,
+              619
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cfb6560e36027",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            530.0382,
+            316.0513,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              619,
+              622
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C4612d654fef2",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            530.0382,
+            364.24,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              622,
+              625
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C4aa9abc85c02",
+          "page": 93,
+          "bbox": [
+            364.24,
+            530.0382,
+            412.4287,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "9/9",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              625,
+              628
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "7ec3d7b0d7f20085c6a51336fe5915cf3c786c4b643529130289ce220577ce7c"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cdc4c5c52a8e5",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            530.0382,
+            460.6174,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              628,
+              629
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C27ff5c93f060",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            530.0382,
+            508.8061,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              629,
+              630
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C3ae3a1c1853d",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            530.0382,
+            556.9948,
+            541.8882
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              630,
+              633
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C6a219cac5cb0",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            544.0422,
+            171.49,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "田宏启",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              633,
+              636
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "ad86cc8ee68294bb4fa5d8a77d3e9be8c02e57ced2f30fceb2e7d51e2a34130a"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cbdf2d8a3a8be",
+          "page": 93,
+          "bbox": [
+            171.49,
+            544.0422,
+            219.6755,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              636,
+              641
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf17e4c8d6b11",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            544.0422,
+            267.8626,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              641,
+              642
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C6625781abd34",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            544.0422,
+            316.0513,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              642,
+              643
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ca7a18e7bac25",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            544.0422,
+            364.24,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              643,
+              644
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C14529a798b87",
+          "page": 93,
+          "bbox": [
+            364.24,
+            544.0422,
+            412.4287,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              644,
+              645
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C7c7a4b1b4693",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            544.0422,
+            460.6174,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "8/8",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              645,
+              648
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e57831a7be3684b761ce91b2d8b596a2b2ef872c75488dbd36c32a90e69340ae"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C3491b3118998",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            544.0422,
+            508.8061,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "4/4",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              648,
+              651
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "0859ef921574f0da2032745166c05a1d0b246f97c5e8988f2db96dd7cc2c362e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C131511e1368a",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            544.0422,
+            556.9948,
+            555.8922
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              651,
+              654
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C4e57fca79e7c",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            558.0462,
+            171.49,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "李朝鲜",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              654,
+              657
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "90e489fd94dbd6a645a25d3fc8efc7769d5ee1a3a1fde6a885f4ba1a0d7cd063"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C5db3d7802470",
+          "page": 93,
+          "bbox": [
+            171.49,
+            558.0462,
+            219.6755,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              657,
+              662
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C18317706d7fd",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            558.0462,
+            267.8626,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "6/6",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              662,
+              665
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "b9a6062358fc778da198bca45a9c57da23f83d68d1d9d8da3c9d5a9bba3e1e7e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ce01f377200e0",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            558.0462,
+            316.0513,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              665,
+              666
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C7be839681d94",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            558.0462,
+            364.24,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "7/7",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              666,
+              669
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "5d511a5bb45d0368da1d1189cb704794a07ee229b522afa49c36e01ef62e8053"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Ceb1b0fbc9eca",
+          "page": 93,
+          "bbox": [
+            364.24,
+            558.0462,
+            412.4287,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              669,
+              670
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C2f8dd052ee54",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            558.0462,
+            460.6174,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              670,
+              671
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C79e0d9640e00",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            558.0462,
+            508.8061,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "4/4",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              671,
+              674
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "0859ef921574f0da2032745166c05a1d0b246f97c5e8988f2db96dd7cc2c362e"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cf723a3346ef8",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            558.0462,
+            556.9948,
+            569.8962
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              674,
+              677
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cffe4b241c295",
+          "page": 93,
+          "bbox": [
+            85.0016,
+            572.0502,
+            171.49,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "史永东",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              677,
+              680
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "19b8b1fe6975c7518a815dc4011479e6ec5961f9a60171421de3a48787fd8d4c"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C888ebd9b0b93",
+          "page": 93,
+          "bbox": [
+            171.49,
+            572.0502,
+            219.6755,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "19/19",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              680,
+              685
+            ]
+          ],
+          "char_count": 5,
+          "raw_char_text_sha256": "195402c466eda68fecb640f807169639dbce51db379260b968ed4ee1bca3d410"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C4a1fbc96ee04",
+          "page": 93,
+          "bbox": [
+            219.6755,
+            572.0502,
+            267.8626,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              685,
+              686
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C567e5097ba95",
+          "page": 93,
+          "bbox": [
+            267.8626,
+            572.0502,
+            316.0513,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              686,
+              687
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C4df5f602840b",
+          "page": 93,
+          "bbox": [
+            316.0513,
+            572.0502,
+            364.24,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              687,
+              688
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cbe8eaf50bbcd",
+          "page": 93,
+          "bbox": [
+            364.24,
+            572.0502,
+            412.4287,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "9/9",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              688,
+              691
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "7ec3d7b0d7f20085c6a51336fe5915cf3c786c4b643529130289ce220577ce7c"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C829a2bb44b7b",
+          "page": 93,
+          "bbox": [
+            412.4287,
+            572.0502,
+            460.6174,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "8/8",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              691,
+              694
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "e57831a7be3684b761ce91b2d8b596a2b2ef872c75488dbd36c32a90e69340ae"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-Cfa356da0da67",
+          "page": 93,
+          "bbox": [
+            460.6174,
+            572.0502,
+            508.8061,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "/",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              694,
+              695
+            ]
+          ],
+          "char_count": 1,
+          "raw_char_text_sha256": "8a5edab282632443219e051e4ade2d1d5bbc671c781051bf1437897cbdfea0f1"
+        },
+        {
+          "cell_id": "TAB-948a390b579a8d46-P0093-B01-C9e8c14d5644d",
+          "page": 93,
+          "bbox": [
+            508.8061,
+            572.0502,
+            556.9948,
+            583.9002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "kind": "body",
+          "text": "1/1",
+          "text_origin": "PDF characters plus reconstructed layout whitespace",
+          "char_index_ranges": [
+            [
+              695,
+              698
+            ]
+          ],
+          "char_count": 3,
+          "raw_char_text_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R001",
+          "page": 93,
+          "top": 306.49219999999997,
+          "bottom": 317.8422,
+          "values": [
+            "缪建民",
+            "18/19",
+            "6/6",
+            "7/7",
+            "/",
+            "/",
+            "/",
+            "/",
+            "0/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C24e51febae6f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C24ee2e348062"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C30359bfe00f7"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cea8199af2f37"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb6c17462952d"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3031bfdea348"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cccbe91bd9685"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccd6c28399997"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ced0c4ddb71fc"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R002",
+          "page": 93,
+          "top": 320.4962,
+          "bottom": 331.8462,
+          "values": [
+            "孙云飞",
+            "19/19",
+            "6/6",
+            "/",
+            "/",
+            "/",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C51a873624bb5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cae6042aaa433"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbe5496469e85"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc3bef133fdc5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb8adf523731d"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C57bfcebacd68"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C1f5ec0e362ae"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C80360ce93731"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7ef27a6abae6"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R003",
+          "page": 93,
+          "top": 334.5002,
+          "bottom": 345.85020000000003,
+          "values": [
+            "周 松",
+            "19/19",
+            "6/6",
+            "/",
+            "/",
+            "/",
+            "8/8",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccf28a424d993"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C92d2d94108bf"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd4896dd2daeb"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C5f6ea4a5286a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbdf66a10ae9b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C56fa8684d362"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C2ca6c89e4f48"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C686ac3977851"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C62e2d0d4f1a4"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R004",
+          "page": 93,
+          "top": 348.5042,
+          "bottom": 359.85420000000005,
+          "values": [
+            "张 健",
+            "19/19",
+            "/",
+            "/",
+            "/",
+            "9/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C82b19907f206"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd6c6d049af75"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C02ece870d6bb"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc3433c580514"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca67524e67ef1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C9592e13a80de"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C951c970f1861"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C163ffa4e5359"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7f28d12ba107"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R005",
+          "page": 93,
+          "top": 362.50820000000004,
+          "bottom": 373.85820000000007,
+          "values": [
+            "陈 冬",
+            "19/19",
+            "/",
+            "/",
+            "7/7",
+            "6/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C516899514183"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C55fd7c86a7cd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca631f10d68e0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C436afcb98604"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C70d2a3039fd0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C89d16ee13fc5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca7b02cf98453"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C531e6e4d3e8a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C003b0a4e55b0"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R006",
+          "page": 93,
+          "top": 376.51220000000006,
+          "bottom": 387.8622000000001,
+          "values": [
+            "胡建华（已离任）",
+            "16/19",
+            "5/6",
+            "/",
+            "/",
+            "/",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C47d89ab6e6a3"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C65ae63bc50f9"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C47594eaea611"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C45ed797f3f81"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca370cb2432d6"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C80ce97e94490"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C848e4dd292b6"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C6edaf4cba920"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3278e6ff6784"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R007",
+          "page": 93,
+          "top": 390.5162000000001,
+          "bottom": 401.8662000000001,
+          "values": [
+            "洪小源（已离任）",
+            "16/19",
+            "/",
+            "/",
+            "7/7",
+            "3/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccbe22ff53886"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C5c8ae60ff620"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C02535b2b2edd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C453d2f3326bf"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C01446fd9436f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf056d955a839"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd98449636b28"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccb1715dcee1a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C1ac1c86d9235"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R008",
+          "page": 93,
+          "top": 404.5202000000001,
+          "bottom": 415.8702000000001,
+          "values": [
+            "苏 敏（已离任）",
+            "4/5",
+            "/",
+            "/",
+            "/",
+            "/",
+            "/",
+            "1/1",
+            "/"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca2782715a0dd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf35d99f61611"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C08ca603552a7"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce00535ae651f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce1be4f8212e4"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C14a5a15eacaf"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C42ae778a2901"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc61f71927b5b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C846489d59190"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R009",
+          "page": 93,
+          "top": 446.5232000000001,
+          "bottom": 457.8732000000001,
+          "values": [
+            "王 良",
+            "19/19",
+            "5/6",
+            "7/7",
+            "/",
+            "7/7",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C2d2106b448f9"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C01157d0b4dc1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cec695f37a7a1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce1f34d7bed8f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc16944360e87"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3e3646bbb39f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C8c1f5f69a66a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd9308facd56b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C9eb429730b37"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R010",
+          "page": 93,
+          "top": 460.5272000000001,
+          "bottom": 471.87720000000013,
+          "values": [
+            "朱江涛",
+            "8/8",
+            "/",
+            "/",
+            "/",
+            "2/2",
+            "/",
+            "2/2",
+            "/"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc0779b3c29d1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf27568994680"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C74f68e3024e8"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbd9c05120de9"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cea8ee642df17"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cff96a8a3cbcd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C37960cf1d1a2"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb98641c1e113"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Caaccf31797b9"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R011",
+          "page": 93,
+          "top": 502.5302000000001,
+          "bottom": 513.8802000000001,
+          "values": [
+            "王仕雄",
+            "19/19",
+            "/",
+            "7/7",
+            "/",
+            "/",
+            "8/8",
+            "4/4",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C58047b553df2"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb5a73b50b629"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C0d1ddcad66ca"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf471ecbbfb15"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C061d3ef83ff0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca65571a487d1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cce5ae32a71a4"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C8308d109741b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbf1ad08d65d3"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R012",
+          "page": 93,
+          "top": 516.5342,
+          "bottom": 527.8842000000002,
+          "values": [
+            "李孟刚",
+            "19/19",
+            "/",
+            "7/7",
+            "7/7",
+            "/",
+            "8/8",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf90564c0e589"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C277803559af1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C05c2ce33de9b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C44c3ebd40c91"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb7e2f800f0aa"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb42414bab8dc"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4c1aa539e538"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C09465a516d56"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca251eaea3fa2"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R013",
+          "page": 93,
+          "top": 530.5382000000002,
+          "bottom": 541.8882000000001,
+          "values": [
+            "刘 俏",
+            "19/19",
+            "/",
+            "7/7",
+            "7/7",
+            "9/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc9c9c87ec820"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cde4c855bdb16"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C081c2d92681c"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cfb6560e36027"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4612d654fef2"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4aa9abc85c02"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cdc4c5c52a8e5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C27ff5c93f060"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3ae3a1c1853d"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R014",
+          "page": 93,
+          "top": 544.5422000000001,
+          "bottom": 555.8922000000001,
+          "values": [
+            "田宏启",
+            "19/19",
+            "/",
+            "/",
+            "/",
+            "/",
+            "8/8",
+            "4/4",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C6a219cac5cb0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbdf2d8a3a8be"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf17e4c8d6b11"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C6625781abd34"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca7a18e7bac25"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C14529a798b87"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7c7a4b1b4693"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3491b3118998"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C131511e1368a"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R015",
+          "page": 93,
+          "top": 558.5462000000001,
+          "bottom": 569.8962000000001,
+          "values": [
+            "李朝鲜",
+            "19/19",
+            "6/6",
+            "/",
+            "7/7",
+            "/",
+            "/",
+            "4/4",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4e57fca79e7c"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C5db3d7802470"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C18317706d7fd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce01f377200e0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7be839681d94"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ceb1b0fbc9eca"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C2f8dd052ee54"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C79e0d9640e00"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf723a3346ef8"
+            ]
+          ],
+          "split_row_merged": false
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R016",
+          "page": 93,
+          "top": 572.5502000000001,
+          "bottom": 583.9002000000002,
+          "values": [
+            "史永东",
+            "19/19",
+            "/",
+            "/",
+            "/",
+            "9/9",
+            "8/8",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cffe4b241c295"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C888ebd9b0b93"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4a1fbc96ee04"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C567e5097ba95"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4df5f602840b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbe8eaf50bbcd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C829a2bb44b7b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cfa356da0da67"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C9e8c14d5644d"
+            ]
+          ],
+          "split_row_merged": false
+        }
+      ],
+      "header_status": "geometric_multilevel_headers",
+      "category": "committee_attendance",
+      "warnings": [
+        "Inferred column geometry; requires source review before treating attendance as membership gold."
+      ]
+    }
+  ],
+  "logical_tables": [
+    {
+      "chain_id": "TAB-948a390b579a8d46-P0093-B01-CHAIN",
+      "table_ids": [
+        "TAB-948a390b579a8d46-P0093-B01"
+      ],
+      "headers": [
+        "董事\n\n非执行董事",
+        "可\n董事会",
+        "战略与\n持续发展\n委员会",
+        "提名\n委员会\n实际",
+        "薪酬与\n考核\n委员会\n出席次数／应出",
+        "风险与\n资本管理\n委员会\n席次数",
+        "审计\n委员会",
+        "关联交易\n管理与\n消费者\n权益保护\n委员会",
+        "股东大会"
+      ],
+      "header_cell_ids": [
+        "TAB-948a390b579a8d46-P0093-B01-Ce65bbf3df464",
+        "TAB-948a390b579a8d46-P0093-B01-Cd172a92a5bde",
+        "TAB-948a390b579a8d46-P0093-B01-Cd8e6c028a3ad",
+        "TAB-948a390b579a8d46-P0093-B01-Cc51ad02e453d",
+        "TAB-948a390b579a8d46-P0093-B01-C568d2d8f8f21",
+        "TAB-948a390b579a8d46-P0093-B01-Cc9f5103d099e",
+        "TAB-948a390b579a8d46-P0093-B01-C127b3d409c1b",
+        "TAB-948a390b579a8d46-P0093-B01-Ca460b60de937",
+        "TAB-948a390b579a8d46-P0093-B01-C037b2da77fce"
+      ],
+      "header_column_parts": [
+        [
+          "TAB-948a390b579a8d46-P0093-B01-Ce65bbf3df464"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-Cd172a92a5bde"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-Cd8e6c028a3ad"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-Cc51ad02e453d"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-C568d2d8f8f21"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-Cc9f5103d099e"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-C127b3d409c1b"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-Ca460b60de937"
+        ],
+        [
+          "TAB-948a390b579a8d46-P0093-B01-C037b2da77fce"
+        ]
+      ],
+      "category": "committee_attendance",
+      "method": "borderless_attendance_alignment",
+      "caption": "出席次数/应出席次数（按版面列对齐）",
+      "rows": [
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R001",
+          "page": 93,
+          "top": 306.49219999999997,
+          "bottom": 317.8422,
+          "values": [
+            "缪建民",
+            "18/19",
+            "6/6",
+            "7/7",
+            "/",
+            "/",
+            "/",
+            "/",
+            "0/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C24e51febae6f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C24ee2e348062"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C30359bfe00f7"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cea8199af2f37"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb6c17462952d"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3031bfdea348"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cccbe91bd9685"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccd6c28399997"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ced0c4ddb71fc"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "战略",
+            "提名"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R002",
+          "page": 93,
+          "top": 320.4962,
+          "bottom": 331.8462,
+          "values": [
+            "孙云飞",
+            "19/19",
+            "6/6",
+            "/",
+            "/",
+            "/",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C51a873624bb5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cae6042aaa433"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbe5496469e85"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc3bef133fdc5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb8adf523731d"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C57bfcebacd68"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C1f5ec0e362ae"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C80360ce93731"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7ef27a6abae6"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "战略"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R003",
+          "page": 93,
+          "top": 334.5002,
+          "bottom": 345.85020000000003,
+          "values": [
+            "周 松",
+            "19/19",
+            "6/6",
+            "/",
+            "/",
+            "/",
+            "8/8",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccf28a424d993"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C92d2d94108bf"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd4896dd2daeb"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C5f6ea4a5286a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbdf66a10ae9b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C56fa8684d362"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C2ca6c89e4f48"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C686ac3977851"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C62e2d0d4f1a4"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "审计",
+            "战略"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R004",
+          "page": 93,
+          "top": 348.5042,
+          "bottom": 359.85420000000005,
+          "values": [
+            "张 健",
+            "19/19",
+            "/",
+            "/",
+            "/",
+            "9/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C82b19907f206"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd6c6d049af75"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C02ece870d6bb"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc3433c580514"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca67524e67ef1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C9592e13a80de"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C951c970f1861"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C163ffa4e5359"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7f28d12ba107"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R005",
+          "page": 93,
+          "top": 362.50820000000004,
+          "bottom": 373.85820000000007,
+          "values": [
+            "陈 冬",
+            "19/19",
+            "/",
+            "/",
+            "7/7",
+            "6/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C516899514183"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C55fd7c86a7cd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca631f10d68e0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C436afcb98604"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C70d2a3039fd0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C89d16ee13fc5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca7b02cf98453"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C531e6e4d3e8a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C003b0a4e55b0"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "薪酬",
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R006",
+          "page": 93,
+          "top": 376.51220000000006,
+          "bottom": 387.8622000000001,
+          "values": [
+            "胡建华（已离任）",
+            "16/19",
+            "5/6",
+            "/",
+            "/",
+            "/",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C47d89ab6e6a3"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C65ae63bc50f9"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C47594eaea611"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C45ed797f3f81"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca370cb2432d6"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C80ce97e94490"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C848e4dd292b6"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C6edaf4cba920"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3278e6ff6784"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "战略"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R007",
+          "page": 93,
+          "top": 390.5162000000001,
+          "bottom": 401.8662000000001,
+          "values": [
+            "洪小源（已离任）",
+            "16/19",
+            "/",
+            "/",
+            "7/7",
+            "3/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccbe22ff53886"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C5c8ae60ff620"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C02535b2b2edd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C453d2f3326bf"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C01446fd9436f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf056d955a839"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd98449636b28"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ccb1715dcee1a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C1ac1c86d9235"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "薪酬",
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R008",
+          "page": 93,
+          "top": 404.5202000000001,
+          "bottom": 415.8702000000001,
+          "values": [
+            "苏 敏（已离任）",
+            "4/5",
+            "/",
+            "/",
+            "/",
+            "/",
+            "/",
+            "1/1",
+            "/"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca2782715a0dd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf35d99f61611"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C08ca603552a7"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce00535ae651f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce1be4f8212e4"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C14a5a15eacaf"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C42ae778a2901"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc61f71927b5b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C846489d59190"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "关联交易",
+            "消费者权益"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R009",
+          "page": 93,
+          "top": 446.5232000000001,
+          "bottom": 457.8732000000001,
+          "values": [
+            "王 良",
+            "19/19",
+            "5/6",
+            "7/7",
+            "/",
+            "7/7",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C2d2106b448f9"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C01157d0b4dc1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cec695f37a7a1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce1f34d7bed8f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc16944360e87"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3e3646bbb39f"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C8c1f5f69a66a"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cd9308facd56b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C9eb429730b37"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "战略",
+            "提名",
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R010",
+          "page": 93,
+          "top": 460.5272000000001,
+          "bottom": 471.87720000000013,
+          "values": [
+            "朱江涛",
+            "8/8",
+            "/",
+            "/",
+            "/",
+            "2/2",
+            "/",
+            "2/2",
+            "/"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc0779b3c29d1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf27568994680"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C74f68e3024e8"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbd9c05120de9"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cea8ee642df17"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cff96a8a3cbcd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C37960cf1d1a2"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb98641c1e113"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Caaccf31797b9"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "关联交易",
+            "消费者权益",
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R011",
+          "page": 93,
+          "top": 502.5302000000001,
+          "bottom": 513.8802000000001,
+          "values": [
+            "王仕雄",
+            "19/19",
+            "/",
+            "7/7",
+            "/",
+            "/",
+            "8/8",
+            "4/4",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C58047b553df2"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb5a73b50b629"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C0d1ddcad66ca"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf471ecbbfb15"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C061d3ef83ff0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca65571a487d1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cce5ae32a71a4"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C8308d109741b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbf1ad08d65d3"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "关联交易",
+            "审计",
+            "提名",
+            "消费者权益"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R012",
+          "page": 93,
+          "top": 516.5342,
+          "bottom": 527.8842000000002,
+          "values": [
+            "李孟刚",
+            "19/19",
+            "/",
+            "7/7",
+            "7/7",
+            "/",
+            "8/8",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf90564c0e589"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C277803559af1"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C05c2ce33de9b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C44c3ebd40c91"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb7e2f800f0aa"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cb42414bab8dc"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4c1aa539e538"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C09465a516d56"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca251eaea3fa2"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "审计",
+            "提名",
+            "薪酬"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R013",
+          "page": 93,
+          "top": 530.5382000000002,
+          "bottom": 541.8882000000001,
+          "values": [
+            "刘 俏",
+            "19/19",
+            "/",
+            "7/7",
+            "7/7",
+            "9/9",
+            "/",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cc9c9c87ec820"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cde4c855bdb16"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C081c2d92681c"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cfb6560e36027"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4612d654fef2"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4aa9abc85c02"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cdc4c5c52a8e5"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C27ff5c93f060"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3ae3a1c1853d"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "提名",
+            "薪酬",
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R014",
+          "page": 93,
+          "top": 544.5422000000001,
+          "bottom": 555.8922000000001,
+          "values": [
+            "田宏启",
+            "19/19",
+            "/",
+            "/",
+            "/",
+            "/",
+            "8/8",
+            "4/4",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C6a219cac5cb0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbdf2d8a3a8be"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf17e4c8d6b11"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C6625781abd34"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ca7a18e7bac25"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C14529a798b87"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7c7a4b1b4693"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C3491b3118998"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C131511e1368a"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "关联交易",
+            "审计",
+            "消费者权益"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R015",
+          "page": 93,
+          "top": 558.5462000000001,
+          "bottom": 569.8962000000001,
+          "values": [
+            "李朝鲜",
+            "19/19",
+            "6/6",
+            "/",
+            "7/7",
+            "/",
+            "/",
+            "4/4",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4e57fca79e7c"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C5db3d7802470"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C18317706d7fd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ce01f377200e0"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C7be839681d94"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Ceb1b0fbc9eca"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C2f8dd052ee54"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C79e0d9640e00"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cf723a3346ef8"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "关联交易",
+            "战略",
+            "消费者权益",
+            "薪酬"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        },
+        {
+          "row_id": "TAB-948a390b579a8d46-P0093-B01-R016",
+          "page": 93,
+          "top": 572.5502000000001,
+          "bottom": 583.9002000000002,
+          "values": [
+            "史永东",
+            "19/19",
+            "/",
+            "/",
+            "/",
+            "9/9",
+            "8/8",
+            "/",
+            "1/1"
+          ],
+          "parts": [
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cffe4b241c295"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C888ebd9b0b93"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4a1fbc96ee04"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C567e5097ba95"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C4df5f602840b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cbe8eaf50bbcd"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C829a2bb44b7b"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-Cfa356da0da67"
+            ],
+            [
+              "TAB-948a390b579a8d46-P0093-B01-C9e8c14d5644d"
+            ]
+          ],
+          "split_row_merged": false,
+          "committee_labels": [
+            "审计",
+            "风险"
+          ],
+          "scope_basis": "geometrically_aligned_attendance_column_with_positive_expected_count"
+        }
+      ],
+      "pages": [
+        93
+      ],
+      "repeated_headers_removed_from_logical_rows": 0,
+      "split_rows_merged": 0
+    }
+  ],
+  "continuation_decisions": [],
+  "source_pdf_sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+  "model_calls": 0,
+  "independent_human_validation": false,
+  "limitations": [
+    "Governance-page selection only; unsupported or scanned layouts remain explicit review items.",
+    "Geometry and rule-based scope do not certify complete reporting-period membership."
+  ]
+}

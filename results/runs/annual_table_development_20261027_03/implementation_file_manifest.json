@@ -1,0 +1,654 @@
+{
+  "created_utc": "2026-10-27T02:46:55.394561+00:00",
+  "new_model_calls": 0,
+  "github_updated": false,
+  "implementation_files": [
+    {
+      "path": "src/data/annual_tables.py",
+      "sha256": "ee70e7b2466aa6e623f0e12c1bc78aa93bdddcd7a262f1181a37816b5c597498",
+      "bytes": 31223
+    },
+    {
+      "path": "src/retrieval/annual_table_index.py",
+      "sha256": "54185276f083b812ecd7b05d44590c8eb621f7ae9368e1ebe26a690cf487d92d",
+      "bytes": 12993
+    },
+    {
+      "path": "src/generation/annual_table_evidence.py",
+      "sha256": "37143c6aa60d4be4c1492bb424e345f8b31c7a99569f8baebce3a1e1cff1289a",
+      "bytes": 925
+    },
+    {
+      "path": "scripts/_table_runtime.py",
+      "sha256": "d9caf6e14b0808c84d4c0e8b663834d8a2993174a181a3ad9553835892353a8c",
+      "bytes": 718
+    },
+    {
+      "path": "scripts/extract_annual_tables.py",
+      "sha256": "6a3874db0f2cf9e0c9e90c42194051b6cf7b1c3b298b9c886e535e53fe108c94",
+      "bytes": 2544
+    },
+    {
+      "path": "scripts/run_annual_table_development_20261027.py",
+      "sha256": "2a65f713d83883f27217e6c440027e073db5ec4db61d02a57efc802dffc85fed",
+      "bytes": 21117
+    },
+    {
+      "path": "scripts/audit_annual_table_development_20261027.py",
+      "sha256": "4877935b39ad8cce027f0560e5b0bc323088389c01446f8a8afbba468bba1eec",
+      "bytes": 8236
+    },
+    {
+      "path": "scripts/supplement_annual_table_context.py",
+      "sha256": "7c7caf0d1702dcf29c91ef8eb1dfc0867c53f7c1a80c123cd6c4e5e5bad0831f",
+      "bytes": 2775
+    },
+    {
+      "path": "scripts/plot_annual_table_development_20261027.py",
+      "sha256": "2c794676260821c1ef282bec18fd4016dc7b9febfe3b7b7384c926f261ac25fa",
+      "bytes": 2773
+    },
+    {
+      "path": "tests/test_annual_tables.py",
+      "sha256": "cd75b26bd4a2e18f8e3cec6d77485011921bca91eb5dd88461f85fdf45019c76",
+      "bytes": 11774
+    },
+    {
+      "path": "tests/test_annual_table_evidence.py",
+      "sha256": "80d90b0ac59691c05975913b20feec54d806f753e1e5caf782a01dc688575c82",
+      "bytes": 2050
+    },
+    {
+      "path": "tests/fixtures/build_annual_table_fixture.py",
+      "sha256": "5ade795ebad70052bc95fd0271da6d09b655f9dfdd90e78d0d28d624715428ab",
+      "bytes": 3060
+    },
+    {
+      "path": "tests/fixtures/annual_tables_synthetic_v1.pdf",
+      "sha256": "2d959034ec8df44f5af4cf86e0a743c841938b5c0cf16aa5b541291de41d9392",
+      "bytes": 7602
+    },
+    {
+      "path": "requirements-table-parsing.txt",
+      "sha256": "dd2194e073554382d7e58b637bf3622f7e3c564136dd9fb5d4cebee5164f0f5f",
+      "bytes": 189
+    },
+    {
+      "path": "README.md",
+      "sha256": "0ef93e647c4579d96efc29df0014d3b4991bb4b933953ece1a559716aca67a5c",
+      "bytes": 19606
+    },
+    {
+      "path": "results/README.md",
+      "sha256": "ca0aabba9f7dd2f2c5572d6a261d49d82aaa93f4fc2c6910361ff47adb3c0d54",
+      "bytes": 17967
+    },
+    {
+      "path": "docs/年报表格与跨页续表解析_实现验收_20261027.txt",
+      "sha256": "d402d39fdcc3ad79d1997bbc96de5437e809c70230a12500b24f24afd6b0122d",
+      "bytes": 11138
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2023-AUDIT/adjacent_continuation.json",
+      "sha256": "c9081058f3a284a2d6db1c3cf63da24d16d867d3c3a94fa910bbdd21188d6936",
+      "bytes": 87395
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2023-AUDIT/initial.json",
+      "sha256": "0669ce738a0851a441bf12dd82d4803f577936f692d7293a7cfe37e094827f41",
+      "bytes": 45047
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2023-AUDIT/table_balanced.json",
+      "sha256": "808427917666caec8d48d6802bfe6be8a6db909f824b5335dd181070dd123ebc",
+      "bytes": 105286
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2023-AUDIT/table_bm25.json",
+      "sha256": "4d6e1fbeb611ce3b599362b06078047fe630819e031d21dec14addf40dd6b379",
+      "bytes": 105283
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2023-AUDIT/table_then_adjacent.json",
+      "sha256": "b4487d49f9c4e0309c95fd2baf7d9b81b2d8128bb78e8f7a786dfbf3cf31d26e",
+      "bytes": 142173
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2024-AUDIT/adjacent_continuation.json",
+      "sha256": "59e418917ab582b071a182098db4bfe077d0943d3af71f23148538e99a538409",
+      "bytes": 89832
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2024-AUDIT/initial.json",
+      "sha256": "6a10e91f36f1bb09f0a69b4124ab1e6161133e32d3f1abeb52e39d6bc8553439",
+      "bytes": 45212
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2024-AUDIT/table_balanced.json",
+      "sha256": "beaba4afb1aa3cb1a74d65a6a0b2aa7b5652b7572c729d49acc51381104e4cce",
+      "bytes": 128982
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2024-AUDIT/table_bm25.json",
+      "sha256": "3c186dd823202fa0bc543fee5526f4e2195790a009e15087f4fdd3aee7e8f9f8",
+      "bytes": 128979
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000651-2024-AUDIT/table_then_adjacent.json",
+      "sha256": "e33a037ad8438a80b7ddc7898ba7ae5c7bffe78051560df5d3110a97d3025ba6",
+      "bytes": 166856
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2023-AUDIT/adjacent_continuation.json",
+      "sha256": "3323eedb6e30920e406ffa257f18b636eb909d93bd91993be7946bc6767bbf48",
+      "bytes": 84955
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2023-AUDIT/initial.json",
+      "sha256": "62b2a821db171e06965a728c6049af7c2a0e087a321af39bb161ab8fc7baf2e1",
+      "bytes": 42014
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2023-AUDIT/table_balanced.json",
+      "sha256": "44c37cb9800ec66772a72a47f99ccb98fe3820e40ab37e9249646962a0fe6ad2",
+      "bytes": 127108
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2023-AUDIT/table_bm25.json",
+      "sha256": "65d87251a75fc11fbd03ee83da66cab2689e56244f760725bb334d89380cf7d5",
+      "bytes": 127105
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2023-AUDIT/table_then_adjacent.json",
+      "sha256": "44d882adfc9692efa416130c64fe7cf7260456da49a1c40b97582face82c484f",
+      "bytes": 161859
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2024-AUDIT/adjacent_continuation.json",
+      "sha256": "89a06ee07367428fbb143d90e12e86949ebdee53fdb99d0c302b2514a942002f",
+      "bytes": 84205
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2024-AUDIT/initial.json",
+      "sha256": "506ad0c6c800408d4660646f491746c1ef5ff83f15a4f79eec144dae20e0d982",
+      "bytes": 47247
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2024-AUDIT/table_balanced.json",
+      "sha256": "73221a7854da38d5f80f9f632a78f5b16d4dfd71e0c6b207f8a6b5d339eeae8b",
+      "bytes": 102406
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2024-AUDIT/table_bm25.json",
+      "sha256": "f89a481a7fbe3743a52c42601f4dff46ce6fa8aab66e750dc8e55cc49aad4965",
+      "bytes": 111001
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-000999-2024-AUDIT/table_then_adjacent.json",
+      "sha256": "e1d95716a9dc369970cbfa7d6f08fb2d77dc3c4cc05304391bb3bb4dd9df555b",
+      "bytes": 134286
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2023-AUDIT/adjacent_continuation.json",
+      "sha256": "4a24a1c582c634970181760c1330995414f7c2e335f19411fbc172e4d44e66dd",
+      "bytes": 99434
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2023-AUDIT/initial.json",
+      "sha256": "d453665673e9dc0667a41111a00ffedf17a839d68440b38dff8a52a89a9c3148",
+      "bytes": 50778
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2023-AUDIT/table_balanced.json",
+      "sha256": "57bbb85a18297be9407e8c3c6bff1eacb61cdc9b99a11e314e4a8a4fd5c6bce6",
+      "bytes": 129446
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2023-AUDIT/table_bm25.json",
+      "sha256": "9bd6b1d696e7d209bf77d6adec515110061bf25a0bd799f193a4b71b3dd8fd4e",
+      "bytes": 129443
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2023-AUDIT/table_then_adjacent.json",
+      "sha256": "de3d0009697cbe58073f550f1f59b692d9deeed22c94e511c451708b33d9202a",
+      "bytes": 171235
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2024-AUDIT/adjacent_continuation.json",
+      "sha256": "d4e3b3f3c2621d68b767d276bdec3c79cd47d9c31d29458aec0f7e3ec777a702",
+      "bytes": 95000
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2024-AUDIT/initial.json",
+      "sha256": "29a35ff6372654fa476c42e8a0927dfbc7a3a4eeb389bbf36aa37c733440572d",
+      "bytes": 51570
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2024-AUDIT/table_balanced.json",
+      "sha256": "ba1c5485109749252eb8c539b101249f8ecd5e0ad6ac30fd20d4f3fdb3d797f8",
+      "bytes": 154359
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2024-AUDIT/table_bm25.json",
+      "sha256": "5aaeb6c227d752461937da745d58b56dc64f5d468724b4b232d9c623ece4349c",
+      "bytes": 154356
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-600036-2024-AUDIT/table_then_adjacent.json",
+      "sha256": "e44cba71906821c0177b8fced8307c1b92913ce2ae033c51c1f4fe93f928f9f1",
+      "bytes": 192983
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2023-AUDIT/adjacent_continuation.json",
+      "sha256": "d1f5e5e877a2bb90fb6d26546551b8f5d017b3e6e24581f41e1dc2425715f73a",
+      "bytes": 84226
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2023-AUDIT/initial.json",
+      "sha256": "c3f222a964b31fa2103d7f3ae3785adf92b2f8f5abaa4a9267625322b79c7e49",
+      "bytes": 43490
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2023-AUDIT/table_balanced.json",
+      "sha256": "424e386706d91e6fe7e619ecd68943bb4b1b741c7009a4ce25c7bc526ba35fe6",
+      "bytes": 78539
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2023-AUDIT/table_bm25.json",
+      "sha256": "d396da6cde153b7884d7b3232fdbd4d032762053fc3dd65f78bce7720ddb19d3",
+      "bytes": 78536
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2023-AUDIT/table_then_adjacent.json",
+      "sha256": "5edf13969f6334b87c09662257ea7eaafbf1630e006f2455808a733f4237ce24",
+      "bytes": 119272
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2024-AUDIT/adjacent_continuation.json",
+      "sha256": "a085c5f3e2c20e4d844d27a6fe2580efb1186ab39dd1bd06b43abd73925cee64",
+      "bytes": 85211
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2024-AUDIT/initial.json",
+      "sha256": "7bff3bacbbe7957a08692e2837bb2dd043263184d287132d024c7f19669e88cd",
+      "bytes": 42703
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2024-AUDIT/table_balanced.json",
+      "sha256": "357411077f0be9bb01be825b2b4aa24bc309deb8d1a7eba28ca23e8633e764f6",
+      "bytes": 105420
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2024-AUDIT/table_bm25.json",
+      "sha256": "9fe1e61ea84341111b8dd41921484a29dcbac541f434643d9a1aa9b7ffe01a44",
+      "bytes": 105417
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts/NEW-603288-2024-AUDIT/table_then_adjacent.json",
+      "sha256": "b547673e44db54a3829cb9e50991c5e29855b9b7669d440bc024b88f44e8d8d4",
+      "bytes": 142471
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/contexts_saved_before_labels.json",
+      "sha256": "b418b1c1a86c40043b9b81f3f7074a83040748476a0384be334a0f7005429c37",
+      "bytes": 5237
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/cmb_2023.json",
+      "sha256": "073a4f57ce3fbb741f82493a355a4594541591b990d4446fa8a24d08d6bacd2e",
+      "bytes": 167073
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/cmb_2024.json",
+      "sha256": "d41dbc5836117abdbfc55df7040fcb5c816c3741577d659a64b8297657d6a83d",
+      "bytes": 185362
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/gree_2023.json",
+      "sha256": "3ad0065005db1d9fbad72062f57b6a32f6f0a4bff8956254052c7ce7bf2b362c",
+      "bytes": 284419
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/gree_2024.json",
+      "sha256": "06ac7bf20ecca2ec665be7af367c9a5c3ed84e5308d9b0124bce0154ec883945",
+      "bytes": 776441
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/haday_2023.json",
+      "sha256": "c9e7af8d1095a05a4c201127ee8460d36c34b4d921832b341dad53aa139e08be",
+      "bytes": 407060
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/haday_2024.json",
+      "sha256": "b1bc593f8c996055b9d913a29c6878739aec3efac68be2fa2cd494b9c91ae638",
+      "bytes": 710628
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/hrsj_2023.json",
+      "sha256": "56507beed01e00a64b909339fc54de46680e0564fdc65eccd9e0f0969f6231b9",
+      "bytes": 650854
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/documents/hrsj_2024.json",
+      "sha256": "f1df8b16a45f90eba6c9a1d9219bceb0f7e17dc5cc4a70aedd69b2e9cda79d2d",
+      "bytes": 1461311
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/figures/table_retrieval_comparison.png",
+      "sha256": "9170cc25cdc99a1d47357480ff22a2a078a683c066c695e57f218ceec1a853af",
+      "bytes": 218146
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/figures/table_retrieval_comparison.svg",
+      "sha256": "286e8263c598f5ab41942b2ff47c3c23f5936cde544a64ddef3eedb06e96a057",
+      "bytes": 86951
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/human_review_template.jsonl",
+      "sha256": "1a2b18b53dcdcb9c117f4152d5e1f059cbc29d673d00fe771b352a66a432caa6",
+      "bytes": 397695
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/implementation_audit.json",
+      "sha256": "20068fbeed9bea5a80d53a2d07c9ff9b2a5c9d40520439cd19cca070b3760cf7",
+      "bytes": 1907
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/offline_analysis.json",
+      "sha256": "561089924c51da0103c7fceeee281d1f8280763c01cddff04cbaed9d070263bf",
+      "bytes": 16528
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/offline_protocol.json",
+      "sha256": "2eee209a344c4df262a1611403d54ad7ab9abd75861f05910e75e9f803afe49e",
+      "bytes": 6172
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/parser_field_diagnostics.json",
+      "sha256": "8b1d9546d9ddcb7282349ee1538ad4a7f917680ffc2a503a94a0a9408025ce5e",
+      "bytes": 11676
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/qa/synthetic_fixture_contact.png",
+      "sha256": "f4e5fc576e5de0987c1c983949e948782498c21d0968955628cba343d8a945b6",
+      "bytes": 33926
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/retrieval_metrics.csv",
+      "sha256": "5a3571f552eba027034d78af2333853ede07a65e612ba7659c16637a8305893d",
+      "bytes": 2773
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/review.html",
+      "sha256": "482ecf2ed6ec9f89cc9fbfa53db79d4a321dc64cd138682a03b9bd4ef93aca09",
+      "bytes": 186888
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/review_queue.json",
+      "sha256": "5c38d54103f753b7a8af28281941fb8e353cae8dc0c1448862b907d9f9f9eb55",
+      "bytes": 121906
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/review_queue_triage.json",
+      "sha256": "d3dcbe2494b4f17a62dc4ddd9702e4bd7d84d40cf46364c75e364e8c1032fa17",
+      "bytes": 166497
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2023/page_0044.png",
+      "sha256": "5ec6c0a55a38aa61fc54059889ddc3835cb55eb2e0a12f0d090e1beeb0e86816",
+      "bytes": 38182
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2023/page_0050.png",
+      "sha256": "240c3310588626e50da69cbfada3880420444bda02b08f159f3a344ebf064104",
+      "bytes": 183716
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2023/page_0051.png",
+      "sha256": "832a0d240175e44446256610b1e2868b47cf1137652b0441237a3a47f88621e3",
+      "bytes": 175692
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2023/page_0052.png",
+      "sha256": "21deb4848816f09f4d90e6c61b2e25a78f479d8f3e5e2c919952d7499b1b8fd2",
+      "bytes": 359738
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2024/page_0049.png",
+      "sha256": "0f165734ba62fd20da5084f208427f58663a5429de3f2ccb330a7b4a0c7f42f7",
+      "bytes": 152515
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2024/page_0050.png",
+      "sha256": "87e01f96f67401bf206f05a8a23aa98a93ec111bc109ad4440fd68497e422200",
+      "bytes": 297274
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2024/page_0055.png",
+      "sha256": "8c9f8af81bdf9d472487e9030e08b44e4ecc79d183040356615327383bbe63de",
+      "bytes": 214316
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2024/page_0056.png",
+      "sha256": "0d6f3f5036dd7e2d370a183787d3ba4f3bd1b92b7004373a65f5286138b35c5f",
+      "bytes": 183841
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2024/page_0057.png",
+      "sha256": "73cb04e65a89810cedddf522d44af9e3a8ff0d97b9f02389081c4a43218ebfbb",
+      "bytes": 150844
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000651-2024/page_0058.png",
+      "sha256": "d4e8980ea50b748acfea0fbad4bb5201dab4a1c5f5f74daa531ccd22a46fd50a",
+      "bytes": 377769
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2023/page_0042.png",
+      "sha256": "9c5ce5712ecf3e2036b9084c03619669f0ad0e7e9075596918cf8d0c3b636fd7",
+      "bytes": 273817
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2023/page_0046.png",
+      "sha256": "6829bd11bdf2e3363fc07305a68d6a5e7d49de3a881929e2f3d403fde97ae644",
+      "bytes": 123554
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2023/page_0047.png",
+      "sha256": "a05dce1c6e96b300abc42c1f78d9ba7f2846275f0620df6da2ca4d0d5501e275",
+      "bytes": 182406
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2023/page_0054.png",
+      "sha256": "66c4b5a424591fa5c6a3815bf8fadb06fcb456b3ca40073dd84e76a750c3d760",
+      "bytes": 240780
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2023/page_0055.png",
+      "sha256": "42aa4d3b415685cd8c8fef565999f5bde40b17b3ca60d9c2149a578b8c97c2a8",
+      "bytes": 299981
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2023/page_0056.png",
+      "sha256": "822edae7810830d72c6a760b6c66b3452afb59df0712599e42d49e9d44059b02",
+      "bytes": 197088
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0039.png",
+      "sha256": "02f4e3db32a660596509192cffb4182afa19571a4b672365b210cdb0708a27b0",
+      "bytes": 278809
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0043.png",
+      "sha256": "609d11a99cbdae37c8e630b113503b31f1f8e449bf6af9d5b33fb51eff026461",
+      "bytes": 153021
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0044.png",
+      "sha256": "28d6ed2266084ce6a55965c56b22c820987ee2e592fbc96459224e19764a760f",
+      "bytes": 261319
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0045.png",
+      "sha256": "c48d94f1c542a8ab45153b9df2c1fbb45d8086290b75d5476a6c951f3f26f681",
+      "bytes": 308472
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0049.png",
+      "sha256": "ffc8130aee1dedd85beab925b503fc7dc9eba2a222f30b79127cfd270b3a9332",
+      "bytes": 266587
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0050.png",
+      "sha256": "9347f479791c4d920af1cbb0a61fa3b11b2f20f9fa7f39d6254ec11ef63a8752",
+      "bytes": 283083
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0051.png",
+      "sha256": "4716481284745bc44ae9bb7358711ec084472a48d7c48b568d72ba3c6b1e05fd",
+      "bytes": 403349
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0052.png",
+      "sha256": "d09a3fec46cc4126e2ba66197930bca26030b37964e2c80b746d2b8122bbf44d",
+      "bytes": 272441
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0053.png",
+      "sha256": "b055b00055d366a7cddd7fa0be81673abca88a177cda3e3e4951abbc3c88d881",
+      "bytes": 312107
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0054.png",
+      "sha256": "b199f35e4748a9cffaf9a793f318f3cb97b0e8f789f7e84a2d0eccbaa319b486",
+      "bytes": 340471
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0055.png",
+      "sha256": "14da4ebe2040b3e35a58f4c5bb5c1f28bd84d437047f5f04c72606b112c6c7c2",
+      "bytes": 349438
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/000999-2024/page_0093.png",
+      "sha256": "e9d41a7a1a1b220d7fcfe113c7e4837825a57fa849e0a4930fb63b66c4cb27db",
+      "bytes": 180679
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/600036-2023/page_0093.png",
+      "sha256": "c3106596358920e838c8e98b3f6baaecafb3203c1e32e2f3623adb2d652f9c70",
+      "bytes": 132262
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/600036-2024/page_0093.png",
+      "sha256": "ec88b575a5d439f6309716e81a3fc7798f86a9fdea4fe3fb1b08d893b6918b4a",
+      "bytes": 190972
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0031.png",
+      "sha256": "d891d90116e1bc9bee7cf680ffbc78060673d1441374929965b60dd883e78694",
+      "bytes": 132000
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0035.png",
+      "sha256": "aee0a9d5aae9a1547bd8a410cbbfbd93bfd96c22d347ff9d6c445f7dceb3e184",
+      "bytes": 239526
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0036.png",
+      "sha256": "66f73716129169653b39a8d8d73bffc8186d3e6f582b827ad4cbea0178692a89",
+      "bytes": 225153
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0037.png",
+      "sha256": "70170cb820e922f31f3766e48cca9bc2ec4623dd58104c6eb59e8e6071598226",
+      "bytes": 205290
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0038.png",
+      "sha256": "16db57eea53cbd99dd8f096c26d26f8a088b0d6f434c2740779f999c6c6b3fb7",
+      "bytes": 223370
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0039.png",
+      "sha256": "26142e554b3e5a4f34929b5189c76c1997cfc1ec0dc939ac8eb3d1d76f639464",
+      "bytes": 208578
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2023/page_0040.png",
+      "sha256": "b269b98a3bb2978ffbd57bca8e236a378583235bae664ac36b963a58691d63d0",
+      "bytes": 244137
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0033.png",
+      "sha256": "dc896c89bee71ab435c8fc8f34afae3ecbaccf13a0800babbd634a83b09f0892",
+      "bytes": 146494
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0037.png",
+      "sha256": "e3cd1d9b1e9c0f0bc1b81ae4ab7040081d52f1a83c3356e3f3b1ed369a6ccbd5",
+      "bytes": 288873
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0038.png",
+      "sha256": "d85054f50a2ea3e0585b61cd2d6d9e8dcf27302bcee5d28d16df93e5dd562de8",
+      "bytes": 278213
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0039.png",
+      "sha256": "e7f2710b4e55595c96e049d373888ea8b64e9b304c9c1b839237a7f6b4344ca5",
+      "bytes": 252370
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0040.png",
+      "sha256": "3062d262fc4488c260d2aa4b90e2a421c5be600b84cdb25cc688ab3ac4e5de3d",
+      "bytes": 384317
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0041.png",
+      "sha256": "8873844931c48edb4649e5d91379609e5ebf557f611e297c23b7b4e7572209e7",
+      "bytes": 212909
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0042.png",
+      "sha256": "6fbb05c307b24070fd259af6ca1e5034098744d1eef5535661b51cb59073746e",
+      "bytes": 282607
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0043.png",
+      "sha256": "d77284ea8f475ef04efe55a22d29341efbfb2d9c329cada116245477f5347403",
+      "bytes": 312868
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_previews/603288-2024/page_0044.png",
+      "sha256": "01ec4e5a64607640d811714414ec69af3c244ab926fc7dcbbbcbfc0e26cdfdbf",
+      "bytes": 195065
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/source_verification.json",
+      "sha256": "7696be1ea1f4700d4053ac0a65ee432e8a2b36bb9c3d22d999ac197b1534edf0",
+      "bytes": 2892
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/structured_chunks.jsonl",
+      "sha256": "26b5f8394b757e8df8cf115c6aae5ac88e4087851bc13c06b8c1a401165f5db7",
+      "bytes": 926836
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/table_index.sqlite",
+      "sha256": "dfe86267cdf4acfc1ffc09089c9b4df57ed28c7d70318149a71548f782d2c6b8",
+      "bytes": 1118208
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/tests_passed.xml",
+      "sha256": "cfe2508ee14426d31e7181af93244f7f37e9a860a8c0e02ca8ef66fce888a384",
+      "bytes": 30275
+    },
+    {
+      "path": "results/runs/annual_table_development_20261027_03/visual_and_report_qa.json",
+      "sha256": "67da44a7ee59b6551c3e6db49a868180eee88df041f96c106843dc5fae4c81b8",
+      "bytes": 393
+    }
+  ]
+}

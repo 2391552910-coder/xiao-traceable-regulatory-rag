@@ -1,0 +1,31 @@
+name: Offline evidence regression
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements-offline-evidence.txt
+            requirements-table-parsing.txt
+      - run: python -m pip install -r requirements-offline-evidence.txt
+      - name: Offline tests without API credentials or model weights
+        env:
+          PYTHONIOENCODING: utf-8
+        run: >-
+          python -m pytest -q --tb=short -p no:cacheprovider
+          tests/test_annual_audit_development.py tests/test_evidence_retention.py
+          tests/test_supplementary_retrieval.py tests/test_request_journal.py
+          tests/test_evidence_retention_development.py tests/test_evidence_retention_scoring.py
+          tests/test_adjacent_chunks.py tests/test_source_span_audit.py
+          tests/test_adjacent_evidence_replay.py tests/test_annual_tables.py
+          tests/test_annual_table_evidence.py

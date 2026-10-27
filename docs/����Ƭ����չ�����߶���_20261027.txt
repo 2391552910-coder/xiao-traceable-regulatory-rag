@@ -1,0 +1,118 @@
+相邻片段扩展与离线对照
+工作日期：2026-10-27（Asia/Shanghai）
+
+本轮已实现及实测
+================
+本轮不需要可用大模型服务，未读取模型认证配置、未派发模型请求、未生成回答。
+新增确定性同文档邻接选择器、原始年报来源区间核验、6种固定策略的离线比较、可复算指标和科学绘图。
+结果保存在 results/runs/adjacent_evidence_development_20261027_02/。
+它是8个已曝光开发问题的回归实验，不能作为新的独立留出验证或投稿录用证明。
+
+实际比较设置
+============
+问题与初始检索均复用2026-10-23四家新公司×2023/2024两年度的8题。
+每题初始上下文均重新检索并复现，初始提示也逐字一致。
+每个方案上限6000参考tokens，使用同一冻结Qwen分词器，只作文本计数，不执行大模型推理。
+所有补充阶段只追加完整已有片段，每阶段最多8个新来源；初始原文、来源记录和引用ID保留。
+
+六个策略：
+initial：原始上下文，不扩展。
+fixed_preserve：沿用两轮共4条固定查询，保留已有材料再追加。
+adjacent_rank：按原始年报种子顺序，先遍历全部直接后继，再遍历全部直接前驱。
+adjacent_continuation：先同页后继、跨页后继、同页前驱、跨页前驱，各组内按原始种子顺序。
+fixed_then_adjacent：先两轮固定查询，再按同页后继优先追加邻居。
+adjacent_then_fixed：先按同页后继优先追加邻居，再两轮固定查询。
+
+邻接只在同doc_id、股票代码、报告年度及PDF SHA256的坐标序列中取直接±1，排序为物理页码及原片段起点。
+所有方案始终使用原始种子，不从新邻居递归扩展，也不跳过已存在邻居去寻找第二跳。
+跨页邻居是已索引坐标序列的相邻节点，可能跨过空白或未入索引页；逐条审计保留physical_page_delta。
+候选的0.0分只是兼容打包器的占位值，不是BM25相关性分数。
+选择器不读取参考答案，不根据公司、日期或具体答案硬编码选择片段。
+方案设计发生在检查过历史失败之后；没有预注册或盲测的主张。
+
+招商银行2024：实际修复的材料截断案例
+===================================
+初始材料HELD-600036-2024-P97-S0是物理第97页[0,1200)字符，最后截在“第十六次会议（5月14日”。
+已有邻居HELD-600036-2024-P97-S1000对应同一页[1000,1706)，包含完整审计会议句[1079,1261)。
+原缺失的四个日期区间：5月23日[1209,1214)、8月22日[1223,1228)、10月25日[1237,1243)、12月18日[1253,1259)。
+这些坐标是冻结PDFium文本的Unicode码点、左闭右开区间，不是PDF版面像素坐标。
+
+策略                         审计日期对应区间供给     实际参考tokens
+initial                              5/9                  4780
+fixed_preserve                       5/9                  5997
+adjacent_rank                        5/9                  5953
+adjacent_continuation                 9/9                  5787
+fixed_then_adjacent                  5/9                  5997
+adjacent_then_fixed                  9/9                  5962
+
+普通排名顺序和先固定查询会先占用预算，仍无法装入关键续片；同页后继优先在本案例补回全部9个日期的来源区间。
+此处9/9不是生成回答的Recall，尚未检验模型是否正确抽取、引用或区分委员会。
+同页初始文本[242,248)也有“10月25日”，但属于风险与资本管理委员会。
+评分要求审计会议句内的精确来源坐标，不能用这一普通词面命中冒充审计日期已被提供。
+具体来源核查记录见 docs/adjacent_source_diagnostic_20261026.json；这些区间是AI助手事后核查，独立人工验证尚未完成。
+
+8题总体材料供给
+===============
+策略                     平均tokens   平均新增片段   平均新增不重复年报字符
+initial                     4669.000       0.000                  0.000
+fixed_preserve              5927.500       5.625                638.000
+adjacent_rank               5852.750       3.500               1488.250
+adjacent_continuation       5824.000       4.000               1348.250
+fixed_then_adjacent         5951.375       6.125                656.625
+adjacent_then_fixed         5944.375       4.875               1348.250
+
+新字符统计对同PDF同页的重叠区间取并集，避免1200字符窗口/1000步长带来的重复计数。
+新增片段总数同时包含法规与年报，字符供给只统计年报；不得将两者混用。
+新增字符数量不衡量相关性或语义支持，普通邻接虽然字符更多，却未修复上面的日期缺口。
+六种策略的初始片段与ID保留率都是100%，所有上下文均≤6000参考tokens。
+六种策略的原冻结参考页覆盖率都为100%，勘误参考页覆盖率都为95.8333%，没有总体参考页覆盖增益。
+同一页被命中不代表页内的关键字符被提供，此案例正说明只看页面覆盖会掩盖片段截断。
+
+来源与实现验收
+==============
+8份本地年报PDF实际字节SHA256与sources.json逐一一致。
+82个不同年报片段的页码、起点、终点和原文逐字核对；48上下文共执行356次年报切片核验。
+65个真正用到的年报页面从PDF重新执行PDFium解析，与冻结解析文本逐字相同。
+法规沿用冻结索引，本轮未重新解析法规原始PDF；不能把上述核验概括为所有来源的PDF核验。
+170项测试通过：先前110项、邻接选择器30项、来源区间20项、本轮整合10项。
+134份已发布历史文件保持原SHA256；之前03批次已准备的生成代码及协议不变，仍无请求。
+01与02两次构造的48份上下文和逐阶段轨迹完全一致。
+01在保存全部上下文后因项目Python未能找到PDFium而终止，保留execution_failure.json；02使用本机已有的bundled PDFium库完成，无依赖下载。
+
+主要输出
+========
+offline_protocol.json：6方案、预算、源码与输入指纹。
+contexts/：48份材料、全部候选、筛选原因、装入/预算省略记录和精确年报坐标。
+contexts_saved_before_reference_analysis.json：在读取参考标签和事后诊断内容前保存的48文件收据。
+source_verification.json：8PDF指纹及65页重新解析核验。
+case_source_span_diagnostic.json：逐策略、逐日期区间的供给判断。
+offline_analysis.json / offline_metrics.csv：全部48行指标，不只保留成功方案。
+tests_passed.xml / implementation_audit.json：170项测试及历史不变性验收。
+figures/adjacent_evidence_comparison.png / .pdf：可查看与导出的三面板科学对照图。
+
+新answer_precision、answer_recall、answer_f1、answer_accuracy、semantic_citation_accuracy及semantic_retrieval_recall均为null。
+既有论文中的历史回答指标保持原值，没有将材料供给结果填入回答指标表。
+本次本地代码、说明及实验产物尚未发布到GitHub，现有Word论文也没有被替换。
+
+离线复算
+========
+在xiaolun项目目录运行；需项目环境的tokenizers/jieba和本地pypdfium2。
+直接可用pypdfium2的Python环境：
+  python scripts/replay_adjacent_evidence_20261027.py --out-dir results/runs/adjacent_evidence_development_20261027_03
+
+当前这台机器的项目Python没有直接安装pypdfium2。本次成功调用如下（PowerShell，既有bundled库追加到模块查找末尾，不安装或下载）：
+  .venv-data/Scripts/python.exe -c "import sys,runpy;from pathlib import Path;sys.path.append(r'C:/Users/mech-mind/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/Lib/site-packages');sys.argv=[str(Path('scripts/replay_adjacent_evidence_20261027.py').resolve()),'--out-dir','results/runs/adjacent_evidence_development_20261027_03'];runpy.run_path(sys.argv[0],run_name='__main__')"
+
+输出目录必须新建，脚本拒绝覆盖已有产物。脚本只读取冻结数据库/来源，不含调用大模型的路径。
+重验当前02产物：
+  .venv-data/Scripts/python.exe scripts/audit_adjacent_evidence_20261027.py
+重绘当前02图：
+  .venv-data/Scripts/python.exe scripts/plot_adjacent_evidence_20261027.py
+
+仍可继续的离线工作及优先级
+========================
+1. 独立人工标注：请真实标注者分别核验全年成员并集、委员会列归属、会议次数与日期，并冻结分歧裁定；AI助手不能替代独立人类。
+2. 年报表格结构和跨页续表解析：补足成员变更、出席表、多行姓名等结构信息，同时保留来源坐标；一跳邻居无法保证找到远离当前检索页的离任成员。
+3. 新的冻结测试集：与这8题分开选公司/年度，固定问题与来源后再测，不把已曝光回归结果当泛化证据。
+4. 有完整相关片段标注后评估真正的Recall@k、MRR、nDCG，以及按源位置匹配的证据Precision；现在缺少独立完整相关性标注，不应从页覆盖率反推。
+5. 服务恢复后用相同题目、预算及提示开展生成比较，检验材料补全是否转化为回答指标改善。本轮没有运行这一步。

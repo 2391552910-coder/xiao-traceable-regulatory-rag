@@ -1,0 +1,240 @@
+{
+  "all_initial_source_records_and_ids_preserved": true,
+  "all_initial_text_prefixes_preserved": true,
+  "all_repaired_contexts_within_6000": true,
+  "groups": [
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 0.9583333333333334,
+      "initial_retention_legacy": 0.5875,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.8333333333333334,
+      "legacy_tokens": 5806.75,
+      "n": 8,
+      "new_chunks_repaired": 4.125,
+      "repaired_reference_page_coverage": 0.9583333333333334,
+      "repaired_tokens": 5845.375
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 0.9583333333333334,
+      "initial_retention_legacy": 0.325,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.8333333333333334,
+      "legacy_tokens": 5903.125,
+      "n": 8,
+      "new_chunks_repaired": 5.625,
+      "repaired_reference_page_coverage": 0.9583333333333334,
+      "repaired_tokens": 5927.5
+    }
+  ],
+  "historical_steps_reproduced": 32,
+  "initial_contexts_reproduced": 8,
+  "limitations": [
+    "Saved planning queries are fixed historical traces, not counterfactual model outputs",
+    "Page and block coverage do not establish semantic support or answer improvement",
+    "All eight questions were already exposed; development regression only"
+  ],
+  "new_model_calls": 0,
+  "rows": [
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.5,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5850,
+      "new_chunks_repaired": 2,
+      "question_id": "NEW-000651-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5953
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.3,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5900,
+      "new_chunks_repaired": 6,
+      "question_id": "NEW-000651-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5899
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.6,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5992,
+      "new_chunks_repaired": 2,
+      "question_id": "NEW-000651-2024-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5935
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.2,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5910,
+      "new_chunks_repaired": 5,
+      "question_id": "NEW-000651-2024-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5962
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.4,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5809,
+      "new_chunks_repaired": 4,
+      "question_id": "NEW-000999-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5992
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.3,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5985,
+      "new_chunks_repaired": 6,
+      "question_id": "NEW-000999-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5905
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 0.6666666666666666,
+      "initial_retention_legacy": 0.6,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.6666666666666666,
+      "legacy_tokens": 5966,
+      "new_chunks_repaired": 3,
+      "question_id": "NEW-000999-2024-AUDIT",
+      "repaired_reference_page_coverage": 0.6666666666666666,
+      "repaired_tokens": 5951
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 0.6666666666666666,
+      "initial_retention_legacy": 0.2,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.6666666666666666,
+      "legacy_tokens": 5896,
+      "new_chunks_repaired": 2,
+      "question_id": "NEW-000999-2024-AUDIT",
+      "repaired_reference_page_coverage": 0.6666666666666666,
+      "repaired_tokens": 5945
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.5,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.0,
+      "legacy_tokens": 5849,
+      "new_chunks_repaired": 5,
+      "question_id": "NEW-600036-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5993
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.2,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.5,
+      "legacy_tokens": 5901,
+      "new_chunks_repaired": 5,
+      "question_id": "NEW-600036-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5927
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.6,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5960,
+      "new_chunks_repaired": 6,
+      "question_id": "NEW-600036-2024-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5966
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.3,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 0.5,
+      "legacy_tokens": 5840,
+      "new_chunks_repaired": 4,
+      "question_id": "NEW-600036-2024-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5997
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 1.0,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5061,
+      "new_chunks_repaired": 6,
+      "question_id": "NEW-603288-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5062
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.5,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5844,
+      "new_chunks_repaired": 9,
+      "question_id": "NEW-603288-2023-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5843
+    },
+    {
+      "historical_mode": "k3_agent3_v2",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.5,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5967,
+      "new_chunks_repaired": 5,
+      "question_id": "NEW-603288-2024-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5911
+    },
+    {
+      "historical_mode": "k3_fixed_expand",
+      "initial_reference_page_coverage": 1.0,
+      "initial_retention_legacy": 0.6,
+      "initial_retention_repaired": 1.0,
+      "legacy_reference_page_coverage": 1.0,
+      "legacy_tokens": 5949,
+      "new_chunks_repaired": 8,
+      "question_id": "NEW-603288-2024-AUDIT",
+      "repaired_reference_page_coverage": 1.0,
+      "repaired_tokens": 5942
+    }
+  ],
+  "scripts": {
+    "annual_audit_development.py": "bf49eed2dc69c94d32f0e8b4ada5bdf8bd1b2b8011f9f82641dd9788e61ff807",
+    "evidence_retention.py": "5587ee84404f7e69fcff15fc37c9386e6b6a60bdbdd92b09f950dc3c5f2b2029",
+    "replay_evidence_retention_20261026.py": "9fde77a679ba2867c145ae604fc54893496891803318f193c55704b0988c56ff"
+  },
+  "status": "passed",
+  "trajectories": 16
+}

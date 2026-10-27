@@ -35,10 +35,15 @@ class BM25Retriever:
         self._avgdl = sum(len(t) for t in self._tokens) / max(n, 1)
         self._idf = {t: math.log((n - f + 0.5) / (f + 0.5) + 1) for t, f in df.items()}
 
-    def search(self, query: str, top_k: int = 5) -> list[tuple[Chunk, float]]:
+    def search(self, query: str, top_k: int = 5,
+               candidate_ids: set[str] | None = None) -> list[tuple[Chunk, float]]:
+        if candidate_ids is not None and not candidate_ids:
+            return []
         q_tokens = tokenize(query)
         scored: list[tuple[int, float]] = []
         for idx, tokens in enumerate(self._tokens):
+            if candidate_ids is not None and self.chunks[idx].chunk_id not in candidate_ids:
+                continue
             tf = Counter(tokens)
             dl = len(tokens)
             score = sum(

@@ -50,8 +50,8 @@ class DimensionRoutedRetriever:
         return template.format(keywords=keywords)
 
     def search(self, dimension: str, keywords: str, top_k: int = 5,
-               routed: bool = True) -> list[tuple[Chunk, float]]:
-        query = self.build_query(dimension, keywords)
+               routed: bool = True, expand_query: bool = True) -> list[tuple[Chunk, float]]:
+        query = self.build_query(dimension, keywords) if expand_query else keywords
         pool = self.route_pool(dimension) if routed else None
         return self.retriever.search(query, top_k=top_k, pool=pool)
 

@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-26T09:41:57.907661+00:00",
+  "classification": "exposed development regression, not new holdout",
+  "historical_queries_reused": true,
+  "new_model_calls": 0,
+  "database_sha256": "9dcef5bb0707d35a117dd4ad0df928d623f63628572ce240174b1a08ac6ec8dd",
+  "inputs": {
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000651-2023-AUDIT.json": "dbe03bc068014a15edaa5fbaedf647fbed9f2549b50da85e20293ec307b90df7",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000651-2024-AUDIT.json": "19ec0a877a0bf970e27482bc107254c6eab01d743f7c08b620e613721e6e6de9",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000999-2023-AUDIT.json": "bb54821da07634ae64379425d7ea7e4efd68203ce599a2e1979c9093096b5779",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-000999-2024-AUDIT.json": "fa8d5add40d65b0bdda49c5b1a939a7b579a7abd50e94816b84daa2f63013f3c",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-600036-2023-AUDIT.json": "67d4383114d1316a37e200e10e5e1a8072619ee3cf740fcf54d0e8d089bc132e",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-600036-2024-AUDIT.json": "f1a0255d921fe4f739387fc157828a9474833b574bb88a10188810449afb3643",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-603288-2023-AUDIT.json": "cdb19790eb733c2400a3347fe51e3b4468579f0c1405e36eb0e145ad7bcb4394",
+    "results\\paper\\heldout_validation_20261023_01\\packets\\NEW-603288-2024-AUDIT.json": "07927d6c75056dc76a71f05269c33a8e7c90e2ef82b3f9661b1390df8d95b1a7",
+    "results\\paper\\heldout_validation_20261023_01\\execution_protocol.json": "e1dcaccf8fb4039173ac29237a1a8e33e7772a829990141172409f2459975bfb",
+    "results\\paper\\heldout_validation_20261023_01\\generation_start.json": "607735965ef9b67516d58d3852541932f9e064704eea4ca1d240d35b7131f57c",
+    "results\\paper\\heldout_validation_20261023_01\\reference_labels.json": "4340de19b1e6bfaa3064208804db9b3261a8e3dbb13b2e1efbde5a9a936ad295",
+    "results\\paper\\heldout_validation_20261023_01\\reference_labels_corrected.json": "7e5145494bc8243697aad409a910bd98fb9d2c522efe849ac43743f75e35ded2"
+  }
+}

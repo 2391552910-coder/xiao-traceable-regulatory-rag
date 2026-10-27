@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "pdf_files": 8,
+  "cell_receipts": [
+    {
+      "stock_code": "603288",
+      "report_year": 2023,
+      "pdf_sha256": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04",
+      "cells_reverified": 351,
+      "table_pages_reopened": [
+        31,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "603288",
+      "report_year": 2024,
+      "pdf_sha256": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee",
+      "cells_reverified": 603,
+      "table_pages_reopened": [
+        33,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "000999",
+      "report_year": 2023,
+      "pdf_sha256": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb",
+      "cells_reverified": 649,
+      "table_pages_reopened": [
+        42,
+        46,
+        47,
+        54,
+        55,
+        56
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "000999",
+      "report_year": 2024,
+      "pdf_sha256": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6",
+      "cells_reverified": 1368,
+      "table_pages_reopened": [
+        39,
+        43,
+        44,
+        45,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        93
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "000651",
+      "report_year": 2023,
+      "pdf_sha256": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa",
+      "cells_reverified": 270,
+      "table_pages_reopened": [
+        44,
+        50,
+        51,
+        52
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "000651",
+      "report_year": 2024,
+      "pdf_sha256": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006",
+      "cells_reverified": 762,
+      "table_pages_reopened": [
+        49,
+        50,
+        55,
+        56,
+        57,
+        58
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "600036",
+      "report_year": 2023,
+      "pdf_sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+      "cells_reverified": 153,
+      "table_pages_reopened": [
+        93
+      ],
+      "status": "passed"
+    },
+    {
+      "stock_code": "600036",
+      "report_year": 2024,
+      "pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "cells_reverified": 170,
+      "table_pages_reopened": [
+        93
+      ],
+      "status": "passed"
+    }
+  ],
+  "total_cells_reverified": 4326,
+  "unique_table_pages_reopened": 46,
+  "independent_human_validation": false
+}

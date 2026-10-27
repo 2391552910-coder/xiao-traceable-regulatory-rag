@@ -1,0 +1,60 @@
+证据保留修复与离线验收
+日期 2026-10-26
+
+本轮完成范围
+现有8题属于已经暴露的开发回归集。本轮实现只改变补检索后的上下文保留，并统一请求日志；没有新增相邻片段扩展、表格解析、法规适用判定或独立人工标注。离线回放复用了原模型提出的查询，不模拟模型在新上下文下会提出怎样的新查询。
+
+实现
+1. src/generation/evidence_retention.py 提供 extend_retained_context，调用现有 supplementary_retrieval.extend_context。原上下文文本保持前缀，已有来源记录与引用ID不改变；仅将预算内能完整容纳的新片段追加。预算上限6000，单轮新增来源最多8。元数据需通过公司/年度、来源类型、哈希字段及文本绑定校验，但哈希字段存在并不等于重新核验源文件或语义支持。
+2. src/generation/annual_audit_development.py 统一原8题的提示、只读FTS5检索和参考token计数。没有读取参考答案内容来形成问题或检索词。
+3. src/generation/request_journal.py 先落盘开始/进入传输事件，返回后先保存响应，再解析。原子快照、追加事件和操作系统锁保证恢复时不自动重发未知请求。日志区分 not_dispatched、remote_unknown、http_failed、output_exhausted、empty_answer、parse_failed、completed。未知usage保留null，不填写为0。
+4. scripts/run_evidence_retention_development_20261026.py 保留相同初始输入，预设单次、固定扩展、三轮修订、保留证据Agent共32单元、最多64调用。当前只冻结03批次，尚无请求。401/403/429停止后续派发；连续3次传输未知也停止。已经在途的最多2个并发调用独立落盘。
+5. scripts/invoke_verified_model_request.ps1 使用系统HttpClient默认的证书和主机名校验，不跟随重定向，认证参数仅由标准输入传递。不禁用TLS证书校验。
+
+离线结果
+原8个初始上下文及32步历史上下文哈希全部复现；16条轨迹（8题×Agent/固定扩展）全部通过。第二次独立回放的逐轨迹指标一致。
+
+指标                                  原替换策略    保留策略
+Agent初始来源片段保留率                58.75%        100.00%
+固定扩展初始来源片段保留率             32.50%        100.00%
+Agent勘误参考页面覆盖均值              83.33%         95.83%
+固定扩展勘误参考页面覆盖均值           83.33%         95.83%
+全部修复上下文                        <=6000 tokens  无超限
+
+原始材料中初始参考页覆盖为95.83%，保留策略没有把它增加为100%。原证据保留率100%是所有初始片段及引用ID保留，不代表参考答案完整、引用语义获支持或回答准确率100%。Agent轨迹平均新增4.125个片段，固定扩展平均新增5.625个片段，仅作上下文诊断。
+
+测试与历史保护
+110项定向测试通过（96项核心与14项评分测试），包括已有补检索回归、预算满、重复、作用域错误、稳定ID、空回答、HTTP失败、中断恢复、并发锁、脱敏、权限停止和未完成批次的质量门控。首次在旧pytest临时目录运行遇到权限问题，最终在新工作区临时目录使用 no:cacheprovider 完成。已发布的134份原始结果/输入/调用文件哈希保持不变。
+
+实跑状态
+01批次保留32个单元和32条请求终态：Windows curl证书吊销状态查询失败，未取得HTTP响应，状态为remote_unknown。
+02批次保留32个单元和32条请求终态：HTTPS已连接，但服务返回403 permission_denied_error，当前订阅无Kimi Code访问权限。
+两批都没有模型回答，usage均为未知；没有自动重试、没有覆盖历史结果。权限保护和客户端改动的历史运行源码已另存快照。
+用户已选择先完成离线工作，稍后恢复服务。03批次只冻结协议，没有generation_start或调用记录。本次不报告修复后的Precision、Recall、F1和Accuracy，也不把连接/权限失败解释为模型质量差。
+
+复算与继续
+在xiaolun仓库根目录、已安装项目依赖的Python环境执行：
+
+python -m pytest tests/test_annual_audit_development.py tests/test_evidence_retention.py tests/test_supplementary_retrieval.py tests/test_request_journal.py tests/test_evidence_retention_development.py tests/test_evidence_retention_scoring.py -q -p no:cacheprovider --basetemp results/runs/retention_check_local_01
+
+python scripts/replay_evidence_retention_20261026.py --out-dir results/runs/evidence_retention_replay_local_01
+
+完成目录不会覆盖；再次复算请选择另一个新目录。回放需要原index_pdfium.sqlite及冻结的Qwen参考tokenizer，不加载Qwen生成模型，不调用API。
+
+python scripts/audit_evidence_retention_development_20261026.py
+
+python scripts/run_evidence_retention_development_20261026.py
+
+最后一条只核对并冻结协议，不请求模型。服务恢复后，用户明确启动生成才执行：
+
+python scripts/run_evidence_retention_development_20261026.py --execute --real-llm
+
+保存回答的离线评分入口为：
+
+python scripts/score_evidence_retention_development_20261026.py
+
+该脚本只读保存回答，按冻结/勘误两版参考分别输出逐题CSV及分析JSON。每条件只有在8个计划单元都已有终态且至少有一个有效非空回答时才汇总Precision、Recall、F1和次数准确率，并将失败计0保留在分母。尚未开始、尚未结束或全部因服务失败而没有答案时，质量值均为null；三个批次的当前状态均已检查。它不会调用模型，也不会把“没有答案”伪装成质量评估。
+
+新的输出使用03批次。任何已有单元均不会自动重跑；如果运行代码或输入与冻结哈希不同会停止。需要改变算法、预算或模型时应另建可审查的新协议和目录。
+
+独立人工复核尚未完成；现有8题的回归改进也不能代替全新公司的独立测试。

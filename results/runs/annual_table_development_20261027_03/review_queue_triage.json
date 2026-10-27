@@ -1,0 +1,6149 @@
+[
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0031-G01-R001",
+    "pages": [
+      31
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G01-R001",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G01-R002",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G01-R003",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G01-R004",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G01-R005",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G01-R006",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R001",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R002",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R003",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R004",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R005",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R006",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R007",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R008",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R009",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R010",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R011",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R012",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R013",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0035-G02-R014",
+    "pages": [
+      35
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0036-G01-R001",
+    "pages": [
+      36
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0036-G01-R002",
+    "pages": [
+      36
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0036-G01-R003",
+    "pages": [
+      36
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0036-G01-R004",
+    "pages": [
+      36
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0036-G02-R001+continuation",
+    "pages": [
+      36,
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G01-R002",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G01-R003",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R001",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R002",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R003",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R004",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R005",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R006",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R007",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R008",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R009",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0037-G02-R010",
+    "pages": [
+      37
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0038-G01-R001",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0038-G01-R002",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0038-G01-R003",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0039-G04-R001",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0039-G04-R002",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0039-G04-R003",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0039-G04-R004",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0039-G04-R005",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0039-G04-R006",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R001",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R002",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R003",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R004",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R005",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R006",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R007",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R008",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R009",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R010",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R011",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R012",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2023,
+    "row_id": "TAB-e34eb13835855354-P0040-G01-R013",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0033-G01-R001",
+    "pages": [
+      33
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0033-G01-R002",
+    "pages": [
+      33
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0033-G01-R003",
+    "pages": [
+      33
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R001",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R002",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R003",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R004",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R005",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R006",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R007",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G01-R008",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R001",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R002",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R003",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R004",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R005",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R006",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R007",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R008",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R009",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R010",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R011",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R012",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R013",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R014",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R015",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R016",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R017",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R018",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0037-G02-R019",
+    "pages": [
+      37
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R001",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R002",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R003",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R004",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R005",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R006",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R007",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R008",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R009",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R010",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G01-R011",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "external_entity_appointments",
+    "triage": "excluded_other_entity",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G02-R001",
+    "pages": [
+      38
+    ],
+    "reason": "field_headers_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G02-R002",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G02-R003",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G02-R004",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R001",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R002",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R003",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R004",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R005",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R006",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R007",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0038-G03-R008",
+    "pages": [
+      38
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R001",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R002",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R003",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R004",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R005",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R006",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R007",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R008",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R009",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R010",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G01-R011",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G02-R001",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0039-G02-R002+continuation",
+    "pages": [
+      39,
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0040-G01-R002",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0040-G01-R003",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0040-G01-R004",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0040-G01-R005",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0040-G01-R006",
+    "pages": [
+      40
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R001",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R002",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R003",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R004",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R005",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R006",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R007",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R008",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R009",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R010",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R011",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R012",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R013",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R014",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G02-R015",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G03-R001",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G03-R002",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0041-G03-R003",
+    "pages": [
+      41
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R001",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R002",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R003",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R004",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R005",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R006",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R007",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R008",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R009",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R010",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R011",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R012",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R013",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R014",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R015",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R016",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R017",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "603288",
+    "report_year": 2024,
+    "row_id": "TAB-5a97b13534438f5e-P0044-G02-R018",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0042-G01-R001",
+    "pages": [
+      42
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R001",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R002",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R003",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R004",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R005",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R006",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R007",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R008",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R009",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R010",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R011",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R012",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0046-G01-R013",
+    "pages": [
+      46
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R001",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R002",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R003",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R004",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R005",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R006",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G01-R007",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G02-R001",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G02-R002",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G02-R003",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0047-G02-R004",
+    "pages": [
+      47
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R001",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R002",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R003",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R004",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R005",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R006",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R007",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R008",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R009",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R010",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R011",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R012",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0054-G01-R013",
+    "pages": [
+      54
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R001",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R002",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R003",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R004",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R005",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R006",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R007",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R008",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R009",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R010",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R011",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R012",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R013",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R014",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R015",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R016",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R017",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R018",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2023,
+    "row_id": "TAB-60ba8b6523796a40-P0056-G02-R019",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0039-G01-R001",
+    "pages": [
+      39
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R001",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R002",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R003",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R004",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R005",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R006",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R007",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R008",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R009",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R010",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R011",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R012",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R013",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R014",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R015",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R016",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0043-G01-R017",
+    "pages": [
+      43
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G01-R001",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G01-R002",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G01-R003",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G01-R004",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G01-R005",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R010",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R011",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R012",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R013",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R014",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R015",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0044-G02-R016",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R001",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R002",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R003",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R004",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R005",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R006",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R007",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R008",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R009",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0045-G01-R011",
+    "pages": [
+      45
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R001",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R002",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R003",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R004",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R005",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R006",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R007",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R008",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R009",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G01-R010",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R001",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R002",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R003",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R004",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R005",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R006",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R007",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R008",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R009",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0049-G02-R010",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R001",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R002",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R003",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R004",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R005",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R006",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R007",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R008",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R009",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R010",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R011",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R012",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R013",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R014",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R015",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R016",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R017",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R018",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R019",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R020",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R021",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R022",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R023",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R024",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R025",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G01-R026",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G02-R001",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G02-R002",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G02-R003",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G02-R004",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0050-G02-R005",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R001",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R002",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R003",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R004",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R005",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R006",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R007",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R008",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R009",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R010",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R011",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R012",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R013",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R014",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R015",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R016",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R017",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R018",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G01-R019",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R001",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R002",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R003",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R004",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R005",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R006",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R007",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R008",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R009",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R010",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R011",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R012",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R013",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R014",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R015",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R016",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R017",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0051-G02-R018",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R001",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R002",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R003",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R004",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R005",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R006",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0052-G01-R007",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0055-G01-R007",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0055-G01-R008",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0055-G01-R009",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0055-G01-R010",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0055-G01-R011",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0055-G01-R012",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R001",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R002",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R003",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R004",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R005",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R006",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R007",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G01-R008",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G02-R001",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G02-R002",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G02-R003",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G02-R004",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G02-R005",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000999",
+    "report_year": 2024,
+    "row_id": "TAB-4076e0ae3be63197-P0093-G02-R006",
+    "pages": [
+      93
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0044-G01-R001",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0044-G01-R002",
+    "pages": [
+      44
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G01-R001",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G01-R002",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G01-R003",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G01-R004",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G01-R005",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R001",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R002",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R003",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R004",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R005",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R006",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R007",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R008",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R009",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R010",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0050-G02-R011",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R001",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R002",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R003",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R004",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R005",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R006",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R007",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R008",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R009",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R010",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0051-G05-R011",
+    "pages": [
+      51
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R001",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R002",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R003",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R004",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R005",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R006",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R007",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2023,
+    "row_id": "TAB-32ebc475a2291ce4-P0052-G01-R008",
+    "pages": [
+      52
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R001",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R002",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R003",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R004",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R005",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R006",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R007",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R008",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R009",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R010",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R011",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R012",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R013",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R014",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R015",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R016",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0049-G01-R017",
+    "pages": [
+      49
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R001",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R002",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R003",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R004",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R005",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R006",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R007",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R008",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R009",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R010",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R011",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R012",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R013",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R014",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R015",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R016",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R017",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R018",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R019",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R020",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R021",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R022",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0050-G01-R023",
+    "pages": [
+      50
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R001",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R002",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R003",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R004",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R005",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R006",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R007",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R008",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R009",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R010",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R011",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R012",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R013",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R014",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R015",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R016",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R017",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G01-R018",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "personnel_changes",
+    "triage": "no_explicit_target_committee_or_unresolved_fields",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G02-R001",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G02-R002",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G02-R003",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G02-R004",
+    "pages": [
+      55
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0055-G02-R005+continuation",
+    "pages": [
+      55,
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G01-R002",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G01-R003",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G01-R004",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "committee_meetings",
+    "triage": "general_board_or_scope_unresolved",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R001",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R002",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R003",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R004",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R005",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R006",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R007",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R008",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R009",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R010",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0056-G02-R011",
+    "pages": [
+      56
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R001",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R002",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R003",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R004",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R005",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R006",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R007",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R008",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R009",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R010",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R011",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R012",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R013",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0057-G02-R014",
+    "pages": [
+      57
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0058-G01-R001",
+    "pages": [
+      58
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0058-G01-R002",
+    "pages": [
+      58
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0058-G01-R003",
+    "pages": [
+      58
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0058-G01-R004",
+    "pages": [
+      58
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  },
+  {
+    "stock_code": "000651",
+    "report_year": 2024,
+    "row_id": "TAB-c7184706caf5f57c-P0058-G01-R005",
+    "pages": [
+      58
+    ],
+    "reason": "committee_scope_unresolved",
+    "category": "unclassified_table",
+    "triage": "unclassified_layout_or_nontarget_table",
+    "human_confirmed": false
+  }
+]

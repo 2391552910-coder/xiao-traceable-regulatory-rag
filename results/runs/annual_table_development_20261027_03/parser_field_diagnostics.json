@@ -1,0 +1,440 @@
+{
+  "frozen": {
+    "reference_sha256": "4340de19b1e6bfaa3064208804db9b3261a8e3dbb13b2e1efbde5a9a936ad295",
+    "rows": [
+      {
+        "question_id": "NEW-603288-2023-AUDIT",
+        "members": [
+          "孙远明",
+          "徐家力",
+          "文志州",
+          "沈洪涛",
+          "陈军阳"
+        ],
+        "meeting_dates": [
+          "2023-04-14",
+          "2023-08-18",
+          "2023-10-30"
+        ],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-603288-2024-AUDIT",
+        "members": [
+          "丁邦清",
+          "屈文洲",
+          "廖长辉",
+          "张科春",
+          "文志州"
+        ],
+        "meeting_dates": [
+          "2024-01-05",
+          "2024-04-15",
+          "2024-08-19",
+          "2024-09-19",
+          "2024-10-18",
+          "2024-12-06"
+        ],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-000999-2023-AUDIT",
+        "members": [
+          "于舒天",
+          "刘俊勇",
+          "姚兴田"
+        ],
+        "meeting_dates": [
+          "2023-03-27",
+          "2023-04-28",
+          "2023-08-28",
+          "2023-10-27",
+          "2023-12-13"
+        ],
+        "explicit_meeting_count": 5,
+        "count_candidates": [
+          5
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-000999-2024-AUDIT",
+        "members": [
+          "于舒天",
+          "刘俊勇",
+          "姚兴田",
+          "孙健",
+          "王轶"
+        ],
+        "meeting_dates": [
+          "2024-03-21",
+          "2024-04-19",
+          "2024-05-16",
+          "2024-08-22",
+          "2024-10-25",
+          "2024-11-28"
+        ],
+        "explicit_meeting_count": 6,
+        "count_candidates": [
+          6
+        ],
+        "members_precision": 0.8,
+        "members_recall": 1.0,
+        "members_f1": 0.888888888888889,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-000651-2023-AUDIT",
+        "members": [
+          "刘姝威",
+          "张伟",
+          "王晓华"
+        ],
+        "meeting_dates": [
+          "2023-04-28",
+          "2023-08-30",
+          "2023-10-30"
+        ],
+        "explicit_meeting_count": 4,
+        "count_candidates": [
+          4
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-000651-2024-AUDIT",
+        "members": [
+          "刘姝威",
+          "张伟",
+          "王晓华"
+        ],
+        "meeting_dates": [
+          "2024-04-29",
+          "2024-08-30",
+          "2024-10-30"
+        ],
+        "explicit_meeting_count": 4,
+        "count_candidates": [
+          4
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-600036-2023-AUDIT",
+        "members": [
+          "史永东",
+          "周松",
+          "李孟刚",
+          "王仕雄",
+          "田宏启"
+        ],
+        "meeting_dates": [],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 0,
+        "dates_recall": 0.0,
+        "dates_f1": 0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-600036-2024-AUDIT",
+        "members": [
+          "史永东",
+          "周松",
+          "李健",
+          "李孟刚",
+          "王仕雄",
+          "田宏启"
+        ],
+        "meeting_dates": [],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 0,
+        "dates_recall": 0.0,
+        "dates_f1": 0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      }
+    ],
+    "macro": {
+      "members_precision": 0.975,
+      "members_recall": 1.0,
+      "members_f1": 0.9861111111111112,
+      "dates_precision": 0.75,
+      "dates_recall": 0.75,
+      "dates_f1": 0.75,
+      "count_accuracy": 0.5,
+      "three_field_exact": 0.375
+    },
+    "scope": "Deterministic table-field parser only, on exposed development questions; not LLM/RAG answer scores. Missing prose fields remain empty/unknown. No count inferred from dates."
+  },
+  "corrected": {
+    "reference_sha256": "7e5145494bc8243697aad409a910bd98fb9d2c522efe849ac43743f75e35ded2",
+    "rows": [
+      {
+        "question_id": "NEW-603288-2023-AUDIT",
+        "members": [
+          "孙远明",
+          "徐家力",
+          "文志州",
+          "沈洪涛",
+          "陈军阳"
+        ],
+        "meeting_dates": [
+          "2023-04-14",
+          "2023-08-18",
+          "2023-10-30"
+        ],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-603288-2024-AUDIT",
+        "members": [
+          "丁邦清",
+          "屈文洲",
+          "廖长辉",
+          "张科春",
+          "文志州"
+        ],
+        "meeting_dates": [
+          "2024-01-05",
+          "2024-04-15",
+          "2024-08-19",
+          "2024-09-19",
+          "2024-10-18",
+          "2024-12-06"
+        ],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-000999-2023-AUDIT",
+        "members": [
+          "于舒天",
+          "刘俊勇",
+          "姚兴田"
+        ],
+        "meeting_dates": [
+          "2023-03-27",
+          "2023-04-28",
+          "2023-08-28",
+          "2023-10-27",
+          "2023-12-13"
+        ],
+        "explicit_meeting_count": 5,
+        "count_candidates": [
+          5
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-000999-2024-AUDIT",
+        "members": [
+          "于舒天",
+          "刘俊勇",
+          "姚兴田",
+          "孙健",
+          "王轶"
+        ],
+        "meeting_dates": [
+          "2024-03-21",
+          "2024-04-19",
+          "2024-05-16",
+          "2024-08-22",
+          "2024-10-25",
+          "2024-11-28"
+        ],
+        "explicit_meeting_count": 6,
+        "count_candidates": [
+          6
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-000651-2023-AUDIT",
+        "members": [
+          "刘姝威",
+          "张伟",
+          "王晓华"
+        ],
+        "meeting_dates": [
+          "2023-04-28",
+          "2023-08-30",
+          "2023-10-30"
+        ],
+        "explicit_meeting_count": 4,
+        "count_candidates": [
+          4
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-000651-2024-AUDIT",
+        "members": [
+          "刘姝威",
+          "张伟",
+          "王晓华"
+        ],
+        "meeting_dates": [
+          "2024-04-29",
+          "2024-08-30",
+          "2024-10-30"
+        ],
+        "explicit_meeting_count": 4,
+        "count_candidates": [
+          4
+        ],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 1.0,
+        "dates_recall": 1.0,
+        "dates_f1": 1.0,
+        "count_accuracy": 1,
+        "three_field_exact": true
+      },
+      {
+        "question_id": "NEW-600036-2023-AUDIT",
+        "members": [
+          "史永东",
+          "周松",
+          "李孟刚",
+          "王仕雄",
+          "田宏启"
+        ],
+        "meeting_dates": [],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 0,
+        "dates_recall": 0.0,
+        "dates_f1": 0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      },
+      {
+        "question_id": "NEW-600036-2024-AUDIT",
+        "members": [
+          "史永东",
+          "周松",
+          "李健",
+          "李孟刚",
+          "王仕雄",
+          "田宏启"
+        ],
+        "meeting_dates": [],
+        "explicit_meeting_count": null,
+        "count_candidates": [],
+        "members_precision": 1.0,
+        "members_recall": 1.0,
+        "members_f1": 1.0,
+        "dates_precision": 0,
+        "dates_recall": 0.0,
+        "dates_f1": 0,
+        "count_accuracy": 0,
+        "three_field_exact": false
+      }
+    ],
+    "macro": {
+      "members_precision": 1.0,
+      "members_recall": 1.0,
+      "members_f1": 1.0,
+      "dates_precision": 0.75,
+      "dates_recall": 0.75,
+      "dates_f1": 0.75,
+      "count_accuracy": 0.5,
+      "three_field_exact": 0.5
+    },
+    "scope": "Deterministic table-field parser only, on exposed development questions; not LLM/RAG answer scores. Missing prose fields remain empty/unknown. No count inferred from dates."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "local_source_links": 47,
+  "all_links_resolve": true,
+  "review_rows": 329,
+  "textless_pages_in_actual_batch": 0,
+  "source_visual_review": "Four complete v1.2 source pages plus all 18 boundary pairs from the geometry-identical preserved v1.1 outputs; synthetic nine-page fixture and final comparison chart viewed.",
+  "human_semantic_validation": false
+}
