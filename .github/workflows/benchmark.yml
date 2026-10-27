@@ -4,10 +4,10 @@ permissions:
   contents: read
 jobs:
   offline-checks:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
           cache: pip
@@ -17,7 +17,7 @@ jobs:
       - run: python scripts/compile_independent_review.py --check
       - run: python scripts/validate_preparation_release.py
       - run: python scripts/audit_benchmark.py --output-dir results/runs/ci_audit
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: benchmark-audit
           path: results/runs/ci_audit/
