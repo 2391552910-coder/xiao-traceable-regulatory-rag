@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-27T15:01:21.912014+00:00",
+  "table_runtime": "annual_governance_tables_v1_2",
+  "new_model_calls": 0,
+  "generated_answers": 0,
+  "tests": {
+    "tests": 212,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pdf_files_reverified": 8,
+  "raw_cells_reverified": 4326,
+  "structured_row_views_verified": 120,
+  "contexts_checked": 40,
+  "table_retrieval_reproduced": true,
+  "historical_published_files_unchanged": 134,
+  "prior_generation_batch_unchanged_and_not_dispatched": true,
+  "earlier_table_runtime_snapshots_preserved": [
+    "01",
+    "02"
+  ],
+  "all_initial_text_records_ids_preserved": true,
+  "all_contexts_within_6000": true,
+  "source_preview_pages": 48,
+  "empty_human_review_forms": 329,
+  "independent_human_validation": false,
+  "reusable_cli_export_tokens": 5929,
+  "cmb_date_source_case": [
+    {
+      "mode": "adjacent_continuation",
+      "date_source_spans_supplied": 9,
+      "total": 9,
+      "tokens": 5787
+    },
+    {
+      "mode": "initial",
+      "date_source_spans_supplied": 5,
+      "total": 9,
+      "tokens": 4780
+    },
+    {
+      "mode": "table_balanced",
+      "date_source_spans_supplied": 5,
+      "total": 9,
+      "tokens": 5429
+    },
+    {
+      "mode": "table_bm25",
+      "date_source_spans_supplied": 5,
+      "total": 9,
+      "tokens": 5429
+    },
+    {
+      "mode": "table_then_adjacent",
+      "date_source_spans_supplied": 5,
+      "total": 9,
+      "tokens": 5991
+    }
+  ],
+  "parser_only_diagnostic_macro": {
+    "members_precision": 1.0,
+    "members_recall": 1.0,
+    "members_f1": 1.0,
+    "dates_precision": 0.75,
+    "dates_recall": 0.75,
+    "dates_f1": 0.75,
+    "count_accuracy": 0.5,
+    "three_field_exact": 0.5
+  },
+  "new_generated_answer_quality": null,
+  "github_updated": false,
+  "errors": []
+}
