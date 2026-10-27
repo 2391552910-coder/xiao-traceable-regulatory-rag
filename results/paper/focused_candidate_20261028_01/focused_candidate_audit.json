@@ -4,7 +4,7 @@
   "source_full_extension_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\integrated_candidate_20261028_01\\年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx",
   "source_full_extension_sha256": "44ead9e98d7c41e5dfc3b88d3bc7f4a08a0b2902a6b56df6eea24fe3527ff26f",
   "output_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\focused_candidate_20261028_01\\年报与法规双源RAG_聚焦主问题候选稿_待终审.docx",
-  "output_docx_sha256": "5bf38521e3c557fcb5cf27c3a08588e7ab1414bef3482de68ea173f327ca76b1",
+  "output_docx_sha256": "e681be28bbe92b1b6040923fb3e156f47464e54c9c67f4524bd40daf191fcaf1",
   "removed_body_sections": [
     "6.7 cross-year generation and tool-agent comparison",
     "6.8 cross-year automatic evaluation",
@@ -25,17 +25,17 @@
   "stale_citation_31_present": false,
   "stale_extension_section_heading_present": false,
   "wps_export": {
-    "method": "WPS native read-only ExportAsFixedFormat",
-    "only_this_readonly_document_closed": true,
-    "source_unchanged": true,
-    "elapsed_seconds": 3.2019297,
-    "source_sha256": "5bf38521e3c557fcb5cf27c3a08588e7ab1414bef3482de68ea173f327ca76b1",
     "success": true,
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_sha256": "02c485684a78f95ae44ab36f9d5d6ffb29ae8fb84caf652172142d5ba698104a",
+    "only_this_readonly_document_closed": true,
     "application_quit_called": false,
-    "pdf_sha256": "4c2c678c612a29e4fb378c423da336a8de3cc4d0190fa6b57bd84cb6335d40f6"
+    "source_unchanged": true,
+    "source_sha256": "e681be28bbe92b1b6040923fb3e156f47464e54c9c67f4524bd40daf191fcaf1",
+    "elapsed_seconds": 3.1048277
   },
   "pdf_page_count": 25,
-  "visual_qa": "The prior 25-page render had been fully inspected. Pixel comparison at matched raster scale shows pages 1–21 and 23–25 identical to the prior inspected render; only page 22 changed after the regulation-date clarification. The updated page 22 was inspected at original resolution; no clipping, overlap, broken reference, or pagination defect was found.",
+  "visual_qa": "After the 2026-10-28 claim-language edit, WPS read-only export remained 25 pages. The changed pages 21–24 were inspected at original resolution; no clipping, overlap, broken references, or pagination defect was found. Pages 1–20 and 25 were pixel-identical to the preceding inspected render at matched scale.",
   "limitations": "No new model answers or human labels; not a submission-ready or accepted paper; author metadata and target journal template remain outstanding.",
   "regulation_date_semantics_review": {
     "knowledge_base_dates": {
@@ -45,5 +45,15 @@
     },
     "DOC343": "2023 amendment decision is indexed; a consolidated historical full text is not separately indexed",
     "interpretation": "The late-date counts are index-date risk flags, not legal-applicability labels. Official CSRC pages are cited in manuscript references 25–27."
+  },
+  "claim_language_audit": {
+    "date": "2026-10-28",
+    "changes": [
+      "Replaced an unmeasured claim that traceability lowers the cost of locating materials with a bounded statement that replayable records help locate materials and distinguish pipeline error stages.",
+      "Replaced the assertion that the study supports the necessity of auditable design with a recommendation tied to observed source-supply and regulation-version limits; stated that effects on decision risk, review cost, and staff time were not directly tested."
+    ],
+    "new_model_calls": 0,
+    "new_human_labels": 0,
+    "empirical_effect_claim_added": false
   }
 }
