@@ -18,7 +18,7 @@ FIXTURE = Path(__file__).parent / 'fixtures/annual_tables_synthetic_v1.pdf'
 @pytest.fixture(scope='module')
 def parsed():
     source = dict(stock='000001', year=2024, company='合成测试公司', file=FIXTURE.name,
-                  url='https://example.invalid/synthetic.pdf', sha256=file_sha256(FIXTURE), pages=9)
+                  url='https://example.invalid/synthetic.pdf', sha256=file_sha256(FIXTURE), pages=10)
     pages = extract_pdfium_pages(FIXTURE)
     return extract_document(FIXTURE, source, pages,all_pages=True)
 
@@ -60,6 +60,16 @@ def test_borderless_alignment_excludes_other_committee_and_zero_expected_count(p
 def test_slash_financial_matrix_is_not_attendance():
     with pdfplumber.open(FIXTURE) as pdf:
         assert extract_page_tables(pdf.pages[6], file_sha256(FIXTURE)) == []
+
+
+def test_ruled_table_and_borderless_attendance_coexist_on_one_page():
+    with pdfplumber.open(FIXTURE) as pdf:
+        tables = extract_page_tables(pdf.pages[9], file_sha256(FIXTURE))
+    assert len(tables) == 2
+    assert tables[0]['method'] == 'ruled_grid'
+    assert tables[1]['method'] == 'borderless_attendance_alignment'
+    assert tables[1]['category'] == 'committee_attendance'
+    assert [compact(row['values'][0]) for row in tables[1]['rows']] == ['周五', '吴六', '郑七']
 
 
 def test_blank_text_page_is_explicit_ocr_gap(parsed):

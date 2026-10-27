@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_2'
+VERSION = 'annual_governance_tables_v1_3'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -238,9 +238,16 @@ def _word_lines(words):
     return lines
 
 
-def _attendance_table(page, prefix):
+def _attendance_table(page, prefix, *, excluded_bboxes=()):
     """Borderless numeric matrix; require repeated aligned attendance columns."""
     words = page.extract_words(x_tolerance=2, y_tolerance=3)
+    if excluded_bboxes:
+        def belongs_to_ruled_table(word):
+            cx = (word['x0'] + word['x1']) / 2
+            cy = (word['top'] + word['bottom']) / 2
+            return any(x0 - 2 <= cx <= x1 + 2 and top - 1 <= cy <= bottom + 1
+                       for x0, top, x1, bottom in excluded_bboxes)
+        words = [word for word in words if not belongs_to_ruled_table(word)]
     lines = _word_lines(words)
     candidates = []
     for top, items in lines:
@@ -316,9 +323,12 @@ def extract_page_tables(page, source_sha256):
         parsed = _table_rows(page, table, tid, caption)
         parsed['raw_detected_column_count'] = len(original.columns)
         tables.append(parsed)
-    if not tables:
-        tables.extend(_attendance_table(page, prefix))
-    return tables
+    # Ruled and borderless tables may coexist on one physical page. Exclude
+    # words already covered by accepted grids, but still search the remainder
+    # for a separately headed attendance matrix.
+    tables.extend(_attendance_table(
+        page, prefix, excluded_bboxes=[table['bbox'] for table in tables]))
+    return sorted(tables, key=lambda table: (table['bbox'][1], table['bbox'][0]))
 
 
 def _header_signature(headers):
