@@ -221,3 +221,8 @@ python experiments/08_eval_embedding_rerank.py --backend tfidf --no-rerank --out
 
 
 </details>
+
+
+## 2026-10-28 聚焦主问题候选稿
+
+- [聚焦稿 DOCX](results/paper/focused_candidate_20261028_01/年报与法规双源RAG_聚焦主问题候选稿_待终审.docx)：主文聚焦年报与法规分路检索对照；25页、19表、13图，保留原扩展候选稿。尚待内容终审与期刊模板适配，不代表二区录用。

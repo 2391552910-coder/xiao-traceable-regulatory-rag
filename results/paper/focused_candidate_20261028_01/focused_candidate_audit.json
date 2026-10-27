@@ -1,0 +1,40 @@
+{
+  "created_local_date": "2026-10-28",
+  "artifact_type": "focused manuscript candidate; not journal-frozen",
+  "source_full_extension_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\integrated_candidate_20261028_01\\年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx",
+  "source_full_extension_sha256": "44ead9e98d7c41e5dfc3b88d3bc7f4a08a0b2902a6b56df6eea24fe3527ff26f",
+  "output_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\focused_candidate_20261028_01\\年报与法规双源RAG_聚焦主问题候选稿_待终审.docx",
+  "output_docx_sha256": "b02ce9478b0047e3630e28a0e8a0895cf0fe05690a65802dde426329e5b4904b",
+  "removed_body_sections": [
+    "6.7 cross-year generation and tool-agent comparison",
+    "6.8 cross-year automatic evaluation",
+    "6.9 interactive chat assistant cases",
+    "6.10 automatic-rater calibration",
+    "6.11 agent prompt repair follow-up",
+    "6.12 extension reproduction and audit"
+  ],
+  "retained_core_scope": "20 companies, 60 questions, 2024 annual reports; merged vs dual retrieval as primary comparison; source-role prompt as secondary; existing retrieval/source-removal diagnostics and human ratings retained",
+  "docx_paragraphs": 234,
+  "tables": 19,
+  "inline_shapes": 13,
+  "table_caption_count": 19,
+  "figure_caption_count": 13,
+  "bibliography_entries": 30,
+  "bibliography_sequence_contiguous": true,
+  "citation_numbers_missing_from_bibliography": [],
+  "stale_citation_31_present": false,
+  "stale_extension_section_heading_present": false,
+  "wps_export": {
+    "application_quit_called": false,
+    "success": true,
+    "only_this_readonly_document_closed": true,
+    "source_unchanged": true,
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "source_sha256": "b02ce9478b0047e3630e28a0e8a0895cf0fe05690a65802dde426329e5b4904b",
+    "pdf_sha256": "736d2170ae9e86e732e6f17e8a9a793db8b27108a08599eb43956a09fed6cbf4",
+    "elapsed_seconds": 3.0892934
+  },
+  "pdf_page_count": 25,
+  "visual_qa": "All 25 pages visually inspected at page scale; v1/v2/final raster comparison showed only targeted pages 20 and 22 changed after the corresponding textual corrections; both final changes visually checked.",
+  "limitations": "No new model answers or human labels; not a submission-ready or accepted paper; author metadata and target journal template remain outstanding."
+}

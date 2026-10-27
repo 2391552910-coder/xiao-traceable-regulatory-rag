@@ -1,0 +1,10 @@
+{
+  "application_quit_called": false,
+  "success": true,
+  "only_this_readonly_document_closed": true,
+  "source_unchanged": true,
+  "method": "WPS native read-only ExportAsFixedFormat",
+  "source_sha256": "b02ce9478b0047e3630e28a0e8a0895cf0fe05690a65802dde426329e5b4904b",
+  "pdf_sha256": "736d2170ae9e86e732e6f17e8a9a793db8b27108a08599eb43956a09fed6cbf4",
+  "elapsed_seconds": 3.0892934
+}
