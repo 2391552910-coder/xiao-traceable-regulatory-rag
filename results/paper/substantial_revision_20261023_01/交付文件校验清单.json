@@ -1,0 +1,594 @@
+{
+  "status": "complete_local_revision",
+  "pages_native_WPS": 25,
+  "figure_count": 13,
+  "table_count": 19,
+  "references": 29,
+  "paragraph_cjk_chars": 13498,
+  "cached_context_replays": 1800,
+  "new_BM25_contexts": 600,
+  "new_LLM_calls": 0,
+  "new_human_labels": 0,
+  "original_config_byte_exact": {
+    "matched": 120,
+    "total": 120
+  },
+  "reproduction_scope": "requires existing frozen project inputs and src modules; original data not copied",
+  "files": [
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/artifact_manifest.json",
+      "bytes": 6459,
+      "sha256": "17faeaad65435347b3cd1c491eacd80740d381de5a337d0b43f02fc2fb6279ae"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/claim_review.json",
+      "bytes": 5368,
+      "sha256": "83c57a50c6d904064fd708683dc9a7558b91497840f44e0cfcb22f689f658c48"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/complete_case_sensitivity.png",
+      "bytes": 125348,
+      "sha256": "d2581f5e2a3bcaf6d4f783e91ffef1b4626c3983bcac8372cfcf866a1dd1fd95"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/complete_case_sensitivity.svg",
+      "bytes": 13290,
+      "sha256": "d42418ddcb65655e31ea3e8a1c82f9df1880bd0208b7a2e1e9a7af5e3f25014c"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/failure_inventory.csv",
+      "bytes": 1440,
+      "sha256": "be4213dea86ffedcd8bb6b04d3f989ef10c77164d8b0b34d6c0fbebc3c5b8a8f"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/INS_01_acronym_published_extract.txt",
+      "bytes": 139493,
+      "sha256": "a8743fde0eb5d9236569a36b450a3f82ceea6ef73f1ccaf5c9d5bfa48919ef28"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/INS_01_acronym_published_plain_extract.txt",
+      "bytes": 105242,
+      "sha256": "d4a32b8b6ebd507222aab892c862b79c18cd8aa89d71a4a4cf283525626a8d55"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/KBS_01_engineering_author_extract.txt",
+      "bytes": 75194,
+      "sha256": "d03803826eea44b9edf9f5efa396e19d9612129d2eb1b2375b7c61a01bc99ee0"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/KBS_01_engineering_author_plain_extract.txt",
+      "bytes": 58217,
+      "sha256": "16e222adb0ecdf44a63b85b1a861a9f084d9ac186f8a2f76fd65af1563b368d6"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/KBS_02_survey_author_extract.txt",
+      "bytes": 259697,
+      "sha256": "569ac5b67e15cba17b7828bfd8950d43f673efc797b9bead086f4f2fcb2229f8"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/KBS_02_survey_author_plain_extract.txt",
+      "bytes": 189609,
+      "sha256": "7e57870949f3262eaf70a75b8f8a1c8d856888b4f0ce864582a66453b3e5bd1a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/literature_benchmark.csv",
+      "bytes": 1817,
+      "sha256": "b501eb66a96097ebd9830274ddfe31f87ea404b109ea729147a3db99adfd97ac"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/literature_benchmark.json",
+      "bytes": 5640,
+      "sha256": "5d04f6d001475ec6e3a817168d767b368f37dad2d2b1be3b17abe58798a27ed8"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/literature_benchmark.py",
+      "bytes": 4574,
+      "sha256": "f6ede9394fb2adee87279581aba5c1fc6474a7f0c4f5dc0c3440bfb9c0c7ab85"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/missingness_and_loco_sensitivity.png",
+      "bytes": 128725,
+      "sha256": "ec6276dfc017537af4b0ebe4b9ed42ce134bc04dcbdab06f63f5d54fa9e86326"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/missingness_and_loco_sensitivity.svg",
+      "bytes": 16182,
+      "sha256": "e86e4de6b4269ef14d7b669226c0c3892899d2e41ac3909155e02bb510feaa63"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/NEU_02_MADKE_author_extract.txt",
+      "bytes": 93106,
+      "sha256": "984fc69fb4d6adbe1b4de342a19894870f44b2a5ec14ecfc77cd3e2f03a34cf9"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/NEU_02_MADKE_author_plain_extract.txt",
+      "bytes": 73995,
+      "sha256": "a611a6122fc48e150b41489b7a40529ee8287bc94f5b7c65d3d24e53de80708d"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/paired_loco_missingness.csv",
+      "bytes": 2836,
+      "sha256": "31238a3d03aa493543598a3626b854fae345aaaa4bba912a233e7ad35cebe717"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/planned_score_bounds.csv",
+      "bytes": 821,
+      "sha256": "e4d9e64e72e558135bfcbc097514fab6a20572f5bee2ee50be1028a1be3e5e85"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/plot_robustness.py",
+      "bytes": 3286,
+      "sha256": "5abd43bb17a4b661dc2301dcaf2fc5046e331d2a2027498b78aeebd5dfecf7c7"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/robustness_audit.json",
+      "bytes": 258440,
+      "sha256": "02b4e6e3de6bb041eb42bbaec501df2e78522c8e3f664f76b2c6519ad47e3f76"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/robustness_audit.py",
+      "bytes": 13953,
+      "sha256": "72668ff007ba0f04239064716440e1e9d9d1cb8083bce4c21846dfe065351bff"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/audit/审计结论.txt",
+      "bytes": 4717,
+      "sha256": "d8b4678a463f985172d670293d764f2a6a1772c8068d9438717562a849e0de82"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/fig01_schematic.pdf",
+      "bytes": 2949,
+      "sha256": "a12afc9daae822433112ebc487f25d2ffee747ac6f23a6d6290a47a5ad2f3982"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/fig01_schematic.png",
+      "bytes": 141657,
+      "sha256": "06caaa65feda4b01536ffd202aed71040eeecece2855f468680206db0c28310c"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/fig02_schematic.pdf",
+      "bytes": 2936,
+      "sha256": "f9b2362db848eb4471f1fbc62bda197a345cf14189d6542a1f7a877c38393cbb"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/fig02_schematic.png",
+      "bytes": 125036,
+      "sha256": "608049be94151cb713f0361294eb7bea1172507909d6369af2899b0ffdbe278e"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/fig03_schematic.pdf",
+      "bytes": 2740,
+      "sha256": "b4c35ddbc770c6ccb31cab755e1de37f974054d9cec25e031f789e5724d7e4ff"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/fig03_schematic.png",
+      "bytes": 136258,
+      "sha256": "99d3542aec353244cfd7d337f53e509fd34cd7ccf155c503d73db729555035e0"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/figures/original_paired_effects.png",
+      "bytes": 90391,
+      "sha256": "b703006e633af70c79021660df82aba3a9145b77910e05ab8340fa4bedf380ac"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/manuscript_inventory.json",
+      "bytes": 444,
+      "sha256": "55660d2f92a13fe3508131fc1177839877a755f86c00b81eeb2ac020759b130e"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/qa_delivery/native_render_receipt.json",
+      "bytes": 401,
+      "sha256": "3f367204ea63416575d52f664001848c9d3d01ad17408c4dba03a82d03f0676a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/qa_delivery/visual_qa_receipt.json",
+      "bytes": 3408,
+      "sha256": "6b730c2a972b6db55c32b7fa59a8382b22d9e48a602bcd66ce6888c12cbbd281"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/artifact_manifest.json",
+      "bytes": 4428,
+      "sha256": "96989dacfeea1c5343f5dc624e4bb932eda445b07afbbef6970deee1554a52aa"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/citation_structure_proxies.pdf",
+      "bytes": 14322,
+      "sha256": "a4d33fcf4d5a2d1378520db866e772c8c5e462d5f8129587adb2f9bf2aeec10a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/citation_structure_proxies.png",
+      "bytes": 81602,
+      "sha256": "4761cd201271932a335a5cc65273ca9b140034b55fa56cb814bcb130bf610f8d"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/citation_structure_proxies.svg",
+      "bytes": 17888,
+      "sha256": "cced5a4ac0e5693cb8ec499591d72c14bc10ffd9abb498cea140c05cafd83d7f"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/paired_dimension_effects.csv",
+      "bytes": 29733,
+      "sha256": "33670d7d12a08b41b2daf8eecfb9e7143d016f67b3046f2f1482548f0b0aa857"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/per_output_verified.csv",
+      "bytes": 91088,
+      "sha256": "9887a74dcd3fe32aa87a661571198e61d4c2b27d6b8bb747e8607ce8a1760f61"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/qualitative_cases.json",
+      "bytes": 38416,
+      "sha256": "70a635d2dba5e69239b2de13fea80de661f1d7064018fa77eb1afd85e9ac5b29"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_by_topic.csv",
+      "bytes": 8626,
+      "sha256": "2031d4616403ad36573420a866c4143810d053fc2ab39daf524459a1f6925d49"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_ceiling_diagnostics.pdf",
+      "bytes": 17812,
+      "sha256": "bcd8cde236d968d1eca6bb77f1b78a3cc5032182028c20f49083256a6590e6cc"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_ceiling_diagnostics.png",
+      "bytes": 135660,
+      "sha256": "3c1021cb05f0b77eb7d3db7c72616adbaf6e31385ffa49ef382141b70c59194f"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_ceiling_diagnostics.svg",
+      "bytes": 23078,
+      "sha256": "e04d7520f78cb70912dddad60554bfa8650318707801c4a8919ee55150d9fd13"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_dimension_effects.pdf",
+      "bytes": 17124,
+      "sha256": "cbd67ccc414b60ca2432f8a2cc99208ff3b7f5fc5ebc2c973e44d2637b4b45ee"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_dimension_effects.png",
+      "bytes": 62167,
+      "sha256": "160bc98de302a93ea279475565c554f78790d448d3b8a92e2c858a348728fc95"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_dimension_effects.svg",
+      "bytes": 37239,
+      "sha256": "8af82cda56b6874ee0bc0507dbcd0f2e21194af95da17ab8a42deca1391fed4e"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_extensions.json",
+      "bytes": 270797,
+      "sha256": "1bb58d1732e03fde5fdee0e9238a99bc3db5ead6aa7a9a3d2f3447f20f64e8a7"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_topic_effects.pdf",
+      "bytes": 13282,
+      "sha256": "6381894c71e78f1a7f73a1ab219b296b09a76efdb8745956207f70e637b5cff0"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_topic_effects.png",
+      "bytes": 56074,
+      "sha256": "cd16d7e98d6a5c24a1dd24f921fdfa729bc6959b5dc5e3f7bb09da73b446f189"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/quality_topic_effects.svg",
+      "bytes": 18079,
+      "sha256": "336993048b911bfca7f6bf6a8bc8c7bf77821da19c1495cb78a8a81a6034e92f"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/score_ceiling.csv",
+      "bytes": 12687,
+      "sha256": "c298e5a32b0645d34d844a101855b0ea4f66d5e98e559c474b19e5edab7f7899"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/score_distributions.csv",
+      "bytes": 14042,
+      "sha256": "e1689537f66e253ebb7146e8387ae70168a4f99b6246ac821a18c4fa93f6607c"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/selected_attempt_cost.csv",
+      "bytes": 3683,
+      "sha256": "ff78f6657947ec324bcfe3f8269460e1e89df6682e4a80c4a6a968e76f72722c"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/selected_attempt_resource_profile.pdf",
+      "bytes": 14550,
+      "sha256": "c73160d84b39261f6fbf7af4529112d2cb6db86440757df9173cf97d4728ea26"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/selected_attempt_resource_profile.png",
+      "bytes": 86565,
+      "sha256": "3c55cea79e45ff30bc0ae45908fe509b1104720329422ad5767d20a3e69d4652"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/selected_attempt_resource_profile.svg",
+      "bytes": 24421,
+      "sha256": "cab8c55ab0e0b975c27570d0e79183861dbfbbc207cda85fa5113b2ea05f3282"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/source_unit_manifest.json",
+      "bytes": 160155,
+      "sha256": "380c0d09942a90af58f6aa31ad3fc493a5e0752054c39558678bd5e2326fbea9"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/structure_proxy_by_output.csv",
+      "bytes": 28679,
+      "sha256": "058239f9cdb248bf15067d40f3fe599c8981b34a50e24dcb007abf42e7f89e72"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/structure_proxy_summary.csv",
+      "bytes": 1826,
+      "sha256": "6f61fd4d38d01c9aeb087aaecd3a50c82d137c615961912cf2bcad4f9795b0d9"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/topic_effects.csv",
+      "bytes": 9589,
+      "sha256": "36dc65c79f53e7e84a36f23c0e507350639450e214a2c54089ca153889e7a4e1"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/quality/新增分析发现.txt",
+      "bytes": 4033,
+      "sha256": "d9e6d205dcf15ce5bcd1a028d19ff9341345e2eadd3fdaf4149794fd92d8f593"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/alternate_law_audit_receipt.json",
+      "bytes": 3712,
+      "sha256": "8ac6773d35ada5bdc51d48a509be3c18ee6d8e9fa353eaf0fcab236c5aa64d36"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_overlap_pairs.csv",
+      "bytes": 45481,
+      "sha256": "73ada6721a36c32a6ecfe96733a8283d52faef9bbb3de70f84703bb3ee16d063"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_per_question.csv",
+      "bytes": 17940,
+      "sha256": "637901d52e806f903a3e238849a0a2f6361e774ac7f141a342d3c58b88b6254f"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_summary.csv",
+      "bytes": 644,
+      "sha256": "a7a01efe9d45078e788081759b2c114d1d50f65332adf749a725c3500c48e340"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.csv",
+      "bytes": 4403,
+      "sha256": "2afffdb6ad76e5b01d30fadc3f08c54964e11f08b8a877a0fe295e53436645c1"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.json",
+      "bytes": 14856,
+      "sha256": "90cb44f35dcae2b7677abd2870e025c054cea00563ffeba44b176c3fcf7923db"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/analysis_plan.json",
+      "bytes": 763,
+      "sha256": "5071544645b771dfc2c7f54dc64803bf1c327381e7443869a6272000bdd5dc4a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/baseline_per_question.csv",
+      "bytes": 117497,
+      "sha256": "3dc9049333634a19eec0794e5a209bb89bfd0d91e8a40e6b46592a5cc08332d4"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/baseline_receipt.json",
+      "bytes": 1648,
+      "sha256": "7ecfa5aa66bb73f5f43f69dcca1a7f4c96a66cf73ec50802849d1cc7b0044df5"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/baseline_summary.csv",
+      "bytes": 9294,
+      "sha256": "c2e5ab06a0d50c1249dc2fee1ece5244f5aee2ab52b2514ff4103139ee89d899"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/baseline_summary.json",
+      "bytes": 50204,
+      "sha256": "9f850d1911018734c8106b0e37929a81761b6e30786de3df38a3a9d4442af087"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/ranking_ids.csv",
+      "bytes": 126995,
+      "sha256": "9f9a6574c2c374db2e3ae65a2d22f256f008aafbe9648d1411faf6e4314b342b"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/bm25_fresh/search_timing.csv",
+      "bytes": 4295,
+      "sha256": "d2deef965550e1d824b9f9bc8419e8fedcb673c36199369275f11d59e7771795"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/cached_final_candidates.csv",
+      "bytes": 235707,
+      "sha256": "9572f6f8e1004c878505fa2dcd2e91478f6613f76dc983f239665f112e4d173a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/candidate_vs_packing_audit.csv",
+      "bytes": 530,
+      "sha256": "b40166f12efb09249ec1ac82352fec34dbe8c0f1ff5a517342b8b440ceca3f09"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/corpus_scope.csv",
+      "bytes": 173,
+      "sha256": "a84fd65ea8cf8fbceb0e5754fd120610859523cc9a864aa6c485a8b6d713a0ad"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/diagnostic_integrity_checks.json",
+      "bytes": 816,
+      "sha256": "3812ce7f8326fdccadc46d112c9cf2f5622dafee9d01f1cdb0f979727598b3cc"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figure_manifest.json",
+      "bytes": 2429,
+      "sha256": "956f0a6523df30f15221b5253c899f863cb25c03012010d20dd0f614f49d2281"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R1_budget_sensitivity.pdf",
+      "bytes": 17504,
+      "sha256": "80e52274e250b48548edf60af20bbb166b83218558539b6e7ae5f52dfcb175d4"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R1_budget_sensitivity.png",
+      "bytes": 100993,
+      "sha256": "28e79f21d8c708a315443bd4adeb8c79316471b56f29c7c4b60b9d1b1ec0602a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R1_budget_sensitivity.svg",
+      "bytes": 29830,
+      "sha256": "0e15d9bd914b6a280acf2e94fdc692f99b5a5e6c62f27d9c2ed1ae5889f5c806"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R2_topic_page_coverage.pdf",
+      "bytes": 15728,
+      "sha256": "eacfe61141beb055db7b7181b7cc2dd26597ea032336f635fe2ee555d7ddf0cb"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R2_topic_page_coverage.png",
+      "bytes": 82528,
+      "sha256": "bae0eb0c071055e0873f3e5edc0c74ebdcf5e066f53d98e5af6f1abe12f0c679"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R2_topic_page_coverage.svg",
+      "bytes": 19473,
+      "sha256": "3b6ee8c5420c6c176d8cca3e60457d8b9cbf92285f6e87700865a131ee2d7a6b"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R3_context_allocation.pdf",
+      "bytes": 16568,
+      "sha256": "bc8ccfbf055a7b291cb761479b4b2e873b20c03daea6b4d0dee2da5b0974a02a"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R3_context_allocation.png",
+      "bytes": 104983,
+      "sha256": "487317b60b9a934877f9304a741626dd4cb4724c998bb976dcef7154400aeb03"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/figures/R3_context_allocation.svg",
+      "bytes": 54739,
+      "sha256": "ecba879002f3aeb72f564db5d997cba1eb192eb268f25b406467f80f53d2a252"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/index_reference_page_availability.json",
+      "bytes": 270,
+      "sha256": "037a1e51cb7114f1abaaa8acf9782daa6bb42f2efcb8ae51f23ebc4e5a1411fa"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/law_pdf_vs_txt_at6k.json",
+      "bytes": 4549,
+      "sha256": "8d87e016ccf6d9aef192a3ef159fc79f09bb39aa2edb061bf51f9097bc7dc2e9"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/law_pdf_vs_txt_granularity_sensitivity.csv",
+      "bytes": 3432,
+      "sha256": "b7bbf929a2b510169ba58aad535dd3d4aa3a340034d5c88f0f8568136b0a20ca"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/paired_company_bootstrap.csv",
+      "bytes": 20769,
+      "sha256": "c55c2bed8669ebfb311f385684eebd92370f64f566b8667ef0c5b9d13c111982"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/question_scope.csv",
+      "bytes": 5140,
+      "sha256": "39b324f5f88a24a4c3ae4440f64c0e41399b48f34614c220ef6fae00ab464629"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/reference_granularity_counts.json",
+      "bytes": 1197,
+      "sha256": "d99038e697eac91c588ee6657ee8bac0a2c1d05f23ec2485fa8d71ce265bbc5c"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/replay_per_question.csv",
+      "bytes": 324585,
+      "sha256": "04cc885c4b6a0e9d864b142131a16d212629cfc5ae3ac4a684bfbbabe1420486"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/replay_summary.csv",
+      "bytes": 24924,
+      "sha256": "3a54f891e7f4963b75bec6452c5f46834801d9e42df162ab32effebecb09c82b"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/replay_summary.json",
+      "bytes": 149114,
+      "sha256": "763fb3458384242de7cf89044bd4ec23ca2b2288d3a62e499eec3af02dfc247b"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/replay_verification.json",
+      "bytes": 28045,
+      "sha256": "dc5a145829df73ff264371ff33a092b3ad3370cef5fcf91615be9d53bc1a8415"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/retrieval_replay_receipt.json",
+      "bytes": 21685,
+      "sha256": "70d589c9ca14e59becb4770925b43a3d67cc7fa3a50e84a674816e9818267897"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/selected_law_document_distribution.csv",
+      "bytes": 1238,
+      "sha256": "efcc4c4be1b77ed7c013e590bcd47c8ce13b58648e070a28f8e838f40b988bc9"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/retrieval/检索补实验结果与写作边界.txt",
+      "bytes": 14038,
+      "sha256": "d33d5c33e23444206e509ed8c38d13dfefb9ddfd16261800b15b77c8ca667621"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/交付与实验复现说明.txt",
+      "bytes": 6556,
+      "sha256": "5b903d5977d716428f74101d5427c5f4ab956b1f9f7d98655b57193f3feccd39"
+    },
+    {
+      "path": "xiaolun/results/paper/substantial_revision_20261023_01/年报与法规双源RAG_大幅修订研究长稿.docx",
+      "bytes": 1254854,
+      "sha256": "b3c2794d60bda6c42e8ab906d262662157c39d1a0d6cabe5a434b5527557ede5"
+    },
+    {
+      "path": "xiaolun/scripts/analyze_quality_extensions_20261023.py",
+      "bytes": 27708,
+      "sha256": "225893f3222078b6dd47dcd79736539ff2583004f8fb1f7cb42c9b4ab41f6c3a"
+    },
+    {
+      "path": "xiaolun/scripts/audit_alternate_law_sources_20261023.py",
+      "bytes": 5699,
+      "sha256": "df16d570f8ce65e19ac6e2f9aad6232bcf58559a1914185fde25289848b49476"
+    },
+    {
+      "path": "xiaolun/scripts/build_substantial_paper_20261023.py",
+      "bytes": 75824,
+      "sha256": "4270a125ba9a38846e6deed5b84c2190d4b2d36d856316a28fb1a7326d0bb3f9"
+    },
+    {
+      "path": "xiaolun/scripts/plot_cached_retrieval_diagnostics_20261023.py",
+      "bytes": 7380,
+      "sha256": "303e830aad3036445bea848599bf8162423720722bc42698bc36fd97d160e78b"
+    },
+    {
+      "path": "xiaolun/scripts/render_paper_wps_20261021.ps1",
+      "bytes": 1898,
+      "sha256": "9fe65a5e7c5e7c32c52ff6f3c7e1492be904857730117039429ca7c167a5595c"
+    },
+    {
+      "path": "xiaolun/scripts/replay_cached_retrieval_diagnostics_20261023.py",
+      "bytes": 15065,
+      "sha256": "31dc8aebb29f9e791aee48d7382b76bc242c1fd72053ac26f4bce7ec3e7c9881"
+    },
+    {
+      "path": "xiaolun/scripts/revise_journal_manuscript_20261023.py",
+      "bytes": 34445,
+      "sha256": "0f2f7990e25c3a6bcc690d110ada2fa0d875ed06cd4654a4615350853aece73b"
+    },
+    {
+      "path": "xiaolun/scripts/run_cpu_bm25_reference_diagnostics_20261023.py",
+      "bytes": 6875,
+      "sha256": "1651c432dd9565cfe92391b004d2435f702c9a75b1cfed0619f170346727059f"
+    },
+    {
+      "path": "xiaolun/scripts/split_reference_granularity_sensitivity_20261023.py",
+      "bytes": 4970,
+      "sha256": "23023d1dc09e3ff8aa45e516c5512cd17c27d650f2e31cbce1cd0d9edb36fb13"
+    },
+    {
+      "path": "xiaolun/scripts/summarize_retrieval_extension_20261023.py",
+      "bytes": 10724,
+      "sha256": "f8cdd3402086208e5126cb6932a4bbf70d680402f9e9426eba07752e82414dfb"
+    }
+  ]
+}
