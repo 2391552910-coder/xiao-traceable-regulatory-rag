@@ -9,7 +9,7 @@
 - 指标边界已核实：另有40题、1,049候选的单审开发集相关性标注，但与主实验60题没有题目ID重叠，也没有排名字段；不用于主实验Precision/Recall/F1。
 - 评分者分歧及独立论断—证据核验缺口均在交付说明中披露；不据篇幅和图表数量宣称二区接收。
 - 2026-10-28复核中文稿25页、13幅图、19张表和29条参考文献；调整附录分页与英文工作稿附录段落间距，未新增模型调用或人工标签。
-- 2026-10-28更新：[跨年/Agent合并候选稿（待内容终审）](results/paper/integrated_candidate_20261028_01/年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx)现为30页，含24表、17图和31条参考文献；保利发展分红案例补入官方实施公告，参考文献末页已重排并经WPS重渲染。统计与案例审计仍有限，全文内容终审、作者/投稿元数据和目标期刊格式尚未完成；本稿不代表二区录用判断。渲染回执：[native_render_receipt.json](results/paper/integrated_candidate_20261028_01/render_qa_dividend_time_scope_compact_ref2_20261028/native_render_receipt.json)。
+- 2026-10-28更新：[跨年/Agent合并候选稿（待内容终审）](results/paper/integrated_candidate_20261028_01/年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx)现为30页，含24表、17图和31条参考文献；保利发展分红案例补入官方实施公告，参考文献末页已重排并经WPS重渲染。跨年/Agent主回答自动评分满分为39/48（81.25%），为量表高分天花板诊断，不是准确率。统计与案例审计仍有限，全文内容终审、作者/投稿元数据和目标期刊格式尚未完成；本稿不代表二区录用判断。渲染回执：[native_render_receipt.json](results/paper/integrated_candidate_20261028_01/render_qa_crossyear_score_audit_20261028/native_render_receipt.json)。
 
 
 ## 2026-10-27 预算竞争修复：已按规划实施并离线验证
