@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "old_parser_version": "annual_governance_tables_v1_2",
+  "new_parser_version": "annual_governance_tables_v1_3",
+  "same_frozen_input_sha256": true,
+  "identical_documents_after_ignoring_parser_version": 8,
+  "documents": [
+    {
+      "document": "cmb_2023.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "073a4f57ce3fbb741f82493a355a4594541591b990d4446fa8a24d08d6bacd2e",
+      "new_sha256": "fdf2e8a6954bd119a171e4c6d5d9ff50fc13509cdbdc3b3359b0f1935d05e2c5"
+    },
+    {
+      "document": "cmb_2024.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "d41dbc5836117abdbfc55df7040fcb5c816c3741577d659a64b8297657d6a83d",
+      "new_sha256": "b08484067d74a146786f3ab87719ae9b5dfecf806ab3f50d0d04013b0d096ceb"
+    },
+    {
+      "document": "gree_2023.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "3ad0065005db1d9fbad72062f57b6a32f6f0a4bff8956254052c7ce7bf2b362c",
+      "new_sha256": "1efced31123ae211a68e6233763221cf390fda118927d12f500ba3f5db549759"
+    },
+    {
+      "document": "gree_2024.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "06ac7bf20ecca2ec665be7af367c9a5c3ed84e5308d9b0124bce0154ec883945",
+      "new_sha256": "238fc07d2d650b0c5e8651dd34ea764b84717c8d6c5e8e4aed4954318055e938"
+    },
+    {
+      "document": "haday_2023.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "c9e7af8d1095a05a4c201127ee8460d36c34b4d921832b341dad53aa139e08be",
+      "new_sha256": "3d73b28337dcebc09e93a6acb40f5d417d3a08dd44455b474cd2fcc5deb3df6a"
+    },
+    {
+      "document": "haday_2024.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "b1bc593f8c996055b9d913a29c6878739aec3efac68be2fa2cd494b9c91ae638",
+      "new_sha256": "15400e914268f81e72e919b1f056469b3a50c6547233304cd12b44123c62a245"
+    },
+    {
+      "document": "hrsj_2023.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "56507beed01e00a64b909339fc54de46680e0564fdc65eccd9e0f0969f6231b9",
+      "new_sha256": "90aeddcbb95a743b3023fdb5ba35e339562b49c6472496e40bbb9a9227c15361"
+    },
+    {
+      "document": "hrsj_2024.json",
+      "same_after_version_field_removed": true,
+      "old_parser_version": "annual_governance_tables_v1_2",
+      "new_parser_version": "annual_governance_tables_v1_3",
+      "old_sha256": "f1df8b16a45f90eba6c9a1d9219bceb0f7e17dc5cc4a70aedd69b2e9cda79d2d",
+      "new_sha256": "f8d281d52c68457b608ef30ae4d3cddf1db81a5b0dfa2db0bdd1f4821063a307"
+    }
+  ],
+  "same_offline_analysis": true,
+  "summary": {
+    "documents": 8,
+    "selected_pages": 142,
+    "raw_tables": 77,
+    "accepted_continuations": 18,
+    "split_rows_merged": 8,
+    "verified_source_cells": 4326,
+    "verified_table_pages": 46,
+    "contexts": 40,
+    "new_model_calls": 0,
+    "independent_human_validation": false
+  },
+  "old_run": "results/runs/annual_table_development_20261027_03",
+  "new_run": "results/runs/annual_table_development_v13_regression_20261027_01",
+  "frozen_input_manifest_sha256": "044730116f9ab5c70ca93fb711747128a25eb32ba4c918e7a13b2497d923cde0",
+  "source_pdf_sha256": {
+    "haday_2023.pdf": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04",
+    "haday_2024.pdf": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee",
+    "hrsj_2023.pdf": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb",
+    "hrsj_2024.pdf": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6",
+    "gree_2023.pdf": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa",
+    "gree_2024.pdf": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006",
+    "cmb_2023.pdf": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+    "cmb_2024.pdf": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3"
+  },
+  "old_offline_analysis_sha256": "561089924c51da0103c7fceeee281d1f8280763c01cddff04cbaed9d070263bf",
+  "new_offline_analysis_sha256": "561089924c51da0103c7fceeee281d1f8280763c01cddff04cbaed9d070263bf",
+  "old_input_manifest_matches_new": true
+}
