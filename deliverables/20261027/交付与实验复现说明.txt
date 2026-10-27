@@ -1,0 +1,49 @@
+交付与实验复现说明（2026-10-23；2026-10-27修订）
+
+1. 交付状态
+本目录中的《年报与法规双源RAG_大幅修订研究长稿.docx》为中文研究长稿，正文段落约1.3万汉字，13幅图、19张表、29条参考文献。长稿经WPS只读导出核验为25页；本次补入年报问答基准ARQA与CFQA的相关工作及两条参考文献后，页面核验记录保存在qa_references_20261027；此前qa_version_audit_final2_20261027记录对应旧版本。PDF和页面图片仅用于质检。汉字数不等同于英文词数。
+本次围绕问题定义、实现机制、证据来源、统计推断、预算敏感性、失败分析和复现记录重写，并非只增加篇幅和图表数量。英文全稿、作者单位、通讯作者、基金与投稿元数据尚未完成；当前成果不是已获接收或可保证中科院二区以上接收的投稿件。
+
+2. 本次真实新增的工作
+对60条查询、20家公司、3个主题完成1800个缓存候选上下文回放：2种策略×3种候选配额×5种token预算×60题。另在冻结语料和同一候选范围执行CPU BM25新检索，组装600个新上下文：2种策略×5种预算×60题。120/120个原配置上下文逐字节、token计数及来源ID一致；2400个新增上下文均通过预算、来源计数和单位唯一性检查。
+另对386条既有真实模型回答及已验收双人评分，新增维度分解、主题异质性、评分天花板、评分者敏感性、缺失界限、完整样本和逐公司删一分析，补充4组同题案例及来源定位。
+本次没有新增LLM/API调用、没有新增人工标签；缓存回放不是重新运行神经检索或生成器，BM25新增结果也不是新增端到端人工生成评分。原始实验、冻结清单和人工评分未覆盖、未改写。
+
+3. 关键结果及解释边界
+双源通用方案G2相对合库G1的已观测公司宏均配对总分提高0.250，主要来自法规维度与审计委员会主题；角色约束G3相对G2为-0.008，未显示稳定额外收益。BM25和无重排的已观测生成质量高于G3，不能写成复杂检索全面更优；相关比较的全计划缺失敏感性界限跨零。
+引用与不确定性评分明显接近满分，法规评分存在评分者分歧。来源角色齐备、参考页定位命中、A/R引用ID同现、词面重叠均不等同于语义支持或法规时点适用。2026-10-27补充核查发现，DOC100、DOC128、DOC120当前索引版本均晚于2024年报告期；冻结top-10中，G1有64/73条后发法规候选（87.7%，涉及42/60题），G2有156/300条（52.0%，涉及60/60题）。日期只提示时间风险，不能单独判定不适用；相关结果不能视为历史法规版本命中率或时点合规性验证。新增BM25的混合法规定位优势主要由TXT整来源标签贡献，PDF页级和TXT来源级必须拆分。实际实现为来源分区、固定配额与交替打包；不能将未执行的维度路由或迭代多智能体机制写成已验证贡献。
+仍需独立的跨模型与跨年度验证、逐论断语义支持及法规适用性核验、更强且匹配预算的迭代agent对照；这些工作尚未完成。当前新增分析均为探索性后验分析，不能据此保证期刊接收。
+
+2026-10-27 文献修订：相关工作新增ARQA与CFQA，分别说明年报表格—文本问答基准、人工证据标注及RAG/无检索对照；正文新增与本文任务范围的区别，参考文献更新为29条。使用WPS只读导出并渲染25页PNG完成页面检查。本次未运行模型、未新增人工标签、未改变实验结果。
+
+4. 数据和复现入口
+项目根目录：xiaolun 仓库根目录（以下路径均相对于仓库根目录）
+交付目录：results/paper/substantial_revision_20261023_01
+原始生成冻结：results/runs/compact_final_execution_windows_20261020_01/execution_plan.json与prepared/
+参考证据：results/runs/compact_gold_release_windows_20261020_01/release/
+原有双人评分汇总：results/runs/two_reviewer_statistics_windows_20261023_01/
+本次检索：retrieval/replay_per_question.csv、replay_verification.json、retrieval_replay_receipt.json、bm25_fresh/baseline_per_question.csv与baseline_receipt.json
+本次统计：quality/quality_extensions.json、paired_dimension_effects.csv、qualitative_cases.json及source_unit_manifest.json
+稳健性审计：audit/robustness_audit.json、paired_loco_missingness.csv及审计结论.txt
+定位粒度拆分：retrieval/law_pdf_vs_txt_granularity_sensitivity.csv
+核心评分独立复算：scripts/recompute_paper_core_contrasts_20261027.py 与 results/runs/paper_claim_recalc_20261027_01/recalculation.json。脚本从已接收的两份原始评分、协调映射和冻结题目清单重建双人均分，核对400个计划输出中386个完成/已评分、14个失败/未完成，再复核10个条件均值、4个维度一致性统计和G2−G1/G3−G2配对对照；232个维度分歧仍未仲裁，复算结果不是共识金标准。
+上述receipt/manifest记录输入和产物SHA-256。离线复现依赖原本地冻结索引、参考证据和缓存tokenizer；不要以联网下载的新版本替换。
+
+5. 执行方法（PowerShell）
+先进入上述项目根目录，设置：
+$paperPython = '.\.venv-data\Scripts\python.exe'
+按依赖顺序执行：
+& $paperPython -X utf8 scripts/replay_cached_retrieval_diagnostics_20261023.py
+& $paperPython -X utf8 scripts/run_cpu_bm25_reference_diagnostics_20261023.py
+& $paperPython -X utf8 scripts/audit_alternate_law_sources_20261023.py
+& $paperPython -X utf8 scripts/summarize_retrieval_extension_20261023.py
+& $paperPython -X utf8 scripts/split_reference_granularity_sensitivity_20261023.py
+& $paperPython -X utf8 scripts/plot_cached_retrieval_diagnostics_20261023.py
+& $paperPython -X utf8 scripts/analyze_quality_extensions_20261023.py --refresh-derived
+& $paperPython -X utf8 results/paper/substantial_revision_20261023_01/audit/robustness_audit.py
+& $paperPython -X utf8 scripts/recompute_paper_core_contrasts_20261027.py
+这些命令重建本次派生分析文件，不运行原始生成实验。--refresh-derived只用于刷新本次质量分析派生文件；需要保留当前交付快照时先复制本目录。参考粒度脚本会向检索说明追加说明，重跑时以前一步summarize先重建该说明。
+长稿生成代码为scripts/build_substantial_paper_20261023.py；正文版本限制已同步到生成脚本和当前Word交付稿。排版代码使用含python-docx和reportlab的bundled Python，分析代码使用基于同一bundled Python的.venv-data环境。
+
+6. 压缩包范围
+压缩包保留xiaolun下的相对目录结构，包含本次长稿、图表、CSV/JSON分析结果、输入哈希及新增脚本。原始年报、法规、冻结索引、原始模型响应和完整人工评审库仍使用现有项目文件，不重复装入压缩包。代码依赖现有项目src与评分模块；在同一项目中运行，不能将本包视为脱离原冻结输入的独立数据集。
