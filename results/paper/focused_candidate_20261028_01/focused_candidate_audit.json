@@ -4,7 +4,7 @@
   "source_full_extension_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\integrated_candidate_20261028_01\\年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx",
   "source_full_extension_sha256": "44ead9e98d7c41e5dfc3b88d3bc7f4a08a0b2902a6b56df6eea24fe3527ff26f",
   "output_docx": "C:\\Users\\mech-mind\\Documents\\ChatGPT\\New project\\xiaolun\\results\\paper\\focused_candidate_20261028_01\\年报与法规双源RAG_聚焦主问题候选稿_待终审.docx",
-  "output_docx_sha256": "b02ce9478b0047e3630e28a0e8a0895cf0fe05690a65802dde426329e5b4904b",
+  "output_docx_sha256": "5bf38521e3c557fcb5cf27c3a08588e7ab1414bef3482de68ea173f327ca76b1",
   "removed_body_sections": [
     "6.7 cross-year generation and tool-agent comparison",
     "6.8 cross-year automatic evaluation",
@@ -25,16 +25,25 @@
   "stale_citation_31_present": false,
   "stale_extension_section_heading_present": false,
   "wps_export": {
-    "application_quit_called": false,
-    "success": true,
+    "method": "WPS native read-only ExportAsFixedFormat",
     "only_this_readonly_document_closed": true,
     "source_unchanged": true,
-    "method": "WPS native read-only ExportAsFixedFormat",
-    "source_sha256": "b02ce9478b0047e3630e28a0e8a0895cf0fe05690a65802dde426329e5b4904b",
-    "pdf_sha256": "736d2170ae9e86e732e6f17e8a9a793db8b27108a08599eb43956a09fed6cbf4",
-    "elapsed_seconds": 3.0892934
+    "elapsed_seconds": 3.2019297,
+    "source_sha256": "5bf38521e3c557fcb5cf27c3a08588e7ab1414bef3482de68ea173f327ca76b1",
+    "success": true,
+    "application_quit_called": false,
+    "pdf_sha256": "4c2c678c612a29e4fb378c423da336a8de3cc4d0190fa6b57bd84cb6335d40f6"
   },
   "pdf_page_count": 25,
-  "visual_qa": "All 25 pages visually inspected at page scale; v1/v2/final raster comparison showed only targeted pages 20 and 22 changed after the corresponding textual corrections; both final changes visually checked.",
-  "limitations": "No new model answers or human labels; not a submission-ready or accepted paper; author metadata and target journal template remain outstanding."
+  "visual_qa": "The prior 25-page render had been fully inspected. Pixel comparison at matched raster scale shows pages 1–21 and 23–25 identical to the prior inspected render; only page 22 changed after the regulation-date clarification. The updated page 22 was inspected at original resolution; no clipping, overlap, broken reference, or pagination defect was found.",
+  "limitations": "No new model answers or human labels; not a submission-ready or accepted paper; author metadata and target journal template remain outstanding.",
+  "regulation_date_semantics_review": {
+    "knowledge_base_dates": {
+      "DOC100": "2025-02-28 approval date",
+      "DOC128": "2025-03-28 promulgation date",
+      "DOC120": "2026-01-01 effective date"
+    },
+    "DOC343": "2023 amendment decision is indexed; a consolidated historical full text is not separately indexed",
+    "interpretation": "The late-date counts are index-date risk flags, not legal-applicability labels. Official CSRC pages are cited in manuscript references 25–27."
+  }
 }
