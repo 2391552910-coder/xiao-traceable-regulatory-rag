@@ -2,12 +2,12 @@
   "audit_date": "2026-10-28",
   "status": "passed_for_version_continuity_and_scoped_receipt_mapping",
   "current_candidate": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性补充候选稿_待终审.docx",
-    "sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667",
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性与案例语义核查修订候选稿_待终审.docx",
+    "sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
     "paragraph_count": 190,
     "table_count": 12,
     "drawing_objects": 8,
-    "revision_receipt": "reviewer_sensitivity_revision_audit_20261028.json"
+    "revision_receipt": "case_semantic_audit_20261028.json"
   },
   "version_comparisons": [
     {
@@ -22,6 +22,7 @@
         91,
         93,
         105,
+        124,
         125,
         139,
         146,
@@ -41,7 +42,7 @@
         10,
         11
       ],
-      "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
+      "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4"
     },
     {
       "base": "narrative_quantitative_audit_20261028.json candidate",
@@ -55,18 +56,19 @@
         91,
         93,
         105,
+        124,
         125,
         148,
         179
       ],
       "all_12_tables_identical": true,
-      "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
+      "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4"
     },
     {
       "base": "current_candidate_claim_audit_20261028.json Table 12 source candidate",
       "base_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
       "table_12_cells_identical": true,
-      "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
+      "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4"
     }
   ],
   "receipt_mapping": [
@@ -132,6 +134,14 @@
       ],
       "receipt": "reviewer_sensitivity_revision_audit_20261028.json",
       "status": "current candidate paragraph and source-analysis hashes verified; effects remain conditional on observed pairs"
+    },
+    {
+      "scope": "post-hoc Table 12 case semantic review against the full company annual report",
+      "paragraph_indices_zero_based": [
+        124
+      ],
+      "receipt": "case_semantic_audit_20261028.json",
+      "status": "full report identifies director status but has an internal committee-membership chronology conflict; paragraph separates retrieval-context omission from source inconsistency and does not infer legal compliance"
     }
   ],
   "limitations": [
@@ -144,7 +154,7 @@
   "new_human_labels": 0,
   "bibliography_integrity": {
     "status": "passed_for_citation_id_completeness_and_inherited_source_audit_coverage",
-    "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667",
+    "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
     "reference_count": 29,
     "reference_ids": [
       1,
@@ -240,4 +250,3 @@
     ]
   }
 }
-
