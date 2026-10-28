@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 
@@ -49,9 +49,8 @@ def score(packet: Path) -> dict:
 
     if len(pages) != len(predictions):
         raise ValueError("Page labels and prediction manifest have different row counts")
-    prediction_by_page = {(row["stock_code"], row["physical_page"]): row for row in predictions}
-    page_counts = Counter()
-    page_fp = defaultdict(int)
+    prediction_by_page = {(row["stock_code"], str(row["physical_page"])): row for row in predictions}
+    page_false_ids = {}
     page_fn = defaultdict(int)
     page_missed_counts = defaultdict(int)
     page_complete = set()
@@ -84,10 +83,11 @@ def score(packet: Path) -> dict:
             raise ValueError(f"missed_table_count_gold disagrees with missed_table_template for {key}")
         false_text = row.get("false_positive_table_ids", "").strip()
         false_ids = set() if false_text.casefold() == "none" else {item.strip() for item in false_text.split(";") if item.strip()}
+        page_false_ids[key] = false_ids
         predicted_ids = set(prediction_by_page[key].get("detected_table_ids", []))
         if false_ids - predicted_ids:
             raise ValueError(f"Unknown false-positive table IDs for {key}: {sorted(false_ids-predicted_ids)}")
-        if detected and not row.get("independent_reviewer", "").strip():
+        if not row.get("independent_reviewer", "").strip():
             raise ValueError(f"Missing reviewer identity for page {key}")
         if detected and not false_text:
             raise ValueError(f"Use 'none' or semicolon-separated IDs to explicitly review false positives on {key}")
@@ -110,6 +110,7 @@ def score(packet: Path) -> dict:
     detection_tp = detection_fp = 0
     category_counts = defaultdict(lambda: [0, 0, 0])
     matched_gold_ids = set()
+    table_false_ids = defaultdict(set)
     for row in tables:
         if row.get("row_kind") != "prediction":
             raise ValueError("Unexpected row_kind in table_review_template.csv")
@@ -135,6 +136,7 @@ def score(packet: Path) -> dict:
                 category_counts[gold_category][2] += 1
         elif status == "false_positive":
             detection_fp += 1
+            table_false_ids[(row["stock_code"], row["physical_page"])].add(table_id)
             category_counts[predicted_category][1] += 1
             if row.get("gold_table_id", "").strip() or row.get("gold_category", "").strip():
                 raise ValueError(f"False-positive prediction must not have a matched gold table: {table_id}")
@@ -142,6 +144,9 @@ def score(packet: Path) -> dict:
             raise ValueError(f"match_status must be matched/false_positive: {table_id}")
     if seen_prediction_ids != expected_prediction_ids:
         raise ValueError("Table review template does not cover exactly the predicted table IDs")
+    for key, declared in page_false_ids.items():
+        if declared != table_false_ids[key]:
+            raise ValueError(f"Page and table sheets disagree about false-positive table IDs on {key}")
 
     missed_gold_ids = set()
     for row in missed_rows:
