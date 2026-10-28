@@ -91,6 +91,46 @@
       "path": "results/paper/condensed_candidate_20261028_01/current_candidate_integrity_rebind_20261028.json",
       "bytes": 3092,
       "sha256": "73b1dd34dd30e0e99d1b629ff75538f7c78a27e86746a0357de60168245e4c32"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/English_working_translation_current_20261028.md",
+      "bytes": 75258,
+      "sha256": "81628e3d08538a37335d2b019fa03bae83b3ac23f0a849e1c45db94489ee96a8"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_20261028.docx",
+      "bytes": 1868609,
+      "sha256": "1583604bbc521a34b497182f61123137a2d63b5dc842704f1cc7b8ab579a80a4"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_copyedited_20261028.docx",
+      "bytes": 1868683,
+      "sha256": "b794e662732862164f9369ba6e63c5789a204e64e1c2115555dec93a6c156576"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/english_translation_build_audit.json",
+      "bytes": 1106,
+      "sha256": "733989a1c4b676717f0ebfa6b175118f971b79ed07aad38c2054f3e55d4aade9"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/english_copyedit_receipt_20261028.json",
+      "bytes": 2583,
+      "sha256": "4d35414fa0c4f35e0930088b701d596a5bae4a3129afed507c8df42b7cca1d6c"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/recent_reference_metadata_audit_20261028.md",
+      "bytes": 12560,
+      "sha256": "2ea3757c8d6c1c0e49d2b07b44fce51fd195187320d5e203bac53af5108d7e5e"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/rendered_copyedited_20261028/paper_native.pdf",
+      "bytes": 1403307,
+      "sha256": "5765ac68bbb5e1655fc0d68b6286878c6f1e7683ae1d5beda032ea0e120b3416"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/rendered_copyedited_20261028/native_render_receipt.json",
+      "bytes": 400,
+      "sha256": "60567abf6cc527e7bb7550f2e290e8055756cc466ef7b266cc2979de4b79c591"
     }
   ]
 }
