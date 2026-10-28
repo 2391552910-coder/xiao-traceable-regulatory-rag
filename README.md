@@ -2,10 +2,10 @@
 
 ## 2026-10-28 当前统一主文候选稿
 
-- 当前主文为[引文范围与摘要口径终审修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引文范围与摘要口径终审修订候选稿_待终审.docx)，SHA-256 `fc188110b08535e3d6e384b042f3737ba50bb40f85758d05a9bcd6d1256c2535`，21页、12表、8图。它基于较新的交叉引用补全稿，保留推理预算限制、正文图表引用和统计修订，并在中英文摘要中限定bootstrap区间的配对样本范围、区分双源同现率与位置覆盖率；未改表格、未新增模型调用或人工标签。另将HiREC对应工作概述由“年报检索”校准为来源支持的“标准化金融文件”范围；仅第2–3页发生分页重排，其余页面像素一致。详见[本次修订收据](results/paper/condensed_candidate_20261028_01/hirec_scope_revision_receipt_20261028.json)。
+- 当前主文为[引文范围与摘要口径终审修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引文范围与摘要口径终审修订候选稿_待终审.docx)，SHA-256 `fc188110b08535e3d6e384b042f3737ba50bb40f85758d05a9bcd6d1256c2535`，21页、12表、8图。它基于较新的交叉引用补全稿，保留推理预算限制、正文图表引用和统计修订，并修订中英文摘要的区间与来源覆盖口径；另校准第19段HiREC引文范围。未改表格、未新增模型调用或人工标签。另将HiREC对应工作概述由“年报检索”校准为来源支持的“标准化金融文件”范围；仅第2–3页发生分页重排，其余页面像素一致。详见[本次修订收据](results/paper/condensed_candidate_20261028_01/hirec_scope_revision_receipt_20261028.json)。
 - [交叉引用与摘要口径合并收据](results/paper/condensed_candidate_20261028_01/crossref_abstract_scope_merge_receipt_20261028.json)绑定源稿及候选稿哈希、WPS PDF和21页渲染；前三页已目视检查，第4–21页与新鲜重渲染源版像素一致。此前基于推理预算版生成的[摘要口径候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算与摘要口径修订候选稿_待终审.docx)未包含较新的正文交叉引用修订，已由收据标记为过时来源版本，保留追溯。
 - [交叉引用补全候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)是本次源稿；其[交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)与[推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录继承的正文修订和解释边界。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
-- [检索与金融QA引文审计](results/paper/condensed_candidate_20261028_01/retrieval_corpus_citation_audit_20261028.md)、[年报QA基准引文审计](results/paper/condensed_candidate_20261028_01/annual_report_benchmark_citation_audit_20261028.md)和[RAG方法与评测引文审计](results/paper/condensed_candidate_20261028_01/rag_method_eval_citation_audit_20261028.md)绑定较早稿件版本；当前候选相对交叉引用源稿仅替换两个摘要段落，尚未对新文件哈希重跑整稿语义审计。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
+- [检索与金融QA引文审计](results/paper/condensed_candidate_20261028_01/retrieval_corpus_citation_audit_20261028.md)、[年报QA基准引文审计](results/paper/condensed_candidate_20261028_01/annual_report_benchmark_citation_audit_20261028.md)和[RAG方法与评测引文审计](results/paper/condensed_candidate_20261028_01/rag_method_eval_citation_audit_20261028.md)绑定较早稿件版本；当前候选相对交叉引用源稿修订两个摘要段落和第19段HiREC引文范围，尚未对新文件哈希重跑整稿语义审计。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
 - [当前主文法规版本来源核验](results/paper/condensed_candidate_20261028_01/current_candidate_regulatory_source_audit_20261028.md)绑定较早主文版及第7.6节段落哈希；本次差异未涉及法规段落。核验说明采集清单中DOC333仅有元数据、对应正文文件缺失。旧[官方来源审计](results/paper/condensed_candidate_20261028_01/official_source_claim_audit_20261028.md)对应更早的精简主文候选稿及保利发展案例，不是当前统一主文的收据。
 - [交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)记录源稿哈希、段落修订及渲染核查；WPS只读渲染21页，变化页11、13、16–18已复查，没有发现裁切、重叠或版面错位。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
 - [参考文献[13]出版状态与排版复核](results/paper/condensed_candidate_20261028_01/reference_13_citation_render_audit_20261028.json)记录上一候选稿中的单项书目修订：主会日程为2026-11-06至2026-11-08，故标作待刊；ACL Anthology正式论文编号、页码和DOI尚未核实。该稿第19页排版已检查；其后G2方法段修订后的完整渲染见检索实现对照收据。
@@ -273,6 +273,7 @@ python experiments/08_eval_embedding_rerank.py --backend tfidf --no-rerank --out
 
 
 </details>
+
 
 
 
