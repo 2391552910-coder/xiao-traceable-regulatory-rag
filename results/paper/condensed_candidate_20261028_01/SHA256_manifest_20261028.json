@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-28",
-  "purpose": "Current and prior manuscript candidates, supplements, audit receipts, and exact source inputs for numerical verification.",
+  "purpose": "Current and prior manuscript candidates, supplements, audit receipts, and exact source inputs for numerical and rubric verification.",
   "files": [
     {
       "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
@@ -131,6 +131,41 @@
       "path": "results/paper/english_translation_current_20261028_01/rendered_copyedited_20261028/native_render_receipt.json",
       "bytes": 400,
       "sha256": "60567abf6cc527e7bb7550f2e290e8055756cc466ef7b266cc2979de4b79c591"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx",
+      "bytes": 1868183,
+      "sha256": "44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx",
+      "bytes": 1561562,
+      "sha256": "8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json",
+      "bytes": 3206,
+      "sha256": "083e8c4a078dc4e7f3ec680970d23ef97697cf6c37aeeded691119d9e1db4354"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_main/paper_native.pdf",
+      "bytes": 1532512,
+      "sha256": "e1edb6cd601c54dd43cf3f3755dce89e06d03e775f96715201b2c6473fa03c3c"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_main/native_render_receipt.json",
+      "bytes": 391,
+      "sha256": "d35e2d464299cf5d8dda5c85e77471f5e2af87ff775fcfbe078e2dfac1db08dc"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_supplement/paper_native.pdf",
+      "bytes": 378897,
+      "sha256": "b3804aa5fc5572f5bb143e03c83705a0a4a2435ccff0b319f952773fe37206f0"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_supplement/native_render_receipt.json",
+      "bytes": 391,
+      "sha256": "73860cf0bb20ee8d00b6d849dde05363dc12f8fc54c961940152e446f6c2c86f"
     }
   ]
 }

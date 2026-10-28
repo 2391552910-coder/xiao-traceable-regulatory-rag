@@ -1,10 +1,14 @@
 # 实验产物说明
 
-## 当前统一主文候选稿（2026-10-28）
+## 当前评分量表可复现修订候选稿（2026-10-28）
 
-- 当前主文：[交叉引用补全候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)，SHA-256 `ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c`，21页、12表、8图。在推理预算口径校准版上补齐表6、表7、表9、表12及图4、图6的正文交叉引用，没有修改统计结果、表格内容或结论。
-- [交叉引用审计收据](paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)确认12张表与8幅图均有正文引用；[WPS渲染PDF](paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/paper_native.pdf)及[只读渲染收据](paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/native_render_receipt.json)绑定本版哈希。变化页11、13、16–18已检查，无裁切或错位。
-- [推理预算论断审计收据](paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录同系列服务别名比较的解释边界；[前版主文](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx)保留作版本追溯。候选稿仍待整稿语义终审、作者元数据和投稿模板适配，不表示达到二区录用标准。
+- 当前主文：[评分量表可复现修订候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx)，SHA-256 `44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5`，21页、12表、8图。正文方法段指向补充表S0；原始分数、统计分析、表图及结论未改。
+- 配套[评分量表与检索诊断补充稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，3页。S0逐项列出四维度0/1/2锚点及U值；S1–S3保留预算回放与BM25诊断。WPS主稿与补充材料所有页面均已检查。
+- [评分量表修订收据](paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json)绑定原始评分表、两份DOCX、渲染PDF及页面核验；没有新增模型调用或人工标签。
+- 英文工作译稿仍基于SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`的前一版中文稿，尚未同步评分量表说明。
+- 新候选仍待整稿事实/引文终审、作者信息及目标期刊模板适配，不代表已达到二区录用标准。
+
+## 评分量表修订前的历史候选
 
 ## 2026-10-27 相同预算下的联合材料分配
 
