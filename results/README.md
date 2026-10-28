@@ -1,5 +1,9 @@
 # 实验产物说明
 
+## English working translation (2026-10-28)
+
+The current English working translation is available as [Word](paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_20261028.docx) and [Markdown](paper/english_translation_current_20261028_01/English_working_translation_current_20261028.md), based on the included [Chinese source manuscript](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx). It retains 12 tables, 8 figures and 31 references. The 23-page [rendered PDF](paper/english_translation_current_20261028_01/rendered_docx/paper_native.pdf) and [structural audit](paper/english_translation_current_20261028_01/english_translation_build_audit.json) are included. Journal formatting, full language/citation review and author metadata remain outstanding.
+
 ## 2026-10-27 相同预算下的联合材料分配
 
 - `runs/evidence_budget_development_20261027_01/`：按先行规划完成8题×5策略、40份材料，输入候选池、6000-token上限和新增来源总上限16全部一致；源码/输入指纹、候选池、逐候选装入/省略原因、原/勘误页面覆盖及事后区间诊断均保存。
