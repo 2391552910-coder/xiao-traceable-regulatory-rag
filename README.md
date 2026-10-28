@@ -2,9 +2,9 @@
 
 ## 2026-10-29 当前统一主文候选稿
 
-- 当前主文为[推理预算口径校准候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx)，SHA-256 `da01d62b3aea62a9c1f530a8560b7cfd798d2e182b7db07cca59b0b8a9dbfb48`，21页、12表、8图。该版在原统一主文基础上修正同系列服务别名比较的推理预算描述；两种请求均未发送 `reasoning_effort`，供应商文档列出的默认档位不同，实际服务端档位和底层checkpoint revision未独立核实。该比较不能解释为等预算模型权重比较或跨厂商模型族泛化；无新增模型调用或人工标签。配套材料为[精简补充材料](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx)。
-- [推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录请求来源哈希与限定范围。配套[WPS渲染PDF](results/paper/condensed_candidate_20261028_01/render_wps_reasoning_budget_20261029/paper_native.pdf)和[只读渲染收据](results/paper/condensed_candidate_20261028_01/render_wps_reasoning_budget_20261029/native_render_receipt.json)绑定本版哈希；变化页8、18–20已检查。既有[合并验收收据](results/paper/condensed_candidate_20261028_01/merged_candidate_validation_receipt_20261028.json)绑定前一版，继承检查边界见专项收据。
-- [数值复核](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)、[叙述量化复核](results/paper/condensed_candidate_20261028_01/narrative_quantitative_audit_20261028.json)与[表12摘录及摘要复核](results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json)对应继承的合并主文内容；[已提交的前序主文快照](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx)保留作版本追溯。整稿语义终审、作者元数据和投稿模板适配仍未完成，不能据此声称达到二区录用标准。聚焦稿旧有386/400和+0.250已被供应商重分析取代，不可继续引用。
+- 当前主文为[交叉引用补全候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)，SHA-256 `ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c`，21页、12表、8图。在推理预算口径校准版基础上，补齐正文指向表6、表7、表9、表12以及图4、图6的交叉引用；未改统计结果、表格内容或结论。
+- [交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)确认12张表和8幅图均有正文引用。配套[WPS渲染PDF](results/paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/paper_native.pdf)及[只读渲染收据](results/paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/native_render_receipt.json)绑定本版哈希；变化页11、13、16–18已检查，无裁切或错位。
+- [推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录同系列服务别名比较的来源与解释边界；[上一版主文](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx)保留作版本追溯。全文语义终审、作者元数据与投稿模板适配仍未完成，不据此声称达到二区录用标准。
 
 
 ## 2026-10-28 法规日期与因果措辞复核（历史候选）
