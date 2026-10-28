@@ -1,0 +1,33 @@
+{
+  "status": "rendered_and_visual_qa_passed",
+  "source_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx",
+  "source_sha256": "ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c",
+  "candidate_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用与摘要口径修订候选稿_待终审.docx",
+  "candidate_sha256": "abcab7544c91958ba5bf67175133dcd15d40ff14de327512203e4a18b79217fa",
+  "changed_package_members": ["word/document.xml"],
+  "changed_paragraph_indexes_zero_based": [3, 6],
+  "tables_modified": false,
+  "other_paragraph_text_unchanged": true,
+  "model_calls": 0,
+  "human_labels_added": 0,
+  "changes": [
+    "Add observed-pair scope to G2/G3 bootstrap intervals in Chinese and English abstracts.",
+    "Clarify that 68.3%/100% represents joint source presence in assembled contexts.",
+    "Clarify that source-location coverage is the macro-average of two source-specific reference-location rates."
+  ],
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "source_pdf": "results/paper/condensed_candidate_20261028_01/render_crossrefs_abstractscope_base_20261028/paper_native.pdf",
+    "source_pdf_sha256": "d07d48bebf9840512f2716a27e9ddf3065c2d64663f5dfcb3430b25dd7808b5c",
+    "candidate_pdf": "results/paper/condensed_candidate_20261028_01/render_crossrefs_abstractscope_20261028/paper_native.pdf",
+    "candidate_pdf_sha256": "fe015c6aa80462326a2f5b0d0428da54925c9d5f477f49a39bfb75b315a9165b",
+    "pdf_committed": false,
+    "pdf_storage_note": "Local QA artifact; PDF intentionally omitted from GitHub per repository publication guidance.",
+    "page_count": 21,
+    "visually_inspected_pages": [1, 2, 3],
+    "pixel_identical_pages_vs_fresh_source_render": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    "source_unchanged": true,
+    "visual_qa": "passed; no clipping, overlap, or broken page layout observed on inspected pages"
+  },
+  "reason": "Apply abstract-scope clarification on top of the latest cross-reference-complete manuscript, preserving the later reasoning-budget limitation, body citations, and figure/table references."
+}

@@ -2,8 +2,9 @@
 
 ## 2026-10-28 当前统一主文候选稿
 
-- 当前主文为[交叉引用补全候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)，SHA-256 `ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c`，21页、12表、8图。在推理预算口径校准版基础上，补齐正文指向表6、表7、表9、表12以及图4、图6的交叉引用；未改统计结果、表格内容或结论。
-- [交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)确认12张表和8幅图均有正文引用。配套[WPS渲染PDF](results/paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/paper_native.pdf)及[只读渲染收据](results/paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/native_render_receipt.json)绑定本版哈希；变化页11、13、16–18已检查，无裁切或错位。
+- 当前主文为[交叉引用与摘要口径修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用与摘要口径修订候选稿_待终审.docx)，SHA-256 `abcab7544c91958ba5bf67175133dcd15d40ff14de327512203e4a18b79217fa`，21页、12表、8图。该版以交叉引用补全稿为底稿，保留其推理预算限制和正文图表引用；摘要明确bootstrap区间针对已观察配对样本，并区分上下文双源同现率与来源位置覆盖率。未改表格、未增加模型调用或人工标签。
+- [交叉引用与摘要口径合并收据](results/paper/condensed_candidate_20261028_01/crossref_abstract_scope_merge_receipt_20261028.json)记录源稿/候选稿哈希和原生渲染。前三页已目视检查；第4–21页与源版新鲜渲染像素一致。整稿事实与引文语义终审、作者元数据和目标期刊格式仍未完成，不能据此声称达到二区录用标准。
+- [交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)对应本版源稿，确认12张表和8幅图均有正文引用。本次只改摘要段落，表图编号和正文交叉引用均未变；配套[源版WPS渲染PDF](results/paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/paper_native.pdf)留作版本追溯。
 - [推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录同系列服务别名比较的来源与解释边界；[上一版主文](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx)保留作版本追溯。全文语义终审、作者元数据与投稿模板适配仍未完成，不据此声称达到二区录用标准。
 
 
