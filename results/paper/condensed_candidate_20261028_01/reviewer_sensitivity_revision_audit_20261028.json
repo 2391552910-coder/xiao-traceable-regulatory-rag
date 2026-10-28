@@ -1,0 +1,129 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_reviewer_sensitivity_claim_and_visual_revision_audit",
+  "source_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_检索规则补明候选稿_待终审.docx",
+    "sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02"
+  },
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性补充候选稿_待终审.docx",
+    "sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667",
+    "changed_body_paragraph_indices_zero_based": [
+      93
+    ],
+    "package_parts_changed": [
+      "word/document.xml"
+    ],
+    "tables_unchanged": true,
+    "media_unchanged": true
+  },
+  "added_result_scope": "Reviewer-stratified sensitivity of the existing G2-G1 and G3-G2 paired effects; no new experimental condition or label.",
+  "source_analysis": {
+    "path": "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json",
+    "sha256": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910"
+  },
+  "source_robustness_audit": {
+    "path": "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json",
+    "sha256": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+    "bootstrap_draws": 20000,
+    "seed": 20261028,
+    "cluster": "company"
+  },
+  "reviewer_stratified_results": {
+    "G2-G1": {
+      "R1": {
+        "observed_pairs": 41,
+        "company_macro_difference": 0.2631578947368421,
+        "cluster_ci95_20000": [
+          0.11403508771929824,
+          0.4298245614035087
+        ],
+        "full_question_average_bounds_using_available_counterparts": [
+          -1.5166666666666666,
+          1.2833333333333334
+        ]
+      },
+      "R2": {
+        "observed_pairs": 41,
+        "company_macro_difference": 0.19298245614035084,
+        "cluster_ci95_20000": [
+          0.09649122807017543,
+          0.28947368421052627
+        ],
+        "full_question_average_bounds_using_available_counterparts": [
+          -1.5,
+          1.3
+        ]
+      }
+    },
+    "G3-G2": {
+      "R1": {
+        "observed_pairs": 38,
+        "company_macro_difference": 0.02631578947368421,
+        "cluster_ci95_20000": [
+          0.0,
+          0.07894736842105263
+        ],
+        "full_question_average_bounds_using_available_counterparts": [
+          -1.5833333333333333,
+          1.75
+        ]
+      },
+      "R2": {
+        "observed_pairs": 38,
+        "company_macro_difference": 0.0,
+        "cluster_ci95_20000": [
+          0.0,
+          0.0
+        ],
+        "full_question_average_bounds_using_available_counterparts": [
+          -1.55,
+          1.7833333333333334
+        ]
+      }
+    }
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_wps_rater_sensitivity_v2_20261028/paper_native.pdf",
+    "pdf_sha256": "d0375a9d3a2f78f26e9cc23e4d30f6b44d1d404f8e2cc5d76fda592f508305f3",
+    "page_count": 21,
+    "changed_pages_vs_previous_pdf_same_renderer": [
+      11
+    ],
+    "pixel_identical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visually_inspected_pages": [
+      11
+    ],
+    "visual_result": "The added text is readable; no clipping, overlap, or displacement observed."
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "Reviewer-stratified contrasts use the same observed pairs and company-cluster bootstrap as the existing robustness audit; they do not solve missing-outcome uncertainty.",
+    "The two reviewers are not adjudicated gold labels; the result is sensitivity to the recorded rater scores, not independent truth.",
+    "This scoped revision is not a full manuscript semantic or legal-applicability review."
+  ]
+}
+
