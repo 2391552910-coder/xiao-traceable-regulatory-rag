@@ -1,8 +1,14 @@
 # 年报与法规双源检索增强生成
 
-## 2026-10-28 回放范围限定修订候选
+## 最新候选：引言检索表述收窄（2026-10-28）
 
-- 最新中文主文候选：[回放范围限定修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_回放范围限定候选稿_待终审.docx)，SHA-256 `dd442f55b34faec6b31a330578ed55df66918e8c719aeec22304e49608c2be91`。将讨论段回放陈述限定为一个问题、8种检索配置、16次成功候选检索的通道候选/融合/最终排序算术核验，并明确其不验证语义相关性、主实验全量可回放性或人工复核效益。没有新增模型调用或人工标签。WPS渲染21页；仅第17页变化并完成视觉复核，其他20页与上一版像素一致。版本及渲染见[修订收据](results/paper/condensed_candidate_20261028_01/replay_scope_revision_receipt_20261028.json)。
+- 当前中文主文候选：[引言检索表述收窄稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引言检索表述收窄候选稿_待终审.docx)，SHA-256 `76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a`。只收窄引言中对传统检索的泛化陈述；BM25文献更正保留。该次仅正文段落10变化，12张表、31条参考文献及其他段落不变；WPS渲染21页，仅第2页变化且已检查。
+- 配套核查：[引言第9–14段审计](results/paper/condensed_candidate_20261028_01/introduction_claim_audit_paragraphs_9_14_20261028.md)、[方法与检索文献审计](results/paper/condensed_candidate_20261028_01/retrieval_method_claim_audit_paragraphs_23_24_20261028.md)、[评分量表审计](results/paper/condensed_candidate_20261028_01/rubric_claim_audit_current_candidate_20261028.md)及[版本/渲染收据](results/paper/condensed_candidate_20261028_01/intro_retrieval_framing_revision_receipt_20261028.json)。研究范围及已发表论文参照见[范围决策](docs/文献参照后的论文范围决策_20261028.md)。
+- 本稿仍待整稿语义终审、作者/投稿信息和目标期刊格式适配；不表示达到二区录用水平。
+
+## 2026-10-28 回放范围限定修订候选（历史父版本）
+
+- 回放范围限定父版本：[回放范围限定修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_回放范围限定候选稿_待终审.docx)，SHA-256 `dd442f55b34faec6b31a330578ed55df66918e8c719aeec22304e49608c2be91`。将讨论段回放陈述限定为一个问题、8种检索配置、16次成功候选检索的通道候选/融合/最终排序算术核验，并明确其不验证语义相关性、主实验全量可回放性或人工复核效益。没有新增模型调用或人工标签。WPS渲染21页；仅第17页变化并完成视觉复核，其他20页与上一版像素一致。版本及渲染见[修订收据](results/paper/condensed_candidate_20261028_01/replay_scope_revision_receipt_20261028.json)。
 - 来源删除配对分析、量表和检索诊断补充材料、英文工作译稿及其证据状态见下方历史候选条目和各自收据；当前稿仍需整稿终审及目标期刊模板适配，不代表已达到二区录用标准。
 - [当前候选稿引文版本绑定核查](results/paper/condensed_candidate_20261028_01/current_candidate_citation_rebind_20261028.json)确认当前版44个引文段落、31条参考文献及其编号与已审计来源版本连续；这是版本与编号核验，继承分主题来源审计，不等于逐篇重读全部文献或全稿语义终审。
 - [相关工作段落20来源核查](results/paper/condensed_candidate_20261028_01/related_work_claim_audit_paragraph_20_20261028.md)依据ACL Anthology和出版社正式记录核实ARQA、CFQA及CFinRAG的数据规模与方法概述；当前段落与来源相符，无需改稿。该核查不把它们当作本项目的直接基线。
