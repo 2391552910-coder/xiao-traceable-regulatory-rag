@@ -4,7 +4,7 @@
 
 - 当前供应商生成口径为主实验147/180（G1/G2/G3：52/60、47/60、48/60），所有条件355/400。旧稿中的178/180、386/400包含助手会话补写，其中31条曾被评分，不能计入供应商输出结果。
 - G2−G1公司宏均分差为+0.228/8（41个配对问题；公司聚类95%区间[0.110, 0.355]）；计划题集缺失界[-1.508, 1.292]跨零，不能声称计划题集上存在确定优势。G3−G2为+0.013/8（38对），仅作探索性观察。
-- 以[供应商输出重分析JSON](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/blob/codex/qwen-prompt-dev-20261013/results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json)和[更正候选稿](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/blob/codex/qwen-prompt-dev-20261013/results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_待渲染验收.docx)为准。当前PR分支中的旧DOCX/ZIP尚未替换，修订完成前保持草稿，不作为当前统计版本或投稿终稿。
+- 以[供应商输出重分析JSON](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/blob/codex/qwen-prompt-dev-20261013/results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json)和[更正候选稿](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/blob/codex/qwen-prompt-dev-20261013/results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_待渲染验收.docx)为准。本PR已补入2026-10-28供应商口径更正候选包：[完整候选包ZIP](deliverables/20261028_provider_corrected_01.zip)。压缩包包含主稿与补充材料DOCX、WPS预览PDF、统计分析JSON、渲染收据及哈希清单；包内文件已通过清单哈希与ZIP CRC核验，主稿和补充材料已有WPS渲染记录。稿件仍待内容终审、作者元数据和期刊格式适配，不作为投稿终稿或录用保证。ZIP SHA-256：22b98d9780cce2c957cef2a9325073b3091d8cf70851af9cd0f98c91437e04b9。
 
 
 ## 2026-10-28 聚焦主问题候选稿
