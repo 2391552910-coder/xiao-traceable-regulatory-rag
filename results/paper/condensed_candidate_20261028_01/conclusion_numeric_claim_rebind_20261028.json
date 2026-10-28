@@ -1,0 +1,35 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_numeric_conclusion_rebind",
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+    "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
+    "paragraph_bindings": [
+      {
+        "index_zero_based": 151,
+        "sha256_utf8": "97b34337eb39cdcbb1966713a99093d109268a7a5314c6b3de0a334afa6de38a",
+        "scope": "Conclusion effect estimates, observed-pair counts, and full-question missing-outcome bounds"
+      },
+      {
+        "index_zero_based": 152,
+        "sha256_utf8": "8ddaa8dae9fd53857f0760d0dcac9188dc8dca6054904f1a041d7e4ea6d9d6dd",
+        "scope": "Conclusion sample and evaluation limitations, including the absence of human qrels for retrieval metrics"
+      }
+    ]
+  },
+  "inherited_audit": {
+    "path": "results/paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json",
+    "sha256": "aa8d01ffeb6c85c606776a0b8298ad674633440e5f9974463a1a875245610b43",
+    "inherited_manuscript_sha256": "1eb95d0496bdf354cfb60fb2df5225b375821c9d7f2d89be1e648a0beef8984c",
+    "matching_paragraphs": [151, 152]
+  },
+  "source_hashes_rechecked": {
+    "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910",
+    "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+    "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json": "2b3455ade736a2c9d12ae6a0a84178ae1aa36531cd2de5d90eee79b382bb2221",
+    "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94"
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "scope_limit": "This is a version-continuity check for paragraphs 151-152 and their inherited numeric audit inputs. It does not re-evaluate all manuscript claims, all 355 provider answers, legal applicability, or retrieval quality."
+}
