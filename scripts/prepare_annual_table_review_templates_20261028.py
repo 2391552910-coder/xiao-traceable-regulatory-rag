@@ -32,7 +32,7 @@ def prepare(packet: Path, *, replace_existing: bool = False) -> dict:
     predicted_tables: list[dict] = []
     gold_continuations: list[dict] = []
     accepted_continuations: list[dict] = []
-    report_pages: dict[str, list[int]] = {}
+    report_pages: dict[tuple[str, int], list[int]] = {}
 
     for report in audit["reports"]:
         document = json.loads((RUNS / report["run"] / "document.json").read_text(encoding="utf-8"))
@@ -40,7 +40,7 @@ def prepare(packet: Path, *, replace_existing: bool = False) -> dict:
         stock = source["stock"]
         sha = document["source_pdf_sha256"]
         pages = sorted(document["selection"]["selected_pages"])
-        report_pages[stock] = pages
+        report_pages[(stock, source["year"])] = pages
 
         # Blind gold inventory: one blank slot per page. Reviewers duplicate a
         # row for each additional table or mark gold_table_id=NONE explicitly.
@@ -142,7 +142,7 @@ def prepare(packet: Path, *, replace_existing: bool = False) -> dict:
 
 `score_annual_table_review.py` 要求三张标签表完整、引用的金表ID有效且逐页误检/漏检清楚，然后计算页级和表级Precision、Recall、F1，逐类指标，以及跨页连接指标。跨页指标以预测器实际接受的边作为预测，和阶段一金续表边集合匹配；被漏检的表或边将计为FN。
 
-每位复核者应在独立副本上分别计分并保留原表；分歧需另存裁决表。复核者字段只记录身份，不能由脚本证明其独立性。样本是事后选择的三份2024报告，仅覆盖治理关键词页及包内相邻页；不能代表随机样本、完整年报、跨年度泛化或端到端RAG效果。空白模板、作者/AI自查都不是独立人工指标。
+每位复核者应在独立副本上分别计分并保留原表；分歧需另存裁决表。复核者字段只记录身份，不能由脚本证明其独立性。样本是事后选择的美的集团与科大讯飞2023/2024年报，共四份报告；仅覆盖治理关键词页及固定相邻页。它们曾用于先前RAG实验，因此不是全新独立时间迁移集，也不能代表随机样本、完整年报或端到端RAG效果。空白模板、作者/AI自查都不是独立人工指标。
 """
     instructions_path = packet / "review_instructions.md"
     if instructions_path.exists() and not replace_existing:
@@ -152,8 +152,8 @@ def prepare(packet: Path, *, replace_existing: bool = False) -> dict:
     # The original page-level worksheet used post-unblinding fields. Replace it
     # with a lightweight page inventory index to avoid mixed blind/unblind use.
     page_index = []
-    for stock, pages in report_pages.items():
-        report = next(r for r in audit["reports"] if r["stock_code"] == stock)
+    for (stock, year), pages in report_pages.items():
+        report = next(r for r in audit["reports"] if r["stock_code"] == stock and r["report_year"] == year)
         for page in pages:
             page_index.append({"stock_code": stock, "report_year": report["report_year"],
                                "source_pdf_sha256": report["source_pdf_sha256"],
