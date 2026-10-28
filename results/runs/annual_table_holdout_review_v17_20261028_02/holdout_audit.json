@@ -205,14 +205,21 @@
     "PDF company/year identity is caller-supplied metadata and is not independently verified here."
   ],
   "review_packet": {
-    "page_review_template_csv": "page_review_template.csv",
-    "page_predictions_jsonl": "page_predictions.jsonl",
     "blind_review_html": "blind_review.html",
-    "review_html": "review.html",
-    "selected_pages_in_packet": 55,
-    "blind_previews_have_prediction_boxes": false,
-    "comparison_previews_have_red_prediction_boxes": true,
-    "warning": "Reviewer labels are blank; complete page_review_template.csv from blind_review.html before inspecting page_predictions.jsonl or review.html."
+    "prediction_comparison_html": "review.html",
+    "page_review_template_csv": "page_review_template.csv",
+    "gold_table_blind_template_csv": "gold_table_blind_template.csv",
+    "prediction_gold_match_template_csv": "prediction_gold_match_template.csv",
+    "gold_continuation_blind_template_csv": "gold_continuation_blind_template.csv",
+    "accepted_continuation_predictions_jsonl": "accepted_continuation_predictions.jsonl",
+    "review_instructions": "review_instructions.md",
+    "scope": "all visible table regions on the selected governance-keyword pages and fixed neighbors; blind gold inventory first",
+    "pages": 55,
+    "predicted_table_regions": 57,
+    "contiguous_physical_page_boundaries": 43,
+    "accepted_parser_links": 7,
+    "labels_created": false,
+    "accuracy_status": "not_measured_pending_independent_human_labels"
   },
   "qualitative_spot_checks": {
     "review_status": "implementation_author_visual_diagnostic_only; not independent human annotation and not included in metrics",
