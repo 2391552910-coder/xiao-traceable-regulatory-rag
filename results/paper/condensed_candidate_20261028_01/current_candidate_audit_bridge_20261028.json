@@ -129,6 +129,102 @@
     "This is not an author-metadata review, target-journal template check, or acceptance assessment."
   ],
   "new_model_calls": 0,
-  "new_human_labels": 0
+  "new_human_labels": 0,
+  "bibliography_integrity": {
+    "status": "passed_for_citation_id_completeness_and_inherited_source_audit_coverage",
+    "current_candidate_sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02",
+    "reference_count": 29,
+    "reference_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "all_references_cited_in_body": true,
+    "uncited_reference_ids": [],
+    "body_citation_ids_without_reference": [],
+    "comparison_base": {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_HiREC措辞校准候选稿_待终审.docx",
+      "sha256": "189de3d4f9173fb7fd2a5dabba9e5a23a50610338a2fadb90304f269e51080ad"
+    },
+    "bibliography_paragraphs_changed_vs_base": [
+      13
+    ],
+    "body_paragraphs_changed_vs_base": [
+      3,
+      6,
+      19,
+      168
+    ],
+    "changed_citation_review": [
+      {
+        "item": "HiREC scope wording in related-work paragraph 19",
+        "receipt": "hirec_citation_delta_receipt_20261028.json",
+        "finding": "Changed only from over-narrow annual-report wording to standardized financial-document wording; official ACL source scope supports the correction."
+      },
+      {
+        "item": "Reference [13] CRAG publication form",
+        "receipt": "reference_13_citation_render_audit_20261028.json plus official arXiv record https://arxiv.org/abs/2401.15884",
+        "finding": "Current entry cites the 2024 arXiv preprint only; it does not carry forward the prior “AACL 2026 to appear” claim."
+      }
+    ],
+    "inherited_source_claim_audits": [
+      {
+        "references": "[1]-[11]",
+        "audit": "retrieval_corpus_citation_audit_20261028.md",
+        "carry_forward": "Bibliography entries unchanged; related-work paragraph 19 correction separately reviewed."
+      },
+      {
+        "references": "[12]-[23]",
+        "audit": "rag_method_eval_citation_audit_20261028.md",
+        "carry_forward": "Cited discussion is unchanged; reference [13] publication form is conservatively narrowed to arXiv and retained with original preprint URL."
+      },
+      {
+        "references": "[28]-[29]",
+        "audit": "annual_report_benchmark_citation_audit_20261028.md",
+        "carry_forward": "Paragraph 20 and bibliography entries unchanged."
+      },
+      {
+        "references": "[24]",
+        "audit": "reasoning_budget_claim_audit_20261029.json",
+        "carry_forward": "Current description and bibliography match the scoped audit; vendor documentation currently lists K3 default high and kimi-for-coding/K2.8 Preview default max, while manuscript correctly states runtime settings were not independently recorded."
+      },
+      {
+        "references": "[25]-[27]",
+        "audit": "current_candidate_regulatory_source_audit_20261028.md",
+        "carry_forward": "Current law-version paragraph is rebound to the current candidate SHA; source/version risks remain explicitly qualified."
+      }
+    ],
+    "limitations": [
+      "This proves citation-number completeness and continuity with existing topic-specific source audits; it is not a fresh re-reading of every cited full paper or a review of every non-citation factual claim.",
+      "It does not establish historical legal applicability for each question or validate the 355 answers semantically.",
+      "Author metadata and target-journal formatting remain unaudited."
+    ]
+  }
 }
 
