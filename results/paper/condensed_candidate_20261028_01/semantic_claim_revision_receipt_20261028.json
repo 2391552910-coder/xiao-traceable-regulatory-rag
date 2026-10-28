@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-28",
+  "status": "passed_scoped_claim_wording_revision_and_render",
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+    "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
+    "predecessor_path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_补充CFinRAG相关工作候选稿_待终审.docx",
+    "predecessor_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7"
+  },
+  "revision": {
+    "paragraph_index_zero_based": 131,
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "reason": "Recast an unmeasured claim of independent engineering value as a traceability capability; explicitly state that review accuracy and review cost were not measured.",
+    "tables_text_unchanged": true,
+    "media_unchanged": true,
+    "references_unchanged": true,
+    "paragraph_count": 192,
+    "table_count": 12
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat; Poppler at 120 dpi",
+    "source_sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_wps_semantic_claim_revision_20261028/paper_native.pdf",
+    "page_count": 21,
+    "changed_pages_vs_predecessor_same_renderer": [
+      17
+    ],
+    "pixel_identical_pages_vs_predecessor": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visually_inspected_pages": [
+      17
+    ],
+    "visual_result": "Changed paragraph is readable; no clipping, overlap, or displaced content observed. Other pages are pixel-identical to the prior rendered candidate."
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "This is a scoped wording and layout revision, not a fresh semantic review of every factual claim or generated answer.",
+    "Author metadata and target-journal formatting remain unresolved."
+  ]
+}
