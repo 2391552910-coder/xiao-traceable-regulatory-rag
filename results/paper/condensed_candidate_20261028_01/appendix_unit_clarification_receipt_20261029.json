@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-29",
+  "source": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引言检索表述收窄候选稿_待终审.docx",
+  "source_sha256": "76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a",
+  "output": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx",
+  "output_sha256": "d3c78d348a108f4de0fe20ec2b825543e7ff5cb17805095bdddb3371b18487a0",
+  "scope": "Clarified the count units and exclusion relationship in body paragraph index 189 (zero-based, appendix A).",
+  "paragraph_index_zero_based": 189,
+  "before_text_sha256": "64e6c075d4d2bc09b9b581226eeea2531965faaef931cdd8721076e4d0da1043",
+  "after_text_sha256": "609b89b7d6d054722a63d47e0010072d08d0107a84f8fdbd48936603b04ff782",
+  "checks": {
+    "paragraph_count_source": 192,
+    "paragraph_count_output": 192,
+    "changed_paragraph_indices": [
+      189
+    ],
+    "table_count": 12,
+    "table_cells_unchanged": true,
+    "historical_plan_units": 400,
+    "historically_scored_answer_records": 386,
+    "historical_numeric_rating_fields": 3088,
+    "session_supplement_records_previously_scored": 31,
+    "current_provider_scored_records": 355,
+    "source_file_sha256": "9887a74dcd3fe32aa87a661571198e61d4c2b27d6b8bb747e8607ce8a1760f61",
+    "current_filtered_score_sha256": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124"
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat; PDFium rasterization at 120 dpi",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_appendix_unit_clarification_20261029/paper_native.pdf",
+    "pdf_sha256": "2bdf81646daba970bee053498bbf64b935e7f8238027e67646b1b6d4d7dee0f6",
+    "pages_source": 21,
+    "pages_output": 21,
+    "pixel_identical_pages": 20,
+    "pixel_changed_pages": [
+      21
+    ],
+    "changed_page_pixel_bbox": [
+      99,
+      357,
+      893,
+      455
+    ],
+    "changed_page_visual_review": "Page 21 inspected at original resolution; appendix text is legible, line wrapping is clean, and no clipping or overlap is visible.",
+    "source_unchanged_during_export": true
+  },
+  "limitations": [
+    "This is a count-unit wording clarification and source-data reconciliation, not a semantic re-review of all answer records or a validation of reviewer identity or rating validity.",
+    "No model calls, scores, human labels, tables, figures, references, or statistical results were changed."
+  ]
+}
+

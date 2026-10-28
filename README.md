@@ -1,8 +1,14 @@
 # 年报与法规双源检索增强生成
 
-## 最新候选：引言检索表述收窄（2026-10-28）
+## 最新候选：附录统计单位澄清（2026-10-29）
 
-- 当前中文主文候选：[引言检索表述收窄稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引言检索表述收窄候选稿_待终审.docx)，SHA-256 `76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a`。只收窄引言中对传统检索的泛化陈述；BM25文献更正保留。该次仅正文段落10变化，12张表、31条参考文献及其他段落不变；WPS渲染21页，仅第2页变化且已检查。
+- 当前主文候选：[附录统计单位澄清稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx)，SHA-256 `d3c78d348a108f4de0fe20ec2b825543e7ff5cb17805095bdddb3371b18487a0`。只澄清附录A段落189中的计数单位：历史评分包含386条已评分回答（含31条会话补充回答），对应3,088个原始评分字段；当前供应商分析为355条输出。
+- 12张表及统计结果不变。WPS重渲染仍为21页，只有第21页变化并已检查。详见[修订审计](results/paper/condensed_candidate_20261028_01/appendix_unit_clarification_audit_20261029.md)和[版本/渲染收据](results/paper/condensed_candidate_20261028_01/appendix_unit_clarification_receipt_20261029.json)。
+- 该候选稿仍待整稿语义终审、作者/投稿信息与目标期刊格式适配，不表示达到二区录用水平。
+
+## 历史父稿：引言检索表述收窄（2026-10-28）
+
+- 引言表述收窄父版本：[引言检索表述收窄稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引言检索表述收窄候选稿_待终审.docx)，SHA-256 `76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a`。只收窄引言中对传统检索的泛化陈述；BM25文献更正保留。该次仅正文段落10变化，12张表、31条参考文献及其他段落不变；WPS渲染21页，仅第2页变化且已检查。
 - 配套核查：[引言第9–14段审计](results/paper/condensed_candidate_20261028_01/introduction_claim_audit_paragraphs_9_14_20261028.md)、[方法与检索文献审计](results/paper/condensed_candidate_20261028_01/retrieval_method_claim_audit_paragraphs_23_24_20261028.md)、[评分量表审计](results/paper/condensed_candidate_20261028_01/rubric_claim_audit_current_candidate_20261028.md)及[版本/渲染收据](results/paper/condensed_candidate_20261028_01/intro_retrieval_framing_revision_receipt_20261028.json)。研究范围及已发表论文参照见[范围决策](docs/文献参照后的论文范围决策_20261028.md)。
 - 本稿仍待整稿语义终审、作者/投稿信息和目标期刊格式适配；不表示达到二区录用水平。
 
