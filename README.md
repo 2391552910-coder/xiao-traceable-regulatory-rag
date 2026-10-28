@@ -6,6 +6,7 @@
 - 来源删除配对分析、量表和检索诊断补充材料、英文工作译稿及其证据状态见下方历史候选条目和各自收据；当前稿仍需整稿终审及目标期刊模板适配，不代表已达到二区录用标准。
 - [当前候选稿引文版本绑定核查](results/paper/condensed_candidate_20261028_01/current_candidate_citation_rebind_20261028.json)确认当前版44个引文段落、31条参考文献及其编号与已审计来源版本连续；这是版本与编号核验，继承分主题来源审计，不等于逐篇重读全部文献或全稿语义终审。
 - [相关工作段落20来源核查](results/paper/condensed_candidate_20261028_01/related_work_claim_audit_paragraph_20_20261028.md)依据ACL Anthology和出版社正式记录核实ARQA、CFQA及CFinRAG的数据规模与方法概述；当前段落与来源相符，无需改稿。该核查不把它们当作本项目的直接基线。
+- [相关工作段落19来源核查](results/paper/condensed_candidate_20261028_01/related_work_claim_audit_paragraph_19_20261028.md)依据ACL Anthology正式记录核实FinQA、TAT-QA与HiREC的任务定位；描述均有来源支持，未发现需要改稿的事实错误。
 
 ## 2026-10-28 评分量表修订前的统一主文候选稿（已被后续候选取代）
 
