@@ -1,0 +1,30 @@
+{
+  "audit_id": "method_page_provenance_revision_20261029",
+  "input_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx",
+  "input_sha256": "d3c78d348a108f4de0fe20ec2b825543e7ff5cb17805095bdddb3371b18487a0",
+  "output_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx",
+  "output_sha256": "1d242b29f769e57f419a5d6ff9d2eab2225f96085be12822b40011ad6d990c45",
+  "index": "results/runs/official_reference_sources_gpu_extension_windows_20261020_02/index_v4/chunks.jsonl",
+  "index_sha256": "87fd7c197edb3c3d3503f76fb235a63c5b9c2448958b26b7c2f461e8606239c3",
+  "annual_chunks_sampled": 100,
+  "sampled_annual_chunks_with_printed_page_label": 0,
+  "code_location": "src/data/document_corpora.py:244-250",
+  "annotation_schema": "scripts/validate_dual_source_annotations.py:38-49",
+  "revision": "Clarified that retrieval chunks store physical PDF page order; visible printed-page labels are recorded separately during human source verification when available.",
+  "tables": 12,
+  "paragraph_count": 192,
+  "render": {
+    "renderer": "WPS native read-only ExportAsFixedFormat",
+    "success": true,
+    "source_docx_sha256": "1d242b29f769e57f419a5d6ff9d2eab2225f96085be12822b40011ad6d990c45",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_page_provenance_wps_20261029/paper_native.pdf",
+    "pdf_sha256": "0538d34028d04d0a5eae6d5aa07c41dbc2ee747d3e24f50794f0315f2b2c7909",
+    "page_count": 21,
+    "pixel_changed_pages_vs_input": [
+      5
+    ],
+    "visual_inspection": "Page 5 inspected at original resolution; paragraph and surrounding Table 3/section 3.3 layout are clean.",
+    "standard_renderer": "render_docx.py attempted; unavailable because LibreOffice soffice.exe is not installed."
+  }
+}
+

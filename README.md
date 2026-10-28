@@ -1,10 +1,10 @@
 # 年报与法规双源检索增强生成
 
-## 最新候选：附录统计单位澄清（2026-10-29）
+## 最新候选：来源页码记录边界澄清（2026-10-29）
 
-- 当前主文候选：[附录统计单位澄清稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx)，SHA-256 `d3c78d348a108f4de0fe20ec2b825543e7ff5cb17805095bdddb3371b18487a0`。只澄清附录A段落189中的计数单位：历史评分包含386条已评分回答（含31条会话补充回答），对应3,088个原始评分字段；当前供应商分析为355条输出。
-- 12张表及统计结果不变。WPS重渲染仍为21页，只有第21页变化并已检查。详见[修订审计](results/paper/condensed_candidate_20261028_01/appendix_unit_clarification_audit_20261029.md)和[版本/渲染收据](results/paper/condensed_candidate_20261028_01/appendix_unit_clarification_receipt_20261029.json)。
-- 该候选稿仍待整稿语义终审、作者/投稿信息与目标期刊格式适配，不表示达到二区录用水平。
+- 当前主文候选：[页码分层核验修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx)。修订第38段：检索索引使用PDF物理页序；人工核验时另记可见印刷页码，避免暗示运行索引普遍存储印刷页码。
+- 主文仍为21页、12表。WPS重渲染后仅第5页变化并已检查。详见[修订审计](results/paper/condensed_candidate_20261028_01/page_provenance_revision_audit_20261029.md)和[哈希/渲染收据](results/paper/condensed_candidate_20261028_01/page_provenance_revision_receipt_20261029.json)。
+- 本修订只处理来源定位表述，不代表整稿终审、期刊格式适配或二区录用结论。
 
 ## 历史父稿：引言检索表述收窄（2026-10-28）
 
