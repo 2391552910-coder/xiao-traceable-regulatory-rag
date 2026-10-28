@@ -45,7 +45,11 @@ Total output lines: 148
 ## 2026-10-28 经典参考文献出版信息补正
 
 - 候选稿[1]现明确列出RAG原始论文的正式会议论文集 *Advances in Neural Information Processing Systems 33 (NeurIPS 2020)*，并链接NeurIPS论文页；[16]现明确列出ReAct的正式会议 *International Conference on Learning Representations (ICLR 2023)*。正文引用编号不变。
-- 两条出版信息经NeurIPS官方论文记录及ICLR公开论文记录核对。CRAG [13]仍列为arXiv预印本，当前检索到的ICLR 2025页面仅显示“under review”，因此未擅自标成正式录用论文。
+- 两条出版信息经NeurIPS官方论文记录及ICLR公开论文记录核对。该次审计时，CRAG [13]仍按arXiv预印本著录；当时检索到的ICLR 2025页面仅显示“under review”，因此未标为正式录用论文。后续出版状态见下方2026-10-28补核。
+
+#### 2026-10-28 CRAG出版状态补核
+
+作者 Jia-Chen Gu 的个人出版列表现将 *Corrective Retrieval Augmented Generation* 列在2026年，并注明发表于 *Findings of the Association for Computational Linguistics: AACL 2026*；作者与题名均对应arXiv:2401.15884。见作者出版列表：https://gujc.me/publications.html。当前ACL Anthology检索尚未找到该论文的正式条目或可核对的页码、论文编号与DOI；因此，统一主文暂保留可直接核验的arXiv条目，不将未知出版字段写入参考文献。待ACL Anthology正式记录出现后再补齐会议论文著录。此前“仍仅为预印本”的判断已过时，应以本补核说明为准。
 - 修改后已重新渲染候选稿；出版信息仅位于参考文献页。其余页面与前一版逐页视觉检查结果一致，变动页已复查。
 
 ## 2026-10-28 图表交叉引用与版面复核
