@@ -76,6 +76,15 @@
       21
     ],
     "page_count": 21
+  },
+  "citation_number_integrity": {
+    "candidate_sha256": "fc188110b08535e3d6e384b042f3737ba50bb40f85758d05a9bcd6d1256c2535",
+    "bibliography_entries": 29,
+    "unique_in_text_citations": 29,
+    "missing_bibliography_entries": [],
+    "uncited_bibliography_entries": [],
+    "duplicate_bibliography_entries": [],
+    "method": "Regex scan of current DOCX paragraph text: body paragraphs 0–154 compared with bibliography paragraphs 155–184."
   }
 }
 
