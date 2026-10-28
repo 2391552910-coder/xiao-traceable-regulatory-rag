@@ -6,7 +6,7 @@
 - [交叉引用与摘要口径合并收据](results/paper/condensed_candidate_20261028_01/crossref_abstract_scope_merge_receipt_20261028.json)绑定源稿及候选稿哈希、WPS PDF和21页渲染；前三页已目视检查，第4–21页与新鲜重渲染源版像素一致。此前基于推理预算版生成的[摘要口径候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算与摘要口径修订候选稿_待终审.docx)未包含较新的正文交叉引用修订，已由收据标记为过时来源版本，保留追溯。
 - [交叉引用补全候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)是本次源稿；其[交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)与[推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录继承的正文修订和解释边界。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
 - [检索与金融QA引文审计](results/paper/condensed_candidate_20261028_01/retrieval_corpus_citation_audit_20261028.md)、[年报QA基准引文审计](results/paper/condensed_candidate_20261028_01/annual_report_benchmark_citation_audit_20261028.md)和[RAG方法与评测引文审计](results/paper/condensed_candidate_20261028_01/rag_method_eval_citation_audit_20261028.md)分别覆盖其记录中的引文主张，但绑定较早稿件版本；本候选沿用相同的相关工作文字，仅摘要与方法段45有后续修改。它们不能代替对新候选的整稿语义终审。作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
-- [当前主文法规版本来源核验](results/paper/condensed_candidate_20261028_01/current_candidate_regulatory_source_audit_20261028.md)已补绑到摘要条件修订版，整稿SHA-256 `0daa563753a5f435cc995a166b5e2b30f22ad9f9c113fe4aa2c941bddae252e7`；第7.6节段落哈希仍为 `a3bd5f20c5304d4c491f6e2906312d76b0435848e9ba1aa2598b4b26899b0abd`，法规日期与版本风险结论沿用，审计范围未扩大。采集清单DOC333仅有元数据、对应正文文件缺失。
+- [当前主文法规版本来源核验](results/paper/condensed_candidate_20261028_01/current_candidate_regulatory_source_audit_20261028.md)已补绑到当前统一主文哈希 `d2cd60c9…78b55a02`；第7.6节段落哈希与原审计一致，官方日期与版本风险结论沿用。核验说明采集清单中DOC333仅有元数据、对应正文文件缺失。
 - [交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)记录源稿哈希、段落修订及渲染核查；WPS只读渲染21页，变化页11、13、16–18已复查，没有发现裁切、重叠或版面错位。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
 - [参考文献[13]出版状态与排版复核](results/paper/condensed_candidate_20261028_01/reference_13_citation_render_audit_20261028.json)记录上一候选稿中的单项书目修订：主会日程为2026-11-06至2026-11-08，故标作待刊；ACL Anthology正式论文编号、页码和DOI尚未核实。该稿第19页排版已检查；其后G2方法段修订后的完整渲染见检索实现对照收据。
 - [方法与冻结协议对照](results/paper/condensed_candidate_20261028_01/method_protocol_audit_20261028.json)核对了10项可机器判定的运行设置；[检索实现对照](results/paper/condensed_candidate_20261028_01/retrieval_implementation_audit_20261028.json)再将候选合并、整块预算跳过和G2/G3上下文关系与冻结代码核对。9项实现事实通过；这些检查不代表整篇方法和数据语义终审已完成。
@@ -16,6 +16,7 @@
 - [正文数字与证据供给叙述审计](results/paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)将355/400范围、主要配对效应及缺失界、来源共现和位置覆盖对应到原分析文件；审计范围不含355条回答的完整语义复核或法规时点适用性验证。
 - [摘要版本差异审计](results/paper/condensed_candidate_20261028_01/current_candidate_delta_audit_20261028.json)记录摘要修订版相对其父稿仅正文段落3、6变动；其后方法段45单独修订，见上方方法修订审计。12张表格单元格与21个嵌入媒体资源哈希仍一致。该差异核对不替代全文语义审查。
 - [当前摘要论断核验](results/paper/condensed_candidate_20261028_01/abstract_claim_alignment_current_candidate_20261028_v3.json)绑定当前主文哈希，核对中英文摘要的样本数、观察配对效应与区间、缺失界、来源同现和位置覆盖口径；6项检查通过。该记录不是全稿语义审核，也不验证答案正确性或语义检索召回。
+- [当前主稿版本连续性桥接审计](results/paper/condensed_candidate_20261028_01/current_candidate_audit_bridge_20261028.json)将继承的统计、摘要、方法、交叉引用、推理预算和法规审计映射到当前候选哈希；确认表1–11与统计审计底稿逐格一致、表12与摘录核验底稿逐格一致。该桥接只核对版本连续性和已审范围，不替代355条回答的逐条语义复核、法规历史适用性核验或整稿终审。
 
 ## 2026-10-28 法规日期与因果措辞复核（历史候选）
 
