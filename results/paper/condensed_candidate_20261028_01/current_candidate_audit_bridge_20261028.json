@@ -200,6 +200,22 @@
       "table_cells": "Table 5, first-column rows 3,4,5,6,8",
       "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
       "status": "current supplement contains S1 budget replay and S2 BM25/localization; source removal and service-version comparisons are explicitly labeled exploratory results in the main manuscript"
+    },
+    {
+      "scope": "method protocol and frozen retrieval implementation claims rebound to the current candidate",
+      "paragraph_indices_zero_based": [
+        44,
+        45,
+        49,
+        55,
+        65,
+        70,
+        75,
+        76,
+        78
+      ],
+      "receipt": "current_candidate_method_claim_rebind_20261028.json",
+      "status": "all nine scoped normalized paragraph hashes are identical to the previously audited predecessor; source protocol and audit hashes are recorded in the rebind receipt"
     }
   ],
   "limitations": [
