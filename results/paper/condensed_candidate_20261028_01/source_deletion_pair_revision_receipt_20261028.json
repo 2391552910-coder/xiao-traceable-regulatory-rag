@@ -1,0 +1,99 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_source_deletion_reanalysis_revision",
+  "parent_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx",
+    "sha256": "ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002"
+  },
+  "current_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源缺失配对口径修订候选稿_待终审.docx",
+    "sha256": "fb22a6c4e8828929d7b3cbb8fe881e98c0ffbe118b1a0b3faad933dd175a2f02",
+    "paragraph_count": 192,
+    "table_count": 12,
+    "media_part_count": 21
+  },
+  "delta": {
+    "changed_body_paragraph_indices_zero_based": [
+      139
+    ],
+    "tables_text_identical": true,
+    "all_embedded_media_sha256_identical": true,
+    "changed_package_parts": [
+      "word/document.xml"
+    ]
+  },
+  "analysis_receipt": {
+    "path": "results/paper/condensed_candidate_20261028_01/source_deletion_pair_audit_20261028.json",
+    "sha256": "3e3f2f6a4ae09b3c29fdc970b2d2f5ecf2e6f1b04f34d2c66c19e2497e5042b6",
+    "new_model_calls": 0,
+    "new_human_labels": 0
+  },
+  "render": {
+    "method": "WPS 12.0 read-only ExportAsFixedFormat; PDFium raster at 120 dpi",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_source_deletion_pair_20261028/paper_native.pdf",
+    "pdf_sha256": "02c6d707ac1665dfad1e00b99c5a6db145e60e51366a55a1da21873aca8a0778",
+    "page_count": 21,
+    "png_hashes": {
+      "page-01.png": "6012ba33d5906b4ce208077053bfd102e8c16c70acb0490aed4c2c48312187df",
+      "page-02.png": "7e1aaca188201854a5c79ee7b92395780e27796fda62ef43ce88811a5ceefff0",
+      "page-03.png": "95ca7da169c0c99288135ecadc5daf97908e4c7664a1e62c8cbdd57dc2cf7398",
+      "page-04.png": "2bc94afb6daa1481867fb4e8fcffb232dc90088fd901c7edc4e1c639955e579e",
+      "page-05.png": "c18465dccf7343fd74a19026044e854420823e936f57efe7815ae88c50dae488",
+      "page-06.png": "1390ff71020ea6a1cb57daaf73354150c7a42bf68f7437d73821449d57f8de76",
+      "page-07.png": "a85ec077bee457443798f81a04f6bdb2c54b6cebc1fd7723a9496e1fcdb1a2be",
+      "page-08.png": "43ffa9a519d691c05bb38ccb61040f90bde376814a62efc764912c98d426e400",
+      "page-09.png": "615c3b969ad0954d851b6f93eb9742f8c419d34fa8bdc983d8e1bfaa4c684216",
+      "page-10.png": "95d1511983f19e32e55c7d4961c9968939a9f304bcb7832536119cf7abe4eeb0",
+      "page-11.png": "715856bbb6565c143a4147b91542a4aac602f79abc993a3805f50bb17f2f7773",
+      "page-12.png": "fa9bed21a8bfe5102828b0a7412f01e1dbcd7812c32b1bd849fb5c275be606cf",
+      "page-13.png": "b86a64804ced012cfaf95ad627d8fb443a7cc1ae68f94b63204826307b888bb3",
+      "page-14.png": "340b858731809fb4d92679b5e99de30b009d002699bf53ee3ed608bd142b8bbc",
+      "page-15.png": "533117b6cb83322a7c1a8676d293561fef5a838b9a24a2fbcd700c6317e34f22",
+      "page-16.png": "e764db04e32e0a07013ac4ddfd1ab967ded3240f8107690aee178654c8d62c35",
+      "page-17.png": "1c111d66c06c2fdf5940f949287b36e47192370d028009cdfab756b0a33c9bd9",
+      "page-18.png": "da2f8499ed76771d784bc317ae4318e97e35d416d0769c1c097559af04766947",
+      "page-19.png": "2ff9af50ab78f252bd18fda450b4bd874f0fb90f52cfff0e065ce3e0e8dd14b3",
+      "page-20.png": "65406c801dceb6cd5be73084b249ad0ccac3688130fea04432a84caba5b1e57c",
+      "page-21.png": "eee519f3c19adcd053f5afbf2d4710ee875cbaf327747be4c2770b13a6b71fb6"
+    },
+    "pixel_diff_vs_parent_pages_changed": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "pixel_diff_vs_parent_pages_unchanged": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      21
+    ],
+    "visual_inspection_pages": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "visual_inspection_result": "No clipping, overlap, broken paragraph, or reference/page-number issue observed."
+  },
+  "interpretation_limits": [
+    "Observed paired comparisons are conditional on 15 of 20 questions; five G3 outputs are missing in each source-removal contrast.",
+    "Sharp score bounds over all 20 planned source-removal questions include zero.",
+    "Source deletion changes both evidence content and context length and cannot isolate a pure source-role effect.",
+    "This revision does not alter primary contrasts, scoring, tables, figures, references, or conclusions."
+  ]
+}
+

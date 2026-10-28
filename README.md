@@ -1,13 +1,9 @@
 # 年报与法规双源检索增强生成
 
-## 2026-10-28 评分量表与相关工作表修订候选
+## 2026-10-28 回放范围限定修订候选
 
-- 最新中文主文候选：[评测框架表述收紧稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx)，SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`。仅收紧相关工作中ALCE、RAGAs与RAGChecker评价范围的概括；评分、统计和实验结果未变。WPS渲染21页，仅第3页版面变化并已复核；[修订收据](results/paper/condensed_candidate_20261028_01/evaluation_framework_wording_revision_receipt_20261028.json)与[当前引文版本绑定记录](results/paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028_02.json)。
-- 配套[评分量表与检索诊断补充材料](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，SHA-256 `8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a`。补充表S0逐项列出四维度的0/1/2锚点、U值和计分范围；S1–S3保留预算回放与BM25诊断。WPS渲染为21页主稿、3页补充材料，所有页面均已检查。
-- [评分量表修订收据](results/paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json)绑定原始评分表SHA、两份DOCX、渲染PDF及页面核验结果。没有新增模型调用或人工标签。
-- [表1相关工作修订收据](results/paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json)记录新增行、21页WPS渲染及第4–6页视觉复核；其他18页与已检查版本像素一致。没有新增模型调用或人工标签。
-- 已同步的[英文工作译稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_synced_20261028.docx)依据当前中文主稿 SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`，补入ALCE/RAGAs/RAGChecker范围说明、事后评分量表披露和CFinRAG相关工作行；对应[英文补充材料](results/paper/english_translation_current_20261028_01/Supplementary_Materials_Dual_Source_RAG_Scoring_Rubric_and_Retrieval_Diagnostics_English_20261028.docx)。WPS只读渲染为23页主稿和4页补充材料，变更页与补充材料已完成视觉检查；译稿仍是工作译本，未按目标期刊模板排版。版本及渲染绑定见[同步收据](results/paper/english_translation_current_20261028_01/english_translation_sync_receipt_20261028.json)。
-- 新候选仍待整稿事实/引文终审、作者信息和目标期刊模板适配，不代表已达到二区录用标准。
+- 最新中文主文候选：[回放范围限定修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_回放范围限定候选稿_待终审.docx)，SHA-256 `dd442f55b34faec6b31a330578ed55df66918e8c719aeec22304e49608c2be91`。将讨论段回放陈述限定为一个问题、8种检索配置、16次成功候选检索的通道候选/融合/最终排序算术核验，并明确其不验证语义相关性、主实验全量可回放性或人工复核效益。没有新增模型调用或人工标签。WPS渲染21页；仅第17页变化并完成视觉复核，其他20页与上一版像素一致。版本及渲染见[修订收据](results/paper/condensed_candidate_20261028_01/replay_scope_revision_receipt_20261028.json)。
+- 来源删除配对分析、量表和检索诊断补充材料、英文工作译稿及其证据状态见下方历史候选条目和各自收据；当前稿仍需整稿终审及目标期刊模板适配，不代表已达到二区录用标准。
 
 ## 2026-10-28 评分量表修订前的统一主文候选稿（已被后续候选取代）
 
@@ -288,3 +284,4 @@ python experiments/08_eval_embedding_rerank.py --backend tfidf --no-rerank --out
 
 
 </details>
+
