@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "manuscript": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
+  "manuscript_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+  "sources": {
+    "results\\runs\\primary_generation_only_reanalysis_windows_20261028_01\\analysis.json": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910",
+    "results\\runs\\primary_generation_only_reanalysis_windows_20261028_01\\per_output_scores_primary_model_only.json": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124",
+    "results\\runs\\primary_provider_only_robustness_20261028_02\\robustness_audit_primary_provider_only.json": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+    "results\\paper\\substantial_revision_20261023_01\\retrieval\\baseline_vs_cached_at6k.csv": "2afffdb6ad76e5b01d30fadc3f08c54964e11f08b8a877a0fe295e53436645c1"
+  },
+  "checked": [
+    "Table 6 condition counts and reviewer means",
+    "Table 7 paired effects and seed-20261028 clustered intervals",
+    "Table 8 paired company-macro dimension effects",
+    "Table 9 agreement and reviewer marginals",
+    "Table 10 leave-one-company-out ranges, missing bounds, win/tie/loss counts",
+    "Table 11 frozen retrieval source/location proxies",
+    "References 1-29 cited and present"
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitation": "Does not verify every narrative factual claim, legal time applicability, or semantic support of all 355 answers."
+}

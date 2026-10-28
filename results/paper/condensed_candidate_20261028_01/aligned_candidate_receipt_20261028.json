@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Align the current supplier-output manuscript citation and its supplement without adding experiments.",
+  "source_files": {
+    "main": {
+      "path": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_精简主文_供应商口径同步候选稿_待渲染验收.docx",
+      "sha256": "f56cdd6a9f3f0689897f7f7acaa5d0207b2425c4db506f47f24ccb0f38aae008"
+    },
+    "supplement": {
+      "path": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_补充材料候选稿_待终审.docx",
+      "sha256": "416cb6bfbc840ae4f3a446edeea19dca9dc2ec31a6d472a1011f8076d60e2c18"
+    }
+  },
+  "outputs": {
+    "main": {
+      "path": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐候选稿_待终审.docx",
+      "sha256": "f0d096bc4afb4a757990548bb544db45b7c785fdb83e472c62aa841de64b0627",
+      "structure": {
+        "paragraphs": 190,
+        "tables": 12,
+        "inline_drawings": 8
+      },
+      "package_preservation": {
+        "total_parts": 39,
+        "changed_parts": [
+          "word/document.xml"
+        ],
+        "unchanged_parts_except_document_xml": 38
+      }
+    },
+    "supplement": {
+      "path": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx",
+      "sha256": "a35bb3b60af4bb7ecdf33b60e2f803d37e9ac87b91df70d877eb6bfeb1658c2d",
+      "structure": {
+        "paragraphs": 18,
+        "tables": 3,
+        "inline_drawings": 1
+      },
+      "package_preservation": {
+        "total_parts": 35,
+        "changed_parts": [
+          "word/document.xml"
+        ],
+        "unchanged_parts_except_document_xml": 34
+      }
+    }
+  },
+  "content_changes": {
+    "main": "Changed the single cross-reference from supplementary sections S3-S4 to S1-S2.",
+    "supplement": "Retained budget replay and BM25 localization diagnostics; renumbered these as S1-S2 and tables/figure S1-S3; removed topic/version/output-structure/resource sections not cited by the current main text.",
+    "new_model_calls": 0,
+    "new_human_labels": 0,
+    "analysis_results_changed": false
+  },
+  "rendering": {
+    "main": {
+      "method": "WPS native read-only ExportAsFixedFormat",
+      "success": true,
+      "source_unchanged": true,
+      "pdf_sha256": "386bf9b0561a12f1fdfc048f35f008186e279abf96cfaf93ef0fd9812fd93ff0",
+      "pages": 21,
+      "png_directory": "results\\paper\\condensed_candidate_20261028_01\\render_aligned_main_20261028\\qa_120dpi",
+      "visual_review": "Pages 1-9 and 11-21 pixel-identical to the prior fully reviewed rendering. Page 10 differs by 167 pixels due solely to the S1-S2 cross-reference and was inspected at original resolution; no clipping or overlap."
+    },
+    "supplement": {
+      "method": "WPS native read-only ExportAsFixedFormat",
+      "success": true,
+      "source_unchanged": true,
+      "pdf_sha256": "bef4abd42e79856803bc5100d16d0fcb6a83dbbb0654b4c75d464255885fcd84",
+      "pages": 3,
+      "png_directory": "results\\paper\\condensed_candidate_20261028_01\\render_trimmed_supplement_20261028\\qa_120dpi",
+      "visual_review": "All 3 pages inspected at original resolution; tables and figure are legible, with no clipping or overlap."
+    }
+  },
+  "scope_limit": "This receipt covers cross-reference alignment, package-part preservation, rendering, and visual layout only; it does not establish full semantic/statistical review, journal-template compliance, or journal acceptance."
+}

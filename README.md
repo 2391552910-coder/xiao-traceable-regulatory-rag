@@ -1,5 +1,13 @@
 # 年报与法规双源检索增强生成
 
+## 2026-10-28 精简主文候选稿（最新复核版）
+
+- 当前候选主文：[精简主文 DOCX](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx)，21页、12表、8图；配套[补充材料 DOCX](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx)，3页、3表、1图。稿件仍待全文语义终审、作者元数据及目标期刊格式适配，不代表达到二区录用标准。
+- 表6–11依据355份供应商评分、2026-10-28种子下20,000次公司聚类bootstrap及冻结检索CSV完成数值核对；[数字核对收据](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)、[补充编号与渲染收据](results/paper/condensed_candidate_20261028_01/aligned_candidate_receipt_20261028.json)和[bootstrap同步收据](results/paper/condensed_candidate_20261028_01/bootstrap_sync_receipt_20261028.json)说明检查范围和限制。输入、稿件及收据的SHA-256见[清单](results/paper/condensed_candidate_20261028_01/SHA256_manifest_20261028.json)。
+- 本次只复核既有数据，没有新增模型调用或人工标签。数字审计不覆盖全文事实、法规时点适用性及355条回答的语义支持。跨年/Agent仍是2家公司、12题的小样本探索，跨模型族实验未完成。主实验60题的相关性双人标注尚未回收，因此不报告该主实验Precision、Recall或nDCG。
+- 下一步先完成主张、引文和法规版本边界的全文终审，再收回60题检索盲审并仲裁；补齐作者信息与目标模板。只有获得独立模型或年份数据后，才启动相应对照。
+
+
 ## 2026-10-28 供应商输出统计更正（下文旧版本记录仅作追溯）
 
 - 当前供应商生成口径为主实验147/180（G1/G2/G3：52/60、47/60、48/60），所有条件355/400。旧稿中的178/180、386/400包含助手会话补写，其中31条曾被评分，不能计入供应商输出结果。

@@ -1,0 +1,51 @@
+{
+  "generated": "2026-10-28",
+  "purpose": "Current manuscript and supplement, audit receipts, and exact source inputs used by the numeric audit.",
+  "files": [
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
+      "bytes": 1866561,
+      "sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx",
+      "bytes": 1560057,
+      "sha256": "a35bb3b60af4bb7ecdf33b60e2f803d37e9ac87b91df70d877eb6bfeb1658c2d"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/aligned_candidate_receipt_20261028.json",
+      "bytes": 3678,
+      "sha256": "e8a86daca2ae90b2c987240ffe70e21fa9112213f718b0188a17328ce17e16ba"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/bootstrap_sync_receipt_20261028.json",
+      "bytes": 2624,
+      "sha256": "946d110196bbe890f5af8cf517903a4d457efc219b2eac17c8266d667a0c680f"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json",
+      "bytes": 1640,
+      "sha256": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94"
+    },
+    {
+      "path": "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json",
+      "bytes": 17315,
+      "sha256": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910"
+    },
+    {
+      "path": "results/runs/primary_generation_only_reanalysis_windows_20261028_01/per_output_scores_primary_model_only.json",
+      "bytes": 216221,
+      "sha256": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124"
+    },
+    {
+      "path": "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json",
+      "bytes": 225094,
+      "sha256": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca"
+    },
+    {
+      "path": "results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.csv",
+      "bytes": 4403,
+      "sha256": "2afffdb6ad76e5b01d30fadc3f08c54964e11f08b8a877a0fe295e53436645c1"
+    }
+  ]
+}
