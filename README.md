@@ -1,11 +1,11 @@
 # 年报与法规双源检索增强生成
 
-## 2026-10-28 当前统一主文候选稿
+## 2026-10-29 当前统一主文候选稿
 
-- 当前主文统一为[更正统计及摘要、表12修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx)，21页、12表、8图。它以精简主文的355/400供应商输出统计及2026-10-28 bootstrap 复算为底稿，合入最新核实的中英文摘要与表12原始回答前120字符摘录；表12引用ID为A1。配套补充材料为同目录下“精简补充材料_预算与BM25检索诊断候选稿”。
-- [统一收据](results/paper/condensed_candidate_20261028_01/unified_candidate_receipt_20261028.json)绑定输出、输入和WPS PDF哈希。WPS只读渲染21页，所有页面已检查；与数值底稿相比，仅第1–3及16–20页发生像素变化。剩余页面逐像素一致。完整版语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
-- [数值复核](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)与[表12摘录及摘要复核](results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json)分别记录两部分来源。聚焦稿仍保存为历史快照；其386/400和+0.250统计口径已被供应商重分析取代，不可再作为当前主文。
-- [正文数字与证据供给叙述审计](results/paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)将355/400范围、主要配对效应及缺失界、来源共现和位置覆盖对应到原分析文件；审计范围不含355条回答的完整语义复核或法规时点适用性验证。
+- 当前主文为[推理预算口径校准候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx)，SHA-256 `da01d62b3aea62a9c1f530a8560b7cfd798d2e182b7db07cca59b0b8a9dbfb48`，21页、12表、8图。该版在原统一主文基础上修正同系列服务别名比较的推理预算描述；两种请求均未发送 `reasoning_effort`，供应商文档列出的默认档位不同，实际服务端档位和底层checkpoint revision未独立核实。该比较不能解释为等预算模型权重比较或跨厂商模型族泛化；无新增模型调用或人工标签。配套材料为[精简补充材料](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx)。
+- [推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录请求来源哈希与限定范围。配套[WPS渲染PDF](results/paper/condensed_candidate_20261028_01/render_wps_reasoning_budget_20261029/paper_native.pdf)和[只读渲染收据](results/paper/condensed_candidate_20261028_01/render_wps_reasoning_budget_20261029/native_render_receipt.json)绑定本版哈希；变化页8、18–20已检查。既有[合并验收收据](results/paper/condensed_candidate_20261028_01/merged_candidate_validation_receipt_20261028.json)绑定前一版，继承检查边界见专项收据。
+- [数值复核](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)、[叙述量化复核](results/paper/condensed_candidate_20261028_01/narrative_quantitative_audit_20261028.json)与[表12摘录及摘要复核](results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json)对应继承的合并主文内容；[已提交的前序主文快照](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx)保留作版本追溯。整稿语义终审、作者元数据和投稿模板适配仍未完成，不能据此声称达到二区录用标准。聚焦稿旧有386/400和+0.250已被供应商重分析取代，不可继续引用。
+
 
 ## 2026-10-28 法规日期与因果措辞复核（历史候选）
 
