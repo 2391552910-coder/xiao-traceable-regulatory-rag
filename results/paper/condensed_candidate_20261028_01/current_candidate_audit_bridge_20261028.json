@@ -1,0 +1,134 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_for_version_continuity_and_scoped_receipt_mapping",
+  "current_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_检索规则补明候选稿_待终审.docx",
+    "sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02",
+    "paragraph_count": 190,
+    "table_count": 12,
+    "drawing_objects": 8
+  },
+  "version_comparisons": [
+    {
+      "base": "numeric_content_audit_20261028.json manuscript",
+      "base_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "current_vs_base_changed_body_paragraph_indices_zero_based": [
+        3,
+        6,
+        19,
+        45,
+        70,
+        91,
+        93,
+        105,
+        125,
+        139,
+        146,
+        148,
+        179
+      ],
+      "table_cells_identical_current_vs_base": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "base": "narrative_quantitative_audit_20261028.json candidate",
+      "base_sha256": "8bc095a505c70b4dabf569f175f1a1c35922345eafec1375b7f298df1244e9ee",
+      "current_vs_base_changed_body_paragraph_indices_zero_based": [
+        3,
+        6,
+        19,
+        45,
+        70,
+        91,
+        93,
+        105,
+        125,
+        148,
+        179
+      ],
+      "all_12_tables_identical": true
+    },
+    {
+      "base": "current_candidate_claim_audit_20261028.json Table 12 source candidate",
+      "base_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
+      "table_12_cells_identical": true
+    }
+  ],
+  "receipt_mapping": [
+    {
+      "scope": "Chinese and English abstract claims and wording",
+      "paragraph_indices_zero_based": [
+        3,
+        6
+      ],
+      "receipt": "abstract_claim_alignment_current_candidate_20261028_v3.json",
+      "status": "bound_to_current_candidate"
+    },
+    {
+      "scope": "HiREC description scope in related work",
+      "paragraph_indices_zero_based": [
+        19
+      ],
+      "receipt": "hirec_scope_revision_receipt_20261028.json; retrieval_corpus_citation_audit_20261028.md",
+      "status": "targeted wording correction; upstream citation audit alone is not a full current-version bibliography review"
+    },
+    {
+      "scope": "retrieval quota and A/R interleave implementation",
+      "paragraph_indices_zero_based": [
+        45
+      ],
+      "receipt": "retrieval_implementation_audit_20261028.json; retrieval_rule_revision_audit_20261028.json",
+      "status": "bound to current candidate and frozen code hash"
+    },
+    {
+      "scope": "service alias and reasoning budget limitations",
+      "paragraph_indices_zero_based": [
+        70,
+        148,
+        179
+      ],
+      "receipt": "reasoning_budget_claim_audit_20261029.json",
+      "status": "paragraphs match audited candidate; receipt covers these scoped edits"
+    },
+    {
+      "scope": "table and figure cross references",
+      "paragraph_indices_zero_based": [
+        91,
+        93,
+        105,
+        125
+      ],
+      "receipt": "cross_reference_audit_20261029.json",
+      "status": "inherited navigation additions; figures, tables, values and conclusions unchanged in that edit"
+    },
+    {
+      "scope": "quantitative prose and the unchanged law-version paragraph",
+      "paragraph_indices_zero_based": [
+        139,
+        146
+      ],
+      "receipt": "narrative_quantitative_audit_20261028.json; current_candidate_regulatory_source_audit_20261028.md",
+      "status": "paragraphs match quantitative-audit base; law audit separately rebound to current candidate"
+    }
+  ],
+  "limitations": [
+    "This bridge demonstrates text/table continuity between specifically hashed candidates and maps scoped receipts; it does not provide a fresh semantic review of every manuscript claim.",
+    "It does not validate every one of the 355 scored answers against source evidence, nor establish legal applicability at each historical event date.",
+    "Earlier bibliography audits are scoped to their bound manuscript hashes; altered citation text and the entire final reference list still require a consolidated source-by-source signoff.",
+    "This is not an author-metadata review, target-journal template check, or acceptance assessment."
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0
+}
+
