@@ -1,7 +1,7 @@
-"""Add table-level and page-boundary annotation sheets to an existing packet.
+"""Prepare a two-stage blind annotation packet for the table-parser holdout.
 
-The script exports blank review templates only. It does not assign labels or
-compute accuracy from parser predictions.
+Gold tables and continuation links are annotated from original page images
+before parser predictions are revealed. This script never creates labels.
 """
 from __future__ import annotations
 
@@ -10,147 +10,194 @@ import csv
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 RUNS = ROOT / "results" / "runs"
 DEFAULT_PACKET = RUNS / "annual_table_holdout_review_v17_20261028_02"
 
 
-def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
-    if path.exists():
-        raise FileExistsError(f"Refusing to overwrite existing annotation file: {path}")
+def write_csv(path: Path, rows: list[dict], *, replace_existing: bool = False) -> None:
+    if path.exists() and not replace_existing:
+        raise FileExistsError(f"Choose a fresh packet or pass --replace-existing: {path}")
+    if not rows:
+        raise ValueError(f"Refusing to create empty annotation sheet: {path}")
     with path.open("w", encoding="utf-8-sig", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
 
 
-def prepare(packet: Path) -> dict:
-    audit_path = packet / "holdout_audit.json"
-    audit = json.loads(audit_path.read_text(encoding="utf-8"))
-    table_rows: list[dict] = []
-    continuation_rows: list[dict] = []
-    page_rows: list[dict] = []
+def prepare(packet: Path, *, replace_existing: bool = False) -> dict:
+    audit = json.loads((packet / "holdout_audit.json").read_text(encoding="utf-8"))
+    gold_tables: list[dict] = []
+    predicted_tables: list[dict] = []
+    gold_continuations: list[dict] = []
+    accepted_continuations: list[dict] = []
+    report_pages: dict[str, list[int]] = {}
 
     for report in audit["reports"]:
         document = json.loads((RUNS / report["run"] / "document.json").read_text(encoding="utf-8"))
         source = document["source"]
         stock = source["stock"]
+        sha = document["source_pdf_sha256"]
         pages = sorted(document["selection"]["selected_pages"])
-        tables_by_page: dict[int, list[dict]] = {page: [] for page in pages}
+        report_pages[stock] = pages
+
+        # Blind gold inventory: one blank slot per page. Reviewers duplicate a
+        # row for each additional table or mark gold_table_id=NONE explicitly.
+        for page in pages:
+            gold_tables.append({
+                "stock_code": stock,
+                "report_year": source["year"],
+                "source_pdf_sha256": sha,
+                "physical_page": page,
+                "gold_table_id": "",
+                "gold_category": "",
+                "gold_bbox_normalized_xyxy": "",
+                "review_complete": "",
+                "independent_reviewer": "",
+                "comments": "",
+            })
+
         chains_by_table = {}
         for chain in document["logical_tables"]:
             for table_id in chain["table_ids"]:
                 chains_by_table[table_id] = chain
         for table in document["tables"]:
-            tables_by_page.setdefault(table["page"], []).append(table)
             chain = chains_by_table.get(table["table_id"], {})
-            table_rows.append({
-                "row_kind": "prediction",
+            x0, y0, x1, y1 = table["bbox"]
+            width, height = table["page_width"], table["page_height"]
+            normalized = [x0 / width, y0 / height, x1 / width, y1 / height]
+            predicted_tables.append({
                 "stock_code": stock,
                 "report_year": source["year"],
-                "source_pdf_sha256": document["source_pdf_sha256"],
+                "source_pdf_sha256": sha,
                 "physical_page": table["page"],
                 "prediction_table_id": table["table_id"],
-                "predicted_category": table.get("category", ""),
+                "predicted_category": table.get("category", "unclassified_table"),
                 "predicted_chain_id": chain.get("chain_id", ""),
                 "predicted_chain_pages": json.dumps(chain.get("pages", []), ensure_ascii=False),
-                "bbox_page_coordinates": json.dumps(table.get("bbox", []), ensure_ascii=False),
+                "pred_bbox_normalized_xyxy": json.dumps(normalized),
                 "gold_table_id": "",
-                "gold_category": "",
                 "match_status": "",
                 "independent_reviewer": "",
                 "comments": "",
             })
 
-        # One blank slot per selected page lets a reviewer add each missed table
-        # without requiring predictions to define the gold table inventory.
-        for page in pages:
-            page_rows.append({
+        # Blind gold continuation ledger: include every contiguous physical
+        # boundary where both pages were in scope, even if neither had a table
+        # prediction. Add rows for each true link, or a single NONE row.
+        for left_page, right_page in zip(pages, pages[1:]):
+            if right_page != left_page + 1:
+                continue
+            gold_continuations.append({
                 "stock_code": stock,
                 "report_year": source["year"],
-                "source_pdf_sha256": document["source_pdf_sha256"],
-                "physical_page": page,
-                "page_review_complete": "",
-                "gold_table_id": "",
-                "gold_category": "",
-                "missed_by_parser": "",
+                "source_pdf_sha256": sha,
+                "left_page": left_page,
+                "right_page": right_page,
+                "gold_left_table_id": "",
+                "gold_right_table_id": "",
+                "gold_continuation": "",
+                "review_complete": "",
                 "independent_reviewer": "",
                 "comments": "",
             })
 
-        decisions = {
-            (decision["left_table_id"], decision["right_table_id"]): decision
-            for decision in document.get("continuation_decisions", [])
-        }
-        for left_page, right_page in zip(pages, pages[1:]):
-            if right_page != left_page + 1:
-                continue
-            left_tables = tables_by_page.get(left_page, [])
-            right_tables = tables_by_page.get(right_page, [])
-            if not left_tables and not right_tables:
-                continue
-            pairs = [(left, right) for left in left_tables for right in right_tables]
-            if not pairs:
-                pairs = [(left, None) for left in left_tables] or [(None, right) for right in right_tables]
-            for left, right in pairs:
-                left_id = left["table_id"] if left else ""
-                right_id = right["table_id"] if right else ""
-                decision = decisions.get((left_id, right_id), {})
-                continuation_rows.append({
+        for decision in document.get("continuation_decisions", []):
+            if decision.get("accepted"):
+                accepted_continuations.append({
                     "stock_code": stock,
                     "report_year": source["year"],
-                    "source_pdf_sha256": document["source_pdf_sha256"],
-                    "left_page": left_page,
-                    "right_page": right_page,
-                    "left_prediction_table_id": left_id,
-                    "right_prediction_table_id": right_id,
-                    "parser_link_attempted": "yes" if decision else "no",
-                    "parser_link_accepted": str(decision.get("accepted", "")).lower(),
-                    "parser_link_reasons": json.dumps(decision.get("reasons", []), ensure_ascii=False),
-                    "gold_continuation": "",
-                    "gold_left_table_id": "",
-                    "gold_right_table_id": "",
-                    "independent_reviewer": "",
-                    "comments": "",
+                    "source_pdf_sha256": sha,
+                    "left_page": decision["physical_pages"][0],
+                    "right_page": decision["physical_pages"][1],
+                    "left_prediction_table_id": decision["left_table_id"],
+                    "right_prediction_table_id": decision["right_table_id"],
+                    "accepted": True,
                 })
 
-    write_csv(packet / "table_review_template.csv", table_rows, list(table_rows[0]))
-    write_csv(packet / "missed_table_template.csv", page_rows, list(page_rows[0]))
-    write_csv(packet / "continuation_review_template.csv", continuation_rows, list(continuation_rows[0]))
-    instructions = """# 留出复核标注说明
+    write_csv(packet / "gold_table_blind_template.csv", gold_tables, replace_existing=replace_existing)
+    write_csv(packet / "prediction_gold_match_template.csv", predicted_tables, replace_existing=replace_existing)
+    write_csv(packet / "gold_continuation_blind_template.csv", gold_continuations, replace_existing=replace_existing)
+    manifest_path = packet / "accepted_continuation_predictions.jsonl"
+    if manifest_path.exists() and not replace_existing:
+        raise FileExistsError(f"Choose a fresh packet or pass --replace-existing: {manifest_path}")
+    manifest_path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in accepted_continuations), encoding="utf-8")
 
-## 盲审顺序
+    instructions = """# 留出集双阶段盲审与计分说明
 
-1. 先只看 `blind_review.html` 的原始PDF页图，填写 `page_review_template.csv`，记录每页是否存在本项目范围内的治理表格及漏检数量。对有预测表格的页，`false_positive_table_ids` 必须明确填 `none` 或分号分隔的误检表格ID。
-2. 用 `missed_table_template.csv` 为每页填写 `page_review_complete=yes`；每个漏检表格新增一行，填 `gold_table_id`（人工编号）、`gold_category`、`missed_by_parser=yes`、复核者和备注。确认本页没有漏检时，在原空白行填写 `missed_by_parser=no` 和复核者；不完整复核保持 `page_review_complete` 为空。
-3. 再查看 `review.html` 和 `page_predictions.jsonl`。在 `table_review_template.csv` 中逐条预测填写 `match_status=matched` 或 `false_positive`；匹配项填 `gold_table_id` 和人工类别。分类只能按页面证据确定；证据不足填 `unclassified_table`，不要猜测。
-4. 在 `continuation_review_template.csv` 中逐条填写 `gold_continuation=yes/no`。若为续表，补填人工确认的左右表编号。即使解析器没有接受连接，也要依据原页独立判断。
-5. 每位复核者单独复制并填写整套模板；不要把多人意见先合并成一个标签。解决分歧后另存裁决版，保留原始复核表。
+## 阶段一：只做盲标，不查看解析预测
 
-## 可计算范围
+只打开同目录 `blind_review.html`，不要打开 `review.html`、`page_predictions.jsonl`、`prediction_gold_match_template.csv` 或 `accepted_continuation_predictions.jsonl`。
 
-- 表格检测：逐表 TP/FP/FN、Precision、Recall、F1；页级有/无表格的 Precision、Recall、F1 另算。
-- 类别：对匹配表格计算逐类 Precision、Recall、F1，并将漏检表计为对应类别 FN。
-- 跨页连接：根据 `gold_continuation` 与解析器是否接受连接计算 TP/FP/FN、Precision、Recall、F1。
-- 指标仅代表这三份事后选择的报告、治理关键词页及相邻页，不代表随机样本、全报告任意表格或端到端RAG效果。
+1. 在 `gold_table_blind_template.csv` 为每页登记所有实际表格区域（包括治理关键词页邻页上出现的其他主题表格）。填写唯一人工 `gold_table_id`、人工类别及归一化框 `[x0,y0,x1,y1]`（范围0–1，按整页宽高归一化）。每页无表时将原行 `gold_table_id` 填 `NONE`、`review_complete=yes` 和复核者。若有表格，原行填写一个表格；每多一个表格复制一行并填写另一个ID。类别按可见表头/内容填写；无明确领域类别的真实表格标为 `other_table`，不要遗漏。
+2. 在 `gold_continuation_blind_template.csv` 检查每个相邻物理页边界。无续表时填 `gold_continuation=no`；有一组续表时填 `yes` 并填写左右人工表格ID；同一边界有多组续表时复制行。每个边界必须有 `review_complete=yes` 和复核者。若某一页没有列入复核包，不能推断跨该页没有续表；本指标只覆盖模板中的相邻页边界。
+3. 保存第一阶段副本并记录复核者、日期及文件哈希。第二位复核者应独立复制原始空模板完成同样工作。先合并/裁决盲标分歧，再查看预测。
 
-`score_annual_table_review.py` 只在表级和边界级标签完整且包含复核者身份时计分。空白模板不是结果；模型或作者自检不能标记为独立人工复核。跨页指标限于模板枚举的相邻页预测区域组合。
+## 阶段二：揭示预测并做一对一匹配
+
+完成并封存阶段一后，才查看 `review.html` 和 `page_predictions.jsonl`。在 `prediction_gold_match_template.csv` 为每个预测表格填 `match_status=matched` 或 `false_positive`。匹配项填阶段一的 `gold_table_id`；误检不填金表ID。每个人工金表最多匹配一个预测表。类别使用阶段一封存的金表类别，不能因为解析器输出而改写。
+
+## 计分与边界
+
+`score_annual_table_review.py` 要求三张标签表完整、引用的金表ID有效且逐页误检/漏检清楚，然后计算页级和表级Precision、Recall、F1，逐类指标，以及跨页连接指标。跨页指标以预测器实际接受的边作为预测，和阶段一金续表边集合匹配；被漏检的表或边将计为FN。
+
+每位复核者应在独立副本上分别计分并保留原表；分歧需另存裁决表。复核者字段只记录身份，不能由脚本证明其独立性。样本是事后选择的三份2024报告，仅覆盖治理关键词页及包内相邻页；不能代表随机样本、完整年报、跨年度泛化或端到端RAG效果。空白模板、作者/AI自查都不是独立人工指标。
 """
     instructions_path = packet / "review_instructions.md"
-    if instructions_path.exists():
-        raise FileExistsError(f"Refusing to overwrite existing instructions: {instructions_path}")
+    if instructions_path.exists() and not replace_existing:
+        raise FileExistsError(f"Choose a fresh packet or pass --replace-existing: {instructions_path}")
     instructions_path.write_text(instructions, encoding="utf-8")
-    return {"status": "templates_created_blank", "predicted_tables": len(table_rows),
-            "review_pages": len(page_rows), "adjacent_boundary_pairs": len(continuation_rows),
+
+    # The original page-level worksheet used post-unblinding fields. Replace it
+    # with a lightweight page inventory index to avoid mixed blind/unblind use.
+    page_index = []
+    for stock, pages in report_pages.items():
+        report = next(r for r in audit["reports"] if r["stock_code"] == stock)
+        for page in pages:
+            page_index.append({"stock_code": stock, "report_year": report["report_year"],
+                               "source_pdf_sha256": report["source_pdf_sha256"],
+                               "physical_page": page,
+                               "gold_table_present": "",
+                               "review_complete": "",
+                               "independent_reviewer": "",
+                               "comments": ""})
+    write_csv(packet / "page_review_template.csv", page_index, replace_existing=replace_existing)
+
+    audit["review_packet"] = {
+        "blind_review_html": "blind_review.html",
+        "prediction_comparison_html": "review.html",
+        "page_review_template_csv": "page_review_template.csv",
+        "gold_table_blind_template_csv": "gold_table_blind_template.csv",
+        "prediction_gold_match_template_csv": "prediction_gold_match_template.csv",
+        "gold_continuation_blind_template_csv": "gold_continuation_blind_template.csv",
+        "accepted_continuation_predictions_jsonl": "accepted_continuation_predictions.jsonl",
+        "review_instructions": "review_instructions.md",
+        "scope": "all visible table regions on the selected governance-keyword pages and fixed neighbors; blind gold inventory first",
+        "pages": len(page_index),
+        "predicted_table_regions": len(predicted_tables),
+        "contiguous_physical_page_boundaries": len(gold_continuations),
+        "accepted_parser_links": len(accepted_continuations),
+        "labels_created": False,
+        "accuracy_status": "not_measured_pending_independent_human_labels",
+    }
+    (packet / "holdout_audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    return {"status": "two_stage_blind_templates_created_blank",
+            "reports": len(audit["reports"]), "pages": len(page_index),
+            "predicted_tables": len(predicted_tables),
+            "contiguous_page_boundaries": len(gold_continuations),
+            "accepted_parser_links": len(accepted_continuations),
             "output": str(packet)}
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--packet", type=Path, default=DEFAULT_PACKET)
+    parser.add_argument("--replace-existing", action="store_true",
+                        help="Replace only the annotation files generated by this script")
     args = parser.parse_args()
-    print(json.dumps(prepare(args.packet.resolve()), ensure_ascii=False))
+    print(json.dumps(prepare(args.packet.resolve(), replace_existing=args.replace_existing), ensure_ascii=False))
 
 
 if __name__ == "__main__":
