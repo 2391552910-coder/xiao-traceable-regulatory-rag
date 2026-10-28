@@ -16,7 +16,7 @@
 - [正文数字与证据供给叙述审计](results/paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)将355/400范围、主要配对效应及缺失界、来源共现和位置覆盖对应到原分析文件；审计范围不含355条回答的完整语义复核或法规时点适用性验证。
 - [摘要版本差异审计](results/paper/condensed_candidate_20261028_01/current_candidate_delta_audit_20261028.json)记录摘要修订版相对其父稿仅正文段落3、6变动；其后方法段45单独修订，见上方方法修订审计。12张表格单元格与21个嵌入媒体资源哈希仍一致。该差异核对不替代全文语义审查。
 - [当前摘要论断核验](results/paper/condensed_candidate_20261028_01/abstract_claim_alignment_current_candidate_20261028_v3.json)绑定当前主文哈希，核对中英文摘要的样本数、观察配对效应与区间、缺失界、来源同现和位置覆盖口径；6项检查通过。该记录不是全稿语义审核，也不验证答案正确性或语义检索召回。
-- [当前主稿版本连续性桥接审计](results/paper/condensed_candidate_20261028_01/current_candidate_audit_bridge_20261028.json)将继承的统计、摘要、方法、交叉引用、推理预算和法规审计映射到当前候选哈希；确认表1–11与统计审计底稿逐格一致、表12与摘录核验底稿逐格一致。该桥接只核对版本连续性和已审范围，不替代355条回答的逐条语义复核、法规历史适用性核验或整稿终审。
+- [当前主稿版本与引文连续性审计](results/paper/condensed_candidate_20261028_01/current_candidate_audit_bridge_20261028.json)确认表1–11与统计底稿逐格一致、表12与摘录核验底稿逐格一致；正文引用[1]–[29]均有对应条目且均被引用。对照已审底稿后，HiREC措辞和CRAG预印本书目变化分别有专项来源核查。该审计不替代355条回答的逐条语义复核、法规历史适用性核验或整稿终审。
 
 ## 2026-10-28 法规日期与因果措辞复核（历史候选）
 
