@@ -51,10 +51,29 @@
     ],
     "pdf": "results/paper/condensed_candidate_20261028_01/render_wps_hirec_scope_revision_20261028/paper_native.pdf",
     "pdf_sha256": "01ab7349b3bdf083762cc9cbf81a5016f6861f4e3d6ee186f2c941249a60eeb4",
-    "visual_qa": "Changed text reflowed across pages 2–3 without clipping or overlap; all other pages are pixel-identical to the prior current-candidate render.",
+    "visual_qa": "All 21 pages inspected at original raster size. Pages 2–3 contain the expected text reflow without clipping or overlap; pages 1 and 4–21 are pixel-identical to the prior current-candidate render.",
     "visually_inspected_pages": [
+      1,
       2,
-      3
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
     ],
     "page_count": 21
   }
