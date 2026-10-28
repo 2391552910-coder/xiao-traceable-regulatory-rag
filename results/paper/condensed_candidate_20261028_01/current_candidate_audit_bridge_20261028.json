@@ -1,13 +1,13 @@
 {
   "audit_date": "2026-10-28",
-  "status": "passed_for_version_continuity_and_scoped_receipt_mapping",
+  "status": "passed_for_version_continuity_with_scoped_case_citation_revision",
   "current_candidate": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性与案例语义核查修订候选稿_待终审.docx",
-    "sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
-    "paragraph_count": 190,
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性与案例语义核查_补全来源引文候选稿_待终审.docx",
+    "sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+    "paragraph_count": 191,
     "table_count": 12,
     "drawing_objects": 8,
-    "revision_receipt": "case_semantic_audit_20261028.json"
+    "revision_receipt": "case_citation_reference_revision_receipt_20261028.json"
   },
   "version_comparisons": [
     {
@@ -42,7 +42,7 @@
         10,
         11
       ],
-      "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4"
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd"
     },
     {
       "base": "narrative_quantitative_audit_20261028.json candidate",
@@ -62,13 +62,27 @@
         179
       ],
       "all_12_tables_identical": true,
-      "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4"
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd"
     },
     {
       "base": "current_candidate_claim_audit_20261028.json Table 12 source candidate",
       "base_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
       "table_12_cells_identical": true,
-      "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4"
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd"
+    },
+    {
+      "base": "prior current candidate after scoped semantic case review",
+      "base_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+      "changed_body_paragraph_indices_zero_based": [
+        124
+      ],
+      "appended_bibliography_reference": "[30]",
+      "all_12_tables_identical": true,
+      "all_21_media_hashes_identical": true,
+      "changed_package_parts": [
+        "word/document.xml"
+      ]
     }
   ],
   "receipt_mapping": [
@@ -142,20 +156,29 @@
       ],
       "receipt": "case_semantic_audit_20261028.json",
       "status": "full report identifies director status but has an internal committee-membership chronology conflict; paragraph separates retrieval-context omission from source inconsistency and does not infer legal compliance"
+    },
+    {
+      "scope": "official-source citation for post-hoc Table 12 annual-report case",
+      "paragraph_indices_zero_based": [
+        124,
+        185
+      ],
+      "receipt": "case_citation_reference_revision_receipt_20261028.json",
+      "status": "reference [30] added; all bibliography IDs [1]-[30] are cited and the new reference is bound to the CNINFO annual report"
     }
   ],
   "limitations": [
     "This bridge demonstrates text/table continuity between specifically hashed candidates and maps scoped receipts; it does not provide a fresh semantic review of every manuscript claim.",
-    "Earlier bibliography audits are scoped to their bound manuscript hashes; altered citation text and the entire final reference list still require a consolidated source-by-source signoff.",
     "This is not an author-metadata review, target-journal template check, or acceptance assessment.",
-    "The reviewer-stratified sensitivity statement is conditional on the observed pairs and does not resolve missing-outcome uncertainty or substitute for a full semantic review."
+    "The reviewer-stratified sensitivity statement is conditional on the observed pairs and does not resolve missing-outcome uncertainty or substitute for a full semantic review.",
+    "Existing topic-specific source audits cover references [1]-[29] and remain inherited from their scoped source versions; reference [30] was added and checked against the official CNINFO report. This is not a fresh rereading of every cited full paper or every non-citation factual claim."
   ],
   "new_model_calls": 0,
   "new_human_labels": 0,
   "bibliography_integrity": {
-    "status": "passed_for_citation_id_completeness_and_inherited_source_audit_coverage",
-    "current_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
-    "reference_count": 29,
+    "status": "passed_for_citation_id_completeness_and_scoped_source_audit_coverage",
+    "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+    "reference_count": 30,
     "reference_ids": [
       1,
       2,
@@ -185,7 +208,8 @@
       26,
       27,
       28,
-      29
+      29,
+      30
     ],
     "all_references_cited_in_body": true,
     "uncited_reference_ids": [],
@@ -248,5 +272,17 @@
       "It does not establish historical legal applicability for each question or validate the 355 answers semantically.",
       "Author metadata and target-journal formatting remain unaudited."
     ]
-  }
+  },
+  "revision_chain": [
+    {
+      "candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
+      "receipt": "case_semantic_audit_20261028.json",
+      "scope": "post-hoc full-report semantic review of Table 12 case; no compliance conclusion"
+    },
+    {
+      "candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+      "receipt": "case_citation_reference_revision_receipt_20261028.json",
+      "scope": "adds official annual-report citation [30] in paragraph 124 and bibliography; WPS render checked"
+    }
+  ]
 }
