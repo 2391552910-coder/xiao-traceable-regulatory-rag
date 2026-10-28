@@ -2,13 +2,13 @@
 
 ## 当前评分量表可复现修订候选稿（2026-10-28）
 
-- 当前主文：[评分量表可复现修订候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx)，SHA-256 `44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5`，21页、12表、8图。正文方法段指向补充表S0；原始分数、统计分析、表图及结论未改。
-- 配套[评分量表与检索诊断补充稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，3页。S0逐项列出四维度0/1/2锚点及U值；S1–S3保留预算回放与BM25诊断。WPS主稿与补充材料所有页面均已检查。
-- [评分量表修订收据](paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json)绑定原始评分表、两份DOCX、渲染PDF及页面核验；没有新增模型调用或人工标签。
-- 英文工作译稿仍基于SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`的前一版中文稿，尚未同步评分量表说明。
-- 新候选仍待整稿事实/引文终审、作者信息及目标期刊模板适配，不代表已达到二区录用标准。
+- 当前主文：[评分量表可复现修订候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx)，SHA-256 `44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5`，21页、12表、8图。正文方法段指向补充表S0；原始分数、统计分析、表图及结论未改。配套为[评分量表与检索诊断补充稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，3页。WPS逐页渲染已检查，哈希与评分锚点来源见[修订收据](paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json)。
+- [论断—引文版本绑定核对](paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028.json)确认当前稿31条参考文献均在正文引用，并记录引用段与分组来源审计的版本关系；它不替代全稿事实和答案语义终审。
+- 英文工作译稿仍基于前一版中文主文 SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`，尚未同步本次评分量表披露；因此它不是最新中文候选稿的等价译本。旧译稿仍可从根 README 的历史版本记录访问。
+- [交叉引用审计收据](paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)绑定主文哈希、修改段落和WPS/PDFium渲染检查；21页渲染完成，变化页已复查。候选稿仍待全文语义终审、作者元数据及目标期刊格式，不能据此声称达到二区录用标准。
+- [正文数字与证据供给叙述审计](paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)核对了输出范围、主要配对估计、缺失界和来源供给/位置覆盖叙述，并绑定其分析输入哈希；它不替代逐回答语义审查或法规时点验证。
+- 此前的聚焦稿保留为历史快照，包含386/400与G2−G1 +0.250旧统计；不得与当前355/400、+0.228供应商重分析混用。
 
-## 评分量表修订前的历史候选
 
 ## 2026-10-27 相同预算下的联合材料分配
 
@@ -135,3 +135,4 @@ results/*.csv 和 results/*.json 默认被 gitignore 排除，历史追踪文件
 - `runs/annual_d2_review_backlog_windows_20261014_01/`：从 378 条 D2 候选索引中按候选 ID 与 overlay `_12` 匹配出 275 条待核验候选（31 家公司、31 份原 PDF、37 个物理页）；每条源 PDF/页文哈希及引句坐标复算通过。仅为待办候选清单，正式事实接纳数为 0。发布清单 SHA256 `53d5bdb16eff7d34436a01cc1162688ffdaf356904d2dc34522f5517b0f8fc44`。- `runs/annual_d2_pending_candidates_visual_review_windows_20261014_01/`：为 275 条未匹配的 D2 候选准备并渲染 37 个原 PDF 物理页（31 份报告），页面图与 PDF 哈希验证通过；发布清单 SHA256 `d858390a22deedd8b0a66634c1405450abdfb93464712756b5c802d70c996483`。
 - `runs/annual_d2_pending_candidates_independent_review_windows_20261014_01/`：275/275 条候选逐页对照原报告表格，保存原文引句和坐标、页面图及 SHA256，事件日期留空；不是真人专家认证。发布清单 SHA256 `50c297ea3b3350ff68f9d366ef12e1fcb09300821fe43e01fb32ca127bcd4a89`。
 - `runs/annual_fact_independent_review_overlay_windows_20261014_13/`：保留 `_12` 并追加 275 条；累计 445 条选定批次复核记录、439 个唯一候选、39 家公司。当前 378 条 D2 候选索引全部有复核记录，但候选索引穷尽性未知，公司事实范围未完成。发布清单 SHA256 `90c6afe199f69dc06a5dda1e569bb7825249455a953eccaec81a080c174aa701`。
+
