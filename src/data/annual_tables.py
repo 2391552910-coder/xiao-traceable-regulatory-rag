@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_4'
+VERSION = 'annual_governance_tables_v1_7'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -212,14 +212,22 @@ def _table_rows(page, table, table_id, caption):
                 headers=header_text, header_cell_ids=[c['cell_id'] for c in headers],
                 caption=caption, cells=list(all_cells.values()), rows=rows,
                 header_status='detected' if headers else 'absent_or_ambiguous',
-                category=classify_headers(header_text), warnings=[])
+                category=classify_headers(header_text, caption), warnings=[])
 
 
-def classify_headers(headers):
-    joined = compact(' '.join(headers))
+def classify_headers(headers, context=''):
+    header_text = compact(' '.join(headers))
+    context_text = compact(context or '')
+    joined = compact(header_text + ' ' + context_text)
     if any(token in joined for token in ('其他单位', '股东单位', '任职单位名称')):
         return 'external_entity_appointments'
-    if ('日期' in joined or '时间' in joined) and ('会议' in joined or '职责' in joined):
+    explicit_committee_section = bool(re.search(
+        r'(?:董事会下设)?专门委员会.{0,12}(?:在报告期内|情况|履职|召开)|'
+        r'(?:审计|提名|薪酬|战略|风险|关联交易|消费者权益|可持续发展)委员会.{0,8}(?:会议|情况|履职|召开)',
+        context_text))
+    if (('日期' in joined or '时间' in joined) and
+            ('会议' in joined or '职责' in joined) and
+            ('委员会' in header_text or explicit_committee_section)):
         return 'committee_meetings'
     if '成员' in joined and '委员会' in joined:
         return 'committee_roster'
@@ -368,7 +376,7 @@ def reconcile_boundary_headers(tables, pdf):
         cells = {c['cell_id']: c for c in left['cells'] + headers}
         left.update(column_bounds=bounds, headers=[c['text'] for c in headers],
                     header_cell_ids=[c['cell_id'] for c in headers], cells=list(cells.values()),
-                    rows=[], category=classify_headers([c['text'] for c in headers]),
+                    rows=[], category=classify_headers([c['text'] for c in headers], left.get('caption', '')),
                     header_status='orphan_header_reconciled_from_adjacent_grid')
         left['warnings'].append('Header-only geometry borrowed from the next physical page; raw cells retained.')
 
@@ -606,8 +614,9 @@ def stitch_tables(tables):
             chain['table_ids'].append(following['table_id'])
             chain['pages'].append(following['page'])
             current = following
-        if chain['category'] == 'unclassified_table' and chain['headers']:
-            chain['category'] = classify_headers(chain['headers'])
+        if chain['headers'] and chain['category'] in {
+                'unclassified_table', 'committee_roster', 'committee_meetings'}:
+            chain['category'] = classify_headers(chain['headers'], chain.get('caption', ''))
         for row in chain['rows']:
             row['committee_labels'], row['scope_basis'] = row_scope(row, chain)
         chains.append(chain)
