@@ -1,5 +1,12 @@
 # 年报与法规双源检索增强生成
 
+## 2026-10-28 留出复核包已补齐表级与续表标注
+
+- 在原55页盲审包上新增逐预测表格标注（57个候选表格）、逐页漏检表槽位（55页）和相邻页续表候选（70组）；PDF哈希与解析版本沿用审计收据。均为**空白标注模板**，不包含人工标签或性能结果。
+- 新增 [复核说明](results/runs/annual_table_holdout_review_v17_20261028_02/review_instructions.md)、[表格标注表](results/runs/annual_table_holdout_review_v17_20261028_02/table_review_template.csv)、[漏检表槽位](results/runs/annual_table_holdout_review_v17_20261028_02/missed_table_template.csv)、[续表边界表](results/runs/annual_table_holdout_review_v17_20261028_02/continuation_review_template.csv)。
+- 新增 [模板准备脚本](scripts/prepare_annual_table_review_templates_20261028.py) 与 [独立标注计分脚本](scripts/score_annual_table_review.py)。计分器在标签未完整填写时拒绝输出指标；统计覆盖页级/表级检测、表格类别和边界连接，适用范围仍仅限三份事后选择报告的治理页及邻页。
+- 空白包、作者自查或AI标注均不能当作独立人工评估；复核完成后仍需核对双人分歧和裁决记录。
+
 ## 2026-10-27 预算竞争修复：已按规划实施并离线验证
 
 - [实施规划](docs/预算分配优化实施规划_20261027.txt)先行保存；解析与邻接成果已在提交[`c416a61`](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055)发布，[该提交的GitHub离线测试已通过](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40442726192)。
