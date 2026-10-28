@@ -1,6 +1,6 @@
 # 实验产物说明
 
-## 当前统一主文候选稿（2026-10-29）
+## 当前统一主文候选稿（2026-10-28）
 
 - 当前主文：[交叉引用补全候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)，SHA-256 `ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c`，21页、12表、8图。在推理预算口径校准版上补齐表6、表7、表9、表12及图4、图6的正文交叉引用，没有修改统计结果、表格内容或结论。
 - [交叉引用审计收据](paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)确认12张表与8幅图均有正文引用；[WPS渲染PDF](paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/paper_native.pdf)及[只读渲染收据](paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/native_render_receipt.json)绑定本版哈希。变化页11、13、16–18已检查，无裁切或错位。
