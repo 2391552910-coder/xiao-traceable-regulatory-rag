@@ -55,10 +55,10 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
         "model_calls": 0,
         "parser_development_stock_codes_excluded": sorted(DEV_STOCKS),
         "selection_note": (
-            "Four locally available 2023/2024 reports from two companies, chosen retrospectively "
-            "for parser engineering diagnostics after parser v1.7 was fixed. This is not a random "
-            "or preregistered sample; the reports appeared in earlier RAG experiments, so this is "
-            "not a fully novel end-to-end or temporal-generalization test."
+            "Reports supplied through --runs are selected retrospectively for parser engineering "
+            "diagnostics; this is not a random or preregistered sample. Prior RAG exposure may "
+            "apply, so the packet must not be presented as a fully novel end-to-end or temporal- "
+            "generalization test. See the frozen protocol when one is available."
         ),
         "reports": [],
         "aggregate": {},
