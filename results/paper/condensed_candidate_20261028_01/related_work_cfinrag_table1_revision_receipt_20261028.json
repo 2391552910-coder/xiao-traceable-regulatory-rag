@@ -1,0 +1,108 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_related_work_table_revision_and_render",
+  "source_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx",
+    "sha256": "44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5"
+  },
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表与相关工作表修订候选稿_待终审.docx",
+    "sha256": "479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5",
+    "paragraph_count": 192,
+    "table_count": 12,
+    "media_part_count": 21
+  },
+  "revision": {
+    "table_index_zero_based": 0,
+    "source_rows": 10,
+    "candidate_rows": 11,
+    "inserted_after": "HiREC [4]",
+    "new_row": [
+      "CFinRAG [30]",
+      "中文金融事件知识图谱与研究报告问答",
+      "图谱化金融事件QA；本文比较年报披露与独立法规证据的来源组织，不以图谱构建为贡献"
+    ],
+    "other_table_cell_text_unchanged": true,
+    "body_paragraphs_unchanged": true,
+    "bibliography_unchanged": true,
+    "in_text_reference_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "citation_30_already_present_in_body": true,
+    "experiment_scores_analyses_and_conclusions_changed": false
+  },
+  "supporting_audit": "results/paper/condensed_candidate_20261028_01/cfinrag_citation_audit_20261028.md",
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_cfinrag_table1_corrected_20261028/paper_native.pdf",
+    "pdf_sha256": "e27fbc37a41d92ffc8f781da5d5badc9591c74f33546390256fae32c5cb7b4ce",
+    "page_count": 21,
+    "changed_pages_vs_scoring_rubric_candidate": [
+      4,
+      5,
+      6
+    ],
+    "pixel_identical_pages": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visually_inspected_pages": [
+      4,
+      5,
+      6
+    ],
+    "visual_result": "Table 1 includes one CFinRAG row after HiREC; no duplicate rows, clipping, overlap, or displaced content. Pages 5–6 are readable after reflow; the other 18 pages are pixel-identical to the already reviewed source render."
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "The row summarizes the cited CFinRAG article and contrasts its stated task with this manuscript; it does not establish novelty or journal readiness.",
+    "This scoped revision does not complete the full claim-evidence semantic review, review all 355 answers, adjudicate historical legal applicability, or supply author and journal metadata."
+  ]
+}

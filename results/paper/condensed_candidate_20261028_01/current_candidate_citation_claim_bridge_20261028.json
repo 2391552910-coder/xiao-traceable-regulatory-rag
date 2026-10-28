@@ -2,22 +2,26 @@
   "audit_date": "2026-10-28",
   "status": "passed_for_current_candidate_citation_version_binding",
   "candidate": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx",
-    "sha256": "44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5",
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表与相关工作表修订候选稿_待终审.docx",
+    "sha256": "479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5",
     "paragraph_count": 192,
     "table_count": 12,
     "media_part_count": 21
   },
   "parent": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
-    "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f"
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx",
+    "sha256": "44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5"
   },
   "version_delta": {
-    "changed_body_paragraphs_zero_based": [
-      78
-    ],
+    "changed_body_paragraphs_zero_based": [],
     "changed_paragraphs_with_citations": [],
-    "tables_text_identical": true,
+    "table_0_rows_added": 1,
+    "table_0_added_row": [
+      "CFinRAG [30]",
+      "中文金融事件知识图谱与研究报告问答",
+      "图谱化金融事件QA；本文比较年报披露与独立法规证据的来源组织，不以图谱构建为贡献"
+    ],
+    "tables_1_through_11_text_identical": true,
     "embedded_media_sha256_identical": true,
     "bibliography_entries_identical": true,
     "citation_claim_paragraphs_unchanged_from_parent": true
@@ -247,11 +251,17 @@
     "rubric_post_hoc_timing_disclosed": true
   },
   "limitations": [
-    "The candidate differs from its parent only in paragraph 78, which contains no citation; this establishes citation-text continuity, not a fresh source-by-source re-evaluation of every citation.",
+    "The candidate differs from its parent only by one related-work row in Table 1; all body text and bibliography entries are unchanged. This establishes citation-text continuity, not a fresh source-by-source re-evaluation of every citation.",
     "Grouped source audits have their own stated scope and historical candidate bindings; this receipt maps their scopes to unchanged citation paragraphs but does not establish semantic correctness of all manuscript claims or all 355 answers.",
     "Legal historical applicability, independent retrieval relevance labels, complete claim-evidence review, author metadata, and target-journal compliance remain unresolved."
   ],
   "new_model_calls": 0,
   "new_human_labels": 0,
-  "manuscript_modified": false
+  "manuscript_modified": false,
+  "table_citation_addition": {
+    "reference_id": 30,
+    "already_cited_in_body_paragraph_zero_based": 20,
+    "bibliography_entry_unchanged": true,
+    "supporting_audit": "cfinrag_citation_audit_20261028.md"
+  }
 }
