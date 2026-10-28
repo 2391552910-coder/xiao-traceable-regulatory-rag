@@ -1,0 +1,90 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_for_abstract_claim_version_rebind",
+  "base_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_检索规则补明候选稿_待终审.docx",
+    "sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02"
+  },
+  "current_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx",
+    "sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1"
+  },
+  "prior_scoped_audit": {
+    "path": "results/paper/condensed_candidate_20261028_01/abstract_claim_alignment_current_candidate_20261028_v3.json",
+    "sha256": "529dc84efa7a2e3c9a1b775390fc77a0b6540b2519323efaf5e52fc393b8c5a4",
+    "status": "passed_scoped_abstract_alignment_and_visual_qa_rebound_after_method_clarification",
+    "checks": {
+      "sample_and_generation_counts": true,
+      "g2_g1_observed_pair_estimate_and_interval": true,
+      "full_set_missing_bounds_include_zero": true,
+      "g3_g2_observed_pair_estimate_and_interval": true,
+      "context_presence_and_location_claims": true,
+      "method_scope_wording": true
+    },
+    "derived_values": {
+      "G2_G1_observed_pairs": 41,
+      "G2_G1_company_macro_difference": 0.22807017543859648,
+      "G2_G1_observed_pair_ci95": [
+        0.10964912280701755,
+        0.35526315789473684
+      ],
+      "G2_G1_full_question_bounds": [
+        -2.3583333333333334,
+        2.7083333333333335
+      ],
+      "G2_G1_full_question_bounds_using_available_counterparts": [
+        -1.5083333333333333,
+        1.2916666666666667
+      ],
+      "G3_G2_observed_pairs": 38,
+      "G3_G2_company_macro_difference": 0.013157894736842105,
+      "G3_G2_observed_pair_ci95": [
+        0.0,
+        0.039473684210526314
+      ],
+      "source_joint_context_presence_merged": 0.6833333333333333,
+      "source_joint_context_presence_dual": 1.0,
+      "location_macro_merged": 0.3983333333333333,
+      "location_macro_dual": 0.39111111111111113
+    },
+    "source_hashes": {
+      "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910",
+      "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+      "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json": "2b3455ade736a2c9d12ae6a0a84178ae1aa36531cd2de5d90eee79b382bb2221"
+    }
+  },
+  "abstract_paragraph_hash_checks": [
+    {
+      "paragraph_index_zero_based": 3,
+      "label": "Chinese abstract",
+      "base_text_sha256": "21f61023f7e4982d8d24ad5a27697aaf11b84ec957d1cf0b57b5ce32a31b4153",
+      "current_text_sha256": "21f61023f7e4982d8d24ad5a27697aaf11b84ec957d1cf0b57b5ce32a31b4153",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 6,
+      "label": "English abstract",
+      "base_text_sha256": "119c7b4864a76a3b7cf690fc1d9dd5ebada4ea427d7d038ff75f709d1b2d33df",
+      "current_text_sha256": "119c7b4864a76a3b7cf690fc1d9dd5ebada4ea427d7d038ff75f709d1b2d33df",
+      "identical": true
+    }
+  ],
+  "both_abstract_paragraphs_identical": true,
+  "render_inheritance": {
+    "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
+    "page_1_pixel_identical_to_previous_inspected_render": true,
+    "changed_pages": [
+      2,
+      8,
+      9,
+      15
+    ],
+    "page_2_visual_inspection": "changed paragraph/scope text on page 2 was visually inspected in the latest candidate render"
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "This rebinds only the abstract statements and their previously computed numerical checks to the current candidate by exact text hash.",
+    "It does not review the full manuscript or establish semantic correctness of all answers or retrieval evidence."
+  ]
+}

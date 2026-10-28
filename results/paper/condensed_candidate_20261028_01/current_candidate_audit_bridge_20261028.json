@@ -216,6 +216,15 @@
       ],
       "receipt": "current_candidate_method_claim_rebind_20261028.json",
       "status": "all nine scoped normalized paragraph hashes are identical to the previously audited predecessor; source protocol and audit hashes are recorded in the rebind receipt"
+    },
+    {
+      "scope": "Chinese and English abstract claim-to-analysis alignment rebound to the current candidate",
+      "paragraph_indices_zero_based": [
+        3,
+        6
+      ],
+      "receipt": "current_candidate_abstract_rebind_20261028.json",
+      "status": "both abstract text hashes match the scoped numerical audit candidate; reported values and analysis-source hashes are carried forward"
     }
   ],
   "limitations": [
