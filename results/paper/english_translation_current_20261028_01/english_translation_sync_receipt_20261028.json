@@ -1,0 +1,68 @@
+{
+  "updated": "2026-10-28",
+  "purpose": "Bind the English working translation and supplement to the current Chinese manuscript and record WPS rendering plus visual review.",
+  "chinese_source": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx",
+    "sha256": "ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002"
+  },
+  "main_translation": {
+    "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_synced_20261028.docx",
+    "sha256": "82e9a0abdff50d9c0f0e9d0f927eb277ba1922432b0b3f06d03169b9692944ac",
+    "pages": 23
+  },
+  "supplement": {
+    "path": "results/paper/english_translation_current_20261028_01/Supplementary_Materials_Dual_Source_RAG_Scoring_Rubric_and_Retrieval_Diagnostics_English_20261028.docx",
+    "sha256": "be7912a9ddc2c50909b5d920f4b2594d7e32b66b27beb0f9df68c43a86018577",
+    "pages": 4,
+    "inline_figures": 1
+  },
+  "changes": [
+    "Added the current related-work scope description for ALCE, RAGAs, and RAGChecker.",
+    "Added the post-hoc rubric timing and exploratory-analysis disclosure with a pointer to Supplementary Table S0.",
+    "Added the CFinRAG row to Table 1.",
+    "Translated Supplementary Materials S0-S3 while preserving reported values and retained Figure S1."
+  ],
+  "renders": [
+    {
+      "pdf": "results/paper/english_translation_current_20261028_01/render_english_sync_main_20261028/paper_native.pdf",
+      "pdf_sha256": "50e5601f892db7596aa688808cbca16f9448ef3a4c026c9e65792969af405083",
+      "receipt": "results/paper/english_translation_current_20261028_01/render_english_sync_main_20261028/native_render_receipt.json",
+      "method": "WPS native read-only ExportAsFixedFormat",
+      "success": true,
+      "source_unchanged": true
+    },
+    {
+      "pdf": "results/paper/english_translation_current_20261028_01/render_english_sync_supp_20261028/paper_native.pdf",
+      "pdf_sha256": "f94c1ee516efed3eb062fa7a785aaa1c6931817b5234904a5f906eed2e321071",
+      "receipt": "results/paper/english_translation_current_20261028_01/render_english_sync_supp_20261028/native_render_receipt.json",
+      "method": "WPS native read-only ExportAsFixedFormat",
+      "success": true,
+      "source_unchanged": true
+    }
+  ],
+  "visual_review": {
+    "main_pages": [
+      4,
+      5,
+      6,
+      7,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "supplement_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "findings": "Reviewed page images show no clipping, overlap, table overflow, or missing Figure S1."
+  },
+  "scope": "Working translation only; not target-journal formatted or proofread by a native English editor.",
+  "no_new_model_calls": true,
+  "no_new_human_labels": true
+}

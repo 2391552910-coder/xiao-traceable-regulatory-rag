@@ -219,18 +219,53 @@
     },
     {
       "path": "README.md",
-      "bytes": 53643,
-      "sha256": "b921a1c04ed6587bccfc4b1bab900bbcbec0fd16fd7646c27e3f300ec1c2320d"
+      "bytes": 54272,
+      "sha256": "e4d9fb2a99d2234bbd1b45e339af0fe13fb74ea2d64d5a3b4923067db5ec759b"
     },
     {
       "path": "results/README.md",
-      "bytes": 22662,
-      "sha256": "f9cf80ef4167ab79d88b4d600d41a3feb9b96b6c3899cf42b2bd2e63faaad310"
+      "bytes": 23291,
+      "sha256": "06aae8554443036ecf1d7fd5d1bb13b2da80cdcc71ca20034f6223f342c0f6ec"
     },
     {
       "path": "docs/论文阶段收敛计划_20261027.md",
-      "bytes": 60590,
-      "sha256": "d4cffb9b073e9d5a6ea6a982f0b06f978812c1b0c3776356b55d9e820ebba397"
+      "bytes": 60826,
+      "sha256": "700dfa7871e2ba1172ba7435e16b876b7a83a93aa4d32ebcd42b3ff4adf04b57"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_synced_20261028.docx",
+      "bytes": 1868904,
+      "sha256": "82e9a0abdff50d9c0f0e9d0f927eb277ba1922432b0b3f06d03169b9692944ac"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Supplementary_Materials_Dual_Source_RAG_Scoring_Rubric_and_Retrieval_Diagnostics_English_20261028.docx",
+      "bytes": 1561172,
+      "sha256": "be7912a9ddc2c50909b5d920f4b2594d7e32b66b27beb0f9df68c43a86018577"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/english_translation_sync_receipt_20261028.json",
+      "bytes": 2933,
+      "sha256": "5ca874b73432284653265a6b0f517ca35f0e931d9367a1d763a36ebf71fa574c"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_main_20261028/paper_native.pdf",
+      "bytes": 1402360,
+      "sha256": "50e5601f892db7596aa688808cbca16f9448ef3a4c026c9e65792969af405083"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_main_20261028/native_render_receipt.json",
+      "bytes": 437,
+      "sha256": "706c545a63d524ae0de338d7b165cf129a93415201bc945814eab7bd393111de"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_supp_20261028/paper_native.pdf",
+      "bytes": 287637,
+      "sha256": "f94c1ee516efed3eb062fa7a785aaa1c6931817b5234904a5f906eed2e321071"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_supp_20261028/native_render_receipt.json",
+      "bytes": 437,
+      "sha256": "74b9f04493779a95af04ec5e38d0ba626c127c5edfc400548ef37cb8db9a7e9e"
     }
   ]
 }

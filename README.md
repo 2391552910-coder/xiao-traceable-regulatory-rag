@@ -6,7 +6,7 @@
 - 配套[评分量表与检索诊断补充材料](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，SHA-256 `8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a`。补充表S0逐项列出四维度的0/1/2锚点、U值和计分范围；S1–S3保留预算回放与BM25诊断。WPS渲染为21页主稿、3页补充材料，所有页面均已检查。
 - [评分量表修订收据](results/paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json)绑定原始评分表SHA、两份DOCX、渲染PDF及页面核验结果。没有新增模型调用或人工标签。
 - [表1相关工作修订收据](results/paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json)记录新增行、21页WPS渲染及第4–6页视觉复核；其他18页与已检查版本像素一致。没有新增模型调用或人工标签。
-- 英文工作译稿仍对应评分量表修订前的中文主稿（SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`），尚未同步本次评分量表说明，暂不作为最新中文稿的等价译本。
+- 已同步的[英文工作译稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_synced_20261028.docx)依据当前中文主稿 SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`，补入ALCE/RAGAs/RAGChecker范围说明、事后评分量表披露和CFinRAG相关工作行；对应[英文补充材料](results/paper/english_translation_current_20261028_01/Supplementary_Materials_Dual_Source_RAG_Scoring_Rubric_and_Retrieval_Diagnostics_English_20261028.docx)。WPS只读渲染为23页主稿和4页补充材料，变更页与补充材料已完成视觉检查；译稿仍是工作译本，未按目标期刊模板排版。版本及渲染绑定见[同步收据](results/paper/english_translation_current_20261028_01/english_translation_sync_receipt_20261028.json)。
 - 新候选仍待整稿事实/引文终审、作者信息和目标期刊模板适配，不代表已达到二区录用标准。
 
 ## 2026-10-28 评分量表修订前的统一主文候选稿（已被后续候选取代）
