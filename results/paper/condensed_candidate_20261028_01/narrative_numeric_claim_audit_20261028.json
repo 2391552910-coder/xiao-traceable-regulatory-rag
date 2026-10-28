@@ -1,0 +1,108 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed",
+  "scope": "Narrative numeric and evidence-supply assertions only; this is not a full claim-evidence or legal-applicability audit.",
+  "manuscript": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx",
+  "manuscript_sha256": "1eb95d0496bdf354cfb60fb2df5225b375821c9d7f2d89be1e648a0beef8984c",
+  "sources": {
+    "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910",
+    "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+    "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json": "2b3455ade736a2c9d12ae6a0a84178ae1aa36531cd2de5d90eee79b382bb2221",
+    "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94"
+  },
+  "checks": [
+    {
+      "check": "provider-only output scope",
+      "status": "passed",
+      "evidence": {
+        "analysis_primary_model_generation": {
+          "planned_all_conditions": 400,
+          "two_reviewer_scored_primary_model_outputs": 355,
+          "primary_three_conditions_planned": 180,
+          "primary_three_conditions_successful_generation": 147,
+          "primary_condition_success_counts": {
+            "merged_corpus_generic_cited_rag": 52,
+            "dual_source_role_grounded_rag": 48,
+            "dual_source_generic_cited_rag": 47
+          }
+        },
+        "excluded_generation_origin": {
+          "units_authored_in_current_assistant_session": 33,
+          "scored_supplement_units_excluded": 31,
+          "supplements_without_two_reviewer_score": 2,
+          "additional_api_calls": 0,
+          "original_prompt_executed": false,
+          "identical_api_protocol": false
+        }
+      }
+    },
+    {
+      "check": "G2-G1 observed-pair estimate and missing bound",
+      "status": "passed",
+      "evidence": {
+        "observed_pairs": 41,
+        "company_macro": 0.22807017543859648,
+        "ci95": [
+          0.10964912280701755,
+          0.35526315789473684
+        ],
+        "available_counterpart_bounds": [
+          -1.5083333333333333,
+          1.2916666666666667
+        ]
+      }
+    },
+    {
+      "check": "G3-G2 observed-pair estimate",
+      "status": "passed",
+      "evidence": {
+        "observed_pairs": 38,
+        "company_macro": 0.013157894736842105,
+        "ci95": [
+          0.0,
+          0.039473684210526314
+        ]
+      }
+    },
+    {
+      "check": "G3-G1 result",
+      "status": "passed",
+      "evidence": {
+        "observed_pairs": 42,
+        "company_macro": 0.28947368421052627,
+        "ci95": [
+          0.15789473684210525,
+          0.4298245614035087
+        ]
+      }
+    },
+    {
+      "check": "context co-presence and location-coverage wording",
+      "status": "passed",
+      "evidence": {
+        "merged_both_source_fraction": 0.6833333333333333,
+        "dual_both_source_fraction": 1.0,
+        "merged_location_macro": 0.3983333333333333,
+        "dual_location_macro": 0.39111111111111113,
+        "difference": -0.0072222222222221855,
+        "semantic_quality_evaluated": false
+      }
+    },
+    {
+      "check": "existing table audit is bound to the numeric base",
+      "status": "passed",
+      "evidence": {
+        "audit_sha256": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94",
+        "audit_status": "passed"
+      }
+    }
+  ],
+  "not_checked": [
+    "all 355 provider answers for semantic support",
+    "each narrative legal applicability claim",
+    "all citations against publisher full text",
+    "independent human retrieval qrels"
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0
+}

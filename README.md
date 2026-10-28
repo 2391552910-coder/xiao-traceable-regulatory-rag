@@ -5,6 +5,7 @@
 - 当前主文统一为[更正统计及摘要、表12修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx)，21页、12表、8图。它以精简主文的355/400供应商输出统计及2026-10-28 bootstrap 复算为底稿，合入最新核实的中英文摘要与表12原始回答前120字符摘录；表12引用ID为A1。配套补充材料为同目录下“精简补充材料_预算与BM25检索诊断候选稿”。
 - [统一收据](results/paper/condensed_candidate_20261028_01/unified_candidate_receipt_20261028.json)绑定输出、输入和WPS PDF哈希。WPS只读渲染21页，所有页面已检查；与数值底稿相比，仅第1–3及16–20页发生像素变化。剩余页面逐像素一致。完整版语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
 - [数值复核](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)与[表12摘录及摘要复核](results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json)分别记录两部分来源。聚焦稿仍保存为历史快照；其386/400和+0.250统计口径已被供应商重分析取代，不可再作为当前主文。
+- [正文数字与证据供给叙述审计](results/paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)将355/400范围、主要配对效应及缺失界、来源共现和位置覆盖对应到原分析文件；审计范围不含355条回答的完整语义复核或法规时点适用性验证。
 
 ## 2026-10-28 法规日期与因果措辞复核（历史候选）
 
