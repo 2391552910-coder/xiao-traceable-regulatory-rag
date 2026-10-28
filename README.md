@@ -1,5 +1,9 @@
 # 年报与法规双源检索增强生成
 
+## 2026-10-28 English working translation
+
+A complete English working translation of the current Chinese manuscript is available as [DOCX](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_20261028.docx) and [Markdown](results/paper/english_translation_current_20261028_01/English_working_translation_current_20261028.md). It is based on the included [current Chinese source manuscript](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx), retains 12 tables, 8 figures and 31 references, and has a 23-page rendered [PDF](results/paper/english_translation_current_20261028_01/rendered_docx/paper_native.pdf). Selected reference metadata and related-work claims have been spot-checked against publisher, proceedings, and official records ([scope, findings, and limits](results/paper/english_translation_current_20261028_01/recent_reference_metadata_audit_20261028.md)); this is not an exhaustive claim-support audit. The draft still requires journal-specific formatting, full language and citation review, and author submission metadata; it is not a submission-ready or acceptance claim.
+
 ## 2026-10-27 预算竞争修复：已按规划实施并离线验证
 
 - [实施规划](docs/预算分配优化实施规划_20261027.txt)先行保存；解析与邻接成果已在提交[`c416a61`](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055)发布，[该提交的GitHub离线测试已通过](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40442726192)。
