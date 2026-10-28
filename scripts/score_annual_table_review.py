@@ -1,12 +1,11 @@
-"""Score completed independent holdout annotation sheets; refuse incomplete labels."""
+"""Score completed two-stage blind annual-report table annotations."""
 from __future__ import annotations
 
 import argparse
 import csv
 import json
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
-
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PACKET = ROOT / "results" / "runs" / "annual_table_holdout_review_v17_20261028_02"
@@ -23,7 +22,7 @@ def norm(value: str) -> str:
     return (value or "").strip().casefold()
 
 
-def bool_label(value: str, field: str, row_id: str) -> bool:
+def yes_no(value: str, field: str, row_id: str) -> bool:
     value = norm(value)
     if value in YES:
         return True
@@ -32,157 +31,226 @@ def bool_label(value: str, field: str, row_id: str) -> bool:
     raise ValueError(f"{field} must be yes/no for {row_id}; got {value!r}")
 
 
-def metrics(tp: int, fp: int, fn: int) -> dict:
+def prf(tp: int, fp: int, fn: int) -> dict:
     precision = tp / (tp + fp) if tp + fp else None
     recall = tp / (tp + fn) if tp + fn else None
     f1 = 2 * precision * recall / (precision + recall) if precision is not None and recall is not None and precision + recall else None
     return {"tp": tp, "fp": fp, "fn": fn, "precision": precision, "recall": recall, "f1": f1}
 
 
+def load_jsonl(path: Path) -> list[dict]:
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
 def score(packet: Path) -> dict:
     audit = json.loads((packet / "holdout_audit.json").read_text(encoding="utf-8"))
-    pages = read_csv(packet / "page_review_template.csv")
-    predictions = [json.loads(line) for line in (packet / "page_predictions.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
-    tables = read_csv(packet / "table_review_template.csv")
-    missed_rows = read_csv(packet / "missed_table_template.csv")
-    continuations = read_csv(packet / "continuation_review_template.csv")
+    page_rows = read_csv(packet / "page_review_template.csv")
+    gold_rows = read_csv(packet / "gold_table_blind_template.csv")
+    match_rows = read_csv(packet / "prediction_gold_match_template.csv")
+    gold_edges_rows = read_csv(packet / "gold_continuation_blind_template.csv")
+    page_predictions = load_jsonl(packet / "page_predictions.jsonl")
+    edge_predictions = load_jsonl(packet / "accepted_continuation_predictions.jsonl")
 
-    if len(pages) != len(predictions):
-        raise ValueError("Page labels and prediction manifest have different row counts")
-    prediction_by_page = {(row["stock_code"], str(row["physical_page"])): row for row in predictions}
-    page_false_ids = {}
-    page_fn = defaultdict(int)
-    page_missed_counts = defaultdict(int)
-    page_complete = set()
-    for row in missed_rows:
-        key = (row["stock_code"], row["physical_page"])
-        if norm(row.get("page_review_complete")) in YES:
-            page_complete.add(key)
-        elif norm(row.get("page_review_complete")) not in NO and norm(row.get("page_review_complete")):
-            raise ValueError(f"Invalid page_review_complete label on {key}")
-        if norm(row.get("missed_by_parser")) in YES:
-            if not row.get("gold_table_id", "").strip() or not row.get("gold_category", "").strip() or not row.get("independent_reviewer", "").strip():
-                raise ValueError(f"Missed table row lacks gold id/category/reviewer on {key}")
-            page_fn[key] += 1
-            page_missed_counts[key] += 1
-        elif norm(row.get("missed_by_parser")) == "no":
-            if not row.get("independent_reviewer", "").strip():
-                raise ValueError(f"No-miss confirmation lacks reviewer identity on {key}")
-        elif any(row.get(field, "").strip() for field in ("gold_table_id", "gold_category", "independent_reviewer")):
-            raise ValueError(f"Partially filled missed-table row on {key}")
-
-    page_tp = page_fp_count = page_fn_count = 0
-    for row in pages:
-        key = (row["stock_code"], row["physical_page"])
-        if key not in page_complete:
-            raise ValueError(f"Page has not been confirmed complete in missed_table_template.csv: {key}")
-        gold = bool_label(row.get("page_has_governance_table_gold", ""), "page_has_governance_table_gold", str(key))
-        detected = bool(prediction_by_page[key].get("detected_table_ids"))
-        expected_missed = row.get("missed_table_count_gold", "").strip()
-        if not expected_missed.isdigit() or int(expected_missed) != page_missed_counts[key]:
-            raise ValueError(f"missed_table_count_gold disagrees with missed_table_template for {key}")
-        false_text = row.get("false_positive_table_ids", "").strip()
-        false_ids = set() if false_text.casefold() == "none" else {item.strip() for item in false_text.split(";") if item.strip()}
-        page_false_ids[key] = false_ids
-        predicted_ids = set(prediction_by_page[key].get("detected_table_ids", []))
-        if false_ids - predicted_ids:
-            raise ValueError(f"Unknown false-positive table IDs for {key}: {sorted(false_ids-predicted_ids)}")
+    pred_by_page = {(r["stock_code"], str(r["physical_page"])): r for r in page_predictions}
+    expected_pages = set(pred_by_page)
+    page_gold_present: dict[tuple[str, str], bool] = {}
+    for row in page_rows:
+        key = (row["stock_code"], str(row["physical_page"]))
+        if key not in expected_pages or key in page_gold_present:
+            raise ValueError(f"Unexpected or duplicate page review row: {key}")
+        if not yes_no(row.get("review_complete", ""), "review_complete", str(key)):
+            raise ValueError(f"Page review is not complete: {key}")
         if not row.get("independent_reviewer", "").strip():
             raise ValueError(f"Missing reviewer identity for page {key}")
-        if detected and not false_text:
-            raise ValueError(f"Use 'none' or semicolon-separated IDs to explicitly review false positives on {key}")
-        if false_text and false_text.casefold() != "none" and not false_ids:
-            raise ValueError(f"false_positive_table_ids must be 'none' or semicolon-separated IDs on {key}")
-        if gold and not detected:
-            page_fn_count += 1
-        elif detected and not gold:
-            page_fp_count += 1
-        elif detected and gold:
-            page_tp += 1
-    page_metrics = metrics(page_tp, page_fp_count, page_fn_count)
+        page_gold_present[key] = yes_no(row.get("gold_table_present", ""), "gold_table_present", str(key))
+    if set(page_gold_present) != expected_pages:
+        raise ValueError("Page review sheet does not cover every selected page exactly once")
 
-    expected_prediction_ids = {
-        table_id
-        for row in predictions
-        for table_id in row.get("detected_table_ids", [])
-    }
-    seen_prediction_ids = set()
-    detection_tp = detection_fp = 0
-    category_counts = defaultdict(lambda: [0, 0, 0])
-    matched_gold_ids = set()
-    table_false_ids = defaultdict(set)
-    for row in tables:
-        if row.get("row_kind") != "prediction":
-            raise ValueError("Unexpected row_kind in table_review_template.csv")
-        table_id = row.get("prediction_table_id", "").strip()
-        if not table_id or table_id in seen_prediction_ids:
-            raise ValueError(f"Missing or duplicate prediction_table_id: {table_id!r}")
-        seen_prediction_ids.add(table_id)
-        if not row.get("independent_reviewer", "").strip():
-            raise ValueError(f"Missing reviewer identity for table {table_id}")
-        status = norm(row.get("match_status", ""))
-        predicted_category = row.get("predicted_category", "").strip() or "unclassified_table"
-        if status == "matched":
-            gold_id = row.get("gold_table_id", "").strip()
-            gold_category = row.get("gold_category", "").strip()
-            if not gold_id or not gold_category or gold_id in matched_gold_ids:
-                raise ValueError(f"Matched table requires unique gold_table_id and category: {table_id}")
-            matched_gold_ids.add(gold_id)
-            detection_tp += 1
-            if predicted_category == gold_category:
-                category_counts[gold_category][0] += 1
-            else:
-                category_counts[predicted_category][1] += 1
-                category_counts[gold_category][2] += 1
-        elif status == "false_positive":
-            detection_fp += 1
-            table_false_ids[(row["stock_code"], row["physical_page"])].add(table_id)
-            category_counts[predicted_category][1] += 1
-            if row.get("gold_table_id", "").strip() or row.get("gold_category", "").strip():
-                raise ValueError(f"False-positive prediction must not have a matched gold table: {table_id}")
-        else:
-            raise ValueError(f"match_status must be matched/false_positive: {table_id}")
-    if seen_prediction_ids != expected_prediction_ids:
-        raise ValueError("Table review template does not cover exactly the predicted table IDs")
-    for key, declared in page_false_ids.items():
-        if declared != table_false_ids[key]:
-            raise ValueError(f"Page and table sheets disagree about false-positive table IDs on {key}")
-
-    missed_gold_ids = set()
-    for row in missed_rows:
-        if norm(row.get("missed_by_parser")) not in YES:
-            continue
-        gold_id = row["gold_table_id"].strip()
-        if gold_id in matched_gold_ids or gold_id in missed_gold_ids:
-            raise ValueError(f"Duplicate gold table ID across annotation sheets: {gold_id}")
-        missed_gold_ids.add(gold_id)
-        category_counts[row["gold_category"].strip()][2] += 1
-    detection_fn = len(missed_gold_ids)
-
-    continuation_tp = continuation_fp = continuation_fn = 0
-    for idx, row in enumerate(continuations, 1):
-        row_id = f"continuation row {idx}"
-        gold = bool_label(row.get("gold_continuation", ""), "gold_continuation", row_id)
+    gold_tables: dict[tuple[str, str], dict] = {}
+    gold_ids_by_page = defaultdict(list)
+    page_sentinels = set()
+    sentinel_counts = Counter()
+    for idx, row in enumerate(gold_rows, 1):
+        page_key = (row["stock_code"], str(row["physical_page"]))
+        row_id = f"gold table row {idx}"
+        if page_key not in expected_pages:
+            raise ValueError(f"Gold table row refers to a page outside the packet: {page_key}")
+        if not yes_no(row.get("review_complete", ""), "review_complete", row_id):
+            raise ValueError(f"Gold table page inventory is incomplete: {page_key}")
         if not row.get("independent_reviewer", "").strip():
             raise ValueError(f"Missing reviewer identity for {row_id}")
-        predicted = norm(row.get("parser_link_accepted", "")) in YES
-        if predicted and gold:
-            continuation_tp += 1
-        elif predicted and not gold:
-            continuation_fp += 1
-        elif not predicted and gold:
-            continuation_fn += 1
+        gold_id = row.get("gold_table_id", "").strip()
+        if not gold_id:
+            raise ValueError(f"Enter a gold table ID or NONE for {row_id}")
+        if gold_id.casefold() == "none":
+            if row.get("gold_category", "").strip() or row.get("gold_bbox_normalized_xyxy", "").strip():
+                raise ValueError(f"NONE row must not have a category or bounding box: {row_id}")
+            page_sentinels.add(page_key)
+            sentinel_counts[page_key] += 1
+            continue
+        category = row.get("gold_category", "").strip()
+        if not category:
+            raise ValueError(f"Gold table category is missing for {gold_id}")
+        try:
+            bbox = json.loads(row.get("gold_bbox_normalized_xyxy", ""))
+        except Exception as exc:
+            raise ValueError(f"Invalid normalized bbox for {gold_id}") from exc
+        if (not isinstance(bbox, list) or len(bbox) != 4 or
+                any(not isinstance(v, (int, float)) or v < 0 or v > 1 for v in bbox) or
+                bbox[0] >= bbox[2] or bbox[1] >= bbox[3]):
+            raise ValueError(f"Invalid normalized bbox coordinates for {gold_id}: {bbox!r}")
+        key = (row["stock_code"], gold_id)
+        if key in gold_tables:
+            raise ValueError(f"Duplicate gold table ID: {key}")
+        gold_tables[key] = {"page": str(row["physical_page"]), "category": category, "bbox": bbox}
+        gold_ids_by_page[page_key].append(gold_id)
+
+    # Each selected page must have exactly one NONE marker iff it contains no
+    # gold table; pages with tables must have one or more gold inventory rows.
+    represented_pages = set(gold_ids_by_page) | page_sentinels
+    if represented_pages != expected_pages:
+        raise ValueError(f"Gold table inventory page coverage mismatch: {sorted(expected_pages-represented_pages)}")
+    for key in expected_pages:
+        if sentinel_counts[key] > 1:
+            raise ValueError(f"Duplicate NONE sentinel for page: {key}")
+        if page_gold_present[key] != bool(gold_ids_by_page[key]):
+            raise ValueError(f"Page-presence label conflicts with gold table inventory: {key}")
+        if bool(gold_ids_by_page[key]) == (key in page_sentinels):
+            raise ValueError(f"Use NONE only for empty pages, and never with a gold table: {key}")
+
+    expected_pred_ids = {
+        (row["stock_code"], table_id): str(row["physical_page"])
+        for row in page_predictions
+        for table_id in row.get("detected_table_ids", [])
+    }
+    pred_to_gold: dict[tuple[str, str], str] = {}
+    match_status: dict[tuple[str, str], str] = {}
+    matched_gold = set()
+    category = defaultdict(lambda: [0, 0, 0])
+    tp = fp = 0
+    for idx, row in enumerate(match_rows, 1):
+        row_id = f"prediction match row {idx}"
+        key = (row["stock_code"], row.get("prediction_table_id", "").strip())
+        if key not in expected_pred_ids or key in match_status:
+            raise ValueError(f"Unexpected or duplicate prediction table ID: {key}")
+        if not row.get("independent_reviewer", "").strip():
+            raise ValueError(f"Missing reviewer identity for {row_id}")
+        if row.get("predicted_category", "").strip() == "":
+            raise ValueError(f"Prediction category is missing for {key}")
+        status = norm(row.get("match_status", ""))
+        pred_category = row["predicted_category"].strip()
+        if status == "matched":
+            gold_id = row.get("gold_table_id", "").strip()
+            gold_key = (row["stock_code"], gold_id)
+            if gold_key not in gold_tables:
+                raise ValueError(f"Matched prediction refers to unknown gold table: {gold_key}")
+            if gold_tables[gold_key]["page"] != expected_pred_ids[key]:
+                raise ValueError(f"Prediction matched across physical pages: {key} -> {gold_key}")
+            if gold_key in matched_gold:
+                raise ValueError(f"Gold table matched more than once: {gold_key}")
+            matched_gold.add(gold_key)
+            pred_to_gold[key] = gold_id
+            tp += 1
+            gold_category = gold_tables[gold_key]["category"]
+            if pred_category == gold_category:
+                category[gold_category][0] += 1
+            else:
+                category[pred_category][1] += 1
+                category[gold_category][2] += 1
+        elif status == "false_positive":
+            if row.get("gold_table_id", "").strip():
+                raise ValueError(f"False-positive prediction must not have a gold ID: {key}")
+            fp += 1
+            category[pred_category][1] += 1
+        else:
+            raise ValueError(f"match_status must be matched/false_positive for {key}")
+        match_status[key] = status
+    if set(match_status) != set(expected_pred_ids):
+        raise ValueError("Prediction match sheet does not cover exactly all parser table predictions")
+    fn_gold = set(gold_tables) - matched_gold
+    for gold_key in fn_gold:
+        category[gold_tables[gold_key]["category"]][2] += 1
+
+    page_tp = page_fp = page_fn = 0
+    for key, gold_present in page_gold_present.items():
+        predicted_present = bool(pred_by_page[key].get("detected_table_ids"))
+        if gold_present and predicted_present:
+            page_tp += 1
+        elif predicted_present and not gold_present:
+            page_fp += 1
+        elif gold_present and not predicted_present:
+            page_fn += 1
+
+    expected_boundaries = set()
+    by_stock_pages = defaultdict(list)
+    for row in page_predictions:
+        by_stock_pages[row["stock_code"]].append(int(row["physical_page"]))
+    for stock, pages in by_stock_pages.items():
+        pages = sorted(pages)
+        expected_boundaries.update((stock, str(left), str(right)) for left, right in zip(pages, pages[1:]) if right == left + 1)
+
+    gold_edges: Counter = Counter()
+    reviewed_boundaries = set()
+    boundary_states = defaultdict(set)
+    boundary_none_counts = Counter()
+    for idx, row in enumerate(read_csv(packet / "gold_continuation_blind_template.csv"), 1):
+        row_id = f"gold continuation row {idx}"
+        stock = row["stock_code"]
+        left, right = str(row["left_page"]), str(row["right_page"])
+        boundary = (stock, left, right)
+        if boundary not in expected_boundaries:
+            raise ValueError(f"Unexpected gold continuation boundary: {boundary}")
+        if not yes_no(row.get("review_complete", ""), "review_complete", row_id):
+            raise ValueError(f"Continuation review incomplete: {boundary}")
+        if not row.get("independent_reviewer", "").strip():
+            raise ValueError(f"Missing reviewer identity for {row_id}")
+        gold_yes = yes_no(row.get("gold_continuation", ""), "gold_continuation", row_id)
+        boundary_states[boundary].add(gold_yes)
+        left_id = row.get("gold_left_table_id", "").strip()
+        right_id = row.get("gold_right_table_id", "").strip()
+        if gold_yes:
+            left_key, right_key = (stock, left_id), (stock, right_id)
+            if left_key not in gold_tables or right_key not in gold_tables:
+                raise ValueError(f"Gold continuation references unknown table: {boundary}")
+            if gold_tables[left_key]["page"] != left or gold_tables[right_key]["page"] != right:
+                raise ValueError(f"Gold continuation endpoints do not match boundary: {boundary}")
+            gold_edges[(stock, left_id, right_id)] += 1
+        elif left_id or right_id:
+            raise ValueError(f"No-continuation row must not contain endpoint IDs: {boundary}")
+        else:
+            boundary_none_counts[boundary] += 1
+        reviewed_boundaries.add(boundary)
+    if reviewed_boundaries != expected_boundaries:
+        raise ValueError(f"Gold continuation sheet lacks boundaries: {sorted(expected_boundaries-reviewed_boundaries)}")
+    for boundary, states in boundary_states.items():
+        if len(states) != 1 or (False in states and boundary_none_counts[boundary] != 1):
+            raise ValueError(f"Conflicting or duplicate continuation labels for boundary: {boundary}")
+
+    predicted_edges: Counter = Counter()
+    for row in edge_predictions:
+        stock = row["stock_code"]
+        left_key = (stock, row["left_prediction_table_id"])
+        right_key = (stock, row["right_prediction_table_id"])
+        if left_key not in match_status or right_key not in match_status:
+            raise ValueError(f"Accepted parser link references unknown predicted table: {row}")
+        left_gold = pred_to_gold.get(left_key)
+        right_gold = pred_to_gold.get(right_key)
+        edge = (stock, left_gold or f"UNMATCHED:{left_key[1]}", right_gold or f"UNMATCHED:{right_key[1]}")
+        predicted_edges[edge] += 1
+    edge_tp = sum(min(count, gold_edges[key]) for key, count in predicted_edges.items())
+    edge_fp = sum(count - min(count, gold_edges[key]) for key, count in predicted_edges.items())
+    edge_fn = sum(count - min(count, predicted_edges[key]) for key, count in gold_edges.items())
 
     return {
-        "status": "scored_from_completed_reviewer_sheets",
+        "status": "scored_from_completed_two_stage_reviewer_sheets",
         "parser_version": audit["parser_version"],
         "source_reports": [{"stock_code": r["stock_code"], "year": r["report_year"], "sha256": r["source_pdf_sha256"]} for r in audit["reports"]],
-        "scope": "retrospectively_selected 2024 governance keyword pages and fixed neighbors; not random, preregistered, all-report, or end-to-end RAG validation",
-        "page_detection": page_metrics,
-        "table_detection": metrics(detection_tp, detection_fp, detection_fn),
-        "table_category": {label: metrics(*values) for label, values in sorted(category_counts.items())},
-        "continuation_link_detection": metrics(continuation_tp, continuation_fp, continuation_fn),
-        "independent_reviewer_identity_is_recorded_but_not_cryptographically_or_externally_verified": True,
+        "scope": "retrospectively selected 2024 governance keyword pages and fixed neighbors; not random, preregistered, full-report, cross-year, or end-to-end RAG validation",
+        "page_detection": prf(page_tp, page_fp, page_fn),
+        "table_detection": prf(tp, fp, len(fn_gold)),
+        "table_category": {label: prf(*values) for label, values in sorted(category.items())},
+        "continuation_link_detection": prf(edge_tp, edge_fp, edge_fn),
+        "reviewer_identity_is_recorded_but_independence_is_not_cryptographically_or_externally_verified": True,
     }
 
 
