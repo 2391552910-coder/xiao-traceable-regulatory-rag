@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-28",
+  "status": "passed",
+  "candidate": "年报与法规双源RAG_统一主文_检索规则补明候选稿_待终审.docx",
+  "candidate_sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02",
+  "base_candidate": "年报与法规双源RAG_统一主文_摘要条件对照表达修订候选稿_待终审.docx",
+  "base_candidate_sha256": "0daa563753a5f435cc995a166b5e2b30f22ad9f9c113fe4aa2c941bddae252e7",
+  "code_audit": "retrieval_implementation_audit_20261028.json",
+  "frozen_comparison_py_sha256": true,
+  "paragraph_changes": [
+    45
+  ],
+  "checks": {
+    "only_paragraph_45_changed": true,
+    "detailed_paragraph_matches_previously_audited_candidate": true,
+    "all_12_table_cell_texts_unchanged": true,
+    "all_21_embedded_media_hashes_unchanged": true,
+    "frozen_comparison_source_hash_matches_audit": true
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_sha256": "af2faa84b5fce152fe3aae4eab6d5a5d48cfbd96e1bbb8b15b20cbb3ee96236c",
+    "page_count": 21,
+    "changed_pages_vs_base": [
+      5
+    ],
+    "visual_inspection": [
+      5
+    ],
+    "source_unchanged": true
+  },
+  "limitations": [
+    "This change clarifies the implemented retrieval sequence; it does not validate quality outcomes or the historical generation runtime for every saved response.",
+    "This is not a full semantic review, citation audit, legal applicability review, or journal-format acceptance."
+  ]
+}
+

@@ -1,0 +1,118 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_abstract_alignment_and_visual_qa_rebound_after_method_clarification",
+  "source_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引文范围与摘要口径终审修订候选稿_待终审.docx",
+  "source_sha256": "fc188110b08535e3d6e384b042f3737ba50bb40f85758d05a9bcd6d1256c2535",
+  "candidate_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_检索规则补明候选稿_待终审.docx",
+  "candidate_sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02",
+  "changed_body_paragraphs_zero_based": [
+    3,
+    6
+  ],
+  "paragraph_sha256": {
+    "zh_abstract": "21f61023f7e4982d8d24ad5a27697aaf11b84ec957d1cf0b57b5ce32a31b4153",
+    "en_abstract": "119c7b4864a76a3b7cf690fc1d9dd5ebada4ea427d7d038ff75f709d1b2d33df"
+  },
+  "changed_package_members": [
+    "word/document.xml"
+  ],
+  "tables_modified": false,
+  "inline_shapes": 8,
+  "tables": 12,
+  "source_hashes": {
+    "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910",
+    "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+    "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json": "2b3455ade736a2c9d12ae6a0a84178ae1aa36531cd2de5d90eee79b382bb2221"
+  },
+  "checks": {
+    "sample_and_generation_counts": true,
+    "g2_g1_observed_pair_estimate_and_interval": true,
+    "full_set_missing_bounds_include_zero": true,
+    "g3_g2_observed_pair_estimate_and_interval": true,
+    "context_presence_and_location_claims": true,
+    "method_scope_wording": true
+  },
+  "derived_values": {
+    "G2_G1_observed_pairs": 41,
+    "G2_G1_company_macro_difference": 0.22807017543859648,
+    "G2_G1_observed_pair_ci95": [
+      0.10964912280701755,
+      0.35526315789473684
+    ],
+    "G2_G1_full_question_bounds": [
+      -2.3583333333333334,
+      2.7083333333333335
+    ],
+    "G2_G1_full_question_bounds_using_available_counterparts": [
+      -1.5083333333333333,
+      1.2916666666666667
+    ],
+    "G3_G2_observed_pairs": 38,
+    "G3_G2_company_macro_difference": 0.013157894736842105,
+    "G3_G2_observed_pair_ci95": [
+      0.0,
+      0.039473684210526314
+    ],
+    "source_joint_context_presence_merged": 0.6833333333333333,
+    "source_joint_context_presence_dual": 1.0,
+    "location_macro_merged": 0.3983333333333333,
+    "location_macro_dual": 0.39111111111111113
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf": "results/paper/condensed_candidate_20261028_01/render_wps_retrieval_rule_20261028/paper_native.pdf",
+    "pdf_sha256": "af2faa84b5fce152fe3aae4eab6d5a5d48cfbd96e1bbb8b15b20cbb3ee96236c",
+    "page_count": 21,
+    "changed_pages_vs_v2": [
+      5
+    ],
+    "pixel_identical_pages_vs_v2": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visually_inspected_pages": [
+      5
+    ],
+    "visual_qa": "Page 5 inspected at original raster size; the restored candidate-interleaving description is readable with no clipping or overlap. Pages 1-4 and 6-21 are pixel-identical to the preceding current-candidate render.",
+    "source_unchanged": true
+  },
+  "limitations": [
+    "Scope is the abstract method-condition wording, abstract numeric assertions, and rendered layout; it is not full manuscript semantic review.",
+    "Context source presence and reference-location coverage do not measure semantic evidence recall or answer correctness.",
+    "Intervals are conditional on observed pairs; missing-outcome bounds are sensitivity ranges, not confidence intervals.",
+    "No model calls or human labels were added.",
+    "This receipt reuses the prior abstract claim checks only because both abstract paragraph hashes are unchanged; it is not a full manuscript semantic review."
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "parent_receipt": "abstract_claim_alignment_current_candidate_20261028_v2.json",
+  "abstract_rebind_checks": {
+    "chinese_abstract_text_unchanged": true,
+    "english_abstract_text_unchanged": true
+  },
+  "candidate_revision_since_v2": {
+    "changed_body_paragraphs_zero_based": [
+      45
+    ],
+    "method_text_audit": "retrieval_rule_revision_audit_20261028.json"
+  }
+}
+
