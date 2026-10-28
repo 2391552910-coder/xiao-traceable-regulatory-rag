@@ -24,7 +24,9 @@ def _render_views(labels,pages,views,category):
             + '委员会范围：' + '、'.join(label+'委员会' for label in labels)
             + '\n物理页：' + '、'.join(map(str,pages)) + '\n')
     field_labels=dict(committee='委员会名称',members='成员情况',date='召开日期',count='召开会议次数',
-                      name='董事姓名',position='职务',meeting_title='会议名称')
+                      name='董事姓名',position='职务',meeting_title='会议名称',
+                      meeting_opinions='提出的重要意见和建议',
+                      meeting_other_duties='其他履行职责情况',meeting_dissent='异议事项情况')
     for view in views:
         label=field_labels.get(view['field'])
         if view['field']=='date' and category!='committee_meetings':
@@ -78,6 +80,10 @@ def row_units(document):
                         selected['attendance_' + str(i)] = i
             if 'meeting_content' in columns:
                 selected['meeting_title'] = columns['meeting_content']
+            if chain['category'] == 'committee_meetings':
+                for field in ('meeting_opinions','meeting_other_duties','meeting_dissent'):
+                    if field in columns:
+                        selected[field] = columns[field]
             if not selected and row['values']:
                 # Unknown layouts remain available to reviewers; never pretend
                 # their fields were identified merely because a name matched.
@@ -91,10 +97,10 @@ def row_units(document):
                 text = row['values'][i]
                 end = len(text)
                 if field == 'meeting_title':
-                    markers = [m.start() for m in re.finditer(r'审议|議案|议案', text)]
-                    end = min(markers) if markers else min(len(text), 180)
-                    if not text[:end].strip():
-                        continue
+                    # Keep agenda text even when the cell begins with “审议”.
+                    # Truncating at the first marker erased the entire title in
+                    # common annual-report rows such as “审议《季度报告》”.
+                    end = min(len(text), 180)
                 views.append(dict(field=field, text=text[:end], cell_ids=list(row['parts'][i]),
                                   column_header=chain['headers'][i] if i < len(chain['headers']) else '',
                                   column_header_cell_ids=chain.get('header_column_parts',[])[i] if i < len(chain.get('header_column_parts',[])) else [],
@@ -219,3 +225,4 @@ class AnnualTableIndex:
                 if len(results) == k:
                     break
         return results
+

@@ -226,6 +226,60 @@ def test_blank_key_agenda_continuation_from_actual_pdf(parsed):
     assert parse_date(row['values'][1])=='2024-09-19'
 
 
+def test_meeting_agenda_and_remarks_are_retained_in_retrieval_index(tmp_path):
+    headers=['委员会名称','成员情况','召开会议次数','召开日期','会议内容','提出的重要意见和建议',
+             '其他履行职责的情况','异议事项具体情况']
+    values=['审计委员会','刘甲、王乙','4','2024年10月25日','审议《2024年第三季度报告》',
+            '经过充分沟通讨论，一致通过此报告。','监督内部审计并审核财务信息','']
+    header_ids=[f'h{i}' for i in range(len(headers))]
+    body_ids=[f'b{i}' for i in range(len(values))]
+    cells=[dict(cell_id=cid,text=text,page=60) for cid,text in zip(header_ids,headers)]
+    cells += [dict(cell_id=cid,text=text,page=60) for cid,text in zip(body_ids,values)]
+    document=dict(source=dict(stock='002475',year=2024,company='立讯精密',sha256='a'*64,url='local.pdf'),
+                  tables=[dict(table_id='T1',cells=cells)],
+                  logical_tables=[dict(chain_id='T1-CHAIN',table_ids=['T1'],headers=headers,
+                      header_cell_ids=header_ids,category='committee_meetings',method='ruled_grid',caption='',
+                      rows=[dict(row_id='r1',page=60,values=values,parts=[[cid] for cid in body_ids],
+                                 committee_labels=['审计'],scope_basis='explicit_committee_column',
+                                 split_row_merged=False)])])
+    chunks,_=row_units(document)
+    assert len(chunks)==1
+    titles=[view['text'] for view in chunks[0].meta['field_views'] if view['field']=='meeting_title']
+    assert titles==['审议《2024年第三季度报告》']
+    assert '会议名称（原单元格布局文本）：审议《2024年第三季度报告》' in chunks[0].text
+    assert '提出的重要意见和建议（原单元格布局文本）：经过充分沟通讨论，一致通过此报告。' in chunks[0].text
+    path=tmp_path/'table.sqlite'
+    build_index([document],path)
+    hits=AnnualTableIndex(path).search({'stock_code':'002475','report_year':2024},
+         '审计委员会2024年10月25日第三季度报告充分沟通讨论一致通过',k=5)
+    assert hits and '一致通过此报告' in hits[0][0].text
+
+
+def test_orphan_page_start_remarks_cell_merges_into_prior_committee_row():
+    headers=['委员会名称','成员情况','召开会议次数','召开日期','会议内容','提出的重要意见和建议','其他履职职责的情况','异议事项具体情况']
+    left_row=dict(row_id='left-r1',values=['审计委员会','甲、乙、丙','4','2024年10月25日',
+                    '审议《2024年第三季度报告》','根据实际情况，提出了相关意见。','',''],
+                  parts=[[f'l{i}'] for i in range(8)],split_row_merged=False)
+    left=dict(table_id='left',page=60,bbox=[0,10,8,95],page_width=8,page_height=100,
+              method='ruled_grid',column_bounds=list(range(9)),headers=headers,header_cell_ids=[f'lh{i}' for i in range(8)],
+              caption='',category='committee_meetings',rows=[left_row],cells=[])
+    orphan=['','','','','','经过充分沟通讨论，一致通过此报告。','','']
+    right=dict(table_id='right',page=61,bbox=[0,1,8,90],page_width=8,page_height=100,
+               method='ruled_grid',column_bounds=list(range(9)),headers=orphan,header_cell_ids=[f'rh{i}' for i in range(8)],
+               caption='',category='unclassified_table',
+               cells=[dict(cell_id=f'rh{i}',text=value) for i,value in enumerate(orphan)],
+               rows=[dict(row_id='right-r1',values=['薪酬与考核委员会','甲、乙、丙','4','2024年1月15日',
+                    '审查薪酬方案','履职说明','',''],parts=[[f'r{i}'] for i in range(8)],split_row_merged=False)])
+    chains,decisions=stitch_tables([left,right])
+    assert decisions[0]['accepted']
+    assert decisions[0]['boundary_payload']['column_index']==5
+    chain=next(c for c in chains if c['pages']==[60,61])
+    assert chain['split_rows_merged']==1 and chain['boundary_payloads_absorbed']==1
+    assert compact(chain['rows'][0]['values'][5])=='根据实际情况，提出了相关意见。经过充分沟通讨论，一致通过此报告。'
+    assert 'rh5' in chain['rows'][0]['parts'][5]
+    assert len(chain['rows'])==2  # The new committee's complete first row is retained.
+
+
 def test_fully_parsed_outside_year_dates_are_retained_as_gaps_not_current_facts():
     views=[dict(field='members',text='张三'),dict(field='date',text='2023年9月19日')]
     fields=_derive_fields(views,'committee_meetings',2024)
@@ -249,3 +303,4 @@ def test_agenda_mention_of_audit_does_not_transfer_meeting_ownership():
     row=dict(values=['2024年9月19日','审议关于审计委员会第十次会议的报告'])
     labels,basis=row_scope(row,chain)
     assert labels==[]
+

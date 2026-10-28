@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_3'
+VERSION = 'annual_governance_tables_v1_4'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -396,8 +396,9 @@ def continuation_decision(left, right):
         reasons.append('left_table_not_at_page_end')
     if right['bbox'][1] > right['page_height'] * .19:
         reasons.append('right_table_not_at_page_start')
+    orphan_payload = _orphan_page_start_payload(left, right)
     ah, bh = _header_signature(left['headers']), _header_signature(right['headers'])
-    if ah and bh and ah != bh and not _partial_header(right['headers']):
+    if ah and bh and ah != bh and not _partial_header(right['headers']) and not orphan_payload:
         # Header layout whitespace may differ, but altered column semantics must reject.
         reasons.append('different_repeated_headers')
     if right['category'] != 'unclassified_table' and left['category'] != 'unclassified_table' and right['category'] != left['category']:
@@ -407,9 +408,71 @@ def continuation_decision(left, right):
     if last_heading and committee_labels(left.get('caption', '')) and committee_labels(caption):
         if set(committee_labels(left.get('caption', ''))) != set(committee_labels(caption)):
             reasons.append('new_committee_section_heading')
-    return dict(accepted=not reasons, reasons=reasons or ['same_geometry_adjacent_boundary_and_compatible_headers'],
+    if orphan_payload:
+        reasons.append('single_nonheader_cell_at_page_start_continues_prior_row')
+    decision = dict(accepted=not reasons or bool(orphan_payload and all(
+        reason == 'single_nonheader_cell_at_page_start_continues_prior_row' for reason in reasons)),
+                reasons=reasons or ['same_geometry_adjacent_boundary_and_compatible_headers'],
                 left_table_id=left['table_id'], right_table_id=right['table_id'],
                 physical_pages=[left['page'], right['page']], independent_semantic_validation=False)
+    if orphan_payload:
+        decision['boundary_payload'] = orphan_payload
+    return decision
+
+
+def _orphan_page_start_payload(left, right):
+    """Recognize one text-cell fragment misdetected as a page-start header.
+
+    This narrow case is limited to a complete committee-meeting row followed
+    by a ruled, geometry-matched page-start grid whose sole nonempty header
+    cell is continuation prose in the previous row's opinion/remarks column.
+    """
+    if (left.get('category') != 'committee_meetings' or
+            right.get('category') != 'unclassified_table' or
+            left.get('method') != 'ruled_grid' or right.get('method') != 'ruled_grid' or
+            not left.get('rows') or not right.get('rows')):
+        return None
+    nonempty = [(i, compact(value)) for i, value in enumerate(right.get('headers', [])) if compact(value)]
+    if len(nonempty) != 1:
+        return None
+    column, text = nonempty[0]
+    if column >= len(left.get('headers', [])) or column >= len(left['rows'][-1].get('values', [])):
+        return None
+    prior_header = compact(left['headers'][column])
+    if not any(term in prior_header for term in ('意见', '建议', '履行职责', '其他情况')):
+        return None
+    if any(term in text for term in HEADER_WORDS) or len(text) < 6:
+        return None
+    prior_row = left['rows'][-1]
+    columns = field_columns(left['headers'])
+    date_column = columns.get('date')
+    if date_column is None or not parse_date(prior_row['values'][date_column]):
+        return None
+    # The following page must resume with a structured committee row; this
+    # prevents a free-standing page title or narrative from being absorbed.
+    first_values = right['rows'][0].get('values', [])
+    if not first_values or not committee_labels(first_values[0]):
+        return None
+    # Identifying fields in the prior row must be complete; the orphan cell is
+    # only allowed to continue its trailing remarks field.
+    if any(not compact(prior_row['values'][i]) for i in range(min(column, len(prior_row['values'])))):
+        return None
+    if (len(left['column_bounds']) != len(right['column_bounds']) or
+            max(abs(a / left['page_width'] - b / right['page_width'])
+                for a, b in zip(left['column_bounds'], right['column_bounds'])) > .008):
+        return None
+    if (left['bbox'][3] < left['page_height'] * .83 or
+            right['bbox'][1] > right['page_height'] * .19):
+        return None
+    cells = {cell['cell_id']: cell for cell in right.get('cells', [])}
+    header_ids = right.get('header_cell_ids', [])
+    if column >= len(header_ids):
+        return None
+    cell_id = header_ids[column]
+    if cell_id not in cells or compact(cells[cell_id].get('text', '')) != text:
+        return None
+    return dict(column_index=column, cell_id=cell_id, text=cells[cell_id]['text'],
+                merge_basis='orphan_page_start_header_cell_continuation')
 
 
 def field_columns(headers):
@@ -428,6 +491,12 @@ def field_columns(headers):
             result.setdefault('committee', i)
         if '会议内容' in text:
             result.setdefault('meeting_content', i)
+        if ('意见' in text or '建议' in text) and ('提出' in text or '重要' in text):
+            result.setdefault('meeting_opinions', i)
+        if '履行职责' in text and '情况' in text:
+            result.setdefault('meeting_other_duties', i)
+        if '异议事项' in text:
+            result.setdefault('meeting_dissent', i)
         if '会议决议' in text:
             result.setdefault('agenda', i)
         if '职务' in text:
@@ -478,7 +547,7 @@ def stitch_tables(tables):
     by_page = defaultdict(list)
     for table in tables:
         by_page[table['page']].append(table)
-    links, attempts = {}, []
+    links, link_decisions, attempts = {}, {}, []
     for page, left_tables in sorted(by_page.items()):
         if page + 1 not in by_page:
             continue
@@ -487,6 +556,7 @@ def stitch_tables(tables):
         attempts.append(decision)
         if decision['accepted']:
             links[left['table_id']] = right['table_id']
+            link_decisions[left['table_id']] = decision
     lookup = {t['table_id']: t for t in tables}
     incoming = set(links.values())
     chains = []
@@ -499,9 +569,21 @@ def stitch_tables(tables):
                      header_column_parts=[[cid] for cid in table['header_cell_ids']],
                      category=table['category'], method=table['method'], caption=table['caption'],
                      rows=copy.deepcopy(table['rows']), pages=[table['page']],
-                     repeated_headers_removed_from_logical_rows=0, split_rows_merged=0)
+                     repeated_headers_removed_from_logical_rows=0, split_rows_merged=0,
+                     boundary_payloads_absorbed=0)
         while current['table_id'] in links:
             following = lookup[links[current['table_id']]]
+            decision = link_decisions[current['table_id']]
+            payload = decision.get('boundary_payload')
+            if payload and chain['rows']:
+                row = chain['rows'][-1]
+                column = payload['column_index']
+                row['values'][column] = row['values'][column] + '\n' + payload['text']
+                row['parts'][column].append(payload['cell_id'])
+                row['split_row_merged'] = True
+                row['split_row_merge_basis'] = payload['merge_basis']
+                chain['split_rows_merged'] += 1
+                chain['boundary_payloads_absorbed'] += 1
             if chain['headers'] and following['headers'] and _partial_header(following['headers']):
                 chain['headers'] = [a + '\n' + b for a, b in zip(chain['headers'], following['headers'])]
                 chain['header_cell_ids'].extend(following['header_cell_ids'])
@@ -518,7 +600,7 @@ def stitch_tables(tables):
                     chain['rows'][-1] = merged
                     next_rows = next_rows[1:]
                     chain['split_rows_merged'] += 1
-            if following['headers']:
+            if following['headers'] and not payload:
                 chain['repeated_headers_removed_from_logical_rows'] += 1
             chain['rows'].extend(next_rows)
             chain['table_ids'].append(following['table_id'])
@@ -625,3 +707,4 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                 independent_human_validation=False,
                 limitations=['Governance-page selection only; unsupported or scanned layouts remain explicit review items.',
                              'Geometry and rule-based scope do not certify complete reporting-period membership.'])
+
