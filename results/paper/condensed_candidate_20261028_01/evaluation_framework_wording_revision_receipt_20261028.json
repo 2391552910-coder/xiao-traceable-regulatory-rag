@@ -1,0 +1,57 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_wording_revision_and_render_review",
+  "source_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表与相关工作表修订候选稿_待终审.docx",
+    "sha256": "479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5"
+  },
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx",
+    "sha256": "ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002",
+    "paragraph_count": 192,
+    "table_count": 12,
+    "reference_count": 31
+  },
+  "change": {
+    "paragraph_index_zero_based": 29,
+    "old_text_sha256_utf8": "edadb235390923d87eb1fd8bd1dde90c5b0840272a44911e8083d7b691343bdd",
+    "new_text_sha256_utf8": "5b06800006daf068bf20b11d50cbeebbcfd45336621b359a8bc63e86b6a2f02f",
+    "old_text": "ALCE将生成与引用质量纳入评价[19]；RAGAs提供自动化评价方法[20]；RAGChecker进一步分解检索和生成环节[21]。这些研究共同说明，答案表面质量和引用可解析性不足以解释完整RAG表现。本文将请求成功、结构有效、来源可回放、人员质量评分和法规适用性分开报告，且不把模型自报的支持状态用于替代人员判断。",
+    "new_text": "ALCE将生成与引用质量纳入评价[19]；RAGAs提供自动化评价方法[20]；RAGChecker进一步分解检索和生成环节[21]。这些框架分别涉及答案与引用质量、检索上下文与忠实度、检索和生成的细粒度诊断，提示仅凭答案表面质量或引用可解析性难以全面刻画RAG表现。本文将请求成功、结构有效、来源可回放、人员质量评分和法规适用性分开报告，且不把模型自报的支持状态用于替代人员判断。",
+    "reason": "State the evaluation dimensions represented by the cited frameworks instead of presenting a broader cross-paper conclusion as though directly established by them.",
+    "supporting_audit": "rag_method_eval_citation_audit_20261028.md"
+  },
+  "structural_validation": {
+    "changed_paragraph_indexes": [
+      29
+    ],
+    "changed_docx_package_parts": [
+      "word/document.xml"
+    ],
+    "all_table_cell_text_identical": true,
+    "embedded_media_parts": 21,
+    "bibliography_and_citations_unchanged": true,
+    "scores_statistics_and_experimental_results_unchanged": true
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_eval_framework_wording_20261028/paper_native.pdf",
+    "pdf_sha256": "2e90ae6bdd3962fd73a40f27c9663800f5e97073e5a808daa6929484dada8c29",
+    "receipt_path": "results/paper/condensed_candidate_20261028_01/render_eval_framework_wording_20261028/native_render_receipt.json",
+    "page_count": 21,
+    "rendered_png_count": 21,
+    "changed_pages_vs_previous_candidate": [
+      3
+    ],
+    "changed_page_visual_reviewed": [
+      3
+    ],
+    "other_pages_pixel_identical_under_same_pdfium_renderer": true
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "This is a scoped wording and render audit, not full manuscript semantic review.",
+    "It does not independently review all generated answers, establish legal historical applicability, or determine target-journal readiness."
+  ]
+}

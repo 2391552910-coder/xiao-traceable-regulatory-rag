@@ -2,7 +2,7 @@
 
 ## 2026-10-28 评分量表与相关工作表修订候选
 
-- 最新中文主文候选：[评分量表与相关工作表修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表与相关工作表修订候选稿_待终审.docx)，SHA-256 `479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5`。在评分量表可复现修订稿基础上，表1新增CFinRAG [30]，明确其金融事件知识图谱问答与本文年报—法规来源组织对照的范围差异；正文、分数、统计分析和结论未改。
+- 最新中文主文候选：[评测框架表述收紧稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx)，SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`。仅收紧相关工作中ALCE、RAGAs与RAGChecker评价范围的概括；评分、统计和实验结果未变。WPS渲染21页，仅第3页版面变化并已复核；[修订收据](results/paper/condensed_candidate_20261028_01/evaluation_framework_wording_revision_receipt_20261028.json)与[当前引文版本绑定记录](results/paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028_02.json)。
 - 配套[评分量表与检索诊断补充材料](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，SHA-256 `8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a`。补充表S0逐项列出四维度的0/1/2锚点、U值和计分范围；S1–S3保留预算回放与BM25诊断。WPS渲染为21页主稿、3页补充材料，所有页面均已检查。
 - [评分量表修订收据](results/paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json)绑定原始评分表SHA、两份DOCX、渲染PDF及页面核验结果。没有新增模型调用或人工标签。
 - [表1相关工作修订收据](results/paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json)记录新增行、21页WPS渲染及第4–6页视觉复核；其他18页与已检查版本像素一致。没有新增模型调用或人工标签。

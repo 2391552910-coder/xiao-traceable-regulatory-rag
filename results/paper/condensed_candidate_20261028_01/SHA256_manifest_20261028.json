@@ -191,6 +191,46 @@
       "path": "results/paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json",
       "bytes": 3088,
       "sha256": "5fc199976b4d258945b780d3696c1d7977a1318b6c7b86ad38b1919c7262423c"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx",
+      "bytes": 1868312,
+      "sha256": "ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_eval_framework_wording_20261028/paper_native.pdf",
+      "bytes": 1533736,
+      "sha256": "2e90ae6bdd3962fd73a40f27c9663800f5e97073e5a808daa6929484dada8c29"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_eval_framework_wording_20261028/native_render_receipt.json",
+      "bytes": 437,
+      "sha256": "65a5b5215c28fb8677128b7cced5e12352071eeb23fff4c8f6c0c20cbd95ffeb"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/evaluation_framework_wording_revision_receipt_20261028.json",
+      "bytes": 3503,
+      "sha256": "1226a765bf8a27e02e4ed79486d594dbf6306fdabf6902a8a2d6047816da6b96"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028_02.json",
+      "bytes": 8373,
+      "sha256": "79a561e03f78224554cc19b3791c3d871e520a3627e510b2802d8ef6b22ad35a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 53643,
+      "sha256": "b921a1c04ed6587bccfc4b1bab900bbcbec0fd16fd7646c27e3f300ec1c2320d"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 22662,
+      "sha256": "f9cf80ef4167ab79d88b4d600d41a3feb9b96b6c3899cf42b2bd2e63faaad310"
+    },
+    {
+      "path": "docs/论文阶段收敛计划_20261027.md",
+      "bytes": 60590,
+      "sha256": "d4cffb9b073e9d5a6ea6a982f0b06f978812c1b0c3776356b55d9e820ebba397"
     }
   ]
 }

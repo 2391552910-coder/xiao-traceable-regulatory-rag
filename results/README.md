@@ -2,7 +2,7 @@
 
 ## 当前评分量表与相关工作表修订候选稿（2026-10-28）
 
-- 当前主文：[评分量表与相关工作表修订候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表与相关工作表修订候选稿_待终审.docx)，SHA-256 `479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5`，21页、12表、8图。表1新增CFinRAG [30]及其与本研究的范围对照；正文、实验数据和结论未变。配套[评分量表与检索诊断补充材料](paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，SHA-256 `8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a`，3页；包含评分锚点S0及检索诊断S1–S3。
+- 当前主文：[评测框架表述收紧候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx)，SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`，21页、12表、8图。仅收紧第29段对ALCE、RAGAs与RAGChecker的综合表述；评分、统计与实验结果未变。WPS渲染仅第3页变化并已目视复核。见[修订收据](paper/condensed_candidate_20261028_01/evaluation_framework_wording_revision_receipt_20261028.json)、[当前引文版本绑定记录](paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028_02.json)。配套[评分量表与检索诊断补充材料](paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，SHA-256 `8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a`，3页。
 - [论断—引文版本绑定核对](paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028.json)确认当前稿31条参考文献均在正文引用，并记录引用段与分组来源审计的版本关系；它不替代全稿事实和答案语义终审。
 - [表1相关工作修订收据](paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json)记录WPS重渲染21页及变化页4–6复核；结果、评分和结论未修改。
 - 英文工作译稿仍基于前一版中文主文 SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`，尚未同步本次评分量表披露；因此它不是最新中文候选稿的等价译本。旧译稿仍可从根 README 的历史版本记录访问。
