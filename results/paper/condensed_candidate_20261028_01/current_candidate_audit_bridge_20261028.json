@@ -2,11 +2,12 @@
   "audit_date": "2026-10-28",
   "status": "passed_for_version_continuity_and_scoped_receipt_mapping",
   "current_candidate": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_检索规则补明候选稿_待终审.docx",
-    "sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02",
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性补充候选稿_待终审.docx",
+    "sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667",
     "paragraph_count": 190,
     "table_count": 12,
-    "drawing_objects": 8
+    "drawing_objects": 8,
+    "revision_receipt": "reviewer_sensitivity_revision_audit_20261028.json"
   },
   "version_comparisons": [
     {
@@ -39,7 +40,8 @@
         9,
         10,
         11
-      ]
+      ],
+      "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
     },
     {
       "base": "narrative_quantitative_audit_20261028.json candidate",
@@ -57,12 +59,14 @@
         148,
         179
       ],
-      "all_12_tables_identical": true
+      "all_12_tables_identical": true,
+      "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
     },
     {
       "base": "current_candidate_claim_audit_20261028.json Table 12 source candidate",
       "base_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
-      "table_12_cells_identical": true
+      "table_12_cells_identical": true,
+      "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
     }
   ],
   "receipt_mapping": [
@@ -73,7 +77,7 @@
         6
       ],
       "receipt": "abstract_claim_alignment_current_candidate_20261028_v3.json",
-      "status": "bound_to_current_candidate"
+      "status": "abstract paragraph hashes remain unchanged from predecessor; scoped receipt is bound to predecessor candidate"
     },
     {
       "scope": "HiREC description scope in related work",
@@ -89,7 +93,7 @@
         45
       ],
       "receipt": "retrieval_implementation_audit_20261028.json; retrieval_rule_revision_audit_20261028.json",
-      "status": "bound to current candidate and frozen code hash"
+      "status": "paragraph remains unchanged from predecessor and matches frozen code audit"
     },
     {
       "scope": "service alias and reasoning budget limitations",
@@ -110,7 +114,7 @@
         125
       ],
       "receipt": "cross_reference_audit_20261029.json",
-      "status": "inherited navigation additions; figures, tables, values and conclusions unchanged in that edit"
+      "status": "existing table/figure references retained; paragraph 93 also adds reviewer-stratified sensitivity results, audited separately"
     },
     {
       "scope": "quantitative prose and the unchanged law-version paragraph",
@@ -119,20 +123,28 @@
         146
       ],
       "receipt": "narrative_quantitative_audit_20261028.json; current_candidate_regulatory_source_audit_20261028.md",
-      "status": "paragraphs match quantitative-audit base; law audit separately rebound to current candidate"
+      "status": "paragraph 139 and legal paragraph 146 remain unchanged; paragraph 93 has separate reviewer-stratified audit"
+    },
+    {
+      "scope": "reviewer-stratified main paired effects",
+      "paragraph_indices_zero_based": [
+        93
+      ],
+      "receipt": "reviewer_sensitivity_revision_audit_20261028.json",
+      "status": "current candidate paragraph and source-analysis hashes verified; effects remain conditional on observed pairs"
     }
   ],
   "limitations": [
     "This bridge demonstrates text/table continuity between specifically hashed candidates and maps scoped receipts; it does not provide a fresh semantic review of every manuscript claim.",
-    "It does not validate every one of the 355 scored answers against source evidence, nor establish legal applicability at each historical event date.",
     "Earlier bibliography audits are scoped to their bound manuscript hashes; altered citation text and the entire final reference list still require a consolidated source-by-source signoff.",
-    "This is not an author-metadata review, target-journal template check, or acceptance assessment."
+    "This is not an author-metadata review, target-journal template check, or acceptance assessment.",
+    "The reviewer-stratified sensitivity statement is conditional on the observed pairs and does not resolve missing-outcome uncertainty or substitute for a full semantic review."
   ],
   "new_model_calls": 0,
   "new_human_labels": 0,
   "bibliography_integrity": {
     "status": "passed_for_citation_id_completeness_and_inherited_source_audit_coverage",
-    "current_candidate_sha256": "d2cd60c972497cefc579fd8e87559b66a7da0f9cd707cd3f47967bed78b55a02",
+    "current_candidate_sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667",
     "reference_count": 29,
     "reference_ids": [
       1,
@@ -179,6 +191,7 @@
       3,
       6,
       19,
+      93,
       168
     ],
     "changed_citation_review": [
