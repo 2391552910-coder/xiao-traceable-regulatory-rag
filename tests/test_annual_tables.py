@@ -206,6 +206,14 @@ def test_compact_and_committee_matching_do_not_treat_agenda_audit_as_ownership()
     assert compact('審計委員會') == '审计委员会'
 
 
+def test_committee_meeting_category_requires_committee_evidence():
+    headers = ['会议届次', '会议类型', '召开日期', '会议决议']
+    assert classify_headers(headers, '年度股东大会和临时股东大会情况') == 'unclassified_table'
+    assert classify_headers(headers, '本报告期董事会情况') == 'unclassified_table'
+    assert classify_headers(headers, '董事会下设专门委员会在报告期内的情况') == 'committee_meetings'
+    assert classify_headers(['委员会名称', '召开日期', '会议内容']) == 'committee_meetings'
+
+
 def test_other_entity_appointments_never_become_focal_company_membership():
     headers=['任职人员姓名','其他单位名称','在其他单位担任的职务','任期起始日期']
     category=classify_headers(headers)
