@@ -55,10 +55,10 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
         "model_calls": 0,
         "parser_development_stock_codes_excluded": sorted(DEV_STOCKS),
         "selection_note": (
-            "Three locally available 2024 reports outside the parser development stock set. "
-            "Chosen retrospectively after parser v1.4 was fixed; not preregistered or a random sample. "
-            "They may have appeared in earlier RAG answer experiments, so this is a parser-specific "
-            "engineering holdout, not a fully novel end-to-end test."
+            "Four locally available 2023/2024 reports from two companies, chosen retrospectively "
+            "for parser engineering diagnostics after parser v1.7 was fixed. This is not a random "
+            "or preregistered sample; the reports appeared in earlier RAG experiments, so this is "
+            "not a fully novel end-to-end or temporal-generalization test."
         ),
         "reports": [],
         "aggregate": {},
@@ -88,6 +88,23 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
         if document.get("model_calls") != 0:
             raise ValueError(f"Unexpected model call in {run_name}")
         pdf_path = Path(source["url"])
+        if not pdf_path.is_file():
+            # Older extraction records store the original URL in ``source.url``.
+            # For offline review, recover the local source path from the frozen
+            # cross-year protocol using the source hash; never download here.
+            protocol_path = run_dir.parent / "protocol.json"
+            if protocol_path.is_file():
+                protocol = load(protocol_path)
+                protocol_report = next(
+                    (item for item in protocol.get("reports", [])
+                     if item.get("sha256") == source["sha256"]), None
+                )
+                if protocol_report:
+                    pdf_path = ROOT / protocol_report["path"]
+            if not pdf_path.is_file():
+                raise FileNotFoundError(
+                    f"Local source PDF unavailable for {run_name}; refusing network download: {source['url']}"
+                )
         actual_hash = sha256(pdf_path)
         if actual_hash != source["sha256"] or actual_hash != document["source_pdf_sha256"]:
             raise ValueError(f"PDF SHA-256 mismatch in {run_name}")
@@ -134,9 +151,9 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
                 page_tables = tables_by_page[page_number]
                 page_chains = chains_by_page[page_number]
                 page_review_rows.append({
-                    "review_id": f"{stock}-2024-P{page_number:04d}",
+                    "review_id": f"{stock}-{source['year']}-P{page_number:04d}",
                     "stock_code": stock,
-                    "report_year": 2024,
+                    "report_year": source["year"],
                     "source_pdf_sha256": actual_hash,
                     "physical_page": page_number,
                     "independent_reviewer": "",
@@ -148,8 +165,9 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
                     "comments": "",
                 })
                 prediction_rows.append({
-                    "review_id": f"{stock}-2024-P{page_number:04d}",
+                    "review_id": f"{stock}-{source['year']}-P{page_number:04d}",
                     "stock_code": stock,
+                    "report_year": source["year"],
                     "physical_page": page_number,
                     "selected_by_governance_rule": page_number in document["selection"]["seed_pages"],
                     "detected_table_ids": [t["table_id"] for t in page_tables],
@@ -159,8 +177,8 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
                     "blind_image": blind_rel.as_posix(),
                 })
                 blind_sections.append(
-                    f"<section><h2>{html.escape(source['company'])} · {stock} · 2024 · 物理页 {page_number}</h2>"
-                    f"<p>review_id={stock}-2024-P{page_number:04d}；请只依据原页图像记录盲审标签。</p>"
+                    f"<section><h2>{html.escape(source['company'])} · {stock} · {source['year']} · 物理页 {page_number}</h2>"
+                    f"<p>review_id={stock}-{source['year']}-P{page_number:04d}；请只依据原页图像记录盲审标签。</p>"
                     f"<img src='{blind_rel.as_posix()}' loading='lazy'></section>"
                 )
                 rows_html = []
@@ -183,8 +201,8 @@ def build(out: Path, holdout_runs: list[str], parser_version: str):
                 else:
                     rows_html.append("<p class='warn'>解析器本页未检出表格；请特别核查是否漏检。</p>")
                 html_sections.append(
-                    f"<section><h2>{html.escape(source['company'])} · {stock} · 2024 · 物理页 {page_number}</h2>"
-                    f"<p>review_id={stock}-2024-P{page_number:04d}；候选表格数={len(page_tables)}；该页属于关键词种子页={page_number in document['selection']['seed_pages']}</p>"
+                    f"<section><h2>{html.escape(source['company'])} · {stock} · {source['year']} · 物理页 {page_number}</h2>"
+                    f"<p>review_id={stock}-{source['year']}-P{page_number:04d}；候选表格数={len(page_tables)}；该页属于关键词种子页={page_number in document['selection']['seed_pages']}</p>"
                     f"<img src='{image_rel.as_posix()}' loading='lazy'>"
                     + "".join(rows_html)
                     + "</section>"
