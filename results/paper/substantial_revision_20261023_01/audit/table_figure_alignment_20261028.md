@@ -132,3 +132,9 @@ Total output lines: 148
 - 知识库包含 DOC343（2023年第62号公告修改决定），但该修改决定不是章程指引的合并全文；较早的第182号令、2023年修订后的章程指引合并文本和2018年治理准则版本未以相应历史全文单独入库。
 - 因各文件 `@DATE`记录的法律时间节点不同，稿中按该字段计数的“晚于报告年度”只能作为索引风险筛查；不把该统计解释为规范对具体事项不适用或历史合规性结论。官方原文链接列于参考文献[25]–[27]。
 - 此项复核没有改变模型输出、评分、检索结果或统计估计，只澄清日期字段含义并收窄解释范围。
+
+## 2026-10-28 经典基线与数据集文献书目复核
+
+- 对当前统一主文候选稿（SHA-256 `ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c`）参考文献[1]–[4]、[7]–[10]、[12]和[14]逐条核对正式出版元数据。NeurIPS官方记录确认RAG原始论文的题名、作者和NeurIPS 2020论文集信息；ACL Anthology确认FinQA、TAT-QA、HiREC、DPR和Adaptive-RAG的题名、会议信息、年份、页码及DOI；Now Publishers确认BM25综述的卷期、页码和DOI；ACM Digital Library确认RRF论文题名、作者、SIGIR 2009和758–759页；OpenReview确认Self-RAG为ICLR 2024论文；arXiv确认Qwen3 Embedding的题名与编号。
+- 官方记录与稿件相符，未发现需要修订的书目信息。对应一手记录：[NeurIPS RAG](https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html)、[FinQA](https://aclanthology.org/2021.emnlp-main.300/)、[TAT-QA](https://aclanthology.org/2021.acl-long.254/)、[HiREC](https://aclanthology.org/2025.findings-acl.855/)、[DPR](https://aclanthology.org/2020.emnlp-main.550/)、[BM25综述](https://doi.org/10.1561/1500000019)、[Qwen3 Embedding](https://arxiv.org/abs/2506.05176)、[RRF](https://doi.org/10.1145/1571941.1572114)、[Self-RAG](https://openreview.net/forum?id=hSyW5go0v8)、[Adaptive-RAG](https://aclanthology.org/2024.naacl-long.389/)。
+- 本次是书目元数据核对，不把会议论文或预印本改写为期刊论文，也不构成参考文献所支持的全部正文论断之独立复验。此前逐段引文对应记录与本轮元数据范围应一并理解；法规历史适用性、全量回答语义支持和投稿模板仍未因此得到验证。
