@@ -1,19 +1,20 @@
-# 留出复核标注说明
+# 留出集双阶段盲审与计分说明
 
-## 盲审顺序
+## 阶段一：只做盲标，不查看解析预测
 
-1. 先只看 `blind_review.html` 的原始PDF页图，填写 `page_review_template.csv`，记录每页是否存在本项目范围内的治理表格及漏检数量。对有预测表格的页，`false_positive_table_ids` 必须明确填 `none` 或分号分隔的误检表格ID。
-2. 用 `missed_table_template.csv` 为每页填写 `page_review_complete=yes`；每个漏检表格新增一行，填 `gold_table_id`（人工编号）、`gold_category`、`missed_by_parser=yes`、复核者和备注。确认本页没有漏检时，在原空白行填写 `missed_by_parser=no` 和复核者；不完整复核保持 `page_review_complete` 为空。
-3. 再查看 `review.html` 和 `page_predictions.jsonl`。在 `table_review_template.csv` 中逐条预测填写 `match_status=matched` 或 `false_positive`；匹配项填 `gold_table_id` 和人工类别。分类只能按页面证据确定；证据不足填 `unclassified_table`，不要猜测。
-4. 在 `continuation_review_template.csv` 中逐条填写 `gold_continuation=yes/no`。若为续表，补填人工确认的左右表编号。即使解析器没有接受连接，也要依据原页独立判断。
-5. 每位复核者单独复制并填写整套模板；不要把多人意见先合并成一个标签。解决分歧后另存裁决版，保留原始复核表。
+只打开同目录 `blind_review.html`，不要打开 `review.html`、`page_predictions.jsonl`、`prediction_gold_match_template.csv` 或 `accepted_continuation_predictions.jsonl`。
 
-## 可计算范围
+1. 在 `gold_table_blind_template.csv` 为每页登记所有实际表格区域（包括治理关键词页邻页上出现的其他主题表格）。填写唯一人工 `gold_table_id`、人工类别及归一化框 `[x0,y0,x1,y1]`（范围0–1，按整页宽高归一化）。每页无表时将原行 `gold_table_id` 填 `NONE`、`review_complete=yes` 和复核者。若有表格，原行填写一个表格；每多一个表格复制一行并填写另一个ID。类别按可见表头/内容填写；无明确领域类别的真实表格标为 `other_table`，不要遗漏。
+2. 在 `gold_continuation_blind_template.csv` 检查每个相邻物理页边界。无续表时填 `gold_continuation=no`；有一组续表时填 `yes` 并填写左右人工表格ID；同一边界有多组续表时复制行。每个边界必须有 `review_complete=yes` 和复核者。若某一页没有列入复核包，不能推断跨该页没有续表；本指标只覆盖模板中的相邻页边界。
+3. 保存第一阶段副本并记录复核者、日期及文件哈希。第二位复核者应独立复制原始空模板完成同样工作。先合并/裁决盲标分歧，再查看预测。
 
-- 表格检测：逐表 TP/FP/FN、Precision、Recall、F1；页级有/无表格的 Precision、Recall、F1 另算。
-- 类别：对匹配表格计算逐类 Precision、Recall、F1，并将漏检表计为对应类别 FN。
-- 跨页连接：根据 `gold_continuation` 与解析器是否接受连接计算 TP/FP/FN、Precision、Recall、F1。
-- 指标仅代表这三份事后选择的报告、治理关键词页及相邻页，不代表随机样本、全报告任意表格或端到端RAG效果。
+## 阶段二：揭示预测并做一对一匹配
 
-`score_annual_table_review.py` 只在表级和边界级标签完整且包含复核者身份时计分。空白模板不是结果；模型或作者自检不能标记为独立人工复核。跨页指标限于模板枚举的相邻页预测区域组合。
+完成并封存阶段一后，才查看 `review.html` 和 `page_predictions.jsonl`。在 `prediction_gold_match_template.csv` 为每个预测表格填 `match_status=matched` 或 `false_positive`。匹配项填阶段一的 `gold_table_id`；误检不填金表ID。每个人工金表最多匹配一个预测表。类别使用阶段一封存的金表类别，不能因为解析器输出而改写。
+
+## 计分与边界
+
+`score_annual_table_review.py` 要求三张标签表完整、引用的金表ID有效且逐页误检/漏检清楚，然后计算页级和表级Precision、Recall、F1，逐类指标，以及跨页连接指标。跨页指标以预测器实际接受的边作为预测，和阶段一金续表边集合匹配；被漏检的表或边将计为FN。
+
+每位复核者应在独立副本上分别计分并保留原表；分歧需另存裁决表。复核者字段只记录身份，不能由脚本证明其独立性。样本是事后选择的三份2024报告，仅覆盖治理关键词页及包内相邻页；不能代表随机样本、完整年报、跨年度泛化或端到端RAG效果。空白模板、作者/AI自查都不是独立人工指标。
 
