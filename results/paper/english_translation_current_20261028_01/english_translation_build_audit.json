@@ -2,7 +2,7 @@
   "source": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
   "output": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_20261028.docx",
   "source_sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
-  "output_sha256": "fe756faf71ae8529b6c9ff59d61b93437abad70d7b4af849a0772ebf1e838bc2",
+  "output_sha256": "1583604bbc521a34b497182f61123137a2d63b5dc842704f1cc7b8ab579a80a4",
   "paragraphs": 188,
   "tables": 12,
   "table_shapes": [
@@ -62,3 +62,4 @@
   "old_primary_effect_absent": true,
   "references_1_to_31": true
 }
+

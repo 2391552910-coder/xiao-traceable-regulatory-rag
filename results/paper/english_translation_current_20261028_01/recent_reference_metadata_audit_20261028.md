@@ -45,7 +45,27 @@ This audit checks bibliographic metadata for selected references in the English 
 
 Reference [9] remains cited as the Qwen3 Embedding arXiv preprint; [24] is a dynamic Kimi documentation page rather than a bibliographic publication. The current page is not a historical snapshot, so its present model table cannot independently prove which configuration was displayed on the manuscript’s stated access dates.
 
+## Claim-to-source review
+
+| Cited claim(s) | Primary-source check | Assessment |
+| --- | --- | --- |
+| [1] RAG combines retrieval with generation and external evidence | NeurIPS paper describes parametric and non-parametric memory, retrieved Wikipedia passages, and evidence provenance as an open problem. | Supported as a high-level description; “updateable evidence interface” is the manuscript’s framing, not a quoted contribution. |
+| [2–3] FinQA numerical reasoning and TAT-QA hybrid table/text QA | ACL Anthology abstracts and paper metadata identify the corresponding tasks and datasets. | Supported. |
+| [4] HiREC hierarchical retrieval, evidence curation, complementary queries | ACL paper describes document-then-passage retrieval, filtering, answerability checks, and a complementary-query loop. | Supported. |
+| [5–6] Engineering-design fact extraction and LLM/knowledge-based survey | KBS article describes patent relation extraction for design RAG; the KBS survey reviews LLM/knowledge-base integration. | Supported. The manuscript does not imply that these methods are reproduced. |
+| [7–10] BM25, DPR, Qwen3 Embedding, and RRF | Respective retrieval paper, model preprint, and SIGIR record support the stated method family or model capability. | Supported at the level stated. The text explicitly says RRF results were not run. |
+| [11] Query-time and ingestion-time acronym augmentation | *Information Sciences* abstract and method description identify QTA and ITE for acronym retrieval. | Supported. |
+| [12–15] Self-RAG, CRAG, Adaptive-RAG, and AIR-RAG | ICLR/NAACL papers, arXiv preprint, and *Neurocomputing* article describe self-reflection, retrieval correction, question-complexity routing, and adaptive iterative retrieval. | Supported as related-work summaries. The text correctly says these trained methods were not reproduced. |
+| [16–18] ReAct, CoLE, and MADKE | ICLR/Elsevier sources describe reasoning-action interleaving, collaborative legal prompting, and a shared-knowledge multi-agent debate framework. | Supported. To avoid suggesting an implemented multi-agent role experiment, the CoLE sentence was narrowed to “a collaborative legal prompting framework inspired by teamwork in legal practice.” |
+| [19–21] ALCE, RAGAs, and RAGChecker | ACL Anthology and NeurIPS records describe citation evaluation, reference-free RAG metrics, and diagnostic metrics for retrieval and generation. | Supported. The statement that these dimensions should be distinguished is the manuscript’s synthesis. |
+| [22–23] LegalBench-RAG and long-context position effects | The arXiv benchmark describes human-annotated evidence spans; TACL reports position-dependent use of relevant information in long contexts. | Supported. The manuscript appropriately avoids treating page-level matches as passage-level Recall/nDCG. |
+| [28–30] ARQA, CFQA, and CFinRAG | ACL Anthology, workshop proceedings, and *Engineering Applications of AI* records support the stated dataset sizes, task scope, human grounding, and graph-RAG description. | Supported. CFQA is a workshop paper and ARQA is an EACL Industry Track paper; neither is described as a journal article. |
+| [25–27] Regulatory document identifiers and dates | Official CSRC pages confirm the cited order/announcement titles and publication/effective dates. | Bibliographic/source identity supported. This does not establish which version legally applies to any 2024 event. |
+| [31] Luxshare 2024 annual-report case | The official CNINFO PDF confirms the listed committee membership and 23 August/25 October meeting entries; another report section records Zhang Ying’s departure on 18 May. | Source content supports the reported internal inconsistency. The manuscript explicitly treats it as a post hoc illustration, not a compliance finding or explanation of the main effect. |
+
+This review checks whether cited sources support the summarized related-work statements; it does not certify every method detail, reproduce each cited experiment, or validate the paper’s own results. Reference [24] remains the only source in this list whose historical page content could not be independently recovered.
+
 ## Limits
 
-No bibliographic correction was identified in these checks. This remains a selected-reference metadata audit, not a complete citation-to-claim review, legal applicability opinion, literature-search audit, or journal-acceptance assessment. Reference [24] needs a dated source snapshot if it is used to substantiate a historical model configuration; all cited technical claims still require claim-level review in context.
+No unsupported related-work claim was identified in the reviewed citation groups, and one CoLE phrase was made more faithful to its source. This remains a claim-support spot review, not an exhaustive verification of every technical detail, legal applicability opinion, literature-search audit, or journal-acceptance assessment. Reference [24] needs a dated source snapshot if it is used to substantiate a historical model configuration.
 
