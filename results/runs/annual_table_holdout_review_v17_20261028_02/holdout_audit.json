@@ -1,0 +1,267 @@
+{
+  "status": "review_packet_built_pending_independent_human_labels",
+  "created_utc_date": "2026-10-28",
+  "parser_version": "annual_governance_tables_v1_7",
+  "model_calls": 0,
+  "parser_development_stock_codes_excluded": [
+    "000651",
+    "000999",
+    "600036",
+    "603288"
+  ],
+  "selection_note": "Three locally available 2024 reports outside the parser development stock set. Chosen retrospectively after parser v1.4 was fixed; not preregistered or a random sample. They may have appeared in earlier RAG answer experiments, so this is a parser-specific engineering holdout, not a fully novel end-to-end test.",
+  "reports": [
+    {
+      "run": "annual_table_holdout_vanke_2024_v17_20261028_01",
+      "stock_code": "000002",
+      "company": "万科A",
+      "report_year": 2024,
+      "source_file": "000002.SZ_万科A_2024.pdf",
+      "source_pdf_sha256": "734370d32036c1a18716e42f2e96c0f6ffd8a48c1fe115ecda945a09eb416ac0",
+      "source_pages": 327,
+      "parser_scope": "governance keyword pages and fixed physical neighbors; not every table in the PDF",
+      "keyword_seed_pages": [
+        10,
+        80,
+        81,
+        84,
+        85,
+        89,
+        95,
+        97
+      ],
+      "selected_pages": [
+        9,
+        10,
+        11,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        88,
+        89,
+        90,
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "parsed_pages": 19,
+      "selected_pages_with_detected_tables": 9,
+      "selected_pages_without_detected_tables": 10,
+      "table_regions": 13,
+      "logical_chains": 13,
+      "logical_rows": 145,
+      "rows_with_committee_labels": 33,
+      "chain_categories": {
+        "unclassified_table": 9,
+        "committee_meetings": 2,
+        "external_entity_appointments": 2
+      },
+      "review_queue_items": 112,
+      "model_calls": 0,
+      "accuracy_status": "not_measured_pending_independent_review"
+    },
+    {
+      "run": "annual_table_holdout_midea_2024_v17_20261028_01",
+      "stock_code": "000333",
+      "company": "美的集团",
+      "report_year": 2024,
+      "source_file": "000333.SZ_美的集团_2024.pdf",
+      "source_pdf_sha256": "b17a9b9b84bca1d2a4e4a3cadc5dd5ba5c85e3f1fd2d758acd3315b5b040ecd9",
+      "source_pages": 295,
+      "parser_scope": "governance keyword pages and fixed physical neighbors; not every table in the PDF",
+      "keyword_seed_pages": [
+        69,
+        73,
+        74,
+        80,
+        81,
+        92,
+        93
+      ],
+      "selected_pages": [
+        68,
+        69,
+        70,
+        72,
+        73,
+        74,
+        75,
+        79,
+        80,
+        81,
+        82,
+        91,
+        92,
+        93,
+        94
+      ],
+      "parsed_pages": 15,
+      "selected_pages_with_detected_tables": 10,
+      "selected_pages_without_detected_tables": 5,
+      "table_regions": 16,
+      "logical_chains": 14,
+      "logical_rows": 141,
+      "rows_with_committee_labels": 10,
+      "chain_categories": {
+        "unclassified_table": 11,
+        "personnel_changes": 2,
+        "committee_meetings": 1
+      },
+      "review_queue_items": 134,
+      "model_calls": 0,
+      "accuracy_status": "not_measured_pending_independent_review"
+    },
+    {
+      "run": "annual_table_holdout_beijing_culture_2024_v17_20261028_01",
+      "stock_code": "000802",
+      "company": "北京文化",
+      "report_year": 2024,
+      "source_file": "000802.SZ_北京文化_2024.pdf",
+      "source_pdf_sha256": "9cbe3d28653cfa43c15dda0175a9243b7e1ff658fd75dd2bc2faaf838d65becd",
+      "source_pages": 196,
+      "parser_scope": "governance keyword pages and fixed physical neighbors; not every table in the PDF",
+      "keyword_seed_pages": [
+        24,
+        27,
+        31,
+        32,
+        33,
+        34,
+        37,
+        42,
+        175
+      ],
+      "selected_pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        41,
+        42,
+        43,
+        174,
+        175,
+        176
+      ],
+      "parsed_pages": 21,
+      "selected_pages_with_detected_tables": 18,
+      "selected_pages_without_detected_tables": 3,
+      "table_regions": 28,
+      "logical_chains": 23,
+      "logical_rows": 141,
+      "rows_with_committee_labels": 7,
+      "chain_categories": {
+        "unclassified_table": 19,
+        "personnel_changes": 2,
+        "external_entity_appointments": 1,
+        "committee_meetings": 1
+      },
+      "review_queue_items": 140,
+      "model_calls": 0,
+      "accuracy_status": "not_measured_pending_independent_review"
+    }
+  ],
+  "aggregate": {
+    "source_pages": 818,
+    "keyword_seed_pages": 24,
+    "selected_pages": 55,
+    "parsed_pages": 55,
+    "selected_pages_with_detected_tables": 37,
+    "selected_pages_without_detected_tables": 18,
+    "table_regions": 57,
+    "logical_chains": 50,
+    "logical_rows": 427,
+    "rows_with_committee_labels": 50,
+    "review_queue_items": 386,
+    "chain_categories": {
+      "unclassified_table": 39,
+      "committee_meetings": 4,
+      "external_entity_appointments": 3,
+      "personnel_changes": 4
+    }
+  },
+  "limitations": [
+    "Counts describe parser outputs, not correctness.",
+    "No independent human labels were created by this script.",
+    "Precision, recall and F1 must not be reported until page/table and row labels are independently reviewed.",
+    "PDF company/year identity is caller-supplied metadata and is not independently verified here."
+  ],
+  "review_packet": {
+    "page_review_template_csv": "page_review_template.csv",
+    "page_predictions_jsonl": "page_predictions.jsonl",
+    "blind_review_html": "blind_review.html",
+    "review_html": "review.html",
+    "selected_pages_in_packet": 55,
+    "blind_previews_have_prediction_boxes": false,
+    "comparison_previews_have_red_prediction_boxes": true,
+    "warning": "Reviewer labels are blank; complete page_review_template.csv from blind_review.html before inspecting page_predictions.jsonl or review.html."
+  },
+  "qualitative_spot_checks": {
+    "review_status": "implementation_author_visual_diagnostic_only; not independent human annotation and not included in metrics",
+    "source_verified_examples": [
+      {
+        "stock_code": "000333",
+        "page": 70,
+        "source_table_type_observed": "shareholder_meetings",
+        "v1_4_category": "committee_meetings",
+        "v1_7_category": "unclassified_table",
+        "evidence": "Original page heading and columns identify annual and interim shareholder meetings; v1.7 removes the false committee category."
+      },
+      {
+        "stock_code": "000802",
+        "page": 25,
+        "source_table_type_observed": "shareholder_meetings",
+        "v1_4_category": "committee_meetings",
+        "v1_7_category": "unclassified_table",
+        "evidence": "Original page heading identifies annual and interim shareholder meetings; v1.7 removes the false committee category."
+      },
+      {
+        "stock_code": "000802",
+        "pages": [
+          30,
+          31
+        ],
+        "source_table_type_observed": "board_meetings",
+        "v1_4_category": "committee_meetings",
+        "v1_7_category": "unclassified_table",
+        "evidence": "Original page heading identifies the report-period board meeting table; v1.7 removes the false committee category."
+      },
+      {
+        "stock_code": "000333",
+        "page": 80,
+        "source_table_type_observed": "special_committee_meetings",
+        "v1_4_category": "committee_meetings",
+        "v1_7_category": "committee_meetings",
+        "evidence": "Explicit committee-name and meeting columns remain classified."
+      },
+      {
+        "stock_code": "000802",
+        "page": 31,
+        "source_table_type_observed": "special_committee_meetings",
+        "v1_4_category": "committee_meetings",
+        "v1_7_category": "committee_meetings",
+        "evidence": "Explicit committee-name and meeting columns remain classified."
+      }
+    ],
+    "metric_eligible": false
+  }
+}
+
