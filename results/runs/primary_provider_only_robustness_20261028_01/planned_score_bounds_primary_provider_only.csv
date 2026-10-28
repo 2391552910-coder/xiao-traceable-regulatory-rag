@@ -1,0 +1,11 @@
+﻿mode,label,observed,planned,observed_answer_mean,full_planned_mean_lower,full_planned_mean_upper
+merged_corpus_generic_cited_rag,G1,52,60,7.326923076923077,6.35,7.416666666666667
+dual_source_generic_cited_rag,G2,47,60,7.542553191489362,5.908333333333333,7.641666666666667
+dual_source_role_grounded_rag,G3,48,60,7.59375,6.075,7.675
+no_rerank,No rerank,55,60,7.8090909090909095,7.158333333333333,7.825
+bm25_only,BM25,54,60,7.851851851851852,7.066666666666666,7.866666666666666
+minus_annual,No annual,20,20,6.675,6.675,6.675
+minus_regulation,No regulation,20,20,6.925,6.925,6.925
+k28__merged_corpus_generic_cited_rag,K2.8 G1,20,20,7.325,7.325,7.325
+k28__dual_source_generic_cited_rag,K2.8 G2,19,20,7.578947368421052,7.2,7.6
+k28__dual_source_role_grounded_rag,K2.8 G3,20,20,7.6,7.6,7.6

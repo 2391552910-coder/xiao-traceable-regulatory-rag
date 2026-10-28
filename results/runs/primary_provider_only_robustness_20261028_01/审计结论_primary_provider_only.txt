@@ -1,0 +1,40 @@
+﻿排除会话补充回答后的证据与稳健性复核（2026-10-28）
+
+原始 386 条评分中，有 31 条对应当前助手会话撰写的补充答案：33条补充记录仅来自会话、没有新增API调用，31条进入双人评分，2条未评分。它们未执行冻结的Kimi提示和API协议，故全部排除。
+过滤后保留355条供应商生成输出的双人评分；逐条核验的原评分字段仍为386条记录的全部3,088个双人逐维字段。没有改写原始记录，也未发起模型调用。
+重算内容：20,000次公司聚类bootstrap、逐公司删一、完整题/公司配对、主首轮提供方输出子集、缺失界及各条件可用数。
+
+比较 | 已观测配对 | 公司宏差值 | 95%区间 | 删一范围 | 全计划题均差保守界
+G2-G1 | 41/60 | 0.2281 | [0.10964912280701755, 0.3552631578947368] | [0.19907407407407407, 0.24074074074074073] | [-1.5083333333333333, 1.2916666666666667]
+G3-G2 | 38/60 | 0.0132 | [0.0, 0.039473684210526314] | [0.0, 0.013888888888888888] | [-1.5666666666666667, 1.7666666666666666]
+G3-G1 | 42/60 | 0.2895 | [0.15789473684210525, 0.4342105263157895] | [0.24999999999999994, 0.3055555555555555] | [-1.3416666666666666, 1.325]
+G3-NoRerank | 45/60 | -0.2222 | [-0.31481481481481477, -0.12962962962962962] | [-0.25, -0.196078431372549] | [-1.75, 0.5166666666666667]
+G3-BM25 | 45/60 | -0.2451 | [-0.3431372549019608, -0.1568627450980392] | [-0.26041666666666663, -0.21875] | [-1.7916666666666667, 0.6083333333333333]
+NoAnnual-G3 | 15/20 | -0.9667 | [-1.0, -0.9] | [-1.0, -0.9642857142857143] | [-1.1, 0.9]
+NoRegulation-G3 | 15/20 | -0.7333 | [-0.8666666666666667, -0.6] | [-0.75, -0.7142857142857143] | [-0.85, 1.15]
+
+完整样本敏感性：
+按题完整 three_main: 33 题，18 公司；G2-G1=0.2361; G3-G2=0.0139; G3-G1=0.2500
+按题完整 five_main_and_retrieval: 30 题，16 公司；G2-G1=0.2031; G3-G2=0.0156; G3-G1=0.2188; G3-NoRerank=-0.2656; G3-BM25=-0.2760
+按公司完整 three_main: 12 题，4 公司；G2-G1=0.1250; G3-G2=0.0000; G3-G1=0.1250
+按公司完整 five_main_and_retrieval: 12 题，4 公司；G2-G1=0.1250; G3-G2=0.0000; G3-G1=0.1250; G3-NoRerank=-0.2500; G3-BM25=-0.2917
+
+首轮回答共同成功子集（受选择偏差影响）：
+G2-G1: 41 题，宏差值=0.2281
+G3-G2: 38 题，宏差值=0.0132
+G3-G1: 42 题，宏差值=0.2895
+
+论断约束：
+1. Four 0/1/2 ratings measure exploratory answer quality, not governance quality or calibrated legal-accuracy probability.
+2. No adjudication was performed. Mean-of-two aggregation was chosen after reviewing ratings by project-owner instruction; disclose timing.
+3. Intervals are exploratory pointwise company bootstrap summaries, not preregistered H1/H2, and do not solve unknown outcome bias.
+4. Page references are human-adjudicated physical pages; chunk/page overlap is not semantic support or exhaustive retrieval recall.
+5. 20 companies with three templated topics and shared law documents do not establish generalization to unseen laws, sectors, languages or years.
+6. The main alias k3 has no independently verified provider model revision; temperature=1, one repeat per condition.
+7. API recovery outputs are explicitly merged first valid outputs, not extra samples; first-attempt and recovered results must remain separate.
+8. Thirty-three answers were authored in the current assistant session; 31 were independently scored, but the original prompt was not executed and there were zero additional provider API calls. All 31 are excluded from controlled provider comparisons.
+9. Only 355 two-reviewer-scored outputs from the recorded provider-generation runs enter this filtered analysis; the original 386-score analysis remains preserved as a superseded historical artifact.
+10. Source-removal conditions reduce available context information and token count jointly; they establish necessity under this setup, not a purely role-label causal effect.
+11. NoRerank and BM25 observed quality exceed G3, so claims that dense retrieval, reranking or role constraints are uniformly superior are unsupported.
+12. BM25 reviewer 2 assigned 8/8 to every observed answer; ceiling and reviewer dependence prevent treating it as verified near-perfect reasoning.
+13. Do not label this implemented pipeline as a multi-agent system without actual planning/tool-use/revision execution and matched evaluation.

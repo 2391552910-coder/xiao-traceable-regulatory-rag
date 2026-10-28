@@ -1,0 +1,495 @@
+{
+  "status": "completed_filtered_reanalysis_excluding_nonprotocol_session_authored_supplements",
+  "created_at_local_date": "2026-10-28",
+  "scope": "Exploratory post-hoc reanalysis; not preregistered and not a new model run.",
+  "excluded_generation_origin": {
+    "units_authored_in_current_assistant_session": 33,
+    "scored_supplement_units_excluded": 31,
+    "supplements_without_two_reviewer_score": 2,
+    "additional_api_calls": 0,
+    "original_prompt_executed": false,
+    "identical_api_protocol": false
+  },
+  "primary_model_generation": {
+    "planned_all_conditions": 400,
+    "two_reviewer_scored_primary_model_outputs": 355,
+    "primary_three_conditions_planned": 180,
+    "primary_three_conditions_successful_generation": 147,
+    "primary_condition_success_counts": {
+      "merged_corpus_generic_cited_rag": 52,
+      "dual_source_role_grounded_rag": 48,
+      "dual_source_generic_cited_rag": 47
+    }
+  },
+  "input_hashes": {
+    "results\\runs\\two_reviewer_statistics_windows_20261023_01\\per_output_scores.json": "f38fd9a22e3348c223c3bc0bfd5cf6e170d2e20c85333a4d65c3f9141df081e4",
+    "results\\runs\\compact_final_execution_windows_20261020_01\\assistant_supplement_windows_20261020_01\\answers_session_supplement.jsonl": "c4f5fae020ecf533a0d355e89b6d2c81362f314bd693bfda752dfd02ea365307",
+    "results\\runs\\compact_final_execution_windows_20261020_01\\failure_recovery_v1\\primary_audit.json": "11021b112ddf18a9e2f8712fed6517315fcabc3fa98d8a17fe373dbf09f7db6c",
+    "results\\runs\\paper_execution_freeze_windows_20261020_01\\execution_freeze.json": "f0eecd3e4f7f129364311b2daa86d0e2ca6aad6af57ac269a14c210be3ffc2c7"
+  },
+  "filtered_scores_sha256": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124",
+  "conditions": {
+    "bm25_only": {
+      "planned": null,
+      "scored_primary_model_outputs": 54,
+      "item_mean": 7.851851851851852,
+      "company_macro_mean": 7.85,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.8518518518518519,
+        "regulation": 2.0,
+        "citations": 2.0,
+        "uncertainty": 2.0
+      }
+    },
+    "dual_source_generic_cited_rag": {
+      "planned": 60,
+      "scored_primary_model_outputs": 47,
+      "item_mean": 7.542553191489362,
+      "company_macro_mean": 7.529166666666667,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.9148936170212767,
+        "regulation": 1.6382978723404256,
+        "citations": 1.9893617021276595,
+        "uncertainty": 2.0
+      }
+    },
+    "dual_source_role_grounded_rag": {
+      "planned": 60,
+      "scored_primary_model_outputs": 48,
+      "item_mean": 7.59375,
+      "company_macro_mean": 7.614035087719298,
+      "companies_observed": 19,
+      "dimensions_mean": {
+        "company_facts": 1.9270833333333333,
+        "regulation": 1.6666666666666667,
+        "citations": 2.0,
+        "uncertainty": 2.0
+      }
+    },
+    "k28__dual_source_generic_cited_rag": {
+      "planned": null,
+      "scored_primary_model_outputs": 19,
+      "item_mean": 7.578947368421052,
+      "company_macro_mean": 7.578947368421052,
+      "companies_observed": 19,
+      "dimensions_mean": {
+        "company_facts": 1.9736842105263157,
+        "regulation": 1.6842105263157894,
+        "citations": 1.9210526315789473,
+        "uncertainty": 2.0
+      }
+    },
+    "k28__dual_source_role_grounded_rag": {
+      "planned": null,
+      "scored_primary_model_outputs": 20,
+      "item_mean": 7.6,
+      "company_macro_mean": 7.6,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.925,
+        "regulation": 1.675,
+        "citations": 2.0,
+        "uncertainty": 2.0
+      }
+    },
+    "k28__merged_corpus_generic_cited_rag": {
+      "planned": null,
+      "scored_primary_model_outputs": 20,
+      "item_mean": 7.325,
+      "company_macro_mean": 7.325,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.975,
+        "regulation": 1.425,
+        "citations": 1.925,
+        "uncertainty": 2.0
+      }
+    },
+    "merged_corpus_generic_cited_rag": {
+      "planned": 60,
+      "scored_primary_model_outputs": 52,
+      "item_mean": 7.326923076923077,
+      "company_macro_mean": 7.320833333333333,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.9615384615384615,
+        "regulation": 1.375,
+        "citations": 1.9903846153846154,
+        "uncertainty": 2.0
+      }
+    },
+    "minus_annual": {
+      "planned": null,
+      "scored_primary_model_outputs": 20,
+      "item_mean": 6.675,
+      "company_macro_mean": 6.675,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.0,
+        "regulation": 1.675,
+        "citations": 2.0,
+        "uncertainty": 2.0
+      }
+    },
+    "minus_regulation": {
+      "planned": null,
+      "scored_primary_model_outputs": 20,
+      "item_mean": 6.925,
+      "company_macro_mean": 6.925,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.95,
+        "regulation": 1.0,
+        "citations": 1.975,
+        "uncertainty": 2.0
+      }
+    },
+    "no_rerank": {
+      "planned": null,
+      "scored_primary_model_outputs": 55,
+      "item_mean": 7.8090909090909095,
+      "company_macro_mean": 7.8125,
+      "companies_observed": 20,
+      "dimensions_mean": {
+        "company_facts": 1.9181818181818182,
+        "regulation": 1.8909090909090909,
+        "citations": 2.0,
+        "uncertainty": 2.0
+      }
+    }
+  },
+  "contrasts": {
+    "G2-G1": {
+      "mean": {
+        "planned_questions": 60,
+        "known_pairs": 41,
+        "unknown_pairs": 19,
+        "judged_pair_coverage": 0.6833333333333333,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.3583333333333334,
+          2.7083333333333335
+        ],
+        "mean_difference_on_known_pairs": 0.25609756097560976,
+        "company_macro_difference_on_known_pairs": 0.22807017543859648,
+        "company_cluster_bootstrap_ci95": [
+          0.10964912280701755,
+          0.35526315789473684
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      },
+      "R1": {
+        "planned_questions": 60,
+        "known_pairs": 41,
+        "unknown_pairs": 19,
+        "judged_pair_coverage": 0.6833333333333333,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.3333333333333335,
+          2.7333333333333334
+        ],
+        "mean_difference_on_known_pairs": 0.2926829268292683,
+        "company_macro_difference_on_known_pairs": 0.2631578947368421,
+        "company_cluster_bootstrap_ci95": [
+          0.11403508771929824,
+          0.4298245614035087
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      },
+      "R2": {
+        "planned_questions": 60,
+        "known_pairs": 41,
+        "unknown_pairs": 19,
+        "judged_pair_coverage": 0.6833333333333333,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.3833333333333333,
+          2.683333333333333
+        ],
+        "mean_difference_on_known_pairs": 0.21951219512195122,
+        "company_macro_difference_on_known_pairs": 0.19298245614035084,
+        "company_cluster_bootstrap_ci95": [
+          0.09649122807017543,
+          0.28947368421052627
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      }
+    },
+    "G3-G2": {
+      "mean": {
+        "planned_questions": 60,
+        "known_pairs": 38,
+        "unknown_pairs": 22,
+        "judged_pair_coverage": 0.6333333333333333,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.925,
+          2.941666666666667
+        ],
+        "mean_difference_on_known_pairs": 0.013157894736842105,
+        "company_macro_difference_on_known_pairs": 0.013157894736842105,
+        "company_cluster_bootstrap_ci95": [
+          0.0,
+          0.039473684210526314
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      },
+      "R1": {
+        "planned_questions": 60,
+        "known_pairs": 38,
+        "unknown_pairs": 22,
+        "judged_pair_coverage": 0.6333333333333333,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.9166666666666665,
+          2.95
+        ],
+        "mean_difference_on_known_pairs": 0.02631578947368421,
+        "company_macro_difference_on_known_pairs": 0.02631578947368421,
+        "company_cluster_bootstrap_ci95": [
+          0.0,
+          0.07894736842105263
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      },
+      "R2": {
+        "planned_questions": 60,
+        "known_pairs": 38,
+        "unknown_pairs": 22,
+        "judged_pair_coverage": 0.6333333333333333,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.933333333333333,
+          2.933333333333333
+        ],
+        "mean_difference_on_known_pairs": 0.0,
+        "company_macro_difference_on_known_pairs": 0.0,
+        "company_cluster_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      }
+    },
+    "G3-G1": {
+      "mean": {
+        "planned_questions": 60,
+        "known_pairs": 42,
+        "unknown_pairs": 18,
+        "judged_pair_coverage": 0.7,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.2083333333333335,
+          2.591666666666667
+        ],
+        "mean_difference_on_known_pairs": 0.27380952380952384,
+        "company_macro_difference_on_known_pairs": 0.28947368421052627,
+        "company_cluster_bootstrap_ci95": [
+          0.15789473684210525,
+          0.4298245614035087
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      },
+      "R1": {
+        "planned_questions": 60,
+        "known_pairs": 42,
+        "unknown_pairs": 18,
+        "judged_pair_coverage": 0.7,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.2,
+          2.6
+        ],
+        "mean_difference_on_known_pairs": 0.2857142857142857,
+        "company_macro_difference_on_known_pairs": 0.3070175438596491,
+        "company_cluster_bootstrap_ci95": [
+          0.15789473684210525,
+          0.47368421052631576
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      },
+      "R2": {
+        "planned_questions": 60,
+        "known_pairs": 42,
+        "unknown_pairs": 18,
+        "judged_pair_coverage": 0.7,
+        "planned_company_clusters": 20,
+        "observed_company_clusters": 19,
+        "full_test_mean_difference": null,
+        "full_test_difference_bounds": [
+          -2.216666666666667,
+          2.5833333333333335
+        ],
+        "mean_difference_on_known_pairs": 0.2619047619047619,
+        "company_macro_difference_on_known_pairs": 0.27192982456140347,
+        "company_cluster_bootstrap_ci95": [
+          0.15789473684210525,
+          0.39473684210526316
+        ],
+        "interval_scope": "Full registered set only if no unknown pairs; otherwise conditional on observed pairs, not a full-test causal or unbiased missing-data estimate.",
+        "bootstrap_draws": 20000,
+        "seed": 20261028,
+        "independent_unit": "company cluster",
+        "quality_zero_imputation": false
+      }
+    }
+  },
+  "reviewer_agreement": {
+    "company_facts": {
+      "quadratic_weighted_kappa_on_numeric_judgments": 0.4002758145147388,
+      "total_judgments": 355,
+      "numeric_pairs": 355,
+      "pairs_with_unknown": 0,
+      "exact_agreement_including_unknown": 0.8619718309859155,
+      "confusion_matrix_numeric": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          21,
+          45
+        ],
+        [
+          0,
+          4,
+          285
+        ]
+      ],
+      "constant_marginals_not_reported_as_kappa_one": false
+    },
+    "regulation": {
+      "quadratic_weighted_kappa_on_numeric_judgments": 0.21464810335673412,
+      "total_judgments": 355,
+      "numeric_pairs": 355,
+      "pairs_with_unknown": 0,
+      "exact_agreement_including_unknown": 0.5774647887323944,
+      "confusion_matrix_numeric": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          47,
+          1
+        ],
+        [
+          0,
+          149,
+          158
+        ]
+      ],
+      "constant_marginals_not_reported_as_kappa_one": false
+    },
+    "citations": {
+      "quadratic_weighted_kappa_on_numeric_judgments": 0.0,
+      "total_judgments": 355,
+      "numeric_pairs": 355,
+      "pairs_with_unknown": 0,
+      "exact_agreement_including_unknown": 0.9746478873239437,
+      "confusion_matrix_numeric": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          346
+        ]
+      ],
+      "constant_marginals_not_reported_as_kappa_one": false
+    },
+    "uncertainty": {
+      "quadratic_weighted_kappa_on_numeric_judgments": null,
+      "total_judgments": 355,
+      "numeric_pairs": 355,
+      "pairs_with_unknown": 0,
+      "exact_agreement_including_unknown": 1.0,
+      "confusion_matrix_numeric": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          355
+        ]
+      ],
+      "constant_marginals_not_reported_as_kappa_one": true
+    }
+  },
+  "interpretation_limits": [
+    "Excluding post-hoc session-authored supplements removes cross-model contamination from the controlled Kimi comparison.",
+    "The resulting condition comparisons have substantial and unequal missingness; estimates are conditional on observed pairs.",
+    "Company-cluster percentile intervals are exploratory and not confirmatory tests.",
+    "The Qwen/CUDA retrieval configuration and requested Kimi alias are not equivalent to a verified immutable provider model revision."
+  ]
+}
