@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-28",
-  "purpose": "Current manuscript and supplement, audit receipts, and exact source inputs used by the numeric audit.",
+  "purpose": "Current and prior manuscript candidates, supplements, audit receipts, and exact source inputs for numerical verification.",
   "files": [
     {
       "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
@@ -46,6 +46,26 @@
       "path": "results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.csv",
       "bytes": 4403,
       "sha256": "2afffdb6ad76e5b01d30fadc3f08c54964e11f08b8a877a0fe295e53436645c1"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_bootstrap20261028_法规日期复核候选稿_待终审.docx",
+      "bytes": 1866595,
+      "sha256": "ea865ca5715f727167ef540761b09fea2b9e162845fdb91c9d5cd9c3300506ae"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/legal_date_claim_audit_20261028.json",
+      "bytes": 2323,
+      "sha256": "fc88b105f8992ed6966f8eea3388e18a073623752ea2df4ffd615b88489e4bb4"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028_legal_update.json",
+      "bytes": 1844,
+      "sha256": "3f9bae2a439d85ed2d1d5019c1e7278c7cf9888e39ea0b158fde5af461330406"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_legal_date_20261028/native_render_receipt.json",
+      "bytes": 400,
+      "sha256": "e3c1156345de9d148fc985ec4b315def3916a706c1c7afc5e50225da31d4efa5"
     }
   ]
 }
