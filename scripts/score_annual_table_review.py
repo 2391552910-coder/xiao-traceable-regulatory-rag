@@ -51,11 +51,11 @@ def score(packet: Path) -> dict:
     page_predictions = load_jsonl(packet / "page_predictions.jsonl")
     edge_predictions = load_jsonl(packet / "accepted_continuation_predictions.jsonl")
 
-    pred_by_page = {(r["stock_code"], str(r["physical_page"])): r for r in page_predictions}
+    pred_by_page = {(r["stock_code"], str(r["report_year"]), str(r["physical_page"])): r for r in page_predictions}
     expected_pages = set(pred_by_page)
-    page_gold_present: dict[tuple[str, str], bool] = {}
+    page_gold_present: dict[tuple[str, str, str], bool] = {}
     for row in page_rows:
-        key = (row["stock_code"], str(row["physical_page"]))
+        key = (row["stock_code"], str(row["report_year"]), str(row["physical_page"]))
         if key not in expected_pages or key in page_gold_present:
             raise ValueError(f"Unexpected or duplicate page review row: {key}")
         if not yes_no(row.get("review_complete", ""), "review_complete", str(key)):
@@ -71,7 +71,7 @@ def score(packet: Path) -> dict:
     page_sentinels = set()
     sentinel_counts = Counter()
     for idx, row in enumerate(gold_rows, 1):
-        page_key = (row["stock_code"], str(row["physical_page"]))
+        page_key = (row["stock_code"], str(row["report_year"]), str(row["physical_page"]))
         row_id = f"gold table row {idx}"
         if page_key not in expected_pages:
             raise ValueError(f"Gold table row refers to a page outside the packet: {page_key}")
@@ -99,7 +99,7 @@ def score(packet: Path) -> dict:
                 any(not isinstance(v, (int, float)) or v < 0 or v > 1 for v in bbox) or
                 bbox[0] >= bbox[2] or bbox[1] >= bbox[3]):
             raise ValueError(f"Invalid normalized bbox coordinates for {gold_id}: {bbox!r}")
-        key = (row["stock_code"], gold_id)
+        key = (row["stock_code"], str(row["report_year"]), gold_id)
         if key in gold_tables:
             raise ValueError(f"Duplicate gold table ID: {key}")
         gold_tables[key] = {"page": str(row["physical_page"]), "category": category, "bbox": bbox}
@@ -119,18 +119,18 @@ def score(packet: Path) -> dict:
             raise ValueError(f"Use NONE only for empty pages, and never with a gold table: {key}")
 
     expected_pred_ids = {
-        (row["stock_code"], table_id): str(row["physical_page"])
+        (row["stock_code"], str(row["report_year"]), table_id): str(row["physical_page"])
         for row in page_predictions
         for table_id in row.get("detected_table_ids", [])
     }
-    pred_to_gold: dict[tuple[str, str], str] = {}
-    match_status: dict[tuple[str, str], str] = {}
+    pred_to_gold: dict[tuple[str, str, str], str] = {}
+    match_status: dict[tuple[str, str, str], str] = {}
     matched_gold = set()
     category = defaultdict(lambda: [0, 0, 0])
     tp = fp = 0
     for idx, row in enumerate(match_rows, 1):
         row_id = f"prediction match row {idx}"
-        key = (row["stock_code"], row.get("prediction_table_id", "").strip())
+        key = (row["stock_code"], str(row["report_year"]), row.get("prediction_table_id", "").strip())
         if key not in expected_pred_ids or key in match_status:
             raise ValueError(f"Unexpected or duplicate prediction table ID: {key}")
         if not row.get("independent_reviewer", "").strip():
@@ -141,7 +141,7 @@ def score(packet: Path) -> dict:
         pred_category = row["predicted_category"].strip()
         if status == "matched":
             gold_id = row.get("gold_table_id", "").strip()
-            gold_key = (row["stock_code"], gold_id)
+            gold_key = (row["stock_code"], str(row["report_year"]), gold_id)
             if gold_key not in gold_tables:
                 raise ValueError(f"Matched prediction refers to unknown gold table: {gold_key}")
             if gold_tables[gold_key]["page"] != expected_pred_ids[key]:
@@ -182,12 +182,12 @@ def score(packet: Path) -> dict:
             page_fn += 1
 
     expected_boundaries = set()
-    by_stock_pages = defaultdict(list)
+    by_stock_year_pages = defaultdict(list)
     for row in page_predictions:
-        by_stock_pages[row["stock_code"]].append(int(row["physical_page"]))
-    for stock, pages in by_stock_pages.items():
+        by_stock_year_pages[(row["stock_code"], str(row["report_year"]))].append(int(row["physical_page"]))
+    for (stock, year), pages in by_stock_year_pages.items():
         pages = sorted(pages)
-        expected_boundaries.update((stock, str(left), str(right)) for left, right in zip(pages, pages[1:]) if right == left + 1)
+        expected_boundaries.update((stock, year, str(left), str(right)) for left, right in zip(pages, pages[1:]) if right == left + 1)
 
     gold_edges: Counter = Counter()
     reviewed_boundaries = set()
@@ -196,8 +196,9 @@ def score(packet: Path) -> dict:
     for idx, row in enumerate(read_csv(packet / "gold_continuation_blind_template.csv"), 1):
         row_id = f"gold continuation row {idx}"
         stock = row["stock_code"]
+        year = str(row["report_year"])
         left, right = str(row["left_page"]), str(row["right_page"])
-        boundary = (stock, left, right)
+        boundary = (stock, year, left, right)
         if boundary not in expected_boundaries:
             raise ValueError(f"Unexpected gold continuation boundary: {boundary}")
         if not yes_no(row.get("review_complete", ""), "review_complete", row_id):
@@ -209,12 +210,12 @@ def score(packet: Path) -> dict:
         left_id = row.get("gold_left_table_id", "").strip()
         right_id = row.get("gold_right_table_id", "").strip()
         if gold_yes:
-            left_key, right_key = (stock, left_id), (stock, right_id)
+            left_key, right_key = (stock, year, left_id), (stock, year, right_id)
             if left_key not in gold_tables or right_key not in gold_tables:
                 raise ValueError(f"Gold continuation references unknown table: {boundary}")
             if gold_tables[left_key]["page"] != left or gold_tables[right_key]["page"] != right:
                 raise ValueError(f"Gold continuation endpoints do not match boundary: {boundary}")
-            gold_edges[(stock, left_id, right_id)] += 1
+            gold_edges[(stock, year, left_id, right_id)] += 1
         elif left_id or right_id:
             raise ValueError(f"No-continuation row must not contain endpoint IDs: {boundary}")
         else:
@@ -229,13 +230,14 @@ def score(packet: Path) -> dict:
     predicted_edges: Counter = Counter()
     for row in edge_predictions:
         stock = row["stock_code"]
-        left_key = (stock, row["left_prediction_table_id"])
-        right_key = (stock, row["right_prediction_table_id"])
+        year = str(row["report_year"])
+        left_key = (stock, year, row["left_prediction_table_id"])
+        right_key = (stock, year, row["right_prediction_table_id"])
         if left_key not in match_status or right_key not in match_status:
             raise ValueError(f"Accepted parser link references unknown predicted table: {row}")
         left_gold = pred_to_gold.get(left_key)
         right_gold = pred_to_gold.get(right_key)
-        edge = (stock, left_gold or f"UNMATCHED:{left_key[1]}", right_gold or f"UNMATCHED:{right_key[1]}")
+        edge = (stock, year, left_gold or f"UNMATCHED:{left_key[2]}", right_gold or f"UNMATCHED:{right_key[2]}")
         predicted_edges[edge] += 1
     edge_tp = sum(min(count, gold_edges[key]) for key, count in predicted_edges.items())
     edge_fp = sum(count - min(count, gold_edges[key]) for key, count in predicted_edges.items())
@@ -245,7 +247,7 @@ def score(packet: Path) -> dict:
         "status": "scored_from_completed_two_stage_reviewer_sheets",
         "parser_version": audit["parser_version"],
         "source_reports": [{"stock_code": r["stock_code"], "year": r["report_year"], "sha256": r["source_pdf_sha256"]} for r in audit["reports"]],
-        "scope": "retrospectively selected 2024 governance keyword pages and fixed neighbors; not random, preregistered, full-report, cross-year, or end-to-end RAG validation",
+        "scope": "retrospectively selected 2023/2024 reports from Midea and iFlytek; governance-keyword pages and fixed neighbors only; prior RAG exposure means this is not an independent temporal-generalization or end-to-end RAG validation",
         "page_detection": prf(page_tp, page_fp, page_fn),
         "table_detection": prf(tp, fp, len(fn_gold)),
         "table_category": {label: prf(*values) for label, values in sorted(category.items())},
