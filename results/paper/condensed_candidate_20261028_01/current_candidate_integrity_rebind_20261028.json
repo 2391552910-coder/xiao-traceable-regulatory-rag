@@ -1,0 +1,126 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_current_candidate_integrity_rebind",
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+    "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
+    "paragraph_count": 192,
+    "table_count": 12,
+    "media_part_count": 21
+  },
+  "parent_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+  "checks": {
+    "current_matches_semantic_receipt": true,
+    "parent_matches_semantic_receipt": true,
+    "only_paragraph_131_changed": true,
+    "all_12_tables_identical": true,
+    "all_embedded_media_identical": true,
+    "all_31_refs_cited": true,
+    "selected_current_metrics_present": true,
+    "superseded_primary_metrics_absent": true,
+    "legal_paragraph_hash_matches_source_audit": true
+  },
+  "changed_paragraph_indices_zero_based": [
+    131
+  ],
+  "bibliography": {
+    "reference_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "body_and_table_citation_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "uncited": [],
+    "unresolved": []
+  },
+  "metric_scan": {
+    "current": {
+      "355/400": true,
+      "G2-G1_0.228": true,
+      "G3-G2_0.013": true,
+      "missing_bound": true
+    },
+    "superseded_primary_effects": {
+      "386/400": false,
+      "old_positive_effect_+0.250": false,
+      "old_G3_minus_G2_-0.008": false,
+      "old_G3_minus_G2_+0.008": false
+    },
+    "note": "The string 0.250 occurs only within the negative leave-one-company-out range [-0.250, -0.196], not as the superseded positive main effect."
+  },
+  "legal_paragraph_binding": {
+    "paragraph_index_zero_based": 146,
+    "text_sha256": "a3bd5f20c5304d4c491f6e2906312d76b0435848e9ba1aa2598b4b26899b0abd",
+    "matches": "current_candidate_regulatory_source_audit_20261028.md"
+  },
+  "inherited_sources": [
+    "current_candidate_audit_bridge_20261028.json",
+    "semantic_claim_revision_receipt_20261028.json",
+    "narrative_quantitative_audit_20261028.json",
+    "current_candidate_regulatory_source_audit_20261028.md"
+  ],
+  "limitations": [
+    "This confirms version continuity, selected values, citation-number coverage, and inherited scoped audit bindings.",
+    "It does not freshly validate every cited claim, every factual statement, all 355 answer semantics, or historical legal applicability."
+  ]
+}

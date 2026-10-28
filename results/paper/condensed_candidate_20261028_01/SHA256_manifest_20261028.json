@@ -66,6 +66,16 @@
       "path": "results/paper/condensed_candidate_20261028_01/render_legal_date_20261028/native_render_receipt.json",
       "bytes": 400,
       "sha256": "e3c1156345de9d148fc985ec4b315def3916a706c1c7afc5e50225da31d4efa5"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+      "bytes": 1868113,
+      "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/current_candidate_integrity_rebind_20261028.json",
+      "bytes": 3092,
+      "sha256": "73b1dd34dd30e0e99d1b629ff75538f7c78a27e86746a0357de60168245e4c32"
     }
   ]
 }
