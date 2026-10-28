@@ -1,13 +1,13 @@
 {
   "audit_date": "2026-10-28",
-  "status": "passed_for_version_continuity_with_scoped_case_citation_revision",
+  "status": "passed_for_version_continuity_with_case_citation_and_supplement_scope_revision",
   "current_candidate": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性与案例语义核查_补全来源引文候选稿_待终审.docx",
-    "sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx",
+    "sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
     "paragraph_count": 191,
     "table_count": 12,
     "drawing_objects": 8,
-    "revision_receipt": "case_citation_reference_revision_receipt_20261028.json"
+    "revision_receipt": "supplement_cross_reference_revision_receipt_20261028.json"
   },
   "version_comparisons": [
     {
@@ -79,6 +79,30 @@
       ],
       "appended_bibliography_reference": "[30]",
       "all_12_tables_identical": true,
+      "all_21_media_hashes_identical": true,
+      "changed_package_parts": [
+        "word/document.xml"
+      ]
+    },
+    {
+      "base": "prior current candidate after case source citation [30] insertion",
+      "base_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+      "current_candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "changed_body_paragraph_indices_zero_based": [
+        12,
+        14,
+        117
+      ],
+      "changed_table_cells": {
+        "table_5_first_column_rows_1_based": [
+          3,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "all_other_table_cells_identical": true,
       "all_21_media_hashes_identical": true,
       "changed_package_parts": [
         "word/document.xml"
@@ -165,6 +189,17 @@
       ],
       "receipt": "case_citation_reference_revision_receipt_20261028.json",
       "status": "reference [30] added; all bibliography IDs [1]-[30] are cited and the new reference is bound to the CNINFO annual report"
+    },
+    {
+      "scope": "main manuscript to supplement cross-reference scope",
+      "paragraph_indices_zero_based": [
+        12,
+        14,
+        117
+      ],
+      "table_cells": "Table 5, first-column rows 3,4,5,6,8",
+      "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
+      "status": "current supplement contains S1 budget replay and S2 BM25/localization; source removal and service-version comparisons are explicitly labeled exploratory results in the main manuscript"
     }
   ],
   "limitations": [
@@ -177,7 +212,7 @@
   "new_human_labels": 0,
   "bibliography_integrity": {
     "status": "passed_for_citation_id_completeness_and_scoped_source_audit_coverage",
-    "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+    "current_candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
     "reference_count": 30,
     "reference_ids": [
       1,
@@ -283,6 +318,11 @@
       "candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
       "receipt": "case_citation_reference_revision_receipt_20261028.json",
       "scope": "adds official annual-report citation [30] in paragraph 124 and bibliography; WPS render checked"
+    },
+    {
+      "candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
+      "scope": "corrected main-versus-supplement references in paragraphs 12, 14, and 117 and clarified Table 5 labels; no result values changed"
     }
   ]
 }
