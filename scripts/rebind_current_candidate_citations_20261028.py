@@ -51,6 +51,8 @@ expected_framework_hash = receipt['change']['new_text_sha256_utf8']
 assert sha(framework_text.encode('utf-8')) == expected_framework_hash
 assert intermediate_text == framework_text and current_text == framework_text
 assert {k:v for k,v in docs['literature_and_case_audited']['citation_paragraphs'].items() if k != 29} == {k:v for k,v in docs['source_deletion']['citation_paragraphs'].items() if k != 29}
+assert set(docs['literature_and_case_audited']['citation_paragraphs']) == set(docs['source_deletion']['citation_paragraphs'])
+assert docs['literature_and_case_audited']['citation_paragraphs'][29] != docs['source_deletion']['citation_paragraphs'][29]
 assert docs['literature_and_case_audited']['reference_entries'] == docs['source_deletion']['reference_entries']
 assert docs['source_deletion']['citation_paragraphs'] == docs['current']['citation_paragraphs']
 assert docs['source_deletion']['reference_entries'] == docs['current']['reference_entries']
