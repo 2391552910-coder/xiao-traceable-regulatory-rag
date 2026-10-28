@@ -1,5 +1,10 @@
 # 年报与法规双源检索增强生成
 
+## 2026-10-28 有界并发生成执行器
+
+- 新增最高20个工作线程的并发生成执行器，支持独立客户端、逐请求持久化日志、drain控制、续跑校验及429限流后的并发退避；实现与合成回归测试见草稿[PR #5](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/pull/5)。
+- 离线测试覆盖并发重叠、请求不重复、重排完成后的续跑校验、派发前drain和429处理；不调用外部模型、不产生研究质量标签。PR工作流已通过，完整本地工作区回归为1256项通过；两种验证范围分别记录，不能把全工作区结果等同于PR代码的CI结果。
+
 ## 2026-10-27 预算竞争修复：已按规划实施并离线验证
 
 - [实施规划](docs/预算分配优化实施规划_20261027.txt)先行保存；解析与邻接成果已在提交[`c416a61`](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055)发布，[该提交的GitHub离线测试已通过](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40442726192)。
