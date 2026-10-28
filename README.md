@@ -17,7 +17,7 @@
 - [当前法规来源核验](results/paper/condensed_candidate_20261028_01/current_candidate_regulatory_source_audit_20261028.md)现已补绑评分者分层敏感性候选版（整稿SHA-256 `fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1`）；第7.6节法规段落哈希未变，核查范围仍限于版本编号、官方日期与活动清单口径。
 - [摘要版本差异审计](results/paper/condensed_candidate_20261028_01/current_candidate_delta_audit_20261028.json)记录摘要修订版相对其父稿仅正文段落3、6变动；其后方法段45单独修订，见上方方法修订审计。12张表格单元格与21个嵌入媒体资源哈希仍一致。该差异核对不替代全文语义审查。
 - [当前摘要论断核验](results/paper/condensed_candidate_20261028_01/abstract_claim_alignment_current_candidate_20261028_v3.json)绑定当前主文哈希，核对中英文摘要的样本数、配对效应与区间、缺失界、来源同现、位置覆盖及G3上下文控制口径；6项检查通过。该收据不等于全稿语义审核，也不验证答案正确性或语义检索召回。
-- [当前主稿版本与引文连续性审计](results/paper/condensed_candidate_20261028_01/current_candidate_audit_bridge_20261028.json)确认表1–11与统计底稿逐格一致、表12与摘录核验底稿逐格一致；正文引用[1]–[29]均有对应条目且均被引用。对照已审底稿后，HiREC措辞和CRAG预印本书目变化分别有专项来源核查。该审计不替代355条回答的逐条语义复核、法规历史适用性核验或整稿终审。
+- [当前主稿版本与引文连续性审计](results/paper/condensed_candidate_20261028_01/current_candidate_audit_bridge_20261028.json)确认表1–11与统计底稿逐格一致、表12与摘录核验底稿逐格一致；当前正文引用[1]–[30]均有对应条目且均被引用，参考文献编号完整性与已覆盖范围内的来源审计连续性通过。HiREC措辞、CRAG预印本书目及新增[30]年报来源分别有专项核查。该审计不替代355条回答的逐条语义复核、法规历史适用性核验或整稿终审。
 
 ## 2026-10-28 法规日期与因果措辞复核（历史候选）
 
