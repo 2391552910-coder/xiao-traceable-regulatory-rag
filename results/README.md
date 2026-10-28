@@ -5,6 +5,7 @@
 - 当前主文：[交叉引用补全候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)，SHA-256 `ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c`，21页、12表、8图。在推理预算口径校准版上补齐表6、表7、表9、表12及图4、图6的正文交叉引用，没有修改统计结果、表格内容或结论。
 - [交叉引用审计收据](paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)确认12张表与8幅图均有正文引用；[WPS渲染PDF](paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/paper_native.pdf)及[只读渲染收据](paper/condensed_candidate_20261028_01/render_wps_crossrefs_20261029/native_render_receipt.json)绑定本版哈希。变化页11、13、16–18已检查，无裁切或错位。
 - [推理预算论断审计收据](paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录同系列服务别名比较的解释边界；[前版主文](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx)保留作版本追溯。候选稿仍待整稿语义终审、作者元数据和投稿模板适配，不表示达到二区录用标准。
+
 ## 2026-10-27 相同预算下的联合材料分配
 
 - `runs/evidence_budget_development_20261027_01/`：按先行规划完成8题×5策略、40份材料，输入候选池、6000-token上限和新增来源总上限16全部一致；源码/输入指纹、候选池、逐候选装入/省略原因、原/勘误页面覆盖及事后区间诊断均保存。
