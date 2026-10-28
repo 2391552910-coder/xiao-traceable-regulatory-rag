@@ -9,8 +9,8 @@
     },
     {
       "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx",
-      "bytes": 1560057,
-      "sha256": "a35bb3b60af4bb7ecdf33b60e2f803d37e9ac87b91df70d877eb6bfeb1658c2d"
+      "bytes": 1560095,
+      "sha256": "d6435f6ea5d787040012da0b3655040f3171443abc8bf592701ad53235882007"
     },
     {
       "path": "results/paper/condensed_candidate_20261028_01/aligned_candidate_receipt_20261028.json",
@@ -66,6 +66,21 @@
       "path": "results/paper/condensed_candidate_20261028_01/render_legal_date_20261028/native_render_receipt.json",
       "bytes": 400,
       "sha256": "e3c1156345de9d148fc985ec4b315def3916a706c1c7afc5e50225da31d4efa5"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/supplement_denominator_revision_receipt_20261028.json",
+      "bytes": 1914,
+      "sha256": "cafbaba1ecc0703d54bcefd604e0fa19d0d0a2e09acc2971a35499653e675f1a"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_supplement_denominator_revision_20261028/paper_native.pdf",
+      "bytes": 363544,
+      "sha256": "eb9abc35f0483ec6b29c0f6f5096f4f3ac66c380d32a3236a204d3f814193902"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_supplement_denominator_revision_20261028/native_render_receipt.json",
+      "bytes": 401,
+      "sha256": "05a6d344ccaaea5439a6cb1ed83828169e05fa14f12e52ddf4541cf071521fe1"
     },
     {
       "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
