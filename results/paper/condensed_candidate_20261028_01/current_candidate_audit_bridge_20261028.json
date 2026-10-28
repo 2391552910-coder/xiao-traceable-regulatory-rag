@@ -1,13 +1,13 @@
 {
   "audit_date": "2026-10-28",
-  "status": "passed_for_version_continuity_with_case_citation_and_supplement_scope_revision",
+  "status": "passed_for_version_continuity_with_cfinrag_literature_and_reference_renumbering",
   "current_candidate": {
-    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx",
-    "sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
-    "paragraph_count": 191,
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_补充CFinRAG相关工作候选稿_待终审.docx",
+    "sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+    "paragraph_count": 192,
     "table_count": 12,
     "drawing_objects": 8,
-    "revision_receipt": "supplement_cross_reference_revision_receipt_20261028.json"
+    "revision_receipt": "current_candidate_cfinrag_revision_receipt_20261028.json"
   },
   "version_comparisons": [
     {
@@ -103,6 +103,22 @@
         ]
       },
       "all_other_table_cells_identical": true,
+      "all_21_media_hashes_identical": true,
+      "changed_package_parts": [
+        "word/document.xml"
+      ]
+    },
+    {
+      "base": "prior current candidate after supplement scope revision",
+      "base_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "current_candidate_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+      "changed_body_paragraph_indices_zero_based": [
+        20,
+        124
+      ],
+      "bibliography_change": "inserted new reference [30] for CFinRAG; existing CNINFO annual-report reference [30] renumbered to [31]",
+      "all_other_body_paragraphs_identical_after_reference_insertion_alignment": true,
+      "all_12_tables_identical": true,
       "all_21_media_hashes_identical": true,
       "changed_package_parts": [
         "word/document.xml"
@@ -225,6 +241,19 @@
       ],
       "receipt": "current_candidate_abstract_rebind_20261028.json",
       "status": "both abstract text hashes match the scoped numerical audit candidate; reported values and analysis-source hashes are carried forward"
+    },
+    {
+      "scope": "CFinRAG adjacent-literature addition and annual-report citation renumbering",
+      "paragraph_indices_zero_based": [
+        20,
+        124
+      ],
+      "bibliography_ids": [
+        30,
+        31
+      ],
+      "receipt": "current_candidate_cfinrag_revision_receipt_20261028.json; cfinrag_citation_audit_20261028.md",
+      "status": "publisher metadata/method/data scope checked; all 31 references cited; only paragraphs 20/124 and bibliography entries changed; no result values changed"
     }
   ],
   "limitations": [
@@ -236,9 +265,9 @@
   "new_model_calls": 0,
   "new_human_labels": 0,
   "bibliography_integrity": {
-    "status": "passed_for_citation_id_completeness_and_scoped_source_audit_coverage",
-    "current_candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
-    "reference_count": 30,
+    "status": "passed_for_citation_id_completeness_with_scoped_source_audit_continuity",
+    "current_candidate_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+    "reference_count": 31,
     "reference_ids": [
       1,
       2,
@@ -269,24 +298,23 @@
       27,
       28,
       29,
-      30
+      30,
+      31
     ],
     "all_references_cited_in_body": true,
     "uncited_reference_ids": [],
     "body_citation_ids_without_reference": [],
     "comparison_base": {
-      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_HiREC措辞校准候选稿_待终审.docx",
-      "sha256": "189de3d4f9173fb7fd2a5dabba9e5a23a50610338a2fadb90304f269e51080ad"
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx",
+      "sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1"
     },
     "bibliography_paragraphs_changed_vs_base": [
-      13
+      185,
+      186
     ],
     "body_paragraphs_changed_vs_base": [
-      3,
-      6,
-      19,
-      93,
-      168
+      20,
+      124
     ],
     "changed_citation_review": [
       {
@@ -298,6 +326,11 @@
         "item": "Reference [13] CRAG publication form",
         "receipt": "reference_13_citation_render_audit_20261028.json plus official arXiv record https://arxiv.org/abs/2401.15884",
         "finding": "Current entry cites the 2024 arXiv preprint only; it does not carry forward the prior “AACL 2026 to appear” claim."
+      },
+      {
+        "item": "Reference [30] CFinRAG and renumbered reference [31] CNINFO annual report",
+        "receipt": "current_candidate_cfinrag_revision_receipt_20261028.json; cfinrag_citation_audit_20261028.md",
+        "finding": "Official ScienceDirect metadata supports the CFinRAG method, task, dataset scale, and bibliographic record; the CNINFO source remains the same report and its in-text citation was updated from [30] to [31]."
       }
     ],
     "inherited_source_claim_audits": [
@@ -325,11 +358,21 @@
         "references": "[25]-[27]",
         "audit": "current_candidate_regulatory_source_audit_20261028.md",
         "carry_forward": "Current law-version paragraph is rebound to the current candidate SHA; source/version risks remain explicitly qualified."
+      },
+      {
+        "references": "[30]",
+        "audit": "cfinrag_citation_audit_20261028.md",
+        "carry_forward": "Publisher record checked; scope statement distinguishes graph-based event QA from the current controlled retrieval comparison."
+      },
+      {
+        "references": "[31]",
+        "audit": "case_citation_reference_revision_receipt_20261028.json",
+        "carry_forward": "Same CNINFO annual report as prior [30], renumbered without changing the citation target."
       }
     ],
     "limitations": [
-      "This proves citation-number completeness and continuity with existing topic-specific source audits; it is not a fresh re-reading of every cited full paper or a review of every non-citation factual claim.",
-      "It does not establish historical legal applicability for each question or validate the 355 answers semantically.",
+      "This proves citation-number completeness and continuity with the listed scoped source audits; it is not a fresh rereading of all cited works or every factual claim.",
+      "It does not establish historical legal applicability for each question or validate all 355 answers semantically.",
       "Author metadata and target-journal formatting remain unaudited."
     ]
   },
@@ -348,6 +391,11 @@
       "candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
       "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
       "scope": "corrected main-versus-supplement references in paragraphs 12, 14, and 117 and clarified Table 5 labels; no result values changed"
+    },
+    {
+      "candidate_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+      "receipt": "current_candidate_cfinrag_revision_receipt_20261028.json",
+      "scope": "added the closest located Chinese financial multi-source RAG study to related work, renumbered the case source, and visually verified changed pages; no experiment result changed"
     }
   ]
 }

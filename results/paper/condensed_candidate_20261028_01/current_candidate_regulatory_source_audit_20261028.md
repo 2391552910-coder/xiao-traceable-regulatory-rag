@@ -59,3 +59,8 @@
 ## 当前统一主文版本绑定补记（2026-10-28，补充材料范围修订后）
 
 当前主文 `年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx` 的整稿 SHA-256 为 `fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1`。法规段落仍位于正文段落索引146，其文本SHA-256仍为 `a3bd5f20c5304d4c491f6e2906312d76b0435848e9ba1aa2598b4b26899b0abd`；本次交叉引用修订未触及法规段落或其核验范围。
+
+
+## Current CFinRAG literature revision version binding (2026-10-28)
+
+The current manuscript candidate is `年报与法规双源RAG_统一主文_补充CFinRAG相关工作候选稿_待终审.docx` (SHA-256 `fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7`). The legal-version paragraph remains at body paragraph index 146 and its normalized text hash remains `a3bd5f20c5304d4c491f6e2906312d76b0435848e9ba1aa2598b4b26899b0abd`; the CFinRAG literature insertion and reference renumbering did not change it. Existing date/source scope therefore carries forward, without expanding into historical legal-applicability review.
