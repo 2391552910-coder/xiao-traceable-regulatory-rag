@@ -1,0 +1,20 @@
+{
+  "source": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_aligned_20261029.docx",
+  "source_sha256": "00caf7ca1c7b6e39ca0af4061a5737864086cea61f47b87c3b48ebf9f9e20ca3",
+  "output": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_rater_wording_20261029.docx",
+  "output_sha256": "367e6c776dfd5b62840f4fd19479d941445ed1c09a01c039360cf7d7c249fd95",
+  "paragraph_changes_zero_based": [
+    74
+  ],
+  "tables_and_media_unchanged": true,
+  "pdf_sha256": "894c29a4debca1d7fef035e08e9da432476b44514e128e126b45c9490c023424",
+  "pages": 23,
+  "changed_pages_vs_previous": [
+    11
+  ],
+  "visually_checked": [
+    11
+  ],
+  "render_method": "WPS native read-only export; PDFium pixel comparison; standard renderer unavailable because soffice.exe was not found.",
+  "scope": "Aligns rater wording with Chinese manuscript; no new ratings, model calls, independent verification, or changes to quantitative results."
+}
