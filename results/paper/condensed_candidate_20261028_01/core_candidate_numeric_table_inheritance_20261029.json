@@ -1,0 +1,78 @@
+{
+  "status": "passed_inherited_table_text_match",
+  "date": "2026-10-29",
+  "current_manuscript": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx",
+  "current_manuscript_sha256": "e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69",
+  "numeric_audit_base_manuscript": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
+  "numeric_audit_base_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+  "numeric_audit_receipt": "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json",
+  "numeric_audit_receipt_sha256": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94",
+  "numeric_audit_status": "passed",
+  "numeric_audit_scope": [
+    "Table 6 condition counts and reviewer means",
+    "Table 7 paired effects and seed-20261028 clustered intervals",
+    "Table 8 paired company-macro dimension effects",
+    "Table 9 agreement and reviewer marginals",
+    "Table 10 leave-one-company-out ranges, missing bounds, win/tie/loss counts",
+    "Table 11 frozen retrieval source/location proxies",
+    "References 1-29 cited and present"
+  ],
+  "method": "Extracted table row and cell text from word/document.xml; exact comparison of each cell in tables 6 through 11. No normalization or value edits were applied.",
+  "checked_tables": [
+    {
+      "table_number": 6,
+      "rows": 11,
+      "cells": 55,
+      "exact_cell_text_match": true,
+      "current_cell_text_sha256": "985c3a9727880dd50abfcc9edd3e75107100dc69ede638c51fc8e091f3866169",
+      "audit_base_cell_text_sha256": "985c3a9727880dd50abfcc9edd3e75107100dc69ede638c51fc8e091f3866169"
+    },
+    {
+      "table_number": 7,
+      "rows": 6,
+      "cells": 24,
+      "exact_cell_text_match": true,
+      "current_cell_text_sha256": "467fd4bce7e0d071582849ddf0b89f550684c8ed826094bf45d9a29e75dcefe4",
+      "audit_base_cell_text_sha256": "467fd4bce7e0d071582849ddf0b89f550684c8ed826094bf45d9a29e75dcefe4"
+    },
+    {
+      "table_number": 8,
+      "rows": 4,
+      "cells": 28,
+      "exact_cell_text_match": true,
+      "current_cell_text_sha256": "8d5f74a922aceba6702fdc692e28d0bd4fd041eacc74b1068a92afa1b2441e0f",
+      "audit_base_cell_text_sha256": "8d5f74a922aceba6702fdc692e28d0bd4fd041eacc74b1068a92afa1b2441e0f"
+    },
+    {
+      "table_number": 9,
+      "rows": 5,
+      "cells": 30,
+      "exact_cell_text_match": true,
+      "current_cell_text_sha256": "8e9d0f75fd976ccd102123a809c44b52c16b860183eb67af8bd840e3533b9f46",
+      "audit_base_cell_text_sha256": "8e9d0f75fd976ccd102123a809c44b52c16b860183eb67af8bd840e3533b9f46"
+    },
+    {
+      "table_number": 10,
+      "rows": 5,
+      "cells": 20,
+      "exact_cell_text_match": true,
+      "current_cell_text_sha256": "63ed59229027506a732cbcf084a48872ba86c9f12bda666d48be79ce951bd2d4",
+      "audit_base_cell_text_sha256": "63ed59229027506a732cbcf084a48872ba86c9f12bda666d48be79ce951bd2d4"
+    },
+    {
+      "table_number": 11,
+      "rows": 3,
+      "cells": 21,
+      "exact_cell_text_match": true,
+      "current_cell_text_sha256": "e9169bfce465cbb332caf51665616117352db83da3de594361c5c282c9d0c819",
+      "audit_base_cell_text_sha256": "e9169bfce465cbb332caf51665616117352db83da3de594361c5c282c9d0c819"
+    }
+  ],
+  "limits": [
+    "This verifies that current tables 6-11 retain the exact cell text of the manuscript version covered by the passed numeric audit; it does not rerun calculations from raw inputs.",
+    "Tables 1-5 and 12 are outside the cited numeric audit scope.",
+    "Does not verify all manuscript prose, all 355 answers, legal applicability, citation support, retrieval Precision/Recall/F1, or answer Accuracy."
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0
+}

@@ -55,7 +55,7 @@
 
 ## 当前投稿主线：双源分路检索与合并检索（2026-10-29）
 
-[21页主线候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx)聚焦双源分路检索与合并候选检索，含12张表和8幅图。更正BM25参考文献[7]后，稿件 SHA-256 为 `e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69`；[修订与版面收据](results/runs/core_candidate_reference_7_correction_20261029_01/core_candidate_reference_7_correction_receipt.json)记录只改了书目段落，Codex 渲染21页中仅第19页变化且已目视检查。本轮未使用WPS、未新增模型调用或人工标注。下方跨模型/跨年/Agent材料是独立扩展候选，均为小样本探索结果，不并入主线泛化结论。
+[21页主线候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx)聚焦双源分路检索与合并候选检索，含12张表和8幅图。更正BM25参考文献[7]后，稿件 SHA-256 为 `e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69`；[修订与版面收据](results/runs/core_candidate_reference_7_correction_20261029_01/core_candidate_reference_7_correction_receipt.json)记录只改了书目段落，Codex 渲染21页中仅第19页变化且已目视检查。本轮未使用WPS、未新增模型调用或人工标注。本稿表6–11与已通过数字复算的版本逐单元格一致，详见[当前版本表格继承核验](results/paper/condensed_candidate_20261028_01/core_candidate_numeric_table_inheritance_20261029.json)；该核验不扩展到其他表、全文语义主张或回答准确率/检索P/R/F1。下方跨模型/跨年/Agent材料是独立扩展候选，均为小样本探索结果，不并入主线泛化结论。
 
 ## 扩展候选：跨模型与 Agent 年度分层复算（2026-10-29）
 
