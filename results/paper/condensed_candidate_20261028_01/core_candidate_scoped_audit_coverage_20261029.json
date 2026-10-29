@@ -1,0 +1,214 @@
+{
+  "audit_date": "2026-10-29",
+  "status": "passed_scoped_current_version_rebinding_with_open_semantic_gaps",
+  "current_manuscript": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx",
+    "sha256": "e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69",
+    "body_paragraph_count": 192,
+    "table_count": 12,
+    "media_part_count": 21
+  },
+  "comparison_base": {
+    "sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+    "receipt": "current_candidate_audit_bridge_20261028.json",
+    "changed_body_paragraph_indices_zero_based": [
+      10,
+      29,
+      78,
+      131,
+      139,
+      189
+    ],
+    "changed_table_numbers": [
+      1
+    ]
+  },
+  "paragraph_bindings": [
+    {
+      "paragraph_index_zero_based": 3,
+      "current_text_sha256": "21f61023f7e4982d8d24ad5a27697aaf11b84ec957d1cf0b57b5ce32a31b4153",
+      "receipt": "current_candidate_abstract_rebind_20261028.json"
+    },
+    {
+      "paragraph_index_zero_based": 6,
+      "current_text_sha256": "119c7b4864a76a3b7cf690fc1d9dd5ebada4ea427d7d038ff75f709d1b2d33df",
+      "receipt": "current_candidate_abstract_rebind_20261028.json"
+    },
+    {
+      "paragraph_index_zero_based": 10,
+      "current_text_sha256": "2bb3d803860c778b862237abd73739a6a2042706f7bdb59a8ccd9bdafdd01251",
+      "receipt": "intro_retrieval_framing_revision_receipt_20261028.json"
+    },
+    {
+      "paragraph_index_zero_based": 29,
+      "current_text_sha256": "5b06800006daf068bf20b11d50cbeebbcfd45336621b359a8bc63e86b6a2f02f",
+      "receipt": "current_candidate_citation_claim_bridge_20261028_02.json"
+    },
+    {
+      "paragraph_index_zero_based": 78,
+      "current_text_sha256": "8ef7522f06b38ba274cd8f79c1016eb8c1cb233b272cb79d0461d875cdb41f9b",
+      "receipt": "rubric_claim_audit_current_candidate_20261028.json"
+    },
+    {
+      "paragraph_index_zero_based": 131,
+      "current_text_sha256": "7ccdc3f4f20dfda63ca5247766a7160710f7ece4ea04c0a5ede2ea4cde24746b",
+      "receipt": "replay_scope_revision_receipt_20261028.json"
+    },
+    {
+      "paragraph_index_zero_based": 139,
+      "current_text_sha256": "0ca5e2b7f222c58f4c61accc1b591ca875abcfa2cbcd2a6f6c54d65f34d0dea9",
+      "receipt": "source_deletion_pair_audit_20261028.json"
+    },
+    {
+      "paragraph_index_zero_based": 189,
+      "current_text_sha256": "609b89b7d6d054722a63d47e0010072d08d0107a84f8fdbd48936603b04ff782",
+      "receipt": "appendix_unit_clarification_receipt_20261029.json"
+    }
+  ],
+  "method_rebind_receipt": "current_candidate_method_claim_rebind_20261028.json",
+  "method_rebound_paragraph_indices": [
+    44,
+    45,
+    49,
+    55,
+    65,
+    70,
+    75,
+    76
+  ],
+  "exact_text_hash_checks_passed": true,
+  "table_bindings": [
+    {
+      "table_number": 1,
+      "rows": 11,
+      "cells": 33,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5",
+      "cell_text_sha256": "6e4032bdf64c9f92d316b6cd8cb616fee8aa4f6aed5706c504d2be0a6420af0f"
+    },
+    {
+      "table_number": 2,
+      "rows": 9,
+      "cells": 18,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "9627f13ab1e3573a6dd492769c1103445d847f7a78c5b5715ccf9027ef5573ef"
+    },
+    {
+      "table_number": 3,
+      "rows": 8,
+      "cells": 24,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "77355534b138fd70e6c4ea38b8268067d526b2cd2888b76d9b0e54f5a30ad445"
+    },
+    {
+      "table_number": 4,
+      "rows": 7,
+      "cells": 21,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "140c1793ccbafeeacd61df2925a9238b7a5f30e4b33b107f4d2eb7caff5584e7"
+    },
+    {
+      "table_number": 5,
+      "rows": 8,
+      "cells": 24,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "cell_text_sha256": "54b964cda4542e7bf19da1fe75041e538cf0416443eb3aaf045dc37e28fb6857"
+    },
+    {
+      "table_number": 6,
+      "rows": 11,
+      "cells": 55,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "985c3a9727880dd50abfcc9edd3e75107100dc69ede638c51fc8e091f3866169"
+    },
+    {
+      "table_number": 7,
+      "rows": 6,
+      "cells": 24,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "467fd4bce7e0d071582849ddf0b89f550684c8ed826094bf45d9a29e75dcefe4"
+    },
+    {
+      "table_number": 8,
+      "rows": 4,
+      "cells": 28,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "8d5f74a922aceba6702fdc692e28d0bd4fd041eacc74b1068a92afa1b2441e0f"
+    },
+    {
+      "table_number": 9,
+      "rows": 5,
+      "cells": 30,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "8e9d0f75fd976ccd102123a809c44b52c16b860183eb67af8bd840e3533b9f46"
+    },
+    {
+      "table_number": 10,
+      "rows": 5,
+      "cells": 20,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "63ed59229027506a732cbcf084a48872ba86c9f12bda666d48be79ce951bd2d4"
+    },
+    {
+      "table_number": 11,
+      "rows": 3,
+      "cells": 21,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "cell_text_sha256": "e9169bfce465cbb332caf51665616117352db83da3de594361c5c282c9d0c819"
+    },
+    {
+      "table_number": 12,
+      "rows": 2,
+      "cells": 8,
+      "exact_cell_text_match": true,
+      "matched_candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
+      "cell_text_sha256": "a6bf9038ba3a18e0dcbeec6bff9c91831311dc69b923f0f7da3f53f65bb66330"
+    }
+  ],
+  "other_scoped_receipts": [
+    "related_work_cfinrag_table1_revision_receipt_20261028.json",
+    "supplement_cross_reference_revision_receipt_20261028.json",
+    "case_semantic_audit_20261028.json",
+    "core_candidate_numeric_table_inheritance_20261029.json"
+  ],
+  "receipt_sha256s": {
+    "current_candidate_audit_bridge_20261028.json": "224384d6f106f57933c94ec2dba54e6819d9b31687e233b4e03071bad597c255",
+    "current_candidate_method_claim_rebind_20261028.json": "cfafd093bb94c3638da3e096089aa9b3973fd06830216e4c847dd2c4f8c1a940",
+    "current_candidate_abstract_rebind_20261028.json": "0c162e0aa968b1d721326717a108ac51d9758d106e1304b75b7497d92866595d",
+    "current_candidate_citation_claim_bridge_20261028_02.json": "79a561e03f78224554cc19b3791c3d871e520a3627e510b2802d8ef6b22ad35a",
+    "scoring_rubric_revision_receipt_20261028.json": "083e8c4a078dc4e7f3ec680970d23ef97697cf6c37aeeded691119d9e1db4354",
+    "rubric_claim_audit_current_candidate_20261028.json": "263577c08e477e3f574e8a63cf388f72c4d6a75388ac3c8304a36e4790126750",
+    "replay_scope_revision_receipt_20261028.json": "2d6d8a9a83622b763b615ce4370f0f3fcb1460bd29e1d9dbc35c8f98b997dcd2",
+    "source_deletion_pair_audit_20261028.json": "aa4e4080c3c6e87bb2e3e680408077acacb0199a79b8f491f641f1e70985ce81",
+    "appendix_unit_clarification_receipt_20261029.json": "59f5b93166c8db617f88d8b60234ceca3c9a8c7cad18a0fa90a4548dd9a5ffc6",
+    "intro_retrieval_framing_revision_receipt_20261028.json": "a75c556c33aeca5be546e13a82906146499a9421f8ab24232e42a9e4d9affdd7",
+    "related_work_cfinrag_table1_revision_receipt_20261028.json": "5fc199976b4d258945b780d3696c1d7977a1318b6c7b86ad38b1919c7262423c",
+    "supplement_cross_reference_revision_receipt_20261028.json": "4805eea85c3cf4b3aad69eec977add9095a84da5874d934bea84d30dd9dbd747",
+    "case_semantic_audit_20261028.json": "aa305f86a8dc5a46c6a4b2f1cd0ed35b0dda959457bdb607d8503b9ab2a035d8",
+    "core_candidate_numeric_table_inheritance_20261029.json": "655e80b3d0784cfe694b721fbf402727c3d0b084a7e1cddb8a2b5f03d6a03167"
+  },
+  "missing_source_artifacts": [
+    "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json",
+    "results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json",
+    "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_BM25书目更正候选稿_待终审.docx"
+  ],
+  "limitations": [
+    "This binds existing scoped audits to the current manuscript by exact text/table-cell equality; it is not a full semantic review.",
+    "Two earlier referenced audit JSON files and the historical intro source DOCX are absent locally; the intro output candidate and wording receipt remain.",
+    "Does not assess every cited full paper, all 355 answers, or historical legal applicability for every question.",
+    "No aligned independent relevance qrels for the 60 main-study questions; retrieval Precision/Recall/F1 and answer Accuracy remain unmeasured.",
+    "Author/affiliation/funding disclosure and target-journal formatting remain open."
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0
+}
