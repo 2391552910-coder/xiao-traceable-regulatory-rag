@@ -1,0 +1,14 @@
+{
+  "source_docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx",
+  "source_docx_sha256": "ee811f6e1618f9b06c02821fdeb150e986be70417245dce95cbcf8f80b255ca6",
+  "analysis_json": "results\\runs\\qwen_cross_model_year_sensitivity_20261029_01\\year_stratified_summary.json",
+  "analysis_json_sha256": "9b7ce8767c02632f5eb3208fc0a790e59314a37bf962cee3add3581e90222a4a",
+  "output_docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx",
+  "output_docx_sha256": "78bc74d10947a1e09a847da0013b13b11161bc34fa44aa947d882029988d57d5",
+  "anchor": "补充开展跨模型族、跨年度的小样本探索：",
+  "inserted_text": " 按报告年度分层（每年4题，均来自相同4家公司），勘误后参考下2023年Qwen/K3的成员宏F1为0.663/1.000、日期宏F1为0.672/1.000、会议次数精确匹配2/4与4/4、三字段全匹配1/4与4/4；2024年相应为0.638/0.949、0.528/0.906、1/4与4/4、0/4与2/4。两年度Qwen/K3的严格结构合规和引用列表合规均为0/4与4/4；Qwen引用列表中机械解析到的格式异常字符串项分别为31和35（不含标量引用值）。每年仅4题且为相同公司，故此为描述性分层，不是独立时间迁移验证，也不作显著性推断。",
+  "source_paragraphs": 200,
+  "output_paragraphs": 200,
+  "no_new_model_calls": true,
+  "no_new_human_annotations": true
+}

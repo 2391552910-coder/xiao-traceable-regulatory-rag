@@ -49,9 +49,22 @@
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_格式提示补充候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_schema_prompt_development_20261029.docx)补充同一Qwen3-0.6B的8题格式提示开发试验。既有助手提取且事后勘误参考下，结构合规从0/8到3/8，成员宏F1从0.651到0.678，日期宏F1从0.600降至0.558，会议次数匹配从3/8到6/8，三字段全匹配均为1/8。[结果与逐题数据](results/runs/qwen_schema_prompt_score_20261029_01/summary.json)；[图11](results/runs/qwen_schema_prompt_figures_20261029_01/schema_prompt_development.png)。提示是观察原答案后设计，属于事后开发而非独立验证；每题各一次采样，输入长度不同，参考未经独立验证，结构合规不代表引用支持。未新增人工标注。WPS渲染并检查变动页，中文23页、英文25页。
 
-## 当前主稿：跨模型与 Agent 对照（2026-10-29）
+## 前版候选：跨模型与 Agent 对照（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_agent_20261029.docx)在8题跨模型补充之外，加入既有K3 Agent与三轮固定证据修订的[配对复算](results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json)及[图10](results/runs/agent_pairs_figures_20261029_01/agent_observed_pairs.png)。两条件各在不同题目失败，余下6对覆盖4家公司；按既有助手提取、事后勘误且未经独立裁定参考，三字段全匹配为4/6与5/6，成员宏F1为0.833与0.985，日期宏F1为0.786与0.952（Agent与修订）。两者各记录18次调用，但供应商token总量分别为102600与97441，最终证据亦不同；这不是完全预算匹配或因果实验。原参考和勘误版、失败、逐题配对及界均保留；未新增人工标注或模型调用。WPS渲染中文23页、英文25页，受影响页面已检查；结果不证明普遍效果或期刊录用。详见[审计](results/runs/agent_pairs_reanalysis_20261029_01/paper_update_audit.json)。
+
+## 当前主稿：跨模型与 Agent 年度分层复算（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx)补入既有8题 Qwen3-0.6B 与 K3 服务别名对照的年度分层结果。结果由[复算脚本](scripts/analyze_qwen_cross_model_year_20261029.py)从已保存输出生成，[稿件更新脚本](scripts/update_cross_model_manuscript_year_sensitivity_20261029.py)记录输入和输出哈希。
+
+| 报告年度 | 成员宏 F1（Qwen/K3） | 日期宏 F1（Qwen/K3） | 会议次数精确匹配（Qwen/K3） | 三字段全匹配（Qwen/K3） | 严格结构及引用列表合规（Qwen/K3） | Qwen 格式异常引用项 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2023（4题） | 0.663 / 1.000 | 0.672 / 1.000 | 2/4 vs 4/4 | 1/4 vs 4/4 | 0/4 vs 4/4 | 31 |
+| 2024（4题） | 0.638 / 0.949 | 0.528 / 0.906 | 1/4 vs 4/4 | 0/4 vs 2/4 | 0/4 vs 4/4 | 35 |
+
+计分采用既有助手提取参考及一次输出后的勘误版；参考未经独立裁定。两年度使用同一4家公司，每年仅4题，每题每模型生成一次；模型规模、计算量和输出预算也不同。因此该分层只作描述性复算，不能证明独立时间迁移或模型族泛化，也不据此作显著性推断。字段 F1 和结构合规不代表引用语义支持、检索 Precision/Recall 或答案 Accuracy。
+
+本轮仅复用保存结果，无新增模型调用或人工标注。最新版中文稿为23页；Codex 使用 `render_docx.py`、LibreOffice 与 Poppler 生成23页 PNG，并逐页检查。此次预览未使用 WPS；渲染记录见[版式 QA 收据](results/runs/qwen_cross_model_year_sensitivity_20261029_01/render_qa_receipt.json)。结果文件：[年度分层摘要](results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_summary.json)、[模型汇总](results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_models.csv)、[配对结果](results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_pairs.csv)、[稿件更新收据](results/runs/qwen_cross_model_year_sensitivity_20261029_01/manuscript_update_receipt.json)。该探索性结果不构成期刊分区或录用保证；英文工作稿尚未同步本次年度分层结果。
 
 ## 历史候选：跨模型实跑（2026-10-29）
 
