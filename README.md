@@ -1,5 +1,9 @@
 # 年报与法规双源检索增强生成
-## 当前主稿：跨模型实跑（2026-10-29）
+## 当前主稿：跨模型与 Agent 对照（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_agent_20261029.docx)在8题跨模型补充之外，加入既有K3 Agent与三轮固定证据修订的[配对复算](results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json)及[图10](results/runs/agent_pairs_figures_20261029_01/agent_observed_pairs.png)。两条件各在不同题目失败，余下6对覆盖4家公司；按既有助手提取、事后勘误且未经独立裁定参考，三字段全匹配为4/6与5/6，成员宏F1为0.833与0.985，日期宏F1为0.786与0.952（Agent与修订）。两者各记录18次调用，但供应商token总量分别为102600与97441，最终证据亦不同；这不是完全预算匹配或因果实验。原参考和勘误版、失败、逐题配对及界均保留；未新增人工标注或模型调用。WPS渲染中文23页、英文25页，受影响页面已检查；结果不证明普遍效果或期刊录用。详见[审计](results/runs/agent_pairs_reanalysis_20261029_01/paper_update_audit.json)。
+
+## 历史候选：跨模型实跑（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型实跑候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_20261029.docx)新增Qwen3-0.6B与K3服务别名的8题探索性对照及[图9](results/runs/qwen_cuda_cross_model_figures_20261029_02/cross_model_exploratory.png)。两者均完成8题；以既有助手提取、事后勘误且未经独立裁定的参考为准，成员宏F1分别为0.651和0.975，日期宏F1为0.600和0.953，严格结构合规为0/8和8/8。字段分数即使结构不合规也计算；不等于引用语义支持、法规适用或检索P/R。模型容量、采样和输出预算不匹配；四家公司、两年度、每题一次的结果不能支持跨模型或跨年普遍泛化。原参考和勘误版均已报告，无新增人工标注。[结果与限制](results/runs/qwen_cuda_cross_model_score_20261029_04/summary.json)；[稿件及输入审计](results/runs/qwen_cuda_cross_model_score_20261029_04/paper_update_audit.json)。WPS只读复核中文版22页、英文版24页；本稿仍待投稿前终审。
 

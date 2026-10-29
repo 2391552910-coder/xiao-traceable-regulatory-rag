@@ -1,0 +1,16 @@
+{
+  "scope": "Retrospective analysis of saved K3 Agent and revision outputs; no new calls or human annotations.",
+  "observed_pairs": 6,
+  "chinese_pages": 23,
+  "english_pages": 25,
+  "visual_checks": "WPS read-only export; changed pages Chinese 19-23 and English 21-25 visually inspected.",
+  "standard_renderer": "soffice.exe unavailable",
+  "files_sha256": {
+    "results\\runs\\agent_pairs_reanalysis_20261029_01\\agent_pair_comparison.json": "04003a920818f61f9f1e13bd0242455ee080b0498e63d3fbb6bb34541d1bd49b",
+    "scripts\\reanalyze_saved_agent_pairs_20261029.py": "7f8a91bc774885cdd0395eb515b784c31e613aa5facf46c55b919d99e0e6f0dc",
+    "scripts\\plot_saved_agent_pairs_20261029.py": "63cb910e084a583cc71866ef568e369e5f0e97fed0940aba0239585f2a1e94db",
+    "results\\runs\\agent_pairs_figures_20261029_01\\agent_observed_pairs.png": "d1342c686e163633d3d2bf4e0bb724fa09626e76128e023c8e9b10768642ffad",
+    "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx": "ee811f6e1618f9b06c02821fdeb150e986be70417245dce95cbcf8f80b255ca6",
+    "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_agent_20261029.docx": "97bc8ff31e761f1e69d08a647a61bb8b3a8fc51d4ad856a8cafb3db26e96ca0d"
+  }
+}
