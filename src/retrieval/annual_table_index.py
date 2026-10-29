@@ -19,12 +19,17 @@ def _member_names(text):
             if re.fullmatch(r'[\u3400-\u9fff·]{2,8}', part)]
 
 
-def _render_views(labels,pages,views,category):
+def _render_views(labels,pages,views,category,undecoded_pages=()):
     text = ('结构化年报表格（布局重建字段，非PDF连续引文）\n'
             + '委员会范围：' + '、'.join(label+'委员会' for label in labels)
             + '\n物理页：' + '、'.join(map(str,pages)) + '\n')
+    if undecoded_pages:
+        text += ('编码提示：物理页' + '、'.join(map(str, undecoded_pages))
+                 + '的文本层包含未解码字形，相关内容可能不完整。\n')
     field_labels=dict(committee='委员会名称',members='成员情况',date='召开日期',count='召开会议次数',
-                      name='董事姓名',position='职务',meeting_title='会议名称')
+                      name='董事姓名',position='职务',meeting_title='会议名称',
+                      meeting_opinions='提出的重要意见和建议',
+                      meeting_other_duties='其他履行职责情况',meeting_dissent='异议事项情况')
     for view in views:
         label=field_labels.get(view['field'])
         if view['field']=='date' and category!='committee_meetings':
@@ -56,6 +61,7 @@ def row_units(document):
     """Return bounded field views with complete cell provenance, not free prose."""
     source = document['source']
     cells = {c['cell_id']: c for table in document['tables'] for c in table['cells']}
+    page_status = {p['page']: p.get('status') for p in document.get('parsed_pages', [])}
     chunks, review = [], []
     for chain in document['logical_tables']:
         columns = field_columns(chain['headers'])
@@ -78,6 +84,10 @@ def row_units(document):
                         selected['attendance_' + str(i)] = i
             if 'meeting_content' in columns:
                 selected['meeting_title'] = columns['meeting_content']
+            if chain['category'] == 'committee_meetings':
+                for field in ('meeting_opinions','meeting_other_duties','meeting_dissent'):
+                    if field in columns:
+                        selected[field] = columns[field]
             if not selected and row['values']:
                 # Unknown layouts remain available to reviewers; never pretend
                 # their fields were identified merely because a name matched.
@@ -91,10 +101,10 @@ def row_units(document):
                 text = row['values'][i]
                 end = len(text)
                 if field == 'meeting_title':
-                    markers = [m.start() for m in re.finditer(r'审议|議案|议案', text)]
-                    end = min(markers) if markers else min(len(text), 180)
-                    if not text[:end].strip():
-                        continue
+                    # Keep agenda text even when the cell begins with “审议”.
+                    # Truncating at the first marker erased the entire title in
+                    # common annual-report rows such as “审议《季度报告》”.
+                    end = min(len(text), 180)
                 views.append(dict(field=field, text=text[:end], cell_ids=list(row['parts'][i]),
                                   column_header=chain['headers'][i] if i < len(chain['headers']) else '',
                                   column_header_cell_ids=chain.get('header_column_parts',[])[i] if i < len(chain.get('header_column_parts',[])) else [],
@@ -104,9 +114,12 @@ def row_units(document):
                 continue
             row_cell_ids = list(dict.fromkeys(c for v in views for c in v['cell_ids']))
             pages = sorted({cells[c]['page'] for c in row_cell_ids})
-            text=_render_views(labels,pages,views,chain['category'])
+            source_pages = {cells[c]['page'] for c in row_cell_ids + chain['header_cell_ids']}
+            undecoded_pages = sorted(p for p in source_pages
+                                     if page_status.get(p) == 'text_layer_contains_undecoded_glyphs')
+            text=_render_views(labels,pages,views,chain['category'],undecoded_pages)
             structured=_derive_fields(views,chain['category'],source['year'])
-            cid = f"ATBL-{source['stock']}-{source['year']}-" + digest([VERSION, row['row_id'], views])[:20]
+            cid = f"ATBL-{source['stock']}-{source['year']}-" + digest([VERSION, row['row_id'], views, undecoded_pages])[:20]
             meta = dict(corpus_type='annual_report', stock_code=source['stock'], report_year=source['year'],
                         company_name=source['company'], source_pdf_sha256=source['sha256'],
                         physical_pdf_page_1based=pages[0], physical_pdf_pages_1based=pages,
@@ -118,6 +131,7 @@ def row_units(document):
                         split_row_merged=row['split_row_merged'], field_views=views,
                         source_cells=[copy.deepcopy(cells[c]) for c in row_cell_ids],
                         header_source_cells=[copy.deepcopy(cells[c]) for c in chain['header_cell_ids']],
+                        undecoded_source_pages=undecoded_pages,
                         structured_fields=structured, independent_human_validation=False)
             meta['temporal_scope']='outside_reporting_year' if structured['out_of_period_date_candidates'] else 'annual_report_scope_with_no_detected_date_conflict'
             chunk = Chunk(cid, f"HELD-{source['stock']}-{source['year']}",
@@ -140,7 +154,13 @@ def verify_field_views(chunk):
             header_text = '\n'.join(cells[cid]['text'] for cid in view['column_header_cell_ids'])
             if header_text != view['column_header']:
                 raise ValueError('Column header is not bound to its original cells')
-    if _render_views(meta['committee_labels'],meta['physical_pdf_pages_1based'],meta['field_views'],meta['table_category'])!=chunk.text:
+    undecoded_pages = meta.get('undecoded_source_pages', [])
+    source_pages = {cell['page'] for cell in cells.values()}
+    if (not isinstance(undecoded_pages, list) or
+            any(type(page) is not int or page not in source_pages for page in undecoded_pages) or
+            undecoded_pages != sorted(set(undecoded_pages))):
+        raise ValueError('Undecoded page warnings must identify unique source pages')
+    if _render_views(meta['committee_labels'],meta['physical_pdf_pages_1based'],meta['field_views'],meta['table_category'],undecoded_pages)!=chunk.text:
         raise ValueError('Serialized evidence text differs from its source-bound field views')
     if _derive_fields(meta['field_views'],meta['table_category'],meta['report_year'])!=meta['structured_fields']:
         raise ValueError('Structured candidates differ from their source-bound field views')

@@ -1,0 +1,2 @@
+# Preserve annual-report and regulation corpus bytes across platforms.
+data/knowledge_base/*.txt -text

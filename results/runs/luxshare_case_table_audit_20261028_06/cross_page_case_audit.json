@@ -1,0 +1,122 @@
+{
+  "status": "passed_scoped_case_recovery",
+  "date": "2026-10-28",
+  "parser_version": "annual_governance_tables_v1_4",
+  "source_pdf": {
+    "path": "results/runs/compact_gold_release_windows_20261020_01/release/sources/annual/002475.SZ_2024.pdf",
+    "sha256": "e436b5ab1775cfa05aacb4a16dd8e5c6b89e926ed18a7a55a86728bab6fcb1da",
+    "company": "立讯精密",
+    "stock_code": "002475",
+    "report_year": 2024,
+    "pages_reviewed": [
+      60,
+      61
+    ]
+  },
+  "original_generation_context": {
+    "path": "results/runs/compact_final_execution_windows_20261020_01/concurrent_resume_v1/generated/HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json",
+    "sha256": "e09ed3e54b34a5197c24e262c74a5b8528c0d93dfa7a2ace385da22a6b517edb",
+    "prompt_sha256": "906eb42b6b0d4696ed1a89649abb60876f3b0eefe11500502b95e52f1475c4b3",
+    "retrieved_annual_citation": "A1",
+    "retrieved_physical_page": 60,
+    "a1_context_ends_after_meeting_count": "4",
+    "response_limitation_statement": "所提供材料中第4次审计委员会会议的召开日期与内容在原文摘录中被截断，无法确认",
+    "interpretation": "The answer accurately describes the retrieved A1 excerpt limit; the source report contains the missing date and agenda, showing an evidence-supply/continuation retrieval gap rather than a hallucinated date.",
+    "retrieved_a1_excerpt_chars": 1225,
+    "retrieved_a1_excerpt_sha256": "5f438fd7f76517266731c35025a7449e3b7a7712272851700541ceae88cf414b",
+    "retrieved_a1_excerpt_tail": "\n张英 \n4\n 2024 年 08\n月2 3日  \n审议《2024 年半年\n度报告》 \n审计委员会根据《公司法》、中\n国证监会《上市公司治理准\n则》及《董事会审计委员会工\n作细则》的有关规定，开展工\n作，勤勉尽责，根据公司的实\n际情况，提出了相关的意见，\n经过充分沟通讨论，一致通过\n此报告。  \n  \n审计委\n员会 \n刘中华、\n宋宇红、\n侯玲玲、\n张英 \n4"
+  },
+  "source_page_facts": {
+    "physical_page_60": {
+      "fourth_meeting_date": "2024-10-25",
+      "agenda": "审议《2024年第三季度报告》",
+      "status": "visible_on_page_60"
+    },
+    "physical_page_61": {
+      "continuation_opinion": "经过充分沟通讨论，一致通过此报告。",
+      "status": "continues_the_page_60_fourth_meeting_opinion_cell"
+    }
+  },
+  "before_v14": {
+    "parser_version": "annual_governance_tables_v1_3",
+    "table_chains": 7,
+    "page_60_61_joined": false,
+    "indexed_rows": 4,
+    "fourth_meeting_opinion_complete": false
+  },
+  "after_v14": {
+    "table_chains": 6,
+    "page_60_61_joined": true,
+    "committee_meeting_chain_rows": 9,
+    "split_rows_merged": 1,
+    "boundary_payloads_absorbed": 1,
+    "indexed_rows": 8,
+    "cross_page_row_pages": [
+      60,
+      61
+    ],
+    "retrieved_meeting_date": "2024-10-25",
+    "agenda_retained": true,
+    "opinion_retained": true,
+    "source_cell_ids": [
+      "TAB-e436b5ab1775cfa0-P0060-G01-Ca5a16eaa92a6",
+      "TAB-e436b5ab1775cfa0-P0061-G01-C8f88665557e8"
+    ],
+    "query_hits_for_meeting_row": 1
+  },
+  "source_cell_reverification": {
+    "status": "passed",
+    "cells_reverified": 570,
+    "pages": [
+      53,
+      54,
+      55,
+      59,
+      60,
+      61
+    ]
+  },
+  "targeted_tests": {
+    "status": "passed",
+    "test_file": "tests/test_annual_tables.py",
+    "passed": 41,
+    "failed": 0,
+    "warnings": 1
+  },
+  "eight_report_regression": {
+    "status": "passed",
+    "documents": 8,
+    "selected_pages": 142,
+    "raw_tables": 77,
+    "accepted_continuations": 18,
+    "split_rows_merged": 8,
+    "verified_source_cells": 4326,
+    "contexts": 40,
+    "new_model_calls": 0,
+    "generated_answers": 0,
+    "corrected_reference_page_coverage_by_mode": {
+      "initial": 0.9583333333333334,
+      "adjacent_continuation": 0.9583333333333334,
+      "table_bm25": 0.9583333333333334,
+      "table_balanced": 1.0,
+      "table_then_adjacent": 1.0
+    },
+    "interpretation": "The eight parser documents match v1.3 after removing parser_version and boundary_payloads_absorbed; parser field diagnostics are unchanged. Offline analysis and retrieval metrics changed because agenda/opinion fields are now preserved in table retrieval contexts."
+  },
+  "limits": [
+    "One post-hoc real annual-report case, not an independent generalization sample.",
+    "No model calls or new human labels.",
+    "The source-bound cell text is layout reconstruction, not a continuous verbatim quotation.",
+    "Does not validate all 355 generation outputs or change the manuscript main experiment."
+  ],
+  "artifacts": {
+    "document_json_sha256": "eda13fff0c3778e903766c3d26fe3bd8524db13bae66ade929337034b4e64a5f",
+    "table_index_sha256": "eda231d8b1db991424057629d31eee68d1fe30f05d9060e6d7a81d2030439326",
+    "parser_sha256": "8e6944b074d531b2ef83ea7c06864ad37f22397a47de339102113d290ab75733",
+    "retrieval_index_code_sha256": "922320a803aba9dfb0d0078d6f3b39f4c7161a3f22e34bb2478d9fdfb2ed04ee",
+    "test_sha256": "7d602c444d94d7529466a2f22fa2e9c0c13a8526d0853bb71e526bb5776d26b2",
+    "source_page_60_png_sha256": "ff4f14f660272fb8e6ff38a131001f4d20fce9a3db454c605e8ecfee646c59ce",
+    "source_page_61_png_sha256": "387bd6f7e55a7e1ddbccd94078d5fb74a3367beb85f4e7556f7f4542b4c7b145"
+  }
+}
+

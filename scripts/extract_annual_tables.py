@@ -1,5 +1,6 @@
 """Extract source-bound tables from a local annual report, entirely offline."""
 from pathlib import Path
+from collections import Counter
 import argparse
 import json
 import sys
@@ -38,8 +39,18 @@ def main():
     (args.out_dir/'document.json').write_text(json.dumps(document, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     chunks, review = build_index([document], args.out_dir/'table_index.sqlite')
     (args.out_dir/'review_queue.json').write_text(json.dumps(review, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    page_counts = Counter(page['status'] for page in document['parsed_pages'])
     print(json.dumps(dict(status='completed_offline', tables=len(document['tables']),
                          table_chains=len(document['logical_tables']), indexed_rows=len(chunks),
+                         parser_version=document['parser_version'], total_pdf_pages=len(pages),
+                         inspected_pages=len(document['parsed_pages']),
+                         page_selection_scope=document['selection']['scope'],
+                         page_status_counts=dict(page_counts),
+                         undecoded_pages=[page['page'] for page in document['parsed_pages']
+                                          if page['status'] == 'text_layer_contains_undecoded_glyphs'],
+                         possible_unparsed_personnel_table_pages=[page['page'] for page in document['parsed_pages']
+                                                                 if page['possible_unparsed_personnel_table']],
+                         text_layer_check_limit='Only inspected pages and known undecoded markers; no accuracy guarantee.',
                          model_calls=0, output=str(args.out_dir.resolve())), ensure_ascii=False, indent=2))
 
 

@@ -1,5 +1,11 @@
 # 年报与法规双源检索增强生成
 
+## 2026-10-28 留出复核包：两阶段盲审
+
+- 复核范围为3份事后选择的2024年报、55个治理关键词及邻接页；解析器有57个表格区域、43个连续页边界、7条已接受续表连接。它们是复核工作量，不是正确率。
+- 先只依据原始页图填写[金表盲标表](results/runs/annual_table_holdout_review_v17_20261028_02/gold_table_blind_template.csv)、[续表盲标表](results/runs/annual_table_holdout_review_v17_20261028_02/gold_continuation_blind_template.csv)和[页级完成表](results/runs/annual_table_holdout_review_v17_20261028_02/page_review_template.csv)。封存标签后，再填[预测—金表匹配表](results/runs/annual_table_holdout_review_v17_20261028_02/prediction_gold_match_template.csv)。具体步骤见[复核说明](results/runs/annual_table_holdout_review_v17_20261028_02/review_instructions.md)。
+- [模板准备脚本](scripts/prepare_annual_table_review_templates_20261028.py)只导出空表；[计分脚本](scripts/score_annual_table_review.py)检查完整性并计算页级/表级、类别和续表指标。空白标签不能计分；临时合成数据的一致性检查不属于项目实验。
+- 复核标签目前仍为空；没有留出集准确率、Precision、Recall或F1。未完成人工复核前，不将解析器输出数量解释为性能。
 ## 2026-10-27 预算竞争修复：已按规划实施并离线验证
 
 - [实施规划](docs/预算分配优化实施规划_20261027.txt)先行保存；解析与邻接成果已在提交[`c416a61`](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055)发布，[该提交的GitHub离线测试已通过](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40442726192)。
@@ -21,6 +27,12 @@
 - 已完成有网格表格、无框线出席矩阵、独立落页表头、重复表头、跨页姓名/日期及议案续行的处理；单元格保留PDF物理页、版面坐标、原始字符索引及指纹。[实现、结果与使用说明](docs/年报表格与跨页续表解析_实现验收_20261027.txt)。
 - **8份年报、142个治理关键词及相邻页**中，检测77个表格区域，连接18组相邻页表格，合并8处断行；生成120条表格字段检索记录，其中45条明确涉及审计委员会。不是对全部财务报表版式的通用正确性保证；单PDF入口支持`--all-pages`。
 - **212项测试通过**；4326个单元格在重新打开的PDF上核验，46页原文预览已生成。[离线验收](results/runs/annual_table_development_20261027_03/implementation_audit.json)确认134份历史发布文件不变，全程0模型调用。
+- 后续复查发现同页混合版式边界：页面含网格表时，旧逻辑会跳过同页无框线出席矩阵。v1.3已修正；10页合成夹具的`tests/test_annual_tables.py`为39/39通过。尚未重跑全套测试或真实年报批次，不据此声称整体正确率提升。
+- 2026-10-28同目录外重跑原8份年报：142页、77表、18续表、8处断行、4326单元格复核、40份上下文；同一冻结输入下，8份解析文档除解析器版本字段外完全一致，离线分析哈希一致。该非回归结果不是新的准确率或独立验证。[输入和文档哈希对照收据](results/runs/annual_table_development_v13_regression_20261027_01/v13_nonregression_audit.json)。
+- 2026-10-28当前工作区完整`pytest`结果为1255项通过、1项失败（共1256项）：`test_twenty_workers_overlap_and_do_not_duplicate_units`观察到并发峰值7，低于该时序测试断言的8；该失败不涉及表格解析。表格解析与证据保留定向测试43项通过，故当前完整测试状态并非全绿。
+- 2026-10-28用立讯精密2024年报第60–61页发现并修复两处实际漏项（v1.4）：跨页意见续句从“伪表头”并回上一条会议记录；结构化检索保留以“审议”开头的议题及意见/履职说明字段。单案由4条审计委员会记录补足为8条可检索委员会记录；41项定向测试通过，原8份年报离线批次通过回归。此为事后案例修复，不是独立泛化或答案质量指标。[单案证据与回归收据](results/runs/luxshare_case_table_audit_20261028_06/cross_page_case_audit.json)。
+- 留出报告发现类别误判后，当前解析器升至v1.7：股东大会/董事会表不再仅因含“会议”和“日期”就归入委员会会议；委员会表需要明确列或章节证据。万科A、美的集团、北京文化共55个治理页面完成离线留出运行，输入哈希和解析结果已记录。[留出审计](results/runs/annual_table_holdout_review_v17_20261028_02/holdout_audit.json)与[盲审页面](results/runs/annual_table_holdout_review_v17_20261028_02/blind_review.html)。该样本事后选择、不是随机预注册；人工标签仍为空，未报告留出准确率、Precision或Recall。
+- 当前v1.7完整本地`pytest`为**1263项通过、0失败**，耗时88.67秒，含4条弃用/依赖参数警告。v1.7解析代码已同步至仍开放的草稿PR #4；其对应离线工作流[#152通过](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40643942017)，覆盖离线回归测试清单（包括年报表格和证据接入测试），不是全量`pytest`。CI通过不替代独立人工标注或生成回答质量评价。
 - 表格FTS5检索与按表格类型均衡检索已接入保留原证据的RAG接口；完成8题×5方案的40份上下文对照，均≤6000参考tokens。均衡表格补充的勘误参考页覆盖为100%，原始材料为95.83%；页面覆盖不等于语义召回。
 - **同时保留负例**：招商银行2024中，邻接续片独立补充可供给9/9个审计日期来源区间，而先表格后邻接仅5/9，存在预算竞争。[完整对照图](results/runs/annual_table_development_20261027_03/figures/table_retrieval_comparison.png)。
 - [本地表格/续表复核页面](results/runs/annual_table_development_20261027_03/review.html)提供原页链接、委员会归属及跨页标记；329行复核模板均未填写，独立人工验证尚未完成。规则解析器的开发集字段指标另存，不能替代LLM生成质量；代码与离线材料已由提交 [c416a61](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055) 发布；本轮未替换Word论文。

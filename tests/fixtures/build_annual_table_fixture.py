@@ -58,6 +58,19 @@ def build(path):
     grid(600,[625,750],[headers,['第一次会议','2024年9月19日','12. 开展工作','']])
     pdf.showPage()
     grid(40,[100,160],[['','','13. 延续内容',''],['第二次会议','2024年10月18日','审议报告','']])
+    pdf.showPage()
+    # Mixed layout: a ruled meeting table and a separate borderless attendance matrix.
+    grid(80, [105, 180], [headers, ['审计委员会', '陈四', '2024年11月8日', '审计委员会会议']])
+    pdf.setFont('STSong-Light', 9)
+    pdf.drawString(60, 800-260, '董事出席会议情况')
+    for x, text in [(60, '董事'), (230, '审计委员会'), (370, '薪酬委员会'), (500, '董事会')]:
+        pdf.drawString(x, 800-290, text)
+    for y, name, values in [(340, '周五', ['1/1', '0/0', '2/2']),
+                             (370, '吴六', ['1/1', '1/1', '2/2']),
+                             (400, '郑七', ['0/1', '1/1', '2/2'])]:
+        pdf.drawString(60, 800-y, name)
+        for x, value in zip([290, 420, 560], values):
+            pdf.drawRightString(x, 800-y, value)
     pdf.save()
 
 

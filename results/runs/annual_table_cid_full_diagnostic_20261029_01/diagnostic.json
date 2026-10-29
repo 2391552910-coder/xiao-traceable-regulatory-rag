@@ -1,0 +1,67 @@
+{
+  "parser_version": "annual_governance_tables_v1_9",
+  "source_pdf_sha256": "6ffff1cade59c64c8178494c083cac8a4011ef5ae2fed32f85dd488a64a809b2",
+  "pdf_pages": 346,
+  "selected_pages": 346,
+  "selection_scope": "all physical pages explicitly requested",
+  "parsed_status_counts": {
+    "text_layer_parsed": 335,
+    "text_layer_contains_undecoded_glyphs": 10,
+    "requires_ocr_no_text_layer": 1
+  },
+  "flagged_pages": [
+    {
+      "page": 22,
+      "chars": 897,
+      "undecoded_glyph_objects": 79
+    },
+    {
+      "page": 82,
+      "chars": 772,
+      "undecoded_glyph_objects": 66
+    },
+    {
+      "page": 93,
+      "chars": 1651,
+      "undecoded_glyph_objects": 12
+    },
+    {
+      "page": 94,
+      "chars": 1717,
+      "undecoded_glyph_objects": 18
+    },
+    {
+      "page": 99,
+      "chars": 1024,
+      "undecoded_glyph_objects": 69
+    },
+    {
+      "page": 101,
+      "chars": 713,
+      "undecoded_glyph_objects": 131
+    },
+    {
+      "page": 108,
+      "chars": 1005,
+      "undecoded_glyph_objects": 134
+    },
+    {
+      "page": 113,
+      "chars": 615,
+      "undecoded_glyph_objects": 63
+    },
+    {
+      "page": 133,
+      "chars": 1379,
+      "undecoded_glyph_objects": 76
+    },
+    {
+      "page": 345,
+      "chars": 140,
+      "undecoded_glyph_objects": 7
+    }
+  ],
+  "detected_tables": 1,
+  "elapsed_seconds": 23.063,
+  "limitations": "All physical pages checked for CID and replacement markers using pdfplumber; missing markers do not prove text accuracy, table recall, or legal validity. No OCR, model calls, or new human annotation."
+}
