@@ -29,7 +29,8 @@ def inspect(parsed, allowed):
               and 'meeting_count' in p and (p['meeting_count'] is None or type(p['meeting_count']) is int)
               and isinstance(p.get('meeting_dates'), list)
               and all(isinstance(x, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', x) for x in p['meeting_dates'])
-              and citation_lists and isinstance(p.get('limitations'), list))
+              and citation_lists and isinstance(p.get('limitations'), list)
+              and all(isinstance(x, str) for x in p['limitations']))
     cited = {x.strip('[] ') for values in cites.values() if isinstance(values, list)
              for x in values if isinstance(x, str)} if isinstance(cites, dict) else set()
     valid_ids = {value for value in cited if re.fullmatch(r'[AR][1-9][0-9]*', value)}
