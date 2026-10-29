@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_10'
+VERSION = 'annual_governance_tables_v1_11'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -310,6 +310,61 @@ def _attendance_table(page, prefix, *, excluded_bboxes=()):
                  warnings=['Inferred column geometry; requires source review before treating attendance as membership gold.'])]
 
 
+def _aligned_personnel_changes(page, prefix):
+    """Extract a narrow five-column, same-page personnel layout from PDF characters."""
+    lines = _word_lines(page.extract_words(x_tolerance=2, y_tolerance=3))
+    headers_expected = ['姓名', '职务', '性别', '年龄', '任期']
+    output = []
+    for index, (top, words) in enumerate(lines):
+        words = sorted(words, key=lambda word: word['x0'])
+        if [compact(word['text']) for word in words] != headers_expected:
+            continue
+        anchors = [word['x0'] for word in words]
+        rows = []
+        for next_top, candidate in lines[index + 1:]:
+            candidate = sorted(candidate, key=lambda word: word['x0'])
+            if next_top - (top if not rows else rows[-1][0]) > 30:
+                break
+            values = [compact(word['text']) for word in candidate]
+            if (len(candidate) != 5 or any(abs(word['x0'] - x) > 7 for word, x in zip(candidate, anchors))
+                    or not re.fullmatch(r'[\u3400-\u9fff·]{2,6}(?:[（(]\d+[）)])?', values[0])
+                    or values[2] not in ('男', '女') or not re.fullmatch(r'\d{1,3}岁?', values[3])
+                    or not re.search(r'(?:19|20)\d{2}年', values[4])):
+                break
+            rows.append((next_top, candidate))
+        if len(rows) < 2:
+            continue
+        right = min(page.width, max(word['x1'] for _, row in rows for word in row) + 2)
+        bounds = [max(0, anchors[0] - 2)] + [(a + b) / 2 for a, b in zip(anchors, anchors[1:])] + [right]
+        if any(a >= b for a, b in zip(bounds, bounds[1:])):
+            continue
+        tid = prefix + f'-PERS{len(output)+1:02d}'
+        header_bottom = max(word['bottom'] for word in words) + 1
+        header_cells = [_cell(page, (a, top - 1, b, header_bottom), tid, kind='header')
+                        for a, b in zip(bounds, bounds[1:])]
+        cells = list(header_cells)
+        records = []
+        for row_top, row in rows:
+            bottom = max(word['bottom'] for word in row) + 1
+            row_cells = [_cell(page, (a, row_top - 1, b, bottom), tid)
+                         for a, b in zip(bounds, bounds[1:])]
+            cells.extend(row_cells)
+            records.append(dict(row_id=f'{tid}-R{len(records)+1:03d}', page=page.page_number,
+                                top=row_top, bottom=bottom, values=[c['text'] for c in row_cells],
+                                parts=[[c['cell_id']] for c in row_cells], split_row_merged=False))
+        caption = _layout_text([c for c in page.chars if max(0, top - 50) <= c['top'] < top - 1])
+        output.append(dict(table_id=tid, page=page.page_number,
+                           bbox=[bounds[0], top - 1, bounds[-1], records[-1]['bottom']],
+                           page_width=page.width, page_height=page.height,
+                           method='aligned_personnel_five_columns', column_bounds=bounds,
+                           headers=[c['text'] for c in header_cells],
+                           header_cell_ids=[c['cell_id'] for c in header_cells], caption=caption,
+                           cells=cells, rows=records, header_status='exact_five_headers',
+                           category=classify_headers([c['text'] for c in header_cells], caption),
+                           warnings=['Same-page geometric reconstruction; committee scope and semantic correctness not established.']))
+    return output
+
+
 def extract_page_tables(page, source_sha256):
     prefix = f'TAB-{source_sha256[:16]}-P{page.page_number:04d}'
     tables = []
@@ -336,6 +391,10 @@ def extract_page_tables(page, source_sha256):
     # for a separately headed attendance matrix.
     tables.extend(_attendance_table(
         page, prefix, excluded_bboxes=[table['bbox'] for table in tables]))
+    # A narrow five-column pattern is only attempted on pages with no other
+    # detected table, avoiding duplicate regions and ambiguous mixed layouts.
+    if not tables:
+        tables.extend(_aligned_personnel_changes(page, prefix))
     return sorted(tables, key=lambda table: (table['bbox'][1], table['bbox'][0]))
 
 

@@ -1,0 +1,22 @@
+{
+  "source_pdf_sha256": "6ffff1cade59c64c8178494c083cac8a4011ef5ae2fed32f85dd488a64a809b2",
+  "source_version": "annual_governance_tables_v1_10",
+  "parser_version": "annual_governance_tables_v1_11",
+  "identical_selected_pages": [
+    121,
+    122,
+    123,
+    128,
+    129,
+    130,
+    131
+  ],
+  "detected_table_count_before": 0,
+  "detected_table_count_after": 1,
+  "detected_page": 129,
+  "rows": 7,
+  "source_cells_verified": 40,
+  "unresolved_committee_rows": 7,
+  "model_calls": 0,
+  "limitations": "One retrospectively chosen report and same-page exact five-column layout only; geometry roundtrip does not establish semantic correctness, temporal applicability or recall. Not a committee membership inference."
+}
