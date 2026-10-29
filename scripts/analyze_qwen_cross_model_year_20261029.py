@@ -147,16 +147,16 @@ def main() -> None:
         ],
     }
     (args.output_dir / "year_stratified_summary.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n"
     )
     with (args.output_dir / "year_stratified_models.csv").open("w", newline="", encoding="utf-8-sig") as stream:
         fields = list(strata[0])
-        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(strata)
     with (args.output_dir / "year_stratified_pairs.csv").open("w", newline="", encoding="utf-8-sig") as stream:
         fields = list(paired[0])
-        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(paired)
     print(json.dumps({
@@ -173,3 +173,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
