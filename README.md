@@ -6,7 +6,7 @@
 在 6000 token 预算下，40 道法规 PDF 参考题共 120 次参考位置：缓存检索的合并/分路配置分别命中 0/120 和 7/120；新运行 BM25 两种配置均为 0/120。另 20 道使用整份 TXT 作为法规参考的题目，BM25 合并/分路分别匹配 18/20 和 20/20 个来源。两种参考粒度不能合并解释为页级检索效果。上述数字来自既有回放，没有新增实验。
 
 
-在分路配置下，另有33/60题的严格法规参考位置覆盖为零，但检索文本与参考引文出现至少一处12字符连续重合。该词面诊断可能包含通用措辞或不同版本，不证明法规等价、语义支持或时点适用；见[诊断汇总](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_audit_receipt.json)与[逐题数据](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_per_question.csv)。逐题表可复算汇总计数；完整重跑仍需冻结索引、参考材料及原始脚本依赖。
+在分路配置下，另有33/60题的严格法规参考位置覆盖为零，但检索文本与参考引文出现至少一处12字符连续重合。该词面诊断可能包含通用措辞或不同版本，不证明法规等价、语义支持或时点适用；见[诊断汇总](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_audit_receipt.json)与[逐题数据](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_per_question.csv)。逐题表可复算汇总计数；[原始诊断脚本](scripts/audit_alternate_law_sources_20261023.py)供方法审阅。完整重跑仍需冻结索引、参考材料及脚本依赖；该历史脚本使用固定输出目录并会覆盖同名结果，运行前应先保留原件。
 
 ## 最新候选：来源页码记录边界澄清（2026-10-29）
 
