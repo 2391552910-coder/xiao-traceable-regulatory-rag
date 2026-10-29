@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "regulatory-gold-ai-20261013",
+  "status": "provisional",
+  "usage": "development_only",
+  "label_origin": "ai_dual_pass_adjudicated",
+  "hashes": {
+    "queries_sha256": "fd3fb72066cbbd6b2ee0c00e053cf1da0a990b8109b1c6c4226c218243ccfceb",
+    "corpus_sha256": "0653487765c3d14875e5deebe64248b1b6b886ce1e5f7cb878b016c7ec2911ba",
+    "annotation_sha256": "d0b6eb3de6aee78e8f8611f589771787c185dbefec2063260e508acdef189bf7",
+    "splitter_sha256": "e5953b19fd8133c9c7253616b5cbefba780326ddedd21e86d23c77f8f188b546"
+  }
+}
