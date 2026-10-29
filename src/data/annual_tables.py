@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_7'
+VERSION = 'annual_governance_tables_v1_8'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -679,6 +679,18 @@ def extract_pdfium_pages(pdf_path):
     return result
 
 
+def text_layer_diagnostics(chars):
+    """Flag visible extraction placeholders; do not infer full text accuracy."""
+    count = sum(1 for char in chars if re.search(r'\(cid:\d+\)|\ufffd', char.get('text', '')))
+    if not chars:
+        status = 'requires_ocr_no_text_layer'
+    elif count:
+        status = 'text_layer_contains_undecoded_glyphs'
+    else:
+        status = 'text_layer_parsed'
+    return {'status': status, 'undecoded_glyph_objects': count}
+
+
 def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=False):
     """Parse selected governance pages of one verified local annual PDF."""
     import pdfplumber
@@ -703,7 +715,7 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                                      page_character_fingerprint=digest([
                                          [c['text'], round(c['x0'],4), round(c['top'],4), round(c['x1'],4), round(c['bottom'],4)]
                                          for c in page.chars]),
-                                     status='text_layer_parsed' if page.chars else 'requires_ocr_no_text_layer'))
+                                     **text_layer_diagnostics(page.chars)))
             if progress:
                 progress(number, len(parsed))
             page.close()
@@ -715,5 +727,5 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                 source_pdf_sha256=actual_sha, model_calls=0,
                 independent_human_validation=False,
                 limitations=['Governance-page selection only; unsupported or scanned layouts remain explicit review items.',
+                             'Undecoded glyph detection flags CID/replacement markers only; a clean status does not prove correct text.',
                              'Geometry and rule-based scope do not certify complete reporting-period membership.'])
-

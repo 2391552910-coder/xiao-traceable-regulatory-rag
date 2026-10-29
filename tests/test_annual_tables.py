@@ -9,6 +9,7 @@ from src.data.annual_tables import (
     compact, committee_labels, continuation_decision, extract_document,
     extract_page_tables, extract_pdfium_pages, file_sha256, parse_date,
     select_governance_pages, stitch_tables, verify_cell, row_scope, classify_headers,
+    text_layer_diagnostics,
 )
 from src.retrieval.annual_table_index import AnnualTableIndex, build_index, row_units,verify_field_views,_derive_fields
 
@@ -76,6 +77,14 @@ def test_blank_text_page_is_explicit_ocr_gap(parsed):
     page = next(p for p in parsed['parsed_pages'] if p['page'] == 6)
     assert page['status'] == 'requires_ocr_no_text_layer'
     assert page['tables'] == 0
+
+
+def test_text_layer_diagnostics_flags_undecoded_glyphs_without_calling_it_ocr():
+    assert text_layer_diagnostics([]) == {'status': 'requires_ocr_no_text_layer', 'undecoded_glyph_objects': 0}
+    assert text_layer_diagnostics([{'text': '审'}, {'text': '计'}]) == {
+        'status': 'text_layer_parsed', 'undecoded_glyph_objects': 0}
+    assert text_layer_diagnostics([{'text': '审'}, {'text': '(cid:5025)'}, {'text': '\ufffd'}]) == {
+        'status': 'text_layer_contains_undecoded_glyphs', 'undecoded_glyph_objects': 2}
 
 
 def test_every_cell_roundtrips_against_new_pdf_parse(parsed):
@@ -311,4 +320,3 @@ def test_agenda_mention_of_audit_does_not_transfer_meeting_ownership():
     row=dict(values=['2024年9月19日','审议关于审计委员会第十次会议的报告'])
     labels,basis=row_scope(row,chain)
     assert labels==[]
-

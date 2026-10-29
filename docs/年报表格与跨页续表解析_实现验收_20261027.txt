@@ -1,7 +1,12 @@
+文本编码诊断补充（2026-10-29，v1.8）
+====================================
+此前只要pdfplumber返回字符就将页面标记为text_layer_parsed，不能反映部分字体映射失败。v1.8对选中页面的字符对象检查(cid:数字)和Unicode替换字符；发现任一标记时设置text_layer_contains_undecoded_glyphs，并记录undecoded_glyph_objects，保留提取内容，不自动修复或调用OCR。无文字层仍用requires_ocr_no_text_layer。未发现标记不证明内容正确；未选中的页面不在本页级诊断范围，其他乱码形式也可能漏检。
+中国平安2024年报的物理第101页抽样复核：713个字符对象中131个带未解码标记；第11页698个字符对象未发现上述标记。抽样结果不是整份PDF的准确率。离线表格定向测试43项通过（含新增诊断用例）；无模型调用、无新增人工标注。
+
 年报表格与跨页续表解析：实现与离线验收
 日期：2026-10-27，Asia/Shanghai
 原验收批次解析版本：annual_governance_tables_v1_2
-当前源码解析版本：annual_governance_tables_v1_7（在v1.4续表修复上，要求“委员会会议”分类有委员会列或明确委员会章节标题证据；历史验收批次与收据未改写）
+当前源码解析版本：annual_governance_tables_v1_8（在v1.7基础上识别所选页面中未解码字形；历史验收批次与收据未改写）
 最终实验目录：results/runs/annual_table_development_20261027_03/
 
 已完成的范围
