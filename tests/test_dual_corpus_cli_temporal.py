@@ -36,7 +36,8 @@ def test_cli_passes_temporal_options_and_persists_audit(tmp_path, monkeypatch):
             assert kwargs['target_date_role'] == 'company_event_date'
             assert kwargs['unknown_temporal'] == 'retain'
             return {'company_evidence': [(annual, 1.0)], 'regulation_evidence': [(law, 1.0)],
-                    'temporal_filter_audit': {'target_date': '2024-12-31', 'legal_applicability_verified': False}}
+                    'temporal_filter_audit': {'target_date': '2024-12-31', 'legal_applicability_verified': False,
+                                              'rows': [{'chunk_id': 'L', 'relation': 'unknown'}]}}
 
     monkeypatch.setattr(cli, 'load_config', lambda path: {
         'retrieval': {'reranker': {'enabled': False}, 'embedding_backend': 'fixture'}, 'llm': {}})

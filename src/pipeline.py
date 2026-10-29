@@ -275,6 +275,20 @@ def generate_dual_corpus_answer(dual: DualCorpusRetriever, evaluator, *,
         hits["company_evidence"], prefix="A")
     regulation_evidence = DualCorpusRetriever.format_evidence(
         hits["regulation_evidence"], prefix="R")
+    temporal_audit = hits.get("temporal_filter_audit")
+    if temporal_audit is not None and hits["regulation_evidence"]:
+        relations = {row["chunk_id"]: row["relation"] for row in temporal_audit["rows"]}
+        time_notes = []
+        for index, (chunk, _) in enumerate(hits["regulation_evidence"], start=1):
+            relation = relations.get(chunk.chunk_id)
+            if relation == "unknown":
+                description = "事项日期与声明区间的关系未知"
+            elif relation == "within_declared_interval":
+                description = "事项日期位于声明区间内（仅依据输入元数据）"
+            else:
+                raise ValueError("Retrieved regulation lacks a valid retained temporal relation")
+            time_notes.append(f"来源R{index}：{description}；法律适用性未验证。")
+        regulation_evidence += "\n\n【法规时间筛选说明】\n" + "\n".join(time_notes)
     supplied_evidence_ids = {
         f"{prefix}{index}"
         for prefix, key in (("A", "company_evidence"), ("R", "regulation_evidence"))
@@ -326,7 +340,7 @@ def generate_dual_corpus_answer(dual: DualCorpusRetriever, evaluator, *,
             evidence_id = f"{prefix}{index}"
             records[evidence_id] = source_record(evidence_id, chunk, score)
     result["query"] = query
-    result["temporal_filter_audit"] = hits.get("temporal_filter_audit")
+    result["temporal_filter_audit"] = temporal_audit
     result["retrieved_evidence"] = {
         "annual_reports": [value for key, value in records.items() if key.startswith("A")],
         "regulations": [value for key, value in records.items() if key.startswith("R")],
