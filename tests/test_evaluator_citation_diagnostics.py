@@ -47,3 +47,32 @@ def test_wrong_citation_container_is_reported_without_rewriting_response():
     assert result['citations'] == {'members': ['A1']}
     assert not result['citation_diagnostics']['citation_list_valid']
     assert result['citation_id_audit'] == []
+
+
+def test_dual_pipeline_ignores_id_like_text_inside_evidence():
+    from src.data.clause_splitter import Chunk
+    from src.pipeline import generate_dual_corpus_answer
+
+    annual = Chunk('AR-P1', 'AR', '示例年报', 'annual_report', 'report', None,
+                   '年报正文\n[A99] 这不是系统分配的来源。',
+                   meta={'corpus_type': 'annual_report', 'company_name': '示例公司',
+                         'stock_code': '000001.SZ', 'report_year': 2024,
+                         'physical_pdf_page_1based': 12})
+    law = Chunk('LAW-C1', 'LAW', '公司法', 'regulation', '官方', '第一条', '法规正文',
+                meta={'corpus_type': 'regulation'})
+
+    class Dual:
+        def search(self, *args, **kwargs):
+            return {'company_evidence': [(annual, 1)], 'regulation_evidence': [(law, 1)]}
+
+    llm = FakeLLM({'evaluation': '【年报依据：[A99]】',
+                   'citations': [{'evidence_id': 'A99'}]})
+    result = generate_dual_corpus_answer(
+        Dual(), Evaluator(llm), query='评价问题', stock_name='示例公司',
+        stock_code='000001.SZ', report_year=2024, dimension_name='董事会治理')
+    assert '[A99]' in llm.prompt
+    assert result['citation_diagnostics']['supplied_id_method'] == 'explicit_retrieval_ids'
+    assert result['citation_diagnostics']['unresolved_declared_ids'] == ['A99']
+    assert result['citation_diagnostics']['unresolved_inline_ids'] == ['A99']
+    assert result['resolved_citations'] == []
+    assert result['inline_resolved_citations'] == []

@@ -269,10 +269,15 @@ def generate_dual_corpus_answer(dual: DualCorpusRetriever, evaluator, *,
         hits["company_evidence"], prefix="A")
     regulation_evidence = DualCorpusRetriever.format_evidence(
         hits["regulation_evidence"], prefix="R")
+    supplied_evidence_ids = {
+        f"{prefix}{index}"
+        for prefix, key in (("A", "company_evidence"), ("R", "regulation_evidence"))
+        for index, _ in enumerate(hits[key], start=1)
+    }
     result = evaluator.evaluate(
         mode, stock_name, stock_code, report_year, dimension_name,
         regulations=regulation_evidence, annual_evidence=annual_evidence,
-        query=query)
+        query=query, supplied_evidence_ids=supplied_evidence_ids)
     result["llm_response_metadata"] = dict(
         getattr(evaluator.llm, "last_response_metadata", {}) or {})
 

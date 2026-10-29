@@ -22,7 +22,8 @@ class Evaluator:
     def evaluate(self, mode: str, stock_name: str, stock_code: str, year: int,
                  dimension_name: str, facts: str = "", regulations: str = "",
                  annual_evidence: str | None = None,
-                 query: str | None = None) -> dict:
+                 query: str | None = None,
+                 supplied_evidence_ids: set[str] | None = None) -> dict:
         template = PROMPT_BY_MODE[mode]
         prompt = template.format(
             stock_name=stock_name, stock_code=stock_code, year=year,
@@ -39,8 +40,16 @@ class Evaluator:
             result.get("evaluation", ""))
         # The no-RAG template does not include either evidence argument.  An ID
         # from a retrieved but undisclosed source must not resolve as supplied.
-        supplied_ids = set() if mode == "no_rag" else set(EVIDENCE_ID_PATTERN.findall(
-            (annual_evidence if annual_evidence is not None else facts) + "\n" + regulations))
+        if mode == "no_rag":
+            supplied_ids = set()
+            id_method = "no_evidence_in_prompt"
+        elif supplied_evidence_ids is not None:
+            supplied_ids = set(supplied_evidence_ids)
+            id_method = "explicit_retrieval_ids"
+        else:
+            supplied_ids = set(EVIDENCE_ID_PATTERN.findall(
+                (annual_evidence if annual_evidence is not None else facts) + "\n" + regulations))
+            id_method = "text_pattern_fallback"
         raw_citations = result.get("citations")
         malformed_indices = ([i for i, item in enumerate(raw_citations)
                               if not isinstance(item, dict)
@@ -61,6 +70,7 @@ class Evaluator:
         ]
         if annual_evidence is not None:
             result["citation_diagnostics"] = {
+                "supplied_id_method": id_method,
                 "citation_list_valid": isinstance(raw_citations, list),
                 "malformed_citation_indices": malformed_indices,
                 "unresolved_declared_ids": sorted({item["evidence_id"]
