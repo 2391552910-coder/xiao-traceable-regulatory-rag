@@ -69,6 +69,22 @@ class Evaluator:
             for item in result["inline_citations"] if item.get("evidence_id")
         ]
         if annual_evidence is not None:
+            claims = result.get("claims")
+            claim_rows = claims if isinstance(claims, list) else []
+            malformed_claim_indices = []
+            unresolved_claim_ids = set()
+            supported_claims_without_resolved_ids = []
+            for index, claim in enumerate(claim_rows):
+                ids = claim.get("evidence_ids") if isinstance(claim, dict) else None
+                if not isinstance(ids, list) or any(not isinstance(item, str) or not item for item in ids):
+                    malformed_claim_indices.append(index)
+                if isinstance(ids, list):
+                    unresolved_claim_ids.update(item for item in ids
+                                                if isinstance(item, str) and item not in supplied_ids)
+                if (isinstance(claim, dict) and claim.get("evidence_status") == "supported"
+                        and not (isinstance(ids, list) and any(
+                            isinstance(item, str) and item in supplied_ids for item in ids))):
+                    supported_claims_without_resolved_ids.append(index)
             result["citation_diagnostics"] = {
                 "supplied_id_method": id_method,
                 "citation_list_valid": isinstance(raw_citations, list),
@@ -79,6 +95,10 @@ class Evaluator:
                 "unresolved_inline_ids": sorted({item["evidence_id"]
                     for item in result["inline_citation_id_audit"]
                     if not item["resolves_to_supplied_evidence"]}),
+                "claims_list_valid": isinstance(claims, list),
+                "malformed_claim_evidence_indices": malformed_claim_indices,
+                "unresolved_claim_ids": sorted(unresolved_claim_ids),
+                "supported_claims_without_resolved_ids": supported_claims_without_resolved_ids,
                 "inline_source_type_mismatches": [item for item in result["inline_citations"]
                     if item.get("evidence_id") and
                     ((item["source_type"] == "annual_report") != item["evidence_id"].startswith("A"))],

@@ -49,6 +49,34 @@ def test_wrong_citation_container_is_reported_without_rewriting_response():
     assert result['citation_id_audit'] == []
 
 
+def test_claim_evidence_is_audited_independently_of_citations():
+    claims = [{'claim': '甲', 'evidence_status': 'supported', 'evidence_ids': ['A1', 'R99']},
+              {'claim': '乙', 'evidence_status': 'supported', 'evidence_ids': []},
+              {'claim': '丙', 'evidence_status': 'supported', 'evidence_ids': ['R99']},
+              {'claim': '丁', 'evidence_status': 'insufficient', 'evidence_ids': ['A1', 3]}, None]
+    result, _ = evaluate({'evaluation': '', 'citations': [], 'claims': claims})
+    diagnostic = result['citation_diagnostics']
+    assert result['claims'] == claims
+    assert diagnostic['claims_list_valid']
+    assert diagnostic['malformed_claim_evidence_indices'] == [3, 4]
+    assert diagnostic['unresolved_claim_ids'] == ['R99']
+    assert diagnostic['supported_claims_without_resolved_ids'] == [1, 2]
+    assert not diagnostic['semantic_support_verified']
+
+
+def test_missing_or_wrong_claim_container_is_reported():
+    for claims in (None, {'claim': '甲'}):
+        result, _ = evaluate({'evaluation': '', 'citations': [], 'claims': claims})
+        assert not result['citation_diagnostics']['claims_list_valid']
+
+
+def test_no_rag_claim_cannot_resolve_unseen_evidence():
+    result, _ = evaluate({'evaluation': '', 'citations': [], 'claims': [
+        {'claim': '甲', 'evidence_status': 'supported', 'evidence_ids': ['A1']}]}, 'no_rag')
+    assert result['citation_diagnostics']['unresolved_claim_ids'] == ['A1']
+    assert result['citation_diagnostics']['supported_claims_without_resolved_ids'] == [0]
+
+
 def test_dual_pipeline_ignores_id_like_text_inside_evidence():
     from src.data.clause_splitter import Chunk
     from src.pipeline import generate_dual_corpus_answer
