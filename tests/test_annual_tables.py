@@ -87,6 +87,20 @@ def test_text_layer_diagnostics_flags_undecoded_glyphs_without_calling_it_ocr():
         'status': 'text_layer_contains_undecoded_glyphs', 'undecoded_glyph_objects': 2}
 
 
+def test_table_field_view_carries_and_binds_page_encoding_warning(parsed):
+    document = copy.deepcopy(parsed)
+    page = next(p for p in document['parsed_pages'] if p['page'] == 1)
+    page.update(status='text_layer_contains_undecoded_glyphs', undecoded_glyph_objects=1)
+    chunks, _ = row_units(document)
+    affected = [chunk for chunk in chunks if 1 in chunk.meta['undecoded_source_pages']]
+    assert affected and all('物理页1的文本层包含未解码字形' in chunk.text for chunk in affected)
+    assert all(verify_field_views(chunk) for chunk in affected)
+    altered = copy.deepcopy(affected[0])
+    altered.meta['undecoded_source_pages'] = []
+    with pytest.raises(ValueError, match='Serialized evidence text'):
+        verify_field_views(altered)
+
+
 def test_every_cell_roundtrips_against_new_pdf_parse(parsed):
     with pdfplumber.open(FIXTURE) as pdf:
         for table in parsed['tables']:

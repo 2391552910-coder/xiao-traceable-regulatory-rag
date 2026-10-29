@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_8'
+VERSION = 'annual_governance_tables_v1_9'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
