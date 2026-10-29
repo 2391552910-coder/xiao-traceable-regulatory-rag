@@ -1,4 +1,8 @@
 # 年报与法规双源检索增强生成
+## 当前主稿：DOC343 来源更正（2026-10-29）
+
+[中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_DOC343来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_DOC343_correction_20261029.docx)更正DOC343来源描述：文本版含2023年修改决定及重新公布全文，冻结方案排除该文本版，但收录对应59页OFFICIAL-DOC343 PDF；G2冻结Top-10中7题检出PDF物理第2页。该计数不验证语义支持或个案适用性。详见[证据与修订审计](results/paper/condensed_candidate_20261028_01/doc343_correction_audit_20261029.json)。历史文档中“DOC343仅为修改决定”的说法已被更正。本轮未新增模型调用、人工标注或改变实验评分。
+
 ## 评测安排更新（2026-10-29）
 
 遵照用户决定，后续不再新增人工标注；现有双人盲审空表不作为论文工作的前置条件。历史人工评分及参考证据保留真实来源。使用既有排序与参考定位开展离线分析；位置命中不等于语义相关，不能作为标准 Precision、Recall、F1、nDCG 或答案正确率。
@@ -8,11 +12,11 @@
 
 在分路配置下，另有33/60题的严格法规参考位置覆盖为零，但检索文本与参考引文出现至少一处12字符连续重合。该词面诊断可能包含通用措辞或不同版本，不证明法规等价、语义支持或时点适用；见[诊断汇总](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_audit_receipt.json)与[逐题数据](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_per_question.csv)。逐题表可复算汇总计数；[原始诊断脚本](scripts/audit_alternate_law_sources_20261023.py)供方法审阅。完整重跑仍需冻结索引、参考材料及脚本依赖；该历史脚本使用固定输出目录并会覆盖同名结果，运行前应先保留原件。
 
-## 英文工作稿对齐（2026-10-29）
+## 历史英文工作稿对齐（2026-10-29）
 
 [英文对齐稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_evidence_units_20261029.docx)已同步其中文来源版本至当前稿之间的页码记录、引言、来源缺失配对及缺失界、回放范围、BM25文献和附录计数修订。WPS导出23页，变动页已检查；[修订收据](results/paper/english_translation_current_20261028_01/english_current_chinese_changes_receipt_20261029.json)。其后收紧评分者措辞并澄清缺失数据界的上下端点分别平均，见[评分措辞收据](results/paper/english_translation_current_20261028_01/english_rater_wording_receipt_20261029.json)和[缺失界措辞收据](results/paper/english_translation_current_20261028_01/english_bounds_wording_receipt_20261029.json)。已将123条去重参考证据统一表述为证据记录而非123份来源文档，见[证据计数收据](results/paper/english_translation_current_20261028_01/english_evidence_units_receipt_20261029.json)。中间稿和WPS预览保存在本地；[中英文结果表5–11数值核对](results/paper/english_translation_current_20261028_01/bilingual_numeric_tables_receipt_20261029.json)比较166个数据单元格，未发现数字差异；该检查不验证表头含义或原始实验数据。英文稿仍需全文语义终审及目标期刊格式适配。
 
-## 最新候选：来源页码记录边界澄清（2026-10-29）
+## 历史候选：来源页码记录边界澄清（2026-10-29）
 
 - 当前主文候选：[页码分层核验修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx)。修订第38段：检索索引使用PDF物理页序；人工核验时另记可见印刷页码，避免暗示运行索引普遍存储印刷页码。
 - 主文仍为21页、12表。WPS重渲染后仅第5页变化并已检查。详见[修订审计](results/paper/condensed_candidate_20261028_01/page_provenance_revision_audit_20261029.md)和[哈希/渲染收据](results/paper/condensed_candidate_20261028_01/page_provenance_revision_receipt_20261029.json)。
