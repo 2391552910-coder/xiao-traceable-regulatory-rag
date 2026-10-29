@@ -197,18 +197,55 @@
     "case_semantic_audit_20261028.json": "aa305f86a8dc5a46c6a4b2f1cd0ed35b0dda959457bdb607d8503b9ab2a035d8",
     "core_candidate_numeric_table_inheritance_20261029.json": "655e80b3d0784cfe694b721fbf402727c3d0b084a7e1cddb8a2b5f03d6a03167"
   },
-  "missing_source_artifacts": [
-    "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json",
-    "results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json",
-    "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_BM25书目更正候选稿_待终审.docx"
-  ],
+  "missing_source_artifacts": [],
   "limitations": [
     "This binds existing scoped audits to the current manuscript by exact text/table-cell equality; it is not a full semantic review.",
+    "Five historical source artifacts referenced by scoped receipts were restored from a sibling worktree and matched their recorded SHA-256 values; the intro edit chain and abstract proxy arithmetic were rechecked against those sources.",
     "Two earlier referenced audit JSON files and the historical intro source DOCX are absent locally; the intro output candidate and wording receipt remain.",
     "Does not assess every cited full paper, all 355 answers, or historical legal applicability for every question.",
     "No aligned independent relevance qrels for the 60 main-study questions; retrieval Precision/Recall/F1 and answer Accuracy remain unmeasured.",
     "Author/affiliation/funding disclosure and target-journal formatting remain open."
   ],
   "new_model_calls": 0,
-  "new_human_labels": 0
+  "new_human_labels": 0,
+  "restored_source_artifacts": [
+    {
+      "path": "results/paper/primary_provider_candidate_20261028_01/abstract_evidence_supply_audit_20261028.json",
+      "sha256": "2b3455ade736a2c9d12ae6a0a84178ae1aa36531cd2de5d90eee79b382bb2221"
+    },
+    {
+      "path": "results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json",
+      "sha256": "7cf01da46c67dca21b71a3c9db454ad95df1fc9d2fa28e4cccd5ab079ee2b6ab"
+    },
+    {
+      "path": "results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_摘要证据供给措辞修订_20261028.docx",
+      "sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_BM25书目更正候选稿_待终审.docx",
+      "sha256": "a98393b7da6da0e0954e4c41836e6201898e646f467f79831e358da58df82816"
+    },
+    {
+      "path": "results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.json",
+      "sha256": "90cb44f35dcae2b7677abd2870e025c054cea00563ffeba44b176c3fcf7923db"
+    }
+  ],
+  "recovery_checks": {
+    "intro_source_to_output_changed_paragraphs_zero_based": [
+      10
+    ],
+    "intro_source_to_output_changed_package_parts": [
+      "word/document.xml"
+    ],
+    "table12_exact_cell_text_match_to_audited_candidate": true,
+    "abstract_replay_source_sha256": "90cb44f35dcae2b7677abd2870e025c054cea00563ffeba44b176c3fcf7923db",
+    "source_co_presence_fraction_merged": 0.6833333333333333,
+    "source_co_presence_fraction_dual": 1.0,
+    "equal_weight_location_macro_merged": 0.3983333333333333,
+    "equal_weight_location_macro_dual": 0.39111111111111113,
+    "dual_minus_merged_location_macro": -0.0072222222222221855,
+    "semantic_quality_evaluated": false,
+    "new_model_calls": 0,
+    "new_human_labels": 0
+  }
 }
