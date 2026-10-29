@@ -34,3 +34,4 @@ jobs:
           tests/test_frozen_development_benchmark.py
           tests/test_pipeline_temporal_filter.py
           tests/test_dual_corpus_cli_temporal.py
+          tests/test_qwen_cross_model_year.py
