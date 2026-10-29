@@ -1,0 +1,58 @@
+{
+  "question": {
+    "question_id": "NEW-603288-2024-AUDIT",
+    "company_name": "海天味业",
+    "stock_code": "603288",
+    "report_year": 2024,
+    "query": "根据海天味业2024年年度报告，提取报告期内审计委员会的所有成员姓名（期间换届或变更时取报告明确披露的并集）、全年会议总次数、报告明确列示的所有会议日期。只计审计委员会，不计其他专门委员会。会议次数和不同日期数量可能不同，不据日期去重数倒推会议次数。"
+  },
+  "packet": "NEW-603288-2024-AUDIT.json",
+  "packet_sha256": "07927d6c75056dc76a71f05269c33a8e7c90e2ef82b3f9661b1390df8d95b1a7",
+  "seed": 20261030,
+  "started_utc": "2026-10-29T05:09:28.804335+00:00",
+  "status": "completed",
+  "text": "```json\n{\n  \"members\": [\"屈文洲\", \"张科春\", \"丁邦清\", \"文志州\", \"廖长辉\"],\n  \"meeting_count\": 6,\n  \"meeting_dates\": [\"2024-01-05\", \"2024-04-15\", \"2024-08-19\", \"2024-09-19\", \"2024-09-19\"],\n  \"citations\": {\n    \"members\": [\"A1\", \"R1\", \"R2\", \"R3\", \"R4\", \"R5\"],\n    \"meeting_count\": 6,\n    \"meeting_dates\": [\"A1\", \"R1\", \"R2\", \"R3\", \"R4\", \"R5\"]\n  },\n  \"limitations\": [\"未知成员或日期用空列表，未知次数用null\"]\n}\n```",
+  "parsed": {
+    "members": [
+      "屈文洲",
+      "张科春",
+      "丁邦清",
+      "文志州",
+      "廖长辉"
+    ],
+    "meeting_count": 6,
+    "meeting_dates": [
+      "2024-01-05",
+      "2024-04-15",
+      "2024-08-19",
+      "2024-09-19",
+      "2024-09-19"
+    ],
+    "citations": {
+      "members": [
+        "A1",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "meeting_count": 6,
+      "meeting_dates": [
+        "A1",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    },
+    "limitations": [
+      "未知成员或日期用空列表，未知次数用null"
+    ]
+  },
+  "finish_reason": "eos",
+  "prompt_tokens": 4612,
+  "completion_tokens": 200,
+  "elapsed_seconds": 30.625
+}

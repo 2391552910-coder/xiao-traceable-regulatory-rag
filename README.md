@@ -1,5 +1,9 @@
 # 年报与法规双源检索增强生成
-## 当前主稿：历史法规来源更正（2026-10-29）
+## 当前主稿：跨模型实跑（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型实跑候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_20261029.docx)新增Qwen3-0.6B与K3服务别名的8题探索性对照及[图9](results/runs/qwen_cuda_cross_model_figures_20261029_02/cross_model_exploratory.png)。两者均完成8题；以既有助手提取、事后勘误且未经独立裁定的参考为准，成员宏F1分别为0.651和0.975，日期宏F1为0.600和0.953，严格结构合规为0/8和8/8。字段分数即使结构不合规也计算；不等于引用语义支持、法规适用或检索P/R。模型容量、采样和输出预算不匹配；四家公司、两年度、每题一次的结果不能支持跨模型或跨年普遍泛化。原参考和勘误版均已报告，无新增人工标注。[结果与限制](results/runs/qwen_cuda_cross_model_score_20261029_03/summary.json)；[稿件及输入审计](results/runs/qwen_cuda_cross_model_score_20261029_03/paper_update_audit.json)。WPS只读复核中文版22页、英文版24页；本稿仍待投稿前终审。
+
+## 历史候选：历史法规来源更正（2026-10-29）
 
 [中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_历史法规来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_historical_sources_20261029.docx)更正历史第182号令的范围：冻结索引含其官方PDF的22页，且该文档不在冻结排除清单；已保存的1200条候选排序未出现该文档。这不证明语义相关或具体法规适用。[索引审计](results/paper/condensed_candidate_20261028_01/historical_order_182_index_audit_20261029.json)。60题预处理记录显示该文档22个片段均被时间筛选保留，但目标日期均未提供；详见[时间筛选审计](results/paper/condensed_candidate_20261028_01/order_182_temporal_scope_manifest_verified_20261029.json)及[复核脚本](scripts/audit_frozen_temporal_source.py)。筛选保留不证明后续路由、语义相关性或法规适用性。不新增人工标注、模型调用或评分。
 

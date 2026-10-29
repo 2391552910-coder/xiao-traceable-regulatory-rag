@@ -1,0 +1,49 @@
+{
+  "question": {
+    "question_id": "NEW-603288-2023-AUDIT",
+    "company_name": "海天味业",
+    "stock_code": "603288",
+    "report_year": 2023,
+    "query": "根据海天味业2023年年度报告，提取报告期内审计委员会的所有成员姓名（期间换届或变更时取报告明确披露的并集）、全年会议总次数、报告明确列示的所有会议日期。只计审计委员会，不计其他专门委员会。会议次数和不同日期数量可能不同，不据日期去重数倒推会议次数。"
+  },
+  "packet": "NEW-603288-2023-AUDIT.json",
+  "packet_sha256": "cdb19790eb733c2400a3347fe51e3b4468579f0c1405e36eb0e145ad7bcb4394",
+  "seed": 20261029,
+  "started_utc": "2026-10-29T05:09:06.949395+00:00",
+  "status": "completed",
+  "text": "```json\n{\n  \"members\": [\"沈洪涛\", \"徐家力\", \"孙远明\", \"陈军阳\", \"文志州\"],\n  \"meeting_count\": 3,\n  \"meeting_dates\": [\"2023-04-14\", \"2023-10-30\"],\n  \"citations\": {\n    \"members\": [\"A1\", \"A2\", \"A3\"],\n    \"meeting_count\": 3,\n    \"meeting_dates\": [\"A1\", \"A2\", \"A3\"]\n  },\n  \"limitations\": [\"未提供证据\"]\n}\n```",
+  "parsed": {
+    "members": [
+      "沈洪涛",
+      "徐家力",
+      "孙远明",
+      "陈军阳",
+      "文志州"
+    ],
+    "meeting_count": 3,
+    "meeting_dates": [
+      "2023-04-14",
+      "2023-10-30"
+    ],
+    "citations": {
+      "members": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "meeting_count": 3,
+      "meeting_dates": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "limitations": [
+      "未提供证据"
+    ]
+  },
+  "finish_reason": "eos",
+  "prompt_tokens": 4323,
+  "completion_tokens": 131,
+  "elapsed_seconds": 21.844
+}
