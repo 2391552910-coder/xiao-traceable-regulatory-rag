@@ -229,7 +229,9 @@ def prepare_comparison(dual, question: dict, count_tokens: Callable[[str], int],
 def audit_response_ids(result: dict, source_records: list[dict]) -> dict:
     """Resolve IDs from body, claims and citations, without semantic assertions."""
     supplied = {row["evidence_id"] for row in source_records}
-    observed = set(re.findall(r"\[([AR]\d+)\]", str(result.get("evaluation", ""))))
+    body = str(result.get("evaluation", ""))
+    groups = re.findall(r"\[\s*[AR]\d+(?:\s*[,，;；、]\s*[AR]\d+)*\s*\]", body)
+    observed = {evidence_id for group in groups for evidence_id in re.findall(r"[AR]\d+", group)}
     citations = result.get("citations")
     if isinstance(citations, list):
         observed.update(str(row.get("evidence_id", "")) for row in citations
