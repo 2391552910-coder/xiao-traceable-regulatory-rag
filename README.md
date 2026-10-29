@@ -1,4 +1,8 @@
 # 年报与法规双源检索增强生成
+## 双源生成的事项日期筛选（2026-10-29）
+
+调用 `generate_dual_corpus_answer` 时，可显式传入 `temporal_filter=True`、`target_date="2024-12-31"` 和 `target_date_role="company_event_date"`；完整日期必须已出现在公开查询中。筛选在法规检索截断前进行，默认保留版本信息未知的来源，并在返回值 `temporal_filter_audit` 中记录处理过程。默认不启用筛选，也不会从报告年份推断事项日期；声明区间匹配不证明法规法律适用性。
+
 ## 论文评测表述对齐（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_无新增人工标注候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_no_new_human_labels_20261029.docx)将结论中的后续评测表述调整为不新增人工标注，并说明缺少独立可信参考时自动匹配仅供诊断。已有人工评分及其历史来源保留，实验数据和结果未改变。变动页经 WPS 渲染检查。

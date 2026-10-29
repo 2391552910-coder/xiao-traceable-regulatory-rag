@@ -256,7 +256,11 @@ def generate_dual_corpus_answer(dual: DualCorpusRetriever, evaluator, *,
                                query: str, stock_name: str, stock_code: str,
                                report_year: int, dimension_name: str,
                                mode: str = "ours", annual_top_k: int = 5,
-                               regulation_top_k: int = 5) -> dict:
+                               regulation_top_k: int = 5,
+                               temporal_filter: bool = False,
+                               target_date: str | None = None,
+                               target_date_role: str | None = None,
+                               unknown_temporal: str = "retain") -> dict:
     """Retrieve independently from both corpora, generate, and retain citations.
 
     Citation-ID resolution only confirms that an ID was actually supplied to
@@ -264,7 +268,9 @@ def generate_dual_corpus_answer(dual: DualCorpusRetriever, evaluator, *,
     """
     hits = dual.search(query, annual_top_k=annual_top_k,
                        regulation_top_k=regulation_top_k,
-                       stock_code=stock_code, report_year=report_year)
+                       stock_code=stock_code, report_year=report_year,
+                       temporal_filter=temporal_filter, target_date=target_date,
+                       target_date_role=target_date_role, unknown_temporal=unknown_temporal)
     annual_evidence = DualCorpusRetriever.format_evidence(
         hits["company_evidence"], prefix="A")
     regulation_evidence = DualCorpusRetriever.format_evidence(
@@ -320,6 +326,7 @@ def generate_dual_corpus_answer(dual: DualCorpusRetriever, evaluator, *,
             evidence_id = f"{prefix}{index}"
             records[evidence_id] = source_record(evidence_id, chunk, score)
     result["query"] = query
+    result["temporal_filter_audit"] = hits.get("temporal_filter_audit")
     result["retrieved_evidence"] = {
         "annual_reports": [value for key, value in records.items() if key.startswith("A")],
         "regulations": [value for key, value in records.items() if key.startswith("R")],

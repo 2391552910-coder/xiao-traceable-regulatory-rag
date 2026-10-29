@@ -32,3 +32,4 @@ jobs:
           tests/test_evaluator_citation_diagnostics.py tests/test_qwen_schema_citation_audit.py
           tests/test_windows_checkout_paths.py
           tests/test_frozen_development_benchmark.py
+          tests/test_pipeline_temporal_filter.py
