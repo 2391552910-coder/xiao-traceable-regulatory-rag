@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "scope": "Offline integration smoke on one annual report and one regulation text; not a quality or legal applicability evaluation.",
+  "query": "截至2024-12-31，新力金融年报披露与法规依据是什么？",
+  "target_date": "2024-12-31",
+  "target_date_role": "company_event_date",
+  "date_basis": "hypothetical smoke query, not independently verified company event",
+  "stock_code": "600318.SH",
+  "report_year": 2024,
+  "annual_report_source_url": "https://static.cninfo.com.cn/finalpage/2025-03-28/1222924117.PDF",
+  "annual_report_pdf_sha256": "ca56f9046552eb8d01b1b61fa16c3f8a9e2d6100063607a5e60dc7a7327fda75",
+  "annual_selected_physical_pages": [
+    1,
+    2
+  ],
+  "regulation_document_id": "DOC004",
+  "regulation_source_sha256": "7f5f814f1ccc76d71d8f98c3639aa6527b6a02df505ed8c20a9d26578f3021ac",
+  "cli_script_sha256": "eceb853dd63d99e10812ff6bc9e9da6b159f4ac9c7b9eaa6c5f723fb4fe780ec",
+  "pipeline_sha256": "0a5cbb4fc0398bf5c8bf67906970313fde66af34aad9a00fa010064b2adc985b",
+  "retriever_backend": "tfidf",
+  "generation": "mock template, not model inference",
+  "indexed_chunks": 53,
+  "annual_hit_count": 2,
+  "regulation_hit_count": 5,
+  "temporal_filter": {
+    "unknown_policy": "retain",
+    "relation_counts": {
+      "unknown": 51
+    },
+    "retained_chunks": 51,
+    "applied_before_top_k": true
+  },
+  "answer_output_sha256": "a27a8d6316b4fddbc7a56a22a345793b60d5386b0021c275c89488f41f94acbc",
+  "semantic_support_verified": false,
+  "legal_applicability_verified": false,
+  "new_human_labels": 0,
+  "model_calls": 0,
+  "limitations": [
+    "One company, only two report pages and one rule document.",
+    "All 51 rule chunks had unknown interval metadata and were retained; no known-outside exclusion was exercised in this smoke.",
+    "The query date was supplied for software testing and is not verified as a real event date.",
+    "Mock output and TF-IDF are integration checks, not model or retrieval quality evidence."
+  ]
+}

@@ -5,6 +5,8 @@
 
 命令行入口 `scripts/dual_corpus_rag.py` 可在原有查询和索引参数之外加入 `--temporal-filter --target-date 2024-12-31 --target-date-role company_event_date`。日期必须出现在 `--query` 中；输出的 `answer_and_sources.json` 保存筛选审计。`--unknown-temporal exclude` 会排除日期未知的法规，需要显式选择，未知并不代表不适用。
 
+已用一份真实年报的前两页和一份法规文本执行[离线流程冒烟检查](results/runs/temporal_cli_real_data_smoke_20261029_02/receipt.json)：TF-IDF 检索和模板输出成功，51 个法规片段的区间信息均未知并被保留。测试日期是人为设定的流程输入，不是已核实的公司事项日期；此检查不衡量回答质量或法律适用性。
+
 ## 论文评测表述对齐（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_无新增人工标注候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_no_new_human_labels_20261029.docx)将结论中的后续评测表述调整为不新增人工标注，并说明缺少独立可信参考时自动匹配仅供诊断。已有人工评分及其历史来源保留，实验数据和结果未改变。变动页经 WPS 渲染检查。
