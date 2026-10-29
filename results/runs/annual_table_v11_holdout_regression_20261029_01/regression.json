@@ -1,0 +1,50 @@
+{
+  "parser_version": "annual_governance_tables_v1_11",
+  "baseline_version": "annual_governance_tables_v1_7",
+  "reports": [
+    {
+      "stock_code": "000802",
+      "report_year": 2024,
+      "source_pdf_sha256": "9cbe3d28653cfa43c15dda0175a9243b7e1ff658fd75dd2bc2faaf838d65becd",
+      "selected_pages_match": true,
+      "selected_pages": 21,
+      "old_table_count": 28,
+      "new_table_count": 28,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 28
+      }
+    },
+    {
+      "stock_code": "000333",
+      "report_year": 2024,
+      "source_pdf_sha256": "b17a9b9b84bca1d2a4e4a3cadc5dd5ba5c85e3f1fd2d758acd3315b5b040ecd9",
+      "selected_pages_match": true,
+      "selected_pages": 15,
+      "old_table_count": 16,
+      "new_table_count": 16,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 16
+      }
+    },
+    {
+      "stock_code": "000002",
+      "report_year": 2024,
+      "source_pdf_sha256": "734370d32036c1a18716e42f2e96c0f6ffd8a48c1fe115ecda945a09eb416ac0",
+      "selected_pages_match": true,
+      "selected_pages": 19,
+      "old_table_count": 13,
+      "new_table_count": 13,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 13
+      }
+    }
+  ],
+  "elapsed_seconds": 12.593,
+  "scope": "Parser engineering holdout; reports retrospectively selected and may overlap past RAG experiments. No labels or model calls. Equality does not establish correctness or recall."
+}
