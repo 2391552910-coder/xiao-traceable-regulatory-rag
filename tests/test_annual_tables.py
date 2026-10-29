@@ -10,6 +10,7 @@ from src.data.annual_tables import (
     extract_page_tables, extract_pdfium_pages, file_sha256, parse_date,
     select_governance_pages, stitch_tables, verify_cell, row_scope, classify_headers,
     text_layer_diagnostics,
+    possible_unparsed_personnel_table,
 )
 from src.retrieval.annual_table_index import AnnualTableIndex, build_index, row_units,verify_field_views,_derive_fields
 
@@ -85,6 +86,12 @@ def test_text_layer_diagnostics_flags_undecoded_glyphs_without_calling_it_ocr():
         'status': 'text_layer_parsed', 'undecoded_glyph_objects': 0}
     assert text_layer_diagnostics([{'text': '审'}, {'text': '(cid:5025)'}, {'text': '\ufffd'}]) == {
         'status': 'text_layer_contains_undecoded_glyphs', 'undecoded_glyph_objects': 2}
+
+
+def test_unparsed_personnel_header_is_only_a_triage_signal():
+    assert possible_unparsed_personnel_table('姓名 职务 性别 年龄 任期\n张三 董事 男', 0)
+    assert not possible_unparsed_personnel_table('姓名 职务 性别 年龄 任期', 1)
+    assert not possible_unparsed_personnel_table('姓名 张三', 0)
 
 
 def test_table_field_view_carries_and_binds_page_encoding_warning(parsed):

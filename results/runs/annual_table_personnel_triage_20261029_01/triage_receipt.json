@@ -1,0 +1,20 @@
+{
+  "parser_version": "annual_governance_tables_v1_10",
+  "source_pdf_sha256": "6ffff1cade59c64c8178494c083cac8a4011ef5ae2fed32f85dd488a64a809b2",
+  "selection_scope": "governance keyword pages and fixed physical neighbors; not every table in the PDF",
+  "selected_pages": [
+    121,
+    122,
+    123,
+    128,
+    129,
+    130,
+    131
+  ],
+  "possible_unparsed_personnel_table_pages": [
+    129
+  ],
+  "tables": 0,
+  "model_calls": 0,
+  "limitations": "Header matching is a triage heuristic, not a complete table detector or validated table recall; pages with another detected table are not flagged."
+}

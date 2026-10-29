@@ -48,6 +48,8 @@ def main():
                          page_status_counts=dict(page_counts),
                          undecoded_pages=[page['page'] for page in document['parsed_pages']
                                           if page['status'] == 'text_layer_contains_undecoded_glyphs'],
+                         possible_unparsed_personnel_table_pages=[page['page'] for page in document['parsed_pages']
+                                                                 if page['possible_unparsed_personnel_table']],
                          text_layer_check_limit='Only inspected pages and known undecoded markers; no accuracy guarantee.',
                          model_calls=0, output=str(args.out_dir.resolve())), ensure_ascii=False, indent=2))
 

@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_9'
+VERSION = 'annual_governance_tables_v1_10'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -691,6 +691,21 @@ def text_layer_diagnostics(chars):
     return {'status': status, 'undecoded_glyph_objects': count}
 
 
+def possible_unparsed_personnel_table(page_text, parsed_table_count):
+    """Flag a likely personnel header when this page produced no tables.
+
+    This is a narrow triage heuristic, not table recognition or a recall metric.
+    """
+    if parsed_table_count:
+        return False
+    header_tokens = ('姓名', '职务', '性别', '年龄', '任期', '变动', '离任', '任职')
+    for line in (page_text or '').splitlines():
+        line = compact(line)
+        if '姓名' in line and sum(token in line for token in header_tokens) >= 3:
+            return True
+    return False
+
+
 def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=False):
     """Parse selected governance pages of one verified local annual PDF."""
     import pdfplumber
@@ -715,7 +730,9 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                                      page_character_fingerprint=digest([
                                          [c['text'], round(c['x0'],4), round(c['top'],4), round(c['x1'],4), round(c['bottom'],4)]
                                          for c in page.chars]),
-                                     **text_layer_diagnostics(page.chars)))
+                                     **text_layer_diagnostics(page.chars),
+                                     possible_unparsed_personnel_table=possible_unparsed_personnel_table(
+                                         page.extract_text(), len(parsed))))
             if progress:
                 progress(number, len(parsed))
             page.close()
@@ -728,4 +745,5 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                 independent_human_validation=False,
                 limitations=['Governance-page selection only; unsupported or scanned layouts remain explicit review items.',
                              'Undecoded glyph detection flags CID/replacement markers only; a clean status does not prove correct text.',
+                             'Unparsed personnel-header flag is a narrow triage heuristic; it does not establish table presence or completeness.',
                              'Geometry and rule-based scope do not certify complete reporting-period membership.'])
