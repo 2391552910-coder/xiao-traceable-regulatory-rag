@@ -7,6 +7,8 @@
 
 已用一份真实年报的前两页和一份法规文本执行[离线流程冒烟检查](results/runs/temporal_cli_real_data_smoke_20261029_02/receipt.json)：TF-IDF 检索和模板输出成功，51 个法规片段的区间信息均未知并被保留。测试日期是人为设定的流程输入，不是已核实的公司事项日期；此检查不衡量回答质量或法律适用性。
 
+同一资料的[提示捕获检查](results/runs/temporal_prompt_real_smoke_20261029_01/receipt.json)确认，5 条检出法规在模板生成器收到的提示中均标明时间关系未知及法律适用性未验证；这不证明真实模型会遵守该提示。
+
 ## 论文评测表述对齐（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_无新增人工标注候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_no_new_human_labels_20261029.docx)将结论中的后续评测表述调整为不新增人工标注，并说明缺少独立可信参考时自动匹配仅供诊断。已有人工评分及其历史来源保留，实验数据和结果未改变。变动页经 WPS 渲染检查。
