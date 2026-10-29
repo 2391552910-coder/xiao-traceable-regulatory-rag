@@ -1,0 +1,53 @@
+{
+  "parser_version": "annual_governance_tables_v1_11",
+  "same_company": "601318",
+  "reports": [
+    {
+      "year": 2023,
+      "pdf_sha256": "f55538814200d77a61492ba216e45508f487064207bca6a4d90c7b55add43823",
+      "source_url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2024/2024-3/2024-03-22/9889422.PDF",
+      "pdf_pages": 334,
+      "selected_pages": [
+        110,
+        111,
+        112,
+        119,
+        120,
+        121,
+        122,
+        123
+      ],
+      "table_pages": [
+        120
+      ],
+      "detected_tables": 1,
+      "detected_rows": 10,
+      "verified_cells": 55,
+      "model_calls": 0
+    },
+    {
+      "year": 2024,
+      "pdf_sha256": "6ffff1cade59c64c8178494c083cac8a4011ef5ae2fed32f85dd488a64a809b2",
+      "source_url": null,
+      "pdf_pages": 346,
+      "selected_pages": [
+        121,
+        122,
+        123,
+        128,
+        129,
+        130,
+        131
+      ],
+      "table_pages": [
+        129
+      ],
+      "detected_tables": 1,
+      "detected_rows": 7,
+      "verified_cells": 40,
+      "model_calls": 0
+    }
+  ],
+  "selection": "Public governance keyword and neighboring pages only; not all pages",
+  "limitations": "2023 acquired from Sina-hosted published announcement; 2024 from existing local source. Retrospective same-company two-year engineering case, no independent labels; verified source-character binding is not semantic accuracy, completeness, recall, or cross-year QA generalization. All years include only unresolved committee-scope rows. No models or new human annotations."
+}
