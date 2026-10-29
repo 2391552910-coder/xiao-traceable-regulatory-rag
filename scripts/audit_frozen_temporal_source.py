@@ -22,15 +22,26 @@ def main():
     files = sorted(args.prepared.glob('HOLDOUT*.json'))
     if len(files) != manifest['question_count']:
         raise ValueError('Prepared question-file count differs from manifest')
+    entries = manifest['question_files']
+    expected = {entry['path']: entry for entry in entries}
+    if (len(entries) != manifest['question_count'] or len(expected) != len(entries)
+            or set(expected) != {path.name for path in files}):
+        raise ValueError('Prepared question files differ from manifest')
     results = []
     for path in files:
+        entry = expected[path.name]
+        file_hash = digest(path)
+        if file_hash != entry['sha256']:
+            raise ValueError(f'Prepared question-file hash mismatch: {path.name}')
         prepared = json.loads(path.read_text(encoding='utf-8'))
+        if prepared['question']['question_id'] != entry['question_id']:
+            raise ValueError(f'Prepared question ID differs from manifest: {path.name}')
         audit = prepared['temporal_scope_audit']
         rows = [row for row in audit['rows'] if row['doc_id'] == args.doc_id]
         results.append({
             'question_id': prepared['question']['question_id'],
             'prepared_file': path.name,
-            'prepared_sha256': digest(path),
+            'prepared_sha256': file_hash,
             'target_date': audit['target_date'],
             'unknown_policy': audit['unknown_policy'],
             'matching_chunks': len(rows),
@@ -52,6 +63,7 @@ def main():
         'ranking_rows': len(ranking),
         'ranking_hits': len(hits),
         'questions': len(results),
+        'prepared_files_match_manifest': True,
         'per_question': results,
         'scope': ('Saved pre-ranking temporal-filter records and saved candidate table only. '
                   'Retention does not prove later routing, relevance, or legal applicability.'),

@@ -1,7 +1,7 @@
 # 年报与法规双源检索增强生成
 ## 当前主稿：历史法规来源更正（2026-10-29）
 
-[中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_历史法规来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_historical_sources_20261029.docx)更正历史第182号令的范围：冻结索引含其官方PDF的22页，且该文档不在冻结排除清单；已保存的1200条候选排序未出现该文档。这不证明语义相关或具体法规适用。[索引审计](results/paper/condensed_candidate_20261028_01/historical_order_182_index_audit_20261029.json)。60题预处理记录显示该文档22个片段均被时间筛选保留，但目标日期均未提供；详见[时间筛选审计](results/paper/condensed_candidate_20261028_01/order_182_temporal_scope_audit_20261029.json)及[复核脚本](scripts/audit_frozen_temporal_source.py)。筛选保留不证明后续路由、语义相关性或法规适用性。不新增人工标注、模型调用或评分。
+[中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_历史法规来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_historical_sources_20261029.docx)更正历史第182号令的范围：冻结索引含其官方PDF的22页，且该文档不在冻结排除清单；已保存的1200条候选排序未出现该文档。这不证明语义相关或具体法规适用。[索引审计](results/paper/condensed_candidate_20261028_01/historical_order_182_index_audit_20261029.json)。60题预处理记录显示该文档22个片段均被时间筛选保留，但目标日期均未提供；详见[时间筛选审计](results/paper/condensed_candidate_20261028_01/order_182_temporal_scope_manifest_verified_20261029.json)及[复核脚本](scripts/audit_frozen_temporal_source.py)。筛选保留不证明后续路由、语义相关性或法规适用性。不新增人工标注、模型调用或评分。
 
 ## 历史候选：DOC343 来源更正（2026-10-29）
 

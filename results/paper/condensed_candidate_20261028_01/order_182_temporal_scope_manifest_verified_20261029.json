@@ -1,0 +1,853 @@
+{
+  "source_document_id": "CSRC-ORDER-182-2021-OFFICIAL",
+  "manifest_sha256": "08c79036ef6cfe0af946c3a787f22212dacf116b9cfb6a3853ac28c11473d30d",
+  "execution_plan_sha256_recorded_in_manifest": "af128982ee34716115b7826b1c8588a548cc130f9b229fead8b6095b1a43338d",
+  "ranking_sha256": "9572f6f8e1004c878505fa2dcd2e91478f6613f76dc983f239665f112e4d173a",
+  "ranking_rows": 1200,
+  "ranking_hits": 0,
+  "questions": 60,
+  "prepared_files_match_manifest": true,
+  "per_question": [
+    {
+      "question_id": "HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "5c6cfbb01a84543cfbc37bb8ac2716bd40deb52972eb26b7f41af904aec3f312",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-000333SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-000333SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "d59ce9423761819a81c2f3dc09ab85b57f7d15b7d9e1849e4a03a9d0e42353ea",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-000333SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-000333SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "444a3b17b534f926ac2043ed12cb07b3d42d11d394d578c3e4e7b0c24c8f6c65",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-000802SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "c0ff14f27f8c15e26e74ac88796a6bef9192d109f9c7bcca1be903f4dc8f4071",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-000802SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-000802SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "7a712dbb9340671e88596a6ba13e4ee6899e60097bbd79869e685d1b021efac9",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-000802SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-000802SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "964084d0729ac804e34bf457c9d014d624be91c31a1635cfc96e604d17525cc1",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002230SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-002230SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "60da74d812a40142095b8440085415ae87e6a3aeec2069e488d17a8f074b5495",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002230SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-002230SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "4d65315b327196b98b0235cf06218ac76be6832a27bfaf72370327e3b91cb9b5",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002230SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-002230SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "79ef5591490653171c793267b0607d30bbb8523d3c4d06152476fe29872a1084",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002415SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-002415SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "e76667e06d6a19fcdf7c501657720a906e0361a6f48fc96203da7d1378121728",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-002415SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "4089876db279e48a164e8c2ee974cdbd1ff87d65e8b07660fb2137f191c1b80d",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002415SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-002415SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "4477948b44f17a877dcd48d15acfa677be87098d4d7be9e2b8c54fba3caf5913",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "0f940809f15387bc27dd3f0dc93ebeb17c49da56fe492ed60fc05d4471ca5e49",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002475SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-002475SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "30d4343a0c472f9ca695bb2de3b491102d83b89053354596089fe63b3e48859f",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-002475SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-002475SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "b35c08177dc7aafa819b429b0a5cb2a87089ce29ac6441e26651b43814ab2c5f",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300119SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-300119SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "ba0bc3ae33cf50832fb80c1fc3a81a2d4e1a3f049520aefe640da36ddaabb9ba",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-300119SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "d25ee15326c0b98b8473676f4ce5fab85ab5bdfb4c77cdc3df24fa4d4ac292dd",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300119SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-300119SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "b3543561d21f4bc7e49c17c7b6845b0787bbc4f8631aa7308adcb7bc9f978e5b",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300750SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-300750SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "30ef4a7df855ddfe919f192c6b4c2cc687209eb520f8c946ae7c297d86133667",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300750SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-300750SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "f32a301e72d0e438aef090c26e41d6cd46705363e828e233f5070476768c899f",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300750SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-300750SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "b6ab2453dbd278db2a4142afcf33b77bf8d4b9c513a2f154508e05582b24f8fa",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300760SZ-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-300760SZ-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "447e00d4cbc067ce5472d67aa572551114f9f2ddb698044fddcc0c7fb873cbac",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-300760SZ-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "60e8280c0d76148590c80d5b5712e87f9ed4ae8a462027808ecd02112571224b",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-300760SZ-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-300760SZ-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "17bf878c610da4b63c166c4ff2592145f2b873e3fffe9477a174e1b559e24cda",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600031SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600031SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "7b8f5fff6d73cc8c51403d79fbfb6cf130fdb06d387d032a9a55e2a6a6d1dc3f",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600031SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600031SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "41914a9352ddaadf18ca65ffa1c709b89562e52fcf07364435b72d4b22c01581",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600031SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600031SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "4f0ee16daca9fcea31ab1c9122838306a1de825f41ef74caab4f25fc64329edc",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600048SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600048SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "3cf5639a219397625f9a8e02d69b16f9456281925acf39cde559108f7eca5dbd",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600048SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "c1ac5b161db66aca056ef4cb304f8ce3702f3afe80ff6fa09bd43e47b0d6a4bd",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600048SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600048SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "e78389946f98f08774fb4f11d74813b75962665cc00724849b6682f0aac46f03",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600156SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600156SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "2f7578147ef24500f84258525b1c4c79101a94336b71b6840fca5907e8e7b45b",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600156SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600156SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "1039cbbf93ea92a31465dc7594e14a58844784d2a3a663881c8734f653476824",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600156SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600156SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "744b06aea0b967b975f76aaa11eb19aa0e84b7e29d95963c1473ea73054315ad",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600276SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600276SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "a2c9881bfc31b354865bfddfeb61cd93021edf2a3f267dead744d7c7069b9abd",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600276SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "941310a8166fa9044b27c7bfc54851916103c967d1eddbf562135cc0099c329e",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600276SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600276SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "08c1dc8056dfc576434ccbb8ebacd6c98c34fcac662fed6f86289600522878a9",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600519SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600519SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "514c6dd2beb641f29ce88b5d456ba7dd5a501c9c9deef82605250a0dabb18620",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600519SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600519SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "ae98a022eac2a747e231b3bc4bf3f0c31fd2291f576681014e55185b29f55976",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600519SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600519SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "3ce24f10822fbf6756ecbefbd568ba826b6fcb40e50160561da28b7776655784",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600598SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600598SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "e46d7e3b3cf7bd5b431a7fc0c8b90eadf5e6b1b39aa5a8f694ad49c9b9004614",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600598SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600598SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "758bac3be55ffab183ba71bbdeb1ebbf37b5da67fc824bf5b2278b1f3cc0edc8",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600598SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600598SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "148ec8da7da404e3cc1c8f8bcfe79df781bacfa7fb92d3f300b7c457cd671d62",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600690SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600690SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "791da1c95e8416e5ea96e71cd268680d10f9ea6438f141f201a5d3d29cabe309",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600690SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600690SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "fac034eee792402c20947d9fb565e3310de5ff11e376ca3fb289b24e7ddff387",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600690SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600690SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "4ae1a70e0a7985b82897f8f248fcf5440f8c4de517bc6d280a3351b4f437dab0",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600887SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600887SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "664b22bcd61014be8d0ea8969c1a3b30fa22f9e0bd5032e425cd780014c78cb7",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600887SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600887SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "d1d30ceb6cd2fc17ce3bd7ec7844baf08df6e3f770e621bb76892c09848aad9a",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600887SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600887SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "5709d85a569ff50037ad7bdfdc11e31911362da69e905495236838219c50accd",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600900SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-600900SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "043d42694563bf59fec1ff5b2959ff2d00a1a88bc1c059fff0c0d2911a6937d4",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600900SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-600900SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "cb55e8b853d2983bb575b9ac9f8ee6615570f73cc2afe8efe9a1b05df40d8eba",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-600900SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-600900SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "5841c9fdea2fe75542ad8b1ccbc54b7fe6324d0477fde75f17619b2113cf81c4",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-601088SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-601088SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "52604726e4c469673c22f6519e5f89e8e79baa3ba4e668e27f6b280b9711a1bd",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-601088SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "dc625ca9e81b3bfb0297c684afa14a8442e5a88808cb886fec1c1c9724a00182",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-601088SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-601088SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "85b00426112a4499a8a6590d0baa1f75506dda59408f39b3821381128e5c4798",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-603259SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-603259SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "f61392bd66e04503a3b44e165b9c607fe6e20b2a5af105616d322965b1383993",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-603259SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "f3eb4c6d9ba4194608e77a2908b32e42fa2a12aa4767e019934ddd82a28ecd15",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-603259SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-603259SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "57d6df6783498711acc05a550078193111f6223a8a9091dd6da51a90cf4e0471",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-688981SH-2024-AUDIT_COMMITTEE",
+      "prepared_file": "HOLDOUT-688981SH-2024-AUDIT_COMMITTEE.json",
+      "prepared_sha256": "9f989b6caa402c32a9abb5295473784111d308d8859614aa81477e29b96d389c",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-688981SH-2024-DIVIDEND_DISCLOSURE",
+      "prepared_file": "HOLDOUT-688981SH-2024-DIVIDEND_DISCLOSURE.json",
+      "prepared_sha256": "774c6cc0242df314ced8a235a7efe3a9ad174fa2d6c774ca1d31f32a17f0f8c5",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    },
+    {
+      "question_id": "HOLDOUT-688981SH-2024-INTERNAL_CONTROL",
+      "prepared_file": "HOLDOUT-688981SH-2024-INTERNAL_CONTROL.json",
+      "prepared_sha256": "1c786d4da4b2786166e6cbdd3623e115f5c711d3a38b137869dc9069c67e31b1",
+      "target_date": null,
+      "unknown_policy": "retain",
+      "matching_chunks": 22,
+      "retained_chunks": 22,
+      "relations": [
+        "unknown"
+      ],
+      "semantic_support_verified": false,
+      "legal_applicability_verified": false
+    }
+  ],
+  "scope": "Saved pre-ranking temporal-filter records and saved candidate table only. Retention does not prove later routing, relevance, or legal applicability."
+}
