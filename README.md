@@ -1,4 +1,8 @@
 # 年报与法规双源检索增强生成
+## 当前主稿：引用编号审计（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_引用编号审计候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_citation_id_audit_20261029.docx)补充[机械引用编号审计](results/runs/qwen_schema_citation_audit_20261029_01/citation_audit.json)：格式示例条件下，结构类型合规为3/8，但只有2/8条回答的三个字段均含非空且属于输入材料的有效来源编号；另一条将日期写入引用列表。此检查不证明引用支持答案。未新增模型调用或人工标注；中文23页、英文25页，变动页经WPS渲染检查。
+
 ## 当前主稿：事后格式提示对照（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_格式提示补充候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_schema_prompt_development_20261029.docx)补充同一Qwen3-0.6B的8题格式提示开发试验。既有助手提取且事后勘误参考下，结构合规从0/8到3/8，成员宏F1从0.651到0.678，日期宏F1从0.600降至0.558，会议次数匹配从3/8到6/8，三字段全匹配均为1/8。[结果与逐题数据](results/runs/qwen_schema_prompt_score_20261029_01/summary.json)；[图11](results/runs/qwen_schema_prompt_figures_20261029_01/schema_prompt_development.png)。提示是观察原答案后设计，属于事后开发而非独立验证；每题各一次采样，输入长度不同，参考未经独立验证，结构合规不代表引用支持。未新增人工标注。WPS渲染并检查变动页，中文23页、英文25页。
