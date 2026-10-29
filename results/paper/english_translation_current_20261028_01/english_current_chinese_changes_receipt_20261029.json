@@ -1,0 +1,35 @@
+{
+  "source": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_page_provenance_20261029.docx",
+  "source_sha256": "ed7bc6060cb7b62d04a435f83c82887a34cf3d42496f06b68f84a6a6c9a00d78",
+  "output": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_aligned_20261029.docx",
+  "output_sha256": "00caf7ca1c7b6e39ca0af4061a5737864086cea61f47b87c3b48ebf9f9e20ca3",
+  "paragraph_changes_zero_based": [
+    6,
+    127,
+    135,
+    158,
+    185
+  ],
+  "tables_and_media_unchanged": true,
+  "pdf": "results\\paper\\english_translation_current_20261028_01\\render_aligned_wps_20261029\\paper_native.pdf",
+  "pdf_sha256": "5ec489bdf37102405babb66be16719ffc25d3e86c485c754b19660b65559e34b",
+  "pages": 23,
+  "changed_pages_vs_previous": [
+    1,
+    18,
+    19,
+    20,
+    21,
+    23
+  ],
+  "changed_pages_visually_checked": [
+    1,
+    18,
+    19,
+    20,
+    21,
+    23
+  ],
+  "render_method": "WPS native read-only export; PDFium pixel comparison. Standard render_docx failed: soffice.exe unavailable.",
+  "scope": "Aligns five changes from the Chinese source version tracked in english_translation_sync_receipt; not independent semantic review, complete publication formatting, or a new experiment."
+}

@@ -8,6 +8,10 @@
 
 在分路配置下，另有33/60题的严格法规参考位置覆盖为零，但检索文本与参考引文出现至少一处12字符连续重合。该词面诊断可能包含通用措辞或不同版本，不证明法规等价、语义支持或时点适用；见[诊断汇总](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_audit_receipt.json)与[逐题数据](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_per_question.csv)。逐题表可复算汇总计数；[原始诊断脚本](scripts/audit_alternate_law_sources_20261023.py)供方法审阅。完整重跑仍需冻结索引、参考材料及脚本依赖；该历史脚本使用固定输出目录并会覆盖同名结果，运行前应先保留原件。
 
+## 英文工作稿对齐（2026-10-29）
+
+[英文对齐稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_aligned_20261029.docx)已同步其中文来源版本至当前稿之间的页码记录、引言、来源缺失配对及缺失界、回放范围、BM25文献和附录计数修订。WPS导出23页，变动页已检查；[修订收据](results/paper/english_translation_current_20261028_01/english_current_chinese_changes_receipt_20261029.json)。中间稿和本次WPS预览保存在本地；英文稿仍需全文语义终审及目标期刊格式适配。
+
 ## 最新候选：来源页码记录边界澄清（2026-10-29）
 
 - 当前主文候选：[页码分层核验修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx)。修订第38段：检索索引使用PDF物理页序；人工核验时另记可见印刷页码，避免暗示运行索引普遍存储印刷页码。
