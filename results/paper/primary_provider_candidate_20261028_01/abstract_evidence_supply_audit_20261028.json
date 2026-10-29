@@ -1,0 +1,30 @@
+{
+  "audit_date": "2026-10-28",
+  "current_docx": "results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_摘要证据供给措辞修订_20261028.docx",
+  "current_docx_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
+  "source_file": "results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.json",
+  "source_sha256": "90cb44f35dcae2b7677abd2870e025c054cea00563ffeba44b176c3fcf7923db",
+  "data_origin": "frozen_contexts_2026-10-20_replayed_2026-10-23",
+  "scope": {
+    "questions": 60,
+    "companies": 20,
+    "budget_tokens": 6000,
+    "candidate_quota": 10,
+    "semantic_quality_evaluated": false,
+    "llm_calls": 0
+  },
+  "merged": {
+    "both_source_context_fraction": 0.6833333333333333,
+    "annual_reference_location_coverage": 0.7966666666666666,
+    "regulation_reference_location_coverage": 0.0,
+    "equal_weight_macro_coverage": 0.3983333333333333
+  },
+  "dual": {
+    "both_source_context_fraction": 1.0,
+    "annual_reference_location_coverage": 0.7433333333333334,
+    "regulation_reference_location_coverage": 0.03888888888888888,
+    "equal_weight_macro_coverage": 0.39111111111111113
+  },
+  "difference_dual_minus_merged_equal_weight_macro": -0.0072222222222221855,
+  "interpretation": "Source co-presence is measured in assembled contexts. The equal-weight mean of annual and regulatory location-coverage rates decreases slightly; neither measure is semantic evidence recall or answer quality."
+}

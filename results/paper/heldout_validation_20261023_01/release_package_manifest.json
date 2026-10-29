@@ -1,0 +1,1737 @@
+[
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review_mapping_coordinator_only.json",
+    "bytes": 7499,
+    "sha256": "6edac3413dda9b24ed6f1f6e4a60715781a78aec0885a4345de23f427793ae53"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/cmb_2023.pdf",
+    "bytes": 5834543,
+    "sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/cmb_2024.pdf",
+    "bytes": 6215121,
+    "sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/cmb_cninfo_search.json",
+    "bytes": 2796,
+    "sha256": "58ea83bc598dbf90ea1b0a8e2f05730c083310f0396d223fff75b9ba56525790"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/cmb_gold_read.json",
+    "bytes": 19665,
+    "sha256": "bc3c0c6cbfa8fd318c316f74a604183e5ff836350a04e3306cd1fcd9e6975c50"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/Dual_source_RAG_new_company_validation_EN.docx",
+    "bytes": 769829,
+    "sha256": "1d99c148ba97b93b02c0327a23d5ed6a38ef643aaa33ed81c06e4caa0b9c8f2c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/execution_protocol.json",
+    "bytes": 5536,
+    "sha256": "e1dcaccf8fb4039173ac29237a1a8e33e7772a829990141172409f2459975bfb"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/execution_protocol_initial_pypdf.json",
+    "bytes": 5453,
+    "sha256": "349129fdfc98f3c0261fe1acb832a4cbb025acf9c7972ea7200d1d519da9c429"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/generation_start.json",
+    "bytes": 333,
+    "sha256": "607735965ef9b67516d58d3852541932f9e064704eea4ca1d240d35b7131f57c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/gree_2023.pdf",
+    "bytes": 3911496,
+    "sha256": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/gree_2024.pdf",
+    "bytes": 5087621,
+    "sha256": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/gree_cninfo_search.json",
+    "bytes": 1391,
+    "sha256": "981f147213a7d7937da36e4c07809757ad959981c34e85259587288c134d77c5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/haday_2023.pdf",
+    "bytes": 4202457,
+    "sha256": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/haday_2024.pdf",
+    "bytes": 4561223,
+    "sha256": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/haday_cninfo_search.json",
+    "bytes": 2672,
+    "sha256": "82c411242509e17c816f72eda8d5cf3f97d678c502ec66054b371aab20fb5f22"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_analysis.json",
+    "bytes": 51649,
+    "sha256": "68738e6c6f80d4073ae4c6f9f762be6969a566814e15b859b42aaaae7bf45307"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_analysis_corrected.json",
+    "bytes": 52009,
+    "sha256": "c323727b9d43f78bd9b66213ddeda1c9793930f850c504513bcc1fcbefce2bc9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_execution_audit.json",
+    "bytes": 4199,
+    "sha256": "db4f1830930badba878333a43a537a2a0826abd6d6c38c0ff8a6bf03df556a97"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_metrics.csv",
+    "bytes": 7047,
+    "sha256": "0a5475a18e8422d769c38970b805a9c65a1693f7bec0f39dd452fd253035b401"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_metrics_corrected.csv",
+    "bytes": 7212,
+    "sha256": "b7f1c26b8341514092743411892654f34371f91d833c4cf97a913fc62b543137"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_scoring_details.json",
+    "bytes": 110390,
+    "sha256": "278cacef069c669de68fc4d44e3fb93912622c0d0a0f008112f06c2e74cc5065"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/heldout_scoring_details_corrected.json",
+    "bytes": 111495,
+    "sha256": "330f9aa0ff5f282cd2bc0525e2a156931f6f1389cfa51500311bbe6181e3a6d3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/hrsj_2023.pdf",
+    "bytes": 3355766,
+    "sha256": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/hrsj_2024.pdf",
+    "bytes": 14798756,
+    "sha256": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/hrsj_cninfo_search.json",
+    "bytes": 1392,
+    "sha256": "4e5f99350661023cad00d6da643a574ef2c46017f075558252c6ed1c0560fbe0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/llamacpp_build.json",
+    "bytes": 80493,
+    "sha256": "9e71c1aa673f00840f587416bf0ed515ba425eeb0bc3a7d3088e5545c04e51b4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/llamacpp_build_b6000.json",
+    "bytes": 28406,
+    "sha256": "2ea62592bbe46bcc6d76dbadc694a9c5db4c3bfc339d079ab8250ebeda148f50"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/llamacpp_release.json",
+    "bytes": 36310,
+    "sha256": "f10141dedfb952e03de64d8fd271ff11b2ba10e1473e176d7c256fa7be0d2a03"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/llama_compatibility_receipt.json",
+    "bytes": 497,
+    "sha256": "6e5ace76422746d1d15c7515d535244d47651c856c0b8bbc3fb53814bec1b609"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/llama_generic_receipt.json",
+    "bytes": 246,
+    "sha256": "62ad0bfd76631d6e057b13052031a1698c7674bfcac11d82a8b0efd8ffb62240"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/llama_nightly_tag.txt",
+    "bytes": 7,
+    "sha256": "0bbf7c261e41e777ad8d70f2c83f8d7dd2ae4d7e41a9b6f26926fbc902209c70"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/local_execution_failure_receipt.json",
+    "bytes": 581,
+    "sha256": "53e0fcd2e56a3ad347441ae678f63e0c4c4f666b0757c55d23d185700d82b3b1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/manuscript_build_receipt.json",
+    "bytes": 903,
+    "sha256": "568fe2e81dfb259d65e91ca75f525d5d9b1fbddd73009fd88e61c2ca6812bf90"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/membership_recheck_candidates.json",
+    "bytes": 12028,
+    "sha256": "e540396588a817be29a7a452e3205275f2eaa914ab12004d6bc8034fa51bfcf5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/parser_amendment.json",
+    "bytes": 1564,
+    "sha256": "ac56b570e3ee3aa212c4bb6a70fb031c731a608857e55fb59645e497e0924532"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/parser_final_receipt.json",
+    "bytes": 1634,
+    "sha256": "33aea45bd6b71dd51b5479bbf9a5194ae11de82a4dc0c28f151cb97dee2f9b59"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/quantized_runtime_receipt.json",
+    "bytes": 496,
+    "sha256": "30601d3c4e7b581a6d9d07564c033aa6a7b81aaab4d225153814b9e9f59bd694"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/questions.json",
+    "bytes": 4259,
+    "sha256": "be2cc609d7fbc719108df94c3d79c8199e898e5e5fa6b27aa27f0d9ce54c91c7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_bf16_protocol.json",
+    "bytes": 2041,
+    "sha256": "5c5132a809eea2d7ebe8e3d64f544276bcc9276dd848d34223cacab80205a81d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_config_probe.json",
+    "bytes": 726,
+    "sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_download_receipt.json",
+    "bytes": 2731,
+    "sha256": "c2f5d9db08dcac359607ba1685c1390df245483243c3a84187ef73d47ce92ae9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_gguf_repo.json",
+    "bytes": 5859,
+    "sha256": "03bfc26293b45dc0457068df4278dee9e978c59e908d17d483edb972a5ebd457"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_gguf_tree.json",
+    "bytes": 690,
+    "sha256": "b2ec672aff9f54fbb5a1e7a6d2c0e11746aaf93ddf21eff71fdb0d4af3e91c98"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_protocol.json",
+    "bytes": 1684,
+    "sha256": "dc249b1960380d54465761293bf3dcbe7f20e9eca094aeeac4ca7df28eeb43be"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/qwen_tree.json",
+    "bytes": 1408,
+    "sha256": "a63fc1f6e0bd547c26e04f416b7570058dfccce5b9e4e53810631ed4a33c1db5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_labels.json",
+    "bytes": 2931,
+    "sha256": "4340de19b1e6bfaa3064208804db9b3261a8e3dbb13b2e1efbde5a9a936ad295"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_labels_corrected.json",
+    "bytes": 5383,
+    "sha256": "7e5145494bc8243697aad409a910bd98fb9d2c522efe849ac43743f75e35ded2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/release_quality_receipt.json",
+    "bytes": 1397,
+    "sha256": "d3eef7280dd6d6db8d7a530bc682cf11ed340dc5f92e15bae38f800086e6881f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/selection_protocol.json",
+    "bytes": 1977,
+    "sha256": "fd011532f8274b3957413513cb38b6c02bf3b7d5e9636b64d96a7dbd0e9dccae"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/sources.json",
+    "bytes": 2402,
+    "sha256": "0484619380907cac31276f7d4aa3468ca799c4ef8591eaed24161f8c816273ca"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/交付与复算说明.txt",
+    "bytes": 2474,
+    "sha256": "2f6a60121afc67efbea2d84015b1e1a9031f990a5b1f80e919a9b554fcada88e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/年报与法规双源RAG_新公司留出与标签勘误修订稿.docx",
+    "bytes": 1830397,
+    "sha256": "a4fd2677c1efe2974e285fb2fba499eb1312da4b15b6e0deb3c9c56b76cd55db"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/blank_review_form.csv",
+    "bytes": 767,
+    "sha256": "ec97b77ef3fc857956479cf17f88846f159fc35529e3342ea9bdf8ad15daaca1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/review_instructions.txt",
+    "bytes": 776,
+    "sha256": "271c45de854835bf45045b4274eb784d2ad7e8a9fcec1a131625ae890dda10f8"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_context_displacement.png",
+    "bytes": 91095,
+    "sha256": "0b04c38f8dba9672d4751efc81f4bd17fb6815e179c371cc61d8a7c955dca7e4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_context_displacement.svg",
+    "bytes": 52638,
+    "sha256": "71d451af8e1af0986b3a7b5b2d578fff938b60ae31c1f20e4f0e6a40d6d301bd"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_exact_by_year.png",
+    "bytes": 46981,
+    "sha256": "b8421046bf484beb86a84d6e38cb1528072e0fdca27c74ecc8031953bbd1ac52"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_exact_by_year.svg",
+    "bytes": 33767,
+    "sha256": "54559476009c1df7abbc1f65d4804d3b678a2ba17c3e01dea1034943258ed2d6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_field_heatmap.png",
+    "bytes": 104138,
+    "sha256": "3aec517668595f44a3804ea3f9d9b34c24dc78c1e8249cedff340023f87d30a8"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_field_heatmap.svg",
+    "bytes": 71686,
+    "sha256": "7c800d65985483d9ee81dcaa642ce505282dc68ed1e9b016f94f7f8a2c9eadb9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_reference_erratum.png",
+    "bytes": 55437,
+    "sha256": "a4a4df1049a2409c2a1f434d3ea9e27b0205b5b42c6fe65e73c15afbd350fcf1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/figures/holdout_reference_erratum.svg",
+    "bytes": 42488,
+    "sha256": "e5ac4abb98f4990b8e15d194b50052caf98ca765b06ab7db645ec86188917988"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-000651-2023-AUDIT.json",
+    "bytes": 62934,
+    "sha256": "dbe03bc068014a15edaa5fbaedf647fbed9f2549b50da85e20293ec307b90df7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-000651-2024-AUDIT.json",
+    "bytes": 63182,
+    "sha256": "19ec0a877a0bf970e27482bc107254c6eab01d743f7c08b620e613721e6e6de9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-000999-2023-AUDIT.json",
+    "bytes": 58320,
+    "sha256": "bb54821da07634ae64379425d7ea7e4efd68203ce599a2e1979c9093096b5779"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-000999-2024-AUDIT.json",
+    "bytes": 66231,
+    "sha256": "fa8d5add40d65b0bdda49c5b1a939a7b579a7abd50e94816b84daa2f63013f3c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-600036-2023-AUDIT.json",
+    "bytes": 71530,
+    "sha256": "67d4383114d1316a37e200e10e5e1a8072619ee3cf740fcf54d0e8d089bc132e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-600036-2024-AUDIT.json",
+    "bytes": 72719,
+    "sha256": "f1a0255d921fe4f739387fc157828a9474833b574bb88a10188810449afb3643"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-603288-2023-AUDIT.json",
+    "bytes": 60599,
+    "sha256": "cdb19790eb733c2400a3347fe51e3b4468579f0c1405e36eb0e145ad7bcb4394"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/packets/NEW-603288-2024-AUDIT.json",
+    "bytes": 59416,
+    "sha256": "07927d6c75056dc76a71f05269c33a8e7c90e2ef82b3f9661b1390df8d95b1a7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/cmb_2023_93.png",
+    "bytes": 154662,
+    "sha256": "099621b5702b3b71fa1ba2ae620bba0689604e4a16551f9ea8008320ad55cc67"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/cmb_2023_97.png",
+    "bytes": 358071,
+    "sha256": "aa2e6dce26e3c9d5fa59f92067e35b68d02a6f7b2110a0932f4ac7bf3de2f0ff"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/cmb_2024_93.png",
+    "bytes": 217887,
+    "sha256": "9ad705393028ca232546a203b86590b43e5d4d7e42c8619aa379bd33f606b8f9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/cmb_2024_97.png",
+    "bytes": 393816,
+    "sha256": "2a77136e3a1ced3369a95ae4659096f6aee5538ec2042eb3bf8067520f81aee5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/gree_2023_51.png",
+    "bytes": 200784,
+    "sha256": "37bfbf477a288ed25ea0c6ce49237df7fd1ea1cbe3f8d0e2b737947f3afdfbc2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/gree_2024_57.png",
+    "bytes": 171742,
+    "sha256": "ac99e2a8e08db64831754cf6f2df8e1f047278c8831b06a0ab3ffc8f95116f64"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/haday_2023_38.png",
+    "bytes": 253358,
+    "sha256": "8159e63a0f3866b15e8d4a21c3727f0b617c0d312dc402f50f551437aa5a7bb0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/haday_2023_39.png",
+    "bytes": 240583,
+    "sha256": "8939ad722c669fe03fc7e127151e4888547835d840ca91b90516481260f093c4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/haday_2024_41.png",
+    "bytes": 244839,
+    "sha256": "fd1e8f48932af1863bdccea8699f8d0233a74185dcbafb454a2e1c321f5ba6df"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/haday_2024_42.png",
+    "bytes": 323639,
+    "sha256": "4301eee10ffc34a76dc36d4971a20e990a22535ae41722ce7f947cf8deaf145d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/haday_2024_43.png",
+    "bytes": 362556,
+    "sha256": "e72d199b851c8b1b2aed39185fbdb04b58107b8583e114279ccd75fd92ddd575"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/hrsj_2023_55.png",
+    "bytes": 343493,
+    "sha256": "54ada1fe13db984983815c69de3ecb2ed3476c3687195465caeb0fbe62f0de13"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/hrsj_2024_53.png",
+    "bytes": 353733,
+    "sha256": "3f0a067e1c7d62b2fe3411062a30a10761231052314cc51d302f1749bae328fd"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/hrsj_2024_54.png",
+    "bytes": 386408,
+    "sha256": "d2bfccc1fd617b687111d1d39ab04fb9ce733a9fc793acd9537fdeefc864c8b0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/hrsj_2024_p044_erratum.png",
+    "bytes": 308551,
+    "sha256": "95ae172cf7854f765a4da5d18e25a751d9ef4782749b5401247b6789fea99d45"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/reference_page_images/hrsj_2024_p094_erratum.png",
+    "bytes": 342301,
+    "sha256": "96a69d5feca5a6ef3a81c388a7dd841dbbb0facbff482bbc967721da91eb594a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/cmb_2023.json",
+    "bytes": 879177,
+    "sha256": "72b663710fba6e6c3452de0ecc5d45975e91cc56c24d1d12fd5ecf3ff482e6b0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/cmb_2024.json",
+    "bytes": 894075,
+    "sha256": "74fcde262ac0a55e95fe9a8ae7804b233f83e79fe0386d311ab05aa5980457cc"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/gree_2023.json",
+    "bytes": 537544,
+    "sha256": "63e2c2c96e6627e833504ee522822fb6410151743def4b1a0598830aa6ca7626"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/gree_2024.json",
+    "bytes": 555879,
+    "sha256": "d34eef2f8ae6c67960dff6c5295cd0e4cf77b5038ac6bbd7737cbfca66e32b17"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/haday_2023.json",
+    "bytes": 401224,
+    "sha256": "c3eb456014912c0e3bae8d9e9551414a6b075bc95263da5c762aad809ac10d10"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/haday_2024.json",
+    "bytes": 423287,
+    "sha256": "c6afb47609285db8853297118f82c82733bd8fbd010ee26e8606ef27e85d747e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/hrsj_2023.json",
+    "bytes": 688790,
+    "sha256": "e3207568a560d598d0607d5801cedf185af9233a96a70bb57b5a1b82d9d2747e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/source_pages_pdfium/hrsj_2024.json",
+    "bytes": 742865,
+    "sha256": "83baa80f744765328b0404b19dcd736746711b95df7b4ed6e2557037eed08cc0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B001.html",
+    "bytes": 29196,
+    "sha256": "33986f2acb5068224c05203608f5c8bf731b274538989f865f3b1c22e20615e7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B002.html",
+    "bytes": 18769,
+    "sha256": "8abcfe6fdde392881cc15fbfc3cf5ca19991283b9397921b84aae7038877a9f1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B003.html",
+    "bytes": 20137,
+    "sha256": "dd66c9608a577cb4e7becb7cfb1bcb65fef21dd8540e275c0bc10b49fd22f394"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B004.html",
+    "bytes": 17250,
+    "sha256": "1e73a5ea0b763cbce28713661d6ded704096a380c3056782ed07f770bd299034"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B005.html",
+    "bytes": 18837,
+    "sha256": "a0772b64a06dee424a09f8fe0568e5e9513848c59ab65ec9633fafe4b27437a5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B006.html",
+    "bytes": 17084,
+    "sha256": "a7ec72af30033ed17685afc01a9fa6ca3fefcad5750b73e65cf102a8bfed3119"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B007.html",
+    "bytes": 21563,
+    "sha256": "3136e33157960888374179d05aff43f08a3948e800697d6e55c99a228d6d78a2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B008.html",
+    "bytes": 26327,
+    "sha256": "777ede76c6cb02bbba13a3fd749d4c8353343834d578f202122f7c8fc7a6635e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B009.html",
+    "bytes": 18362,
+    "sha256": "d7cafb6a84601c4191e1b7fc7fee0b22cfa70237f198e50a0d1a4a053a926f38"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B010.html",
+    "bytes": 24334,
+    "sha256": "2a26c17499476735264eda2a2941b3c0e7d0c9e2ec7f57e64173574cf10edfa1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B011.html",
+    "bytes": 18147,
+    "sha256": "e98fcf4ba18f636067222f199e22cd2ce8d7068630824c6aa998a903995c710b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B012.html",
+    "bytes": 22865,
+    "sha256": "a0bd78758ea0922046d113f16c895bd927a88dba6a61a2b5025ca93a2891acf4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B013.html",
+    "bytes": 18229,
+    "sha256": "7676a7d9a2176372ca1f13dcba878b9ccb5a6e3589025a9b1f62fd0ba5b735a6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B014.html",
+    "bytes": 17794,
+    "sha256": "3c4097f7809247ab415d44f6190b9bc99d7c2496e1111b9025caee014390ecd0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B015.html",
+    "bytes": 24096,
+    "sha256": "680be6f63cf63dd1c6e557044d62f581435d28106f1d052644b2808a9cab2365"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B016.html",
+    "bytes": 18929,
+    "sha256": "a615ad1d9316155d1121aa5ca9f184ab8198612a167f8aefb7e35ecf4c8b8d88"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B017.html",
+    "bytes": 18898,
+    "sha256": "5c030c0aaf3116e4d76a9c36db99367ddb7f377fab030ddbac4f9d71dbae25c2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B018.html",
+    "bytes": 22578,
+    "sha256": "52fbf46172a42033d94f90fec838b453a8651d71bcda328aeea88b22b69357ee"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B019.html",
+    "bytes": 25319,
+    "sha256": "e2cf33fea99dc42732f99b5e0ae5c14014a0b6fa86b6d8eade09bb5a3a27e29e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B020.html",
+    "bytes": 21845,
+    "sha256": "7798edbdfa72bb131e9c828ef0a8a77c7ea10dc76d0bdc186b25653b254654a1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B021.html",
+    "bytes": 17646,
+    "sha256": "e3e926d3b66efe2a9269f248f7fab0817367d117b0c841b5a193c4e639bafc7f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B022.html",
+    "bytes": 19292,
+    "sha256": "b354d2b2cbd606acccfe2df950b590a23bc3167acee116c7e7a234d3e2190530"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B023.html",
+    "bytes": 19008,
+    "sha256": "ef2c080495401508374b81efc2729ca857fd663bef103867ad99d8521f07617c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B024.html",
+    "bytes": 22382,
+    "sha256": "588b11eb7a919c10890cc70c7aaa86e7a0651385a24a3c9760714d90e60953e1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B025.html",
+    "bytes": 23371,
+    "sha256": "8df13342e37bb240fad6d4b6ba5d25220c98622a02c802aed927ca52098a36fa"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B026.html",
+    "bytes": 18918,
+    "sha256": "ece42854760a439166df531f6d992a8b2596f0bc7c3311702feb99e862fe875b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B027.html",
+    "bytes": 22119,
+    "sha256": "9d4c00943c826316667be7090b060a49d9442c4d0c2d5eb6e634746b0c8e4216"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B028.html",
+    "bytes": 22446,
+    "sha256": "0c4fb7516221f707afa198bf18485de479ef62cbaf5ac134170c637221f51f31"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B029.html",
+    "bytes": 25074,
+    "sha256": "1597e10f2c3d0c182b737efec0ffd31c3b3e528be96bc88825569f4bdc2f0f12"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B030.html",
+    "bytes": 28021,
+    "sha256": "601af0f0d6bca8703cefcbd6ac1bda873d5a4681847b7956030c98723465c7ff"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B031.html",
+    "bytes": 25224,
+    "sha256": "b40f1d1b6a2097881fec64ba073b2fe54b040c44d243c73c43cc0b8b61878b7d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B032.html",
+    "bytes": 27675,
+    "sha256": "109191b5a090acbe26b92aa5a415a6025953d7d4d2cab593e9d8c76429de54f2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B033.html",
+    "bytes": 23922,
+    "sha256": "b0beb3a6ce0b05369a62a06b448357b29be7c07d262850c12e8c5d3fc7e3820d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B034.html",
+    "bytes": 22203,
+    "sha256": "97831c9ba856b16ed48522306ca665ff682c630f37479e8e3cbd0b24db596476"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B035.html",
+    "bytes": 19008,
+    "sha256": "25b65b1ce6e6cc1a809d2ab22a81f6df9516fcc8c259dd01c34e9b6b205a47b0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B036.html",
+    "bytes": 29387,
+    "sha256": "0be4567a9ef8e4578f73b8cd284d3235910a31f943a93f02928f285abab65334"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B037.html",
+    "bytes": 18262,
+    "sha256": "97c429abea54c05ba8929b0b5555669f31849bde7ddb4835a732015488501a3d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B038.html",
+    "bytes": 25694,
+    "sha256": "0b449f1b2c3f68d46c9d95ddfaa5c2b24c46ba3966d63b8af6d38ebc79811d96"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B039.html",
+    "bytes": 18161,
+    "sha256": "2616a21077efc912f74bdc24ab5530500650f2a1a38774fdb87d537509eb6c9f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/cases/B040.html",
+    "bytes": 22850,
+    "sha256": "c6717b84544bfc03609ae407e7ade9df9e0e3778e46a457ca47bd1f9059ccc0c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/cmb_2023.pdf",
+    "bytes": 5834543,
+    "sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/cmb_2024.pdf",
+    "bytes": 6215121,
+    "sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/gree_2023.pdf",
+    "bytes": 3911496,
+    "sha256": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/gree_2024.pdf",
+    "bytes": 5087621,
+    "sha256": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/haday_2023.pdf",
+    "bytes": 4202457,
+    "sha256": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/haday_2024.pdf",
+    "bytes": 4561223,
+    "sha256": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/hrsj_2023.pdf",
+    "bytes": 3355766,
+    "sha256": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/blinded_review/original_reports/hrsj_2024.pdf",
+    "bytes": 14798756,
+    "sha256": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k28_single/call1.json",
+    "bytes": 23575,
+    "sha256": "42313a182536012a0183be7586857cc638be19639a3a228b46313990ccf0ca7b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k28_single/call1_request.json",
+    "bytes": 18242,
+    "sha256": "8555e7e8fae61829310a74c41e7d2523813b588fc636d54a9ddca762e8d166c4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k28_single/result.json",
+    "bytes": 91042,
+    "sha256": "64083fad53d76dabee9270824dd3bdc00542992477bd329a832b320b074f3418"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 21944,
+    "sha256": "8243de44915133f6893a546f6e6d8d16689efb92fc756a827eb471ec949e0316"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 17934,
+    "sha256": "a40ff330a73b1bb2120a7e5c1a3f6e8e22a3f5ddd083e3666bb0e67a04c823f7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 24628,
+    "sha256": "e6d9c4132380d10b4a0f3fcad8cbb33144ea59f758de480d37b088ed9de7b091"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 22038,
+    "sha256": "5f72755bc7204e534f1fd0d3409b0b6fe8e475c0e2c1c710c6c39e35108596dc"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 25722,
+    "sha256": "b228aea7935c0dc5099e07e103df333a8277ee382c646a2906db722169762c7e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 23663,
+    "sha256": "dc091dacfa94d548ffb82cba3dcbeb1b8e6e17a9c7ac05676b9741702e0b8ec1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 105256,
+    "sha256": "3f3e234fafe823127409e7e3cc69fa44159a3019799b2f3bf4646605e7d84f84"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 28004,
+    "sha256": "793e8caef37219e6767cf8503d371dd703d2014937d03524c50cb9aafbdeb889"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 24459,
+    "sha256": "4380c013ff62958e7767c255531b554eb1030cc717219b8233346153f71c7047"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 109445,
+    "sha256": "9611755d1170ff6b84397abf1bf7f6405fe6074e6c2ee4c806dd3f0dd2bae8dc"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/call1.json",
+    "bytes": 25651,
+    "sha256": "defc450c13e2f350f027d5050fd2b44dc34682afe19482e2b03e60933e4829e2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 18229,
+    "sha256": "f841229631feab9ca4d552e31e151326a54c0651f5e7191672c059ee57028e9c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/call2.json",
+    "bytes": 23264,
+    "sha256": "9b59d54be55063bc2f1aa6bc6ae52f2f6c528d6048c1ee388c94e5463b219146"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 19030,
+    "sha256": "afb10f1ab4b739c94d704b5e08a968688909f50db7304b08a738691aa96e9b4d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/call3.json",
+    "bytes": 24174,
+    "sha256": "64df40585ee5a78d76051ce826abb1e28b0e7bf8ce961c683155184272102e92"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 19076,
+    "sha256": "dd945ebbdf87143c957c15cf97cd3d5f8921703d5a405d54e93f64eb05dd9df3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_refine3/result.json",
+    "bytes": 91009,
+    "sha256": "c82fed4e19f0853a35a5eee5ab57dccb95b184e20c6a30ef2d5ff893f3cada26"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_single/call1.json",
+    "bytes": 24053,
+    "sha256": "c16cc1b31931fa3dd8ba5df50c3e7471ef55b5a940131cdb8e6fb2abd59f246b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_single/call1_request.json",
+    "bytes": 18229,
+    "sha256": "f841229631feab9ca4d552e31e151326a54c0651f5e7191672c059ee57028e9c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2023-AUDIT/k3_single/result.json",
+    "bytes": 91016,
+    "sha256": "e35cae12f2d6250cdcd98c6d6154053257fcd5e4afb1ea13b3de65e9e0f81b04"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k28_single/call1.json",
+    "bytes": 22144,
+    "sha256": "5b3b19f2310a4c3b9dc303cbb6da1cd7e474a6f9544110063c42fededc16f398"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k28_single/call1_request.json",
+    "bytes": 18325,
+    "sha256": "a34d97f84be80f094db1d073af59df7c4dcfe169423d6e3114aee2710a7fa646"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k28_single/result.json",
+    "bytes": 90857,
+    "sha256": "7d0d950789871063e036f7c31ab03a94c3b2f7e76f070f74d487d5ba9edae6d3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 21329,
+    "sha256": "c8ae2809f740215e511e5089f2175a235abbd19a1352d7beb8e675d5d995f7c4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 18017,
+    "sha256": "583ac54a210cbe4466024b56ac283add2d4ec22af178b370aab50ccc4f11bb72"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 26090,
+    "sha256": "22877ff48a6df311860562923cebe3f5d3ced55788f0e33f9998eef159cc98c6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 22312,
+    "sha256": "6e0fb8b13986bf219ae10c42d7f055dde4a6d5e243b4aac1fb0f61d98e2727a5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 22705,
+    "sha256": "552163de92f1118c81adfee931dbf63daae5fc0e9ea98fb748298c36d6b63a4b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 22419,
+    "sha256": "1c1eb5c3200d2b96ccf9cae6636a1624af4fda1c80c0698cd3d05085f2c1039a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 102174,
+    "sha256": "05a3dc1ced620fd87c0f1859b506cef40519ff300bf3114dd9fc06502af9dafc"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 30304,
+    "sha256": "2dd657236214246c8138b14516fa7bf49f9fdace3ca9a76f41a4e5e3cd1d1e8e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 23540,
+    "sha256": "e3438699f2ffb79920b7d5d8aff23a1996aa544fb0d03c37b2bbbba1b3694931"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 105451,
+    "sha256": "5d2908f40b6cffda25a82c3d2a603f3f3bbe0726ccdb404173b08aa75bdb35fb"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/call1.json",
+    "bytes": 27747,
+    "sha256": "f381ed4d854069155a8d5505208557f26fe7c54c5b0f0b74d84e157b50ca24af"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 18312,
+    "sha256": "362d6a0f56770162a1d0fffc2ca975aa6110a3517834c872c0b71453ca9e2765"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/call2.json",
+    "bytes": 24313,
+    "sha256": "84a7abb6c871befe95e50b25e392b93a9ee9a4f9117a96933809236cc869bbc6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 19225,
+    "sha256": "3c976524bf0d2025e951f231fd18102411180e9ae67598d6ad4c312dfff5e68c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/call3.json",
+    "bytes": 24200,
+    "sha256": "13c19388daebdcd4e610d1b3c83fac1615472fa1e3591a31235e8f0b3b4b6305"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 19503,
+    "sha256": "a2a3a96531b2f01f20c3e3c0b30c70228008117e559550bdf5477e41612b4675"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_refine3/result.json",
+    "bytes": 91855,
+    "sha256": "97807d2d6541e415c294aaa4c95008058613696c72fa9c020543f3e7a8bf753e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_single/call1.json",
+    "bytes": 25283,
+    "sha256": "7cf732c0ab7993a150bbdf4e514c38882b65fa5c557215142bb8590c164c678c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_single/call1_request.json",
+    "bytes": 18312,
+    "sha256": "362d6a0f56770162a1d0fffc2ca975aa6110a3517834c872c0b71453ca9e2765"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000651-2024-AUDIT/k3_single/result.json",
+    "bytes": 91122,
+    "sha256": "2effaa23fa034f7256c45f8fb2b29230143386018e22fba94571d067ec82b0e4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k28_single/call1.json",
+    "bytes": 20150,
+    "sha256": "84482acd17ebaacba1208dfa1e911ef47c7e534dcf20fd5bed2da40b264023d2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k28_single/call1_request.json",
+    "bytes": 16661,
+    "sha256": "342558f504f69591730cd3f8c5665e4d06502ccfb8b33ca0c95ba41e6a99a6ae"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k28_single/result.json",
+    "bytes": 84765,
+    "sha256": "6ee3d6d3411a7f541baf7f1439b2bca1a95b8dee3e67d0286a52a8a63e2fe93c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 21967,
+    "sha256": "12193af6673768c0bb2bf9a04ebf1340af47be8bcd55ad89eb8c2660c431e8d0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 16353,
+    "sha256": "831567600e08cc01ec3603ad4decef4dc30616fb4c160ef242fd24810f5f41c1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 25260,
+    "sha256": "22712c8fbb7b8805323360d06570ff98fe46a9a458ecbbe1f7992007a199a326"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 21223,
+    "sha256": "353856ebc28665f5d990be1ef80d214b2c28877acd4b9704bae53e052eda5def"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 29407,
+    "sha256": "60541b5663b1d0b5d82ddbb029c4ce4a406ebc698b3c56780936bf1c0b6547d7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 22548,
+    "sha256": "fc608f75fc4450529869260d785bd183fe56d708da85932ebdd4606312668380"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 102371,
+    "sha256": "4abc439430bf3ee12d51e2d5a2e3c913447a0f3c2cc80e7b892d21f451df65df"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 30993,
+    "sha256": "4478e307ed92c8de42ffc20387bb72e5fb3aa2af3aca2242ec68d62502a130e5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 24982,
+    "sha256": "84e31c945353f9b9e4dcde3276e26a7cc733911c10f29a0c34480accb97b51cb"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 108387,
+    "sha256": "17dcf71b2bb1bd589e27eabb8dcd87edd2083cfccd38630f197674d7dceeba49"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/call1.json",
+    "bytes": 22996,
+    "sha256": "2c694a384ac16e100dea71bccaa4f2ee349fc4baed510c632939cb135f1bec44"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 16648,
+    "sha256": "bc1584fe27afe19b84a697c55c3790041c1e33ad69d3fc6163a8c956e370c3f6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/call2.json",
+    "bytes": 24083,
+    "sha256": "c2c06d673412c4b8e68c1461edca2380eec2dc2f5e444825c3a721ab40ec511f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 17903,
+    "sha256": "29e2807a1bfc1dd3876f579d1fb6b3d12d2fa2d113d89c2ed45f3ade2dc1ddff"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/call3.json",
+    "bytes": 24291,
+    "sha256": "5e25d71f08355f99b557ee80969621cfd188769f577abbcfff69f3db38190609"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 17987,
+    "sha256": "8e8f05022233f0a28261d341d9d5c6ef29aad0ed86a64114c048c699a9da547f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_refine3/result.json",
+    "bytes": 85763,
+    "sha256": "296231613ffdd2f81ec7456f9773a6748aed7c46437d51298518ff3aa06a4199"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_single/call1.json",
+    "bytes": 20816,
+    "sha256": "7d6c9fe5d9dc1ba811a4443ffcb5b5b11771c30792bb881b01cc50e438d51295"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_single/call1_request.json",
+    "bytes": 16648,
+    "sha256": "bc1584fe27afe19b84a697c55c3790041c1e33ad69d3fc6163a8c956e370c3f6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2023-AUDIT/k3_single/result.json",
+    "bytes": 84562,
+    "sha256": "84d6b149ad9e6fe77b8836073cac67d4a83a00217cc551c62631301b417789ba"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k28_single/call1.json",
+    "bytes": 52094,
+    "sha256": "4663e9392c1bdcf10ead49f680baebf18811df7fa67b6e6158f4a74c628e0d91"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k28_single/call1_request.json",
+    "bytes": 19339,
+    "sha256": "6f4a0cf6f7195fbea58d42844a811061bc2d1f060eba8b7deb2e4711676b7c92"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k28_single/result.json",
+    "bytes": 93651,
+    "sha256": "786bcc826a1ba503a64206f9bfbf8f695c9e99aa13f8b345787881e4173b2f66"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 21943,
+    "sha256": "4f83c308cedf28d875f1e2d617071b51f31c885026b8a8ad15a1057296d32893"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 19031,
+    "sha256": "1f991caebeffdb73e9bfbe879ddc67978502251d08fef7d0c6625ca00dac986a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 27607,
+    "sha256": "cb2d1d906c280e8a276b3c8a757054b08357803539990244bbfda59633281646"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 22597,
+    "sha256": "3c49d66ab8f39f80595be83e706ebca89a7915732e45d616b9c5e6cd00fb6892"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 27284,
+    "sha256": "9b2916ed93f4680b9e50eef7a086f44c4880b1af7448e1eeba57af2767b019a9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 22377,
+    "sha256": "60209db9668b32aa2d3b249dceb11ed9d3eaa6f33053f0214c17cadc61a78a59"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 107669,
+    "sha256": "92faa83504d2258dd6bbd2d03da5709c5b9498bcbe9329ebce2d7af9258c8b21"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 38647,
+    "sha256": "2f0781968bcb9a8337f267bd5bc84bfebedf6aba78045a7892e37a7c221f4903"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 25198,
+    "sha256": "3c578d5dd748e590471d14f31108e2545e6bcdc86798f978063e101d8032a528"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 112914,
+    "sha256": "3d933993c945aeb8240ead3bc780913adedf6e43a574cd955b2ab7b8de6762a8"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_refine3/call1.json",
+    "bytes": 38943,
+    "sha256": "65bf277cdb20ff098f3604d074bb689eafb27c133d372e221273d41ab6d91acc"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 19326,
+    "sha256": "a1da7a51dfa457ba54bfe4581704f205e1c4018ce6ef06114f2b1733e866561b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_refine3/call2.json",
+    "bytes": 40682,
+    "sha256": "5b6d1b484726975bb656c9dde0762414a334a9e5239612ebb34c781aad02702e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 20770,
+    "sha256": "eedfa6aedc0883ba8cc13e0ac73c535c54a23127a52996b240a55910a0d6209a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 20978,
+    "sha256": "69fd978c2213722a3b6a3a879df368b70ec30891165d1a0a1bd6d43ff9c97fc5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_refine3/result.json",
+    "bytes": 93959,
+    "sha256": "adaa89edc9c0df1b4e6d75a141823938735d14df10fb1447ea8f9c8535753038"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_single/call1.json",
+    "bytes": 33453,
+    "sha256": "03819504196b759f3dfcf1ece1eb0850991f318e72be37e12a0c2e1441d5a8a3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_single/call1_request.json",
+    "bytes": 19326,
+    "sha256": "a1da7a51dfa457ba54bfe4581704f205e1c4018ce6ef06114f2b1733e866561b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-000999-2024-AUDIT/k3_single/result.json",
+    "bytes": 95768,
+    "sha256": "bc580f0ff7b6a758f322a6b84a8a7aa8ede7c469b09635bfddabbb94e6eb5f0d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k28_single/call1.json",
+    "bytes": 24458,
+    "sha256": "e311e3efdbcb5115ba32496cbdbc0cb1da24e5856659791e20db66372c47778b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k28_single/call1_request.json",
+    "bytes": 21107,
+    "sha256": "69662eef1cb6485b928b0c8883418572cafec7481b483f734ce9e0a86ff09df5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k28_single/result.json",
+    "bytes": 102133,
+    "sha256": "dfcd783da8158843e47ef7655ae1b8f0a983750be0c4560c1672df91e261df74"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 26082,
+    "sha256": "42e92830083d74ca9cad6885cffc9c1f0f5690df7fce1d6d9762eb9484cc9f47"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 20799,
+    "sha256": "bbdcd985ce1e054ccd3d8b25b59bcba5bc571870563d3fd5ea23eab9c0009742"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 32603,
+    "sha256": "e132c9bf3f537ccfefa1f240a4bc5b1de746a96f6a2cf991a2d177c63bd07d1c"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 26791,
+    "sha256": "963e287d0158a1d9d52c788ae6b03f1a2228c3c818942b0e1599af3eeeadc713"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 36011,
+    "sha256": "28fe0aa8256f375a4b426a7a4cb15c8af521f5618896abb971b3b186f522d9ef"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 28209,
+    "sha256": "b2354d2b0b07de989971baa17473910e0ead834df5531a55f633c726836d5db6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 122461,
+    "sha256": "f72b08496e69697a4a290912bb0763e6ef0ed7bb23d4d37942ee682a4dadb667"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 37216,
+    "sha256": "f6fc854d5147d51bcddfbf4af3228053c280bf5ebeb1498cecb7d3212faa84d9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 28250,
+    "sha256": "b0767e44321b0cd7bc2d972d8e1767fd6603b52a839a78c3062c92e2b58efea9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 124121,
+    "sha256": "05ca20ccfc9e71c16eea53b471acaf2ffb7010e6ecfd5cb0e931c917c896b08b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/call1.json",
+    "bytes": 32128,
+    "sha256": "863e7e22bee22eacc6185dcb4d8dc16e9d294221e865fa7218210b11cb0c150a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 21094,
+    "sha256": "b68695d8c504abc970ed83d52798343ec6b03d40c437eb34da77bcdffed0136d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/call2.json",
+    "bytes": 28187,
+    "sha256": "0832ae68b21cdc36076eba73ace3aba23903f8f98e285d79947a9c4e47fb3633"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 22042,
+    "sha256": "2a094fbdea841bc61c7f02a092555d1e5959d85e6f869eea6811c13dffa04688"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/call3.json",
+    "bytes": 28448,
+    "sha256": "d2c2f42d5b44cee566101e319abc4fae1b64af9133817049057983b7c349cd23"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 22389,
+    "sha256": "6d644dfbfd3c1f56b23f93974c53129f44148a18d5658f06865c322ccfe4ee4a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_refine3/result.json",
+    "bytes": 103423,
+    "sha256": "c1514634d9100f2beb312d6e15e6ab452bc5b4744ce2c35468d25cad6103d18b"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_single/call1.json",
+    "bytes": 27649,
+    "sha256": "556f5b12891b48259afe432e10cdc087dbd8779cbaa2230bf34a933c766d46ed"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_single/call1_request.json",
+    "bytes": 21094,
+    "sha256": "b68695d8c504abc970ed83d52798343ec6b03d40c437eb34da77bcdffed0136d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2023-AUDIT/k3_single/result.json",
+    "bytes": 102686,
+    "sha256": "b2b663e1e6736ecccf52c2ea94da97ec64ac49bac5c0b8d72d53f5f5c1e653ae"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k28_single/call1.json",
+    "bytes": 28394,
+    "sha256": "a6207e555f70300dedc12b82f20e5aaeb6fb8068fa36ab73784321623002741f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k28_single/call1_request.json",
+    "bytes": 21504,
+    "sha256": "c51f163c9f6b3b867b143f41714702fe760359ce7d96dc2893bee5247493fb0f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k28_single/result.json",
+    "bytes": 104509,
+    "sha256": "815b26a35016bd6fe0324240201b784e07143f2110122920e0360d20df30db71"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 24956,
+    "sha256": "c1bda6c953b197842e799322c17e7bed19b2eaf82b89f3235a0941e018e1a214"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 21196,
+    "sha256": "00c5212276a03fe8fd63701c8371d3145966ce690f840a9778e406ff762173b5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 29899,
+    "sha256": "842c8e2a55512bcb9b4e173d032aa51aa3c8fabad339444de1be735ddc99ba25"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 25982,
+    "sha256": "bef075c3d2400beb749e2fe76095a6c7019ad908bfdfea44e5c602dc8b5b6eb2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 35302,
+    "sha256": "94f810b8f5f9e0486534986acb7a07c86f161115faa94b9cfde58a1df6007bd4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 26753,
+    "sha256": "e82890b73c8dd476999f59fe89c21a3cc1cb7ae02a5f1654ef341668736758f5"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 120960,
+    "sha256": "71e7b3b883b7ed8a2bbc82a52b09a3ca607df622a921a21f599ee45d2fc257d7"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 34360,
+    "sha256": "bcf1ce6ac2bcbfbb6dca664c9748da95bc306d396e5fde365b514de121e6512f"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 27565,
+    "sha256": "12ed4ab8534fd53b6e5c8329111c87cc91b9937c57af8ee178a279d3279c0ede"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 122305,
+    "sha256": "64cd4754b621c85cb8fe925375dac84fbe64f4709084a0ddbc563deddb4569b4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/call1.json",
+    "bytes": 30300,
+    "sha256": "9eee738df0dd89ac95f2d20b7b434b195ffe871033723a39aeba32cc46a08c14"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 21491,
+    "sha256": "44caaea573a4c08f870ad86d69a525a661c224968a37edd0eb6a882d2d188f58"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/call2.json",
+    "bytes": 30053,
+    "sha256": "d01bbe0b33f2a19a9640cff02455df623183e73ad812ba46feeafef81563f21a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 22412,
+    "sha256": "5ff97579878e559e01ce580dabaaed85304b3f00f6fca39c51b2001642e96c01"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/call3.json",
+    "bytes": 28735,
+    "sha256": "198aed9120f374a42bb7a5c28974b6ab6a47788e7e379e1e9bd9536785c8143d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 22575,
+    "sha256": "f5d3885d0c05dd9b5fd269bd5d117d65df522518f1364da3979709fd6c6a8cd3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_refine3/result.json",
+    "bytes": 104955,
+    "sha256": "0f26611ab1226993d1f440f0b533baf7ea57f51df1ae15545d47663e4feb5c16"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_single/call1.json",
+    "bytes": 31526,
+    "sha256": "a7bd21a92383f2ef363a645a4581a7c4be36cc8de12d4ff9f82790a8a0350fd1"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_single/call1_request.json",
+    "bytes": 21491,
+    "sha256": "44caaea573a4c08f870ad86d69a525a661c224968a37edd0eb6a882d2d188f58"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-600036-2024-AUDIT/k3_single/result.json",
+    "bytes": 104489,
+    "sha256": "a1c9a225b531b21666c1ef00cd11fd04041e27348ac97697f7696500d9fc6dab"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k28_single/call1.json",
+    "bytes": 22848,
+    "sha256": "c31af9477d62293280d45271550d20dbf6ed7857839f0d2d97dcf3de04b05825"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k28_single/call1_request.json",
+    "bytes": 17464,
+    "sha256": "c06f25827e06e3faef36f9581e177266f20b67be35ed562d5350b338cf73e642"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k28_single/result.json",
+    "bytes": 87962,
+    "sha256": "7766858a8a4fc4595ea7ebdd1df862344b343bc2e82f2a2a539b9354f44e0bb0"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 22672,
+    "sha256": "00ebdd8236d267b91c0d7bbe42f55e2552db223b4f97e559f39c0a9d8a26ab35"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 17156,
+    "sha256": "f554efce4bb0103c4972fc5ea03962087e58198d17cb6aceb9d09376965af87a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 26645,
+    "sha256": "faa27747c0cbc0e3d2e7b38d62b4f9f0023b69a7e62c17ac542170010f34006d"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 21665,
+    "sha256": "063c505b2105a013d0d374753176770029918d309ac92958629b946ae0d5e7e4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 28932,
+    "sha256": "94422f4bc55e708965e0875e3df58e53a0ba5c4991401e771cd9859c7fe16ed2"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 21960,
+    "sha256": "a2e32b8884f760d4fa9a9740db3e2d12234d517f32cad0a0c4e67a78c9e4ba81"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 103957,
+    "sha256": "24cef87dcc7882442cce8e4ac97de9e2a4101513f4d474cd80a1b133ab3be7b3"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 29303,
+    "sha256": "150b36c78c0d5e82cf3668b098d880f7c2929f3a918bfdf3a225603efb50cc78"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 24529,
+    "sha256": "f1ec0222dcdda5535151f388ccdd21f2a75c6829167db12e174ef12a4aff16e4"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 108729,
+    "sha256": "bd36f6aa7d4a575371080810ae7967d80d2ce40eadbbdbf69b71dec5d67d3143"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/call1.json",
+    "bytes": 22393,
+    "sha256": "27a3cc1925bd59949853e738a9e9e577e403e628c60d34870e8eb53cdde16abf"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 17451,
+    "sha256": "f8256d0e7b42f40a14b9e220f706cae53c03eb3c2f087348fe0a25377a0cbf90"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/call2.json",
+    "bytes": 25250,
+    "sha256": "5409dc657723f0fef991b22f97f8a1fef01f02dbcd1e230c8c9a6d47e975b867"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 18296,
+    "sha256": "01c09b971bcd24e6f30bc9d713cda9dcdea1648aa5cf202c0f273cd90ddd45af"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/call3.json",
+    "bytes": 22943,
+    "sha256": "f55818085ca1ff8fb3c911d2fdc81e85a51941f4da579758aae88d6b4793e694"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 18446,
+    "sha256": "dc260e754ba751e4c094d3fb88cc9e1eb37c7e6c9c32b8b2b6f9dea01cdb9147"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_refine3/result.json",
+    "bytes": 88207,
+    "sha256": "0614d6c7463ae2f6d1fda03c78d0190ab969d42588cc90e15ac8f6b29fa53b62"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_single/call1.json",
+    "bytes": 26995,
+    "sha256": "c41ed4dafd8c61939339f1201dff8471d82c5cbae0dad82bff5b93bb4041fec6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_single/call1_request.json",
+    "bytes": 17451,
+    "sha256": "f8256d0e7b42f40a14b9e220f706cae53c03eb3c2f087348fe0a25377a0cbf90"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2023-AUDIT/k3_single/result.json",
+    "bytes": 88207,
+    "sha256": "2c9b39cc663acdf917c51f0f03f583c52fee94b4939da62e49e88afd6a8dfaca"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k28_single/call1.json",
+    "bytes": 21348,
+    "sha256": "e384e3c07a0b79a1b2fb9589272fec3359404b0614b88350ab374bd8ba04403a"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k28_single/call1_request.json",
+    "bytes": 17068,
+    "sha256": "82a3fe2b99c468fd54cfc42e5e2d7b7ff8c477ff34d519ef784f00d310eb7e50"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k28_single/result.json",
+    "bytes": 86149,
+    "sha256": "c4b10c50a3542439600a573b383609b7ec7b0d3f9b5155715777c88ba9988119"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/call1.json",
+    "bytes": 25395,
+    "sha256": "b65f34606169857fed85ea697fd0ea655fe61a535183ca45cd828d9b7fd26f9e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/call1_request.json",
+    "bytes": 16760,
+    "sha256": "326cb2dde2aae28ac8cff1460d5e081346b68153f735401b7fb037f1b1560d17"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/call2.json",
+    "bytes": 26807,
+    "sha256": "1dd5b28d19f75665805aecf988389194f78f1834f207392f2c0a2c5fc5b18f45"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/call2_request.json",
+    "bytes": 22585,
+    "sha256": "3a2e94abd55b7342ea9b1d63b68bf2be6c5148205e3782ac2b34e282cbfef386"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/call3.json",
+    "bytes": 28207,
+    "sha256": "53baa6c5f79c1ef71e316bcafdbf5ad8c0af74a8e2de91ad7b09e6d2fc4fd8ac"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/call3_request.json",
+    "bytes": 23282,
+    "sha256": "e2be5836ca26d20a386e3dded11533fbdcd780b53c559d1d012de11ebf56d276"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_agent3_v2/result.json",
+    "bytes": 104158,
+    "sha256": "b9af8b7bbf2ad593836fd4dd35663062f67f07ce705beb2a9f3883687b2cf5c9"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_fixed_expand/call1.json",
+    "bytes": 30785,
+    "sha256": "c64381ca90e6f525273a4ff91f41ec3b564410f33595bdb560bdbc8eef55c1cd"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_fixed_expand/call1_request.json",
+    "bytes": 24232,
+    "sha256": "889a89034eae1361664e999a4bc586ee583c7a647fc41305c4c5d1b1f8767589"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_fixed_expand/result.json",
+    "bytes": 105867,
+    "sha256": "0e129b64feba9f0b44cd1f809942b408fa9edd04bed40478afd1a92812172a6e"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/call1.json",
+    "bytes": 20834,
+    "sha256": "4019932580205d1cc218599994751381e1fc7de67c2a9a286e5f88ff531814c6"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/call1_request.json",
+    "bytes": 17055,
+    "sha256": "141be2c26424181bb64520866c4f7e08f77c02110b49dd02457650bb5d561b44"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/call2.json",
+    "bytes": 24179,
+    "sha256": "fe05820a61a965d33c5377fa0c44ba3424a9b8ce21cd9c90e59dc0e9a1c2dabf"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/call2_request.json",
+    "bytes": 18408,
+    "sha256": "3454d31a33e56cd13bf8a01ee0b995e2ba2eee73c014025ecebe2efc3825b768"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/call3.json",
+    "bytes": 24360,
+    "sha256": "4a8996d4aa11b4a63d7749f57419e11a7898f535494124b4514d553bfeae85fa"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/call3_request.json",
+    "bytes": 18422,
+    "sha256": "480f907da2fc8a7a292b1d0882e7c56239118598329cc915b4fec150685d5226"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_refine3/result.json",
+    "bytes": 87471,
+    "sha256": "9fed648f68768abdffdc01a5544d002a05d29bca35c8a266148410703b82b979"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_single/call1.json",
+    "bytes": 21156,
+    "sha256": "a6ac315241aa36dbc31f6d7d409b39ce76e501fdcd6df94f2d859f5018d84d22"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_single/call1_request.json",
+    "bytes": 17055,
+    "sha256": "141be2c26424181bb64520866c4f7e08f77c02110b49dd02457650bb5d561b44"
+  },
+  {
+    "path": "xiaolun/results/paper/heldout_validation_20261023_01/calls/NEW-603288-2024-AUDIT/k3_single/result.json",
+    "bytes": 87035,
+    "sha256": "b46d6509802ef0085bcd6bc9ac05d193f16a41660ac8ddbb146ca24f282609c9"
+  },
+  {
+    "path": "xiaolun/scripts/audit_heldout_validation_20261023.py",
+    "bytes": 6632,
+    "sha256": "a80f2c27956550c7b2112fc3ba55bfc929b8c7b4c4456fda408c00edd7ce60d3"
+  },
+  {
+    "path": "xiaolun/scripts/build_heldout_manuscripts_20261023.py",
+    "bytes": 38396,
+    "sha256": "5dae1096abd628ae641c0aa512b4debf72353c6e3639f541f956fc3799576158"
+  },
+  {
+    "path": "xiaolun/scripts/correct_heldout_reference_20261023.py",
+    "bytes": 2297,
+    "sha256": "447a419cf10ac2235dba13e325b5f02df062846458dcc10c846a02902c545e1c"
+  },
+  {
+    "path": "xiaolun/scripts/download_heldout_llama_20261023.py",
+    "bytes": 1752,
+    "sha256": "89167028947d382c03edfddd6abe1dff20dfea51985b6a5b4fd8298e0e0cb0d5"
+  },
+  {
+    "path": "xiaolun/scripts/download_heldout_qwen_20261023.py",
+    "bytes": 1289,
+    "sha256": "d0e2d0e85db5924ec3b63781fffda481c2a0e12acd78c551f6748790639474cb"
+  },
+  {
+    "path": "xiaolun/scripts/finalize_heldout_inventory_20261023.py",
+    "bytes": 1225,
+    "sha256": "7bcd7a7e256f841e28cc3bc6e9cd7d8ab916002060f235c28ce9157da558a59b"
+  },
+  {
+    "path": "xiaolun/scripts/heldout_english_sections_20261023.py",
+    "bytes": 34539,
+    "sha256": "9272d4d6960b0177c4bf60a147c3a5f47a885c12bdcf9782f0db83c6b5d289af"
+  },
+  {
+    "path": "xiaolun/scripts/prepare_heldout_figures_review_20261023.py",
+    "bytes": 7153,
+    "sha256": "ab869acbc5f42e9b7fb354ff29031662bee43387716a3cd326ca27c4e29f6a55"
+  },
+  {
+    "path": "xiaolun/scripts/prepare_heldout_validation_20261023.py",
+    "bytes": 2103,
+    "sha256": "a5735182e1abe6471a28981aefa9f5607bba3a8ad3cdda1503f81319e7a86c65"
+  },
+  {
+    "path": "xiaolun/scripts/recheck_heldout_membership_20261023.py",
+    "bytes": 726,
+    "sha256": "e8954ba8b13b0bdfa9b5dd319714f2f5313afb0974bc01d47c44640321343c78"
+  },
+  {
+    "path": "xiaolun/scripts/release_heldout_package_20261023.py",
+    "bytes": 8082,
+    "sha256": "653ea77d39a2f60bb0940613b6f230e3d3cb6eb164ce2c9b46cd20f0707f4f3f"
+  },
+  {
+    "path": "xiaolun/scripts/render_heldout_qa_pages_20261023.py",
+    "bytes": 1226,
+    "sha256": "fc551b6300e20eb52ee1a762594e29f6042105e92aba00bf51e0849617511800"
+  },
+  {
+    "path": "xiaolun/scripts/reparse_heldout_pdfium_20261023.py",
+    "bytes": 1548,
+    "sha256": "b0e9dad6ee0472bdc7ef748e19372fee70fde783ee48b8a32b399793f7082e32"
+  },
+  {
+    "path": "xiaolun/scripts/reparse_heldout_pdfminer_20261023.py",
+    "bytes": 1256,
+    "sha256": "f740456009460784973a2371fe9782b776fb6d530c4a16902215b312652205c4"
+  },
+  {
+    "path": "xiaolun/scripts/run_heldout_qwen_20261023.py",
+    "bytes": 3969,
+    "sha256": "f321b249611485b1d478b4a9f09ee1723c89ff7ca504234f57fd9946bfe263c0"
+  },
+  {
+    "path": "xiaolun/scripts/run_heldout_qwen_bf16_20261023.py",
+    "bytes": 1524,
+    "sha256": "435b4ed7a8c58912fb47fe196f29ae628d8293be186a904345e1d58a1f646a22"
+  },
+  {
+    "path": "xiaolun/scripts/run_heldout_validation_20261023.py",
+    "bytes": 11068,
+    "sha256": "8793a975f9f63a3415c728519fca6acd107f1e8ed1752542774c15e7c13d7f0c"
+  },
+  {
+    "path": "xiaolun/scripts/score_heldout_validation_20261023.py",
+    "bytes": 8033,
+    "sha256": "10f6c12db8dc051fd64c0850611d68600d7bd390271af04bb9372e3eeb30d0f3"
+  },
+  {
+    "path": "xiaolun/scripts/check_llama_compat_20261023.py",
+    "bytes": 1221,
+    "sha256": "59e3a59da4b8471221afcbce0aa2b037f6fb3fa78e13e7d114e2421489a825d1"
+  },
+  {
+    "path": "xiaolun/scripts/check_llama_generic_20261023.py",
+    "bytes": 1104,
+    "sha256": "ad2f1c2593ebc9aa6ca9f4ebd55c4a47d66df1670f30d58f520a7ce1242d1132"
+  },
+  {
+    "path": "xiaolun/scripts/render_paper_wps_20261021.ps1",
+    "bytes": 1898,
+    "sha256": "9fe65a5e7c5e7c32c52ff6f3c7e1492be904857730117039429ca7c167a5595c"
+  },
+  {
+    "path": "prior_release/跨年Agent与跨模型案例_论文及实跑材料.zip",
+    "bytes": 29354387,
+    "sha256": "de3a58e4d7eadc2f395262ecf44787d07de60f8f0e4efb6fcc968ef27027a57a"
+  }
+]

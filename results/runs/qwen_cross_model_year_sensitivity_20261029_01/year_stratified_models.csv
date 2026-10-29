@@ -1,0 +1,9 @@
+﻿reference,year,model,planned_questions,observed_questions,nonempty_questions,companies_observed,schema_valid_count,citation_lists_valid_count,unknown_citation_id_count,malformed_citation_list_entry_count,schema_valid_rate_planned,citation_lists_valid_rate_planned,members_precision_macro_nonempty,members_recall_macro_nonempty,members_f1_macro_nonempty,meeting_count_exact_macro_nonempty,dates_precision_macro_nonempty,dates_recall_macro_nonempty,dates_f1_macro_nonempty,all_three_exact_macro_nonempty
+before_generation,2023,qwen06,4,4,4,4,0,0,0,31,0.0,0.0,0.63125,0.7166666666666667,0.6634615384615384,0.5,0.75,0.6166666666666667,0.6722222222222223,0.25
+before_generation,2023,k3_single,4,4,4,4,4,4,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+before_generation,2024,qwen06,4,4,4,4,0,0,0,35,0.0,0.0,0.6125,0.7083333333333334,0.6428571428571429,0.25,0.5336538461538461,0.5555555555555556,0.5279220779220779,0.0
+before_generation,2024,k3_single,4,4,4,4,4,4,0,0,1.0,1.0,1.0,0.9583333333333334,0.9772727272727273,1.0,1.0,0.8472222222222222,0.9058441558441559,0.5
+post_output_erratum,2023,qwen06,4,4,4,4,0,0,0,31,0.0,0.0,0.63125,0.7166666666666667,0.6634615384615384,0.5,0.75,0.6166666666666667,0.6722222222222223,0.25
+post_output_erratum,2023,k3_single,4,4,4,4,4,4,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+post_output_erratum,2024,qwen06,4,4,4,4,0,0,0,35,0.0,0.0,0.6125,0.6833333333333333,0.638095238095238,0.25,0.5336538461538461,0.5555555555555556,0.5279220779220779,0.0
+post_output_erratum,2024,k3_single,4,4,4,4,4,4,0,0,1.0,1.0,1.0,0.9083333333333333,0.9494949494949495,1.0,1.0,0.8472222222222222,0.9058441558441559,0.5

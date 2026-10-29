@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-28",
+  "status": "passed",
+  "source_manuscript": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源缺失配对口径修订候选稿_待终审.docx",
+  "source_sha256": "fb22a6c4e8828929d7b3cbb8fe881e98c0ffbe118b1a0b3faad933dd175a2f02",
+  "manuscript": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_回放范围限定候选稿_待终审.docx",
+  "manuscript_sha256": "dd442f55b34faec6b31a330578ed55df66918e8c719aeec22304e49608c2be91",
+  "scope": "Paragraph 131 now limits the replay statement to 16 successful candidate searches from one question across eight retrieval profiles.",
+  "replay_evidence": "results/runs/retrieval_candidate_trace_windows_20261016_01/candidate_trace_replay_results.json",
+  "replay_count": 16,
+  "successful_searches": 16,
+  "question_count": 1,
+  "profile_count": 8,
+  "verified": "Recorded channel candidates, fusion arithmetic, and final ranking are internally replay-consistent.",
+  "not_verified": [
+    "semantic relevance or answer quality",
+    "full primary-study replayability",
+    "human review accuracy or cost benefit"
+  ],
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat + PDFium at 120 dpi",
+    "pdf_sha256": "6dad6a64f1213a969ad8d715cbeef04c75109b231c1521ad248f957d2fb290b8",
+    "page_count": 21,
+    "changed_pages_vs_previous_pdf": [
+      17
+    ],
+    "visually_inspected_pages": [
+      17
+    ],
+    "source_unchanged": true
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0
+}
+

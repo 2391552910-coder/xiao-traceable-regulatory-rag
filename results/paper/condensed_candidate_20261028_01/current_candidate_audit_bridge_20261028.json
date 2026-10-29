@@ -1,0 +1,401 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_for_version_continuity_with_cfinrag_literature_and_reference_renumbering",
+  "current_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_补充CFinRAG相关工作候选稿_待终审.docx",
+    "sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+    "paragraph_count": 192,
+    "table_count": 12,
+    "drawing_objects": 8,
+    "revision_receipt": "current_candidate_cfinrag_revision_receipt_20261028.json"
+  },
+  "version_comparisons": [
+    {
+      "base": "numeric_content_audit_20261028.json manuscript",
+      "base_sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "current_vs_base_changed_body_paragraph_indices_zero_based": [
+        3,
+        6,
+        19,
+        45,
+        70,
+        91,
+        93,
+        105,
+        124,
+        125,
+        139,
+        146,
+        148,
+        179
+      ],
+      "table_cells_identical_current_vs_base": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd"
+    },
+    {
+      "base": "narrative_quantitative_audit_20261028.json candidate",
+      "base_sha256": "8bc095a505c70b4dabf569f175f1a1c35922345eafec1375b7f298df1244e9ee",
+      "current_vs_base_changed_body_paragraph_indices_zero_based": [
+        3,
+        6,
+        19,
+        45,
+        70,
+        91,
+        93,
+        105,
+        124,
+        125,
+        148,
+        179
+      ],
+      "all_12_tables_identical": true,
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd"
+    },
+    {
+      "base": "current_candidate_claim_audit_20261028.json Table 12 source candidate",
+      "base_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
+      "table_12_cells_identical": true,
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd"
+    },
+    {
+      "base": "prior current candidate after scoped semantic case review",
+      "base_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
+      "current_candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+      "changed_body_paragraph_indices_zero_based": [
+        124
+      ],
+      "appended_bibliography_reference": "[30]",
+      "all_12_tables_identical": true,
+      "all_21_media_hashes_identical": true,
+      "changed_package_parts": [
+        "word/document.xml"
+      ]
+    },
+    {
+      "base": "prior current candidate after case source citation [30] insertion",
+      "base_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+      "current_candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "changed_body_paragraph_indices_zero_based": [
+        12,
+        14,
+        117
+      ],
+      "changed_table_cells": {
+        "table_5_first_column_rows_1_based": [
+          3,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "all_other_table_cells_identical": true,
+      "all_21_media_hashes_identical": true,
+      "changed_package_parts": [
+        "word/document.xml"
+      ]
+    },
+    {
+      "base": "prior current candidate after supplement scope revision",
+      "base_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "current_candidate_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+      "changed_body_paragraph_indices_zero_based": [
+        20,
+        124
+      ],
+      "bibliography_change": "inserted new reference [30] for CFinRAG; existing CNINFO annual-report reference [30] renumbered to [31]",
+      "all_other_body_paragraphs_identical_after_reference_insertion_alignment": true,
+      "all_12_tables_identical": true,
+      "all_21_media_hashes_identical": true,
+      "changed_package_parts": [
+        "word/document.xml"
+      ]
+    }
+  ],
+  "receipt_mapping": [
+    {
+      "scope": "Chinese and English abstract claims and wording",
+      "paragraph_indices_zero_based": [
+        3,
+        6
+      ],
+      "receipt": "abstract_claim_alignment_current_candidate_20261028_v3.json",
+      "status": "abstract paragraph hashes remain unchanged from predecessor; scoped receipt is bound to predecessor candidate"
+    },
+    {
+      "scope": "HiREC description scope in related work",
+      "paragraph_indices_zero_based": [
+        19
+      ],
+      "receipt": "hirec_scope_revision_receipt_20261028.json; retrieval_corpus_citation_audit_20261028.md",
+      "status": "targeted wording correction; upstream citation audit alone is not a full current-version bibliography review"
+    },
+    {
+      "scope": "retrieval quota and A/R interleave implementation",
+      "paragraph_indices_zero_based": [
+        45
+      ],
+      "receipt": "retrieval_implementation_audit_20261028.json; retrieval_rule_revision_audit_20261028.json",
+      "status": "paragraph remains unchanged from predecessor and matches frozen code audit"
+    },
+    {
+      "scope": "service alias and reasoning budget limitations",
+      "paragraph_indices_zero_based": [
+        70,
+        148,
+        179
+      ],
+      "receipt": "reasoning_budget_claim_audit_20261029.json",
+      "status": "paragraphs match audited candidate; receipt covers these scoped edits"
+    },
+    {
+      "scope": "table and figure cross references",
+      "paragraph_indices_zero_based": [
+        91,
+        93,
+        105,
+        125
+      ],
+      "receipt": "cross_reference_audit_20261029.json",
+      "status": "existing table/figure references retained; paragraph 93 also adds reviewer-stratified sensitivity results, audited separately"
+    },
+    {
+      "scope": "quantitative prose and the unchanged law-version paragraph",
+      "paragraph_indices_zero_based": [
+        139,
+        146
+      ],
+      "receipt": "narrative_quantitative_audit_20261028.json; current_candidate_regulatory_source_audit_20261028.md",
+      "status": "paragraph 139 and legal paragraph 146 remain unchanged; paragraph 93 has separate reviewer-stratified audit"
+    },
+    {
+      "scope": "reviewer-stratified main paired effects",
+      "paragraph_indices_zero_based": [
+        93
+      ],
+      "receipt": "reviewer_sensitivity_revision_audit_20261028.json",
+      "status": "current candidate paragraph and source-analysis hashes verified; effects remain conditional on observed pairs"
+    },
+    {
+      "scope": "post-hoc Table 12 case semantic review against the full company annual report",
+      "paragraph_indices_zero_based": [
+        124
+      ],
+      "receipt": "case_semantic_audit_20261028.json",
+      "status": "full report identifies director status but has an internal committee-membership chronology conflict; paragraph separates retrieval-context omission from source inconsistency and does not infer legal compliance"
+    },
+    {
+      "scope": "official-source citation for post-hoc Table 12 annual-report case",
+      "paragraph_indices_zero_based": [
+        124,
+        185
+      ],
+      "receipt": "case_citation_reference_revision_receipt_20261028.json",
+      "status": "reference [30] added; all bibliography IDs [1]-[30] are cited and the new reference is bound to the CNINFO annual report"
+    },
+    {
+      "scope": "main manuscript to supplement cross-reference scope",
+      "paragraph_indices_zero_based": [
+        12,
+        14,
+        117
+      ],
+      "table_cells": "Table 5, first-column rows 3,4,5,6,8",
+      "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
+      "status": "current supplement contains S1 budget replay and S2 BM25/localization; source removal and service-version comparisons are explicitly labeled exploratory results in the main manuscript"
+    },
+    {
+      "scope": "method protocol and frozen retrieval implementation claims rebound to the current candidate",
+      "paragraph_indices_zero_based": [
+        44,
+        45,
+        49,
+        55,
+        65,
+        70,
+        75,
+        76,
+        78
+      ],
+      "receipt": "current_candidate_method_claim_rebind_20261028.json",
+      "status": "all nine scoped normalized paragraph hashes are identical to the previously audited predecessor; source protocol and audit hashes are recorded in the rebind receipt"
+    },
+    {
+      "scope": "Chinese and English abstract claim-to-analysis alignment rebound to the current candidate",
+      "paragraph_indices_zero_based": [
+        3,
+        6
+      ],
+      "receipt": "current_candidate_abstract_rebind_20261028.json",
+      "status": "both abstract text hashes match the scoped numerical audit candidate; reported values and analysis-source hashes are carried forward"
+    },
+    {
+      "scope": "CFinRAG adjacent-literature addition and annual-report citation renumbering",
+      "paragraph_indices_zero_based": [
+        20,
+        124
+      ],
+      "bibliography_ids": [
+        30,
+        31
+      ],
+      "receipt": "current_candidate_cfinrag_revision_receipt_20261028.json; cfinrag_citation_audit_20261028.md",
+      "status": "publisher metadata/method/data scope checked; all 31 references cited; only paragraphs 20/124 and bibliography entries changed; no result values changed"
+    }
+  ],
+  "limitations": [
+    "This bridge demonstrates text/table continuity between specifically hashed candidates and maps scoped receipts; it does not provide a fresh semantic review of every manuscript claim.",
+    "This is not an author-metadata review, target-journal template check, or acceptance assessment.",
+    "The reviewer-stratified sensitivity statement is conditional on the observed pairs and does not resolve missing-outcome uncertainty or substitute for a full semantic review.",
+    "Existing topic-specific source audits cover references [1]-[29] and remain inherited from their scoped source versions; reference [30] was added and checked against the official CNINFO report. This is not a fresh rereading of every cited full paper or every non-citation factual claim."
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "bibliography_integrity": {
+    "status": "passed_for_citation_id_completeness_with_scoped_source_audit_continuity",
+    "current_candidate_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+    "reference_count": 31,
+    "reference_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "all_references_cited_in_body": true,
+    "uncited_reference_ids": [],
+    "body_citation_ids_without_reference": [],
+    "comparison_base": {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx",
+      "sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1"
+    },
+    "bibliography_paragraphs_changed_vs_base": [
+      185,
+      186
+    ],
+    "body_paragraphs_changed_vs_base": [
+      20,
+      124
+    ],
+    "changed_citation_review": [
+      {
+        "item": "HiREC scope wording in related-work paragraph 19",
+        "receipt": "hirec_citation_delta_receipt_20261028.json",
+        "finding": "Changed only from over-narrow annual-report wording to standardized financial-document wording; official ACL source scope supports the correction."
+      },
+      {
+        "item": "Reference [13] CRAG publication form",
+        "receipt": "reference_13_citation_render_audit_20261028.json plus official arXiv record https://arxiv.org/abs/2401.15884",
+        "finding": "Current entry cites the 2024 arXiv preprint only; it does not carry forward the prior “AACL 2026 to appear” claim."
+      },
+      {
+        "item": "Reference [30] CFinRAG and renumbered reference [31] CNINFO annual report",
+        "receipt": "current_candidate_cfinrag_revision_receipt_20261028.json; cfinrag_citation_audit_20261028.md",
+        "finding": "Official ScienceDirect metadata supports the CFinRAG method, task, dataset scale, and bibliographic record; the CNINFO source remains the same report and its in-text citation was updated from [30] to [31]."
+      }
+    ],
+    "inherited_source_claim_audits": [
+      {
+        "references": "[1]-[11]",
+        "audit": "retrieval_corpus_citation_audit_20261028.md",
+        "carry_forward": "Bibliography entries unchanged; related-work paragraph 19 correction separately reviewed."
+      },
+      {
+        "references": "[12]-[23]",
+        "audit": "rag_method_eval_citation_audit_20261028.md",
+        "carry_forward": "Cited discussion is unchanged; reference [13] publication form is conservatively narrowed to arXiv and retained with original preprint URL."
+      },
+      {
+        "references": "[28]-[29]",
+        "audit": "annual_report_benchmark_citation_audit_20261028.md",
+        "carry_forward": "The ARQA/CFQA clauses in paragraph 20 and their bibliography entries are unchanged; paragraph 20 now also contains the separately audited CFinRAG addition."
+      },
+      {
+        "references": "[24]",
+        "audit": "reasoning_budget_claim_audit_20261029.json",
+        "carry_forward": "Current description and bibliography match the scoped audit; vendor documentation currently lists K3 default high and kimi-for-coding/K2.8 Preview default max, while manuscript correctly states runtime settings were not independently recorded."
+      },
+      {
+        "references": "[25]-[27]",
+        "audit": "current_candidate_regulatory_source_audit_20261028.md",
+        "carry_forward": "Current law-version paragraph is rebound to the current candidate SHA; source/version risks remain explicitly qualified."
+      },
+      {
+        "references": "[30]",
+        "audit": "cfinrag_citation_audit_20261028.md",
+        "carry_forward": "Publisher record checked; scope statement distinguishes graph-based event QA from the current controlled retrieval comparison."
+      },
+      {
+        "references": "[31]",
+        "audit": "case_citation_reference_revision_receipt_20261028.json",
+        "carry_forward": "Same CNINFO annual report as prior [30], renumbered without changing the citation target."
+      }
+    ],
+    "limitations": [
+      "This proves citation-number completeness and continuity with the listed scoped source audits; it is not a fresh rereading of all cited works or every factual claim.",
+      "It does not establish historical legal applicability for each question or validate all 355 answers semantically.",
+      "Author metadata and target-journal formatting remain unaudited."
+    ]
+  },
+  "revision_chain": [
+    {
+      "candidate_sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
+      "receipt": "case_semantic_audit_20261028.json",
+      "scope": "post-hoc full-report semantic review of Table 12 case; no compliance conclusion"
+    },
+    {
+      "candidate_sha256": "906fbba5a9693c987a074abd2ff71d86d1701183410f039f424716b6d0e635dd",
+      "receipt": "case_citation_reference_revision_receipt_20261028.json",
+      "scope": "adds official annual-report citation [30] in paragraph 124 and bibliography; WPS render checked"
+    },
+    {
+      "candidate_sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+      "receipt": "supplement_cross_reference_revision_receipt_20261028.json",
+      "scope": "corrected main-versus-supplement references in paragraphs 12, 14, and 117 and clarified Table 5 labels; no result values changed"
+    },
+    {
+      "candidate_sha256": "fcf7b66c0afe5168119f78023a70f9664ebc5037254c5ba5baf069ab525d81a7",
+      "receipt": "current_candidate_cfinrag_revision_receipt_20261028.json",
+      "scope": "added the closest located Chinese financial multi-source RAG study to related work, renumbered the case source, and visually verified changed pages; no experiment result changed"
+    }
+  ]
+}

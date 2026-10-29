@@ -1,0 +1,89 @@
+{
+  "script_sha256": "df16d570f8ce65e19ac6e2f9aad6232bcf58559a1914185fde25289848b49476",
+  "reference_manifest_sha256": "9f9c0f73fb0ae308394399dfd57f25d2deaca6ae5ad141b6acb5d425a9d91fc3",
+  "frozen_prepared_manifest_sha256": "08c79036ef6cfe0af946c3a787f22212dacf116b9cfb6a3853ac28c11473d30d",
+  "excluded_legacy_chunks": {
+    "DOC004": 51,
+    "DOC122": 66,
+    "DOC343": 218
+  },
+  "full_index_chunks": 19367,
+  "eligible_index_chunks": 19032,
+  "lexical_normalization": "Remove Unicode whitespace; compare overlapping exact12character shingles; no stemming, paraphrase or embeddings.",
+  "limitations": "Shared12character text may be boilerplate, cross-references or materially different versions. No new human equivalence/applicability judgments. Strict reference misses cannot prove semantic irrelevance.",
+  "summaries": [
+    {
+      "strategy": "merged",
+      "topic": "ALL",
+      "questions": 60,
+      "strict_reference_location_coverage_mean": 0.0,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.0058692587334213345,
+      "questions_with_any_source_agnostic_overlap": 21,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 21
+    },
+    {
+      "strategy": "merged",
+      "topic": "AUDIT_COMMITTEE",
+      "questions": 20,
+      "strict_reference_location_coverage_mean": 0.0,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.014364860855437834,
+      "questions_with_any_source_agnostic_overlap": 5,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 5
+    },
+    {
+      "strategy": "merged",
+      "topic": "DIVIDEND_DISCLOSURE",
+      "questions": 20,
+      "strict_reference_location_coverage_mean": 0.0,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.0032429153448261736,
+      "questions_with_any_source_agnostic_overlap": 16,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 16
+    },
+    {
+      "strategy": "merged",
+      "topic": "INTERNAL_CONTROL",
+      "questions": 20,
+      "strict_reference_location_coverage_mean": 0.0,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.0,
+      "questions_with_any_source_agnostic_overlap": 0,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 0
+    },
+    {
+      "strategy": "dual",
+      "topic": "ALL",
+      "questions": 60,
+      "strict_reference_location_coverage_mean": 0.03888888888888888,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.11882893357347862,
+      "questions_with_any_source_agnostic_overlap": 40,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 33
+    },
+    {
+      "strategy": "dual",
+      "topic": "AUDIT_COMMITTEE",
+      "questions": 20,
+      "strict_reference_location_coverage_mean": 0.0,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.152275355426188,
+      "questions_with_any_source_agnostic_overlap": 20,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 20
+    },
+    {
+      "strategy": "dual",
+      "topic": "DIVIDEND_DISCLOSURE",
+      "questions": 20,
+      "strict_reference_location_coverage_mean": 0.11666666666666665,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.2042114452942479,
+      "questions_with_any_source_agnostic_overlap": 20,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 13
+    },
+    {
+      "strategy": "dual",
+      "topic": "INTERNAL_CONTROL",
+      "questions": 20,
+      "strict_reference_location_coverage_mean": 0.0,
+      "source_agnostic_law_quote_12char_coverage_mean": 0.0,
+      "questions_with_any_source_agnostic_overlap": 0,
+      "questions_with_strict_miss_but_source_agnostic_overlap": 0
+    }
+  ]
+}
+

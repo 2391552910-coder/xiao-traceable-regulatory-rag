@@ -1,0 +1,45 @@
+{
+  "chinese_file": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx",
+  "chinese_sha256": "1d242b29f769e57f419a5d6ff9d2eab2225f96085be12822b40011ad6d990c45",
+  "english_file": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_evidence_units_20261029.docx",
+  "english_sha256": "7cf220f5682c98cec99ed0938e07d91e031293b11fa071e1c367fbdd7abf2b02",
+  "tables": [
+    {
+      "table_number": 5,
+      "data_cells_compared": 21,
+      "differences": []
+    },
+    {
+      "table_number": 6,
+      "data_cells_compared": 50,
+      "differences": []
+    },
+    {
+      "table_number": 7,
+      "data_cells_compared": 20,
+      "differences": []
+    },
+    {
+      "table_number": 8,
+      "data_cells_compared": 21,
+      "differences": []
+    },
+    {
+      "table_number": 9,
+      "data_cells_compared": 24,
+      "differences": []
+    },
+    {
+      "table_number": 10,
+      "data_cells_compared": 16,
+      "differences": []
+    },
+    {
+      "table_number": 11,
+      "data_cells_compared": 14,
+      "differences": []
+    }
+  ],
+  "method": "Compare signed numeric tokens within each corresponding non-header cell; normalise commas, en dash and minus.",
+  "limitations": "Cross-language consistency only; does not verify semantic labels, header meaning, original experimental data, figures or table 1–4 and 12."
+}

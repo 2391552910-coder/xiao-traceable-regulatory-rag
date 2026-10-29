@@ -22,7 +22,8 @@ class Evaluator:
     def evaluate(self, mode: str, stock_name: str, stock_code: str, year: int,
                  dimension_name: str, facts: str = "", regulations: str = "",
                  annual_evidence: str | None = None,
-                 query: str | None = None) -> dict:
+                 query: str | None = None,
+                 supplied_evidence_ids: set[str] | None = None) -> dict:
         template = PROMPT_BY_MODE[mode]
         prompt = template.format(
             stock_name=stock_name, stock_code=stock_code, year=year,
@@ -37,8 +38,24 @@ class Evaluator:
         result["mode"] = mode
         result["inline_citations"] = self.extract_inline_citations(
             result.get("evaluation", ""))
-        supplied_ids = set(EVIDENCE_ID_PATTERN.findall(
-            (annual_evidence if annual_evidence is not None else facts) + "\n" + regulations))
+        # The no-RAG template does not include either evidence argument.  An ID
+        # from a retrieved but undisclosed source must not resolve as supplied.
+        if mode == "no_rag":
+            supplied_ids = set()
+            id_method = "no_evidence_in_prompt"
+        elif supplied_evidence_ids is not None:
+            supplied_ids = set(supplied_evidence_ids)
+            id_method = "explicit_retrieval_ids"
+        else:
+            supplied_ids = set(EVIDENCE_ID_PATTERN.findall(
+                (annual_evidence if annual_evidence is not None else facts) + "\n" + regulations))
+            id_method = "text_pattern_fallback"
+        raw_citations = result.get("citations")
+        malformed_indices = ([i for i, item in enumerate(raw_citations)
+                              if not isinstance(item, dict)
+                              or not isinstance(item.get("evidence_id"), str)
+                              or not item["evidence_id"]]
+                             if isinstance(raw_citations, list) else [])
         citations = result.get("citations", [])
         if not isinstance(citations, list):
             citations = []
@@ -51,6 +68,43 @@ class Evaluator:
             {**item, "resolves_to_supplied_evidence": item["evidence_id"] in supplied_ids}
             for item in result["inline_citations"] if item.get("evidence_id")
         ]
+        if annual_evidence is not None:
+            claims = result.get("claims")
+            claim_rows = claims if isinstance(claims, list) else []
+            malformed_claim_indices = []
+            unresolved_claim_ids = set()
+            supported_claims_without_resolved_ids = []
+            for index, claim in enumerate(claim_rows):
+                ids = claim.get("evidence_ids") if isinstance(claim, dict) else None
+                if not isinstance(ids, list) or any(not isinstance(item, str) or not item for item in ids):
+                    malformed_claim_indices.append(index)
+                if isinstance(ids, list):
+                    unresolved_claim_ids.update(item for item in ids
+                                                if isinstance(item, str) and item not in supplied_ids)
+                if (isinstance(claim, dict) and claim.get("evidence_status") == "supported"
+                        and not (isinstance(ids, list) and any(
+                            isinstance(item, str) and item in supplied_ids for item in ids))):
+                    supported_claims_without_resolved_ids.append(index)
+            result["citation_diagnostics"] = {
+                "supplied_id_method": id_method,
+                "citation_list_valid": isinstance(raw_citations, list),
+                "malformed_citation_indices": malformed_indices,
+                "unresolved_declared_ids": sorted({item["evidence_id"]
+                    for item in result["citation_id_audit"]
+                    if not item["resolves_to_supplied_evidence"]}),
+                "unresolved_inline_ids": sorted({item["evidence_id"]
+                    for item in result["inline_citation_id_audit"]
+                    if not item["resolves_to_supplied_evidence"]}),
+                "claims_list_valid": isinstance(claims, list),
+                "malformed_claim_evidence_indices": malformed_claim_indices,
+                "unresolved_claim_ids": sorted(unresolved_claim_ids),
+                "supported_claims_without_resolved_ids": supported_claims_without_resolved_ids,
+                "inline_source_type_mismatches": [item for item in result["inline_citations"]
+                    if item.get("evidence_id") and
+                    ((item["source_type"] == "annual_report") != item["evidence_id"].startswith("A"))],
+                "semantic_support_verified": False,
+                "legal_applicability_verified": False,
+            }
         return result
 
     @staticmethod

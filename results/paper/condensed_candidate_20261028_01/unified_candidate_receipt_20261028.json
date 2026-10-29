@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Unify the corrected supplier-output manuscript by combining the audited current abstract and exact Table 12 excerpt with the numerically audited condensed manuscript.",
+  "output": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx",
+    "sha256": "1eb95d0496bdf354cfb60fb2df5225b375821c9d7f2d89be1e648a0beef8984c",
+    "pages": 21,
+    "tables": 12,
+    "inline_drawings": 8
+  },
+  "inputs": {
+    "numeric_base": {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
+      "sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+      "numeric_audit": "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json",
+      "numeric_audit_sha256": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94"
+    },
+    "abstract_and_table12_source": {
+      "path": "results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_摘要证据供给措辞修订_20261028.docx",
+      "sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
+      "claim_audit": "results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json",
+      "claim_audit_sha256": "7cf01da46c67dca21b71a3c9db454ad95df1fc9d2fa28e4cccd5ab079ee2b6ab"
+    }
+  },
+  "content_changes": [
+    "Replaced Chinese and English abstracts with the audited evidence-supply and observed-pair wording.",
+    "Replaced Table 12 G3 excerpt and citation-ID cells with the exact 120-character saved-response excerpt and A1-only citation mapping."
+  ],
+  "preserved_from_numeric_base": [
+    "Seed-20261028 20,000-draw company-cluster intervals, including G3-G1 [0.158, 0.430] and G3-NoRerank [-0.310, -0.130].",
+    "Supplier-only 355/400 scoring scope and S1-S2 supplement cross-reference."
+  ],
+  "package_parts_changed": [
+    "word/document.xml"
+  ],
+  "render": {
+    "receipt": "results/paper/condensed_candidate_20261028_01/render_unified_20261028/native_render_receipt.json",
+    "receipt_sha256": "b0d50541d9c1cdd47a8bf4efc26cee2747c45d533aabb60a586edbd7f1b70bed",
+    "pdf_sha256": "a1eb202ab0f0dff42fd0bf8a7dfbe4737454b487f4d71f1d2ef689638a432bfb",
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "page_count": 21,
+    "pixel_changed_pages_vs_numeric_base": [
+      1,
+      2,
+      3,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "all_pages_visually_inspected": true
+  },
+  "limitations": [
+    "Does not constitute a full semantic audit of all narrative claims or all 355 provider answers.",
+    "No new model calls or human labels.",
+    "Still needs author metadata and target-journal template; not a submission-final or acceptance claim."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "audit_date": "2026-10-29",
+  "status": "passed_core_candidate_reference_7_revision",
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx",
+    "sha256": "e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69",
+    "pre_edit_sha256": "d3c78d348a108f4de0fe20ec2b825543e7ff5cb17805095bdddb3371b18487a0",
+    "body_paragraph_count": 148,
+    "reference_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "body_citation_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "uncited_reference_ids": [],
+    "unresolved_body_citation_ids": []
+  },
+  "revision": {
+    "changed_package_entries": [
+      "word/document.xml"
+    ],
+    "changed_paragraphs": [
+      {
+        "index": 162,
+        "before_sha256": "de7dfe8b064fc32467a9b56a964ce5567f4bb5d335d76b110c776ca86ee4c7ad",
+        "after_sha256": "3f7edb964c0974dbef127a468d37728ce51ce401ef9ab410d9dfd32bec5c5e1d",
+        "reference_ids_before": [
+          7
+        ],
+        "reference_ids_after": [
+          7
+        ]
+      }
+    ],
+    "reference_7_before": "Robertson S, Zaragoza H. The Probabilistic Relevance Framework: BM25 and Beyond. Foundations and Trends in Information Retrieval 4(1–2), 2009: 1–174. https://doi.org/10.1561/1500000019",
+    "reference_7_after": "Robertson S, Zaragoza H. The Probabilistic Relevance Framework: BM25 and Beyond. Foundations and Trends in Information Retrieval 3(4), 2009: 333–389. https://doi.org/10.1561/1500000019"
+  },
+  "bibliography_cross_binding": {
+    "expanded_candidate_path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx",
+    "expanded_candidate_sha256": "ae92ac0ad0e150ec52366ef9bddc93622a9e6efc6db825d67777f71b3b553d9a",
+    "source_audit_path": "results/paper/condensed_candidate_20261028_01/candidate_bibliography_source_audit_20261029.md",
+    "source_audit_sha256": "bb54181da544f385978a854ce8add0de2d1f7c96bf89441636edf6e7ae760e49",
+    "reference_texts_identical_after_correction": true
+  },
+  "render": {
+    "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
+    "wps_used": false,
+    "page_count": 21,
+    "changed_pages_vs_pre_edit": [
+      19
+    ],
+    "visually_reviewed_pages": [
+      19
+    ],
+    "baseline_page_19_sha256": "827ab4f04b9bf897951052a54d5eb8f94d3ab8a258941f5e5d21217244f1a1dc",
+    "current_page_19_sha256": "0dbd3ccb3fd592194a4557625401dfd9baef704fa09e17c585d00baced859c3a",
+    "baseline_pdf_sha256": "f3d8bf97e9e6b9a8fcb3089f391e1a13a680871b82dff8b2db3ce95e1a5430e2",
+    "current_pdf_sha256": "3c75df5829bf143892c5413842ac78da497802021bcdab7c253a81c3a86188bb",
+    "baseline_page_hashes": {
+      "page-1.png": "4815c60b29ed77a06dc132ec59dd43b939b4f859913cabe268912b1518efaa7e",
+      "page-2.png": "257ade462477290ded491e3e25515064f9d036c8426f3e1659599b55ad1fc6f9",
+      "page-3.png": "fcce34152fd79c1f7540bab7aa1f2d5eeebe7463de7752966abdbfa6757cf9f6",
+      "page-4.png": "16d3b109a98aeeba772e1c7b8762d368dd18d99a8c21f2a0b4668f023d397b64",
+      "page-5.png": "cfd61dfa68fb987a4a9e7130764a4445c8dbe937d877f4fae0376fc519531419",
+      "page-6.png": "f65d4c04ba94390113f3d90341a8abbfc93942a09d7b453ce6fdf04355f47ea7",
+      "page-7.png": "dbb378e441d2df42c19912d299bb3224b8dd2185e6ca5f0048274480b760653f",
+      "page-8.png": "191e23f17301084c85bf13d1f35cbeb0e14b6edb61fcab6335d92ed79dd28495",
+      "page-9.png": "7d5214f67df89844e3c3b627848ebcba25a36d95a7d0f7b45765035c0eb85ace",
+      "page-10.png": "6acb82bd61c3590a73c32b51870aa1aa855c5b845c2048a0f8e6ba811ea9b0a6",
+      "page-11.png": "fc4f0a206dbadd529f2dc60c16ed392e80f71461670896b24e485efc414c7003",
+      "page-12.png": "607fcbcf99b7f3802049290ea676442435c735ff5173f31edfdf0e892ed514d6",
+      "page-13.png": "ae9cc12519cc24c2b667106da7a85015d0dc3dcfa59a176471f36374e6e696ed",
+      "page-14.png": "7311204a99001ea75c96c1ebad81857e285de5f4faf7132cd85f3a8351ee6dfb",
+      "page-15.png": "5422021352220a579a02bbe7db8bd7c83a171b40c03527c8f7a0054687765922",
+      "page-16.png": "603317ffb95b4636d7741a28d800c799c0a54a7efcace1f2ac0ca6beb514da57",
+      "page-17.png": "983f57ac98d37a01c468703f5b967e3f767f2dc879c8df948adaa46ee0894642",
+      "page-18.png": "9ff8d14200a16344808503261bd8ff45e1ca34c8f424f88c7bba9e8120882336",
+      "page-19.png": "827ab4f04b9bf897951052a54d5eb8f94d3ab8a258941f5e5d21217244f1a1dc",
+      "page-20.png": "1097b8d88ad3349d6ae1f63b16e0934d57bb635660b58bd7b76b3b3901949c5b",
+      "page-21.png": "ccf42a573ed386ef18df3dfe3a143ec951d59ec900027249ea71684d7b9dd203"
+    },
+    "current_page_hashes": {
+      "page-1.png": "4815c60b29ed77a06dc132ec59dd43b939b4f859913cabe268912b1518efaa7e",
+      "page-2.png": "257ade462477290ded491e3e25515064f9d036c8426f3e1659599b55ad1fc6f9",
+      "page-3.png": "fcce34152fd79c1f7540bab7aa1f2d5eeebe7463de7752966abdbfa6757cf9f6",
+      "page-4.png": "16d3b109a98aeeba772e1c7b8762d368dd18d99a8c21f2a0b4668f023d397b64",
+      "page-5.png": "cfd61dfa68fb987a4a9e7130764a4445c8dbe937d877f4fae0376fc519531419",
+      "page-6.png": "f65d4c04ba94390113f3d90341a8abbfc93942a09d7b453ce6fdf04355f47ea7",
+      "page-7.png": "dbb378e441d2df42c19912d299bb3224b8dd2185e6ca5f0048274480b760653f",
+      "page-8.png": "191e23f17301084c85bf13d1f35cbeb0e14b6edb61fcab6335d92ed79dd28495",
+      "page-9.png": "7d5214f67df89844e3c3b627848ebcba25a36d95a7d0f7b45765035c0eb85ace",
+      "page-10.png": "6acb82bd61c3590a73c32b51870aa1aa855c5b845c2048a0f8e6ba811ea9b0a6",
+      "page-11.png": "fc4f0a206dbadd529f2dc60c16ed392e80f71461670896b24e485efc414c7003",
+      "page-12.png": "607fcbcf99b7f3802049290ea676442435c735ff5173f31edfdf0e892ed514d6",
+      "page-13.png": "ae9cc12519cc24c2b667106da7a85015d0dc3dcfa59a176471f36374e6e696ed",
+      "page-14.png": "7311204a99001ea75c96c1ebad81857e285de5f4faf7132cd85f3a8351ee6dfb",
+      "page-15.png": "5422021352220a579a02bbe7db8bd7c83a171b40c03527c8f7a0054687765922",
+      "page-16.png": "603317ffb95b4636d7741a28d800c799c0a54a7efcace1f2ac0ca6beb514da57",
+      "page-17.png": "983f57ac98d37a01c468703f5b967e3f767f2dc879c8df948adaa46ee0894642",
+      "page-18.png": "9ff8d14200a16344808503261bd8ff45e1ca34c8f424f88c7bba9e8120882336",
+      "page-19.png": "0dbd3ccb3fd592194a4557625401dfd9baef704fa09e17c585d00baced859c3a",
+      "page-20.png": "1097b8d88ad3349d6ae1f63b16e0934d57bb635660b58bd7b76b3b3901949c5b",
+      "page-21.png": "ccf42a573ed386ef18df3dfe3a143ec951d59ec900027249ea71684d7b9dd203"
+    }
+  },
+  "new_model_calls": 0,
+  "new_human_annotations": 0,
+  "checks": {
+    "pre_edit_sha_matches_current_submission_candidate": true,
+    "only_word_document_xml_changed": true,
+    "only_bibliography_paragraph_7_changed": true,
+    "reference_7_uses_original_article_preferred_citation": true,
+    "references_contiguous_1_to_31": true,
+    "all_references_cited": true,
+    "no_unresolved_body_citation_ids": true,
+    "core_and_expanded_bibliographies_match": true,
+    "codex_render_is_21_pages": true,
+    "only_page_19_differs": true,
+    "changed_page_visually_reviewed": true,
+    "wps_not_used": true,
+    "no_new_model_calls_or_annotations": true
+  },
+  "scope_limits": [
+    "Bibliographic correction and candidate/package/render binding only; not a full semantic review of every claim or all 355 answers.",
+    "Does not establish answer accuracy, standard retrieval Precision/Recall, historical legal applicability, authorship metadata, journal-template compliance, or acceptance readiness."
+  ]
+}

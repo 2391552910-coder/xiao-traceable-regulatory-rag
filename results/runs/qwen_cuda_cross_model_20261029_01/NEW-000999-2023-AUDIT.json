@@ -1,0 +1,54 @@
+{
+  "question": {
+    "question_id": "NEW-000999-2023-AUDIT",
+    "company_name": "华润三九",
+    "stock_code": "000999",
+    "report_year": 2023,
+    "query": "根据华润三九2023年年度报告，提取报告期内审计委员会的所有成员姓名（期间换届或变更时取报告明确披露的并集）、全年会议总次数、报告明确列示的所有会议日期。只计审计委员会，不计其他专门委员会。会议次数和不同日期数量可能不同，不据日期去重数倒推会议次数。"
+  },
+  "packet": "NEW-000999-2023-AUDIT.json",
+  "packet_sha256": "bb54821da07634ae64379425d7ea7e4efd68203ce599a2e1979c9093096b5779",
+  "seed": 20261025,
+  "started_utc": "2026-10-29T05:04:25.760974+00:00",
+  "status": "completed",
+  "text": "{\n  \"members\": [\n    \"邱华伟\",\n    \"白晓松\",\n    \"赵炳祥\",\n    \"于舒天\",\n    \"姚兴田\"\n  ],\n  \"meeting_count\": null,\n  \"meeting_dates\": [\n    \"2023-03-27\",\n    \"2023-04-28\",\n    \"2023-08-28\",\n    \"2023-10-27\"\n  ],\n  \"citations\": {\n    \"members\": [\n      \"A1\",\n      \"A2\",\n      \"A3\",\n      \"A4\"\n    ],\n    \"meeting_count\": null,\n    \"meeting_dates\": [\n      \"2023-03-27\",\n      \"2023-04-28\",\n      \"2023-08-28\",\n      \"2023-10-27\"\n    ]\n  },\n  \"limitations\": [\n    \"未知成员或日期用空列表\",\n    \"未知次数用null\"\n  ]\n}",
+  "parsed": {
+    "members": [
+      "邱华伟",
+      "白晓松",
+      "赵炳祥",
+      "于舒天",
+      "姚兴田"
+    ],
+    "meeting_count": null,
+    "meeting_dates": [
+      "2023-03-27",
+      "2023-04-28",
+      "2023-08-28",
+      "2023-10-27"
+    ],
+    "citations": {
+      "members": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "meeting_count": null,
+      "meeting_dates": [
+        "2023-03-27",
+        "2023-04-28",
+        "2023-08-28",
+        "2023-10-27"
+      ]
+    },
+    "limitations": [
+      "未知成员或日期用空列表",
+      "未知次数用null"
+    ]
+  },
+  "finish_reason": "eos",
+  "prompt_tokens": 4658,
+  "completion_tokens": 233,
+  "elapsed_seconds": 34.422
+}

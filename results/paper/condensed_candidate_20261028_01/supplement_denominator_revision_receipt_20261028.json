@@ -1,0 +1,51 @@
+{
+  "rendering": {
+    "pages": 3,
+    "pdf_sha256": "eb9abc35f0483ec6b29c0f6f5096f4f3ac66c380d32a3236a204d3f814193902",
+    "visually_inspected_pages": [
+      1,
+      2,
+      3
+    ],
+    "pixel_identical_to_previous_render_pages": [
+      1,
+      2
+    ],
+    "method": "WPS read-only ExportAsFixedFormat; PDFium rasterization",
+    "changed_pages": [
+      3
+    ],
+    "receipt_path": "results\\paper\\condensed_candidate_20261028_01\\render_supplement_denominator_revision_20261028\\native_render_receipt.json",
+    "source_unchanged": true
+  },
+  "edits": [
+    {
+      "target": "Table S3 heading",
+      "before": "PDF-only 40-question page coverage",
+      "after": "PDF page-level coverage, n=120 target locations"
+    },
+    {
+      "after": "States that PDF page-level coverage uses 40 questions and 120 target locations, while TXT-source matching uses 20 questions; the denominators differ.",
+      "target": "Table S3 caption"
+    }
+  ],
+  "limitations": [
+    "This clarification does not create new relevance labels or standard retrieval Precision/Recall.",
+    "The underlying 5.83% remains a strict page-location proxy, not semantic recall."
+  ],
+  "purpose": "Clarify the denominators in Supplementary Table S3 without changing any analysis result.",
+  "source_revision": {
+    "current_sha256": "d6435f6ea5d787040012da0b3655040f3171443abc8bf592701ad53235882007",
+    "previous_bytes": 1560057,
+    "previous_sha256": "a35bb3b60af4bb7ecdf33b60e2f803d37e9ac87b91df70d877eb6bfeb1658c2d",
+    "current_bytes": 1560095
+  },
+  "verified_basis": {
+    "fresh_bm25_txt_source_hits": "18/20 merged and 20/20 dual",
+    "fresh_bm25_pdf_page_hits": "0/120 for both strategies",
+    "cached_merged_pdf_page_hits": "0/120 = 0%",
+    "cached_dual_pdf_page_hits": "7/120 = 5.83%",
+    "analysis_values_changed": false
+  },
+  "audit_date": "2026-10-28"
+}

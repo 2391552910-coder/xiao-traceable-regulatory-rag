@@ -1,0 +1,7 @@
+# Preserve frozen inputs, results and code bytes across platforms.
+data/annotation/** -text
+data/knowledge_base/*.txt -text
+results/paper/** -text
+results/runs/** -text
+scripts/** -text
+src/** -text

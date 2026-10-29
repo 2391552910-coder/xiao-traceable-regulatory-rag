@@ -1,0 +1,1018 @@
+{
+  "scope": "Post-hoc mechanical ID audit only; neither correctness nor semantic citation support is evaluated.",
+  "source_score_sha256": "3e2520d0ae5b2011edd2cd29487246a44b1f003fb9ef30ca546f4fcb5febbbec",
+  "script_sha256": "43d83524500f5e89884c1ddc3999a3f8cc5b5ecce3412f57b36667db26a39bd2",
+  "summaries": [
+    {
+      "condition": "baseline",
+      "answers": 8,
+      "schema_valid": 0,
+      "all_fields_nonempty_and_resolved": 0,
+      "all_present_values_cited": 0,
+      "answers_with_malformed_citation_values": 4,
+      "answers_with_unknown_ids": 0
+    },
+    {
+      "condition": "schema_example",
+      "answers": 8,
+      "schema_valid": 3,
+      "all_fields_nonempty_and_resolved": 2,
+      "all_present_values_cited": 2,
+      "answers_with_malformed_citation_values": 1,
+      "answers_with_unknown_ids": 0
+    }
+  ],
+  "per_answer": [
+    {
+      "condition": "baseline",
+      "question_id": "NEW-000651-2023-AUDIT",
+      "result_sha256": "38d118f65d6bc5b0902778753c2d84fbdaebe36467d09deb026b7e3a4c448607",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": 4,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-000651-2023-AUDIT",
+      "result_sha256": "223598c5812dd8a2d3d5ec1be6b19b9a78abad6c7289c168c484a66ce4978158",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-000651-2024-AUDIT",
+      "result_sha256": "e5af97cfd45bf6179b6f64becfb294937f3840329852b45d1d84d679110ac41a",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-000651-2024-AUDIT",
+      "result_sha256": "7d627094d6d45ee65f688b8a1869528cb9baf5bb4f699947293fa2c969b248a1",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": true,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "2024-04-29"
+          ],
+          "malformed": [
+            "2024-04-29"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": true,
+          "raw": [
+            "2024-04-29"
+          ],
+          "malformed": [
+            "2024-04-29"
+          ],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "2024-04-29"
+          ],
+          "malformed": [
+            "2024-04-29"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-000999-2023-AUDIT",
+      "result_sha256": "9c03ef126b71857dabd14dd918eabd81cab9672faea9480f350ad4d5ad8afc90",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "2023-03-27",
+            "2023-04-28",
+            "2023-08-28",
+            "2023-10-27"
+          ],
+          "malformed": [
+            "2023-03-27",
+            "2023-04-28",
+            "2023-08-28",
+            "2023-10-27"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-000999-2023-AUDIT",
+      "result_sha256": "9eac00d1378fc9360fd1c7a4d20c4475c1c9e8f3c6a481d6a4b256a7640e517a",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": true,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        }
+      },
+      "all_fields_nonempty_and_resolved": true,
+      "all_present_values_cited": true
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-000999-2024-AUDIT",
+      "result_sha256": "12eeafa085f41163a15c333ae8e3e7babb660694224887eabf7ad33fbef1671a",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "邱华伟",
+            "白晓松",
+            "崔兴品",
+            "于舒天",
+            "梁柱强",
+            "吴文多",
+            "周辉",
+            "贺震旦",
+            "李梦涓",
+            "孙健"
+          ],
+          "malformed": [
+            "邱华伟",
+            "白晓松",
+            "崔兴品",
+            "于舒天",
+            "梁柱强",
+            "吴文多",
+            "周辉",
+            "贺震旦",
+            "李梦涓",
+            "孙健"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "2024-01-04",
+            "2024-01-06",
+            "2024-01-15",
+            "2024-01-16",
+            "2024-01-04",
+            "2024-01-06",
+            "2024-01-15",
+            "2024-01-16",
+            "2024-01-04",
+            "2024-01-06",
+            "2024-01-15",
+            "2024-01-16",
+            "2024-01-04",
+            "2024-01-06"
+          ],
+          "malformed": [
+            "2024-01-04",
+            "2024-01-06",
+            "2024-01-15",
+            "2024-01-16",
+            "2024-01-04",
+            "2024-01-06",
+            "2024-01-15",
+            "2024-01-16",
+            "2024-01-04",
+            "2024-01-06",
+            "2024-01-15",
+            "2024-01-16",
+            "2024-01-04",
+            "2024-01-06"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-000999-2024-AUDIT",
+      "result_sha256": "ba8a48503551253ee4ad6b05f4ae14a9effd4745800be059e78ee663f09da110",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-600036-2023-AUDIT",
+      "result_sha256": "aefd710ad9ffcb7d6b1343ad06264f7926de47db01f67d7353cbd619d317ef45",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "缪建民",
+            "孙云飞",
+            "周松",
+            "张健",
+            "陈冬",
+            "胡建华",
+            "洪小源",
+            "苏敏"
+          ],
+          "malformed": [
+            "缪建民",
+            "孙云飞",
+            "周松",
+            "张健",
+            "陈冬",
+            "胡建华",
+            "洪小源",
+            "苏敏"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "2023-01-17",
+            "2023-02-16",
+            "2023-03-03",
+            "2023-03-22",
+            "2023-03-24",
+            "2023-04-26",
+            "2023-04-28",
+            "2023-05-31",
+            "2023-06-19",
+            "2023-06-30",
+            "2023-08-04",
+            "2023-08-23",
+            "2023-08-25",
+            "2023-09-19",
+            "2023-09-26",
+            "2023-10-19",
+            "2023-10-27",
+            "2023-12-1",
+            "2023-12-28"
+          ],
+          "malformed": [
+            "2023-01-17",
+            "2023-02-16",
+            "2023-03-03",
+            "2023-03-22",
+            "2023-03-24",
+            "2023-04-26",
+            "2023-04-28",
+            "2023-05-31",
+            "2023-06-19",
+            "2023-06-30",
+            "2023-08-04",
+            "2023-08-23",
+            "2023-08-25",
+            "2023-09-19",
+            "2023-09-26",
+            "2023-10-19",
+            "2023-10-27",
+            "2023-12-1",
+            "2023-12-28"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-600036-2023-AUDIT",
+      "result_sha256": "29153b78eeaebd4182b109c7b3eb160c15166618333a70d7dd9805b74f1be4b5",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": true,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": true
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": true
+        }
+      },
+      "all_fields_nonempty_and_resolved": true,
+      "all_present_values_cited": true
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-600036-2024-AUDIT",
+      "result_sha256": "1b82b2bdb7fc3cbdde34aa23953091f09a5802d084f340bff55c5109fc28dfe0",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "缪建民",
+            "王良",
+            "孙云飞",
+            "周松",
+            "张健",
+            "陈冬",
+            "李健",
+            "朱江涛",
+            "李健"
+          ],
+          "malformed": [
+            "缪建民",
+            "王良",
+            "孙云飞",
+            "周松",
+            "张健",
+            "陈冬",
+            "李健",
+            "朱江涛",
+            "李健"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": false,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "2024-03-12",
+            "2024-03-19",
+            "2024-04-3",
+            "2024-04-25",
+            "2024-05-14",
+            "2024-06-21",
+            "2024-06-28",
+            "2024-08-15",
+            "2024-08-23",
+            "2024-09-29",
+            "2024-10-29",
+            "2024-11-29",
+            "2024-12-27"
+          ],
+          "malformed": [
+            "2024-03-12",
+            "2024-03-19",
+            "2024-04-3",
+            "2024-04-25",
+            "2024-05-14",
+            "2024-06-21",
+            "2024-06-28",
+            "2024-08-15",
+            "2024-08-23",
+            "2024-09-29",
+            "2024-10-29",
+            "2024-11-29",
+            "2024-12-27"
+          ],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-600036-2024-AUDIT",
+      "result_sha256": "c7baf6dcfc25c7743f5919058ffc4ccf3c60414927eedac26d2ead96cb01935d",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-603288-2023-AUDIT",
+      "result_sha256": "59bbdc1246edbe9fbcba9c8c058bc4cdcb42318439155fdf1b4a79ec4cbe011a",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": 3,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-603288-2023-AUDIT",
+      "result_sha256": "3601a55daf6c924d36a7d2291039bd9106b4b32cc86010057026072b1440f4a3",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "baseline",
+      "question_id": "NEW-603288-2024-AUDIT",
+      "result_sha256": "e3a21398425e3dbc86bafeb7e16c22f42fc4642fd44df5e6cb207b6d859df2fb",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": 6,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": true,
+          "raw": [
+            "A1",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5"
+          ],
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": true
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    },
+    {
+      "condition": "schema_example",
+      "question_id": "NEW-603288-2024-AUDIT",
+      "result_sha256": "a8da015f0d0b42658802ce59e06a4be468a801443c4aabf38771601c55d6bbfd",
+      "supplied_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "schema_valid": false,
+      "fields": {
+        "members": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_count": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        },
+        "meeting_dates": {
+          "citation_list_valid": false,
+          "raw": null,
+          "malformed": [],
+          "unknown": [],
+          "has_answer_value": true,
+          "has_resolved_citation": false
+        }
+      },
+      "all_fields_nonempty_and_resolved": false,
+      "all_present_values_cited": false
+    }
+  ]
+}

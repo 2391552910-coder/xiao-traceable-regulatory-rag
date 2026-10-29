@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-28",
+  "source": "年报与法规双源RAG_统一主文_BM25书目更正候选稿_待终审.docx",
+  "source_sha256": "a98393b7da6da0e0954e4c41836e6201898e646f467f79831e358da58df82816",
+  "output": "年报与法规双源RAG_统一主文_引言检索表述收窄候选稿_待终审.docx",
+  "output_sha256": "76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a",
+  "scope": "Paragraph index 10 only. Replaced a broad generalization about traditional retrieval with a statement specific to the manuscript's merged-candidate retrieval condition.",
+  "old_text": "传统检索往往把片段按问题相关性放入同一个排序列表，但语义相似度并不编码证据在论证中的角色。",
+  "new_text": "在合并候选检索设置中，两类片段进入同一个按问题相关性排序的候选列表；相关性排序本身并不显式编码证据在论证中的角色。",
+  "package_part_hash_comparison": {
+    "source_parts": 39,
+    "output_parts": 39,
+    "changed_parts": ["word/document.xml"]
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat; PDFium rasterization at 120 dpi",
+    "source_pdf_sha256": "d50287afc189f799af29557e45fa41291da97e56c84bf5821e56274d7b664996",
+    "output_pdf_sha256": "5e05ffe113bd5f3700f92283d628899624a28d2343e8d78df08ee29646da6320",
+    "pages_source": 21,
+    "pages_output": 21,
+    "pixel_changed_pages": [2],
+    "changed_page_visual_review": "Page 2 inspected at original resolution; text, figure 1 and caption remain legible with no clipping or overlap.",
+    "source_unchanged_during_export": true
+  },
+  "limitations": [
+    "This is a framing clarification and does not add empirical support for general retrieval prevalence.",
+    "No data, scores, tables, figures, citations, or conclusions were changed.",
+    "This receipt is not a full-manuscript semantic or journal-format audit."
+  ]
+}
+

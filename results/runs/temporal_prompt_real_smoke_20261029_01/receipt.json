@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "scope": "One previously used real annual report and rule text, TF-IDF plus mock generator; integration only.",
+  "annual_pdf_sha256": "ca56f9046552eb8d01b1b61fa16c3f8a9e2d6100063607a5e60dc7a7327fda75",
+  "annual_pages_scanned": [
+    1,
+    2
+  ],
+  "date": "2024-12-31",
+  "date_basis": "hypothetical test input, not verified event",
+  "regulation_document_id": "DOC004",
+  "regulation_source_sha256": "7f5f814f1ccc76d71d8f98c3639aa6527b6a02df505ed8c20a9d26578f3021ac",
+  "regulation_hits": 5,
+  "unknown_relation_hits": 5,
+  "per_hit_unknown_and_unverified_notice_confirmed": true,
+  "prompt_sha256": "94062b0539feec5be53e7d6c82395e413bde666467bb0765c35bcec94c23eb5b",
+  "answer_sha256": "1efb659a343c872c2d0078a233023883f5f574fd5bf04a4269e255f7e6270106",
+  "cli_sha256": "eceb853dd63d99e10812ff6bc9e9da6b159f4ac9c7b9eaa6c5f723fb4fe780ec",
+  "pipeline_sha256": "5dfc506c8013b125b5c04925c93c07af21100823261a61aefbb10ded9feb9f41",
+  "semantic_support_verified": false,
+  "legal_applicability_verified": false,
+  "generation": "mock, no model inference",
+  "new_human_labels": 0,
+  "limitations": [
+    "Single case and only two annual-report pages.",
+    "All retrieved rule intervals were unknown; known-interval behavior is fixture-tested.",
+    "Exact notice presence does not verify real model behavior or legal applicability."
+  ]
+}

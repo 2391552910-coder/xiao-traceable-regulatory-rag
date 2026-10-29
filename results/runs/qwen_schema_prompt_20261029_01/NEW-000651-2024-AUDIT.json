@@ -1,0 +1,42 @@
+{
+  "question": {
+    "question_id": "NEW-000651-2024-AUDIT",
+    "company_name": "格力电器",
+    "stock_code": "000651",
+    "report_year": 2024,
+    "query": "根据格力电器2024年年度报告，提取报告期内审计委员会的所有成员姓名（期间换届或变更时取报告明确披露的并集）、全年会议总次数、报告明确列示的所有会议日期。只计审计委员会，不计其他专门委员会。会议次数和不同日期数量可能不同，不据日期去重数倒推会议次数。"
+  },
+  "packet": "NEW-000651-2024-AUDIT.json",
+  "packet_sha256": "19ec0a877a0bf970e27482bc107254c6eab01d743f7c08b620e613721e6e6de9",
+  "seed": 20261024,
+  "started_utc": "2026-10-29T05:24:41.463571+00:00",
+  "status": "completed",
+  "text": "{\n  \"members\": [\"刘姝威\", \"王晓华\", \"张伟\"],\n  \"meeting_count\": null,\n  \"meeting_dates\": [\"2024-04-29\"],\n  \"citations\": {\n    \"members\": [\"2024-04-29\"],\n    \"meeting_count\": [\"2024-04-29\"],\n    \"meeting_dates\": [\"2024-04-29\"]\n  },\n  \"limitations\": []\n}",
+  "parsed": {
+    "members": [
+      "刘姝威",
+      "王晓华",
+      "张伟"
+    ],
+    "meeting_count": null,
+    "meeting_dates": [
+      "2024-04-29"
+    ],
+    "citations": {
+      "members": [
+        "2024-04-29"
+      ],
+      "meeting_count": [
+        "2024-04-29"
+      ],
+      "meeting_dates": [
+        "2024-04-29"
+      ]
+    },
+    "limitations": []
+  },
+  "finish_reason": "eos",
+  "prompt_tokens": 5007,
+  "completion_tokens": 107,
+  "elapsed_seconds": 22.078
+}

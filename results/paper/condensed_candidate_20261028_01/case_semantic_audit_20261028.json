@@ -1,0 +1,90 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_for_case_source_transcription_and_scoped_semantic_revision",
+  "source_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性补充候选稿_待终审.docx",
+    "sha256": "b6f1688c6a691e8c16ff878b3917354c8069ea38f10b6b8e4ed7924a1ac83667"
+  },
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分者分层敏感性与案例语义核查修订候选稿_待终审.docx",
+    "sha256": "40f27dc033862fa2cfb57c95865755f34c68449c73cd9320cdc417297fe45eb4",
+    "changed_body_paragraph_indices_zero_based": [
+      124
+    ],
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "table_count": 12,
+    "all_table_cells_unchanged": true,
+    "drawing_count": 8,
+    "drawings_unchanged": true
+  },
+  "case_id": "HOLDOUT-002475SZ-2024-AUDIT_COMMITTEE",
+  "original_response_receipt": "results/paper/primary_provider_candidate_20261028_01/table12_exact_excerpt_audit_20261028.json",
+  "review_scope": [
+    "G3 response and retrieved A1/A4 context were compared with Table 12 transcription; the retrieved excerpt did not include the annual-report board-profile section that identifies director status.",
+    "The official 2024 annual report identifies Liu Zhonghua, Song Yuhong, and Hou Lingling as independent directors and Zhang Ying as a departed independent director; a personnel-change entry gives Zhang Ying departure date as 2024-05-18.",
+    "The audit-committee meeting table nevertheless lists Zhang Ying among four members for meetings dated 2024-08-23 and 2024-10-25, creating an internal chronology conflict in the report.",
+    "The reviewed committee-meeting entries do not identify a convener; regulations in the retrieved context were not verified for historical applicability."
+  ],
+  "primary_source": {
+    "title": "立讯精密工业股份有限公司2024年年度报告",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-04-26/1223326862.PDF",
+    "source_sections": "董事、监事和高级管理人员情况/变动情况；董事会下设专门委员会在报告期内的情况",
+    "verified_passages": {
+      "director_roster": "PDF text around printed pp.54–55: Liu, Song, Hou shown independent; Zhang shown as departed independent; personnel change entry says 2024-05-18.",
+      "audit_committee": "PDF text around printed pp.60–61: meeting table records four named members and lists Zhang for 2024-08-23 and 2024-10-25."
+    }
+  },
+  "revision": {
+    "paragraph_index_zero_based": 124,
+    "paragraph_sha256": "d0c4c8853187b23ebb49cf3efa856f4ca93c5b3a98d5b33812be192bdcf54a20",
+    "meaning": "Distinguishes retrieved-context omission from annual-report internal inconsistency; does not infer regulatory compliance."
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_wps_case_semantic_20261028/paper_native.pdf",
+    "pdf_sha256": "dfaa94c99a7aabccba6fa936464721b34da7c5f504981ceff8ba8e83433e4eed",
+    "page_count": 21,
+    "changed_pages_vs_previous_same_renderer": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "pixel_identical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      21
+    ],
+    "visually_inspected_pages": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "visual_result": "New case paragraph readable; Table 12 remains on page 16 without clipping; no overlap or clipping observed on changed pages."
+  },
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "This is one post-hoc qualitative case, not evidence about all 355 answers or a treatment effect.",
+    "The report-internal membership chronology conflict prevents a definitive reconstruction of committee membership at every 2024 date.",
+    "No legal-compliance conclusion is made; historical applicability of the retrieved regulations remains unverified."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "8 paired saved prompts; one local Qwen output each; project parser and existing assistant-extracted references; no independent semantic validation or new human annotation.",
+  "outputs": 8,
+  "successful": 8,
+  "all_finish_eos": true,
+  "reference": "post-output corrected plus original sensitivity in score summary",
+  "wps_pages_chinese": 22,
+  "wps_pages_english": 24,
+  "visual_checks": "WPS rendered; changed pages Chinese 18-22 and English 20-24 inspected, final incremental edits Chinese 19,22 and English 21,24 inspected.",
+  "standard_renderer": "unavailable: soffice.exe missing",
+  "files_sha256": {
+    "scripts\\smoke_qwen_cuda_20261029.py": "c023ca8e0c93b06cbb7dbd33c17e1acb42b10f89ddabb03eab6c8086602b1adc",
+    "scripts\\run_qwen_cuda_cross_model_20261029.py": "633e88d2cdbd2b12bdb6532984b9e8c9b441319155a18e09d08a46db80e08185",
+    "scripts\\score_qwen_cross_model_20261029.py": "0e82fc0c011bf50cffb3d348a67abe8bedab5f0d2fe8b624d87b807563307f48",
+    "scripts\\plot_qwen_cross_model_20261029.py": "c0e5bb8960388e0bf4bba11b1038640722c5ef337641c2ad1736e2adc6cc66c8",
+    "results\\runs\\qwen_cuda_smoke_20261029_01\\receipt.json": "518d3c43271aea053f739a45feeadba97b32c698f7f6e690f2b935992ea4aca5",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\protocol.json": "62617031438a8b56715cd76344a9cb93a7ea43ae143cc3a550388be4c7459f89",
+    "results\\runs\\qwen_cuda_cross_model_score_20261029_03\\summary.json": "01f1e6f18ecb04fe5c2b844a6710541416e6e91610f7385c32ffbbc93dd119f7",
+    "results\\runs\\qwen_cuda_cross_model_figures_20261029_02\\cross_model_exploratory.png": "a3b7dde910b85dc8b05f54ab39032c43589fab38c6b63470df10fd4042dd7af1",
+    "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型实跑候选稿_待终审.docx": "b823309edd1f99c70914348ff9d99920d5ecd45bc25aaa24ddd9a34a08085cd3",
+    "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_20261029.docx": "1a4149128914344e67011700036ede2c39a218e99e0caa648256fdc224d1e434",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-000651-2023-AUDIT.json": "38d118f65d6bc5b0902778753c2d84fbdaebe36467d09deb026b7e3a4c448607",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-000651-2024-AUDIT.json": "e5af97cfd45bf6179b6f64becfb294937f3840329852b45d1d84d679110ac41a",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-000999-2023-AUDIT.json": "9c03ef126b71857dabd14dd918eabd81cab9672faea9480f350ad4d5ad8afc90",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-000999-2024-AUDIT.json": "12eeafa085f41163a15c333ae8e3e7babb660694224887eabf7ad33fbef1671a",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-600036-2023-AUDIT.json": "aefd710ad9ffcb7d6b1343ad06264f7926de47db01f67d7353cbd619d317ef45",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-600036-2024-AUDIT.json": "1b82b2bdb7fc3cbdde34aa23953091f09a5802d084f340bff55c5109fc28dfe0",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-603288-2023-AUDIT.json": "59bbdc1246edbe9fbcba9c8c058bc4cdcb42318439155fdf1b4a79ec4cbe011a",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\NEW-603288-2024-AUDIT.json": "e3a21398425e3dbc86bafeb7e16c22f42fc4642fd44df5e6cb207b6d859df2fb"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_for_method_claim_version_rebind",
+  "base_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx",
+    "sha256": "676c9690d78cb8670670bc41b6d731a24b672701c35b090c206039ab58d23343"
+  },
+  "current_candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源引文与补充材料交叉引用修订候选稿_待终审.docx",
+    "sha256": "fa128866bacc65a7a531bd8e705c83e820f0cb3fc1a611a21e04adb3829e3af1",
+    "paragraph_count": 191
+  },
+  "source_audits": [
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/method_protocol_audit_20261028.json",
+      "sha256": "1dc9f52506ba51fc8ced03ca086908f2e18e1ef96d72470f7040317f19e530c4",
+      "scope": "10 preselected protocol claims"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/retrieval_implementation_audit_20261028.json",
+      "sha256": "28debca0b10648f10e6ed078ff1d3c854732d4ceea44a28488c10d320eaf183c",
+      "scope": "9 retrieval and packing implementation claims"
+    },
+    {
+      "path": "results/runs/paper_execution_freeze_windows_20261020_01/execution_freeze.json",
+      "sha256": "f0eecd3e4f7f129364311b2daa86d0e2ca6aad6af57ac269a14c210be3ffc2c7"
+    }
+  ],
+  "rebound_paragraphs": [
+    {
+      "paragraph_index_zero_based": 44,
+      "text_sha256_base": "0783ed979d2a66374e94bc75bc65e3a87a0df5523508d101424eb7b12389fcb2",
+      "text_sha256_current": "0783ed979d2a66374e94bc75bc65e3a87a0df5523508d101424eb7b12389fcb2",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 45,
+      "text_sha256_base": "c0a1c208d5f24a34b6dd95fe53cb8d9081ee8072d544acdf33e11df6ad238ef1",
+      "text_sha256_current": "c0a1c208d5f24a34b6dd95fe53cb8d9081ee8072d544acdf33e11df6ad238ef1",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 49,
+      "text_sha256_base": "675648ccffee509a73967cbbb06334d43817bbef22f741ba400936b289a710c6",
+      "text_sha256_current": "675648ccffee509a73967cbbb06334d43817bbef22f741ba400936b289a710c6",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 55,
+      "text_sha256_base": "82f0820e69818c1aa0394727f107eddb19295d7e69740f42b990788e5d6095cc",
+      "text_sha256_current": "82f0820e69818c1aa0394727f107eddb19295d7e69740f42b990788e5d6095cc",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 65,
+      "text_sha256_base": "c1af01856714f85e2c3dd463a62e9daf2a7f0de85316dfab4096a93d9d8d9b4e",
+      "text_sha256_current": "c1af01856714f85e2c3dd463a62e9daf2a7f0de85316dfab4096a93d9d8d9b4e",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 70,
+      "text_sha256_base": "c0d8162da7e89d4a3f7db6e7685007cd465dbbd4a97ab5aabc264d8a2b4d7630",
+      "text_sha256_current": "c0d8162da7e89d4a3f7db6e7685007cd465dbbd4a97ab5aabc264d8a2b4d7630",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 75,
+      "text_sha256_base": "700111629df2499bdbb0674dd7f26646c124a8f27bc76346f0adf7c9f8bc47fc",
+      "text_sha256_current": "700111629df2499bdbb0674dd7f26646c124a8f27bc76346f0adf7c9f8bc47fc",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 76,
+      "text_sha256_base": "432ad36c6666e16b515d810b87b03e3c5841feab2c4e645c7f3b8eb5af79ea1c",
+      "text_sha256_current": "432ad36c6666e16b515d810b87b03e3c5841feab2c4e645c7f3b8eb5af79ea1c",
+      "identical": true
+    },
+    {
+      "paragraph_index_zero_based": 78,
+      "text_sha256_base": "3f454135d76b066aa0ed99e9d46aace6388ff8d7dd4d6ff6503956b187733d18",
+      "text_sha256_current": "3f454135d76b066aa0ed99e9d46aace6388ff8d7dd4d6ff6503956b187733d18",
+      "identical": true
+    }
+  ],
+  "all_rebound_paragraphs_identical": true,
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "This receipt rebinds the stated protocol and implementation paragraphs by exact normalized-text hash from the previously audited predecessor to the current candidate.",
+    "It does not re-run the source/code comparison, independently verify historical output provenance, establish system quality, or review every methods sentence."
+  ]
+}

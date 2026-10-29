@@ -1,0 +1,10 @@
+{
+  "application_quit_called": false,
+  "elapsed_seconds": 3.236122,
+  "source_sha256": "ba0efb91daa7e37df86136a82e839e11c4a5fc8ec6265fe7b3f245f40d89ba6c",
+  "success": true,
+  "method": "WPS native read-only ExportAsFixedFormat",
+  "pdf_sha256": "ee715bb5842f94b87a394cae6a08e6e60c17d50ccd43b3f7daf218f318d838ce",
+  "only_this_readonly_document_closed": true,
+  "source_unchanged": true
+}

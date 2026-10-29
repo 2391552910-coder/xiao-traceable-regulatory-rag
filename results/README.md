@@ -1,4 +1,17 @@
 # 实验产物说明
+> **当前执行约束（2026-10-29）：后续不新增、委托或回收人工标注/盲审。**已有评分与参考只按原始来源保留；空白模板归档、不作为待办或投稿门槛。旧方案若要求补标注，以本条为准：使用可复算既有数据、已有且任务适配的参考和明确标注局限的自动诊断；无兼容金标准时将相关指标记为未测，不以代理指标冒充语义质量。
+
+
+## 当前评分量表与相关工作表修订候选稿（2026-10-28）
+
+- 当前主文：[评测框架表述收紧候选稿](paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx)，SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`，21页、12表、8图。仅收紧第29段对ALCE、RAGAs与RAGChecker的综合表述；评分、统计与实验结果未变。WPS渲染仅第3页变化并已目视复核。见[修订收据](paper/condensed_candidate_20261028_01/evaluation_framework_wording_revision_receipt_20261028.json)、[当前引文版本绑定记录](paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028_02.json)。配套[评分量表与检索诊断补充材料](paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx)，SHA-256 `8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a`，3页。
+- [论断—引文版本绑定核对](paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028.json)确认当前稿31条参考文献均在正文引用，并记录引用段与分组来源审计的版本关系；它不替代全稿事实和答案语义终审。
+- [表1相关工作修订收据](paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json)记录WPS重渲染21页及变化页4–6复核；结果、评分和结论未修改。
+- [英文工作译稿](paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_synced_20261028.docx)现已同步当前中文主文 SHA-256 `ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002`；更新内容包括ALCE/RAGAs/RAGChecker范围说明、评分量表的事后制定披露及CFinRAG相关工作行。配套[英文补充材料](paper/english_translation_current_20261028_01/Supplementary_Materials_Dual_Source_RAG_Scoring_Rubric_and_Retrieval_Diagnostics_English_20261028.docx)包含S0锚点、S1–S3诊断表和图。WPS只读渲染为23页主稿、4页补充材料；已检查重排页和补充材料全部页面。收据：[英文同步与版面核验](paper/english_translation_current_20261028_01/english_translation_sync_receipt_20261028.json)。这是工作译本，尚未按目标期刊模板排版或进行母语编辑。
+- [交叉引用审计收据](paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)绑定主文哈希、修改段落和WPS/PDFium渲染检查；21页渲染完成，变化页已复查。候选稿仍待全文语义终审、作者元数据及目标期刊格式，不能据此声称达到二区录用标准。
+- [正文数字与证据供给叙述审计](paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)核对了输出范围、主要配对估计、缺失界和来源供给/位置覆盖叙述，并绑定其分析输入哈希；它不替代逐回答语义审查或法规时点验证。
+- 此前的聚焦稿保留为历史快照，包含386/400与G2−G1 +0.250旧统计；不得与当前355/400、+0.228供应商重分析混用。
+
 
 ## 2026-10-27 相同预算下的联合材料分配
 
@@ -13,7 +26,7 @@
 ## 2026-10-27 年报表格与续表解析
 
 - `runs/annual_table_development_20261027_03/`为最终v1.2离线批次：8份年报、142个治理候选页，77个表格区域、59条逻辑表、18组跨页连接、8处断行合并；120条字段视图，其中45条涉及审计委员会。
-- `documents/`保留所有原表/单元格和逻辑连接；`structured_chunks.jsonl`、`table_index.sqlite`提供检索接口；`source_previews/`包含46页原图叠框，`review.html`展示表格及原页。329行人工复核模板尚未填写，512个未分类/非目标行另行保留并分流，不能将它们概括为512项解析失败。
+- `documents/`保留所有原表/单元格和逻辑连接；`structured_chunks.jsonl`、`table_index.sqlite`提供检索接口；`source_previews/`包含46页原图叠框，`review.html`展示表格及原页。329行空白复核模板归档、不再填写；512个未分类/非目标行另行保留并分流，不能将它们概括为512项解析失败。
 - `source_verification.json`及`implementation_audit.json`确认4326个单元格重新与PDF绑定；`tests_passed.xml`记录212项测试通过。40份检索上下文保留初始原文/记录/ID，均≤6000参考tokens，无模型调用。
 - `parser_field_diagnostics.json`对原冻结/勘误参考分别给出纯规则表格字段结果；8题勘误口径成员F1=1.00、日期F1=0.75、显式会议次数Accuracy=0.50、三字段Exact Match=0.50。此为已曝光开发题上的表格解析诊断，不是新的LLM/RAG回答指标，也未经独立人工裁定。招商银行日期为正文披露，未伪装成表格字段补入。
 - 均衡表格检索参考页覆盖95.83%→100%；普通表格BM25仍95.83%。先表格后续片在招商银行2024中仍只供给5/9个日期区间，低于仅续片的9/9；完整负例保留于验收与对照图。
@@ -44,6 +57,7 @@
 
 ## 最新公开结果
 
+- [上游研究长稿与复现材料（历史底稿）](paper/substantial_revision_20261023_01/)：2026-10-27文献更新版，25页、13幅图、19张表、29条参考文献；相关工作纳入ARQA与CFQA并明确其与双源法规证据研究的区别。WPS只读渲染的25页逐页检查完成；正文引文1–29与参考文献逐项对应，无孤立引用或未引用文献；115项交付文件哈希均与清单一致，116项ZIP完整性检查通过。本次未增加模型调用或人工标签。阶段主张与延后实验见[论文阶段收敛计划](../docs/论文阶段收敛计划_20261027.md)。
 - [交付入口](../deliverables/20261026/README.md)：中英文论文、指标表、代码和哈希清单。
 - [新公司结果](paper/heldout_validation_20261023_01/heldout_analysis_corrected.json)：4家公司×2年度，40个计划单元，37个非空有效回答；失败保留。
 - [逐题Precision Recall F1及精确匹配](paper/heldout_validation_20261023_01/heldout_metrics_corrected.csv)。字段提取指标不等于检索召回或引用语义准确率。
@@ -78,7 +92,7 @@
 - run_metadata.json：代码 SHA、运行时间、数据/划分/标注哈希、模型名称与 revision、实际 backend、mock、设备、量化、依赖版本、seed、prompt 哈希、指令、截断、融合、路由、候选深度和补检索上限。
 - retrieval_detail.csv / retrieval_summary.csv：逐查询排名、相关性、证据区间、各维度汇总与置信区间。
 - generation_records.jsonl：company_id、report_year、event_date、dimension、mode、repeat_id、事实和检索证据、原始响应、论断、引用、核验状态、调用成本、失败/重试。
-- annotation_records.csv：实际人工标签、匿名标注者、独立标签与仲裁结果；人工未完成时不得生成虚假的完成记录。
+- reference_manifest.csv：记录实际使用的既有参考来源类别、版本与哈希；不新增人工标注或伪造仲裁记录。
 - statistical_results.csv：聚类单位、重复聚合方式、差值、效应量、置信区间、原始/校正 p 值和样本数。
 - figures/ 与 error_analysis.md：主实验、消融、覆盖率/风险、成本与失败案例。
 
@@ -124,3 +138,4 @@ results/*.csv 和 results/*.json 默认被 gitignore 排除，历史追踪文件
 - `runs/annual_d2_review_backlog_windows_20261014_01/`：从 378 条 D2 候选索引中按候选 ID 与 overlay `_12` 匹配出 275 条待核验候选（31 家公司、31 份原 PDF、37 个物理页）；每条源 PDF/页文哈希及引句坐标复算通过。仅为待办候选清单，正式事实接纳数为 0。发布清单 SHA256 `53d5bdb16eff7d34436a01cc1162688ffdaf356904d2dc34522f5517b0f8fc44`。- `runs/annual_d2_pending_candidates_visual_review_windows_20261014_01/`：为 275 条未匹配的 D2 候选准备并渲染 37 个原 PDF 物理页（31 份报告），页面图与 PDF 哈希验证通过；发布清单 SHA256 `d858390a22deedd8b0a66634c1405450abdfb93464712756b5c802d70c996483`。
 - `runs/annual_d2_pending_candidates_independent_review_windows_20261014_01/`：275/275 条候选逐页对照原报告表格，保存原文引句和坐标、页面图及 SHA256，事件日期留空；不是真人专家认证。发布清单 SHA256 `50c297ea3b3350ff68f9d366ef12e1fcb09300821fe43e01fb32ca127bcd4a89`。
 - `runs/annual_fact_independent_review_overlay_windows_20261014_13/`：保留 `_12` 并追加 275 条；累计 445 条选定批次复核记录、439 个唯一候选、39 家公司。当前 378 条 D2 候选索引全部有复核记录，但候选索引穷尽性未知，公司事实范围未完成。发布清单 SHA256 `90c6afe199f69dc06a5dda1e569bb7825249455a953eccaec81a080c174aa701`。
+

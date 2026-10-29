@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Synchronize the manuscript intervals and missingness figure to the latest company-bootstrap run (seed 20261028).",
+  "input": {
+    "docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐候选稿_待终审.docx",
+    "sha256": "f0d096bc4afb4a757990548bb544db45b7c785fdb83e472c62aa841de64b0627",
+    "robustness_json": "results\\runs\\primary_provider_only_robustness_20261028_02\\robustness_audit_primary_provider_only.json",
+    "robustness_sha256": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca",
+    "seed": 20261028,
+    "draws": 20000
+  },
+  "output": {
+    "docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
+    "sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462",
+    "changed_docx_parts": [
+      "word/document.xml",
+      "word/media/image21.png"
+    ],
+    "all_other_parts_unchanged": true
+  },
+  "updated_results": {
+    "G3-G1": {
+      "point_estimate": 0.2895,
+      "interval_exact": [
+        0.15789473684210525,
+        0.4298245614035087
+      ],
+      "reported_interval": [
+        0.158,
+        0.43
+      ]
+    },
+    "G3-NoRerank": {
+      "point_estimate": -0.2222,
+      "interval_exact": [
+        -0.31018518518518523,
+        -0.12962962962962962
+      ],
+      "reported_interval": [
+        -0.31,
+        -0.13
+      ]
+    },
+    "G2-G1_and_other_contrasts": "Point estimates and rounded intervals unchanged; see the referenced robustness JSON."
+  },
+  "figure": {
+    "replaced_media_part": "word/media/image21.png",
+    "source_plot_sha256": "19e7c805d469226e8b1de0c911549106980fbdd40d9cc49d0828ccff3d37f1bf"
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "success": true,
+    "source_unchanged": true,
+    "pdf_sha256": "8e3626ca7c2838b0f352320eeeeefe3ed088923291c2d071023bbcdeb886d30d",
+    "pages": 21,
+    "changed_pages_vs_input": [
+      11,
+      15
+    ],
+    "changed_page_review": "Pages 11 and 15 inspected at original resolution; table values and updated plot legible, no clipping or overlap. Remaining 19 pages pixel-identical to the previously reviewed input rendering."
+  },
+  "no_new_generation_or_labels": true,
+  "scope_limit": "This update fixes bootstrap-seed consistency only. It does not constitute the manuscript-wide semantic review or journal-template compliance."
+}

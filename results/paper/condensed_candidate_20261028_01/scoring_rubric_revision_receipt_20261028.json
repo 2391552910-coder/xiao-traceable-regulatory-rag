@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-28",
+  "status": "passed_scoped_rubric_reproducibility_revision_and_render",
+  "source_rubric": "results/runs/paper_actual_output_review_windows_20261020_03/当前唯一使用包/scoring_rubric.json",
+  "source_rubric_sha256": "02733eea59db7c3bf0b4b39a2910dd2650623d265255cce5e4ba693f92043b69",
+  "source_rubric_version": "compact-answer-rubric-0to8-v1",
+  "source_rubric_created_at_utc": "2026-10-20T09:24:07.493534+00:00",
+  "source_rubric_timing": "Defined after inspecting output availability and some answers. Exploratory descriptive scoring, not preregistered H1/H2.",
+  "main_source": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+  "main_source_sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
+  "main_output": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx",
+  "main_output_sha256": "44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5",
+  "main_change": {
+    "paragraph_index_zero_based": [
+      78
+    ],
+    "tables_text_unchanged": true,
+    "media_unchanged": true,
+    "page_count": 21,
+    "visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visual_result": "All 21 pages inspected; revised methods paragraph is readable; no new clipping, overlap, or displaced content."
+  },
+  "supplement_source": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx",
+  "supplement_source_sha256": "d6435f6ea5d787040012da0b3655040f3171443abc8bf592701ad53235882007",
+  "supplement_output": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx",
+  "supplement_output_sha256": "8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a",
+  "supplement_change": {
+    "added_section": "S0",
+    "added_table": "Table S0",
+    "original_retrieval_tables_preserved": true,
+    "page_count": 3,
+    "visually_inspected_pages": [
+      1,
+      2,
+      3
+    ],
+    "visual_result": "All 3 pages inspected; rubric table fits on page 1 without clipping; S1/S2 and existing retrieval tables remain legible."
+  },
+  "render_method": "WPS native read-only ExportAsFixedFormat; PDF rasterized with bundled Poppler pdftoppm.",
+  "main_pdf_sha256": "e1edb6cd601c54dd43cf3f3755dce89e06d03e775f96715201b2c6473fa03c3c",
+  "supplement_pdf_sha256": "b3804aa5fc5572f5bb143e03c83705a0a4a2435ccff0b319f952773fe37206f0",
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "scores_or_analyses_changed": false,
+  "limitations": [
+    "The rubric was defined after inspecting output availability and some answers; it is exploratory, not preregistered.",
+    "This revision improves rubric transparency but does not resolve missing-output uncertainty, rater-scale limitations, or full claim-citation validation."
+  ]
+}

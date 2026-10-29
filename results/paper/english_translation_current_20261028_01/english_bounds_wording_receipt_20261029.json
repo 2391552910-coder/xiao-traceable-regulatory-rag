@@ -1,0 +1,20 @@
+{
+  "source": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_rater_wording_20261029.docx",
+  "source_sha256": "367e6c776dfd5b62840f4fd19479d941445ed1c09a01c039360cf7d7c249fd95",
+  "output": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_bounds_20261029.docx",
+  "output_sha256": "7c6d0bb335db0dea60f1c8b04a6654e41f8d8bbe7794c8f69fa3af77a19b614b",
+  "changed_paragraphs_zero_based": [
+    80
+  ],
+  "tables_and_media_unchanged": true,
+  "pdf_sha256": "f0ea91da9f8be438676449a2ba4df42c09501b70e8ea4e95113e276dcab8738a",
+  "pages": 23,
+  "pixel_changed_pages": [
+    11
+  ],
+  "visually_checked_pages": [
+    11
+  ],
+  "renderer": "WPS read-only export; standard render_docx failed because soffice.exe is unavailable",
+  "scope": "Clarifies averaging of lower and upper endpoints; no numerical values, outputs or scores changed."
+}

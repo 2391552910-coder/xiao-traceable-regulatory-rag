@@ -1,0 +1,32 @@
+{
+  "source": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_bounds_20261029.docx",
+  "source_sha256": "7c6d0bb335db0dea60f1c8b04a6654e41f8d8bbe7794c8f69fa3af77a19b614b",
+  "output": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_evidence_units_20261029.docx",
+  "output_sha256": "7cf220f5682c98cec99ed0938e07d91e031293b11fa071e1c367fbdd7abf2b02",
+  "paragraphs_zero_based": [
+    61,
+    185
+  ],
+  "table_cells_zero_based": [
+    [
+      3,
+      5,
+      1
+    ]
+  ],
+  "media_unchanged": true,
+  "pdf_sha256": "c7318b3c320927123a30e573041a97ab8c1fc5a3e9043a18dff62fef905e52d8",
+  "pages": 23,
+  "pixel_changed_pages": [
+    8,
+    9,
+    23
+  ],
+  "visually_checked_pages": [
+    8,
+    9,
+    23
+  ],
+  "renderer": "WPS read-only export; standard renderer unavailable: soffice.exe not found",
+  "scope": "123 is deduplicated evidence records, not 123 distinct source documents; values unchanged."
+}

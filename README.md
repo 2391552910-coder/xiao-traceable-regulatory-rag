@@ -1,4 +1,194 @@
 # 年报与法规双源检索增强生成
+> **当前执行约束（2026-10-29）：后续不新增、委托或回收人工标注/盲审。**已有评分与参考只按原始来源保留；空白模板归档、不作为待办或投稿门槛。旧方案若要求补标注，以本条为准：使用可复算既有数据、已有且任务适配的参考和明确标注局限的自动诊断；无兼容金标准时将相关指标记为未测，不以代理指标冒充语义质量。
+
+> **文档预览约束：**后续论文修改使用 Codex 文档渲染、LibreOffice 与 Poppler 检查，不使用 WPS。下文历史记录中出现的 WPS 仅描述当时已完成的渲染，不代表当前预览流程或待办。
+
+## 双源生成的事项日期筛选（2026-10-29）
+
+调用 `generate_dual_corpus_answer` 时，可显式传入 `temporal_filter=True`、`target_date="2024-12-31"` 和 `target_date_role="company_event_date"`；完整日期必须已出现在公开查询中。筛选在法规检索截断前进行，默认保留版本信息未知的来源，并在返回值 `temporal_filter_audit` 中记录处理过程；启用筛选时，逐来源时间关系及未验证法律适用性的提示也会传入生成上下文。默认不启用筛选，也不会从报告年份推断事项日期；声明区间匹配不证明法规法律适用性。
+
+命令行入口 `scripts/dual_corpus_rag.py` 可在原有查询和索引参数之外加入 `--temporal-filter --target-date 2024-12-31 --target-date-role company_event_date`。日期必须出现在 `--query` 中；输出的 `answer_and_sources.json` 保存筛选审计。`--unknown-temporal exclude` 会排除日期未知的法规，需要显式选择，未知并不代表不适用。
+
+已用一份真实年报的前两页和一份法规文本执行[离线流程冒烟检查](results/runs/temporal_cli_real_data_smoke_20261029_02/receipt.json)：TF-IDF 检索和模板输出成功，51 个法规片段的区间信息均未知并被保留。测试日期是人为设定的流程输入，不是已核实的公司事项日期；此检查不衡量回答质量或法律适用性。
+
+同一资料的[提示捕获检查](results/runs/temporal_prompt_real_smoke_20261029_01/receipt.json)确认，5 条检出法规在模板生成器收到的提示中均标明时间关系未知及法律适用性未验证；这不证明真实模型会遵守该提示。
+
+## 论文评测表述对齐（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_无新增人工标注候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_no_new_human_labels_20261029.docx)将结论中的后续评测表述调整为不新增人工标注，并说明缺少独立可信参考时自动匹配仅供诊断。已有人工评分及其历史来源保留，实验数据和结果未改变。变动页经 WPS 渲染检查。
+
+## BM25 标题拼接开发对照（2026-10-29）
+
+在相同 40 条 AI 参考开发查询上，仅向每个索引块正文前加入文档标题后重新运行 BM25。前 5 条平均参考覆盖由 0.241 降至 0.219，其中 2 题上升、31 题不变、7 题下降；前 10 条由 0.341 至 0.345。结果不支持直接启用该改动，默认检索配置未变。[逐题对照](results/runs/ai_development_bm25_title_20261029_01/comparison.json)和[脚本](scripts/compare_ai_development_bm25_title_20261029.py)已保存。该已暴露开发集的 AI 参考不完整且未经独立核验，覆盖不能当作标准语义 Recall；未新增标签或模型调用。
+
+## AI 开发参考上的离线 BM25 诊断（2026-10-29）
+
+在冻结的 7,899 个法规、处罚和公告条款块中，使用已有 40 条 AI 双通道与仲裁参考查询运行 BM25：前 5 个结果中有 23/40 题至少匹配一项参考，前 10 个结果为 29/40；逐题参考平均覆盖分别为 0.241 和 0.341。参考并非完整或经独立核验的相关性集合，未匹配不等于不相关，上述值不能当作标准语义 Recall 或 Precision。本次仅作暴露开发集的法规语料诊断，不评估年报、双源回答或法规时点适用。[逐题结果及输入哈希](results/runs/ai_development_bm25_20261029_02/result.json)；[复现脚本](scripts/run_ai_development_bm25_20261029.py)。无模型调用及新增人工标注。
+
+## Windows 文件名兼容（2026-10-29）
+
+仓库中的 DOC304 文件使用全角 `＊` 替代 Windows 不允许的半角 `*`，文件内容不变；既有语料哈希仍通过兼容映射使用历史名称。历史数据清单保留原始名称作为记录。Git 属性禁止冻结语料、历史参考、实验文件和代码检出时转换换行符，以维持字节哈希；已有工作区需在保留本地修改后重新检出对应文件才会应用。离线 CI 检查 Windows 路径和相关 Git 属性。
+
+复现范围：本分支已验证保存的 Qwen 格式提示对照与 Agent 配对分析可重新计算。旧监管开发基准已补入加载模块和冻结清单，可校验 319 份文档、7,899 个文本块与 40 条查询的输入一致性；该基准使用既有 AI 双通道与仲裁参考，仅用于开发，不代表独立人工金标准或泛化性能。本次未新增标签。
+
+## 表格解析代码同步（2026-10-29）
+
+论文草稿分支同步表格解析分支的 v1.11 解析器、索引、命令行和测试夹具；相关功能的独立开发记录仍见 [表格解析 PR #4](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/pull/4)。本地定向联合回归 63 项通过；这不等于对年报表格解析准确率或泛化能力的独立验证。未新增模型调用或人工标注。
+
+2026-10-29 重新运行年报解析、表格证据、开发审计、补充检索与跨模型年度分层复算五组测试：**93 项通过，0 失败**；仅有 jieba 的 `pkg_resources` 弃用警告。跨年度脚本固定 JSON/CSV 为 LF 换行、将输入路径规范为 POSIX 格式；JSON 与已保存结果的数值和记录一致（仅归一历史反斜线路径后比较），两份 CSV 逐字节一致。以上是规则、接口及离线复现回归，不提供独立标签，不能据此计算或宣称年报字段准确率、检索 Precision/Recall/F1 或生成回答质量。未新增模型调用或人工标注。
+
+## 来源编号校验修正（2026-10-29）
+
+双源生成主流程根据检索结果实际分配的来源编号进行引用解析，避免将证据正文中形如 `[A99]` 的普通文字误判为来源。诊断同时检查 `claims` 中的来源编号，标记无有效编号但自称有支持的论断。相关引用诊断和编号审计测试已纳入离线回归工作流。`citation_diagnostics.supplied_id_method` 标明校验方式；直接调用评价器且未传入编号清单时，为兼容旧调用仍使用文本扫描，该方式不能排除正文伪编号。编号存在不证明引用支持或法规适用；本次未新增模型调用或人工标注。
+
+## 生成引用诊断更新（2026-10-29）
+
+双源生成结果增加 `citation_diagnostics`，记录引用列表格式错误、无法解析的编号及正文中年报／法规标签与编号类型不一致。无检索模式不会将未放入提示词的检索材料标记为已提供；原始输出仍保留。编号解析仅表示编号出现在供应给模型的材料中，不证明语义支持或法规适用性。本次为代码与离线测试，未改变历史实验结果、未新增人工标注或模型调用。
+
+## 当前主稿：引用编号审计（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_引用编号审计候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_citation_id_audit_20261029.docx)补充[机械引用编号审计](results/runs/qwen_schema_citation_audit_20261029_01/citation_audit.json)：格式示例条件下，结构类型合规为3/8，但只有2/8条回答的三个字段均含非空且属于输入材料的有效来源编号；另一条将日期写入引用列表。此检查不证明引用支持答案。未新增模型调用或人工标注；中文23页、英文25页，变动页经WPS渲染检查。
+
+## 当前主稿：事后格式提示对照（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_格式提示补充候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_schema_prompt_development_20261029.docx)补充同一Qwen3-0.6B的8题格式提示开发试验。既有助手提取且事后勘误参考下，结构合规从0/8到3/8，成员宏F1从0.651到0.678，日期宏F1从0.600降至0.558，会议次数匹配从3/8到6/8，三字段全匹配均为1/8。[结果与逐题数据](results/runs/qwen_schema_prompt_score_20261029_01/summary.json)；[图11](results/runs/qwen_schema_prompt_figures_20261029_01/schema_prompt_development.png)。提示是观察原答案后设计，属于事后开发而非独立验证；每题各一次采样，输入长度不同，参考未经独立验证，结构合规不代表引用支持。未新增人工标注。WPS渲染并检查变动页，中文23页、英文25页。
+
+## 前版候选：跨模型与 Agent 对照（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_agent_20261029.docx)在8题跨模型补充之外，加入既有K3 Agent与三轮固定证据修订的[配对复算](results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json)及[图10](results/runs/agent_pairs_figures_20261029_01/agent_observed_pairs.png)。两条件各在不同题目失败，余下6对覆盖4家公司；按既有助手提取、事后勘误且未经独立裁定参考，三字段全匹配为4/6与5/6，成员宏F1为0.833与0.985，日期宏F1为0.786与0.952（Agent与修订）。两者各记录18次调用，但供应商token总量分别为102600与97441，最终证据亦不同；这不是完全预算匹配或因果实验。原参考和勘误版、失败、逐题配对及界均保留；未新增人工标注或模型调用。WPS渲染中文23页、英文25页，受影响页面已检查；结果不证明普遍效果或期刊录用。详见[审计](results/runs/agent_pairs_reanalysis_20261029_01/paper_update_audit.json)。
+
+## 当前投稿主线：双源分路检索与合并检索（2026-10-29）
+
+[21页主线候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx)聚焦双源分路检索与合并候选检索，含12张表和8幅图。更正BM25参考文献[7]后，稿件 SHA-256 为 `e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69`；[修订与版面收据](results/runs/core_candidate_reference_7_correction_20261029_01/core_candidate_reference_7_correction_receipt.json)记录只改了书目段落，Codex 渲染21页中仅第19页变化且已目视检查。本轮未使用WPS、未新增模型调用或人工标注。当前稿的段落和12张表已按范围收据重新绑定到当前 SHA，详见[当前稿审计覆盖桥](results/paper/condensed_candidate_20261028_01/core_candidate_scoped_audit_coverage_20261029.json)；其中表6–11与已通过数字复算的版本逐单元格一致，细目见[表格继承核验](results/paper/condensed_candidate_20261028_01/core_candidate_numeric_table_inheritance_20261029.json)。覆盖桥记录已恢复并校验的历史来源、未完成的全文语义审查和指标边界，不能视为整稿终审。下方跨模型/跨年/Agent材料是独立扩展候选，均为小样本探索结果，不并入主线泛化结论。
+
+## 扩展候选：跨模型与 Agent 年度分层复算（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx)补入既有8题 Qwen3-0.6B 与 K3 服务别名对照的年度分层结果。结果由[复算脚本](scripts/analyze_qwen_cross_model_year_20261029.py)从已保存输出生成，[稿件更新脚本](scripts/update_cross_model_manuscript_year_sensitivity_20261029.py)记录输入和输出哈希。
+
+| 报告年度 | 成员宏 F1（Qwen/K3） | 日期宏 F1（Qwen/K3） | 会议次数精确匹配（Qwen/K3） | 三字段全匹配（Qwen/K3） | 严格结构及引用列表合规（Qwen/K3） | Qwen 格式异常引用项 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2023（4题） | 0.663 / 1.000 | 0.672 / 1.000 | 2/4 vs 4/4 | 1/4 vs 4/4 | 0/4 vs 4/4 | 31 |
+| 2024（4题） | 0.638 / 0.949 | 0.528 / 0.906 | 1/4 vs 4/4 | 0/4 vs 2/4 | 0/4 vs 4/4 | 35 |
+
+计分采用既有助手提取参考及一次输出后的勘误版；参考未经独立裁定。两年度使用同一4家公司，每年仅4题，每题每模型生成一次；模型规模、计算量和输出预算也不同。因此该分层只作描述性复算，不能证明独立时间迁移或模型族泛化，也不据此作显著性推断。字段 F1 和结构合规不代表引用语义支持、检索 Precision/Recall 或答案 Accuracy。
+
+本轮仅复用保存结果，无新增模型调用或人工标注。最新版中文稿为23页；Codex 使用 `render_docx.py`、LibreOffice 与 Poppler 重新生成23页 PNG，全程未使用 WPS。结论段现明确本项目不新增人工标注；无匹配且独立可信的既有参考时，相应检索或答案质量指标保持未测，不以位置覆盖或结构合规等代理量替代。此次仅第20页变化，已按原始分辨率检查；其余22页 PNG 与前版哈希一致，详见[版式 QA 收据](results/runs/qwen_cross_model_year_sensitivity_20261029_01/render_qa_receipt.json)。[论文数值、图形与政策一致性审计](results/runs/manuscript_claim_consistency_20261029_03/claim_audit.json)的25项检查通过，核对跨模型、年度分层、Agent 正文数字、图9/图10与源图哈希、来源版本绑定和无新增标注表述；不验证参考答案正确性、引用语义支持或期刊录用水平。结果文件：[年度分层摘要](results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_summary.json)、[模型汇总](results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_models.csv)、[配对结果](results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_pairs.csv)、[稿件更新收据](results/runs/qwen_cross_model_year_sensitivity_20261029_01/manuscript_update_receipt.json)。该探索性结果不构成期刊分区或录用保证；英文工作稿尚未同步本次年度分层结果。
+
+本轮还更正了参考文献[7]的卷期页码，并依据原论文首页与出版方推荐引文统一著录。[书目与引文范围审计](results/paper/condensed_candidate_20261028_01/candidate_bibliography_source_audit_20261029.md)和[版本绑定及 Codex 渲染复核收据](results/runs/citation_reference_correction_20261029_01/candidate_citation_rebind.json)记录了书目编号覆盖、当前稿哈希和23页渲染差异。该审计不等于355份回答的语义复核，也不证明期刊录用水平。
+
+书目更正后，跨模型、年度分层与 Agent 扩展候选按当前 DOCX 版本链重新核对：[26项一致性审计](results/runs/manuscript_claim_consistency_20261029_04/claim_audit.json)全部通过，覆盖数值对齐、图9/图10源图、更新收据及无新增标注表述。它不验证参考答案、引用语义支持、回答正确性或期刊准备度；本轮没有新增模型调用或人工标注。
+
+## 历史候选：跨模型实跑（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型实跑候选稿_待终审.docx)和[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_20261029.docx)新增Qwen3-0.6B与K3服务别名的8题探索性对照及[图9](results/runs/qwen_cuda_cross_model_figures_20261029_02/cross_model_exploratory.png)。两者均完成8题；以既有助手提取、事后勘误且未经独立裁定的参考为准，成员宏F1分别为0.651和0.975，日期宏F1为0.600和0.953，严格结构合规为0/8和8/8。字段分数即使结构不合规也计算；不等于引用语义支持、法规适用或检索P/R。模型容量、采样和输出预算不匹配；四家公司、两年度、每题一次的结果不能支持跨模型或跨年普遍泛化。原参考和勘误版均已报告，无新增人工标注。[结果与限制](results/runs/qwen_cuda_cross_model_score_20261029_04/summary.json)；[稿件及输入审计](results/runs/qwen_cuda_cross_model_score_20261029_04/paper_update_audit.json)。WPS只读复核中文版22页、英文版24页；本稿仍待投稿前终审。
+
+## 历史候选：历史法规来源更正（2026-10-29）
+
+[中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_历史法规来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_historical_sources_20261029.docx)更正历史第182号令的范围：冻结索引含其官方PDF的22页，且该文档不在冻结排除清单；已保存的1200条候选排序未出现该文档。这不证明语义相关或具体法规适用。[索引审计](results/paper/condensed_candidate_20261028_01/historical_order_182_index_audit_20261029.json)。60题预处理记录显示该文档22个片段均被时间筛选保留，但目标日期均未提供；详见[时间筛选审计](results/paper/condensed_candidate_20261028_01/order_182_temporal_scope_manifest_verified_20261029.json)及[复核脚本](scripts/audit_frozen_temporal_source.py)。筛选保留不证明后续路由、语义相关性或法规适用性。不新增人工标注、模型调用或评分。
+
+## 历史候选：DOC343 来源更正（2026-10-29）
+
+[中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_DOC343来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_DOC343_correction_20261029.docx)更正DOC343来源描述：文本版含2023年修改决定及重新公布全文，冻结方案排除该文本版，但收录对应59页OFFICIAL-DOC343 PDF；G2冻结Top-10中7题检出PDF物理第2页。该计数不验证语义支持或个案适用性。详见[证据与修订审计](results/paper/condensed_candidate_20261028_01/doc343_correction_audit_20261029.json)。历史文档中“DOC343仅为修改决定”的说法已被更正。本轮未新增模型调用、人工标注或改变实验评分。
+
+## 评测安排更新（2026-10-29）
+
+遵照用户决定，后续不再新增人工标注；现有双人盲审空表不作为论文工作的前置条件。历史人工评分及参考证据保留真实来源。使用既有排序与参考定位开展离线分析；位置命中不等于语义相关，不能作为标准 Precision、Recall、F1、nDCG 或答案正确率。
+
+在 6000 token 预算下，40 道法规 PDF 参考题共 120 次参考位置：缓存检索的合并/分路配置分别命中 0/120 和 7/120；新运行 BM25 两种配置均为 0/120。另 20 道使用整份 TXT 作为法规参考的题目，BM25 合并/分路分别匹配 18/20 和 20/20 个来源。两种参考粒度不能合并解释为页级检索效果。上述数字来自既有回放，没有新增实验。
+
+
+在分路配置下，另有33/60题的严格法规参考位置覆盖为零，但检索文本与参考引文出现至少一处12字符连续重合。该词面诊断可能包含通用措辞或不同版本，不证明法规等价、语义支持或时点适用；见[诊断汇总](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_audit_receipt.json)与[逐题数据](results/paper/substantial_revision_20261023_01/retrieval/alternate_law_source_per_question.csv)。逐题表可复算汇总计数；[原始诊断脚本](scripts/audit_alternate_law_sources_20261023.py)供方法审阅。完整重跑仍需冻结索引、参考材料及脚本依赖；该历史脚本使用固定输出目录并会覆盖同名结果，运行前应先保留原件。
+
+## 历史英文工作稿对齐（2026-10-29）
+
+[英文对齐稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_evidence_units_20261029.docx)已同步其中文来源版本至当前稿之间的页码记录、引言、来源缺失配对及缺失界、回放范围、BM25文献和附录计数修订。WPS导出23页，变动页已检查；[修订收据](results/paper/english_translation_current_20261028_01/english_current_chinese_changes_receipt_20261029.json)。其后收紧评分者措辞并澄清缺失数据界的上下端点分别平均，见[评分措辞收据](results/paper/english_translation_current_20261028_01/english_rater_wording_receipt_20261029.json)和[缺失界措辞收据](results/paper/english_translation_current_20261028_01/english_bounds_wording_receipt_20261029.json)。已将123条去重参考证据统一表述为证据记录而非123份来源文档，见[证据计数收据](results/paper/english_translation_current_20261028_01/english_evidence_units_receipt_20261029.json)。中间稿和WPS预览保存在本地；[中英文结果表5–11数值核对](results/paper/english_translation_current_20261028_01/bilingual_numeric_tables_receipt_20261029.json)比较166个数据单元格，未发现数字差异；该检查不验证表头含义或原始实验数据。英文稿仍需全文语义终审及目标期刊格式适配。
+
+## 历史候选：来源页码记录边界澄清（2026-10-29）
+
+- 当前主文候选：[页码分层核验修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx)。修订第38段：检索索引使用PDF物理页序；人工核验时另记可见印刷页码，避免暗示运行索引普遍存储印刷页码。
+- 主文仍为21页、12表。WPS重渲染后仅第5页变化并已检查。详见[修订审计](results/paper/condensed_candidate_20261028_01/page_provenance_revision_audit_20261029.md)和[哈希/渲染收据](results/paper/condensed_candidate_20261028_01/page_provenance_revision_receipt_20261029.json)。
+- 本修订只处理来源定位表述，不代表整稿终审、期刊格式适配或二区录用结论。
+
+## 历史父稿：引言检索表述收窄（2026-10-28）
+
+- 引言表述收窄父版本：[引言检索表述收窄稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引言检索表述收窄候选稿_待终审.docx)，SHA-256 `76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a`。只收窄引言中对传统检索的泛化陈述；BM25文献更正保留。该次仅正文段落10变化，12张表、31条参考文献及其他段落不变；WPS渲染21页，仅第2页变化且已检查。
+- 配套核查：[引言第9–14段审计](results/paper/condensed_candidate_20261028_01/introduction_claim_audit_paragraphs_9_14_20261028.md)、[方法与检索文献审计](results/paper/condensed_candidate_20261028_01/retrieval_method_claim_audit_paragraphs_23_24_20261028.md)、[评分量表审计](results/paper/condensed_candidate_20261028_01/rubric_claim_audit_current_candidate_20261028.md)及[版本/渲染收据](results/paper/condensed_candidate_20261028_01/intro_retrieval_framing_revision_receipt_20261028.json)。研究范围及已发表论文参照见[范围决策](docs/文献参照后的论文范围决策_20261028.md)。
+- 本稿仍待整稿语义终审、作者/投稿信息和目标期刊格式适配；不表示达到二区录用水平。
+
+## 2026-10-28 回放范围限定修订候选（历史父版本）
+
+- 回放范围限定父版本：[回放范围限定修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_回放范围限定候选稿_待终审.docx)，SHA-256 `dd442f55b34faec6b31a330578ed55df66918e8c719aeec22304e49608c2be91`。将讨论段回放陈述限定为一个问题、8种检索配置、16次成功候选检索的通道候选/融合/最终排序算术核验，并明确其不验证语义相关性、主实验全量可回放性或人工复核效益。没有新增模型调用或人工标签。WPS渲染21页；仅第17页变化并完成视觉复核，其他20页与上一版像素一致。版本及渲染见[修订收据](results/paper/condensed_candidate_20261028_01/replay_scope_revision_receipt_20261028.json)。
+- 来源删除配对分析、量表和检索诊断补充材料、英文工作译稿及其证据状态见下方历史候选条目和各自收据；当前稿仍需整稿终审及目标期刊模板适配，不代表已达到二区录用标准。
+- [当前候选稿引文版本绑定核查](results/paper/condensed_candidate_20261028_01/current_candidate_citation_rebind_20261028.json)确认当前版44个引文段落、31条参考文献及其编号与已审计来源版本连续；这是版本与编号核验，继承分主题来源审计，不等于逐篇重读全部文献或全稿语义终审。
+- [相关工作段落20来源核查](results/paper/condensed_candidate_20261028_01/related_work_claim_audit_paragraph_20_20261028.md)依据ACL Anthology和出版社正式记录核实ARQA、CFQA及CFinRAG的数据规模与方法概述；当前段落与来源相符，无需改稿。该核查不把它们当作本项目的直接基线。
+- [相关工作段落19来源核查](results/paper/condensed_candidate_20261028_01/related_work_claim_audit_paragraph_19_20261028.md)依据ACL Anthology正式记录核实FinQA、TAT-QA与HiREC的任务定位；描述均有来源支持，未发现需要改稿的事实错误。
+
+## 2026-10-28 评分量表修订前的统一主文候选稿（已被后续候选取代）
+
+- [英文工作译稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_copyedited_20261028.docx)由当前中文主稿（SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`）翻译生成，保留12张表、8幅图和31条参考文献；[英文 Markdown 源稿](results/paper/english_translation_current_20261028_01/English_working_translation_current_20261028.md)、[本轮修订与逐页视觉核验收据](results/paper/english_translation_current_20261028_01/english_copyedit_receipt_20261028.json)、[近期文献元数据核查](results/paper/english_translation_current_20261028_01/recent_reference_metadata_audit_20261028.md)及[23页渲染 PDF](results/paper/english_translation_current_20261028_01/rendered_copyedited_20261028/paper_native.pdf)一并保存。已修整统计术语和少量语序，数字、表格、图片及实验结论未变；新候选版23页逐页检查通过。此轮语言润色不等同于母语编辑或逐条论断—引文终审。稿件仍需目标期刊格式适配及作者投稿信息，不能视为投稿定稿或二区录用证明。
+- 当前主文为[工程价值措辞校准候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx)，SHA-256 `072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f`，21页、12表、8图、31条参考文献。该版承接前一版的CFinRAG相关工作修订；本次只校准讨论段落131，将未实测的“独立工程价值”改为可追溯能力，并明确未测量复核正确率或成本。表格、图片、引文和实验数据未变。WPS重渲染仅第17页变化并已检查；其余20页与前版像素一致。[本次修订收据](results/paper/condensed_candidate_20261028_01/semantic_claim_revision_receipt_20261028.json)；[当前版本、引文编号和主要数字一致性复核](results/paper/condensed_candidate_20261028_01/current_candidate_integrity_rebind_20261028.json)确认该版只改段落131、31条参考文献均在正文中引用，旧主效应数字未残留。配套补充材料为[预算回放与BM25定位诊断稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx)，SHA-256 `d6435f6ea5d787040012da0b3655040f3171443abc8bf592701ad53235882007`。 修订仅澄清补充表S3的分母：PDF页级覆盖为7/120个目标定位（5.83%），非7/40题；TXT来源命中按20题统计。分析值未变，三页WPS复渲染已检查；[补充材料修订收据](results/paper/condensed_candidate_20261028_01/supplement_denominator_revision_receipt_20261028.json)及[新渲染PDF](results/paper/condensed_candidate_20261028_01/render_supplement_denominator_revision_20261028/paper_native.pdf)。
+- [交叉引用与摘要口径合并收据](results/paper/condensed_candidate_20261028_01/crossref_abstract_scope_merge_receipt_20261028.json)绑定源稿及候选稿哈希、WPS PDF和21页渲染；前三页已目视检查，第4–21页与新鲜重渲染源版像素一致。此前基于推理预算版生成的[摘要口径候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算与摘要口径修订候选稿_待终审.docx)未包含较新的正文交叉引用修订，已由收据标记为过时来源版本，保留追溯。
+- [交叉引用补全候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用补全候选稿_待终审.docx)是本次源稿；其[交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)与[推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录继承的正文修订和解释边界。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
+- 较早分主题引文审计文件当前不在仓库中，旧链接不再列作可用材料。当前版本请查阅[整合书目与引文范围审计](results/paper/condensed_candidate_20261028_01/candidate_bibliography_source_audit_20261029.md)及[候选稿版本绑定收据](results/runs/citation_reference_correction_20261029_01/candidate_citation_rebind.json)。两者仅覆盖书目身份、有限正文主张与版本连续性，不代替355份回答的全量语义核验。作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
+- [当前主文法规版本来源核验](results/paper/condensed_candidate_20261028_01/current_candidate_regulatory_source_audit_20261028.md)绑定前一版CFinRAG相关工作候选稿；本次只改段落131，法规段落146保持不变，既有官方日期与版本风险核验继续适用。核验说明采集清单中DOC333仅有元数据、对应正文文件缺失。旧[官方来源审计](results/paper/condensed_candidate_20261028_01/official_source_claim_audit_20261028.md)对应更早的精简主文候选稿及保利发展案例，不是当前统一主文的收据。
+- [交叉引用审计收据](results/paper/condensed_candidate_20261028_01/cross_reference_audit_20261029.json)记录源稿哈希、段落修订及渲染核查；WPS只读渲染21页，变化页11、13、16–18已复查，没有发现裁切、重叠或版面错位。整稿事实/引文语义终审、作者元数据及目标期刊格式仍未完成，不能声称达到二区录用标准。
+- [参考文献[13]出版状态与排版复核](results/paper/condensed_candidate_20261028_01/reference_13_citation_render_audit_20261028.json)记录上一候选稿中的单项书目修订：主会日程为2026-11-06至2026-11-08，故标作待刊；ACL Anthology正式论文编号、页码和DOI尚未核实。该稿第19页排版已检查；其后G2方法段修订后的完整渲染见检索实现对照收据。
+- [方法与冻结协议对照](results/paper/condensed_candidate_20261028_01/method_protocol_audit_20261028.json)核对了10项可机器判定的运行设置；[检索实现对照](results/paper/condensed_candidate_20261028_01/retrieval_implementation_audit_20261028.json)再将候选合并、整块预算跳过和G2/G3上下文关系与冻结代码核对。9项实现事实通过；这些检查不代表整篇方法和数据语义终审已完成。 [当前候选稿方法论断版本绑定收据](results/paper/condensed_candidate_20261028_01/current_candidate_method_claim_rebind_20261028.json)进一步确认上述审计涉及的9个方法/协议段落与当前候选稿逐段哈希一致；它是版本连续性核查，不等同于重跑代码审计或质量评测。
+- [推理预算论断审计收据](results/paper/condensed_candidate_20261028_01/reasoning_budget_claim_audit_20261029.json)记录原始请求、供应商身份说明的哈希及限制：请求未发送 `reasoning_effort`，服务端实际档位及底层 checkpoint revision 无法独立验证，因此服务别名结果不解释为等预算权重比较或跨厂商泛化。
+- [本版数字核对](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)、[叙述量化复核](results/paper/condensed_candidate_20261028_01/narrative_quantitative_audit_20261028.json)与[表12摘录及摘要复核](results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json)对应继承的合并主文内容；完整审计边界及其原始候选稿哈希见各收据。前版[合并法规及非因果修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_合并法规及非因果修订候选稿_待终审.docx)保留作版本追溯。聚焦稿中的386/400和+0.250已被供应商重分析取代，不可作为当前结果。
+- [统计复核](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)、[叙述量化复核](results/paper/condensed_candidate_20261028_01/narrative_quantitative_audit_20261028.json)与[表12摘录及摘要复核](results/paper/primary_provider_candidate_20261028_01/current_candidate_claim_audit_20261028.json)记录当前稿的主要数字与摘录来源。其前身[更正统计及摘要、表12修订候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_更正统计及摘要表12修订候选稿_20261028.docx)保留作版本追溯，不再标为当前稿。聚焦稿中的386/400和+0.250已被供应商重分析取代，不可作为当前结果。
+- [正文数字与证据供给叙述审计](results/paper/condensed_candidate_20261028_01/narrative_numeric_claim_audit_20261028.json)将355/400范围、主要配对效应及缺失界、来源共现和位置覆盖对应到原分析文件；审计范围不含355条回答的完整语义复核或法规时点适用性验证。
+- [当前法规来源核验](results/paper/condensed_candidate_20261028_01/current_candidate_regulatory_source_audit_20261028.md)原绑定于前一版CFinRAG候选稿；本次仅修改段落131，法规段落146未变，故沿用其限定范围内的官方日期与活动清单口径核查。
+- [摘要版本差异审计](results/paper/condensed_candidate_20261028_01/current_candidate_delta_audit_20261028.json)记录摘要修订版相对其父稿仅正文段落3、6变动；其后方法段45单独修订，见上方方法修订审计。12张表格单元格与21个嵌入媒体资源哈希仍一致。该差异核对不替代全文语义审查。
+- [当前摘要论断核验](results/paper/condensed_candidate_20261028_01/abstract_claim_alignment_current_candidate_20261028_v3.json)绑定当前主文哈希，核对中英文摘要的样本数、配对效应与区间、缺失界、来源同现、位置覆盖及G3上下文控制口径；6项检查通过。该收据不等于全稿语义审核，也不验证答案正确性或语义检索召回。 [当前版本绑定收据](results/paper/condensed_candidate_20261028_01/current_candidate_abstract_rebind_20261028.json)确认两段摘要文本哈希与该专项核对稿相同，并把计算输入哈希绑定到fa128候选稿；只覆盖摘要，不代替全稿审核。
+- [当前主稿版本与引文连续性审计](results/paper/condensed_candidate_20261028_01/current_candidate_audit_bridge_20261028.json)确认表1–11与统计底稿逐格一致、表12与摘录核验底稿逐格一致；当前正文引用[1]–[31]均有对应条目且均被引用，参考文献编号完整性与已覆盖范围内的来源审计连续性通过。HiREC措辞、CRAG预印本书目、CFinRAG新增[30]和CNINFO年报[31]分别有专项核查。该审计不替代355条回答的逐条语义复核、法规历史适用性核验或整稿终审。
+- [CFinRAG文献来源核查](results/paper/condensed_candidate_20261028_01/cfinrag_citation_audit_20261028.md)与[候选稿修订收据](results/paper/condensed_candidate_20261028_01/current_candidate_cfinrag_revision_receipt_20261028.json)记录新增来源、引用重编号、31条文献覆盖及WPS页面复核；它们不证明全领域检索穷尽或论文贡献新颖性。
+
+## 2026-10-28 法规日期与因果措辞复核（历史候选）
+
+- 法规日期与因果措辞版本为[非因果表述修订稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_非因果摘要修订候选稿_20261028.docx)，21页、12表、8图；补充材料仍为3页、3表、1图。摘要将双路/合并条件下的来源共现及评分差改成观察性描述，讨论同步说明来源删除消融同时改变证据内容和上下文长度。
+
+- 第7.6节仍依据证监会官方公告区分第226号令（2025-03-26公布、2025-07-01施行）、第6号公告（2025-03-28公布并施行）和第18号公告（2025-10-16公布、2026-01-01施行）。该历史候选的WPS只读渲染为21页；相对其法规日期复核稿，Poppler 120 dpi对比仅第1、17页变化，均已目视检查，其余18页像素一致；12张表单元格文本未变。
+
+- [法规日期核验收据](results/paper/condensed_candidate_20261028_01/legal_date_claim_audit_20261028.json)、[非因果表述与渲染审计](results/paper/condensed_candidate_20261028_01/manuscript_claim_revision_audit_20261028.json)、[本版数字继承核对](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028_noncausal_revision.json)和[本版SHA-256清单](results/paper/condensed_candidate_20261028_01/SHA256_manifest_20261028_noncausal_revision.json)记录来源与版本。该修改不证明2024年事项的历史法规适用性；稿件仍待全文语义终审、作者元数据和目标期刊格式适配。
+
+## 2026-10-28 供应商输出重分析更正
+
+- 最新口径以[仅供应商真实生成输出的重分析](results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json)及[2026-10-28随机种子复核](results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json)为准：主实验G1/G2/G3为147/180个有效API生成（52/60、47/60、48/60）；所有条件为355/400个可评分供应商回答。旧候选稿的178/180、386/400包含33条当前助手会话补写，其中31条曾被评分，不能作为供应商实验结果；补写未调用API，已从正式分析中排除。
+- 最新统计显示G2−G1公司宏均分差为+0.228/8（41个配对问题，20,000次公司聚类bootstrap区间[0.110, 0.355]）；但基于缺失评分端点的全题代数界为[-1.508, 1.292]，跨零，故不能推广为计划题集上的确定优势。G3−G2为+0.013/8（38对），同样仅作探索性观察。缺失界、筛选子集和协议限制见重分析文件及候选稿。
+- 最新[供应商输出重分析候选稿](results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_摘要证据供给措辞修订_20261028.docx)为21页；表12节选和评分映射已有专项复核，摘要的区间与来源供给数字也已绑定重分析及回放源文件。按355份评分记录复算后，已统一表5“No rerank”“BM25”两行的逐回答均分口径，并将表8公司事实评分差修正为0.115；表5–9与重分析数据复算一致。表5–9统计修订版本的版面核查仅第10、13页变化；随后表12和摘要复核版本重新渲染为21页，第1–3页已复核，第4–21页与前版像素一致。详细复算与边界见[候选稿审计记录](results/paper/substantial_revision_20261023_01/audit/table_figure_alignment_20261028.md)。统一主文的段落124现对一个事后选取案例完成全文核查，但355条回答尚未逐条进行人工语义复核；该稿仍是内容候选稿，不是投稿终稿或二区录用证明。跨模型族实验尚未完成；跨年度/Agent结果仍是小样本探索性运行。
+- GitHub同步状态：当前统一主文候选、修订收据、README与阶段计划已同步到草稿PR #3；本地集成分支仍落后远端85个提交且工作区混有其他改动，未将本地混合改动整体推送。
+
+## 2026-10-28 精简主文与补充材料候选稿
+
+- 此前的主文版本保留为历史快照：[供应商口径同步精简主文](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx)，21页、12表、8图；配套[精简补充材料](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx)为3页、3表、1图，仅保留主文引用的预算回放与BM25定位诊断。主稿已同步20,000次公司聚类bootstrap的2026-10-28种子区间；最近一次渲染中第11、15页已复查无裁切或重叠，其余页面与已检查版本逐像素一致。补充材料3页也已检查。主文表6–11已按355份评分、种子20261028重分析JSON及检索汇总CSV复算；[数字核对收据](results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json)记录通过项目和输入哈希。渲染证据见[补充编号收据](results/paper/condensed_candidate_20261028_01/aligned_candidate_receipt_20261028.json)和[bootstrap同步收据](results/paper/condensed_candidate_20261028_01/bootstrap_sync_receipt_20261028.json)。
+- 较早的[未同步精简主文](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文候选稿_待终审.docx)仍是历史快照，原有178/180、386/400已被供应商输出重分析更正，不能引用为现行结果。原完整补充材料也保留为历史版本；旧文件没有覆盖。
+- 当前工作稿仍待作者/单位/基金等元数据确认、全文内容终审和目标期刊模板适配，不是投稿终稿，也不能据此声称达到二区录用水平。原聚焦稿、扩展稿及运行材料均保留。
+- 跨年与Agent实验并非尚未运行：已有2家公司、2023/2024两个报告年度、12题的小样本探索批次；因公司少、年份与切分混杂、同生态自动评分及预算未完全匹配，不能据此声称独立跨年度泛化、跨模型族效果或Agent普遍增益。实验细节和边界见[交付说明](results/paper/generalization_extension_20261023_01/交付说明.txt)及[阶段收敛计划](docs/论文阶段收敛计划_20261027.md)。当前优先收口主稿与复现材料；追加实验须针对尚未支持的明确主张，不重复已做运行。
+
+## 已被更正统计取代的聚焦稿历史快照
+
+- 该稿仍保存用于追溯，但包含已被供应商重分析取代的386/400、+0.250旧口径，不是当前工作稿。当前稿见上方“统一主文候选稿”。
+- 历史[聚焦主问题候选稿](results/paper/focused_candidate_20261028_01/年报与法规双源RAG_聚焦主问题候选稿_待终审.docx)，从完整跨年/Agent扩展候选稿派生，保留主实验与相关检索诊断，移出跨年度/Agent、聊天助手和自动评分校准等探索性章节；原扩展稿和实验材料均保留。聚焦稿为26页、19表、13图，WPS只读渲染与逐页视觉核查完成；详见[版本说明](results/paper/focused_candidate_20261028_01/README.md)及[审计收据](results/paper/focused_candidate_20261028_01/focused_candidate_audit.json)。它仍待内容终审、作者元数据和目标期刊模板适配，不是投稿终稿。2026-10-28进一步收窄了可审计性相关表述，明确没有实测复核成本、决策风险或人员工时，并在结论中说明来源缺失消融同时改变了证据内容和上下文长度；WPS复核为26页，新增检索指标口径说明并完成全页复核，详见聚焦稿审计收据。
+- 检索指标核查：主实验另保存60题×两策略×Top-10排序（1,200行）；现有40题、1,049条开发集相关判断与主实验题目ID无交集，因此不报告主实验标准Precision/Recall/nDCG。
+- 2026-10-28已为这60题准备主实验Top-10候选池的双人盲审表：排序行与冻结索引中的片段、来源哈希、文档类型和页码全部匹配；合并去重后833个“题目—片段”项，A/B各833行，协调密钥单独保存。判断栏均为空，**人工qrels和检索指标仍未完成**；后续Recall只能解释为冻结候选池内Recall，不能解释为全库召回率。范围和校验记录见[盲审包说明](docs/主实验检索相关性双人盲审包_20261028.md)。
+- 已增加盲审结果离线评分入口`scripts/score_primary_retrieval_qrels_20261028.py`：校验盲审表、协调密钥和冻结问题集；标签未完成时停止指标计算；分歧须仲裁后才计算P@k、候选池Recall@k、graded nDCG@k和公司聚类配对bootstrap区间。空表演练返回`awaiting_reviews`、1666个空标签、0个配对判断，未产生检索质量结论；另以临时合成标签走通“一致评分—待仲裁—完成仲裁”路径，不作为实验结果。收回标注后的命令与输出说明见[盲审包说明](docs/主实验检索相关性双人盲审包_20261028.md)。
+
+## 2026-10-28 当前研究稿与计划
+
+- [双源RAG实证长稿](results/paper/substantial_revision_20261023_01/年报与法规双源RAG_大幅修订研究长稿.docx)是精简主文的上游研究稿，含20家公司、60个问题的既有双人评分研究及后验检索、预算、主题和缺失敏感性分析。当前实际编辑对象以本页上方的统一主文候选稿及配套补充材料为准。
+- 文献更新加入年报问答基准ARQA、CFQA；主稿的29条参考文献均能对应正文引文。WPS只读渲染为25页，版面复核记录见[交付与实验复现说明](results/paper/substantial_revision_20261023_01/交付与实验复现说明.txt)。
+- 当前结论只适用于现有样本和评分口径：分路检索相对合并候选池呈正向观察，同上下文角色提示无稳定增益；严格法规位置覆盖有限。法规版本时点、论断级语义支持、真人独立复核与跨模型族泛化均未得到验证，不将结构化引用、页码命中或新增上下文材料称作答案准确率/召回率。
+- 已从主实验制备40题、120条回答的论断—证据盲审包（每家公司2题，含G1/G2/G3）；两名复核者的标注文件目前各有120行空白记录、0条新判断。它补充检查既有回答的论断支持，不是独立新公司测试集。当前主稿已明确不声称论断级语义支持或历史法规适用性验证，因此该盲审包暂不阻塞主稿冻结；如将来提出上述主张，再由真人独立复核。来源副本约101 MB，包留在本地，未推送GitHub。
+- 当前主稿阶段计划收敛为：核对统计与主张、明确法规版本风险边界、完成论文与复现材料一致性检查。论断级盲审包是补充工作，不是主稿冻结门槛；跨模型、跨年度、Agent和表格解析均属于独立研究问题，不作为当前主稿的默认加做项。92条法规版次字段差异仍待仲裁，不是已确认的实质冲突；接受标签为0，审阅人身份和盲审均未验证。详见[阶段收敛计划](docs/论文阶段收敛计划_20261027.md)与[表格解析验收记录](docs/年报表格与跨页续表解析_实现验收_20261027.txt)。
+- [历史主稿表图对齐核查](results/paper/substantial_revision_20261023_01/audit/table_figure_alignment_20261028.md)：该记录核对了当时版本的统计表、检索回放、案例和图表；其386条评分中包含31条助手会话补写，因此“与当时稿件一致”不代表供应商统计有效。现行统计以本页顶部的供应商输出重分析为准。
+
+### 已有跨年度与 Agent 补充运行（探索性）
+
+- 仓库已有[跨年与 Agent 实跑修订稿及复现材料](results/paper/generalization_extension_20261023_01/交付说明.txt)，不能把这批实验说成“尚未运行”：2家公司×2023/2024×3主题，共12题；48个主要回答、12个Agent v2修复单元，保存132次生成调用，60个单元中59个非空。Agent相对三次固定证据修订的自动评分配对均差为2023年−0.333/8（n=6）、2024年0.000/8（n=6）。
+- 结果只作探索性报告：两家公司样本、年份与切分方式混杂；评分由同生态K2.8服务自动完成、没有新增人工评分；Agent与固定修订预算也未完全匹配。K3与K2.8不是跨模型族对照；两条GPT界面案例未独立验证模型身份且带有任务历史，不能计作跨模型验证。
+- 完整扩展稿[年报与法规双源RAG_跨年与Agent实跑修订稿.docx](results/paper/generalization_extension_20261023_01/年报与法规双源RAG_跨年与Agent实跑修订稿.docx)已将补充运行写入第6.7–6.12节，含17图、24表；较新的[核心主稿](results/paper/substantial_revision_20261023_01/年报与法规双源RAG_大幅修订研究长稿.docx)含13图、19表、29项参考文献，扩展稿清单为25项参考文献。两者是不同修订快照：前者含跨年/Agent正文，后者保留较新的文献和编辑修订。合并实验章节已在下方候选稿完成；冻结前仍需复核引文、表图编号、统计数据与结论边界，不能把两份来源快照中的任一份单独称为统一版本。详见[论文阶段收敛计划](docs/论文阶段收敛计划_20261027.md)。
+- 当前本地[跨年/Agent合并候选稿（待内容终审）](results/paper/integrated_candidate_20261028_01/年报与法规双源RAG_跨年Agent合并候选稿_待渲染验收.docx)含24表、17图和31条参考文献；正文图表引用已核对，补充实验48条主回答、12条修复单元和132次调用已复核。2026-10-28针对保利发展分红案例补入官方实施公告，末页参考文献间距修正后WPS重渲染为30页，[最近渲染记录](results/paper/integrated_candidate_20261028_01/render_qa_crossyear_score_audit_20261028/native_render_receipt.json)确认源文件未被渲染过程改写。该稿仍待整稿内容终审、作者/投稿元数据确认和期刊模板适配，不代表已达到二区录用标准；GitHub同步另需处理分支落后和本地未跟踪文件筛选。
 
 ## 2026-10-27 预算竞争修复：已按规划实施并离线验证
 
@@ -8,11 +198,10 @@
 - 招商银行2024：表格优先为6/6个表格姓名候选＋5/9个日期来源区间；新策略在**5921 tokens**内同时提供6/6和9/9。交替分配仍只保留3/6个表格姓名候选，负例没有删除。[对照图](results/runs/evidence_budget_development_20261027_01/figures/joint_source_supply.png)。
 - 新策略在8个已曝光开发问题上保留全部提供给算法的表格姓名候选，勘误参考页覆盖为100%。这不是回答Precision/Recall，原始正文可能本来就包含这些姓名；不能据此声称未见数据泛化或独立验证成功。
 - 可用[supplement_evidence_budget.py](scripts/supplement_evidence_budget.py)直接导出联合材料及提示，已实际导出5921-token packet，全程0模型调用。新的生成质量仍为空，独立人工复核仍未完成。
-- 主稿另准备论断—证据盲审包：40题×G1/G2/G3，共120条既有回答、覆盖20家公司。两名复核者各120行标注表目前均为空；这项复核检查既有回答的论断支持，不是新公司/新问题测试集。评审包含32份来源副本（约101 MB），仅同步状态说明，来源包保留本地，待人工提交后再汇总。
 
 ## 2026-10-27 同步范围与下一步
 
-本次GitHub同步包含已验收的表格解析、邻接扩展、证据保留代码、必要依赖、测试与离线材料。[实施规划](docs/预算分配优化实施规划_20261027.txt)已先行保存；相同6000-token预算下的截断线索、表格优先、邻接优先与交替策略比较已完成。8题开发集没有独立人工验证，不作为最终性能结论。下面各批次报告中的“尚未推送”是其验收时状态；最新发布以本节和提交历史为准。
+本次GitHub同步包含已验收的表格解析、邻接扩展、证据保留代码、必要依赖、测试与离线材料。相同6000-token预算下的截断线索、表格优先、邻接优先与交替策略比较已完成，详见上方材料分配结果和对应验收说明；该8题开发集没有独立人工验证，不作为最终性能结论。下面各批次报告中的“尚未推送”是其验收时状态；最新发布以本节和提交历史为准。
 
 新增离线测试工作流只安装`requirements-offline-evidence.txt`，不需要API凭证、模型权重或原始年报PDF。完整来源重验与离线实验重跑仍需按官方地址/哈希取得对应PDF与索引，测试通过不能替代独立人工标注。
 
@@ -21,6 +210,12 @@
 - 已完成有网格表格、无框线出席矩阵、独立落页表头、重复表头、跨页姓名/日期及议案续行的处理；单元格保留PDF物理页、版面坐标、原始字符索引及指纹。[实现、结果与使用说明](docs/年报表格与跨页续表解析_实现验收_20261027.txt)。
 - **8份年报、142个治理关键词及相邻页**中，检测77个表格区域，连接18组相邻页表格，合并8处断行；生成120条表格字段检索记录，其中45条明确涉及审计委员会。不是对全部财务报表版式的通用正确性保证；单PDF入口支持`--all-pages`。
 - **212项测试通过**；4326个单元格在重新打开的PDF上核验，46页原文预览已生成。[离线验收](results/runs/annual_table_development_20261027_03/implementation_audit.json)确认134份历史发布文件不变，全程0模型调用。
+- 后续代码复查发现同页混合版式边界：页面含有框线表时，旧逻辑会跳过同页的无框线出席矩阵。v1.3已修正；10页合成夹具的`tests/test_annual_tables.py`为39/39通过。修复已提交至[草稿PR #4](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/pull/4)，PR离线CI通过。
+- 2026-10-28在新目录重跑原8份年报后，142页、77个表格、18组续表、8处断行、4326个单元格与v1.2结果一致；8份解析文档除版本字段外完全相同，离线分析文件哈希也一致。该结果是同一开发批次的非回归检查，不是新增准确率或独立验证。[对照收据](results/runs/annual_table_development_v13_regression_20261027_01/v13_nonregression_audit.json)。
+- 2026-10-28用立讯精密2024年报第60–61页发现并修复两处实际漏项（v1.4）：跨页意见续句从“伪表头”并回上一条会议记录；结构化检索保留以“审议”开头的议题及意见/履职说明字段。单案由4条审计委员会记录补足为8条可检索委员会记录；41项定向测试通过，原8份年报离线批次通过回归。此为事后案例修复，不是独立泛化或答案质量指标。[单案证据与回归收据](results/runs/luxshare_case_table_audit_20261028_06/cross_page_case_audit.json)。
+- 留出报告发现类别误判后，当前解析器升至v1.7：股东大会/董事会表不再仅因含“会议”和“日期”就归入委员会会议；委员会表需要明确列或章节证据。美的2024第70页、北京文化第25页和第30–31页的错误类别已纠正，对应真正专门委员会表仍保留。42项定向测试和原8份年报回归通过。[55页留出盲审页](results/runs/annual_table_holdout_review_v17_20261028_02/blind_review.html) / [空白标注表](results/runs/annual_table_holdout_review_v17_20261028_02/page_review_template.csv) / [机器可读审计](results/runs/annual_table_holdout_review_v17_20261028_02/holdout_audit.json)。人工标签仍为空，未报告留出准确率、精确率或召回率。
+- 2026-10-28并发测试复核后，将“至少8个工作线程重叠”的时序假设改为8线程屏障同步；相关并发用例连续5轮（50项）通过。随后当前本地工作区完整`pytest`为**1256项通过**，耗时80.44秒；有3条弃用/参数提示。测试使用项目虚拟环境中锁定的NumPy 1.26.4，并临时复用本地现成的PDF解析依赖。由于当前本地分支有未提交改动且落后远端，以上全量结果尚未由GitHub CI复核，不能视作远端提交已验收。
+- 当前v1.7完整本地`pytest`为**1263项通过、0失败**，耗时88.67秒，含4条弃用/依赖参数警告。v1.7解析代码已同步至仍开放的草稿PR #4；其对应离线工作流[#152通过](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/actions/runs/40643942017)，覆盖离线回归测试清单（包括年报表格和证据接入测试），不是全量`pytest`。CI通过不替代独立人工标注或生成回答质量评价。
 - 表格FTS5检索与按表格类型均衡检索已接入保留原证据的RAG接口；完成8题×5方案的40份上下文对照，均≤6000参考tokens。均衡表格补充的勘误参考页覆盖为100%，原始材料为95.83%；页面覆盖不等于语义召回。
 - **同时保留负例**：招商银行2024中，邻接续片独立补充可供给9/9个审计日期来源区间，而先表格后邻接仅5/9，存在预算竞争。[完整对照图](results/runs/annual_table_development_20261027_03/figures/table_retrieval_comparison.png)。
 - [本地表格/续表复核页面](results/runs/annual_table_development_20261027_03/review.html)提供原页链接、委员会归属及跨页标记；329行复核模板均未填写，独立人工验证尚未完成。规则解析器的开发集字段指标另存，不能替代LLM生成质量；代码与离线材料已由提交 [c416a61](https://github.com/2391552910-coder/xiao-traceable-regulatory-rag/commit/c416a6166066bb3990c3f18e7ed2912ab1036055) 发布；本轮未替换Word论文。
@@ -60,10 +255,10 @@
 
 | 研究层次 | 实际范围 | 已有结果 | 边界 |
 | --- | --- | --- | --- |
-| 原双人评分研究 | 20家公司、60题；400个计划输出、386个有效输出 | 双路检索相对合并检索，公司宏均分差+0.250/8；历史探索性95%区间[0.167,0.333] | 同证据角色提示增量−0.008，未显示稳定收益；缺失输出与评分天花板另作分析 |
+| 供应商真实输出重分析 | 20家公司、60题；主G1/G2/G3为147/180，全部条件355/400 | G2−G1公司宏均分差+0.228/8（41对；聚类区间[0.110,0.355]） | 全题缺失界[-1.508,1.292]跨零；旧386条双人评分统计已被纠正，不作现行供应商结果 |
 | 上下文诊断 | 1,800个缓存回放、600个新稀疏检索上下文 | 保留来源供给、预算及参考位置诊断 | 不是2,400个新生成回答；页面覆盖不是语义召回 |
 | 新公司跨年度字段提取 | 原20家之外4家公司，2023/2024两年度，共8题×5条件 | 40个计划单元；38项最终响应成功，37项非空且结构合格；保存71条调用记录 | 标签由AI助手提取核查，尚无新增独立人工裁定；仅测试披露提取，未测试法规适用结论 |
-| 跨模型族 | 官方Qwen固定权重哈希匹配；CPU FP16模型加载成功 | 官方cu126安装超时；4,323-token单题CPU冒烟未完成单token生成、未保存答案；跨模型性能仍未完成 | K3与K2.8为同家族服务比较；聊天案例不计独立跨族验证；详见[运行环境复核](docs/Qwen3本地推理环境复核_20261027.md) |
+| 跨模型族 | 官方Qwen固定权重及量化文件哈希匹配；CPU FP16模型加载成功 | cu126安装请求超时；CPU单题4,323-token输入的单token冒烟未在观察窗口内完成，未保存答案；跨模型性能仍未完成 | K3与K2.8为同家族服务比较；聊天案例不计独立跨族验证；运行环境复核见[记录](docs/Qwen3本地推理环境复核_20261027.md) |
 
 ## 精确率、召回率、F1与准确率
 
@@ -201,9 +396,9 @@ python tests/test_smoke.py
 python experiments/08_eval_embedding_rerank.py --backend tfidf --no-rerank --out-dir results/smoke
 ```
 
-正式运行前须完成任务文档中的 P0 校正、年报/法规双库输入与检索链路、问题级双源证据标注和生成核验集。当前默认配置采用 Qwen3、启用重排，LLM 为 `mock: true`；仅向 02/03/04 传 `--backend tfidf` 不会自动关闭重排。正式生成须显式关闭 mock，配置真实生成模型，API 密钥通过环境变量注入。
+当前论文研究分析沿用已保存的生成输出、评分与冻结检索材料；不新增问题级证据标注或人工核验集。若某项检索指标没有任务适配且可信的既有金标准，应标为未测，不用代理覆盖率替代 Precision/Recall。上述离线冒烟测试只验证软件联调，不表示论文实验已完成。真实生成仍须显式关闭 mock 并配置可用模型服务。
 
-优先顺序是：明确并实现年报/法规双库的解析、切分、索引与来源坐标 → 建立双源检索和逐论断引用生成 → 制作小规模人工核验评测集 → 冻结基线并完成对照、消融和统计 → 再决定微调与论文交付。实际结果不支持假设时，应记录负结果并修正方法。
+后续优先顺序是：核对唯一主稿中的数字、图表、引文与已有原始记录 → 复现并记录已有分析及其适用边界 → 完成作者元数据和目标期刊模板适配。只有在主问题确有未回答且可复现的实验缺口时，才新增对应实验；不以新增人工标注填补证据不足。实际结果不支持假设时，应如实报告负结果并收窄结论。
 
 
 </details>

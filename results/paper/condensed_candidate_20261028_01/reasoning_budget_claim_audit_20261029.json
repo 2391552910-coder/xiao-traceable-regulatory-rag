@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "status": "passed_for_changed_pages_and_claim_scope",
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_推理预算口径校准候选稿_待终审.docx",
+    "sha256": "da01d62b3aea62a9c1f530a8560b7cfd798d2e182b7db07cca59b0b8a9dbfb48",
+    "predecessor_path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_合并法规及非因果修订候选稿_待终审.docx",
+    "predecessor_sha256": "8bc095a505c70b4dabf569f175f1a1c35922345eafec1375b7f298df1244e9ee",
+    "changed_package_parts": ["word/document.xml"],
+    "changed_body_paragraphs_zero_based": [70, 148, 179],
+    "new_model_calls": 0,
+    "new_human_labels": 0
+  },
+  "claim_correction": {
+    "scope": "K3 vs kimi-for-coding / K2.8 Preview service-alias comparison; this is not a cross-provider model-family experiment.",
+    "verified_request_facts": [
+      "Both sampled raw request records contain model, temperature, max_tokens, and messages; neither contains reasoning_effort.",
+      "Both sampled requests used temperature=1.",
+      "The saved model-identity audit maps kimi-for-coding to K2.8 Preview but does not independently verify the underlying checkpoint revision.",
+      "The response records do not independently expose the service-side runtime reasoning level."
+    ],
+    "manuscript_treatment": "The manuscript now distinguishes the documented vendor defaults (K3 high; kimi-for-coding/K2.8 Preview max) from the unobserved runtime setting, states that reasoning budgets were not unified, and limits interpretation so the comparison cannot be attributed to model weights or generalized across model families.",
+    "vendor_reference": "https://www.kimi.com/help/kimi-code/models",
+    "vendor_reference_checked": "2026-10-20 and 2026-10-23",
+    "source_files": [
+      {"path": "results/runs/paper_secondary_k28_windows_20261021_02/model_identity_resolution.json", "sha256": "66a56f2a149b87f2266025ba58fc89d2e499e6ad168f3c53a4d1b3d930301ced"},
+      {"path": "results/runs/paper_secondary_k28_windows_20261021_02/pre_API_freeze.json", "sha256": "f13fe524f4795f0dde3ae17333cc1d594103685db396f88dd0ed9ddea41b0c4a"},
+      {"path": "results/runs/paper_secondary_k28_windows_20261021_02/remaining/HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE__merged_corpus_generic_cited_rag__repeat_001.json", "sha256": "4de5b830064a76c9c626349162521b1b8266a620cad3a6d4c1ae88f277acc719"},
+      {"path": "results/runs/compact_final_execution_windows_20261020_01/generated_v5/HOLDOUT-000333SZ-2024-AUDIT_COMMITTEE__dual_source_role_grounded_rag__repeat_001.json", "sha256": "fdf56c5a51529ed3427caa8138207b3d76dd8b2e08ce617c47ee244f54e69b7f"}
+    ]
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat; LibreOffice-based skill renderer unavailable because soffice.exe is not installed.",
+    "source_unchanged": true,
+    "pdf_path": "results/paper/condensed_candidate_20261028_01/render_wps_reasoning_budget_20261029/paper_native.pdf",
+    "pdf_sha256": "cb766484afd5d556286b3a091df18f7d96acc58bf993efc887c5b3ed2fb7d393",
+    "page_count": 21,
+    "rasterizer": "PDFium via pypdfium2 at 120 dpi",
+    "changed_pages_vs_predecessor_pdf_same_renderer": [8, 18, 19, 20],
+    "visually_inspected_changed_pages": [8, 18, 19, 20],
+    "visual_result": "No clipping, overlap, or displaced table/reference content observed on changed pages."
+  },
+  "inherited_receipt": {
+    "path": "results/paper/condensed_candidate_20261028_01/merged_candidate_validation_receipt_20261028.json",
+    "sha256": "869f8173fdbf0c2c975be395f752f257040eb00bc5d26cc723bffc60b483193a",
+    "scope_note": "Inherited checks bind the predecessor DOCX hash; this receipt covers only the added reasoning-budget claim correction and rendering review."
+  },
+  "remaining_limitations": [
+    "No independent checkpoint revision or service-side runtime reasoning level was available.",
+    "No new model call or cross-provider experiment was performed.",
+    "Full manuscript semantic and editorial signoff, author metadata, and target-journal template adaptation remain pending."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "audit_date": "2026-10-28",
+  "status": "passed_scoped_paragraph_20_benchmark_claims",
+  "candidate": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+    "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f",
+    "paragraph_index_zero_based": 20,
+    "paragraph_sha256_utf8": "98f72356b969f647348c570295184e968225ea4b153c11d18d2dddc65beaa84f"
+  },
+  "claims_checked": [
+    {
+      "reference": 28,
+      "name": "ARQA",
+      "source": "https://aclanthology.org/2026.eacl-industry.63/",
+      "verified_details": [
+        "approximately 2,500 QA pairs",
+        "ten fiscal years of automotive enterprise annual reports",
+        "lookup, arithmetic, and insight reasoning families",
+        "deterministic verification/recomputation and domain-expert review"
+      ],
+      "result": "manuscript wording supported"
+    },
+    {
+      "reference": 29,
+      "name": "CFQA (Financial Narrative Processing Workshop 2026)",
+      "source": "https://aclanthology.org/2026.fnp-1.3/",
+      "metadata_source": "https://lrec.elra.info/lrec2026-ws-fnp-03",
+      "verified_details": [
+        "50 listed companies and annual reports spanning 2023-2025",
+        "500 questions generated from ten question templates per source document",
+        "manual gold answers grounded in source reports",
+        "RAG compared with a no-retrieval baseline",
+        "answer matching distinguished from evidence support/fabrication judgments"
+      ],
+      "result": "manuscript wording supported"
+    }
+  ],
+  "ambiguity_note": "A separate EPJ Data Science paper also uses the acronym CFQA for a different benchmark (13,643 questions and 516 reports). The manuscript's reference [29] identifies the 2026 Financial Narrative Processing Workshop paper by Zhu, Liu, and Kurfali; the checked figures match that cited work.",
+  "changes_required": false,
+  "scope_limit": "This receipt covers only paragraph 20's ARQA and reference [29] CFQA claims; it is not a full related-work novelty search or manuscript semantic review."
+}

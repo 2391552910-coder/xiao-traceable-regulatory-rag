@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-29",
+  "official_notice": "https://www.csrc.gov.cn/csrc/c101954/c7449659/content.shtml",
+  "official_attachment": "https://www.csrc.gov.cn/csrc/c101954/c7449659/7449659/files/附件1：关于修改《上市公司章程指引》的决定.pdf",
+  "local_txt": "data\\knowledge_base\\DOC343_【第62号公告】关于修改＜上市公司章程指引＞的决.txt",
+  "local_txt_sha256": "a5ce12c9c8d6c95c9770a3ff689c022195537b57417fafd7c73ca16ab30a2696",
+  "local_official_pdf": "results\\runs\\official_reference_sources_gpu_extension_windows_20261020_01\\source_inputs\\DOC343.pdf",
+  "official_pdf_sha256": "2b2b3084498677df48ee475e076988693774b223682ea6e717113b0aef08e5a4",
+  "pdf_pages": 59,
+  "index_sha256": "87fd7c197edb3c3d3503f76fb235a63c5b9c2448958b26b7c2f461e8606239c3",
+  "plan_sha256": "af128982ee34716115b7826b1c8588a548cc130f9b229fead8b6095b1a43338d",
+  "ranking_sha256": "9572f6f8e1004c878505fa2dcd2e91478f6613f76dc983f239665f112e4d173a",
+  "index_chunk_counts": {
+    "DOC343": 218,
+    "OFFICIAL-DOC343": 60
+  },
+  "text_version_excluded": true,
+  "official_pdf_version_excluded": false,
+  "official_pdf_pages_indexed": 59,
+  "frozen_g2_official_pdf_candidates": 7,
+  "distinct_questions": 7,
+  "all_candidate_pages": [
+    2
+  ],
+  "manuscripts": [
+    {
+      "source": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_页码分层核验修订候选稿_待终审.docx",
+      "source_sha256": "1d242b29f769e57f419a5d6ff9d2eab2225f96085be12822b40011ad6d990c45",
+      "output": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_DOC343来源更正候选稿_待终审.docx",
+      "output_sha256": "6f723dcf8e465f3490315c6287670551a7f9b63b8f0175da2bd995004ee46960",
+      "changed_paragraph_zero_based": 146,
+      "tables_media_unchanged": true,
+      "pages": 21,
+      "pixel_changed_pages": [
+        18,
+        19,
+        20
+      ],
+      "visually_inspected_pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "source": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_evidence_units_20261029.docx",
+      "source_sha256": "7cf220f5682c98cec99ed0938e07d91e031293b11fa071e1c367fbdd7abf2b02",
+      "output": "results\\paper\\english_translation_current_20261028_01\\Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_DOC343_correction_20261029.docx",
+      "output_sha256": "49db7ed5b918ebd45fdc68cbd3f06ae0241754313afbb43447fd044793fe614f",
+      "changed_paragraph_zero_based": 142,
+      "tables_media_unchanged": true,
+      "pages": 23,
+      "pixel_changed_pages": [
+        20,
+        21,
+        22
+      ],
+      "visually_inspected_pages": [
+        20,
+        21,
+        22
+      ]
+    }
+  ],
+  "scope": "PDF contains decision and republished guidelines; page and candidate counts are structural, not semantic relevance, applicability or independent legal validation. No new retrieval, model calls or ratings. Standard renderer lacked soffice; WPS read-only and PDFium comparisons used."
+}

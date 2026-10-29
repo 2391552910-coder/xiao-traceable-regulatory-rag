@@ -1,0 +1,90 @@
+{
+  "status": "rendered_and_visual_qa_passed",
+  "audit_date": "2026-10-28",
+  "source_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_交叉引用与摘要口径修订候选稿_待终审.docx",
+  "source_sha256": "abcab7544c91958ba5bf67175133dcd15d40ff14de327512203e4a18b79217fa",
+  "candidate_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_引文范围与摘要口径终审修订候选稿_待终审.docx",
+  "candidate_sha256": "fc188110b08535e3d6e384b042f3737ba50bb40f85758d05a9bcd6d1256c2535",
+  "changed_package_members": [
+    "word/document.xml"
+  ],
+  "changed_paragraph_indexes_zero_based": [
+    19
+  ],
+  "changed_text": {
+    "to": "也说明长文档组织与补充查询已有先行研究。",
+    "from": "直接说明年报检索、长文档组织与补充查询本身已有先行研究。"
+  },
+  "rationale": "HiREC supports retrieval over standardized financial documents; narrowing this prior-work claim to annual-report retrieval was not warranted by the cited source. This revision aligns the wording with the existing citation semantic audit.",
+  "source_audit": "results/paper/condensed_candidate_20261028_01/retrieval_corpus_citation_audit_20261028.md",
+  "model_calls": 0,
+  "human_labels_added": 0,
+  "tables_modified": false,
+  "figures_modified": false,
+  "render": {
+    "pixel_identical_pages_vs_previous_current_candidate": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "method": "WPS native read-only ExportAsFixedFormat followed by Poppler rasterization",
+    "source_unchanged": true,
+    "changed_pages": [
+      2,
+      3
+    ],
+    "pdf": "results/paper/condensed_candidate_20261028_01/render_wps_hirec_scope_revision_20261028/paper_native.pdf",
+    "pdf_sha256": "01ab7349b3bdf083762cc9cbf81a5016f6861f4e3d6ee186f2c941249a60eeb4",
+    "visual_qa": "All 21 pages inspected at original raster size. Pages 2–3 contain the expected text reflow without clipping or overlap; pages 1 and 4–21 are pixel-identical to the prior current-candidate render.",
+    "visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "page_count": 21
+  },
+  "citation_number_integrity": {
+    "candidate_sha256": "fc188110b08535e3d6e384b042f3737ba50bb40f85758d05a9bcd6d1256c2535",
+    "bibliography_entries": 29,
+    "unique_in_text_citations": 29,
+    "missing_bibliography_entries": [],
+    "uncited_bibliography_entries": [],
+    "duplicate_bibliography_entries": [],
+    "method": "Regex scan of current DOCX paragraph text: body paragraphs 0–154 compared with bibliography paragraphs 155–184."
+  }
+}
+

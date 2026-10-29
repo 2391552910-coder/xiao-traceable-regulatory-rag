@@ -1,0 +1,22 @@
+{
+  "source_sha256": "a98393b7da6da0e0954e4c41836e6201898e646f467f79831e358da58df82816",
+  "output_sha256": "76bca23f53ffac54da086f908397cae56b94586e43c6cc142734c10d12fedf0a",
+  "paragraph_count_source": 192,
+  "paragraph_count_output": 192,
+  "changed_paragraph_indices": [
+    10
+  ],
+  "changed_paragraph_output_sha256": "2bb3d803860c778b862237abd73739a6a2042706f7bdb59a8ccd9bdafdd01251",
+  "table_count": 12,
+  "table_cells_changed": [],
+  "references_unchanged": true,
+  "inherited_audits": [
+    "retrieval_method_claim_audit_paragraphs_23_24_20261028.md",
+    "rag_method_eval_citation_audit_20261028.md",
+    "annual_report_benchmark_citation_audit_20261028.md",
+    "related_work_claim_audit_paragraph_19_20261028.md",
+    "related_work_claim_audit_paragraph_20_20261028.md"
+  ],
+  "inheritance_basis": "Full paragraph-text comparison shows only paragraph index 10 changed; all tables and bibliography paragraphs are text-identical."
+}
+

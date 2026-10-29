@@ -1,0 +1,52 @@
+{
+  "audit_date": "2026-10-28",
+  "scope": "Paired reanalysis of the existing source-removal outputs; no new model calls or labels.",
+  "manuscript": {
+    "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_来源缺失配对口径修订候选稿_待终审.docx",
+    "sha256": "fb22a6c4e8828929d7b3cbb8fe881e98c0ffbe118b1a0b3faad933dd175a2f02",
+    "paragraph_index_zero_based": 139,
+    "paragraph_sha256_utf8": "0ca5e2b7f222c58f4c61accc1b591ca875abcfa2cbcd2a6f6c54d65f34d0dea9"
+  },
+  "scores": {
+    "path": "deliverables/20261028_provider_corrected_01/analysis/per_output_scores_primary_model_only.json",
+    "sha256": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124",
+    "row_count": 355
+  },
+  "comparison": "G3 minus the same-question source-removal condition; total score is the two-reviewer mean on the 0-8 rubric. Each paired question is from a different company, so the paired mean also equals the company-macro mean.",
+  "results": {
+    "remove_annual_report": {
+      "condition": "minus_annual",
+      "valid_outputs": 20,
+      "paired_questions": 15,
+      "paired_companies": 15,
+      "paired_mean_difference_g3_minus_removed": 0.9666666666666667,
+      "paired_difference_min": 0.5,
+      "paired_difference_max": 1.0,
+      "planned_removal_questions": 20,
+      "missing_g3_outputs_in_removal_questions": 5,
+      "sharp_mean_difference_bounds_over_removal_question_set": [
+        -0.9,
+        1.1
+      ],
+      "bounds_assumption": "G3 missing outcomes are bounded only by the observed 0-8 rubric; all source-removal outcomes are observed."
+    },
+    "remove_regulation": {
+      "condition": "minus_regulation",
+      "valid_outputs": 20,
+      "paired_questions": 15,
+      "paired_companies": 15,
+      "paired_mean_difference_g3_minus_removed": 0.7333333333333333,
+      "paired_difference_min": 0.5,
+      "paired_difference_max": 1.0,
+      "planned_removal_questions": 20,
+      "missing_g3_outputs_in_removal_questions": 5,
+      "sharp_mean_difference_bounds_over_removal_question_set": [
+        -1.15,
+        0.85
+      ],
+      "bounds_assumption": "G3 missing outcomes are bounded only by the observed 0-8 rubric; all source-removal outcomes are observed."
+    }
+  },
+  "interpretation": "Observed paired differences are conditional on 15 available G3 pairs. The sharp bounds over all 20 planned source-removal questions include zero. Removing a source also changes evidence content and context length, so these results do not isolate a pure source-role effect."
+}
+

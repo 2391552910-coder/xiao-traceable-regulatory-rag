@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "date": "2026-10-28",
+  "manuscript": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_bootstrap20261028_法规日期复核候选稿_待终审.docx",
+  "manuscript_sha256": "ea865ca5715f727167ef540761b09fea2b9e162845fdb91c9d5cd9c3300506ae",
+  "scope": "Official-date fact check and narrow wording update in Section 7.6. This does not establish item-specific historical legal applicability.",
+  "verified_instruments": [
+    {
+      "kb_id": "DOC100",
+      "name": "上市公司信息披露管理办法",
+      "version": "证监会令第226号",
+      "published": "2025-03-26",
+      "effective": "2025-07-01",
+      "official_source": "https://www.csrc.gov.cn/csrc/c101953/c7547359/content.shtml"
+    },
+    {
+      "kb_id": "DOC128",
+      "name": "上市公司章程指引",
+      "version": "证监会公告〔2025〕6号",
+      "published": "2025-03-28",
+      "effective": "2025-03-28",
+      "official_source": "https://www.csrc.gov.cn/csrc/c101954/c7547791/content.shtml"
+    },
+    {
+      "kb_id": "DOC120",
+      "name": "上市公司治理准则",
+      "version": "证监会公告〔2025〕18号",
+      "published": "2025-10-16",
+      "effective": "2026-01-01",
+      "official_source": "https://www.csrc.gov.cn/csrc/c101954/c7589726/content.shtml"
+    }
+  ],
+  "checks": [
+    "All three issue/effective dates match the official CSRC notice text.",
+    "The revised paragraph distinguishes issue date from effective date and retains the limitation that 2024 historical applicability is unresolved.",
+    "All 12 table cell texts are identical between the prior candidate and this candidate.",
+    "Only the Section 7.6 regulatory-version paragraph changed in document text.",
+    "WPS read-only export succeeded; source remained unchanged; 21 pages rendered.",
+    "Using the same Poppler rasterizer on both WPS PDFs, only page 18 changed; page 18 was inspected at original resolution; the other 20 pages were pixel-identical."
+  ],
+  "new_model_calls": 0,
+  "new_human_labels": 0,
+  "limitations": [
+    "This does not determine the applicable law for any specific conduct date, issuer, or governance event.",
+    "It does not validate every legal proposition or every generated answer."
+  ]
+}

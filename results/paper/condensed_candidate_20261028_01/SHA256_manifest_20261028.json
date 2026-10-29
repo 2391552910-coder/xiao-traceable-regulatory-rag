@@ -1,0 +1,271 @@
+{
+  "generated": "2026-10-28",
+  "purpose": "Current and prior manuscript candidates, supplements, audit receipts, and exact source inputs for numerical and rubric verification.",
+  "files": [
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_供应商口径同步_补充编号对齐_bootstrap20261028候选稿_待终审.docx",
+      "bytes": 1866561,
+      "sha256": "3d463b65d985fd9d83aa4305bfe4a7ef0411cb3126f747e452200c0303e5f462"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简补充材料_预算与BM25检索诊断候选稿_待终审.docx",
+      "bytes": 1560095,
+      "sha256": "d6435f6ea5d787040012da0b3655040f3171443abc8bf592701ad53235882007"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/aligned_candidate_receipt_20261028.json",
+      "bytes": 3678,
+      "sha256": "e8a86daca2ae90b2c987240ffe70e21fa9112213f718b0188a17328ce17e16ba"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/bootstrap_sync_receipt_20261028.json",
+      "bytes": 2624,
+      "sha256": "946d110196bbe890f5af8cf517903a4d457efc219b2eac17c8266d667a0c680f"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028.json",
+      "bytes": 1640,
+      "sha256": "3e412ed7dbbffd12b6acee9bb7030e93b5feebc4b0f2aa7742abfbc535a1ff94"
+    },
+    {
+      "path": "results/runs/primary_generation_only_reanalysis_windows_20261028_01/analysis.json",
+      "bytes": 17315,
+      "sha256": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910"
+    },
+    {
+      "path": "results/runs/primary_generation_only_reanalysis_windows_20261028_01/per_output_scores_primary_model_only.json",
+      "bytes": 216221,
+      "sha256": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124"
+    },
+    {
+      "path": "results/runs/primary_provider_only_robustness_20261028_02/robustness_audit_primary_provider_only.json",
+      "bytes": 225094,
+      "sha256": "d68fc51f9a75963ffa95c625788c8367791d26bf047bdd039ae36be9c926d9ca"
+    },
+    {
+      "path": "results/paper/substantial_revision_20261023_01/retrieval/baseline_vs_cached_at6k.csv",
+      "bytes": 4403,
+      "sha256": "2afffdb6ad76e5b01d30fadc3f08c54964e11f08b8a877a0fe295e53436645c1"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_精简主文_bootstrap20261028_法规日期复核候选稿_待终审.docx",
+      "bytes": 1866595,
+      "sha256": "ea865ca5715f727167ef540761b09fea2b9e162845fdb91c9d5cd9c3300506ae"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/legal_date_claim_audit_20261028.json",
+      "bytes": 2323,
+      "sha256": "fc88b105f8992ed6966f8eea3388e18a073623752ea2df4ffd615b88489e4bb4"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/numeric_content_audit_20261028_legal_update.json",
+      "bytes": 1844,
+      "sha256": "3f9bae2a439d85ed2d1d5019c1e7278c7cf9888e39ea0b158fde5af461330406"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_legal_date_20261028/native_render_receipt.json",
+      "bytes": 400,
+      "sha256": "e3c1156345de9d148fc985ec4b315def3916a706c1c7afc5e50225da31d4efa5"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/supplement_denominator_revision_receipt_20261028.json",
+      "bytes": 1914,
+      "sha256": "cafbaba1ecc0703d54bcefd604e0fa19d0d0a2e09acc2971a35499653e675f1a"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_supplement_denominator_revision_20261028/paper_native.pdf",
+      "bytes": 363544,
+      "sha256": "eb9abc35f0483ec6b29c0f6f5096f4f3ac66c380d32a3236a204d3f814193902"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_supplement_denominator_revision_20261028/native_render_receipt.json",
+      "bytes": 401,
+      "sha256": "05a6d344ccaaea5439a6cb1ed83828169e05fa14f12e52ddf4541cf071521fe1"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_工程价值措辞校准候选稿_待终审.docx",
+      "bytes": 1868113,
+      "sha256": "072eac78ae934c17789e670b0a4864e095b87c350f9cbc4091d74dc31deaf18f"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/current_candidate_integrity_rebind_20261028.json",
+      "bytes": 3092,
+      "sha256": "73b1dd34dd30e0e99d1b629ff75538f7c78a27e86746a0357de60168245e4c32"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/English_working_translation_current_20261028.md",
+      "bytes": 75258,
+      "sha256": "81628e3d08538a37335d2b019fa03bae83b3ac23f0a849e1c45db94489ee96a8"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_20261028.docx",
+      "bytes": 1868609,
+      "sha256": "1583604bbc521a34b497182f61123137a2d63b5dc842704f1cc7b8ab579a80a4"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_copyedited_20261028.docx",
+      "bytes": 1868683,
+      "sha256": "b794e662732862164f9369ba6e63c5789a204e64e1c2115555dec93a6c156576"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/english_translation_build_audit.json",
+      "bytes": 1106,
+      "sha256": "733989a1c4b676717f0ebfa6b175118f971b79ed07aad38c2054f3e55d4aade9"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/english_copyedit_receipt_20261028.json",
+      "bytes": 2583,
+      "sha256": "4d35414fa0c4f35e0930088b701d596a5bae4a3129afed507c8df42b7cca1d6c"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/recent_reference_metadata_audit_20261028.md",
+      "bytes": 12560,
+      "sha256": "2ea3757c8d6c1c0e49d2b07b44fce51fd195187320d5e203bac53af5108d7e5e"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/rendered_copyedited_20261028/paper_native.pdf",
+      "bytes": 1403307,
+      "sha256": "5765ac68bbb5e1655fc0d68b6286878c6f1e7683ae1d5beda032ea0e120b3416"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/rendered_copyedited_20261028/native_render_receipt.json",
+      "bytes": 400,
+      "sha256": "60567abf6cc527e7bb7550f2e290e8055756cc466ef7b266cc2979de4b79c591"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表可复现修订候选稿_待终审.docx",
+      "bytes": 1868183,
+      "sha256": "44f978f12f868d19ca83448a06c9624643ac107695bcac878f48b6cb08f344e5"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_补充材料_评分量表与检索诊断候选稿_待终审.docx",
+      "bytes": 1561562,
+      "sha256": "8816cea69d7ed6b92524c904b19e28f03857f9c7e1e632975c82778ad61d170a"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/scoring_rubric_revision_receipt_20261028.json",
+      "bytes": 3276,
+      "sha256": "b9f2cf90bd49c5b218d3fe9c578f6f72afb8028a5a4d911247e3bf9e754e702b"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_main/paper_native.pdf",
+      "bytes": 1532512,
+      "sha256": "e1edb6cd601c54dd43cf3f3755dce89e06d03e775f96715201b2c6473fa03c3c"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_main/native_render_receipt.json",
+      "bytes": 401,
+      "sha256": "c2513b54bd551c33e144af4a45faa3281c265c7ad66d74cb9ccaf890dc613ec9"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_supplement/paper_native.pdf",
+      "bytes": 378897,
+      "sha256": "b3804aa5fc5572f5bb143e03c83705a0a4a2435ccff0b319f952773fe37206f0"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_scoring_rubric_supplement/native_render_receipt.json",
+      "bytes": 401,
+      "sha256": "7c1cfe1a065389d82e3b67d2a4ab28b414d8f2373a779b2b131d39f20fb20a02"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028.json",
+      "bytes": 7707,
+      "sha256": "122122e38c840e6939e8cc2e8b28eb9ead0e223800f46c37d9d0ea89855634cd"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评分量表与相关工作表修订候选稿_待终审.docx",
+      "bytes": 1868275,
+      "sha256": "479d6194e5d8531998359a627e2d17d22a6da1f30d02029b96f5c5bd6d8f92e5"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_cfinrag_table1_corrected_20261028/paper_native.pdf",
+      "bytes": 1532969,
+      "sha256": "e27fbc37a41d92ffc8f781da5d5badc9591c74f33546390256fae32c5cb7b4ce"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_cfinrag_table1_corrected_20261028/native_render_receipt.json",
+      "bytes": 401,
+      "sha256": "5edd28f41fc75303589860a4fb9407a02111c0e6d49a5f2fc58247d68cd449f1"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/related_work_cfinrag_table1_revision_receipt_20261028.json",
+      "bytes": 3088,
+      "sha256": "5fc199976b4d258945b780d3696c1d7977a1318b6c7b86ad38b1919c7262423c"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_评测框架表述收紧候选稿_待终审.docx",
+      "bytes": 1868312,
+      "sha256": "ce65ac6f3ddafe86368ee873e20ca7d60291d84f20d139cfdaefa196f1608002"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_eval_framework_wording_20261028/paper_native.pdf",
+      "bytes": 1533736,
+      "sha256": "2e90ae6bdd3962fd73a40f27c9663800f5e97073e5a808daa6929484dada8c29"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/render_eval_framework_wording_20261028/native_render_receipt.json",
+      "bytes": 437,
+      "sha256": "65a5b5215c28fb8677128b7cced5e12352071eeb23fff4c8f6c0c20cbd95ffeb"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/evaluation_framework_wording_revision_receipt_20261028.json",
+      "bytes": 3503,
+      "sha256": "1226a765bf8a27e02e4ed79486d594dbf6306fdabf6902a8a2d6047816da6b96"
+    },
+    {
+      "path": "results/paper/condensed_candidate_20261028_01/current_candidate_citation_claim_bridge_20261028_02.json",
+      "bytes": 8373,
+      "sha256": "79a561e03f78224554cc19b3791c3d871e520a3627e510b2802d8ef6b22ad35a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 54272,
+      "sha256": "e4d9fb2a99d2234bbd1b45e339af0fe13fb74ea2d64d5a3b4923067db5ec759b"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 23291,
+      "sha256": "06aae8554443036ecf1d7fd5d1bb13b2da80cdcc71ca20034f6223f342c0f6ec"
+    },
+    {
+      "path": "docs/论文阶段收敛计划_20261027.md",
+      "bytes": 60826,
+      "sha256": "700dfa7871e2ba1172ba7435e16b876b7a83a93aa4d32ebcd42b3ff4adf04b57"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_synced_20261028.docx",
+      "bytes": 1868904,
+      "sha256": "82e9a0abdff50d9c0f0e9d0f927eb277ba1922432b0b3f06d03169b9692944ac"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/Supplementary_Materials_Dual_Source_RAG_Scoring_Rubric_and_Retrieval_Diagnostics_English_20261028.docx",
+      "bytes": 1561172,
+      "sha256": "be7912a9ddc2c50909b5d920f4b2594d7e32b66b27beb0f9df68c43a86018577"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/english_translation_sync_receipt_20261028.json",
+      "bytes": 2933,
+      "sha256": "5ca874b73432284653265a6b0f517ca35f0e931d9367a1d763a36ebf71fa574c"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_main_20261028/paper_native.pdf",
+      "bytes": 1402360,
+      "sha256": "50e5601f892db7596aa688808cbca16f9448ef3a4c026c9e65792969af405083"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_main_20261028/native_render_receipt.json",
+      "bytes": 437,
+      "sha256": "706c545a63d524ae0de338d7b165cf129a93415201bc945814eab7bd393111de"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_supp_20261028/paper_native.pdf",
+      "bytes": 287637,
+      "sha256": "f94c1ee516efed3eb062fa7a785aaa1c6931817b5234904a5f906eed2e321071"
+    },
+    {
+      "path": "results/paper/english_translation_current_20261028_01/render_english_sync_supp_20261028/native_render_receipt.json",
+      "bytes": 437,
+      "sha256": "74b9f04493779a95af04ec5e38d0ba626c127c5edfc400548ef37cb8db9a7e9e"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "question": {
+    "question_id": "NEW-000651-2023-AUDIT",
+    "company_name": "格力电器",
+    "stock_code": "000651",
+    "report_year": 2023,
+    "query": "根据格力电器2023年年度报告，提取报告期内审计委员会的所有成员姓名（期间换届或变更时取报告明确披露的并集）、全年会议总次数、报告明确列示的所有会议日期。只计审计委员会，不计其他专门委员会。会议次数和不同日期数量可能不同，不据日期去重数倒推会议次数。"
+  },
+  "packet": "NEW-000651-2023-AUDIT.json",
+  "packet_sha256": "dbe03bc068014a15edaa5fbaedf647fbed9f2549b50da85e20293ec307b90df7",
+  "seed": 20261023,
+  "started_utc": "2026-10-29T05:03:32.477149+00:00",
+  "status": "completed",
+  "text": "{\n  \"members\": [\"刘姝威\", \"王晓华\", \"张伟\"],\n  \"meeting_count\": 4,\n  \"meeting_dates\": [\"2023-04-28\", \"2023-08-30\", \"2023-10-30\", \"2023-04-28\"],\n  \"citations\": {\n    \"members\": [\"A1\", \"A2\", \"A3\", \"A4\"],\n    \"meeting_count\": 4,\n    \"meeting_dates\": [\"A1\", \"A2\", \"A3\", \"A4\"]\n  },\n  \"limitations\": []\n}",
+  "parsed": {
+    "members": [
+      "刘姝威",
+      "王晓华",
+      "张伟"
+    ],
+    "meeting_count": 4,
+    "meeting_dates": [
+      "2023-04-28",
+      "2023-08-30",
+      "2023-10-30",
+      "2023-04-28"
+    ],
+    "citations": {
+      "members": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "meeting_count": 4,
+      "meeting_dates": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ]
+    },
+    "limitations": []
+  },
+  "finish_reason": "eos",
+  "prompt_tokens": 5005,
+  "completion_tokens": 144,
+  "elapsed_seconds": 26.921
+}

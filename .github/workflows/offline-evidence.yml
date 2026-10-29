@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: pip
@@ -29,3 +29,9 @@ jobs:
           tests/test_adjacent_chunks.py tests/test_source_span_audit.py
           tests/test_adjacent_evidence_replay.py tests/test_annual_tables.py
           tests/test_annual_table_evidence.py tests/test_evidence_budget.py
+          tests/test_evaluator_citation_diagnostics.py tests/test_qwen_schema_citation_audit.py
+          tests/test_windows_checkout_paths.py
+          tests/test_frozen_development_benchmark.py
+          tests/test_pipeline_temporal_filter.py
+          tests/test_dual_corpus_cli_temporal.py
+          tests/test_qwen_cross_model_year.py

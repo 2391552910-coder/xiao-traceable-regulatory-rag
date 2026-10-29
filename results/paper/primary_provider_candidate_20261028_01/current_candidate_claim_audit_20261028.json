@@ -1,0 +1,82 @@
+{
+  "audit_date": "2026-10-28",
+  "current_docx": "results/paper/primary_provider_candidate_20261028_01/年报与法规双源RAG_供应商输出重分析候选稿_摘要证据供给措辞修订_20261028.docx",
+  "current_docx_sha256": "94e66a534be5723fc79d863bb35148a27b73a090ad520fa8a0a44751bf513018",
+  "table12": {
+    "g3_prefix_length": 120,
+    "prefix_matches_saved_response": true,
+    "table_citation_ids": "A1",
+    "scores_mean": {
+      "merged_corpus_generic_cited_rag": 7.0,
+      "dual_source_generic_cited_rag": 8.0,
+      "dual_source_role_grounded_rag": 8.0
+    },
+    "response_sha256": "e09ed3e54b34a5197c24e262c74a5b8528c0d93dfa7a2ace385da22a6b517edb",
+    "scores_sha256": "374adf66ef594f318ff1720b6ee921640e0bcd6147006091e13dd6e4b390f124"
+  },
+  "abstract_evidence_supply": {
+    "source_context_replay_sha256": "90cb44f35dcae2b7677abd2870e025c054cea00563ffeba44b176c3fcf7923db",
+    "questions": 60,
+    "companies": 20,
+    "budget_tokens": 6000,
+    "llm_calls": 0,
+    "merged_both_source_context_fraction": 0.6833333333333333,
+    "dual_both_source_context_fraction": 1.0,
+    "merged_annual_location_coverage": 0.7966666666666666,
+    "merged_regulation_location_coverage": 0.0,
+    "merged_equal_weight_macro": 0.3983333333333333,
+    "dual_annual_location_coverage": 0.7433333333333334,
+    "dual_regulation_location_coverage": 0.03888888888888888,
+    "dual_equal_weight_macro": 0.39111111111111113,
+    "difference": -0.0072222222222221855,
+    "semantic_quality_evaluated": false
+  },
+  "abstract_score_interval_sources": {
+    "analysis_sha256": "09bc36867b146f6cb3849a1d52225c1c8054fc140a4d84481017e6609a371910",
+    "G2_G1_observed_pairs": 41,
+    "G2_G1_company_macro_diff": 0.22807017543859648,
+    "G2_G1_ci95": [
+      0.10964912280701755,
+      0.35526315789473684
+    ],
+    "G3_G2_observed_pairs": 38,
+    "G3_G2_company_macro_diff": 0.013157894736842105,
+    "G3_G2_ci95": [
+      0.0,
+      0.039473684210526314
+    ]
+  },
+  "render": {
+    "method": "WPS native read-only ExportAsFixedFormat",
+    "pdf_sha256": "21079465b41f36fc1af91c7a9ecd0d476c429174a7797e2ae93ee0559cbe372c",
+    "pages": 21,
+    "changed_pages_vs_previous": [
+      1,
+      2,
+      3
+    ],
+    "pixel_identical_pages_vs_previous": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "source_unchanged": true,
+    "visual_review": "Pages 1–3 visually checked at original raster size; pages 4–21 pixel-identical to the previous render."
+  },
+  "limitations": "This audit establishes text/data alignment and rendering only. The replay has no semantic quality labels and zero model calls; it does not establish retrieval recall, answer correctness, or generalization."
+}
