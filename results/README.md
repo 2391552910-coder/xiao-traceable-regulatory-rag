@@ -1,4 +1,6 @@
 # 实验产物说明
+> **当前执行约束（2026-10-29）：后续不新增、委托或回收人工标注/盲审。**已有评分与参考只按原始来源保留；空白模板归档、不作为待办或投稿门槛。旧方案若要求补标注，以本条为准：使用可复算既有数据、已有且任务适配的参考和明确标注局限的自动诊断；无兼容金标准时将相关指标记为未测，不以代理指标冒充语义质量。
+
 
 ## 当前评分量表与相关工作表修订候选稿（2026-10-28）
 
@@ -24,7 +26,7 @@
 ## 2026-10-27 年报表格与续表解析
 
 - `runs/annual_table_development_20261027_03/`为最终v1.2离线批次：8份年报、142个治理候选页，77个表格区域、59条逻辑表、18组跨页连接、8处断行合并；120条字段视图，其中45条涉及审计委员会。
-- `documents/`保留所有原表/单元格和逻辑连接；`structured_chunks.jsonl`、`table_index.sqlite`提供检索接口；`source_previews/`包含46页原图叠框，`review.html`展示表格及原页。329行人工复核模板尚未填写，512个未分类/非目标行另行保留并分流，不能将它们概括为512项解析失败。
+- `documents/`保留所有原表/单元格和逻辑连接；`structured_chunks.jsonl`、`table_index.sqlite`提供检索接口；`source_previews/`包含46页原图叠框，`review.html`展示表格及原页。329行空白复核模板归档、不再填写；512个未分类/非目标行另行保留并分流，不能将它们概括为512项解析失败。
 - `source_verification.json`及`implementation_audit.json`确认4326个单元格重新与PDF绑定；`tests_passed.xml`记录212项测试通过。40份检索上下文保留初始原文/记录/ID，均≤6000参考tokens，无模型调用。
 - `parser_field_diagnostics.json`对原冻结/勘误参考分别给出纯规则表格字段结果；8题勘误口径成员F1=1.00、日期F1=0.75、显式会议次数Accuracy=0.50、三字段Exact Match=0.50。此为已曝光开发题上的表格解析诊断，不是新的LLM/RAG回答指标，也未经独立人工裁定。招商银行日期为正文披露，未伪装成表格字段补入。
 - 均衡表格检索参考页覆盖95.83%→100%；普通表格BM25仍95.83%。先表格后续片在招商银行2024中仍只供给5/9个日期区间，低于仅续片的9/9；完整负例保留于验收与对照图。
@@ -90,7 +92,7 @@
 - run_metadata.json：代码 SHA、运行时间、数据/划分/标注哈希、模型名称与 revision、实际 backend、mock、设备、量化、依赖版本、seed、prompt 哈希、指令、截断、融合、路由、候选深度和补检索上限。
 - retrieval_detail.csv / retrieval_summary.csv：逐查询排名、相关性、证据区间、各维度汇总与置信区间。
 - generation_records.jsonl：company_id、report_year、event_date、dimension、mode、repeat_id、事实和检索证据、原始响应、论断、引用、核验状态、调用成本、失败/重试。
-- annotation_records.csv：实际人工标签、匿名标注者、独立标签与仲裁结果；人工未完成时不得生成虚假的完成记录。
+- reference_manifest.csv：记录实际使用的既有参考来源类别、版本与哈希；不新增人工标注或伪造仲裁记录。
 - statistical_results.csv：聚类单位、重复聚合方式、差值、效应量、置信区间、原始/校正 p 值和样本数。
 - figures/ 与 error_analysis.md：主实验、消融、覆盖率/风险、成本与失败案例。
 
