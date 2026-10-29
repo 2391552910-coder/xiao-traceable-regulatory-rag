@@ -1,0 +1,42 @@
+{
+  "parser_version": "annual_governance_tables_v1_9",
+  "source_pdf_sha256": "6ffff1cade59c64c8178494c083cac8a4011ef5ae2fed32f85dd488a64a809b2",
+  "pdf_pages": 346,
+  "selection": {
+    "seed_pages": [
+      122,
+      129,
+      130
+    ],
+    "selected_pages": [
+      121,
+      122,
+      123,
+      128,
+      129,
+      130,
+      131
+    ],
+    "seed_reasons": {
+      "122": [
+        "audit_committee"
+      ],
+      "129": [
+        "personnel_changes"
+      ],
+      "130": [
+        "personnel_changes"
+      ]
+    },
+    "neighbor_radius": 1,
+    "reference_labels_used": false,
+    "scope": "governance keyword pages and fixed physical neighbors; not every table in the PDF"
+  },
+  "parsed_status_counts": {
+    "text_layer_parsed": 7
+  },
+  "flagged_pages": [],
+  "detected_tables": 0,
+  "elapsed_seconds": 3.078,
+  "limitations": "Selected governance pages and neighbors only; marker detection is not a text accuracy test. No OCR, model calls, or new human annotation."
+}

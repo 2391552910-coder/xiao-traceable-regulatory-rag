@@ -125,6 +125,21 @@ def test_encoding_warning_survives_index_search_and_context_extension(parsed, tm
     assert updated['source_records'][-1]['meta']['undecoded_source_pages'] == [1]
 
 
+def test_extraction_cli_reports_scope_and_page_statuses(tmp_path, monkeypatch, capsys):
+    import sys
+    from scripts.extract_annual_tables import main
+
+    monkeypatch.setattr(sys, 'argv', ['extract_annual_tables.py', '--pdf', str(FIXTURE),
+                        '--stock', '000001', '--year', '2024', '--company', '合成公司',
+                        '--out-dir', str(tmp_path / 'out'), '--all-pages'])
+    main()
+    summary = json.loads(capsys.readouterr().out)
+    assert summary['total_pdf_pages'] == summary['inspected_pages'] == 10
+    assert summary['page_selection_scope'] == 'all physical pages explicitly requested'
+    assert summary['page_status_counts']['requires_ocr_no_text_layer'] == 1
+    assert sum(summary['page_status_counts'].values()) == 10
+
+
 def test_every_cell_roundtrips_against_new_pdf_parse(parsed):
     with pdfplumber.open(FIXTURE) as pdf:
         for table in parsed['tables']:
