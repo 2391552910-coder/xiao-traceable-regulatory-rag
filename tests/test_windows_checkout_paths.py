@@ -27,9 +27,17 @@ def test_tracked_paths_are_windows_compatible():
     assert not invalid, f'Paths invalid on Windows: {invalid}'
 
 
-def test_corpus_checkout_preserves_blob_bytes():
+@pytest.mark.parametrize('path', [
+    'data/knowledge_base/DOC001_disclosure_measures.txt',
+    'data/annotation/retrieval_queries_for_annotation.csv',
+    'results/paper/heldout_validation_20261023_01/reference_labels.json',
+    'results/runs/qwen_schema_prompt_20261029_01/protocol.json',
+    'scripts/score_qwen_schema_prompt_20261029.py',
+    'src/data/clause_splitter.py',
+])
+def test_frozen_evidence_checkout_preserves_blob_bytes(path):
     result = subprocess.check_output([
         'git', '-c', 'gc.auto=0', 'check-attr', '-z', 'text', '--',
-        'data/knowledge_base/DOC001_disclosure_measures.txt',
+        path,
     ]).split(b'\0')
     assert result[1:3] == [b'text', b'unset']
