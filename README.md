@@ -1,4 +1,8 @@
 # 年报与法规双源检索增强生成
+## 论文评测表述对齐（2026-10-29）
+
+[中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_无新增人工标注候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_no_new_human_labels_20261029.docx)将结论中的后续评测表述调整为不新增人工标注，并说明缺少独立可信参考时自动匹配仅供诊断。已有人工评分及其历史来源保留，实验数据和结果未改变。变动页经 WPS 渲染检查。
+
 ## BM25 标题拼接开发对照（2026-10-29）
 
 在相同 40 条 AI 参考开发查询上，仅向每个索引块正文前加入文档标题后重新运行 BM25。前 5 条平均参考覆盖由 0.241 降至 0.219，其中 2 题上升、31 题不变、7 题下降；前 10 条由 0.341 至 0.345。结果不支持直接启用该改动，默认检索配置未变。[逐题对照](results/runs/ai_development_bm25_title_20261029_01/comparison.json)和[脚本](scripts/compare_ai_development_bm25_title_20261029.py)已保存。该已暴露开发集的 AI 参考不完整且未经独立核验，覆盖不能当作标准语义 Recall；未新增标签或模型调用。
