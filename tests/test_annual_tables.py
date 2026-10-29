@@ -101,6 +101,30 @@ def test_table_field_view_carries_and_binds_page_encoding_warning(parsed):
         verify_field_views(altered)
 
 
+def test_encoding_warning_survives_index_search_and_context_extension(parsed, tmp_path):
+    from src.data.clause_splitter import Chunk
+    from src.generation.comparison import _pack_context
+    from src.generation.evidence_retention import extend_retained_context
+
+    document = copy.deepcopy(parsed)
+    page = next(p for p in document['parsed_pages'] if p['page'] == 1)
+    page.update(status='text_layer_contains_undecoded_glyphs', undecoded_glyph_objects=1)
+    path = tmp_path / 'warnings.sqlite'
+    build_index([document], path)
+    question = dict(stock_code='000001', report_year=2024)
+    hits = AnnualTableIndex(path).search(question, '审计委员会 成员 日期', k=100)
+    hit = next((chunk, score) for chunk, score in hits if 1 in chunk.meta['undecoded_source_pages'])
+    original = Chunk('initial', 'annual', '原始年报', 'annual_report', 'local', None, '原始材料',
+                     meta={'corpus_type': 'annual_report', 'stock_code': '000001',
+                           'report_year': 2024, 'company_name': '合成公司',
+                           'physical_pdf_page_1based': 1, 'source_pdf_sha256': 'a' * 64})
+    initial = _pack_context([(original, 1.0)], len, 6000)
+    updated, audit = extend_retained_context(question, initial, [hit], len, max_context_tokens=6000)
+    assert audit['accepted_count'] == 1
+    assert '物理页1的文本层包含未解码字形' in updated['context']
+    assert updated['source_records'][-1]['meta']['undecoded_source_pages'] == [1]
+
+
 def test_every_cell_roundtrips_against_new_pdf_parse(parsed):
     with pdfplumber.open(FIXTURE) as pdf:
         for table in parsed['tables']:
