@@ -15,7 +15,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = 'annual_governance_tables_v1_2'
+VERSION = 'annual_governance_tables_v1_11'
 COMMITTEES = ('审计', '提名', '薪酬', '战略', '风险', '关联交易', '消费者权益', '可持续发展')
 HEADER_WORDS = ('委员会名称', '委员会类别', '成员情况', '成员姓名', '召开日期',
                 '会议内容', '会议次数', '召开会议', '姓名', '职务', '变动类型')
@@ -212,14 +212,22 @@ def _table_rows(page, table, table_id, caption):
                 headers=header_text, header_cell_ids=[c['cell_id'] for c in headers],
                 caption=caption, cells=list(all_cells.values()), rows=rows,
                 header_status='detected' if headers else 'absent_or_ambiguous',
-                category=classify_headers(header_text), warnings=[])
+                category=classify_headers(header_text, caption), warnings=[])
 
 
-def classify_headers(headers):
-    joined = compact(' '.join(headers))
+def classify_headers(headers, context=''):
+    header_text = compact(' '.join(headers))
+    context_text = compact(context or '')
+    joined = compact(header_text + ' ' + context_text)
     if any(token in joined for token in ('其他单位', '股东单位', '任职单位名称')):
         return 'external_entity_appointments'
-    if ('日期' in joined or '时间' in joined) and ('会议' in joined or '职责' in joined):
+    explicit_committee_section = bool(re.search(
+        r'(?:董事会下设)?专门委员会.{0,12}(?:在报告期内|情况|履职|召开)|'
+        r'(?:审计|提名|薪酬|战略|风险|关联交易|消费者权益|可持续发展)委员会.{0,8}(?:会议|情况|履职|召开)',
+        context_text))
+    if (('日期' in joined or '时间' in joined) and
+            ('会议' in joined or '职责' in joined) and
+            ('委员会' in header_text or explicit_committee_section)):
         return 'committee_meetings'
     if '成员' in joined and '委员会' in joined:
         return 'committee_roster'
@@ -238,9 +246,16 @@ def _word_lines(words):
     return lines
 
 
-def _attendance_table(page, prefix):
+def _attendance_table(page, prefix, *, excluded_bboxes=()):
     """Borderless numeric matrix; require repeated aligned attendance columns."""
     words = page.extract_words(x_tolerance=2, y_tolerance=3)
+    if excluded_bboxes:
+        def belongs_to_ruled_table(word):
+            cx = (word['x0'] + word['x1']) / 2
+            cy = (word['top'] + word['bottom']) / 2
+            return any(x0 - 2 <= cx <= x1 + 2 and top - 1 <= cy <= bottom + 1
+                       for x0, top, x1, bottom in excluded_bboxes)
+        words = [word for word in words if not belongs_to_ruled_table(word)]
     lines = _word_lines(words)
     candidates = []
     for top, items in lines:
@@ -295,6 +310,61 @@ def _attendance_table(page, prefix):
                  warnings=['Inferred column geometry; requires source review before treating attendance as membership gold.'])]
 
 
+def _aligned_personnel_changes(page, prefix):
+    """Extract a narrow five-column, same-page personnel layout from PDF characters."""
+    lines = _word_lines(page.extract_words(x_tolerance=2, y_tolerance=3))
+    headers_expected = ['姓名', '职务', '性别', '年龄', '任期']
+    output = []
+    for index, (top, words) in enumerate(lines):
+        words = sorted(words, key=lambda word: word['x0'])
+        if [compact(word['text']) for word in words] != headers_expected:
+            continue
+        anchors = [word['x0'] for word in words]
+        rows = []
+        for next_top, candidate in lines[index + 1:]:
+            candidate = sorted(candidate, key=lambda word: word['x0'])
+            if next_top - (top if not rows else rows[-1][0]) > 30:
+                break
+            values = [compact(word['text']) for word in candidate]
+            if (len(candidate) != 5 or any(abs(word['x0'] - x) > 7 for word, x in zip(candidate, anchors))
+                    or not re.fullmatch(r'[\u3400-\u9fff·]{2,6}(?:[（(]\d+[）)])?', values[0])
+                    or values[2] not in ('男', '女') or not re.fullmatch(r'\d{1,3}岁?', values[3])
+                    or not re.search(r'(?:19|20)\d{2}年', values[4])):
+                break
+            rows.append((next_top, candidate))
+        if len(rows) < 2:
+            continue
+        right = min(page.width, max(word['x1'] for _, row in rows for word in row) + 2)
+        bounds = [max(0, anchors[0] - 2)] + [(a + b) / 2 for a, b in zip(anchors, anchors[1:])] + [right]
+        if any(a >= b for a, b in zip(bounds, bounds[1:])):
+            continue
+        tid = prefix + f'-PERS{len(output)+1:02d}'
+        header_bottom = max(word['bottom'] for word in words) + 1
+        header_cells = [_cell(page, (a, top - 1, b, header_bottom), tid, kind='header')
+                        for a, b in zip(bounds, bounds[1:])]
+        cells = list(header_cells)
+        records = []
+        for row_top, row in rows:
+            bottom = max(word['bottom'] for word in row) + 1
+            row_cells = [_cell(page, (a, row_top - 1, b, bottom), tid)
+                         for a, b in zip(bounds, bounds[1:])]
+            cells.extend(row_cells)
+            records.append(dict(row_id=f'{tid}-R{len(records)+1:03d}', page=page.page_number,
+                                top=row_top, bottom=bottom, values=[c['text'] for c in row_cells],
+                                parts=[[c['cell_id']] for c in row_cells], split_row_merged=False))
+        caption = _layout_text([c for c in page.chars if max(0, top - 50) <= c['top'] < top - 1])
+        output.append(dict(table_id=tid, page=page.page_number,
+                           bbox=[bounds[0], top - 1, bounds[-1], records[-1]['bottom']],
+                           page_width=page.width, page_height=page.height,
+                           method='aligned_personnel_five_columns', column_bounds=bounds,
+                           headers=[c['text'] for c in header_cells],
+                           header_cell_ids=[c['cell_id'] for c in header_cells], caption=caption,
+                           cells=cells, rows=records, header_status='exact_five_headers',
+                           category=classify_headers([c['text'] for c in header_cells], caption),
+                           warnings=['Same-page geometric reconstruction; committee scope and semantic correctness not established.']))
+    return output
+
+
 def extract_page_tables(page, source_sha256):
     prefix = f'TAB-{source_sha256[:16]}-P{page.page_number:04d}'
     tables = []
@@ -316,9 +386,16 @@ def extract_page_tables(page, source_sha256):
         parsed = _table_rows(page, table, tid, caption)
         parsed['raw_detected_column_count'] = len(original.columns)
         tables.append(parsed)
+    # Ruled and borderless tables may coexist on one physical page. Exclude
+    # words already covered by accepted grids, but still search the remainder
+    # for a separately headed attendance matrix.
+    tables.extend(_attendance_table(
+        page, prefix, excluded_bboxes=[table['bbox'] for table in tables]))
+    # A narrow five-column pattern is only attempted on pages with no other
+    # detected table, avoiding duplicate regions and ambiguous mixed layouts.
     if not tables:
-        tables.extend(_attendance_table(page, prefix))
-    return tables
+        tables.extend(_aligned_personnel_changes(page, prefix))
+    return sorted(tables, key=lambda table: (table['bbox'][1], table['bbox'][0]))
 
 
 def _header_signature(headers):
@@ -358,7 +435,7 @@ def reconcile_boundary_headers(tables, pdf):
         cells = {c['cell_id']: c for c in left['cells'] + headers}
         left.update(column_bounds=bounds, headers=[c['text'] for c in headers],
                     header_cell_ids=[c['cell_id'] for c in headers], cells=list(cells.values()),
-                    rows=[], category=classify_headers([c['text'] for c in headers]),
+                    rows=[], category=classify_headers([c['text'] for c in headers], left.get('caption', '')),
                     header_status='orphan_header_reconciled_from_adjacent_grid')
         left['warnings'].append('Header-only geometry borrowed from the next physical page; raw cells retained.')
 
@@ -386,8 +463,9 @@ def continuation_decision(left, right):
         reasons.append('left_table_not_at_page_end')
     if right['bbox'][1] > right['page_height'] * .19:
         reasons.append('right_table_not_at_page_start')
+    orphan_payload = _orphan_page_start_payload(left, right)
     ah, bh = _header_signature(left['headers']), _header_signature(right['headers'])
-    if ah and bh and ah != bh and not _partial_header(right['headers']):
+    if ah and bh and ah != bh and not _partial_header(right['headers']) and not orphan_payload:
         # Header layout whitespace may differ, but altered column semantics must reject.
         reasons.append('different_repeated_headers')
     if right['category'] != 'unclassified_table' and left['category'] != 'unclassified_table' and right['category'] != left['category']:
@@ -397,9 +475,71 @@ def continuation_decision(left, right):
     if last_heading and committee_labels(left.get('caption', '')) and committee_labels(caption):
         if set(committee_labels(left.get('caption', ''))) != set(committee_labels(caption)):
             reasons.append('new_committee_section_heading')
-    return dict(accepted=not reasons, reasons=reasons or ['same_geometry_adjacent_boundary_and_compatible_headers'],
+    if orphan_payload:
+        reasons.append('single_nonheader_cell_at_page_start_continues_prior_row')
+    decision = dict(accepted=not reasons or bool(orphan_payload and all(
+        reason == 'single_nonheader_cell_at_page_start_continues_prior_row' for reason in reasons)),
+                reasons=reasons or ['same_geometry_adjacent_boundary_and_compatible_headers'],
                 left_table_id=left['table_id'], right_table_id=right['table_id'],
                 physical_pages=[left['page'], right['page']], independent_semantic_validation=False)
+    if orphan_payload:
+        decision['boundary_payload'] = orphan_payload
+    return decision
+
+
+def _orphan_page_start_payload(left, right):
+    """Recognize one text-cell fragment misdetected as a page-start header.
+
+    This narrow case is limited to a complete committee-meeting row followed
+    by a ruled, geometry-matched page-start grid whose sole nonempty header
+    cell is continuation prose in the previous row's opinion/remarks column.
+    """
+    if (left.get('category') != 'committee_meetings' or
+            right.get('category') != 'unclassified_table' or
+            left.get('method') != 'ruled_grid' or right.get('method') != 'ruled_grid' or
+            not left.get('rows') or not right.get('rows')):
+        return None
+    nonempty = [(i, compact(value)) for i, value in enumerate(right.get('headers', [])) if compact(value)]
+    if len(nonempty) != 1:
+        return None
+    column, text = nonempty[0]
+    if column >= len(left.get('headers', [])) or column >= len(left['rows'][-1].get('values', [])):
+        return None
+    prior_header = compact(left['headers'][column])
+    if not any(term in prior_header for term in ('意见', '建议', '履行职责', '其他情况')):
+        return None
+    if any(term in text for term in HEADER_WORDS) or len(text) < 6:
+        return None
+    prior_row = left['rows'][-1]
+    columns = field_columns(left['headers'])
+    date_column = columns.get('date')
+    if date_column is None or not parse_date(prior_row['values'][date_column]):
+        return None
+    # The following page must resume with a structured committee row; this
+    # prevents a free-standing page title or narrative from being absorbed.
+    first_values = right['rows'][0].get('values', [])
+    if not first_values or not committee_labels(first_values[0]):
+        return None
+    # Identifying fields in the prior row must be complete; the orphan cell is
+    # only allowed to continue its trailing remarks field.
+    if any(not compact(prior_row['values'][i]) for i in range(min(column, len(prior_row['values'])))):
+        return None
+    if (len(left['column_bounds']) != len(right['column_bounds']) or
+            max(abs(a / left['page_width'] - b / right['page_width'])
+                for a, b in zip(left['column_bounds'], right['column_bounds'])) > .008):
+        return None
+    if (left['bbox'][3] < left['page_height'] * .83 or
+            right['bbox'][1] > right['page_height'] * .19):
+        return None
+    cells = {cell['cell_id']: cell for cell in right.get('cells', [])}
+    header_ids = right.get('header_cell_ids', [])
+    if column >= len(header_ids):
+        return None
+    cell_id = header_ids[column]
+    if cell_id not in cells or compact(cells[cell_id].get('text', '')) != text:
+        return None
+    return dict(column_index=column, cell_id=cell_id, text=cells[cell_id]['text'],
+                merge_basis='orphan_page_start_header_cell_continuation')
 
 
 def field_columns(headers):
@@ -418,6 +558,12 @@ def field_columns(headers):
             result.setdefault('committee', i)
         if '会议内容' in text:
             result.setdefault('meeting_content', i)
+        if ('意见' in text or '建议' in text) and ('提出' in text or '重要' in text):
+            result.setdefault('meeting_opinions', i)
+        if '履行职责' in text and '情况' in text:
+            result.setdefault('meeting_other_duties', i)
+        if '异议事项' in text:
+            result.setdefault('meeting_dissent', i)
         if '会议决议' in text:
             result.setdefault('agenda', i)
         if '职务' in text:
@@ -468,7 +614,7 @@ def stitch_tables(tables):
     by_page = defaultdict(list)
     for table in tables:
         by_page[table['page']].append(table)
-    links, attempts = {}, []
+    links, link_decisions, attempts = {}, {}, []
     for page, left_tables in sorted(by_page.items()):
         if page + 1 not in by_page:
             continue
@@ -477,6 +623,7 @@ def stitch_tables(tables):
         attempts.append(decision)
         if decision['accepted']:
             links[left['table_id']] = right['table_id']
+            link_decisions[left['table_id']] = decision
     lookup = {t['table_id']: t for t in tables}
     incoming = set(links.values())
     chains = []
@@ -489,9 +636,21 @@ def stitch_tables(tables):
                      header_column_parts=[[cid] for cid in table['header_cell_ids']],
                      category=table['category'], method=table['method'], caption=table['caption'],
                      rows=copy.deepcopy(table['rows']), pages=[table['page']],
-                     repeated_headers_removed_from_logical_rows=0, split_rows_merged=0)
+                     repeated_headers_removed_from_logical_rows=0, split_rows_merged=0,
+                     boundary_payloads_absorbed=0)
         while current['table_id'] in links:
             following = lookup[links[current['table_id']]]
+            decision = link_decisions[current['table_id']]
+            payload = decision.get('boundary_payload')
+            if payload and chain['rows']:
+                row = chain['rows'][-1]
+                column = payload['column_index']
+                row['values'][column] = row['values'][column] + '\n' + payload['text']
+                row['parts'][column].append(payload['cell_id'])
+                row['split_row_merged'] = True
+                row['split_row_merge_basis'] = payload['merge_basis']
+                chain['split_rows_merged'] += 1
+                chain['boundary_payloads_absorbed'] += 1
             if chain['headers'] and following['headers'] and _partial_header(following['headers']):
                 chain['headers'] = [a + '\n' + b for a, b in zip(chain['headers'], following['headers'])]
                 chain['header_cell_ids'].extend(following['header_cell_ids'])
@@ -508,14 +667,15 @@ def stitch_tables(tables):
                     chain['rows'][-1] = merged
                     next_rows = next_rows[1:]
                     chain['split_rows_merged'] += 1
-            if following['headers']:
+            if following['headers'] and not payload:
                 chain['repeated_headers_removed_from_logical_rows'] += 1
             chain['rows'].extend(next_rows)
             chain['table_ids'].append(following['table_id'])
             chain['pages'].append(following['page'])
             current = following
-        if chain['category'] == 'unclassified_table' and chain['headers']:
-            chain['category'] = classify_headers(chain['headers'])
+        if chain['headers'] and chain['category'] in {
+                'unclassified_table', 'committee_roster', 'committee_meetings'}:
+            chain['category'] = classify_headers(chain['headers'], chain.get('caption', ''))
         for row in chain['rows']:
             row['committee_labels'], row['scope_basis'] = row_scope(row, chain)
         chains.append(chain)
@@ -578,6 +738,33 @@ def extract_pdfium_pages(pdf_path):
     return result
 
 
+def text_layer_diagnostics(chars):
+    """Flag visible extraction placeholders; do not infer full text accuracy."""
+    count = sum(1 for char in chars if re.search(r'\(cid:\d+\)|\ufffd', char.get('text', '')))
+    if not chars:
+        status = 'requires_ocr_no_text_layer'
+    elif count:
+        status = 'text_layer_contains_undecoded_glyphs'
+    else:
+        status = 'text_layer_parsed'
+    return {'status': status, 'undecoded_glyph_objects': count}
+
+
+def possible_unparsed_personnel_table(page_text, parsed_table_count):
+    """Flag a likely personnel header when this page produced no tables.
+
+    This is a narrow triage heuristic, not table recognition or a recall metric.
+    """
+    if parsed_table_count:
+        return False
+    header_tokens = ('姓名', '职务', '性别', '年龄', '任期', '变动', '离任', '任职')
+    for line in (page_text or '').splitlines():
+        line = compact(line)
+        if '姓名' in line and sum(token in line for token in header_tokens) >= 3:
+            return True
+    return False
+
+
 def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=False):
     """Parse selected governance pages of one verified local annual PDF."""
     import pdfplumber
@@ -602,7 +789,9 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                                      page_character_fingerprint=digest([
                                          [c['text'], round(c['x0'],4), round(c['top'],4), round(c['x1'],4), round(c['bottom'],4)]
                                          for c in page.chars]),
-                                     status='text_layer_parsed' if page.chars else 'requires_ocr_no_text_layer'))
+                                     **text_layer_diagnostics(page.chars),
+                                     possible_unparsed_personnel_table=possible_unparsed_personnel_table(
+                                         page.extract_text(), len(parsed))))
             if progress:
                 progress(number, len(parsed))
             page.close()
@@ -614,4 +803,6 @@ def extract_document(pdf_path, source, page_texts, *, progress=None, all_pages=F
                 source_pdf_sha256=actual_sha, model_calls=0,
                 independent_human_validation=False,
                 limitations=['Governance-page selection only; unsupported or scanned layouts remain explicit review items.',
+                             'Undecoded glyph detection flags CID/replacement markers only; a clean status does not prove correct text.',
+                             'Unparsed personnel-header flag is a narrow triage heuristic; it does not establish table presence or completeness.',
                              'Geometry and rule-based scope do not certify complete reporting-period membership.'])
