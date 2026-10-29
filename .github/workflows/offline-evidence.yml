@@ -30,3 +30,4 @@ jobs:
           tests/test_adjacent_evidence_replay.py tests/test_annual_tables.py
           tests/test_annual_table_evidence.py tests/test_evidence_budget.py
           tests/test_evaluator_citation_diagnostics.py tests/test_qwen_schema_citation_audit.py
+          tests/test_windows_checkout_paths.py
