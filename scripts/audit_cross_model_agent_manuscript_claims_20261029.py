@@ -23,7 +23,7 @@ MODEL_SUMMARY = ROOT / "results/runs/qwen_cuda_cross_model_score_20261029_04/sum
 MODEL_PROTOCOL = ROOT / "results/runs/qwen_cuda_cross_model_20261029_01/protocol.json"
 AGENT_SUMMARY = ROOT / "results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json"
 AGENT_PAPER_AUDIT = ROOT / "results/runs/agent_pairs_reanalysis_20261029_01/paper_update_audit.json"
-DEFAULT_OUTPUT = ROOT / "results/runs/manuscript_claim_consistency_20261029_01/claim_audit.json"
+DEFAULT_OUTPUT = ROOT / "results/runs/manuscript_claim_consistency_20261029_02/claim_audit.json"
 YEAR_ANCHOR = "补充开展跨模型族、跨年度的小样本探索："
 
 
@@ -279,6 +279,16 @@ def main() -> None:
              {"required_limitations": ["unadjudicated reference", "small sample",
                                         "no population claim", "no new calls or labels"]})
 
+    policy_paragraphs = [p for p in paragraphs if p.startswith("本文主实验仍受限于20家公司")]
+    required(checks, "manuscript_respects_no_new_annotation_policy",
+             len(policy_paragraphs) == 1
+             and "本项目不新增人工标注" in policy_paragraphs[0]
+             and "相关检索或答案质量指标保持未测" in policy_paragraphs[0]
+             and "不以位置覆盖或结构合规等代理量替代" in policy_paragraphs[0]
+             and "相关证据标注和盲评协议" not in policy_paragraphs[0],
+             {"matches": len(policy_paragraphs),
+              "policy_text": policy_paragraphs[0] if len(policy_paragraphs) == 1 else None})
+
     source_hashes = {str(path.relative_to(ROOT)): sha256(path) for path in inputs}
     source_candidate_hash = year_receipt["source_docx_sha256"]
     source_hashes_from_agent_audit = agent_audit.get("files_sha256", {})
@@ -303,6 +313,7 @@ def main() -> None:
             "candidate_version_and_render_receipt_bound": True,
             "full_manuscript_semantic_review": False,
             "independent_reference_validation": False,
+            "no_new_annotation_policy_explicit": True,
             "human_labels_added": False,
             "model_calls_added": False,
             "journal_readiness_established": False,

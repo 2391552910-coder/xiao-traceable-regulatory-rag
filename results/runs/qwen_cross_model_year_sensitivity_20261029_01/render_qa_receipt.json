@@ -1,14 +1,14 @@
 {
   "candidate_docx": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx",
-  "candidate_sha256": "78BC74D10947A1E09A847DA0013B13B11161BC34FA44AA947D882029988D57D5",
+  "candidate_sha256": "16E0E3C1CB4587A3F1CECCDB6C9FD53606F65400CB4F170D27EB982F2A5D1639",
   "analysis_summary": "results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_summary.json",
   "analysis_summary_sha256": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb",
   "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
   "wps_used": false,
   "pdf_page_count": 23,
   "rendered_png_count": 23,
-  "pdf_sha256": "1f12be0244f0d41e52bbad68afcc9d343d7762f3d2c955f41836342e2c7b506f",
-  "reviewed_previously_checked_pngs_byte_identical": true,
+  "pdf_sha256": "7792e8cc36f2f486efffe271676192dc9c1530c965f6706b0b2a275609b0e836",
+  "reviewed_previously_checked_pngs_byte_identical": false,
   "pages": [
     {
       "file": "page-1.png",
@@ -88,7 +88,7 @@
     },
     {
       "file": "page-20.png",
-      "sha256": "C22A4D0473E2AE0956EDAA5FB80504E39A3093D7A48C3B50A9B203CEFB65A047"
+      "sha256": "D8783E23B138C11AECB92AD56EFC235FB71D1E53DD9767457A0C42CDDE400C01"
     },
     {
       "file": "page-21.png",
@@ -109,7 +109,8 @@
   "notes": [
     "Final candidate was re-rendered from the isolated PR worktree.",
     "All 23 generated PNGs were byte-identical to the 23-page preview already inspected page by page.",
-    "Preview artifacts remain in the local temp directory and are not part of the manuscript deliverable."
+    "Preview artifacts remain in the local temp directory and are not part of the manuscript deliverable.",
+    "No-new-annotation policy wording was revised in the conclusion; only page 20 changed, and it was visually inspected at original resolution. The other 22 page PNG hashes match the previous candidate."
   ],
   "analysis_summary_sha256_before_lf_normalization": "9b7ce8767c02632f5eb3208fc0a790e59314a37bf962cee3add3581e90222a4a",
   "analysis_summary_canonical_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8",
@@ -119,7 +120,7 @@
     "normalized_bytes_identical": true,
     "parsed_json_identical": true
   },
-  "pdf_sha256_previous_render": "60B02C359C4EC2D84AD1718352C2F5D64D2997B9A09030570E3D7ED116BE9670",
+  "pdf_sha256_previous_render": "1f12be0244f0d41e52bbad68afcc9d343d7762f3d2c955f41836342e2c7b506f",
   "latest_rerender": {
     "local_date": "2026-10-29",
     "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
@@ -127,6 +128,13 @@
     "pdf_page_count": 23,
     "rendered_png_count": 23,
     "page_png_sha256_match": true,
-    "pdf_sha256": "1f12be0244f0d41e52bbad68afcc9d343d7762f3d2c955f41836342e2c7b506f"
-  }
+    "changed_page_numbers_vs_previous_candidate": [
+      20
+    ],
+    "changed_page_visual_review": "passed at original resolution",
+    "unchanged_page_count": 22,
+    "pdf_sha256": "7792e8cc36f2f486efffe271676192dc9c1530c965f6706b0b2a275609b0e836",
+    "candidate_sha256": "16e0e3c1cb4587a3f1ceccdb6c9fd53606f65400cb4f170d27eb982f2a5d1639"
+  },
+  "previous_candidate_sha256": "78BC74D10947A1E09A847DA0013B13B11161BC34FA44AA947D882029988D57D5"
 }
