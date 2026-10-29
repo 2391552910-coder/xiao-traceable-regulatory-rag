@@ -53,7 +53,11 @@
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_cross_model_agent_20261029.docx)在8题跨模型补充之外，加入既有K3 Agent与三轮固定证据修订的[配对复算](results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json)及[图10](results/runs/agent_pairs_figures_20261029_01/agent_observed_pairs.png)。两条件各在不同题目失败，余下6对覆盖4家公司；按既有助手提取、事后勘误且未经独立裁定参考，三字段全匹配为4/6与5/6，成员宏F1为0.833与0.985，日期宏F1为0.786与0.952（Agent与修订）。两者各记录18次调用，但供应商token总量分别为102600与97441，最终证据亦不同；这不是完全预算匹配或因果实验。原参考和勘误版、失败、逐题配对及界均保留；未新增人工标注或模型调用。WPS渲染中文23页、英文25页，受影响页面已检查；结果不证明普遍效果或期刊录用。详见[审计](results/runs/agent_pairs_reanalysis_20261029_01/paper_update_audit.json)。
 
-## 当前主稿：跨模型与 Agent 年度分层复算（2026-10-29）
+## 当前投稿主线：双源分路检索与合并检索（2026-10-29）
+
+[21页主线候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_附录统计单位澄清候选稿_待终审.docx)聚焦双源分路检索与合并候选检索，含12张表和8幅图。更正BM25参考文献[7]后，稿件 SHA-256 为 `e928a70e0f3b2f44e01dd01bd43bd7bbed48ae851e207b308f8bf73367864b69`；[修订与版面收据](results/runs/core_candidate_reference_7_correction_20261029_01/core_candidate_reference_7_correction_receipt.json)记录只改了书目段落，Codex 渲染21页中仅第19页变化且已目视检查。本轮未使用WPS、未新增模型调用或人工标注。下方跨模型/跨年/Agent材料是独立扩展候选，均为小样本探索结果，不并入主线泛化结论。
+
+## 扩展候选：跨模型与 Agent 年度分层复算（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx)补入既有8题 Qwen3-0.6B 与 K3 服务别名对照的年度分层结果。结果由[复算脚本](scripts/analyze_qwen_cross_model_year_20261029.py)从已保存输出生成，[稿件更新脚本](scripts/update_cross_model_manuscript_year_sensitivity_20261029.py)记录输入和输出哈希。
 
