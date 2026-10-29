@@ -1,0 +1,120 @@
+{
+  "parser_version": "annual_governance_tables_v1_11",
+  "prior_version": "annual_governance_tables_v1_7",
+  "reports": [
+    {
+      "file": "cmb_2023.pdf",
+      "source_pdf_sha256": "948a390b579a8d46f281d3f88a346b4388f1bb6b82a90db61d5cd48b4627598a",
+      "selected_pages_unchanged": true,
+      "old_tables": 1,
+      "new_tables": 1,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "borderless_attendance_alignment": 1
+      },
+      "possible_unparsed_pages": [
+        82,
+        83,
+        85
+      ]
+    },
+    {
+      "file": "cmb_2024.pdf",
+      "source_pdf_sha256": "44a8759c94e1ba92f1d96897ca3778592d9a7eb33b53420c19268f0b140d81c3",
+      "selected_pages_unchanged": true,
+      "old_tables": 1,
+      "new_tables": 1,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "borderless_attendance_alignment": 1
+      },
+      "possible_unparsed_pages": [
+        84,
+        85,
+        87
+      ]
+    },
+    {
+      "file": "gree_2023.pdf",
+      "source_pdf_sha256": "32ebc475a2291ce4f1b5c1a9f9da55227e03192f07e75041e976c29d213ec8aa",
+      "selected_pages_unchanged": true,
+      "old_tables": 6,
+      "new_tables": 6,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 6
+      },
+      "possible_unparsed_pages": []
+    },
+    {
+      "file": "gree_2024.pdf",
+      "source_pdf_sha256": "c7184706caf5f57c04a795990967cfc4f4253024e02f8bdaffe2b260df2c6006",
+      "selected_pages_unchanged": true,
+      "old_tables": 10,
+      "new_tables": 10,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 10
+      },
+      "possible_unparsed_pages": []
+    },
+    {
+      "file": "haday_2023.pdf",
+      "source_pdf_sha256": "e34eb13835855354f5557f305a5e54d8c910bc9e74ed9ca29f52c2a5ebeb9b04",
+      "selected_pages_unchanged": true,
+      "old_tables": 15,
+      "new_tables": 15,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 15
+      },
+      "possible_unparsed_pages": []
+    },
+    {
+      "file": "haday_2024.pdf",
+      "source_pdf_sha256": "5a97b13534438f5e85249752ef492fbd9e23af73e67845e47bad1ab7d92e20ee",
+      "selected_pages_unchanged": true,
+      "old_tables": 19,
+      "new_tables": 19,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 19
+      },
+      "possible_unparsed_pages": []
+    },
+    {
+      "file": "hrsj_2023.pdf",
+      "source_pdf_sha256": "60ba8b6523796a409f99b84d82e407d40cfd834558359704a102e9967ae8c8bb",
+      "selected_pages_unchanged": true,
+      "old_tables": 8,
+      "new_tables": 8,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 8
+      },
+      "possible_unparsed_pages": []
+    },
+    {
+      "file": "hrsj_2024.pdf",
+      "source_pdf_sha256": "4076e0ae3be6319787f7255e8d40cd23fa4dee1805ea8d3dbc5df1df1a9101e6",
+      "selected_pages_unchanged": true,
+      "old_tables": 17,
+      "new_tables": 17,
+      "tables_equal": true,
+      "logical_tables_equal": true,
+      "new_methods": {
+        "ruled_grid": 17
+      },
+      "possible_unparsed_pages": []
+    }
+  ],
+  "elapsed_seconds": 20.05,
+  "scope": "Exposed development regression; not independent validation or accuracy. No new models or human annotation."
+}

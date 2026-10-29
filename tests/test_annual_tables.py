@@ -94,26 +94,11 @@ def test_unparsed_personnel_header_is_only_a_triage_signal():
     assert not possible_unparsed_personnel_table('姓名 张三', 0)
 
 
-@pytest.mark.parametrize('row_count,expected_tables', [(2, 1), (1, 0)])
-def test_five_column_personnel_table_is_source_bound_and_conservative(tmp_path, row_count, expected_tables):
-    from reportlab.pdfbase import pdfmetrics
-    from reportlab.pdfbase.cidfonts import UnicodeCIDFont
-    from reportlab.pdfgen import canvas
-
-    pdfmetrics.registerFont(UnicodeCIDFont('STSong-Light'))
-    path = tmp_path / 'aligned.pdf'
-    pdf = canvas.Canvas(str(path), pagesize=(600, 800))
-    pdf.setFont('STSong-Light', 10)
-    xs = [40, 150, 300, 370, 430]
-    for x, value in zip(xs, ['姓名', '职务', '性别', '年龄', '任期']):
-        pdf.drawString(x, 740, value)
-    for n, values in enumerate([['张三', '新任董事', '男', '53岁', '2024年9月至今'],
-                                ['李四', '退任董事', '女', '45岁', '2021年1月至2024年5月']][:row_count]):
-        for x, value in zip(xs, values):
-            pdf.drawString(x, 720 - n * 18, value)
-    pdf.save()
+@pytest.mark.parametrize('page_number,expected_tables', [(0, 1), (1, 0)])
+def test_five_column_personnel_table_is_source_bound_and_conservative(page_number, expected_tables):
+    path = Path(__file__).parent / 'fixtures/personnel_alignment_synthetic.pdf'
     with pdfplumber.open(path) as document:
-        page = document.pages[0]
+        page = document.pages[page_number]
         tables = extract_page_tables(page, file_sha256(path))
         assert len(tables) == expected_tables
         if tables:
