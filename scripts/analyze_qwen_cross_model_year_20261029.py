@@ -77,7 +77,7 @@ def main() -> None:
         raw_path = raw_output_path(row["question_id"], row["mode"])
         if not raw_path.is_file():
             raise FileNotFoundError(raw_path)
-        raw_hashes[str(raw_path.relative_to(ROOT))] = digest(raw_path)
+        raw_hashes[raw_path.relative_to(ROOT).as_posix()] = digest(raw_path)
 
     strata = []
     for reference in REFERENCES:
@@ -173,4 +173,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 

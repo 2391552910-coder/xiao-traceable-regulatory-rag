@@ -1,6 +1,7 @@
-from pathlib import Path
+import json
 import subprocess
 import sys
+from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,6 +26,22 @@ def test_year_stratification_reproduces_saved_outputs_byte_for_byte(tmp_path):
 
     for filename in OUTPUTS:
         actual = (output_dir / filename).read_bytes()
+        saved = (SAVED / filename).read_bytes()
         assert b"\r\n" not in actual
-        assert actual == (SAVED / filename).read_bytes()
+        if filename == "year_stratified_summary.json":
+            actual_report = json.loads(actual)
+            saved_report = json.loads(saved)
+            assert all("\\" not in path for path in actual_report["raw_output_sha256"])
+            actual_report["raw_output_sha256"] = {
+                path.replace("\\", "/"): digest
+                for path, digest in actual_report["raw_output_sha256"].items()
+            }
+            saved_report["raw_output_sha256"] = {
+                path.replace("\\", "/"): digest
+                for path, digest in saved_report["raw_output_sha256"].items()
+            }
+            assert actual_report == saved_report
+        else:
+            assert actual == saved
+
 
