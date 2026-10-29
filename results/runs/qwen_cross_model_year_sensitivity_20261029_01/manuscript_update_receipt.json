@@ -2,7 +2,15 @@
   "source_docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent对照候选稿_待终审.docx",
   "source_docx_sha256": "ee811f6e1618f9b06c02821fdeb150e986be70417245dce95cbcf8f80b255ca6",
   "analysis_json": "results\\runs\\qwen_cross_model_year_sensitivity_20261029_01\\year_stratified_summary.json",
-  "analysis_json_sha256": "9b7ce8767c02632f5eb3208fc0a790e59314a37bf962cee3add3581e90222a4a",
+  "analysis_json_sha256": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb",
+  "analysis_json_sha256_before_lf_normalization": "9b7ce8767c02632f5eb3208fc0a790e59314a37bf962cee3add3581e90222a4a",
+  "analysis_json_canonical_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8",
+  "analysis_json_line_ending_reconciliation": {
+    "prior_copy": "CRLF",
+    "current_copy": "LF",
+    "normalized_bytes_identical": true,
+    "parsed_json_identical": true
+  },
   "output_docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx",
   "output_docx_sha256": "78bc74d10947a1e09a847da0013b13b11161bc34fa44aa947d882029988d57d5",
   "anchor": "补充开展跨模型族、跨年度的小样本探索：",
