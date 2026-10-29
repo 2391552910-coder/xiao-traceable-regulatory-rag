@@ -1,0 +1,326 @@
+{
+  "audit": "cross-model, year-stratified, and Agent numeric manuscript consistency",
+  "candidate_docx": "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx",
+  "candidate_docx_sha256": "ae92ac0ad0e150ec52366ef9bddc93622a9e6efc6db825d67777f71b3b553d9a",
+  "checks_passed": 26,
+  "checks_total": 26,
+  "checks": [
+    {
+      "check": "year_candidate_is_bound_through_later_citation_rebind",
+      "passed": true,
+      "evidence": {
+        "year_receipt_sha256": "16e0e3c1cb4587a3f1ceccdb6c9fd53606f65400cb4f170d27eb982f2a5d1639",
+        "year_render_receipt_sha256": "16E0E3C1CB4587A3F1CECCDB6C9FD53606F65400CB4F170D27EB982F2A5D1639",
+        "citation_rebind_pre_edit_sha256": "16e0e3c1cb4587a3f1ceccdb6c9fd53606f65400cb4f170d27eb982f2a5d1639"
+      }
+    },
+    {
+      "check": "current_candidate_matches_citation_rebind_receipt",
+      "passed": true,
+      "evidence": {
+        "candidate_sha256": "ae92ac0ad0e150ec52366ef9bddc93622a9e6efc6db825d67777f71b3b553d9a",
+        "citation_rebind_sha256": "ae92ac0ad0e150ec52366ef9bddc93622a9e6efc6db825d67777f71b3b553d9a",
+        "candidate_path": "results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx"
+      }
+    },
+    {
+      "check": "citation_rebind_is_limited_to_reference_7_and_uses_codex_render",
+      "passed": true,
+      "evidence": {
+        "changed_reference_ids": [
+          7
+        ],
+        "render": {
+          "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
+          "wps_used": false,
+          "page_count": 23,
+          "changed_pages_vs_pre_edit_candidate": [
+            21
+          ],
+          "visually_reviewed_pages": [
+            21
+          ]
+        },
+        "new_model_calls": 0,
+        "new_human_annotations": 0
+      }
+    },
+    {
+      "check": "year_summary_matches_update_receipt",
+      "passed": true,
+      "evidence": {
+        "summary_sha256": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb",
+        "receipt_sha256": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb"
+      }
+    },
+    {
+      "check": "year_summary_canonical_hash_matches_receipt",
+      "passed": true,
+      "evidence": {
+        "canonical_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8",
+        "receipt_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8"
+      }
+    },
+    {
+      "check": "year_summary_line_ending_reconciliation_is_explicit",
+      "passed": true,
+      "evidence": {
+        "prior_copy": "CRLF",
+        "current_copy": "LF",
+        "normalized_bytes_identical": true,
+        "parsed_json_identical": true
+      }
+    },
+    {
+      "check": "render_receipt_binds_current_year_summary",
+      "passed": true,
+      "evidence": {
+        "summary_sha256": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb",
+        "render_receipt_sha256": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb",
+        "canonical_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8",
+        "render_receipt_canonical_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8"
+      }
+    },
+    {
+      "check": "render_receipt_line_ending_reconciliation_is_explicit",
+      "passed": true,
+      "evidence": {
+        "prior_copy": "CRLF",
+        "current_copy": "LF",
+        "normalized_bytes_identical": true,
+        "parsed_json_identical": true
+      }
+    },
+    {
+      "check": "year_summary_binds_model_summary_and_protocol",
+      "passed": true,
+      "evidence": {
+        "year_summary_model_sha256": "d252e1c16766008f4c486b5aceabb81f5460375b835c1379258df753de78ca5b",
+        "model_summary_sha256": "d252e1c16766008f4c486b5aceabb81f5460375b835c1379258df753de78ca5b",
+        "year_protocol_sha256": "62617031438a8b56715cd76344a9cb93a7ea43ae143cc3a550388be4c7459f89",
+        "protocol_sha256": "62617031438a8b56715cd76344a9cb93a7ea43ae143cc3a550388be4c7459f89"
+      }
+    },
+    {
+      "check": "intermediate_year_candidate_render_receipt_is_codex_not_wps",
+      "passed": true,
+      "evidence": {
+        "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
+        "wps_used": false,
+        "pages": 23,
+        "layout_review_status": "passed"
+      }
+    },
+    {
+      "check": "intermediate_year_candidate_rerender_matches_recorded_page_hashes",
+      "passed": true,
+      "evidence": {
+        "local_date": "2026-10-29",
+        "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
+        "wps_used": false,
+        "pdf_page_count": 23,
+        "rendered_png_count": 23,
+        "page_png_sha256_match": true,
+        "changed_page_numbers_vs_previous_candidate": [
+          20
+        ],
+        "changed_page_visual_review": "passed at original resolution",
+        "unchanged_page_count": 22,
+        "pdf_sha256": "7792e8cc36f2f486efffe271676192dc9c1530c965f6706b0b2a275609b0e836",
+        "candidate_sha256": "16e0e3c1cb4587a3f1ceccdb6c9fd53606f65400cb4f170d27eb982f2a5d1639"
+      }
+    },
+    {
+      "check": "unique_year_stratified_paragraph",
+      "passed": true,
+      "evidence": {
+        "matches": 1
+      }
+    },
+    {
+      "check": "year_paragraph_matches_recorded_insert",
+      "passed": true,
+      "evidence": {
+        "anchor": "补充开展跨模型族、跨年度的小样本探索：",
+        "inserted_text_sha256": "a07a3884d84210446214624ae76976550589848728b7c19a89e2b6b0bafa5350"
+      }
+    },
+    {
+      "check": "year_2023_stratum_has_four_paired_outputs",
+      "passed": true,
+      "evidence": {
+        "qwen_questions": 4,
+        "k3_questions": 4,
+        "companies": 4
+      }
+    },
+    {
+      "check": "year_2024_stratum_has_four_paired_outputs",
+      "passed": true,
+      "evidence": {
+        "qwen_questions": 4,
+        "k3_questions": 4,
+        "companies": 4
+      }
+    },
+    {
+      "check": "year_metrics_match_recomputed_summary",
+      "passed": true,
+      "evidence": {
+        "missing_tokens": []
+      }
+    },
+    {
+      "check": "unique_cross_model_paragraph",
+      "passed": true,
+      "evidence": {
+        "matches": 1
+      }
+    },
+    {
+      "check": "cross_model_metrics_match_saved_outputs",
+      "passed": true,
+      "evidence": {
+        "missing_tokens": [],
+        "qwen_observed": 8,
+        "k3_observed": 8
+      }
+    },
+    {
+      "check": "cross_model_paragraph_retains_scope_limits",
+      "passed": true,
+      "evidence": {
+        "required_limitations": [
+          "non-adjudicated reference",
+          "unequal model/output budgets",
+          "no generalization claim"
+        ]
+      }
+    },
+    {
+      "check": "unique_agent_pair_paragraph",
+      "passed": true,
+      "evidence": {
+        "matches": 1
+      }
+    },
+    {
+      "check": "agent_metrics_and_missing_outcome_bounds_match_summary",
+      "passed": true,
+      "evidence": {
+        "missing_tokens": [],
+        "post_erratum_bounds": [
+          -0.375,
+          -0.125
+        ],
+        "original_reference_bounds": [
+          -0.25,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "agent_paragraph_retains_scope_limits",
+      "passed": true,
+      "evidence": {
+        "required_limitations": [
+          "unadjudicated reference",
+          "small sample",
+          "no population claim",
+          "no new calls or labels"
+        ]
+      }
+    },
+    {
+      "check": "figure_9_cross_model_image_matches_saved_source",
+      "passed": true,
+      "evidence": {
+        "embedded": {
+          "caption_prefix": "图9 ",
+          "relationship_id": "rId32",
+          "archive_path": "word/media/image22.png",
+          "sha256": "a3b7dde910b85dc8b05f54ab39032c43589fab38c6b63470df10fd4042dd7af1"
+        },
+        "source": "results\\runs\\qwen_cuda_cross_model_figures_20261029_02\\cross_model_exploratory.png",
+        "source_sha256": "a3b7dde910b85dc8b05f54ab39032c43589fab38c6b63470df10fd4042dd7af1"
+      }
+    },
+    {
+      "check": "figure_10_agent_image_matches_saved_source",
+      "passed": true,
+      "evidence": {
+        "embedded": {
+          "caption_prefix": "图10 ",
+          "relationship_id": "rId33",
+          "archive_path": "word/media/image23.png",
+          "sha256": "d1342c686e163633d3d2bf4e0bb724fa09626e76128e023c8e9b10768642ffad"
+        },
+        "source": "results\\runs\\agent_pairs_figures_20261029_01\\agent_observed_pairs.png",
+        "source_sha256": "d1342c686e163633d3d2bf4e0bb724fa09626e76128e023c8e9b10768642ffad"
+      }
+    },
+    {
+      "check": "manuscript_respects_no_new_annotation_policy",
+      "passed": true,
+      "evidence": {
+        "matches": 1,
+        "policy_text": "本文主实验仍受限于20家公司、60个问题、单一报告年度、探索性设计及评分量表天花板。法规知识库未完整提供与2024年报告期相匹配的历史版本，因此结果不构成历史法规适用性验证；人工评分也不等同于检索Precision、Recall或答案Accuracy。本项目不新增人工标注；若无与任务匹配且独立可信的既有参考，相关检索或答案质量指标保持未测，不以位置覆盖或结构合规等代理量替代。"
+      }
+    },
+    {
+      "check": "year_candidate_parent_matches_agent_audit",
+      "passed": true,
+      "evidence": {
+        "year_source_docx_sha256": "ee811f6e1618f9b06c02821fdeb150e986be70417245dce95cbcf8f80b255ca6",
+        "found_in_agent_audit": true
+      }
+    }
+  ],
+  "source_sha256": {
+    "results\\paper\\condensed_candidate_20261028_01\\年报与法规双源RAG_统一主文_跨模型与Agent年度分层复算候选稿_待终审.docx": "ae92ac0ad0e150ec52366ef9bddc93622a9e6efc6db825d67777f71b3b553d9a",
+    "results\\runs\\qwen_cross_model_year_sensitivity_20261029_01\\year_stratified_summary.json": "224f0e918ed544046592ceb9bcf64d6bb77591c14129ff7c53b00e3715a60aeb",
+    "results\\runs\\qwen_cross_model_year_sensitivity_20261029_01\\manuscript_update_receipt.json": "f4f0f678a5547539d61c456a0fbba7eb7b9281f69f4d45ad7af1fecf68aeda5f",
+    "results\\runs\\qwen_cross_model_year_sensitivity_20261029_01\\render_qa_receipt.json": "641394a382d70473edb0f93ef7aa81e89790f9703a360d350b54fb85a3d6a107",
+    "results\\runs\\citation_reference_correction_20261029_01\\candidate_citation_rebind.json": "496e3b84260faa67b25d35a25498ec8668e87b94bf0406ff26efe613ab3f7504",
+    "results\\runs\\qwen_cuda_cross_model_score_20261029_04\\summary.json": "d252e1c16766008f4c486b5aceabb81f5460375b835c1379258df753de78ca5b",
+    "results\\runs\\qwen_cuda_cross_model_20261029_01\\protocol.json": "62617031438a8b56715cd76344a9cb93a7ea43ae143cc3a550388be4c7459f89",
+    "results\\runs\\agent_pairs_reanalysis_20261029_01\\agent_pair_comparison.json": "04003a920818f61f9f1e13bd0242455ee080b0498e63d3fbb6bb34541d1bd49b",
+    "results\\runs\\agent_pairs_reanalysis_20261029_01\\paper_update_audit.json": "a5c43540f1b71499458762f49536788d780e0bbc8b1860841b9255d56d2b76de",
+    "results\\runs\\qwen_cuda_cross_model_figures_20261029_02\\cross_model_exploratory.png": "a3b7dde910b85dc8b05f54ab39032c43589fab38c6b63470df10fd4042dd7af1",
+    "results\\runs\\agent_pairs_figures_20261029_01\\agent_observed_pairs.png": "d1342c686e163633d3d2bf4e0bb724fa09626e76128e023c8e9b10768642ffad"
+  },
+  "year_summary_canonical_sha256": "ae12d16400d8a2ca1d815e85bbd3407340db30009b64f3d6e66cd76b738fb8f8",
+  "year_summary_line_ending_reconciliation": {
+    "prior_copy": "CRLF",
+    "current_copy": "LF",
+    "normalized_bytes_identical": true,
+    "parsed_json_identical": true
+  },
+  "latest_render": {
+    "local_date": "2026-10-29",
+    "renderer": "Codex documents render_docx.py; LibreOffice 26.8.1.1; Poppler",
+    "wps_used": false,
+    "pdf_page_count": 23,
+    "rendered_png_count": 23,
+    "page_png_sha256_match": true,
+    "changed_page_numbers_vs_previous_candidate": [
+      20
+    ],
+    "changed_page_visual_review": "passed at original resolution",
+    "unchanged_page_count": 22,
+    "pdf_sha256": "7792e8cc36f2f486efffe271676192dc9c1530c965f6706b0b2a275609b0e836",
+    "candidate_sha256": "16e0e3c1cb4587a3f1ceccdb6c9fd53606f65400cb4f170d27eb982f2a5d1639"
+  },
+  "scope": {
+    "numeric_claims_match_saved_outputs": true,
+    "candidate_version_and_render_receipt_bound": true,
+    "full_manuscript_semantic_review": false,
+    "independent_reference_validation": false,
+    "no_new_annotation_policy_explicit": true,
+    "figure_9_and_10_match_saved_source_images": true,
+    "human_labels_added": false,
+    "model_calls_added": false,
+    "journal_readiness_established": false
+  }
+}
+

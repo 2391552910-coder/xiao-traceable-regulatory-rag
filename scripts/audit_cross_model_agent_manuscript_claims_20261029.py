@@ -19,6 +19,7 @@ CANDIDATE = ROOT / "results/paper/condensed_candidate_20261028_01/年报与法�
 YEAR_SUMMARY = ROOT / "results/runs/qwen_cross_model_year_sensitivity_20261029_01/year_stratified_summary.json"
 YEAR_RECEIPT = ROOT / "results/runs/qwen_cross_model_year_sensitivity_20261029_01/manuscript_update_receipt.json"
 RENDER_RECEIPT = ROOT / "results/runs/qwen_cross_model_year_sensitivity_20261029_01/render_qa_receipt.json"
+CITATION_REBIND = ROOT / "results/runs/citation_reference_correction_20261029_01/candidate_citation_rebind.json"
 MODEL_SUMMARY = ROOT / "results/runs/qwen_cuda_cross_model_score_20261029_04/summary.json"
 MODEL_PROTOCOL = ROOT / "results/runs/qwen_cuda_cross_model_20261029_01/protocol.json"
 AGENT_SUMMARY = ROOT / "results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json"
@@ -127,12 +128,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
+    output_path = args.output if args.output.is_absolute() else ROOT / args.output
 
     inputs = (
         CANDIDATE,
         YEAR_SUMMARY,
         YEAR_RECEIPT,
         RENDER_RECEIPT,
+        CITATION_REBIND,
         MODEL_SUMMARY,
         MODEL_PROTOCOL,
         AGENT_SUMMARY,
@@ -147,6 +150,7 @@ def main() -> None:
     year = load_json(YEAR_SUMMARY)
     year_receipt = load_json(YEAR_RECEIPT)
     render_receipt = load_json(RENDER_RECEIPT)
+    citation_rebind = load_json(CITATION_REBIND)
     model = load_json(MODEL_SUMMARY)
     agent = load_json(AGENT_SUMMARY)
     agent_audit = load_json(AGENT_PAPER_AUDIT)
@@ -159,14 +163,36 @@ def main() -> None:
     protocol_hash = sha256(MODEL_PROTOCOL)
     agent_summary_hash = sha256(AGENT_SUMMARY)
 
-    required(checks, "candidate_matches_year_update_receipt",
-             candidate_hash == year_receipt["output_docx_sha256"],
+    pre_edit_candidate = citation_rebind["pre_edit_candidate"]
+    current_candidate = citation_rebind["candidate"]
+    current_render = citation_rebind["render"]
+    required(checks, "year_candidate_is_bound_through_later_citation_rebind",
+             pre_edit_candidate["sha256"] == year_receipt["output_docx_sha256"]
+             and pre_edit_candidate["sha256"].lower() == render_receipt["candidate_sha256"].lower(),
+             {"year_receipt_sha256": year_receipt["output_docx_sha256"],
+              "year_render_receipt_sha256": render_receipt["candidate_sha256"],
+              "citation_rebind_pre_edit_sha256": pre_edit_candidate["sha256"]})
+    required(checks, "current_candidate_matches_citation_rebind_receipt",
+             candidate_hash == current_candidate["sha256"]
+             and current_candidate["path"].replace("\\", "/") == CANDIDATE.relative_to(ROOT).as_posix(),
              {"candidate_sha256": candidate_hash,
-              "receipt_sha256": year_receipt["output_docx_sha256"]})
-    required(checks, "candidate_matches_render_receipt",
-             candidate_hash.lower() == render_receipt["candidate_sha256"].lower(),
-             {"candidate_sha256": candidate_hash,
-              "render_receipt_sha256": render_receipt["candidate_sha256"]})
+              "citation_rebind_sha256": current_candidate["sha256"],
+              "candidate_path": current_candidate["path"]})
+    required(checks, "citation_rebind_is_limited_to_reference_7_and_uses_codex_render",
+             citation_rebind["checks"].get("only_reference_7_changed_vs_pre_edit_candidate") is True
+             and citation_rebind["bibliography_delta"].get("changed_reference_ids_vs_pre_edit") == [7]
+             and citation_rebind["new_model_calls"] == 0
+             and citation_rebind["new_human_annotations"] == 0
+             and current_render.get("wps_used") is False
+             and current_render.get("page_count") == 23
+             and current_render.get("changed_pages_vs_pre_edit_candidate") == [21]
+             and current_render.get("visually_reviewed_pages") == [21],
+             {"changed_reference_ids": citation_rebind["bibliography_delta"].get("changed_reference_ids_vs_pre_edit"),
+              "render": {k: current_render.get(k) for k in ("renderer", "wps_used", "page_count",
+                                                              "changed_pages_vs_pre_edit_candidate",
+                                                              "visually_reviewed_pages")},
+              "new_model_calls": citation_rebind["new_model_calls"],
+              "new_human_annotations": citation_rebind["new_human_annotations"]})
     required(checks, "year_summary_matches_update_receipt",
              year_summary_hash == year_receipt["analysis_json_sha256"],
              {"summary_sha256": year_summary_hash,
@@ -206,7 +232,7 @@ def main() -> None:
               "year_protocol_sha256": year["source_protocol_sha256"],
               "protocol_sha256": protocol_hash})
     latest_rerender = render_receipt.get("latest_rerender", {})
-    required(checks, "renderer_receipt_is_codex_not_wps",
+    required(checks, "intermediate_year_candidate_render_receipt_is_codex_not_wps",
              render_receipt.get("wps_used") is False
              and render_receipt.get("layout_review_status") == "passed"
              and render_receipt.get("pdf_page_count") == render_receipt.get("rendered_png_count"),
@@ -214,7 +240,7 @@ def main() -> None:
               "wps_used": render_receipt.get("wps_used"),
               "pages": render_receipt.get("pdf_page_count"),
               "layout_review_status": render_receipt.get("layout_review_status")})
-    required(checks, "latest_codex_rerender_matches_all_recorded_page_hashes",
+    required(checks, "intermediate_year_candidate_rerender_matches_recorded_page_hashes",
              latest_rerender.get("wps_used") is False
              and latest_rerender.get("renderer") == render_receipt.get("renderer")
              and latest_rerender.get("page_png_sha256_match") is True
@@ -381,11 +407,15 @@ def main() -> None:
             "journal_readiness_established": False,
         },
     }
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    if args.output.exists():
-        raise SystemExit(f"Refusing to overwrite existing audit: {args.output}")
-    args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"output": str(args.output.relative_to(ROOT)),
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    if output_path.exists():
+        raise SystemExit(f"Refusing to overwrite existing audit: {output_path}")
+    output_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    try:
+        display_output = output_path.relative_to(ROOT).as_posix()
+    except ValueError:
+        display_output = str(output_path)
+    print(json.dumps({"output": display_output,
                       "checks_passed": report["checks_passed"],
                       "checks_total": report["checks_total"],
                       "candidate_sha256": candidate_hash}, ensure_ascii=False))
@@ -393,3 +423,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
