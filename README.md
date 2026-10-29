@@ -3,6 +3,8 @@
 
 调用 `generate_dual_corpus_answer` 时，可显式传入 `temporal_filter=True`、`target_date="2024-12-31"` 和 `target_date_role="company_event_date"`；完整日期必须已出现在公开查询中。筛选在法规检索截断前进行，默认保留版本信息未知的来源，并在返回值 `temporal_filter_audit` 中记录处理过程。默认不启用筛选，也不会从报告年份推断事项日期；声明区间匹配不证明法规法律适用性。
 
+命令行入口 `scripts/dual_corpus_rag.py` 可在原有查询和索引参数之外加入 `--temporal-filter --target-date 2024-12-31 --target-date-role company_event_date`。日期必须出现在 `--query` 中；输出的 `answer_and_sources.json` 保存筛选审计。`--unknown-temporal exclude` 会排除日期未知的法规，需要显式选择，未知并不代表不适用。
+
 ## 论文评测表述对齐（2026-10-29）
 
 [中文候选稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_无新增人工标注候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_no_new_human_labels_20261029.docx)将结论中的后续评测表述调整为不新增人工标注，并说明缺少独立可信参考时自动匹配仅供诊断。已有人工评分及其历史来源保留，实验数据和结果未改变。变动页经 WPS 渲染检查。
