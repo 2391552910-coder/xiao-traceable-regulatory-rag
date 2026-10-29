@@ -9,7 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import re
+import posixpath
 import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -23,7 +23,9 @@ MODEL_SUMMARY = ROOT / "results/runs/qwen_cuda_cross_model_score_20261029_04/sum
 MODEL_PROTOCOL = ROOT / "results/runs/qwen_cuda_cross_model_20261029_01/protocol.json"
 AGENT_SUMMARY = ROOT / "results/runs/agent_pairs_reanalysis_20261029_01/agent_pair_comparison.json"
 AGENT_PAPER_AUDIT = ROOT / "results/runs/agent_pairs_reanalysis_20261029_01/paper_update_audit.json"
-DEFAULT_OUTPUT = ROOT / "results/runs/manuscript_claim_consistency_20261029_02/claim_audit.json"
+MODEL_FIGURE = ROOT / "results/runs/qwen_cuda_cross_model_figures_20261029_02/cross_model_exploratory.png"
+AGENT_FIGURE = ROOT / "results/runs/agent_pairs_figures_20261029_01/agent_observed_pairs.png"
+DEFAULT_OUTPUT = ROOT / "results/runs/manuscript_claim_consistency_20261029_03/claim_audit.json"
 YEAR_ANCHOR = "补充开展跨模型族、跨年度的小样本探索："
 
 
@@ -60,6 +62,50 @@ def docx_paragraphs(path: Path) -> list[str]:
     return paragraphs
 
 
+def embedded_figure_before_caption(path: Path, caption_prefix: str) -> dict:
+    word_namespace = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    drawing_namespace = "http://schemas.openxmlformats.org/drawingml/2006/main"
+    office_namespace = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+    package_namespace = "http://schemas.openxmlformats.org/package/2006/relationships"
+    with zipfile.ZipFile(path) as archive:
+        document = ET.fromstring(archive.read("word/document.xml"))
+        relationships = ET.fromstring(archive.read("word/_rels/document.xml.rels"))
+        targets = {node.get("Id"): node.get("Target")
+                   for node in relationships.findall(f"{{{package_namespace}}}Relationship")}
+        body = document.find(f"{{{word_namespace}}}body")
+        if body is None:
+            raise ValueError("DOCX has no document body")
+        nodes = list(body)
+        captions = []
+        for index, node in enumerate(nodes):
+            if node.tag != f"{{{word_namespace}}}p":
+                continue
+            text = "".join(item.text or "" for item in node.iter(f"{{{word_namespace}}}t"))
+            if text.startswith(caption_prefix):
+                captions.append(index)
+        if len(captions) != 1:
+            raise ValueError(f"Expected one caption starting {caption_prefix!r}, found {len(captions)}")
+        for node in reversed(nodes[:captions[0]]):
+            if node.tag != f"{{{word_namespace}}}p":
+                continue
+            blips = node.findall(f".//{{{drawing_namespace}}}blip")
+            if not blips:
+                continue
+            if len(blips) != 1:
+                raise ValueError(f"Expected one image before {caption_prefix!r}, found {len(blips)}")
+            relationship_id = blips[0].get(f"{{{office_namespace}}}embed")
+            target = targets.get(relationship_id)
+            if not target:
+                raise ValueError(f"Missing image relationship {relationship_id!r}")
+            archive_path = posixpath.normpath(posixpath.join("word", target))
+            payload = archive.read(archive_path)
+            return {"caption_prefix": caption_prefix,
+                    "relationship_id": relationship_id,
+                    "archive_path": archive_path,
+                    "sha256": hashlib.sha256(payload).hexdigest()}
+    raise ValueError(f"No embedded image found before {caption_prefix!r}")
+
+
 def one(items: list[dict], **keys: object) -> dict:
     matches = [item for item in items if all(item.get(k) == v for k, v in keys.items())]
     if len(matches) != 1:
@@ -91,6 +137,8 @@ def main() -> None:
         MODEL_PROTOCOL,
         AGENT_SUMMARY,
         AGENT_PAPER_AUDIT,
+        MODEL_FIGURE,
+        AGENT_FIGURE,
     )
     missing = [str(path) for path in inputs if not path.is_file()]
     if missing:
@@ -279,6 +327,19 @@ def main() -> None:
              {"required_limitations": ["unadjudicated reference", "small sample",
                                         "no population claim", "no new calls or labels"]})
 
+    model_figure_embed = embedded_figure_before_caption(CANDIDATE, "图9 ")
+    agent_figure_embed = embedded_figure_before_caption(CANDIDATE, "图10 ")
+    required(checks, "figure_9_cross_model_image_matches_saved_source",
+             model_figure_embed["sha256"] == sha256(MODEL_FIGURE),
+             {"embedded": model_figure_embed,
+              "source": str(MODEL_FIGURE.relative_to(ROOT)),
+              "source_sha256": sha256(MODEL_FIGURE)})
+    required(checks, "figure_10_agent_image_matches_saved_source",
+             agent_figure_embed["sha256"] == sha256(AGENT_FIGURE),
+             {"embedded": agent_figure_embed,
+              "source": str(AGENT_FIGURE.relative_to(ROOT)),
+              "source_sha256": sha256(AGENT_FIGURE)})
+
     policy_paragraphs = [p for p in paragraphs if p.startswith("本文主实验仍受限于20家公司")]
     required(checks, "manuscript_respects_no_new_annotation_policy",
              len(policy_paragraphs) == 1
@@ -314,6 +375,7 @@ def main() -> None:
             "full_manuscript_semantic_review": False,
             "independent_reference_validation": False,
             "no_new_annotation_policy_explicit": True,
+            "figure_9_and_10_match_saved_source_images": True,
             "human_labels_added": False,
             "model_calls_added": False,
             "journal_readiness_established": False,
