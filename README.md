@@ -1,5 +1,9 @@
 # 年报与法规双源检索增强生成
-## 当前主稿：DOC343 来源更正（2026-10-29）
+## 当前主稿：历史法规来源更正（2026-10-29）
+
+[中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_历史法规来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_historical_sources_20261029.docx)更正历史第182号令的范围：冻结索引含其官方PDF的22页，且该文档不在冻结排除清单；已保存的1200条候选排序未出现该文档。这不证明语义相关或具体法规适用。[索引审计](results/paper/condensed_candidate_20261028_01/historical_order_182_index_audit_20261029.json)。不新增人工标注、模型调用或评分。
+
+## 历史候选：DOC343 来源更正（2026-10-29）
 
 [中文主稿](results/paper/condensed_candidate_20261028_01/年报与法规双源RAG_统一主文_DOC343来源更正候选稿_待终审.docx)与[英文工作稿](results/paper/english_translation_current_20261028_01/Controlled_Evaluation_Dual_Source_RAG_English_Working_Translation_DOC343_correction_20261029.docx)更正DOC343来源描述：文本版含2023年修改决定及重新公布全文，冻结方案排除该文本版，但收录对应59页OFFICIAL-DOC343 PDF；G2冻结Top-10中7题检出PDF物理第2页。该计数不验证语义支持或个案适用性。详见[证据与修订审计](results/paper/condensed_candidate_20261028_01/doc343_correction_audit_20261029.json)。历史文档中“DOC343仅为修改决定”的说法已被更正。本轮未新增模型调用、人工标注或改变实验评分。
 
