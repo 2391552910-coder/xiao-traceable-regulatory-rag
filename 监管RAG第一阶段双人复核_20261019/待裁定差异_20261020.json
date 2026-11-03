@@ -1,0 +1,1518 @@
+[
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "CASE-01"
+    ],
+    "field": "reason",
+    "A": "问题元数据（新华都科技股份有限公司、002264.SZ、2024年报）与包内年报核对一致：封面载公司名与\"2024年年度报告\"，第二节（物理页6）载\"股票代码002264\"。问题限定两问——年报如何记载〔2023〕1号警示函、182号令第三条第一款及第四条原文——均可由包内年报PDF与官网快照完整作答。",
+    "B": "公司名（新华都科技股份有限公司）、代码002264.SZ、2024年年度报告三项与包内年报封面及第二节公司信息（物理页6载“股票代码002264”）核对一致。问题两问——年报如何记载〔2023〕1号警示函、182号令第三条第一款与第四条原文——均可用包内年报PDF与证监会页面快照直接作答，无需包外材料。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "CASE-01"
+    ],
+    "field": "uncertainty_reason",
+    "A": "问题单元无引句可核，位置/角色/范围旗标及相关性填u；底层违规行为日期未在输入中披露，事件日期与时点适用性保持unknown。",
+    "B": "问题单元无引句，位置/角色/范围旗标与相关性按规范填u。底层违规行为日期未在输入中出现，事件日期与时点适用性保持unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P42-CANDIDATE"
+    ],
+    "field": "source_version_identity",
+    "A": "新华都科技股份有限公司2024年年度报告全文（封面：2025年03月）",
+    "B": "新华都科技股份有限公司2024年年度报告（封面署2025年03月）",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P42-CANDIDATE"
+    ],
+    "field": "publication_date",
+    "A": "2025-03（封面记载到月，具体披露日PDF内未载）",
+    "B": "2025-03（封面仅记载到月，具体披露日PDF内未载）",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P42-CANDIDATE"
+    ],
+    "field": "reason",
+    "A": "年报PDF物理页42（印刷页41）载候选引句全文：本人用pypdf独立提取该页文本，与包内annual_page_0042.txt[156:468)切片及线索CSV exact_quote逐字一致，引句SHA256（49ce8688…）与记录相符；PNG视觉复核一致。引句完整覆盖警示函记载要件：决定名称与〔2023〕1号文号、事由（财务报告信息披露不准确）、违反条款（第182号令第三条第一款、第四条）、对象（公司、倪国涛、陈文杰、张石保）、警示函措施、记入诚信档案及公告2023-001指引。",
+    "B": "年报PDF物理页42（印刷页41）载候选引句全文。本人以pypdf从R2包annual_report.pdf独立提取该页，与包内annual_page_0042.txt切片及线索CSV的exact_quote逐字一致；引句SHA256与线索记录一致；PNG目检一致。引句完整含警示函要件：决定名称与〔2023〕1号文号、事由（2021年年度报告财务信息披露不准确）、违反条款（182号令第三条第一款、第四条）、措施（出具警示函）、收件日2023-01-13与年报公告日2023-01-14。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P42-CANDIDATE"
+    ],
+    "field": "uncertainty_reason",
+    "A": "candidate_annual_quote.txt与CSV exact_quote存在细微空白差异（两者SHA256不同，去空白后一致）；引句仅载收件日2023-01-13与公告日2023-01-14，底层违规行为日期未披露，事件日期/时点适用性保持unknown。",
+    "B": "candidate_annual_quote.txt与CSV exact_quote存在空白差异（去空白后一致）；引句仅载收件日/公告日，底层违规行为日期未披露，事件日期与时点适用性unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-182-ARTICLE-3-P1"
+    ],
+    "field": "event_date_status",
+    "A": "",
+    "B": "unknown",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-182-ARTICLE-3-P1"
+    ],
+    "field": "reason",
+    "A": "官网快照可见文本order_182_visible_text.txt[326:394)与候选引句逐字一致，上下文确为第三条第一款全文。版本头\"（2007年1月30日证监会令第40号公布 2021年3月18日证监会令第182号修订）\"与第六十五条\"本办法自2021年5月1日起施行\"均在快照内核实。HTML快照无PDF物理页，位置以文本偏移核验。",
+    "B": "R2包order_182_visible_text.txt与候选引句逐字一致（偏移区间与线索相符），上下文为第三条第一款全文（真实、准确、完整、及时、公平披露义务）。版本头“2007年1月30日证监会令第40号公布 2021年3月18日证监会令第182号修订”与第六十五条“自2021年5月1日起施行”均在快照内核实。HTML快照无PDF物理页，位置以文本偏移核验。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-182-ARTICLE-3-P1"
+    ],
+    "field": "uncertainty_reason",
+    "A": "线索CSV的page_text_sha256（daa09831…）与包内visible_text实测SHA256（28bbc9…）不一致，但偏移内容核验通过；复核表unit_id（LAW-182-ARTICLE-3-P1）与线索CSV写法（LAW-182-第三条第一款）不同，判断为同一候选。底层事件日期未知，时点适用性保持unknown（2023-01决定作出时该版本现行有效）。",
+    "B": "线索CSV的page_text_sha256与包内visible_text实测不一致（内容核验仍通过）；复核表unit_id（LAW-182-ARTICLE-3-P1）与线索CSV写法（LAW-182-第三条第一款）不同，判断为同一候选；底层事件日期unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-182-ARTICLE-4"
+    ],
+    "field": "event_date_status",
+    "A": "",
+    "B": "unknown",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-182-ARTICLE-4"
+    ],
+    "field": "reason",
+    "A": "order_182_visible_text.txt[608:664)与候选引句逐字一致，上下文确为第四条全文（董事、监事、高级管理人员忠实勤勉义务）。版本与施行日期核验同上一法规单元。",
+    "B": "order_182_visible_text.txt与候选引句逐字一致，上下文为第四条全文（董监高忠实勤勉义务、不得泄露未披露信息等）。版本与施行日期核验同上一法规单元。",
+    "adjudication": null
+  },
+  {
+    "scope": "002264",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-182-ARTICLE-4"
+    ],
+    "field": "uncertainty_reason",
+    "A": "同上一法规单元：page_text_sha256与unit_id写法两点包装差异已记录；时点适用性保持unknown。",
+    "B": "page_text_sha256与unit_id写法两处包装差异同上；时点适用性unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "CASE-01"
+    ],
+    "field": "temporal_applicability",
+    "A": "partial（两法规对2023年度业绩预告义务窗口均现行有效；迟披露确切日期未知）",
+    "B": "yes",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "CASE-01"
+    ],
+    "field": "reason",
+    "A": "问题元数据（广州智光电气股份有限公司、002169.SZ、2024年报）与年报一致（物理页9第二节载\"股票代码002169\"）。问题三部分可按包内三份输入作答：①年报披露的警示事实（物理页57）；②深交所5.1.1条（会计年度结束之日起一个月内预告，列七项触发情形）与182号令第十七条（预计亏损或大幅变动应及时预告）的触发条件与时限原文；③\"能否确定具体触发事实/单一行为日期/时点适用性\"——答案为无法确定触发情形（属5.1.1哪一款未知）与单一行为日期，此限定结论本身即为问题要求的完整回答。",
+    "B": "公司名（广州智光电气股份有限公司）、代码002169.SZ（年报物理页9第二节）与2024年报元数据一致。问题三部分均可由包内三份输入作答：年报警示事实（物理页57）、深交所规则5.1.1条（会计年度结束之日起一个月内预告及七项触发情形）、182号令第十七条（预计亏损或大幅变动应及时预告）；第三问要求说明不能确定项，如实作答即为完整回答。时点适用性：两法规对2023年度业绩预告义务窗口（法定期限至2024年1月末）均现行有效——深交所本版2023-09-04施行、182号令2021-05-01施行，故事项时点适用性判断为yes。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "CASE-01"
+    ],
+    "field": "uncertainty_reason",
+    "A": "年报未披露2023年业绩预告的实际披露日期、警示函文号与决定日期；触发情形（5.1.1哪一款）无证据。",
+    "B": "年报未披露2023年业绩预告实际披露日期、警示函文号与决定日期；触发情形（5.1.1哪一款）无证据；上述缺失不影响义务窗口的法规适用性判断，但影响行为层面判断（保持unknown）。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P57-CANDIDATE"
+    ],
+    "field": "source_version_identity",
+    "A": "广州智光电气股份有限公司2024年年度报告全文",
+    "B": "广州智光电气股份有限公司2024年年度报告",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P57-CANDIDATE"
+    ],
+    "field": "publication_date",
+    "A": "无法确认：封面仅印\"【披露时间】\"占位符，未载日期",
+    "B": "无法确认：封面仅印“【披露时间】”占位符，未载日期",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P57-CANDIDATE"
+    ],
+    "field": "reason",
+    "A": "年报PDF物理页57（印刷页57）载候选引句：pypdf独立提取文本与包内annual_report_physical_page_0057.txt[759:823)切片逐字一致，页文本与引句SHA256均与线索记录相符；PNG视觉复核一致。引句记载因2023年业绩预告晚于法规规定时间披露，公司及李永喜、吴文忠、熊坦被广东证监局出具警示函，同时被深交所通报批评处分。",
+    "B": "年报PDF物理页57载候选引句：pypdf独立提取与包内页文本切片逐字一致，SHA256与线索记录相符；PNG目检一致。引句载：因2023年业绩预告晚于法规规定时间披露，公司及李永喜、吴文忠、熊坦被广东证监局出具警示函，并被深交所通报批评。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-P57-CANDIDATE"
+    ],
+    "field": "uncertainty_reason",
+    "A": "引句未载警示函文号、决定日期、实际预告披露日期及具体违规情形；年报封面披露日期为占位符，无法确认。",
+    "B": "引句未载警示函文号、决定日期、实际预告披露日期与具体违规情形；封面披露日期为占位符，无法确认。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SZSE-5-1-1"
+    ],
+    "field": "effective_to_exclusive",
+    "A": "无法确认：PDF仅载废止2022年修订版与2023年2月修订版，未载本版废止",
+    "B": "无法确认：PDF仅载废止2022年1月修订版与2023年2月修订版，未载本版废止",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SZSE-5-1-1"
+    ],
+    "field": "event_date_status",
+    "A": "",
+    "B": "unknown",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SZSE-5-1-1"
+    ],
+    "field": "temporal_applicability",
+    "A": "yes（对2023年度业绩预告义务窗口：规则自2023-09-04施行，预告法定期限于2024年1月末，窗口内本版现行有效）",
+    "B": "yes",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SZSE-5-1-1"
+    ],
+    "field": "reason",
+    "A": "规则PDF物理页55（印刷页55，页眉\"— 55 —\"）载5.1.1条全文，pypdf独立提取与包内页文本[30:434)切片逐字一致，SHA256相符。封面载\"深圳证券交易所股票上市规则（2023年8月修订）\"及十四次修订沿革；16.3条载自2023年9月4日起施行并废止2022年1月及2023年2月旧版。",
+    "B": "规则PDF物理页55载5.1.1条全文（一个月内预告时限与七项触发情形），pypdf独立提取与包内页文本切片逐字一致，SHA256相符。封面载2023年8月第十四次修订及完整修订沿革；16.3条载自2023年9月4日起施行并废止两个旧版。2023年度业绩预告法定期限（2024年1月末）落在本版施行窗口内，时点适用性yes。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SZSE-5-1-1"
+    ],
+    "field": "uncertainty_reason",
+    "A": "发布日期PDF内无明确记载；迟披露行为确切日期未知，但义务时点适用性可由施行日推定。",
+    "B": "发布日期PDF内无明确记载；迟披露行为确切日期未知，但义务时点适用性可由施行日确定。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-CSRC-182-17"
+    ],
+    "field": "event_date_status",
+    "A": "",
+    "B": "unknown",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-CSRC-182-17"
+    ],
+    "field": "temporal_applicability",
+    "A": "yes（2021-05-01施行，2023年度业绩预告义务窗口内现行有效）",
+    "B": "yes",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-CSRC-182-17"
+    ],
+    "field": "reason",
+    "A": "PDF物理页6（印刷页6）载\"第十七条 上市公司预计经营业绩发生亏损或者发生大幅变动的，应当及时进行业绩预告。\"与候选引句逐字一致（页文本[266:307)，SHA256相符）；pypdf独立提取一致。全文至第六十五条，载自2021年5月1日起施行并废止证监会令第40号旧办法及2016年季度报告编报规则。",
+    "B": "PDF物理页6载“第十七条 上市公司预计经营业绩发生亏损或者发生大幅变动的，应当及时进行业绩预告”，与候选引句逐字一致（SHA256相符）；pypdf独立提取一致。全文至第六十五条，载自2021年5月1日起施行并废止第40号旧办法。2023年度业绩预告义务窗口内现行有效，时点适用性yes。",
+    "adjudication": null
+  },
+  {
+    "scope": "002169",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-CSRC-182-17"
+    ],
+    "field": "uncertainty_reason",
+    "A": "该PDF未印\"证监会令第182号\"及\"2021年3月18日修订\"版本头，令号与修订日期依据包文件名/包说明；内容版本（2021年修订）由条文结构（共65条）与第六十五条施行/废止条款佐证。",
+    "B": "PDF未印令号与修订日期，令号182及2021-03-18修订依据包文件名/包说明；内容由条文结构（65条）与施行/废止条款佐证。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "Q-002008-DEV-01"
+    ],
+    "field": "reason",
+    "A": "问题元数据（大族激光科技产业集团股份有限公司、002008.SZ、2024年报）与年报封面（\"股票代码：002008\"）及物理页6公司信息一致。问题限定三问：年报对王磊其父短线交易警示的披露、证券法第四十四条主体范围/六个月条件/收益处理、可陈述与不可确认项——均可由两份输入完整作答；不可确认项的如实回答即为问题第三问的限定答案。",
+    "B": "公司名（大族激光科技产业集团股份有限公司）、代码002008.SZ（封面）与2024年报一致。问题三问——年报对王磊其父短线交易警示的披露、证券法第四十四条主体范围/六个月条件/收益处理、可陈述与不可确认项——均可由两份输入完整作答；第三问的“不可确认项”如实作答即为限定答案。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "Q-002008-DEV-01"
+    ],
+    "field": "uncertainty_reason",
+    "A": "底层短线交易的买入/卖出日期、六个月窗口满足与否、收益数额均无输入证据；事件日期与时点适用性保持unknown。",
+    "B": "底层短线交易的买入/卖出日期、六个月窗口、收益数额均无输入证据；事件日期与时点适用性unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-002008-P043"
+    ],
+    "field": "publication_date",
+    "A": "无法确认：封面仅载\"2024年\"，未载披露月日",
+    "B": "无法确认：封面仅载“2024年”，未载披露月日",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-002008-P043"
+    ],
+    "field": "reason",
+    "A": "年报PDF物理页43（印刷页43）载候选引句：包内annual_physical_page_43.txt[1370:1440)切片与引句逐字一致，pypdf独立提取一致，PNG视觉复核一致。引句记载2023年10月29日公司现任监事王磊因其父短线交易大族激光股票，被深圳证监局处以出具警示函（〔2023〕194号）的监管措施。",
+    "B": "年报PDF物理页43载候选引句：包内页文本切片与引句逐字一致，pypdf独立提取一致，PNG目检一致。引句载2023年10月29日公司监事王磊因其父短线交易公司股票被深圳证监局出具警示函（〔2023〕194号）。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "ANN-002008-P043"
+    ],
+    "field": "uncertainty_reason",
+    "A": "年报仅载警示措施日期2023-10-29（该日期角色为监管措施日期，非底层交易日期）；底层交易日期、成交金额未披露。",
+    "B": "2023-10-29为警示措施日期而非底层交易日期；底层交易日期、金额未披露。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SECURITIES-2019-ART44"
+    ],
+    "field": "publication_date",
+    "A": "2019-12-28（第十三届全国人大常委会第十五次会议修订通过并公布，主席签署页）",
+    "B": "2019-12-28（修订通过并公布）",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SECURITIES-2019-ART44"
+    ],
+    "field": "effective_from",
+    "A": "2020-03-01（公布页及第二百二十六条）",
+    "B": "2020-03-01（第二百二十六条）",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SECURITIES-2019-ART44"
+    ],
+    "field": "event_date_status",
+    "A": "",
+    "B": "unknown",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SECURITIES-2019-ART44"
+    ],
+    "field": "reason",
+    "A": "PDF封面载\"中华人民共和国证券法（2019修订）\"，扉页载2019年12月28日修订通过、现予公布、自2020年3月1日起施行（第二百二十六条同）。物理页10载第四十四条全文四款，候选引句去空白后与PDF文本层及包内law_physical_page_10.txt完全一致。引句范围完整：主体（5%以上股东、董监高）、六个月双向交易条件、收益归公司并由董事会收回、配偶父母子女及利用他人账户纳入、股东三十日要求与代位诉讼、负有责任董事连带责任。",
+    "B": "PDF封面载“中华人民共和国证券法（2019修订）”，扉页载2019年12月28日修订通过并公布、自2020年3月1日起施行。物理页10载第四十四条全文（5%以上股东及董监高主体、六个月双向交易、收益归公司由董事会收回、配偶父母子女及利用他人账户纳入、股东持股5%以上含），候选引句去空白后与PDF文本层及包内页文本完全一致。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "LAW-SECURITIES-2019-ART44"
+    ],
+    "field": "uncertainty_reason",
+    "A": "线索CSV偏移[199:610)与包内页文本实际匹配区间[196:607)存在3字符偏移、空白布局亦有差异，精确偏移量未复现（引句内容与物理页无误）。第四十四条要件对王磊父亲具体交易的适用（交易日期、窗口、账户）无输入证据，时点适用性保持unknown（该版本自2020-03-01施行，2023-10-29警示措施时点现行有效）。",
+    "B": "线索CSV偏移[199:610)与包内页文本实际匹配区间[196:607)差3字符、空白布局有差异，精确偏移未复现（引句内容与物理页无误）；第四十四条对底层交易的适用无输入证据，时点适用性unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "DUAL-SUFFICIENCY-002008-01"
+    ],
+    "field": "reason",
+    "A": "两份输入联合足以按问题限定完整作答：年报披露句（物理页43）与证券法第四十四条全文（物理页10）均可完整准确定位引用；可陈述事项=年报记载的警示事实+条文要件原文；无法确认事项=具体交易日期、六个月窗口满足、收益数额、账户细节。包说明已声明监管警示决定未放入包，故行为要件/法律适用保留待核符合材料现状。",
+    "B": "两份输入联合足以按问题限定完整作答：年报披露句（物理页43）与证券法第四十四条全文（物理页10）均可完整准确定位引用；可陈述事项=年报警示事实+条文要件原文；无法确认事项=交易日期、六个月窗口、收益数额、账户细节。监管警示决定未放入包，行为要件与法律适用保留待核与材料现状一致。",
+    "adjudication": null
+  },
+  {
+    "scope": "002008",
+    "form": "review_form.csv",
+    "unit": [
+      "CASE-01",
+      "DUAL-SUFFICIENCY-002008-01"
+    ],
+    "field": "uncertainty_reason",
+    "A": "联合单元无单一来源/引句可核，四项旗标与相关性填u；底层事件日期与时点适用性保持unknown。",
+    "B": "联合单元无单一来源/引句可核，四项旗标与相关性填u；底层事件日期与时点适用性unknown。",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "CSRC-ORDER-182-2021-OFFICIAL"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "2021年修订文本：第六十五条载“本办法自2021年5月1日起施行”并废止2007年1月30日证监会令第40号（物理页22）；PDF未印令第182号字样及公布日期",
+    "B": "2021年修订文本：第六十五条载“本办法自2021年5月1日起施行”，并废止2007年证监会令第40号（物理页22）；件内未印“第182号”令号与公布日期",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "CSRC-ORDER-182-2021-OFFICIAL"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印公布/签署日期；登记线索2021-03-18与DOC100第226号令末条“2021年3月18日发布的《上市公司信息披露管理办法》（证监会令第182号）同时废止”表述一致）",
+    "B": "无明确记载（PDF未印公布/签署日期；登记线索2021-03-18可由DOC100第六十七条“2021年3月18日发布的《上市公司信息披露管理办法》（证监会令第182号）同时废止”交叉印证）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "CSRC-ORDER-182-2021-OFFICIAL"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止2007年1月30日证监会令第40号《上市公司信息披露管理办法》及证监会公告〔2016〕33号（第六十五条，物理页22）",
+    "B": "废止2007-01-30证监会令第40号《上市公司信息披露管理办法》及证监会公告〔2016〕33号（第六十五条，物理页22）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "CSRC-ORDER-182-2021-OFFICIAL"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/pdf/CSRC-ORDER-182-2021-OFFICIAL/19a609a9a19110d61215.pdf 物理页1（题名《上市公司信息披露管理办法》）、22（第六十五条）；SHA256与source_register一致",
+    "B": "sources/pdf/CSRC-ORDER-182-2021-OFFICIAL/19a609a9a19110d61215.pdf 物理页1（题名）、22（第六十五条）；实测SHA256与source_register一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "CSRC-ORDER-182-2021-OFFICIAL"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "令第182号与公布日期未在该PDF内印刷，身份部分依赖登记URL及DOC100废止条款交叉佐证；该PDF为扩展索引绑定候选，未附官网清单互证",
+    "B": "令号与公布日期未在件内印刷，身份依赖登记URL及DOC100废止条款互证；该件为扩展索引绑定候选，无官网清单互证",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC004"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "财会[2008]7号通知印发《企业内部控制基本规范》（文头）；保存网页文本未印发文落款日期",
+    "B": "财会[2008]7号通知印发《企业内部控制基本规范》（文头，半角方括号）；保存网页文本未印发文落款日期",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC004"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（保存文本未印落款日期；登记线索2008-05-22无法从保存件核实；页面显示的2017年11月21日为网站页面日期，不能用作发文日期）",
+    "B": "无明确记载（保存文本无落款日期；登记线索2008-05-22无法自件内核实；网页显示2017-11-21系网站页面日期，不作发文日期）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC004"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "无明确记载（保存文本未见废止或修订表述）",
+    "B": "无明确记载（保存文本无废止或修订表述）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC004"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC004/e9b7e5c9a1e87411545d.txt 文头（五部委通知、财会[2008]7号）与通知正文（施行日期）；SHA256与登记一致",
+    "B": "sources/official/DOC004/e9b7e5c9a1e87411545d.txt 文头（五部委通知、财会[2008]7号）及通知正文（施行安排）；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC013"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "2017-08-02（成文日期暨总理签署日期：令文末“总理李克强2017年8月2日”，网页元数据“成文日期：2017年08月02日”）；网页“发布日期：2017年08月21日”为网站发布日期，已区分",
+    "B": "2017-08-02（令文末总理签署日期；网页元数据成文日期同日；网站“发布日期2017-08-21”系网站发布日期，已区分）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC013"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC013/0f423a267a8cd72ad447.txt 文头元数据与令文；SHA256与登记一致",
+    "B": "sources/official/DOC013/0f423a267a8cd72ad447.txt 文头元数据与令文；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC015"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "2008-04-23（令第522号公布，文头）；2014-07-29（修订决定日期，文头；登记声明日期与此一致）",
+    "B": "2008-04-23（第522号令公布日期，文头）；2014-07-29（修订决定日期，文头；与登记声明一致）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC015"
+    ],
+    "field": "effective_date_if_stated",
+    "A": "2008-06-01（第九十七条“本条例自2008年6月1日起施行”，物理页32）；2014年修订决定的施行日期未在本文内记载",
+    "B": "2008-06-01（第九十七条“本条例自2008年6月1日起施行”，物理页32）；2014年修订决定自身施行日期件内未载",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC015"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC015/feea61bac29073f63415.pdf 物理页1（文头）、32（第九十七条）；SHA256与登记一致",
+    "B": "sources/official/DOC015/feea61bac29073f63415.pdf 物理页1（文头）、32（第九十七条）；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC015"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "另一候选PDF（1d19ff403e6f9d5533b4）为2008年原始文本（33页，未含2014修订），哈希与登记不符，未采用；是否存在2014年以后更新修订，本包证据不足，待第二阶段核官网",
+    "B": "另一候选PDF（1d19ff403e6f9d5533b4）为2008年原始文本（33页，无2014修订内容），哈希与登记不符，未采用；2014年后是否再有修订，包内证据不足，待第二阶段核官网",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC035"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "2022-04-20（通过日期，文头）；网页“发布日期：2022年05月18日”为网站页面日期，已区分",
+    "B": "2022-04-20（通过日期，文头；网页“发布日期2022-05-18”系网站页面日期，已区分）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC035"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC035/7f46fbb927a697d5607f.txt 文头与第一百五十五条；SHA256与登记一致",
+    "B": "sources/official/DOC035/7f46fbb927a697d5607f.txt 文头与第一百五十五条；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC035"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "主席令号未在保存文本中显示（页面节选不含令页）",
+    "B": "主席令号未在保存页面节选中显示",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC095"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "文头载“2013年12月9日中国证券监督管理委员会第16次主席办公会会议审议通过 根据2021年6月11日《关于修改部分证券期货规章的决定》修正 2023年中国证券监督管理委员会第2次委务会议修订”（物理页1）",
+    "B": "文头载“2013年12月9日第16次主席办公会审议通过 根据2021年6月11日《关于修改部分证券期货规章的决定》修正 2023年第2次委务会议修订”（物理页1）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC095"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印第209号令及公布日期；登记线索2023-02-17无法从PDF核实）",
+    "B": "无明确记载（PDF未印第209号令及公布日期；登记线索2023-02-17无法自件内核实）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC095"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC095/0e45b71198c96aa398d5.pdf 物理页1（文头）、18（第七十一条）；SHA256与登记一致",
+    "B": "sources/official/DOC095/0e45b71198c96aa398d5.pdf 物理页1（文头）、18（第七十一条）；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC095"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "令第209号未在PDF内印刷，与索引题名的对应依赖登记URL；另一候选（9cf942a6d3be837fe9b3）为2页立法说明而非办法正文，未采用",
+    "B": "令第209号未在件内印刷，题名对应依赖登记URL；另一候选（9cf942a6d3be837fe9b3）为2页立法说明而非正文，未采用",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC100"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "2025年修订文本：第六十七条载“本办法自2025年7月1日起施行。2021年3月18日发布的《上市公司信息披露管理办法》（证监会令第182号）同时废止”（物理页21）；PDF未印第226号令字样及公布日期",
+    "B": "2025年修订文本：第六十七条载“本办法自2025年7月1日起施行。2021年3月18日发布的《上市公司信息披露管理办法》（证监会令第182号）同时废止”（物理页21）；件内未印“第226号”令号与公布日期",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC100"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印公布/签署日期；登记线索2025-02-28无法从PDF核实）",
+    "B": "无明确记载（PDF未印公布/签署日期；登记线索2025-02-28无法自件内核实）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC100"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止2021年3月18日证监会令第182号《上市公司信息披露管理办法》（第六十七条，物理页21）",
+    "B": "废止2021-03-18证监会令第182号《上市公司信息披露管理办法》（第六十七条，物理页21）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC100"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC100/f7fc0029f439f4180e21.pdf 物理页1（题名）、21（第六十七条）；SHA256与登记一致",
+    "B": "sources/official/DOC100/f7fc0029f439f4180e21.pdf 物理页1（题名）、21（第六十七条）；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC100"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "令第226号与公布日期未在PDF内印刷，身份依赖登记URL及废止条款互证",
+    "B": "令号与公布日期未在件内印刷，身份依赖登记URL及废止条款互证",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC114"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC114/71d6d1de90bf9e84f5c4.pdf 物理页1；SHA256与登记一致",
+    "B": "sources/official/DOC114/71d6d1de90bf9e84f5c4.pdf 物理页1；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC114"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "登记表declared_publication_date=2026-08-01与文头印刷（2021-10-30公布、2021-11-15施行）不一致，以来源印刷为准；2026-08-01的来源不明",
+    "B": "登记表declared_publication_date=2026-08-01与文头印刷（2021-10-30公布、2021-11-15施行）不一致；以来源件内印刷为准，2026-08-01来源不明",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC116"
+    ],
+    "field": "effective_date_if_stated",
+    "A": "2020-07-03（文头“自2020年7月3日起施行”；另第九十三条“本办法自公布之日起施行”，物理页34）",
+    "B": "2020-07-03（文头“自2020年7月3日起施行”；第九十三条“本办法自公布之日起施行”，物理页34）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC116"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC116/147c68c765b3c5bdbefd.pdf 物理页1、34；SHA256与登记一致",
+    "B": "sources/official/DOC116/147c68c765b3c5bdbefd.pdf 物理页1、34；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC116"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "登记表declared_publication_date=2026-08-01与文头印刷（2020-07-03）不一致，以来源印刷为准",
+    "B": "登记表declared_publication_date=2026-08-01与文头印刷（2020-07-03）不一致；以件内印刷为准",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC118"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "题名《上市公司股东大会规则（2022年修订）》（物理页1）；PDF未印公告〔2022〕13号及公布日期",
+    "B": "题名《上市公司股东大会规则（2022年修订）》（物理页1）；件内未印公告〔2022〕13号及公布日期",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC118"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印公布日期；登记线索2022-01-07无法从PDF核实）",
+    "B": "无明确记载（PDF未印公布日期；登记线索2022-01-07无法自件内核实）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC118"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止2016年9月30日施行的《上市公司股东大会规则（2016年修订）》（证监会公告〔2016〕22号）（第五十四条，物理页16）",
+    "B": "废止2016-09-30施行的《上市公司股东大会规则（2016年修订）》（证监会公告〔2016〕22号）（第五十四条，物理页16）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC118"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC118/afc29fdff25b1b706b2b.pdf 物理页1、16；SHA256与登记一致",
+    "B": "sources/official/DOC118/afc29fdff25b1b706b2b.pdf 物理页1、16；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC118"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "公告号与公布日期未在PDF内印刷；另一候选（b99dec01ec03d85c594a）为2页修订说明而非规则正文，未采用",
+    "B": "公告号与公布日期未在件内印刷；另一候选（b99dec01ec03d85c594a）为2页修订说明而非正文，未采用",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC120"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "题名《上市公司治理准则》（物理页1）；第一百零一条载“本准则自2026年1月1日起施行”（物理页25）；PDF未印修订年份文头或公告日期",
+    "B": "题名《上市公司治理准则》（物理页1）；第一百零一条载“本准则自2026年1月1日起施行”（物理页25）；件内未印修订文头或公告日期",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC120"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印公告日期；登记线索2026-01-01实为第一百零一条所载施行日期，不能作为公布日期）",
+    "B": "无明确记载（PDF未印公布日期；登记线索2026-01-01实为第一百零一条所载施行日期，不能充当公布日期）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC120"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "无明确记载（第一百零一条未载废止表述；PDF内未见废止2018年文本的条款）",
+    "B": "无明确记载（第一百零一条未载废止表述；件内未见废止2018年文本的条款）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC120"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC120/8110c425eac3660ed5db.pdf 物理页1、25（含第九十九条治理信息披露条款）；SHA256与登记一致",
+    "B": "sources/official/DOC120/8110c425eac3660ed5db.pdf 物理页1、25；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC120"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "公布日期与废止关系未在PDF内印刷；另一候选（00ff394a1152481ce030）为5页修订说明而非准则正文，未采用；real10包R1元数据将2026-01-01标为发布日期，与本件印刷的施行日期不一致",
+    "B": "公布日期与废止关系未在件内印刷；另一候选（00ff394a1152481ce030）为5页修订说明而非正文，未采用；real10包R1元数据将2026-01-01标为发布日期，与件内施行日期性质不同",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC122"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "2023-07-28（委务会议审议通过日期，文头，物理页1；与登记声明日期一致）",
+    "B": "2023-07-28（委务会议审议通过日期，文头；与登记声明一致）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC122"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止2022年1月5日发布的《上市公司独立董事规则》（证监会公告〔2022〕14号）（第四十八条，物理页18）",
+    "B": "废止2022-01-05发布的《上市公司独立董事规则》（证监会公告〔2022〕14号）（第四十八条，物理页18）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC122"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC122/880cee9873d843e98224.pdf 物理页1、18；SHA256与登记一致",
+    "B": "sources/official/DOC122/880cee9873d843e98224.pdf 物理页1、18；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC122"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "令第220号字样未在PDF内印刷（仅登记题名含），身份依赖登记URL与文头互证",
+    "B": "令第220号字样未在件内印刷（仅登记题名含），身份依赖登记URL与文头互证",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC128"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "2025年重新公布文本：第二百零九条载“本章程指引自公布之日起施行。2023年12月15日施行的《上市公司章程指引》（证监会公告〔2023〕62号）同时废止”（物理页72）；PDF未印公告〔2025〕6号及公布日期",
+    "B": "2025年重新公布文本：第二百零九条载“本章程指引自公布之日起施行。2023年12月15日施行的《上市公司章程指引》（证监会公告〔2023〕62号）同时废止”（物理页72）；件内未印公告〔2025〕6号及公布日期",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC128"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印公布日期；登记线索2025-03-28无法从PDF核实）",
+    "B": "无明确记载（PDF未印公布日期；登记线索2025-03-28无法自件内核实）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC128"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止2023年12月15日施行的证监会公告〔2023〕62号《上市公司章程指引》（第二百零九条，物理页72）",
+    "B": "废止2023-12-15施行的证监会公告〔2023〕62号《上市公司章程指引》（第二百零九条，物理页72）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC128"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC128/c3d540bfd4b0b9244123.pdf 物理页1（题名）、72（第二百零九条）；SHA256与登记一致",
+    "B": "sources/official/DOC128/c3d540bfd4b0b9244123.pdf 物理页1（题名）、72（第二百零九条）；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC128"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "公告号与公布日期未在PDF内印刷，身份依赖登记URL及废止条款互证",
+    "B": "公告号与公布日期未在件内印刷，身份依赖登记URL及废止条款互证",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC133"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印发布日期；登记线索2022-01-06应为网页发布日期，无法从PDF核实）",
+    "B": "无明确记载（PDF未印发布日期；登记线索2022-01-06应为网页发布日期，无法自件内核实）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC133"
+    ],
+    "field": "effective_date_if_stated",
+    "A": "无明确记载（手册为汇编性文件，无施行条款）",
+    "B": "无明确记载（手册为汇编文件，无施行条款）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC133"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC133/b1e652088d3ee216b4e3.pdf 物理页1-3；SHA256与登记一致",
+    "B": "sources/official/DOC133/b1e652088d3ee216b4e3.pdf 物理页1-3；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC342"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "决定+重新公布全文：重新公布文本文头载“上市公司章程指引（2016年9月30日修订公布，根据2019年4月17日《关于修改〈上市公司章程指引〉的决定》修订）”（物理页5）",
+    "B": "决定+重新公布全文：重新公布文头载“上市公司章程指引（2016年9月30日修订公布，根据2019年4月17日《关于修改〈上市公司章程指引〉的决定》修订）”（物理页5）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC342"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "2019-04-17（重公布文头所载决定日期，物理页5）；公告〔2019〕10号字样未在PDF内印刷",
+    "B": "2019-04-17（重新公布文头所载决定日期，物理页5）；公告〔2019〕10号字样未在件内印刷",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC342"
+    ],
+    "field": "effective_date_if_stated",
+    "A": "决定自公布之日起施行（物理页4）；章程指引自公布之日起施行（物理页70）",
+    "B": "决定自公布之日起施行（物理页4）；指引自公布之日起施行（物理页70）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC342"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC342/cdc152e50a6031ae1299.pdf 物理页1（决定）、4-5、70；SHA256与登记一致",
+    "B": "sources/official/DOC342/cdc152e50a6031ae1299.pdf 物理页1（决定）、4-5、70；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC342"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "公告号未在PDF内印刷，与索引题名【第10号公告】的对应依赖登记URL",
+    "B": "公告号未在件内印刷，与索引题名【第10号公告】的对应依赖登记URL",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC343"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "决定+重新公布全文；PDF未印修订日期文头（决定载“本决定自公布之日起施行。《上市公司章程指引》根据本决定作相应修改，重新公布”，物理页3）",
+    "B": "决定+重新公布全文；件内未印修订日期文头（决定载“本决定自公布之日起施行。《上市公司章程指引》根据本决定作相应修改，重新公布”，物理页3）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC343"
+    ],
+    "field": "publication_or_signature_date",
+    "A": "无明确记载（PDF未印公告〔2023〕62号及决定日期；登记线索2023-12-15无法从PDF核实）",
+    "B": "无明确记载（PDF未印公告〔2023〕62号及决定日期；登记线索2023-12-15无法自件内核实）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC343"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止2019年4月17日施行的《上市公司章程指引》（证监会公告〔2019〕10号）（物理页59）",
+    "B": "废止2019-04-17施行的《上市公司章程指引》（证监会公告〔2019〕10号）（物理页59）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC343"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/official/DOC343/2b2b3084498677df48ee.pdf 物理页1-3、59；SHA256与登记一致",
+    "B": "sources/official/DOC343/2b2b3084498677df48ee.pdf 物理页1-3、59；实测SHA256与登记一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "DOC343"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "公告号与日期未在PDF内印刷；版次判断依赖废止条款与登记线索互证；另一候选（2e5b217ac6a3c819d99c）为2页修改说明而非决定正文，未采用",
+    "B": "公告号与决定日期未在件内印刷；版次判断依赖废止条款与登记线索互证；另一候选（2e5b217ac6a3c819d99c）为2页修改说明而非决定正文，未采用",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "SZSE-STOCK-LISTING-RULES-2023-08-OFFICIAL"
+    ],
+    "field": "edition_or_amendment_identifier",
+    "A": "文头载《深圳证券交易所股票上市规则（2023年8月修订）》及完整修订沿革（1998年1月实施至2023年8月第十四次修订）（物理页1）",
+    "B": "文头载《深圳证券交易所股票上市规则（2023年8月修订）》及修订沿革（1998年1月实施至2023年8月第十四次修订）（物理页1）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "SZSE-STOCK-LISTING-RULES-2023-08-OFFICIAL"
+    ],
+    "field": "repeal_or_amendment_relation",
+    "A": "废止深证上〔2022〕12号《深圳证券交易所股票上市规则（2022年修订）》及深证上〔2023〕92号（2023年2月17日发布）《深圳证券交易所股票上市规则（2023年修订）》（物理页189）",
+    "B": "废止深证上〔2022〕12号《深圳证券交易所股票上市规则（2022年修订）》及深证上〔2023〕92号（2023-02-17发布）《深圳证券交易所股票上市规则（2023年修订）》（物理页189）",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "SZSE-STOCK-LISTING-RULES-2023-08-OFFICIAL"
+    ],
+    "field": "official_source_evidence_and_page",
+    "A": "sources/pdf/SZSE-STOCK-LISTING-RULES-2023-08-OFFICIAL/b858a84f8897bb250870.pdf 物理页1、188-189；SHA256与source_register一致",
+    "B": "sources/pdf/SZSE-STOCK-LISTING-RULES-2023-08-OFFICIAL/b858a84f8897bb250870.pdf 物理页1、188-189；实测SHA256与source_register一致",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "document_review_form.csv",
+    "unit": [
+      "SZSE-STOCK-LISTING-RULES-2023-08-OFFICIAL"
+    ],
+    "field": "remaining_uncertainty",
+    "A": "该PDF为扩展索引绑定候选，未附官网清单互证；本次修订的发布通知文号未在件内",
+    "B": "该件为扩展索引绑定候选，无官网清单互证；本次修订发布通知文号未在件内",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot01",
+      "DOC128-C082"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页29-30；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页29-30；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot02",
+      "DOC120-C047"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页10-11；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页10-11；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot02",
+      "DOC342-C088"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页32-33；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页32-33；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot03",
+      "DOC004-C047"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "B": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（实测SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot03",
+      "DOC120-C107"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页24-25；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页24-25；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot03",
+      "DOC095-C019"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页4-5；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页4-5；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot03",
+      "DOC128-C173"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页61-62；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页61-62；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot03",
+      "DOC133-C020"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页22-27；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页22-27；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot04",
+      "DOC128-C146"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页52-53；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页52-53；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot04",
+      "DOC122-C038"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页9-10；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页9-10；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot05",
+      "DOC342-C088"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页32-33；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页32-33；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot05",
+      "DOC343-C080"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页26-27；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页26-27；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot05",
+      "DOC128-C082"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页29-30；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页29-30；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot07",
+      "DOC120-C087"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页20-21；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页20-21；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot08",
+      "DOC343-C004"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页2-4；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对；引句含决定正文及重新公布文本目录，跨物理页2-4",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页2-4；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验；引句含决定正文及重新公布文本目录，跨物理页2-4",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot08",
+      "DOC342-C126"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页46-48；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页46-48；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot08",
+      "DOC343-C118"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页38-40；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页38-40；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot09",
+      "DOC035-C147"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "B": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（实测SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot09",
+      "DOC013-C046"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "B": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（实测SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot09",
+      "DOC133-C020"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页22-27；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页22-27；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot09",
+      "DOC004-C038"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "B": "该文档为官方网页文本（无PDF）；引句与官方网页文本逐字一致（实测SHA256与登记一致）；物理PDF页码不适用；包内未提供候选页码",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot10",
+      "DOC133-C020"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页22-27；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页22-27；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot10",
+      "DOC100-C012"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页3-4；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页3-4；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  },
+  {
+    "scope": "regsrc",
+    "form": "hit_page_review_form.csv",
+    "unit": [
+      "PILOT-pilot10",
+      "DOC116-C048"
+    ],
+    "field": "notes_and_uncertainty",
+    "A": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页16-17；引句内嵌印刷页码标记、跨越页边界者，已按连续文本逐字比对",
+    "B": "包内未提供候选物理页码（provenance_status=no_pdf_page_candidate）；复核自定位于物理页16-17；引句内嵌印刷页码、跨越页边界，已按连续文本逐字双指针对齐核验",
+    "adjudication": null
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-20",
+  "classification": "two_human_final_reviews_as_explicitly_confirmed_by_project_owner",
+  "basis": "User confirmed two people separately checked original sources, did not view each other judgments before submission, and current files are final.",
+  "human_review_submissions_reported": 2,
+  "human_reviewed_files": 14,
+  "independent_between_reviewers_reported": true,
+  "other_prior_label_exposure": "unknown",
+  "identity_authenticated_by_tool": false,
+  "accepted_as_gold": false,
+  "accepted_labels": 0,
+  "final_test_frozen": false,
+  "original_commit": "745b2901d87c72f02a8f08e14fcd30f680765acc",
+  "metadata_only_changes": [
+    {
+      "path": "submissions/reviewer_A-7402/real10/复核表.xlsx",
+      "before_sha256": "af06ae2ec721a5c469f2909c8d41b7ec05df41ee844b9d6c21e2abd0cde3496c",
+      "after_sha256": "4ff81545cbc0731df54028d96bf8c1d4e8e23d193bd5c791f2e7f9968f28a3cb",
+      "changed_cells": [
+        "回答级判断!L2",
+        "回答级判断!L3",
+        "回答级判断!L4",
+        "回答级判断!L5",
+        "回答级判断!L6",
+        "回答级判断!L7",
+        "回答级判断!L8",
+        "回答级判断!L9",
+        "回答级判断!L10",
+        "回答级判断!L11"
+      ],
+      "all_other_xlsx_members_unchanged": true
+    },
+    {
+      "path": "submissions/reviewer_A-7402/002264/review_form.csv",
+      "before_sha256": "2d2e9bd325be0e9eeff9dcb404e173e6f68cd38f7a44917ec242528f5e2a0c26",
+      "after_sha256": "fecf5efdab4a5aa863584cbe28b3fa90e1157563b4df3bc5181a04451fbadf18",
+      "only_field_changed": "blind_status"
+    },
+    {
+      "path": "submissions/reviewer_A-7402/002169/review_form.csv",
+      "before_sha256": "23ff077f84a04d47ee1a0eea6a305f2e18382922ae3da47da1c967a76a5d6030",
+      "after_sha256": "46f5466aadf9f8fdb8745217bb6cb2d71073d89999cb1bdade2d6ec0cb30c23d",
+      "only_field_changed": "blind_status"
+    },
+    {
+      "path": "submissions/reviewer_A-7402/002008/review_form.csv",
+      "before_sha256": "a8dc38197e49cb9f258da7a882d65f4f22ce6815336c309de7e783b585e4bc14",
+      "after_sha256": "c179db8fb44a9eea3ffa7b4a0c61eaccc9adca1122c4570cd17e77c109291140",
+      "only_field_changed": "blind_status"
+    },
+    {
+      "path": "submissions/reviewer_A-7402/regsrc/submission_receipt.json",
+      "before_sha256": "c62b8ca7b93dc2e281f608b09e28ad00fb694337f9a05da5871ac9474f7cc8b6",
+      "after_sha256": "8a88825ae0edfc11ebbe7608b08e2336a6fabeeeb018fbd7ce6ccd6664baaa78",
+      "fields_corrected": [
+        "saw_other_reviewer_judgments",
+        "saw_other_judgments"
+      ]
+    },
+    {
+      "path": "submissions/reviewer_B-9136/real10/复核表.xlsx",
+      "before_sha256": "c8664af82aa2da2660629ff866b5364bb931e1a33811aeefb7b806e734be8a7c",
+      "after_sha256": "1736b0e930b34f7f053dbc82241bb5c638a554295258e782d18f406b7491f150",
+      "changed_cells": [
+        "回答级判断!L2",
+        "回答级判断!L3",
+        "回答级判断!L4",
+        "回答级判断!L5",
+        "回答级判断!L6",
+        "回答级判断!L7",
+        "回答级判断!L8",
+        "回答级判断!L9",
+        "回答级判断!L10",
+        "回答级判断!L11"
+      ],
+      "all_other_xlsx_members_unchanged": true
+    },
+    {
+      "path": "submissions/reviewer_B-9136/002264/review_form.csv",
+      "before_sha256": "7179c34c49abdc6e7c7786e26134c2829c1bbeaf8c06f1c8f1c3765c42b53758",
+      "after_sha256": "afefce3d2e5c467ed9e7dccd2e9b86527926f5f40ef60416ee16b1e716130aa4",
+      "only_field_changed": "blind_status"
+    },
+    {
+      "path": "submissions/reviewer_B-9136/002169/review_form.csv",
+      "before_sha256": "519a53f5dff1c398c383a5f5cdded9011f54531f8841e1f706ba6da312c92f53",
+      "after_sha256": "150a9c8af50a64525c3573e55452d89fff18eb0ffdd03efc431b56658fe8e48c",
+      "only_field_changed": "blind_status"
+    },
+    {
+      "path": "submissions/reviewer_B-9136/002008/review_form.csv",
+      "before_sha256": "d657a2f7d2f426a49ae9975f4a2cbd2d144b889ee7020790f82266e3778b4ef0",
+      "after_sha256": "543333515215f59fa7db4c5e88f9409333a608e923a2173ec92f88a248bcfce6",
+      "only_field_changed": "blind_status"
+    },
+    {
+      "path": "submissions/reviewer_B-9136/regsrc/submission_receipt.json",
+      "before_sha256": "d93e0686cac2f4f75d5ef17e8c8cde049cbf0213852d32ed23f7c7571c71038b",
+      "after_sha256": "33df9436c572df7aac2debc908d2a85d3658c83015c8ae3a7febe3fad4eaee70",
+      "fields_corrected": [
+        "saw_other_reviewer_judgments",
+        "saw_other_judgments"
+      ]
+    }
+  ],
+  "real10": {
+    "R1": {
+      "status": "invalid_or_incomplete_real_output_review",
+      "issues": [
+        "ValueError: 引用关联: invalid source-role judgment at row 27"
+      ]
+    },
+    "R2": {
+      "status": "structurally_complete_real_output_review_preserved_not_semantic_acceptance",
+      "issues": []
+    }
+  },
+  "dual_source_schema": {
+    "002264_R1": [],
+    "002169_R1": [
+      "CSV row 2: invalid temporal_applicability value",
+      "CSV row 4: invalid temporal_applicability value",
+      "CSV row 5: invalid temporal_applicability value"
+    ],
+    "002008_R1": [],
+    "002264_R2": [],
+    "002169_R2": [
+      "CSV row 2: invalid temporal_applicability value",
+      "CSV row 4: invalid temporal_applicability value",
+      "CSV row 5: invalid temporal_applicability value"
+    ],
+    "002008_R2": []
+  },
+  "workbook_counts": {
+    "R1": {
+      "回答级判断": 10,
+      "论断划分与支持": 243,
+      "引用关联": 361
+    },
+    "R2": {
+      "回答级判断": 10,
+      "论断划分与支持": 195,
+      "引用关联": 298
+    }
+  },
+  "regsrc": {
+    "status": "invalid_or_incomplete",
+    "issues": 8,
+    "disagreements": 0,
+    "accepted_labels": 0,
+    "human_identity_authenticated": false
+  },
+  "csv_field_differences_including_wording": 132,
+  "claim_alignment_status": "Not aligned: different claim IDs and granularity; no row-wise claim Kappa calculated."
+}

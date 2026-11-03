@@ -1,0 +1,73 @@
+{
+  "scope": "10 exposed development answers; descriptive only; not formal test performance",
+  "provenance": "human final reviews per project owner confirmation 2026-10-20",
+  "fields": {
+    "可回答性": {
+      "pairs": 10,
+      "agreements": 10,
+      "observed_agreement": 1.0,
+      "kappa": 1.0,
+      "kappa_null_reason": null,
+      "A_distribution": {
+        "可回答": 3,
+        "部分可回答": 7
+      },
+      "B_distribution": {
+        "可回答": 3,
+        "部分可回答": 7
+      }
+    },
+    "回答方式": {
+      "pairs": 10,
+      "agreements": 10,
+      "observed_agreement": 1.0,
+      "kappa": null,
+      "kappa_null_reason": "constant labels: chance agreement equals one",
+      "A_distribution": {
+        "带保留回答": 10
+      },
+      "B_distribution": {
+        "带保留回答": 10
+      }
+    },
+    "论断清单完整": {
+      "pairs": 10,
+      "agreements": 10,
+      "observed_agreement": 1.0,
+      "kappa": null,
+      "kappa_null_reason": "constant labels: chance agreement equals one",
+      "A_distribution": {
+        "是": 10
+      },
+      "B_distribution": {
+        "是": 10
+      }
+    },
+    "引用清单完整": {
+      "pairs": 10,
+      "agreements": 10,
+      "observed_agreement": 1.0,
+      "kappa": null,
+      "kappa_null_reason": "constant labels: chance agreement equals one",
+      "A_distribution": {
+        "是": 10
+      },
+      "B_distribution": {
+        "是": 10
+      }
+    },
+    "总体判断": {
+      "pairs": 10,
+      "agreements": 10,
+      "observed_agreement": 1.0,
+      "kappa": null,
+      "kappa_null_reason": "constant labels: chance agreement equals one",
+      "A_distribution": {
+        "保留": 10
+      },
+      "B_distribution": {
+        "保留": 10
+      }
+    }
+  }
+}
